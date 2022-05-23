@@ -1,0 +1,948 @@
+<block style="top: 79px; left: 405px;" class=""><name>Light</name><name-loc>Свет</name-loc><spell version="2">
+		<name>Light</name>
+		<name-loc>Свет</name-loc>
+		<description-loc>ОбычноеСоздает маленький неподвижный огонек, наподобие свечного. Он сможет перемещаться с БД (BM) 5, если заклинатель сконцентрируется на его движении.Длительность: 1 минута.Стоимость: 1 на сотворение, 1 на поддержание.ПредметПалочка, посох или украшение. Энергостоимость создания: 100.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M110</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+	</spell></block><block style="top: 205px; left: 189px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Continual Light</name><name-loc>Постоянный свет</name-loc><spell version="2">
+		<name>Continual Light</name>
+		<name-loc>Постоянный свет</name-loc>
+		<description-loc>ОбычноеЗаставляет маленький объект (до 1 фунта или с кулак размером) или маленькую часть большего объекта, излучать белый свет.Длительность: Разная – бросьте 2d для определения количества дней. Не считается «активным» заклинанием. Стоимость: 2 – тусклое лунное свечение, 4 – яркость факела, 6 – яркий дневной свет.Требование: Свет.ПредметЗа 100-кратную энергостоимость  (например, 200 для тусклого свечения, и т.д.) можно любой предмет сделать светящимся навсегда.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2 moon, 4 torch, 6 day</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>2d days</duration>
+		<reference>M110</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">light</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 205px; left: 69px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Mage Light</name><name-loc>Волшебный свет</name-loc><spell version="2">
+		<name>Mage Light</name>
+		<name-loc>Волшебный свет</name-loc>
+		<description-loc>ОбычноеСоздает маленький огонек. Но его свечение заметно только магам, волшебным существам или находящимся под действием Волшебного зрения. Он перемещается точно так же как Свет. Бросок ИН(IQ) Магичность(Magery) не нужен, чтобы увидеть или использовать данный свет.Длительность: 1 минута.Стоимость: 1 – тусклый свечной свет, 2 – яркость факела, 3 – яркий дневной свет. Столько же на поддержание.Требования: Волшебное зрение и Свет.ПредметПалочка, посох, украшение или фонарь. Используется только магами. Энергостоимость создания: 100.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1 candle, 2 torch, 3 day</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M113</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">mage sight</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">light</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 205px; left: 561px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Shape Light</name><name-loc>Формировать свет</name-loc><spell version="2">
+		<name>Shape Light</name>
+		<name-loc>Формировать свет</name-loc>
+		<description-loc>Обычное Этим заклинанием можно превратить источник равномерного света в направленный. Заклинатель должен определить любое число «отражателей» или ограничить освещение определенными лучами. Таким образом, можно превратить факел в своего рода фонарь. Концентрация требуется для изменения формы света, но не для ее поддержания.Заклинание может изгибать и закручивать лучи света. Мастер может разрешить любые эффекты, которые не предусмотрены заклинаниями Простая иллюзия, Микрозрение, Невидимость и т.п.Длительность: 1 минута.Стоимость: 2, столько же на поддержание.Требование:  СветПредмет(а) За 100-кратную стоимость эффект может быть закреплен навсегда (создание световой статуи, например), однако сам свет тоже должен быть сохранен. (б) Посох, палочка или украшение. Энергостоимость создания: 100.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M111</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">light</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 205px; left: 681px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Remove Shadow</name><name-loc>Убрать тень</name-loc><spell version="2">
+		<name>Remove Shadow</name>
+		<name-loc>Убрать тень</name-loc>
+		<description-loc>Обычное; Сопротивление по Воле(Will)Тень объекта исчезает. Несогласные объекты сопротивляются по Воле(Will). (Если источников света более одного, исчезнут все тени!)Длительность: 1 минута.Стоимость: 2 на сотворение, 1 на поддержание.Требование: Свет.ПредметУкрашение. Всегда включен; действует только на владельца. Энергостоимость создания: 100; должен содержать  черный оникс за 100 $.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular/R-Will</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M110</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">light</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 265px; left: 681px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Remove Reflection</name><name-loc>Убрать отражение</name-loc><spell version="2">
+		<name>Remove Reflection</name>
+		<name-loc>Убрать отражение</name-loc>
+		<description-loc>Обычное; Сопротивление по Воле(Will)Отражение(я) объекта, исчезает из зеркал, водоемов, и т.д. На более высоких ТУ может сделать объект невидимым для датчиков, имеющих зеркальные рабочие части (на усмотрение Мастера).Длительность: 1 минута.Стоимость: 2 на сотворение, 1 на поддержание.Требование: Убрать тень.ПредметУкрашение. Всегда включен. Действует только на владельца. Энергостоимость создания: 200; должен содержать черный оникс за 100 $.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular/R-Will</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M113</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">remove shadow</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 139px; left: 69px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Mage Sight</name><name-loc>Волшебное зрение</name-loc><spell version="2">
+		<name>Mage Sight</name>
+		<name-loc>Волшебное зрение</name-loc>
+		<description-loc>СтандартноеОбнаруживает все магические предметы в поле зрения. Каждый такой предмет будет иметь свечение или «ауру», похожую на ауру живого существа. Это свечение будет видно сквозь одежду, броню и вплоть до 1/2 дюйма твёрдого материала.Аура навсегда зачарованного предмета будет сильнее, чем у чего-то под действием временного заклинания. Зачарованные (или магические) существа тоже светятся, хотя сами маги – нет, если на них нет в данный момент заклинаний. Аура также может дать ключ к пониманию природы предмета. При хорошем броске, например, заклинания огня будут иметь характерное красное свечение, а злые предметы будут показывать некое «чёрное свечение» в своих аурах. Критический успех на этом заклинании позволяет заклинателю полностью опознать каждый магический предмет, который он видит. Отметим, что эта способность, по сути, более надёжная версия магических чувств, которые входят в Магичность(Magery) 0 (B66).Длительность: 1 минута.Стоимость: 3 сотворение, 2 поддержание.Требование: Обнаружить магию.ПредметПосох, жезл или украшение. Энергостоимость создания: 800.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M102</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">detect magic</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 325px; left: 537px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Shield</name><name-loc>Щит</name-loc><spell version="2">
+		<name>Shield</name>
+		<name-loc>Щит</name-loc>
+		<description-loc>ОбычноеСоздаёт перед объектом магический щит, который движется вместе с объектом и защищает его от атак спереди. ПЗ(DB), данная этим заклинанием, складывается с ПЗ(DB), даваемым щитом, но не даёт возможность блокировать, если щита нет. ПЗ(DB) данные Щитом и Блоком (M166) не складываются.Длительность: 1 минута.Стоимость: 2 за каждое очко ПЗ(DB), вплоть до  4 ПЗ(DB) (8 очков). Половина поддержка.Требования: Магичность(Magery) 2.Предмет:Это заклинание не накладывается на предметы, но вашу ПЗ(DB) может повысить на 1-5 очков броня с чарой Отражение (M67).</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2 per DB</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M167</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="no">
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="contains">one college (protection)
+				<level compare="at least">2</level>
+			</notes></advantage_prereq>
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="is anything"></notes>
+				<level compare="at least">2</level>
+			</advantage_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 391px; left: 681px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Forgetfulness</name><name-loc>Забывчивость</name-loc><spell version="2">
+		<name>Forgetfulness</name>
+		<name-loc>Забывчивость</name-loc>
+		<description-loc>Обычное; Сопротивление по Воле(Will) или умениюЗаставляет объект на время забыть какой-нибудь факт, умение или заклинание. Пока действует Забывчивость, невозможно применить этот навык или заклинание. Если (например) забытое заклинание является требованием (prerequisite) для другого заклинания, это другое заклинание может быть применено со штрафом -2.Длительность: 1час.Стоимость: 3 на сотворение. 3 на поддержание.Время сотворения: 10 секунд.Требования: Магичность(Magery) 1 и Глупость.ПредметЛюбой предмет. Всегда включён; предмет заставляет носящего забыть одну вещь, определённую при создании предмета. Через час после снятия предмета носящий вспомнит забытую вещь. Энергостоимость создания: 500.</description-loc>
+		<college>Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M135</reference>
+		<categories>
+			<category>Mind Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">foolishness</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (mind control)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 529px; left: 585px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Keen Vision</name><name-loc>Обострённое зрение</name-loc><spell version="2">
+		<name>Keen Vision</name>
+		<name-loc>Обострённое зрение</name-loc>
+		<description-loc>ОбычноеНа самом деле это несколько заклинаний, так же как Контроль (животных) и Увеличить (атрибут). Наиболее распространённые варианты – Обострённое Зрение, Обострённый Слух, Обострённый Вкус и Обоняние, но возможны и необычные варианты для необычных способов восприятия , таких как Обнаружение, Сканирование и Чувство вибрации.Обострённое (чувство) даёт бонус  1 при соответствующих бросках чувств за каждое затраченное очко энергии.Обострённый слух также является заклинанием школы Звука.Длительность: 30 минут.Стоимость: 1 очко за каждое бонусное очко (максимум 5). Половина (округляется вверх) на поддержание.Предмет:Одежда или украшение. Энергостоимость создания: 150 за каждое бонусное очко.</description-loc>
+		<college>Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/pt increase</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>30 min</duration>
+		<reference>M133</reference>
+		<categories>
+			<category>Mind Control</category>
+		</categories>
+	</spell></block><block style="top: 667px; left: 9px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Simple Illusion</name><name-loc>Простая иллюзия</name-loc><spell version="2">
+		<name>Simple Illusion</name>
+		<name-loc>Простая иллюзия</name-loc>
+		<description-loc>ОбластноеСоздаёт исключительно визуальный образ, видимый всем, кто может видеть место назначения заклинания. Это может быть как единичный предмет, так и целое зрелище. Если заклинатель сконцентрируется, образ может двигаться в другую область или изменять форму или размеры, вплоть до занятия всей области действия. Любое разумное существо может развеять заклинание «неверием» в образ — выполнить манёвр Концентрация и сделать успешный бросок Воли(Will). Иллюзия развеется автоматически от первой же атаки, любого заклинания, кроме Контроля иллюзии, или прикосновения любого разумного существа.Длительность: 1 минута.Базовая стоимость: 1 на сотворение. Половина на поддержание.Требования: Заклинатель должен быть зрячим и иметь ИН(IQ) не менее 11.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M95</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<advantage_prereq has="no">
+				<name compare="starts with">blind</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<attribute_prereq has="yes" which="iq" compare="at least">11</attribute_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 667px; left: 117px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>History</name><name-loc>История</name-loc><spell version="2">
+		<name>History</name>
+		<name-loc>История</name-loc>
+		<description-loc>ИнформацияБудучи сотворённым на любой неодушевлённых предмет (или на его часть радиусом в 1 ярд), позволяет заклинателю определить недавнее прошлое этого предмета, характер пользователя, и так далее – но никаких имён!Стоимость: 3 за вчерашнюю историю; 5 за неделю; 8 за месяц; 10 за год.Время сотворения: 1 секунда за единицу энергии.Требование: Слежка.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<casting_time>1 sec/pt</casting_time>
+		<duration>Instant</duration>
+		<reference>M106</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">trace</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 271px; left: 69px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Continual Mage Light</name><name-loc>Постоянный волшебный свет</name-loc><spell version="2">
+		<name>Continual Mage Light</name>
+		<name-loc>Постоянный волшебный свет</name-loc>
+		<description-loc>ОбычноеСотворенное на маленький объект (до 1 фунта или с кулак размером) или маленькую часть большого объекта, заставляет его светиться Волшебным светом. Длительность: Разная. Мастер должен бросить 2d для числа дней. Стоимость: 2 – тусклый свечной свет, 4  – яркость факела, 6 – яркий дневной свет. Столько же на поддержание.Требования: Волшебный свет и Постоянный Свет.ПредметЛюбой предмет можно сделать излучателем Волшебного света навсегда, за 100-кратную энергостоимость  (например, 200 для тусклого света, и т.д.)</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2 candle, 4 torch, 6 day</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>2d days</duration>
+		<reference>M113</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">mage light</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">continual light</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 271px; left: 189px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Wall of Light</name><name-loc>Стена света</name-loc><spell version="2">
+		<name>Wall of Light</name>
+		<name-loc>Стена света</name-loc>
+		<description-loc>ОбластноеСоздает занавес света вокруг области. Стена четыре ярда высотой, но может быть сделана выше простым расчетом стоимости от высоты (двойная для 8 ярдов, тройная для 12  и т.д.). Единственное что она блокирует, это зрение в оба направления. Не оказывает эффекта на заклинания, существ, звуки, и т.д. Светозащитные очки позволяют видеть сквозь стену.Длительность: 1 минута.Основная стоимость: 1 – 3 на сотворение. Столько же на поддержание. Свечение Стены зависит от затраченной энергии, согласно Постоянному свету.Требование: Постоянный свет.Предмет(a) Посох, палочка или украшение. Энергостоимость создания: 200. (б) Стена света может быть сделана постоянной за 100-кратную энергостоимость.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1-3</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M113</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">continual light</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 271px; left: 309px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Darkness</name><name-loc>Темнота</name-loc><spell version="2">
+		<name>Darkness</name>
+		<name-loc>Темнота</name-loc>
+		<description-loc>ОбластноеУкрывает область кромешной тьмой. Персонаж в области видит наружу нормально, но не может ничего видеть внутри. Снаружи видно только темноту внутри области. Таким образом, атаки из темноты проходят без штрафа; атаки в темноту штрафуются по боевым правилам (B394). Преимущество Зрение в темноте позволяет видеть сквозь заклинание, а Инфразрение и Ночное зрение – нет.Длительность: 1 минута.Базовая стоимость: 2 на сотворение, 1 на поддержание.Требование: Постоянный свет.ПредметПол, земля или коврик могут быть зачарованы, чтобы область над ними (около 6 футов) была постоянно в Темноте.Энергостоимость создания: 12 за квадратный фут.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M111</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">continual light</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 271px; left: 417px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Gloom</name><name-loc>Мрак</name-loc><spell version="2">
+		<name>Gloom</name>
+		<name-loc>Мрак</name-loc>
+		<description-loc>ОбластноеПогружает область во мрак. Чем больше энергии потрачено, тем более мрачным становится окружающий свет. В отличие от заклинания Темноты, источники света нормально работают внутри области.Длительность: Разная. Мастер должен бросить 2d для определения количества дней.Основная стоимость: 1/2 – свет факела; 1 – лунный свет; 3/2 – звездный свет; 2 – полная темнота. Минимальный радиус – 2 ярда.Время на сотворение: 1 секунда за полпункта основной стоимости.Требование: Постоянный свет.Предмет(a) Палочка, посох или украшение. Энергостоимость создания: 250.  (б) область может быть затемнена навсегда за 100-кратную стоимость создания.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>Varies</casting_time>
+		<duration>2d days</duration>
+		<reference>M112</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">continual light</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 271px; left: 537px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Light Jet</name><name-loc>Струя света</name-loc><spell version="2">
+		<name>Light Jet</name>
+		<name-loc>Струя света</name-loc>
+		<description-loc>ОбычноеИспускает луч яркого света из пальца, который можно использовать как прожектор. Дает хорошее освещение на 10 ярдов в указываемом направлении, и можно что-либо рассмотреть вплоть до 30 ярдов. При хорошей видимости им можно подавать сигналы на целую милю. В бою может ослепить противников в пределах 10 ярдов, но только в относительной темноте (например, когда штраф за освещение не слабее -5). Каждый ход заклинатель бросает против умения Природной атаки или ЛВ(DX)-4; чтобы попасть в лицо штраф -5. От луча можно уклониться или блокировать, но нельзя парировать. Пораженная цель получает штраф к боевым умениям: -4 на следующий ход и -1 до конца боя. Эффект не складывается. Для противников с Адаптацией к темноте штрафы удваиваются.Длительность: 1 минута.Стоимость: 2 на сотворение, 1 на поддержание.Требование: Постоянный свет или Формировать свет.ПредметПерчатка или кольцо; предмет позволяет владельцу сотворить заклинание. Энергостоимость создания: 200.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<melee_weapon>
+			<damage>Blinds</damage>
+			<usage>Jet</usage>
+			<reach>10</reach>
+			<parry>No</parry>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Beam</specialization>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M112</reference>
+		<notes>blinds only when darkness penalty is -5 or more</notes>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">continual light</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shape light</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 337px; left: 417px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Blur</name><name-loc>Размыть</name-loc><spell version="2">
+		<name>Blur</name>
+		<name-loc>Размыть</name-loc>
+		<description-loc>ОбычноеОбъект сложнее увидеть, а значит сложнее попасть при атаке. Каждый пункт энергии дает -1 к эффективному навыку любой атаки на объект, до максимума -5.Длительность: 1 минута.Стоимость: 1 - 5 на сотворение. Столько же на поддержание.Время сотворения: 2 секунды.Требование: Темнота или Мрак.ПредметПосох, палочка или украшение; действует только на владельца. Энергостоимость создания: 100 за пункт штрафа.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-5</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M113</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">darkness</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">gloom</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 337px; left: 309px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Blackout</name><name-loc>Тьма</name-loc><spell version="2">
+		<name>Blackout</name>
+		<name-loc>Тьма</name-loc>
+		<description-loc>ОбластноеПокрывает область непроницаемой тьмой. Никто не может видеть сквозь нее ни снаружи, ни изнутри области; см. боевые правила B394.Видеть сквозь заклинание позволяет преимущество Зрение в темноте, но не Инфразрение и Ночное зрение.Длительность: 1 минута.Базовая стоимость: 2 на сотворение, 1 на поддержание.Требование: Темнота.ПредметПол, земля или коврик могут быть зачарованы, чтобы область над ними (около 6 футов) была постоянно во Тьме.Энергостоимость создания: 15 за квадратный фут.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M112</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">darkness</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 337px; left: 189px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Flash</name><name-loc>Вспышка</name-loc><spell version="2">
+		<name>Flash</name>
+		<name-loc>Вспышка</name-loc>
+		<description-loc>ОбычноеСоздает ярчайшую вспышку света. Она полностью ослепит всех ее видящих, и уменьшит ЛВ(DX) других на 3 (с уменьшением всех умений на основе ЛВ(DX)). Может подействовать на любого, оказавшегося перед вспышкой с открытыми глазами (если не используются миниатюры – на усмотрение Мастера). Не подействует на заклинателя, при сотворении закрывшего глаза. Все остальные существа в зоне действия должны сделать бросок ЗД(HT), чтобы избежать следующих эффектов:Расстояние	бросок ЗД(HT) успешен	бросок ЗД(HT) проваленВ пределах  10 ярдов	-3 ЛВ(DX) на 1 минуту	Слепота 3 сек. -3 ЛВ(DX) на 1 мин.От 11 до 25 ярдов	-3 ЛВ(DX) на 10 сек.	-3 ЛВ(DX) на 1 минутуСвыше 26 ярдов 	Нет эффекта	-3 ЛВ(DX) на 3 секундыСтоимость: 4.Время сотворения: 2 секунды.Требование: Постоянный свет.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>Instant</duration>
+		<melee_weapon>
+			<damage>Blinds</damage>
+			<usage>Area</usage>
+			<reach>Special</reach>
+			<parry>No</parry>
+		</melee_weapon>
+		<reference>M112</reference>
+		<notes>HT roll to resist blinding</notes>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">continual light</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 337px; left: 69px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Glow</name><name-loc>Свечение</name-loc><spell version="2">
+		<name>Glow</name>
+		<name-loc>Свечение</name-loc>
+		<description-loc>ОбластноеЗаливает область однородным свечением. Объекты и существа внутри области не отбрасывают теней, если нет источника света сильнее созданного заклинанием.Длительность: Разная. Мастер должен бросить 2d для определения количества дней.Базовая стоимость: 1/2 – звездный свет; 1 – лунный свет; 3/2 – свет факела; 2 – дневной света (яркий без штрафа к зрению). Минимальный радиус – 2 ярда.Время сотворение: 1 секунда за полпункта базовой стоимостиТребование: Постоянный свет.Предмет(a) Палочка, посох или украшение. Энергостоимость создания: 250.  (б) За 100-кратную базовую стоимость область может быть освещена навсегда.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>Varies</casting_time>
+		<duration>2d days</duration>
+		<reference>M112</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">continual light</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 391px; left: 9px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Colors</name><name-loc>Цвета</name-loc><spell version="2">
+		<name>Colors</name>
+		<name-loc>Цвета</name-loc>
+		<description-loc>ОбычноеИзменяет цвет любого света. Сотворяется на источник света. Если заклинатель концентрируется, возможны многократные изменения цвета одним заклинанием.Длительность: 1 минута.Стоимость: 2 на сотворение, 1 на поддержание (для заклинания Постоянный свет изменение постоянное).Требование: Свет.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M110</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">light</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 391px; left: 249px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Shape Darkness</name><name-loc>Формировать тьму</name-loc><spell version="2">
+		<name>Shape Darkness</name>
+		<name-loc>Формировать тьму</name-loc>
+		<description-loc>ОбластноеФормирует и перемещает трехмерную темноту, созданную заклинаниями Темноты или Тьмы с БД (BM) 5. Также позволяет формировать существующие двумерные тени в другие двумерные формы. Тени легко уменьшаются, а увеличение делает их прозрачнее. Обычный случайный наблюдатель этого не заметит, но тот, кто пристально смотрит на тень, должен сделать бросок ИН(IQ), чтобы понять, что ей не хватает «плотности». Тени не обязаны оставаться прикрепленными к объектам, их отбросившими.Длительность: 1 минута.Базовая стоимость: 2. Столько же на поддержание. Для двумерных теней базовая стоимость 1.Требование: Темнота.ПредметПосох, палочка или украшение. Энергостоимость создания: 200.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2#</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M113</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">darkness</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 457px; left: 69px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Sunlight</name><name-loc>Солнечный свет</name-loc><spell version="2">
+		<name>Sunlight</name>
+		<name-loc>Солнечный свет</name-loc>
+		<description-loc>ОбластноеОбласть полностью освещается дневным светом, даже подземелье! Она простирается ввысь, пока не достигнет какого-либо препятствия. Если сотворено в пещере, область - огромный столб света, поднимающийся вверх до скалы. Если сотворено в облачный день на открытом воздухе, кажется, что свет пробивается сквозь облака. Если сотворили ночью, свет как будто исходит от самой высокой звезды, кажущейся для находящихся внутри области ярким солнцем.Рассматривайте свет как естественный солнечный для любых целей - можно выращивать растения, загорать, и т.д. Полностью действует на существ восприимчивых к эффектам солнечного света (таких как вампиры).Длительность: 1 минута.Базовая стоимость: 2 на сотворение, 1 на поддержание.Требования: Магичность(Magery) 1, Свечение и Цвета.ПредметПалочка, посох или украшение. Используется только магами. Энергостоимость создания: 150.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M114</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (light)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">glow</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">colors</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 523px; left: 69px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Continual Sunlight</name><name-loc>Постоянный солнечный свет</name-loc><spell version="2">
+		<name>Continual Sunlight</name>
+		<name-loc>Постоянный солнечный свет</name-loc>
+		<description-loc>ОбластноеОсвещает область согласно заклинанию Солнечного света, но длится дольше и не поддерживается.Длительность: Разная. Сделайте бросок 2d для определения количества дней.Базовая стоимость: 3.Требование: Солнечный свет.ПредметОбласть может быть освещена навсегда за 100-кратную стоимость сотворения.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>2d days</duration>
+		<reference>M114</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sunlight</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 523px; left: 177px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Sunbolt</name><name-loc>Солнечный снаряд</name-loc><spell version="2">
+		<name>Sunbolt</name>
+		<name-loc>Солнечный снаряд</name-loc>
+		<description-loc>МетательноеВыстреливает снаряд концентрированного солнечного света из кончика пальца. Параметры: 1/2Д 75, max 150, Точ 2; используется умение Природная атака. Свет прожигает как лазерный луч и наносит обжигающие повреждения. Хорошая полировка щита увеличит его ПЗ(DB) против заклинания на 50 %, с округлением в меньшую сторону. Независимо от проникновения повреждений через броню, попадание в лицо ослепит жертву, если она не выполнит проверку ЗД(HT). Попадание в глаза наносит удвоенное повреждение и ослепляет жертву, если она не выполнит проверку ЗД(HT) со штрафом равным полученным повреждениям. Для целей восстановления считайте слепоту от Солнечного снаряда калечащим ранением  (B420). Любое зеркало отразит заклинание; если Мастер сомневается в точности угла падения/отражения (например, если снаряд попал в носимое зеркало), новое направление определяется случайным образом. Используйте правила поражения неверной цели (B389), при определении, поражено ли что-нибудь в новом направлении.Намеренное отражение выстрелов - весьма хитрое дело; штраф на дальность считается за полное расстояние до цели, с дополнительным -2 на каждый «отскок». И если зеркала не являются очень большими и/или устойчивыми и/или специально  расставленными, Мастер может просто объявить невозможность выстрела.Персонаж, защищающийся зеркалом, может попытаться отразить снаряд назад в заклинателя – считается Блоком со штрафом -2; также примените обычные штрафы на расстояние от защитника до заклинателя. ПЗ(DB) зеркала (если оно достаточно большое, чтобы иметь его; спросите у Мастера), добавляется к этому броску. Заклинатель может защищаться обычным образом, если атака не полностью неожиданная. Щит от снарядов и Обратить снаряды не действуют на Солнечный снаряд. От него защитят Силовой купол и Отразить энергию. Области волшебной Темноты или Тьмы сопротивляются Солнечному снаряду.Стоимость: Любое количество, до вашего уровня Магичности, в секунду, в течение трех секунд. Снаряд наносит 1d-1, проникающего урона за единицу энергии.Время на сотворение: 1 - 3 секунды.Требования: По крайней мере, шесть других Заклинаний света и тьмы, включая Солнечный свет.ПредметПосох или палочка; снаряд запускается из кончика предмета. Используется только магами. Стоимость создания: 800 энергии и Солнечный камень стоящий, по крайней мере, 1.000 $.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Missile</spell_class>
+		<casting_cost>1-3xMagery</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1-3 sec</casting_time>
+		<duration>Instant</duration>
+		<ranged_weapon>
+			<damage>1d-1 imp/point</damage>
+			<accuracy>2</accuracy>
+			<range>75/150</range>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Beam</specialization>
+				<modifier>0</modifier>
+			</default>
+		</ranged_weapon>
+		<reference>M114</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="is">light</college>
+				<quantity compare="at least">6</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">sunlight</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 583px; left: 9px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Mirror</name><name-loc>Зеркало</name-loc><spell version="2">
+		<name>Mirror</name>
+		<name-loc>Зеркало</name-loc>
+		<description-loc>ОбычноеСоздает отражающую поверхность на объекте или саму по себе (в этом случае двухстороннюю). Зеркальная поверхность не обязана быть плоской, например, можно создать «кривое» зеркало. Во вселенной с развитой наукой заклинатели со знанием физики могут создавать параболические отражатели. Несложной кривой хватит для готовки мяса; большую и качественную можно использовать, чтобы плавить свинец, при наличии достаточного освещения солнечным светом под нужным углом. Мастер может предположить, что против живых целей такое зеркало наносит 1 пункт обжигающих повреждений за ярд радиуса зеркала каждые 10 секунд. При зажигании вещей, используйте правила Воспламенения (M72), заменяя указанную энергостоимость размером Зеркала. Толстое дерево загорится от 8-ярдового Зеркала примерно через 10 секунд. Другие варианты использования – на усмотрение Мастера.Длительность: 1 минута.Стоимость: 2. Столько же на поддержание.Требование: Цвета.ПредметПалочка, посох или украшение. Энергостоимость создания: 350; предмет должен содержать крошечное зеркало.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M112</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">colors</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 457px; left: 195px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Body of Shadows</name><name-loc>Тело из тени</name-loc><spell version="2" very_hard="yes">
+		<name>Body of Shadows</name>
+		<name-loc>Тело из тени</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Тело объекта исчезает, оставляя только тень. Теперь объект двумерная тень на стене или полу и на время действия заклинания получает преимущество Теневая форма (B83). Его одежда (до 6 фунтов) также становится тенью, но в этой форме теряет любые волшебные силы, если таковые были. Остальное снаряжение падает на землю; в этой форме объект ничего не может нести.Заметьте, что заклинание не усиливает чувства объекта до возможности видеть в полной темноте!Длительность: 1 минута. Прекращается, если объект теряет сознание.Стоимость: 6 на сотворение, 3 на поддержание.Время сотворения: 5 секунд.Требования: Магичность(Magery) 2, Формировать тьму и, по крайней мере, три Заклинания перемещения.ПредметПосох, палочка, украшение или плащ. Действует только на владельца. Серьезный недостаток всех предметов, кроме плаща, в том, что они провалятся сквозь объект, после сотворения заклинания! Энергостоимость создания: 2.500 (6.000 для плаща).</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular/R-HT</spell_class>
+		<casting_cost>6</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M114</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (light)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">shape darkness</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="is">movement</college>
+				<quantity compare="at least">3</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 391px; left: 501px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Shade</name><name-loc>Тень</name-loc><spell version="2">
+		<name>Shade</name>
+		<name-loc>Тень</name-loc>
+		<description-loc>ОбычноеНаводит тень на объект. Тень предотвращает солнечные ожоги и даёт некоторую защиту от жары (снижает температуру на 10°F, если солнце – серьёзный источник жары). Эффект – как от невидимого зонтика. Это заклинание также относится к школе заклинаний Света и тьмы.Длительность: 1 час.Стоимость: 1 сотворение. Половина поддержка.Время сотворения: 10 секунд.Требования: Постоянный свет или  Щит.ПредметПосох или украшение. Действует лишь на носящего. Энергостоимость создания:  100.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M169</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">continual light</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shield</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 463px; left: 417px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Invisibility</name><name-loc>Невидимость</name-loc><spell version="2">
+		<name>Invisibility</name>
+		<name-loc>Невидимость</name-loc>
+		<description-loc>ОбычноеЦель невозможно увидеть, она не появляется в отражениях или фотографиях. Однако она по-прежнему издает звуки и может быть выслежена по запаху или по следам. Что-либо поднятое субъектом, становится невидимым, если он не пожелает оставить этот предмет видимым. Невидимку можно обнаружить с помощью Видеть невидимое, но не с помощью Инфразрения. У невидимых персонажей огромное преимущество в бою (B394).Длительность: 1 минута.Стоимость: 5 на сотворение, 3 на поддержание.Время сотворения: 3 секунды.Требования: Шесть Заклинаний света, включая Размыть.Предмет(a) Украшение, палочка или посох; действует только на владельца. Энергостоимость создания: 1.200. (б) предмет можно сделать невидимым навсегда по 500 энергии за клетку размера или 50 фунтов веса, смотря, что больше.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M114</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="is">light</college>
+				<quantity compare="at least">6</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">blur</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 457px; left: 657px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Hide</name><name-loc>Скрыть</name-loc><spell version="2">
+		<name>Hide</name>
+		<name-loc>Скрыть</name-loc>
+		<description-loc>ОбычноеОсложняет поиск объекта. Нужен бросок Зрения, чтобы заметить объект в зоне прямой видимости; броски Чувства, чтобы обнаружить уже скрытый объект, с -1 за каждую единицу потраченной энергии, до максимума -5. Эти эффекты действуют, только пока объект неподвижен; если он двигается, а затем остановится до того, как заклинание развеется, эффекты возобновятся.Длительность: 1 час.Стоимость: 1 - 5 на сотворение. Столько же на поддержание.Время сотворения: 5 секунд.Требование: Размыть или Забывчивость.Предмет(a) Украшение, палочка или посох; действует только на владельца. Энергостоимость создания: 1.000. (б) Любой предмет может быть «скрыт» навсегда, по энергостоимости 200 за пункт «скрытности».</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-5</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>5 secs</casting_time>
+		<duration>1 hour</duration>
+		<reference>M113</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">blur</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">forgetfulness</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 595px; left: 417px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Hawk Vision</name><name-loc>Соколиный глаз</name-loc><spell version="2">
+		<name>Hawk Vision</name>
+		<name-loc>Соколиный глаз</name-loc>
+		<description-loc>ОбычноеОбъект получает необычайную ясность зрения и способность «приближать» отдаленные объекты аналогично Телескопическому зрению (B92). Каждый уровень позволяет игнорировать -1 штрафа за расстояние на любой бросок зрения или -2, если используется маневр Прицеливание. Также это заклинание может использоваться и как оптический прицел – давая вам премию  1 Точ за уровень, когда вы целитесь в течение количества секунд, равного получаемой премии. Выгоды заклинания не складываются с таковыми от технологических устройств – типа биноклей или прицелов. Если у вас есть и то и другое, надо выбрать что-то одно.Длительность: 1 минута.Основная стоимость: 2 за уровень Телескопического зрения. Половина на поддержание.Время сотворения: 2 секунды.Требования: Острое Зрение или 5 Заклинаний света. Объект не должен страдать от Слепоты или Плохого зрения.ПредметОдежда или украшение с изображением  сокола. Действует только на владельца. Энергостоимость создания: 400.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/level</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M111</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<advantage_prereq has="no">
+				<name compare="is">blindness</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">keen vision</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<college compare="is">light</college>
+					<quantity compare="at least">5</quantity>
+				</spell_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 661px; left: 525px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Bright Vision</name><name-loc>Светозащитные очки</name-loc><spell version="2">
+		<name>Bright Vision</name>
+		<name-loc>Светозащитные очки</name-loc>
+		<description-loc>ОбычноеПозволит безопасно смотреть на интенсивные источники света (бушующий огонь или солнце) и защищает от ослепления заклинанием Вспышка, атак, основанных на зрении и всего похожего.Длительность: 1 минута.Стоимость: 2 на сотворение, 1 на поддержание.Требования: Острое зрение  или, по крайней мере, пять заклинаний Света и тьмы. Объект не должен страдать от Слепоты.ПредметПосох, палочка или украшение (современным сеттингам больше подходят темные очки или сварочные щитки). Действует только на владельца. Энергостоимость создания: 200.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M111</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<advantage_prereq has="no">
+				<name compare="is">blindness</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">keen vision</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<college compare="is">light</college>
+					<quantity compare="at least">5</quantity>
+				</spell_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 727px; left: 417px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Small Vision</name><name-loc>Микрозрение</name-loc><spell version="2">
+		<name>Small Vision</name>
+		<name-loc>Микрозрение</name-loc>
+		<description-loc>ОбычноеОбъект может исследовать предметы в пределах досягаемости, как-будто они под x100 усилением, аналогично Микроскопическому зрению 2 (B68). На время действия заклинания объект чрезвычайно близорук (см. Плохое зрение, B123): он не может ясно видеть объекты далее одного ярда, они кажутся размытыми. Все контактные атаки производятся со штрафом -2 к навыку. Также относится к школе Знаний.Длительность: 1 минута.Стоимость: 4 на сотворение, 2 на поддержание. Каждое удвоение стоимости десятикратно увеличивает приближение.Время сотворения: 2 секунды.Требования: Острое зрение или, по крайней мере, пять заклинаний Света и тьмы. Объект не должен страдать от Слепоты или Плохого зрения.Предмет(a) Одежда или украшение. Должен иметь изображение блохи в натуральную величину. Действует только на владельца. Энергостоимость создания: 400. (б) Драгоценный камень, работающий как лупа. Стоимость создания: 400 энергии плюс стоимость камня.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4#</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M111</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<advantage_prereq has="no">
+				<name compare="is">blindness</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">keen vision</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<college compare="is">light</college>
+					<quantity compare="at least">5</quantity>
+				</spell_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 733px; left: 63px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Images of the Past</name><name-loc>Картины прошлого</name-loc><spell version="2">
+		<name>Images of the Past</name>
+		<name-loc>Картины прошлого</name-loc>
+		<description-loc>СтандартноеБудучи сотворено на зеркало или отражающую поверхность, это заклинание «проигрывает» изображения, которые оно могло «видеть» в прошлом. Заклинатель указывает момент, с которого начинать просмотр («посмотрим, что случилось в этой комнате год назад…»). Модификаторы времени (M81) действуют. Каждый раз, когда заклинание твориться для того же периода времени, есть дополнительный штраф -1 к умению. Критический провал стирает «память» предмета о том периоде времени. Мастер также может позволить творить это заклинание на любой пол, стену или предмет, «воспроизведение» при этом проявится как Простая иллюзия.Это также заклинание Света и тьмы.Длительность: 1 минута.Стоимость: 3 сотворение. 3 поддержка. Величина модификатора Времени добавляется к цене, так что если заклинание стоит 3 (3 0) на момент времени «в течение минуты», то оно будет стоить 8 (3 5) на момент времени «от 4 до 40 дней».Время сотворения: 10 секунд.Требования: Магичность(Magery) 2, История и Простая иллюзия. ПредметПосох, жезл или украшение. Используется только магами. Энергостоимость создания: 700.</description-loc>
+		<college>Knowledge/Light &amp; Darkness</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3   Time modifier</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M107</reference>
+		<categories>
+			<category>Knowledge</category>
+			<category>Light &amp; Darkness</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">history</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">simple illusion</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (knowledge)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 793px; left: 417px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Night Vision</name><name-loc>Ночное зрение</name-loc><spell version="2">
+		<name>Night Vision</name>
+		<name-loc>Ночное зрение</name-loc>
+		<description-loc>ОбычноеПока есть хоть немного света, можно ясно видеть, как с Адаптацией к темноте 9. В полной темноте объект по-прежнему слеп.Длительность: 1 минута.Стоимость: 3 на сотворение, 1 на  поддержание.Требование: Острое зрение или 5 Заклинания света.ПредметПосох, палочка или украшение; действует только на владельца. Энергостоимость создания: 200.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M111</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">keen vision</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="is">light</college>
+				<quantity compare="at least">5</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 793px; left: 621px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Infravision</name><name-loc>Инфразрение</name-loc><spell version="2">
+		<name>Infravision</name>
+		<name-loc>Инфразрение</name-loc>
+		<description-loc>ОбычноеПозволит видеть «инфракрасные» или тепловые лучи в дополнение к нормальному свету, как с преимуществом Инфразрение (B60). Это заклинание не позволяет замечать невидимые объекты.Длительность: 1 минута.Стоимость: 3 на сотворение, 1 на поддержание.Требование: Острое зрение  или 5 Заклинаний света.ПредметПосох, палочка или украшение; действует только на владельца. Энергостоимость создания: 100.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M111</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">keen vision</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="is">light</college>
+				<quantity compare="at least">5</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 859px; left: 441px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Dark Vision</name><name-loc>Зрение в темноте</name-loc><spell version="2">
+		<name>Dark Vision</name>
+		<name-loc>Зрение в темноте</name-loc>
+		<description-loc>ОбычноеОбъект может видеть даже в полной темноте, как с преимуществом Зрение в темноте. Также он может игнорировать эффекты заклинания Темнота.Длительность: 1 минута.Стоимость: 5 на сотворение, 2 на поддержание.Требование: Ночное зрение или Инфразрение.ПредметПосох, палочка или украшение; действует только на владельца. Энергостоимость создания: 400.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M111</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">night vision</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">infravision</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 931px; left: 465px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>See Invisible</name><name-loc>Видеть невидимое</name-loc><spell version="2">
+		<name>See Invisible</name>
+		<name-loc>Видеть невидимое</name-loc>
+		<description-loc>ОбычноеОбъект может видеть что-нибудь скрытое заклинанием Невидимости или «естественной» невидимостью. Такие вещи будут немного прозрачными, так что сквозь них можно видеть и понять, что они невидимы для других.Длительность: 1 минута.Стоимость: 4 на сотворение,  2 на поддержание.Требования: Или Зрение в темноте и Инфразрение, или Невидимость.ПредметПосох, палочка или украшение; действует только на владельца. Энергостоимость создания: 400.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M113</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">invisibility</name>
+			</spell_prereq>
+			<prereq_list all="yes">
+				<spell_prereq has="yes">
+					<name compare="is">dark vision</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">infravision</name>
+				</spell_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block>

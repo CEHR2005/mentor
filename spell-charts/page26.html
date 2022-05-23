@@ -1,0 +1,1501 @@
+<block style="top: 83px; left: 192px;" class=""><name>Haste</name><name-loc>Ускорение</name-loc><spell version="2">
+		<name>Haste</name>
+		<name-loc>Ускорение</name-loc>
+		<description-loc>ОбычноеУвеличивает Движении и Уклонение на не более, чем на 3.Длительность: 1 минута.Стоимость: 2 сотворение за единицу, добавленную к Движению и Уклонению объекта. Половина  поддержание.Время сотворения: 2 секунды.ПредметОбувь или украшение. Действует только на носителя. Энергостоимость создания: 250 за каждые  1 к Движению.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/pt</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M142</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+	</spell></block><block style="top: 149px; left: 192px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Grease</name><name-loc>Смазка</name-loc><spell version="2">
+		<name>Grease</name>
+		<name-loc>Смазка</name-loc>
+		<description-loc>ОбластноеДелает поверхность необычайно скользкой. Любой, наступивший на поверхность, должен сделать бросок  ЛВ(DX)-2 за каждый пройденный в области заклинания ярд. При провале броска он падает. Еще один бросок ЛВ(DX)-2 требуется, чтобы встать (но не сесть или встать на колени). Весь бой вплотную, контактные атаки и активные защиты получают штраф -3; остальные физические умения, включая атаки стрелковым и метательным оружием, получают штраф -2 за плохую стойку. Это заклинание также можно наложить на вертикальную поверхность, что сделает лазание невозможным. Наклонные поверхности оставляются на усмотрение Мастера.В отличие от заклинания Гололед, эффекты которого почти идентичны, Смазку нельзя увидеть обычными методами. Также сапоги с шипами бесполезны против Смазанной поверхности. Смазка и Клей сопротивляются друг другу.Длительность: 10 минут.Базовая стоимость: 3 сотворение. Столько же поддержание.Требования: Ускорение.Предмет(а) Палочка, посох или украшение. Энергостоимость создания: 700. (б) Может быть наложено на область навсегда за 100-кратную стоимость.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>10 min</duration>
+		<reference>M142</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">haste</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 149px; left: 294px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Quick March</name><name-loc>Быстрый Марш</name-loc><spell version="2">
+		<name>Quick March</name>
+		<name-loc>Быстрый Марш</name-loc>
+		<description-loc>ОбычноеУвеличивает вдвое скорость пешего перехода объекта на дальние дистанции. По окончании дневного перехода объект теряет 10 ЕУ(FP) и должен выспаться. Это заклинание не влияет на Движение или Базовую Скорость объекта в бою. Длительность: 1 дневной переход.Стоимость: 4. Не поддерживается.Время сотворения: 1 минута.Требования: Магичность(Magery) 1 и Ускорение.ПредметОбувь или украшение. Действует только на носителя. Энергостоимость создания: 400.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 day</duration>
+		<reference>M144</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">haste</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 149px; left: 498px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Apportation</name><name-loc>Перемещение</name-loc><spell version="2">
+		<name>Apportation</name>
+		<name-loc>Перемещение</name-loc>
+		<description-loc>Обычное; сопротивление по Воле(Will)Позволяет двигать материальные объекты, не прикасаясь к ним. Это заклинание левитирует объект с Движением 1 — недостаточно быстро, чтобы нанести вред. Живые объекты могут сопротивляться Воле(Will)й.Длительность: 1 минута.Энергостоимость: зависит от веса объекта. Столько же поддержание.Вес	Энергостоимостьменее 1 фунта	1до 10 фунтов	2до 50 фунтов	3до 200 фунтов	4каждые дополнительные 100 фунтов	 4Требования: Магичность(Magery) 1.ПредметПосох или палочка. Используется только магами; предмет должен прикасаться или быть направленным на объект. Энергостоимость создания: 900.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M142</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 149px; left: 396px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1 hard"><name>Great Haste</name><name-loc>Великое ускорение</name-loc><spell version="2" very_hard="yes">
+		<name>Great Haste</name>
+		<name-loc>Великое ускорение</name-loc>
+		<description-loc>ОбычноеОчень сильно ускоряет объект. Фактически, объект имеет один уровень Ускоренного хода времени (B38) на время действия заклинания.Длительность: 10 секунд.Стоимость: 5. Не поддерживается; надо творить заново. По окончании заклинания объект также теряет 5 ЕУ(FP) (если заклинатель не был объектом).Время сотворения: 3 секунды.Требования: Магичность(Magery) 1, ИН(IQ) 12 или выше, и Ускорение.ПредметОбувь или украшение; действует только на носителя. Энергостоимость создания: 2.000. Предмет стоит носителю 5 ЕУ(FP) за каждые 10 секунд эффекта.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>10 sec</duration>
+		<reference>M146</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">haste</name>
+			</spell_prereq>
+			<attribute_prereq has="yes" which="iq" compare="at least">12</attribute_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 149px; left: 54px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Hinder</name><name-loc>Помеха</name-loc><spell version="2">
+		<name>Hinder</name>
+		<name-loc>Помеха</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Уменьшает базовое движение(BM) и Уклонение (dodge) объекта на 1 за каждое вложенное очко энергии. Также относится к заклинаниям школы Движения.Длительность: 1 минута.Стоимость: 1-4. Столько же поддержание.Требования: Неуклюжесть или Ускорение (M142).Предмет(а) Посох или палочка. Используется только магами; необходимо указать на объект (касание не обязательно). Энергостоимость создания: 600. (б) Любой предмет. Всегда включён; уменьшает базовое движение(BM) владельца. Энергостоимость создания: 200 за каждый ярд, на который уменьшается базовое движение(BM) владельца.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-4</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M36</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">clumsiness</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">haste</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 215px; left: 84px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Slow</name><name-loc>Замедлить</name-loc><spell version="2">
+		<name>Slow</name>
+		<name-loc>Замедлить</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Сильно замедляет объект; фактически, объект имеет один уровень Замедленного хода времени на время действия заклинания.Длительность: 10 секунд.Стоимость: 5 сотворение. 4 поддержание.Время сотворения: 3 секунды.Требования: Магичность(Magery) 1, Ускорение и Помеха.Предмет(а) Посох или палочка. Используется только магами. Энергостоимость создания: 1.000. (б). Обувь или украшение. Включен постоянно. Энергостоимость создания: 500.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>4</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>10 sec</duration>
+		<reference>M145</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">haste</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">hinder</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 215px; left: 192px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Slide</name><name-loc>Скольжение</name-loc><spell version="2">
+		<name>Slide</name>
+		<name-loc>Скольжение</name-loc>
+		<description-loc>Обычное; сопротивление по Воле(Will)Позволяет скользить вниз по склону как на лыжах. Объект использует умение Лыжного спорта, по умолчанию, если необходимо, со штрафом -2 если у него нет палок, которыми можно направлять свое движение. Заклинание одинаково хорошо работает на всех поверхностях (песок, трава, камень...), но объекту все равно надо остерегаться препятствий!По хорошему склону объект может достигнуть Движения, равного своему умению Лыжного спорта, относительно безопасно. Максимальное Движение, в необычайно хороших условиях, равно удвоенному умению Лыжного спорта.На горизонтальной поверхности, это заклинание — помеха; объект постоянно ведет себя так, как если бы он вошел в Смазанную зону!Длительность: 1 минута.Стоимость: 2. Столько же поддержание.Требования: Перемещение и Смазка.ПредметУкрашение или обувь. На предмете должно быть изображение выдры. Действует только на носителя. Энергостоимость создания: 350.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M145</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">grease</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 269px; left: 138px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Glue</name><name-loc>Клей</name-loc><spell version="2">
+		<name>Glue</name>
+		<name-loc>Клей</name-loc>
+		<description-loc>ОбластноеДелает поверхность необычайно клейкой, останавливая любого, наступившего на поверхность, как под воздействием заклинания Вросшие ноги (M36). Если жертва успешно сопротивляется, она может двигаться свободно пока не сдвинется больше чем на ярд от своей позиции, после чего она снова прилипает, если все еще находится в области Клея.Длительность: 10 минут.Базовая стоимость: 3 сотворение. Столько же поддержание.Требования: Ускорение.Предмет(а) Палочка, посох или украшение. Энергостоимость создания: 900. (б) Может быть наложено на область навсегда за 100-кратную стоимость.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>10 min</duration>
+		<reference>M142</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">haste</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 83px; left: 30px;" class="other-college"><name>Clumsiness</name><name-loc>Неуклюжесть</name-loc><spell version="2">
+		<name>Clumsiness</name>
+		<name-loc>Неуклюжесть</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Уменьшает ЛВ(DX) объекта на 1 за каждое очко энергии, вложенное в заклинание. Все умения зависящие от ЛВ(DX) тоже уменьшаются.Длительность: 1 минута.Стоимость: 1-5. Половина за поддержание (округлять вверх).Требования: Спазм.Предмет(а) Любой предмет. Всегда включён; Уменьшает ЛВ(DX) владельца. Энергостоимость создания: 100 за каждое уменьшаемое очко ЛВ(DX). (б) Посох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 800.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-5</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M36</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">spasm</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 149px; left: 666px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Shape Earth</name><name-loc>Формировать землю</name-loc><spell version="2">
+		<name>Shape Earth</name>
+		<name-loc>Формировать землю</name-loc>
+		<description-loc>ОбычноеДвигает землю, и придаёт ей любую форму. Если форма стабильна (например, холм), она навсегда сохранится после того, как её придали. Нестабильная форма (например, колонна или стена) держится, только пока действует заклинание – никакой концентрации не требуется –, а потом обрушивается. Может потребоваться бросок Архитектуры, чтобы создать стабильную форму.Земля, которую двигают этим заклинанием, передвигается с Движением 2; камень передвигается с Движением 1. Этим нельзя никому причинить вред, кроме как натечь на неподвижного человека и засыпать его. Если земля движется к человеку, чтобы его засыпать – или из-под него, чтобы сделать яму – он может нормально передвигаться в следующий свой ход, чтобы убежать. Он пойман, только если не сделал этого.Любой, засыпанный неплотной землёй, может попытаться выкопаться. Позволен один бросок в секунду с СЛ(ST)-4. Мастер может сделать этот бросок сложнее, если жертву засыпало более чем двумя кубическими ярдами земли. Жертва может задерживать дыхание (см. Задержка дыхания, B251), но велик риск задохнуться (см. Удушение, B436). Жертва, погребённая под камнем может задержать дыхание, но если у неё нет приспособлений, позволяющих пробиться сквозь сплошной камень, шансов выбраться мало.Длительность: 1 минутаСтоимость: 1 за кубический ярд формируемой земли (минимум 2). Двойная стоимость для каменя; шестикратная для резаного или обработанного камня, например стены. Нелегко сделать собственную дверь в замок.Требуется: Искать землю.ПредметПосох, жезл или украшение, или копательный инструмент. Энергостоимость создания: 200 (500 для предмета, формирующего камень).</description-loc>
+		<college>Earth</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/25 cu ft</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M50</reference>
+		<categories>
+			<category>Earth</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">seek earth</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 335px; left: 666px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Far-Feeling</name><name-loc>Удалённое осязание</name-loc><spell version="2">
+		<name>Far-Feeling</name>
+		<name-loc>Удалённое осязание</name-loc>
+		<description-loc>ОбычноеЦель может осязать любой объект, который видит (даже на большом расстоянии) или сквозь твёрдые предметы не более 6 футов в толщину. Ощущения односторонние (чтобы щипать девиц, используйте заклинание Манипулировать); в частности, маг не может доставлять заклинание через Удалённое осязание!Длительность: 1 минута.Стоимость: 3 сотворение, 1 поддержание.Время сотворения: 3 секунды.Требование: Магичность(Magery) 1.ПредметПерчатки или украшение. Действует только на носящего. Энергостоимость создания: 200.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M100</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="no">
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="contains">one college (knowledge)
+				<level compare="at least">1</level>
+			</notes></advantage_prereq>
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="is anything"></notes>
+				<level compare="at least">1</level>
+			</advantage_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 329px; left: 84px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Walk on Water</name><name-loc>Ходить по воде</name-loc><spell version="2">
+		<name>Walk on Water</name>
+		<name-loc>Ходить по воде</name-loc>
+		<description-loc>ОбычноеХодить по воде, как с преимуществом Ходьба по жидкости (B97).Длительность: 1 минутаСтоимость: 3 сотворение. 2 поддержка.Время сотворения: 4 секунды.Требование: Формировать воду.ПредметПосох, жезл, украшение или одежда. Действует только на носителя. Энергостоимость создания: 500.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>4 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M186</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 329px; left: 187px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Walk on Air</name><name-loc>Ходьба по воздуху</name-loc><spell version="2">
+		<name>Walk on Air</name>
+		<name-loc>Ходьба по воздуху</name-loc>
+		<description-loc>ОбычноеВременно дает преимущество Ходьба по воздуху (B97). Если по любой причине объект падает - заклинание ломается. Если пересоздать заклинание сразу же, субъект будет падать всего секунду (около 5 ярдов) и «приземлится» на воздух, получив 1d вреда (если он до этого не упадет на землю!). Если он находится в 10 футах над пропастью с лавой – у него проблемы!Длительность: 1 минута.Стоимость: 3 создание, 2 поддержание.Требования: Формирование воздуха.ПредметПосох, палочка, украшение или обувь; действует только на носителя. Стоимость: 500 энергии и $1000.</description-loc>
+		<college>Air</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M25</reference>
+		<categories>
+			<category>Air</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape air</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 449px; left: 54px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Debility</name><name-loc>Слабость</name-loc><spell version="2">
+		<name>Debility</name>
+		<name-loc>Слабость</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Временно снижает СЛ(ST) объекта. Это уменьшит наносимый им вред, но не повлияет на ЕЖ(HP). Также уменьшает и грузоподъемность, но Мастер может проигнорировать это в интересах играбельности.Длительность: 1 минута.Стоимость: 1 за каждое уменьшаемое очко СЛ(ST) (максимум -5). Половина за поддержание (округлять вверх).Предмет(а) Посох или палочка. Используется только магами; необходимо указать на объект (касание не обязательно). Энергостоимость создания: 900. (б) Любой предмет. Всегда включён; уменьшает СЛ(ST) владельца. Энергостоимость создания: 100 за каждое уменьшаемое очко СЛ(ST).</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/-ST</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M36</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+	</spell></block><block style="top: 515px; left: 348px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Shape Water</name><name-loc>Формировать воду</name-loc><spell version="2">
+		<name>Shape Water</name>
+		<name-loc>Формировать воду</name-loc>
+		<description-loc>ОбычноеПридаёт воде (включая лёд или пар) любую форму, и даже двигает её. После того, как форма придана, вода удерживает её без дальнейшего сосредоточения, пока заклинание не закончится. Вода, которую двигают этим заклинанием, передвигается с Движением 3.Полезная форма – стена воды, как преграда огненным атакам – 20 галлонов создают стену в 2 ярда высотой и 1 ярд шириной. Она остановит Огненный шар и обычный огонь.Длительность: 1 минута.Стоимость: 1 за 20 сформированных галлонов. Столько же на поддержку.Время сотворения: 2 секунды.Требование: Создать воду.ПредметПосох, жезл или украшение. Энергостоимость создания: 400.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1#</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M185</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 521px; left: 504px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Body of Air</name><name-loc>Тело из воздуха</name-loc><spell version="2">
+		<name>Body of Air</name>
+		<name-loc>Тело из воздуха</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT).Тело объекта становится газообразным, он временно приобретает мета-черту Тело из воздуха (B262). Одежда (до 6 фунтов) также становится воздушной, но теряет магические свойства на время нахождения в этой форме.Длительность: 1 минута.Стоимость: 4 сотворение, 1 поддержание.Время сотворения: 5 секунд.Требования: Формирование воздуха.Предмет(а) Посох, палочка или украшение, действует только на носителя. Однако, сразу после активации предмет выпадает сквозь руки мага – то есть, заклинание, сотворенное с помощью этого предмета, длится только одну минуту. Энергостоимость создания: 800. (б) Посох, палочка, украшение. В отличие от предыдущей версии, приобретает газообразную форму вместе с владельцем, что позволяет поддерживать эффект заклинания дольше, чем одну минуту. Все остальные магические свойства в это время теряются. Энергостоимость создания: 1.500.</description-loc>
+		<college>Air</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular/R-HT</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M24</reference>
+		<categories>
+			<category>Air</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape air</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 719px; left: 30px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Timeport</name><name-loc>Хронопортация</name-loc><spell version="2" very_hard="yes">
+		<name>Timeport</name>
+		<name-loc>Хронопортация</name-loc>
+		<description-loc>ОсобоеПохоже на Телепортацию, только, перемещает во времени вместо пространства. Субъективное «движение» мгновенно. Чем более «удалено» время назначения, тем больше энергостоимость и штраф к умению (см. таблицу Модификаторы времени). В отличие от Телепортации, нет штрафа за прыжок в «незнакомое» время. Хотя Мастер может установить дополнительный штраф (возможно -2) на любой прыжок в будущее.Перемещаясь в будущее, заклинатель попадет в его самый вероятный вариант из всех возможных. Вернувшись и действуя на основании полученных данных, он не обязательно создаст посещенное будущее.Аналогично заклинатель, вернувшийся в прошлое и изменивший что-либо, обратно может вернуться в альтернативную линию времени. Число изменений между «домашней» линией времени и новой будет зависеть от взгляда Мастера на «сопротивляемость искажению» временного потока в его мире(ах).Заклинание опасно - штрафы за неудачный бросок такие же, как у Телепортации с заменой пространства временем. Также как в Телепортации, можно нести вес не более Тяжелой нагрузки (вещи и существа). По прибытию нужен бросок Чувства тела, с модификацией за столкновения, изменения скорости, ориентации.Если заклинатель хочет путешествовать одновременно во времени и пространстве, используется меньшее из умений Телепортация или Хронопортация с объединением штрафов и затрат за расстояние и время.Стоимость: см. таблицу.Требования: Магичность(Magery) 3 и Телепортация.ПредметПосох, палочка, или часы. Используется только магами. Энергостоимость создания: 4.000. Предмет, переносящий владельца в одно предопределенное время, стоит 2.000; создатель предмета должен быть хорошо знаком с тем временем.Модификаторы времени</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M81</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">teleport</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (gate)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 671px; left: 678px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Body of Air</name><name-loc>Тело из воздуха</name-loc><spell version="2">
+		<name>Body of Air</name>
+		<name-loc>Тело из воздуха</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT).Тело объекта становится газообразным, он временно приобретает мета-черту Тело из воздуха (B262). Одежда (до 6 фунтов) также становится воздушной, но теряет магические свойства на время нахождения в этой форме.Длительность: 1 минута.Стоимость: 4 сотворение, 1 поддержание.Время сотворения: 5 секунд.Требования: Формирование воздуха.Предмет(а) Посох, палочка или украшение, действует только на носителя. Однако, сразу после активации предмет выпадает сквозь руки мага – то есть, заклинание, сотворенное с помощью этого предмета, длится только одну минуту. Энергостоимость создания: 800. (б) Посох, палочка, украшение. В отличие от предыдущей версии, приобретает газообразную форму вместе с владельцем, что позволяет поддерживать эффект заклинания дольше, чем одну минуту. Все остальные магические свойства в это время теряются. Энергостоимость создания: 1.500.</description-loc>
+		<college>Air</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular/R-HT</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M24</reference>
+		<categories>
+			<category>Air</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape air</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 725px; left: 624px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Windstorm</name><name-loc>Ураган</name-loc><spell version="2">
+		<name>Windstorm</name>
+		<name-loc>Ураган</name-loc>
+		<description-loc>ОбластноеКруговорот ветра с центром спокойствия внутри (хорошее место для мага). Центр спокойствия может быть диаметром вплоть до половины диаметра бури – или меньше, по желанию мага. Концентрируясь, маг может перемещать бурю на любое расстояние вплоть до ее собственного диаметра в секунду; центр спокойствия перемещается вместе с ней. Маг может перемещаться сам со скоростью до половины своего нормального Движения в пределах центра, концентрируясь на заклинании.Любой, попавший в достигший полной силы Ураган должен делать бросок СЛ(ST) каждую секунду, или будет сбит с ног ветром. Все ЛВ(DX)-умения получают -5, а дистанционные атаки штраф -10 за каждый ярд бури, через который они проходят.За удвоенную стоимость маг может создать еще более мощный Ураган, подобный торнадо. Броски СЛ(ST), чтобы остаться на ногах, делаются с -5, дистанционные атаки сквозь него вообще невозможы;  видимость в пределах действия в лучшем случае один ярд. Этот мощный ураган физически поднимает и разбрасывает объекты весом вплоть до 30 фунтов за каждый ярд радиуса.Длительность: 1 минута после достижения полной силы.Базовая стоимость: 2. Половина за поддержание.Время сотворения: Ураган возникает немедля, но маг должен концентрироваться в течение количества секунд, равного радиусу урагана в ярдах, чтобы вихрь достиг полной силы.Требования: Формирование воздуха.</description-loc>
+		<college>Air</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>Instant</casting_time>
+		<duration>1 min</duration>
+		<reference>M25</reference>
+		<categories>
+			<category>Air</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape air</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 215px; left: 342px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Poltergeist</name><name-loc>Полтергейст</name-loc><spell version="2">
+		<name>Poltergeist</name>
+		<name-loc>Полтергейст</name-loc>
+		<description-loc>Метательное; сопротивление по ЗД(HT)Швыряет объект в цель, выбранную заклинателем. Эффект — как если бы человек с СЛ(ST) 15 кинул объект (см. Метание, B355). Когда он ударяется обо что-то, то наносит дробящие повреждения. Бросок ЛВ(DX)-4 или умение Метания необходим, чтобы попасть по цели, которая может уклоняться или блокировать как обычно. Заметьте, что только объект заклинания — не цель — может сопротивляться! 1/2Д 20, Мах 60, Точ 1. Рассчитывая расстояние до цели, берите расстояние или от заклинателя, или от предмета, который кидается, используя большее из них.Стоимость: 1 за предмет до 10 фунтов (1d вреда); 2 до 25 фунтов (1d 1 вреда).ПредметПосох или жезл. Используется только магами; предметом указать на объект, потом на цель. Энергостоимость создания: 1.000.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Missile</spell_class>
+		<casting_cost>1 or 2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<ranged_weapon>
+			<damage>Special cr</damage>
+			<accuracy>1</accuracy>
+			<range>20/60</range>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Throwing</name>
+				<modifier>0</modifier>
+			</default>
+		</ranged_weapon>
+		<reference>M144</reference>
+		<notes>throws object with ST 15, p. B355.  Cost: 1 pt for an item up to 10 lbs (1d dmg); 2 pts for something up to 25 lbs (1d 1 dmg).</notes>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 215px; left: 558px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Lighten Burden</name><name-loc>Облегчение ноши</name-loc><spell version="2">
+		<name>Lighten Burden</name>
+		<name-loc>Облегчение ноши</name-loc>
+		<description-loc>ОбычноеУменьшает вес любого снаряжения, которое несет объект.Длительность: 10 минут.Стоимость: 3 за уменьшение на 25%; 5 за уменьшение на 50%. Половина (округлить вверх) поддержание.Время сотворения: 3 секунды.Требования: Перемещение.ПредметРюкзак, уменьшающий вес вещей, переносимых в нем. Энергостоимость создания: 300 за уменьшение на 25%; 600 за уменьшение на 50%.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>10 min</duration>
+		<reference>M143</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 215px; left: 666px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Light Tread</name><name-loc>Легкий шаг</name-loc><spell version="2">
+		<name>Light Tread</name>
+		<name-loc>Легкий шаг</name-loc>
+		<description-loc>ОбычноеПозволяет ходить по любой поверхности (которая выдерживает его вес), не оставляя следов, что делает следопытство невозможным. Если на поверхности присутствует растительность, некоторые следы объекта остаются, делая следопытство возможным, со штрафом -8. Заклинание также позволяет объекту избежать срабатывания нажимных частей ловушек и .т.п.Длительность: 10 минут.Стоимость: 4 сотворение. 1 поддержание. Если заклинатель также знает Скрыть следы, то допольнительная единица энергии при сотворении и поддержке гарантирует, отсутствие следов даже на растительности.Требования: Перемещение и Формировать землю.ПредметОбувь; на предмете должно быть изображение зайчихи. Энергостоимость создания: 400.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>10 min</duration>
+		<reference>M145</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shape earth</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 215px; left: 450px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Dancing Object</name><name-loc>Танцующий объект</name-loc><spell version="2">
+		<name>Dancing Object</name>
+		<name-loc>Танцующий объект</name-loc>
+		<description-loc>ОбычноеОживляет один предмет для повторяющейся работы. Он может совершать примерно те же задания, что и человек с СЛ(ST) 15: ведро может носить воду из ручья в бочку, метла может подметать здание снова и снова, арбалет может самостоятельно взводиться и т.п. Задачи объекта не могут изменяться или зависеть от каких-либо событий... он просто бездумно продолжает свою работу. Умное использование Связи позволяет Танцующему объекту эффективно отвечать на ситуации, но это требует тщательного продумывания.Длительность: 1 час.Стоимость: 4 сотворение. 2 поддержка.Время сотворения: 10 секунд.Требования: Магичность(Magery) 2 и Перемещение.ПредметМожет быть наложено на любой предмет навсегда . Стоимость создания: 400 энергии и на $500 магических ингредиентов. Объект необходимо «проводить» по его программе 1 раз в день пока действует чара.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M144</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 275px; left: 342px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Winged Knife</name><name-loc>Крылатый кинжал</name-loc><spell version="2">
+		<name>Winged Knife</name>
+		<name-loc>Крылатый кинжал</name-loc>
+		<description-loc>МетательноеМагически бросает любое оружие. Оружие является «объектом» для определения расстояния для сотворения. 1/2Д 20, Мах 40, Точ 1. Если он попадает, то наносит повреждения, как если бы его кинул человек с СЛ(ST) 15. Базовые прямые повреждения для этой СЛ(ST) 1d 1; базовые амплитудные повреждения — 2d 1. Стоимость: 1 за фунт веса оружия. Стоимость удваивается за оружие, которое обычно не кидается (например, меч). Требования: Полтергейст.ПредметЛюбое оружие. По команде держателя оружие выпрыгивает из его руки, или из ножен, чтобы лететь к цели. Это считается маневром атаки, проводимым с ЛВ(DX), равной силе предмета. Энергостоимость создания: 300 за фунт веса оружия, минимум 300.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Missile</spell_class>
+		<casting_cost>1/lb</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<ranged_weapon>
+			<damage>per weapon</damage>
+			<accuracy>1</accuracy>
+			<range>20/40</range>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Throwing</name>
+				<modifier>0</modifier>
+			</default>
+		</ranged_weapon>
+		<reference>M145</reference>
+		<notes>throws any weapon with ST 15</notes>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">poltergeist</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 269px; left: 504px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Deflect Missile</name><name-loc>Отклонить снаряд</name-loc><spell version="2">
+		<name>Deflect Missile</name>
+		<name-loc>Отклонить снаряд</name-loc>
+		<description-loc>БлокирующееОтклоняет один снаряд, который вот-вот попадет в объект — включая все Метательные заклинания. Игротехнически считается парированием. Если объектом заклинания является не маг, применяются модификаторы дистанций как для Стандартного заклинания. Отраженные атаки не теряют поражающей силы и могут ранить кого-то рядом. Это также заклинание Защиты и Предупреждения.Стоимость: 1.Требования: Перемещение.</description-loc>
+		<college>Movement/Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M143</reference>
+		<categories>
+			<category>Movement</category>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 269px; left: 612px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Distant Blow</name><name-loc>Дальний удар</name-loc><spell version="2">
+		<name>Distant Blow</name>
+		<name-loc>Дальний удар</name-loc>
+		<description-loc>ОбычноеАтакует объект на расстоянии. Заклинатель выбирает одно рукопашное оружие, которое на протяжении заклинания получает бесконечную досягаемость, но только по отношению к объекту. Оружие должно быть наносящим удары — кастет подходит, а удавка — нет! Пока объект находится в поле зрения заклинателя, оружие заклинателя может атаковать его. Объект защищается нормально (уклон, блок, парирование), как если бы с ним сражался невидимый двойник заклинателя. Тело заклинателя (для ударов руками, укусов и пинков) считается одним оружием для этого заклинания. Если объект подбирается ближе, чем на реальную Досягаемость (reach) оружия, применяются обычные правила. Оружие не вытягивается и не выпрыгивает из руки заклинателя, сила удара передается магически. Примените стандартные модификаторы дистанционного боя (B548) к атакам заклинателя. Заметьте, что магические свойства оружия (например, Пылающее оружие) или заклинателя (Касательные заклинания) не могут быть использованы с этим заклинанием!Длительность: 5 секунд.Стоимость: 3. Столько же поддержание.Время сотворения: 3 секунды.Требования: Магичность(Magery) 2 и Перемещение.ПредметПосох или другое оружие. Энергостоимость создания: 1.000 за фунт веса оружия (минимум 1 фунт).</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>5 sec</duration>
+		<reference>M144</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 329px; left: 288px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Jump</name><name-loc>Прыжок</name-loc><spell version="2">
+		<name>Jump</name>
+		<name-loc>Прыжок</name-loc>
+		<description-loc>ОбычноеУлучшает способность объекта к прыжкам, увеличивая его Базовое Движение только для прыжков.Длительность: 1 минута.Стоимость: от 1 до 3 сотворение. Не поддерживается. Увеличение Базового Движения равно удвоенной вложенной энергии.Требования: Перемещение.ПредметПосох, украшение или обувь. На предмете должно быть изображение кузнечика, кролика или оленя. Энергостоимость создания: 250 за единицу премии к прыжку, которую дает предмет (максимум 6).</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M143</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 341px; left: 396px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Slow Fall</name><name-loc>Замедлить Падение</name-loc><spell version="2">
+		<name>Slow Fall</name>
+		<name-loc>Замедлить Падение</name-loc>
+		<description-loc>ОбычноеУменьшает скорость падения объекта до 1 ярда в секунду. При приземлении на обычную поверхность объект не получит вреда (шипы и т.п. наносят половину вреда). Это заклинание можно сотворить до начала падения объекта. Если объект уже падает, он упадет еще на 10 футов (предполагая стандартную гравитацию 1G) в ту секунду, которая обычно требуется для сотворения этого заклинания. Длительность: 1 минута.Стоимость: 1 за 50 фунтов веса. Половина поддержание.Требования: Перемещение.ПредметОдежда или украшение. Энергостоимость создания: 1.000.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1 per 50 lbs</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M144</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 335px; left: 558px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Locksmith</name><name-loc>Взлом</name-loc><spell version="2">
+		<name>Locksmith</name>
+		<name-loc>Взлом</name-loc>
+		<description-loc>ОбычноеПозволяет манипулировать маленькими деталями — например, внутри замка. Дает объекту  5 к умению Взлом, позволяя ему двигать механизмы замка., не прикасаясь к ним, как если бы у него были обычные инструменты. Позволяет волшебнику без инструментов пробовать открывать замок на его обычном умении Взлом. Дает аналогичную премию к Механику и другим умениям, где была бы полезной «третья рука». Длительность: 1 минута. (Одна минута позволяет одну попытку для обычного замка.) Открытый замок остается открытым, пока его не закроют.Стоимость: 2 сотворение, 2 поддержание.Требования: Перемещение.ПредметЗолотой ключ, или золотой амулет в форме ключа. Его собственная стоимость должна быть не меньше $300. Энергостоимость создания: 1.000.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M143</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 401px; left: 612px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Manipulate</name><name-loc>Манипулировать</name-loc><spell version="2">
+		<name>Manipulate</name>
+		<name-loc>Манипулировать</name-loc>
+		<description-loc>ОбычноеПозволяет манипулировать более крупными предметами, чем заклинание Взлом. Может развязывать веревки, поворачивать дверные ручки, поворачивать рычаг ручной мельницы и т.п. Заклинателю не обязательно прикасаться к объекту. Любая работа, достаточно сложная для того, чтобы давать штраф к ЛВ(DX), дает тот же штраф к этому заклинанию.Длительность: 1 минута. (Это позволяет развязать обычный узел.)Стоимость: 4 сотворение и 3 поддержка за каждые 10 фунтов, которыми манипулирует заклинание.Требования: Взлом.ПредметПалочка, посох или перчатка. Энергостоимость создания: 600.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M145</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">locksmith</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 401px; left: 504px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Lockmaster</name><name-loc>Повелитель замков</name-loc><spell version="2">
+		<name>Lockmaster</name>
+		<name-loc>Повелитель замков</name-loc>
+		<description-loc>Обычное; Сопротивляется по Волшебному замкуОткрывает замки магически. Заклинание Волшебного замка получает бросок сопротивления Повелителю замков. Любые модификаторы за сложность замка, которые применялись бы к умению Взлом, влияют также и на это заклинание.Длительность: Открытый замок остается открытым, пока его не закроют.Стоимость: 3. Не поддерживается.Время сотворения: 10 секунд.Требования: Или Магичность(Magery) 2 и Перемещение, или Взлом.ПредметПлатиновый ключ, или платиновый амулет в форме ключа. Его собственная стоимость должна быть не меньше $800. Энергостоимость создания: 2.000.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M144</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">locksmith</name>
+			</spell_prereq>
+			<prereq_list all="yes">
+				<spell_prereq has="yes">
+					<name compare="is">apportation</name>
+				</spell_prereq>
+				<prereq_list all="no">
+					<advantage_prereq has="yes">
+						<name compare="is">magery</name>
+						<notes compare="contains">one college (movement)
+						<level compare="at least">2</level>
+					</notes></advantage_prereq>
+					<advantage_prereq has="yes">
+						<name compare="is">magery</name>
+						<notes compare="is anything"></notes>
+						<level compare="at least">2</level>
+					</advantage_prereq>
+				</prereq_list>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 407px; left: 396px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Wallwalker</name><name-loc>Ходить по стенам</name-loc><spell version="2">
+		<name>Wallwalker</name>
+		<name-loc>Ходить по стенам</name-loc>
+		<description-loc>ОбычноеПозволяет ходить по стенам или потолкам, как если бы они были горизонтальными поверхностями.  Объект должен держать хотя бы одну руку или ногу в контакте с поверхностью; иначе заклинание нарушается. Бой имеет штраф -2 и для ходящего по стенам, и для его противника из-за непривычных углов.Длительность: 1 минута.Стоимость: 1 за 50 фунтов, минимум 2. Половина поддержание.Требования: Перемещение.ПредметУкрашение или обувь.  На предмете должно быть изображение паука, мухи или ящерицы. Действует только на носителя. Энергостоимость создания: 1.000.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1 per 50 lbs</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M144</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 395px; left: 132px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Cloud Walking</name><name-loc>Ходьба по облакам</name-loc><spell version="2">
+		<name>Cloud Walking</name>
+		<name-loc>Ходьба по облакам</name-loc>
+		<description-loc>ОбычноеПозволяет ходить по облакам (включая туман), как если бы они были твердыми. Если объект по какой-либо причине (например, ранение) падает, заклинание нарушено! Если заклинание немедленно наложено еще раз, объект падает только 1 секунду (примерно 5 ярдов); если он все еще в облаке, ему придется «прокапывать» свой путь наружу, что займет около 5 секунд. Если он уже провалился сквозь облако - у него проблемы! Это также заклинание Погоды.Длительность: 1 час.Стоимость: 3 сотворение. 2 поддержание.Требования: Ходить по воздуху и Ходить по воде.ПредметПосох, палочка, украшение или обувь. Украшение и обувь действуют только на носителя. Энергостоимость создания: 500.</description-loc>
+		<college>Movement/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M148</reference>
+		<categories>
+			<category>Movement</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">walk on air</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">walk on water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 395px; left: 240px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery2"><name>Cloud Vaulting</name><name-loc>Прыжки по облакам</name-loc><spell version="2" very_hard="yes">
+		<name>Cloud Vaulting</name>
+		<name-loc>Прыжки по облакам</name-loc>
+		<description-loc>ОбычноеПреодолевать огромные расстояния несколькими движениями. Объект подбрасывается в воздух и прыгает к своему назначению, используя облака как батуты. Прыжки по облакам можно творить только под открытым небом.Каждый раз при сотворении объект перемещается на не более чем 100 миль, плюс 100 миль за каждую единицу умения выше ЛВ(DX) в Акробатике. Если в небе нет облаков (что часто случается в пустынях), объект не может переместиться более чем на 100 миль. Бури аналогичным образом перекроют путь объекта. Каждые 100 миль требуется бросок Акробатики, со штрафом, равным уровню нагрузки объекта. При провале, объект падает 3dx3 ярдов (B431), и приземляется в случайной точке на запланированном пути — Замедлить падение спасет объект от вреда, но заклинание Прыжков по облакам все равно нарушено.Это заклинание вызывает головокружение; как только объект прибудет на место назначения (или провалит бросок Акробатики), объект будет физически оглушен, если не проведет бросок Чувства тела на -1 за каждые 100 миль, которые он преодолел.Это также заклинание Погоды.Длительность: 1 секунда за 100 миль.Стоимость: 7 сотворение. Не поддерживается.Требования: Магичность(Magery) 2, Прыжок и Ходить по воздуху.Предмет(а) Обувь. На предмете должен быть узор из облаков. Энергостоимость создания: 4.000. (б) Украшение, палочка, или посох. Используется только магами. Энергостоимость создания: 3.000.</description-loc>
+		<college>Movement/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>7</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 sec/100 miles</duration>
+		<reference>M148</reference>
+		<categories>
+			<category>Movement</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">walk on air</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">jump</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (weather)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 527px; left: 240px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery2"><name>Flight</name><name-loc>Полет</name-loc><spell version="2" very_hard="yes">
+		<name>Flight</name>
+		<name-loc>Полет</name-loc>
+		<description-loc>ОбычноеПозволяет летать по воздуху под собственным контролем, без крыльев, с Движением 10. Скорость полета уменьшается за нагрузку нормальным образом. Летающий персонаж может передвигаться и сражаться как обычно, и имеет преимущество в бою, если находится над врагами (B402).Длительность: 1 минута.Стоимость: 5 сотворение. 3 поддержание.Время сотворения: 2 секунды.Требования: Магичность(Magery) 2 и Левитация.ПредметПосох, палочка или украшение. Используется только магами; действует только на носителя. Энергостоимость создания: 2.500.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M145</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">levitation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 647px; left: 240px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery2"><name>Hawk Flight</name><name-loc>Полет сокола</name-loc><spell version="2" very_hard="yes">
+		<name>Hawk Flight</name>
+		<name-loc>Полет сокола</name-loc>
+		<description-loc>ОбычноеОчень быстрое заклинание Полета. Объект получает Движение 40 (80 миль в час) без нагрузки; нагрузка уменьшает Движение обычным образом. Объект может передвигаться и сражаться как обычно, и имеет преимущество в бою, если находится над врагами (B402).Длительность: 1 минута.Стоимость: 8 сотворение. 4 поддержка.Время сотворения: 3 секунды.Требования: Полет.ПредметПосох, палочка или украшение. Используется только магами; действует только на носителя. Энергостоимость создания: 3.000.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>8</casting_cost>
+		<maintenance_cost>4</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M146</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">flight</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 593px; left: 186px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard"><name>Flying Carpet</name><name-loc>Летучий ковер</name-loc><spell version="2" very_hard="yes">
+		<name>Flying Carpet</name>
+		<name-loc>Летучий ковер</name-loc>
+		<description-loc>ОбычноеПревращает ковер (или любой другой объект, на или в котором можно стоять — котел, стул, полотенце, метла и т. п.) в летающее транспортное средство. Оно находится под командой первого человека, вставшего на него. Если на объекте в момент сотворения заклинания уже находятся несколько человек, проведите Быстрое состязание Воли(Will), чтобы понять, кто получит контроль; заклинатель (если находится на ковре) получает в этом состязании премию  5. Если пилот покидает ковер, проведите еще одно быстрое состязание Воли(Will) между оставшимися пассажирами, чтобы определить, кто получает контроль.Максимальное Движение ковра равно эффективному умению заклинателя, и он может справиться с поворотами вплоть до 1G без бросков умения (B466). Используйте умение Пилотирование (Антигравы) (B214), чтобы управлять ковром.В общем, летящий на ковре, не может упасть с него, если он специально не спрыгнет, или если его не собьет с ковра препятствие (например, ветка дерева) или атака; ковер держит своих пассажиров на борту, используя магию и ловкое маневрирование. Летучий ковер не наклоняется, не складывается и не сгибается; это заклинание предоставляет устойчивую, горизонтальную поверхность (из-за чего весьма сложно пролетать через узкие щели). Любой находящийся на ковре, кто занят энергичной деятельностью, такой как бой, должен делать бросок ЛВ(DX) каждый ход, чтобы не упасть с ковра (Мастер может модифицировать этот бросок в зависимости от деятельности). Во всех остальных отношениях, считайте кого-либо, сражающегося на ковре, как находящегося на земле (игнорируйте специальные правила для летающих бойцов на B548). Персонажи, прицеливающиеся дистанционным оружием с летучего ковра, могут получить только премию Точ; дополнительное время прицеливания не дает дополнительных премий. Разумеется, кто-либо, сражающийся с летучей метлы или стула, получит обычные штрафы за то, что он сидит (B547).Добрый Мастер может обговорить, что после того как заклинатель отменит заклинание, транспортное средство останется летучим еще 2d 2 секунд, с тряской, усиливающейся каждую секунду. Это в некоторых случаях позволит совершить безопасную, хотя и напряженную, посадку.Длительность: 10 минут.Стоимость: 1 за квадратный фут поверхности. Каждый квадратный фут может нести около 25 фунтов (или меньше, если ковер сделан из непрочного материала). Половина поддержание.Время сотворения: 5 секунд.Требования: или Магичность(Magery) 2 и Ходить по воздуху, или Полет.ПредметКовер может быть заколдован навсегда за 200-кратную стоимость.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/sq foot of surface</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>10 min</duration>
+		<reference>M146</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="no">
+			<prereq_list all="yes">
+				<prereq_list all="no">
+					<advantage_prereq has="yes">
+						<name compare="is">magery</name>
+						<notes compare="contains">one college (movement)
+						<level compare="at least">2</level>
+					</notes></advantage_prereq>
+					<advantage_prereq has="yes">
+						<name compare="is">magery</name>
+						<notes compare="is anything"></notes>
+						<level compare="at least">2</level>
+					</advantage_prereq>
+				</prereq_list>
+				<spell_prereq has="yes">
+					<name compare="is">walk on air</name>
+				</spell_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">flight</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 515px; left: 30px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Long March</name><name-loc>Долгий поход</name-loc><spell version="2">
+		<name>Long March</name>
+		<name-loc>Долгий поход</name-loc>
+		<description-loc>Обычное; сопротивление по СЛ(ST)Уменьшает вдвое скорость пешего перехода объекта на дальние дистанции (B351). Не влияет на Движение или Базовую Скорость объекта в бою. Длительность: 1 день.Стоимость: 3 сотворение. Не поддерживается.Время сотворения: 1 минута.Требования: Магичность(Magery) 1 и либо Неуклюжесть, либо Слабость.Предмет(а) Посох, жезл или украшение. Используется только магами. Энергостоимость создания: 400. (б) Обувь.  На предмете должно быть изображение улитки. Включен постоянно; действует только на носителя. Энергостоимость создания: 300.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 day</duration>
+		<reference>M143</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">debility</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">clumsiness</name>
+				</spell_prereq>
+			</prereq_list>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 461px; left: 240px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Levitation</name><name-loc>Левитация</name-loc><spell version="2">
+		<name>Levitation</name>
+		<name-loc>Левитация</name-loc>
+		<description-loc>Обычное; сопротивление по СЛ(ST) или Воле(Will).Объект должен быть живым существом. Объект плывет сквозь воздух, перемещаясь так, как желает заклинатель. Передвижение левитируемого объекта требует Концентрацию, если заклинатель не является объектом. Оставить объект подвешенным в воздухе можно без концентрации. Максимальное Движение объекта равно 3, горизонтально или вертикально. Заклинатель, который левитирует себя, использует ЛВ(DX)-умения как обычно; другие объекты используют их с -3.Длительность: 1 минута.Стоимость: 1 за 80 фунтов (минимум 2) сотворение. Половина (округлить вверх) поддержание.Время сотворения: 2 секунды.Требования: Перемещение.Предмет(а) Посох, жезл или украшение; действует только на носителя. Энергостоимость создания: 800.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1 per 80 lbs</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M143</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 461px; left: 342px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Increase Burden</name><name-loc>Увеличить ношу</name-loc><spell version="2">
+		<name>Increase Burden</name>
+		<name-loc>Увеличить ношу</name-loc>
+		<description-loc>Обычное; особое сопротивлениеУвеличивает вес объекта, носитель объекта (если таковой имеется) сопротивляется Воле(Will)й. Полезно, чтобы замедлить наступающего рыцаря или не дать ветру унести вещи.Длительность: 10 минут.Стоимость: 1 за 25 фунтов исходного веса (или долю) за удвоение, вдвое больше за утроение и еще вдвое больше за учетверение. Половина на поддержание.Время сотворения: 3 секунды.Требования: Перемещение.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>10 min</duration>
+		<reference>M143</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 461px; left: 450px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Hold Fast</name><name-loc>Устоять</name-loc><spell version="2">
+		<name>Hold Fast</name>
+		<name-loc>Устоять</name-loc>
+		<description-loc>БлокирующееЭто заклинание отменяет отбрасывание от любого источника.Стоимость: 1 за каждый ярд отмены отбрасывания.Требования: Перемещение.ПредметОбувь или украшение. На предмете должно быть изображение быка или дуба. Включен постоянно. Энергостоимость создания: 300.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>1/yd</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M143</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 455px; left: 558px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Undo</name><name-loc>Развязать</name-loc><spell version="2">
+		<name>Undo</name>
+		<name-loc>Развязать</name-loc>
+		<description-loc>Обычное; Особое сопротивлениеРазвязывает узлы и крепления любого типа, которые обычно можно развязать руками (но не замки). Критический успех сможет даже разделить кольчугу на ее составные звенья! Полезно чтобы незаметно украсть у кого-то серьги, ожерелья, и т. п. Может снять тетиву с лука, расстегнуть рубашку, расшнуровать корсаж, расстегнуть пояс... Стоимость: 3 за одну завязку, на 1 больше за каждую следующую цель в пределах 1 ярда; 6 достаточно, чтобы развязать все в радиусе 1 ярда, хотя человек в этой области сопротивляется своей Воле(Will)й. Более тяжелые предметы можно развязать за пропорциональную стоимость. Например, если маг закован в цепи, он может Развязать звено цепи, изогнув его до открытого состояния. Мастер устанавливает СЛ(ST), необходимое для разгибания звена руками как 20 (вдвое больше нормальной силы). Поэтому стоимость Развязывания звена вдвое больше обычной, то есть 6.Требования: Взлом.Предмет(а) Палочка, посох или перчатка. Действует только на носителя;  должен касаться объекта. Энергостоимость создания: 400. (б) Амулет, дающий иммунитет к заклинанию Развязывания. Энергостоимость создания: 40.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M145</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">locksmith</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 467px; left: 666px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Wizard Hand</name><name-loc>Волшебная рука</name-loc><spell version="2">
+		<name>Wizard Hand</name>
+		<name-loc>Волшебная рука</name-loc>
+		<description-loc>СтандартноеСоздаёт копию физической кисти заклинателя, которой он может хватать и осязать. Рука летает по воздуху с Движением 10, в ход заклинателя, хотя она не может этого делать, не врезаясь в препятствия, если её не сопровождает Волшебный глаз или ухо! Альтернативно, она может ощупывать себе дорогу вдоль стен, полов и потолков с Движением 3. Концентрация требуется, чтобы двигать Руку, но не чтобы держать или осязать через неё. Рука не может колдовать или удерживать заклинания. Любые улучшающие осязание заклинания, действующие на заклинателя, можно также использовать через Руку. Когда заклинатель осязает через Руку, его собственные руки нечувствительны. Каждый ход, он должен указывать, осязает ли он через Руку или через собственные руки.Рука маленькая, с МР(SM) -5, но если в неё попадут физической атакой, или любым заклинанием, которое могло бы её вывести из строя, это её уничтожит. Сама рука не может наносить урон ударом; у неё СЛ(ST) 2 и ЛВ(DX) заклинателя.Это также заклинание Движения.Длительность: 1 минута.Стоимость: 4 сотворение, 2 поддержка для одной Руки; 6 сотворение, 4 поддержка для двух Рук.Время сотворения: 3 секунды.Требования: Манипулировать и Удалённое осязание.Предмет(а) Любой предмет, изображающий человеческую руку, может быть превращён в стационарную Волшебную Руку, через которую носитель перчатки, зачарованной одновременно, может ощупывать независимо от расстояния. Каждая Рука соединяется с одной перчаткой и наоборот. Энергостоимость создания: 300. (б) Рука, вырезанная из драгоценной древесины. Используется только магами. По приказу держащего её, она превращается в Волшебную руку; по возвращению в его руку она возвращается в форму предмета. Стоимость создания: 400 энергии, $500 за материалы и работу.</description-loc>
+		<college>Knowledge/Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M104</reference>
+		<categories>
+			<category>Knowledge</category>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">manipulate</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">far-feeling</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 581px; left: 348px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Swim</name><name-loc>Плавание</name-loc><spell version="2">
+		<name>Swim</name>
+		<name-loc>Плавание</name-loc>
+		<description-loc>ОбычноеПозволяет двигаться сквозь воду с нормальным Движением (уменьшенным как обычно за нагрузку). Объект полностью контролирует свое передвижение, и может действовать и сражаться без обычных штрафов за подводный бой. Это заклинание не дает объекту воздух для дыхания! Однако, объект имеет автоматические успехи на всех бросках Плавания, независимо от усталости или нагрузки, если его силой не затаскивают целиком под воду. Это также заклинание Воды.Длительность: 1 минута.Стоимость: 6 сотворение. 3 поддержание.Время сотворения: 3 секунды.Требования: Формировать воду и Левитация.ПредметПосох, палочка, украшение или накидка. На предмете должно быть изображение рыбы . Действует только на носителя. Энергостоимость создания: 1.000.</description-loc>
+		<college>Movement/Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>6</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M147</reference>
+		<categories>
+			<category>Movement</category>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">levitation</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 587px; left: 558px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Ethereal Body</name><name-loc>Эфирное тело</name-loc><spell version="2" very_hard="yes">
+		<name>Ethereal Body</name>
+		<name-loc>Эфирное тело</name-loc>
+		<description-loc>ОбычноеОбъект становится эфирным и может двигаться сквозь твердые объекты и существ, как если бы их там не было. Его одежда тоже становится эфирной, но не его снаряжение. Он не может владеть оружием или передвигать предметы, и ему не надо дышать, есть или пить, пока он эфирный. Он становится, почти по всем критериям, призраком. Его можно увидеть, хотя он выглядит прозрачным, и его можно услышать, если он говорит.Физические атаки и большая часть магии не могут воздействовать на эфирного персонажа. Однако любые заклинания школ Общения и понимания или Контроля разума действуют на него, как обычно, а броски сопротивления им имеют штраф -2! Аналогично, заклинания Некромантии, воздействующие на разум или душу, действуют, как обычно, а броски сопротивления им имеют штраф -2.Эфирные персонажи могут применять магию, но с -5 к умению; эфирный план, похоже, является зоной низкой маны. Эфирные тела могут проникать друг в друга, и не могут причинять друг другу вред, кроме как заклинаниями, как описано выше.Длительность: 10 секундСтоимость: 8 сотворение. 4 поддержание.Время сотворения: 30 секунд.Требования: Магичность(Magery) 3 и или Тело из воздуха, или 6 заклинания Движения.Предмет(а). Посох, палочка, украшение или накидка; действует только на носителя. Существенный недостаток состоит в том, что, за исключением накидки, предмет проваливается сквозь заклинателя как только заклинание сотворено! Энергостоимость создания: 3.000 (8.000 за накидку). (б) Драгоценный камень, который светится и вибрирует, когда в пределах 50 ярдов от него находится какое-нибудь эфирное существо. Стоимость создания: драгоценный камень за $500, и 100 энергии.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>8</casting_cost>
+		<maintenance_cost>4</maintenance_cost>
+		<casting_time>30 sec</casting_time>
+		<duration>10 sec</duration>
+		<reference>M146</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="no">
+			<prereq_list all="yes">
+				<prereq_list all="no">
+					<advantage_prereq has="yes">
+						<name compare="is">magery</name>
+						<notes compare="contains">one college (movement)
+						<level compare="at least">3</level>
+					</notes></advantage_prereq>
+					<advantage_prereq has="yes">
+						<name compare="is">magery</name>
+						<notes compare="is anything"></notes>
+						<level compare="at least">3</level>
+					</advantage_prereq>
+				</prereq_list>
+				<spell_prereq has="yes">
+					<name compare="is">body of air</name>
+				</spell_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<college compare="contains">movement</college>
+				<quantity compare="at least">6</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 719px; left: 162px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard"><name>Teleport</name><name-loc>Телепортация</name-loc><spell version="2" very_hard="yes">
+		<name>Teleport</name>
+		<name-loc>Телепортация</name-loc>
+		<description-loc>ОсобоеМгновенно перемещает заклинателя на другое место. Однако, чем дальше находится это место, тем больше энергии требуется потратить, и тем больше штраф к умению, как указано далее:Обычно можно телепортироваться только на место, на которое вы смотрите, или на место, с которым вы знакомы. Штрафы: -2 за место, которое вы «видели» только через разум или память кого-то еще, или по телевизору; -2 за место, где вы не были больше месяца (кроме, возможно, вашего дома!); и от -1 до -3 за место, которое видели мельком.Это заклинание еще и опасно. Если вы провалите свой бросок на 1, то получите 1d вреда и попадете в точку назначения физически оглушенным (бросок ЗД(HT), чтобы восстановится). Если вы провалите бросок заклинания больше, чем на 1, вы не получаете вреда — но оказываетесь где-то не там. Где именно — решает Мастер! Критический провал этого заклинания может послать заклинателя куда угодно Мастеру — пусть это будет интересно! — и наносит физический вред, пока заклинатель не умрет.Даже успешная телепортация может сбить с толку. Волшебник должен сделать бросок умения Чувства тела (B181), чтобы действовать дальше в ход телепортации. Проваленный бросок означает дезориентацию — никакие действия кроме защиты невозможны на этом ходу. Критический провал означает, что он падает и физически оглушен. Телепортирующийся прибывает в той же самой позе, в которой он был. Он может быть повернутым в другую сторону, но это делает более вероятным то, что он будет дезориентирован по прибытии: -2 чтобы быть направленным в другую сторону, -5 чтобы из вертикального положения принять горизонтальное, или наоборот!Расстояние	Стоимость	УмениеНе более 10 ярдов	3	011-20 ярдов	4	-120-100 ярдов	5	-2101-500 ярдов	6	-3От 501 ярда до 1.99 мили	7	-4От 2 до 9.99 мили	8	-5От 10 до 99.99 мили	9	-6От 100 до 999.99 мили	10	-7Расстояние x10	1	-1Все, что было у вас с собой, вплоть до «тяжелой» нагрузки, перемещается с вами. Вы также можете взять с собой одного человека, держась с ним за руки, если добавленный вес не превышает предел вашей «тяжелой» нагрузки. На проваленном броске, он будет страдать от тех же побочных эффектов, что и вы.Это также заклинание Врат.Требования: или ИН(IQ) не ниже 13 и хотя бы одно заклинание из 10 разных школ, или Полет сокола.ПредметПосох или палочка; используется только магами. Энергостоимость создания: 3.000. Предмет, берущий носителя в одно заранее определенное место, имеет энергостоимость создания 2.000; заклинатель должен знать это место очень хорошо.</description-loc>
+		<college>Gate/Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M147</reference>
+		<categories>
+			<category>Gate</category>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">hawk flight</name>
+			</spell_prereq>
+			<prereq_list all="yes">
+				<attribute_prereq has="yes" which="iq" compare="at least">13</attribute_prereq>
+				<spell_prereq has="yes">
+					<college_count compare="at least">10</college_count>
+				</spell_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 785px; left: 162px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Teleport Other</name><name-loc>Телепортация другого</name-loc><spell version="2" very_hard="yes">
+		<name>Teleport Other</name>
+		<name-loc>Телепортация другого</name-loc>
+		<description-loc>Обычное; сопротивление по Воле(Will) 1Как Телепортация, но заклинатель остается на месте, а объектом может быть что или кто угодно. Нельзя телепортировать только часть объекта; также твердое тело нельзя телепортировать в другое твердое тело. Разделение двух соединенных предметов дает штраф, определяемый Мастером; вынуть пробку из банки может быть на -1, а телепортирование запертой двери из косяка — на -5. Носимые украшения или одежда, или предмет, который крепко держит другой человек, могут быть телепортированы на -5, и этот человек может сопротивляться заклинанию.Это также заклинание Врат.Стоимость: Стоимость и штрафы к умению как у Телепортации, но с множителями: Вес	МножительМеньше 10 фунтов	x1/210-49 фунтов	x150-99 фунтов	x2100-200 фунтов	x3Одно дополнительное кратное за каждые дополнительные 100 фунтов	Последствия проваленного броска аналогичны, но неодушевленные объекты имеют меньший шанс получить повреждения. Если разумный объект успешно сопротивляется заклинанию, заклинатель не страдает от негативных эффектов, кроме затрат энергии.Требования: Магичность(Magery) 3 и Телепортация.ПредметПосох или палочка; используется только магами. Использующий должен направить предмет сначала на объект, а потом на желаемый пункт назначения; это требует секунду и не может быть сделано быстрее. Энергостоимость создания: 3.000.</description-loc>
+		<college>Gate/Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>_</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M147</reference>
+		<categories>
+			<category>Gate</category>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">teleport</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 785px; left: 54px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Rapid Journey</name><name-loc>Быстрое путешествие</name-loc><spell version="2" very_hard="yes">
+		<name>Rapid Journey</name>
+		<name-loc>Быстрое путешествие</name-loc>
+		<description-loc>ОсобоеПодобно Теле- и Хронопортации, но предусматривает немедленную обратную поездку. Работает только для заклинателя. Не работает с Планарным смещением. Все, что несет заклинатель, вплоть до Тяжелой нагрузки, отправляется с ним.Если бросок умения провален, заклинатель остается на месте, и получает обычные штрафы за проваленную Теле- или Хронопортацию (возможны повреждения, дезориентация, оглушение). Щит телепортации, сопротивляется дважды, при отправке и возвращении. Сразу по прибытию к месту назначения, заклинатель должен тратить ЕУ(FP), чтобы оставаться там. Как только поддержка присутствия прекращена (включая провал броска на отвлечение), он вернется в начальное место или время.Обратная поездка обычно не может провалиться. Но если сотворение заклинания удалось слегка (3 или меньше), то чтобы вернуться к отправной точке, надо делать броски ИН(IQ) (со штрафами за расстояние/время), во время поддержки заклинания. Можно делать только один бросок в минуту. Если заклинатель затем прекратит поддержку, то останется застрявшим там, куда или когда он отправился. Он также может застрять, если оглушен или попал в зону без маны.Это также заклинание Движения.Длительность: 1 минута.Стоимость: Как Теле- или Хронопортация, плюс четверть стоимость поездки в минуту на поддержание.Время сотворения: 5 секунд.Требования: Магичность(Magery) 3 и Телепортация (для Быстрого путешествия в пространстве) или Хронопортации (для Быстрого путешествия во времени, или во времени и пространстве).ПредметПосох или палочка. Используется только магами. Энергостоимость создания: 5.000.</description-loc>
+		<college>Gate/Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M82</reference>
+		<categories>
+			<category>Gate</category>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">teleport</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">timeport</name>
+				</spell_prereq>
+			</prereq_list>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (gate)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 851px; left: 108px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Blink</name><name-loc>Мерцание</name-loc><spell version="2">
+		<name>Blink</name>
+		<name-loc>Мерцание</name-loc>
+		<description-loc>БлокирующееУход от атаки путем мгновенной телепортации с ее пути на свободное место неподалеку. Место не считается свободным, если на нем кто-то стоит; менее серьезные препятствия не имеют значения для этого заклинания.Заклинатель может Мерцать на любое незанятое место в пределах 3 ярдов, в любом направлении. Направление взглляда заклинателя не меняется. Заклинатель должен сделать бросок Чувства тела, чтобы действовать на своем следующем ходу (В181). Если в пределах 3 ярдов нет свободных мест, заклинание провалится. Для боя, «мерцание» считается уклонением, которое автоматически успешно, если бросок заклинания успешен.Критический провал с этим заклинанием аналогичен критическому провалу Телепортации, но заклинатель редко перемещается больше, чем на милю.Это также заклинание Врат.Стоимость: 2Требования: Телепортация.ПредметОдежда или украшение. Энергостоимость создания: 800.</description-loc>
+		<college>Gate/Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M148</reference>
+		<categories>
+			<category>Gate</category>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">teleport</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 923px; left: 108px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard"><name>Blink Other</name><name-loc>Мерцание другого</name-loc><spell version="2">
+		<name>Blink Other</name>
+		<name-loc>Мерцание другого</name-loc>
+		<description-loc>БлокирующееКак Мерцание, но может использоваться на других.Это также заклинание Врат.Стоимость: 2Требования: Мерцание.ПредметПалочка, посох или украшение. Используется только магами. Энергостоимость создания: 1.600.</description-loc>
+		<college>Gate/Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M148</reference>
+		<categories>
+			<category>Gate</category>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">blink</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 726px; left: 348px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Repel</name><name-loc>Отталкивать</name-loc><spell version="2">
+		<name>Repel</name>
+		<name-loc>Отталкивать</name-loc>
+		<description-loc>Как Тянуть, только сила теперь отталкивает предметы, а не притягивает их.Длительность: 1 минута.Стоимость: 1 за каждые 2 СЛ(ST) «отталкивания» в центральной точке.Время сотворения: 5 секунд.Требования: Магичность(Magery) 2 и хотя бы четыре заклинания Движения, включая Левитацию. Предмет(а) Палочка, посох, или украшение. Используется только магами. Энергостоимость создания: 250. (б) Область может быть сделана отталкивающей навсегда за 100-кратную стоимость.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1 per 2 ST of repulsion</casting_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M147</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="is">movement</college>
+				<quantity compare="at least">3</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">levitation</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 791px; left: 348px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Pull</name><name-loc>Тянуть</name-loc><spell version="2">
+		<name>Pull</name>
+		<name-loc>Тянуть</name-loc>
+		<description-loc>ОбычноеКогда это заклинание творится на точку, оно создает зону «притяжения». Предметы (включая живых существ) притягиваются к центральной точке с Движением 1 силой, которая растет по мере приближения к центру. Живые существа могут «сопротивляться» Быстрым состязанием СЛ(ST) каждую секунду. Притяжение имеет СЛ(ST), равную удвоенному количеству энергии, вложенной в заклинание, в центре, и уменьшается на 1 за каждый ярд расстояния. Заклинание не имеет никакого эффекта на предметы тяжелее чем его СЛ(ST), увеличенная в 20 раз. Заметете, что для того, чтобы тянуть обычного человека (вес 150 фунтов) по обычному полу, заклинание должно иметь как минимум СЛ8.Это заклинание можно творить только на точку в пространстве или на земле, не на предмет или существо. Маленькая кучка незакрепленных предметов, пыли, опавших листьев, мелких насекомых и т. п. обычно формируется в центре.Длительность: 1 минута.Стоимость: 1 за каждые 2 СЛ(ST) «притяжения».Время сотворения: 5 секунд.Требования: Магичность(Magery) 2 и хотя бы четыре заклинания Движения, включая Левитацию. Предмет(а) Палочка, посох, или украшение. Используется только магами. Энергостоимость создания: 250. (б) Область может быть сделана притягивающей навсегда за 100-кратную стоимость.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1 per 2 ST of pull</casting_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M146</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<college compare="contains">movement</college>
+				<quantity compare="at least">3</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">levitation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 725px; left: 456px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Freedom</name><name-loc>Свобода</name-loc><spell version="2">
+		<name>Freedom</name>
+		<name-loc>Свобода</name-loc>
+		<description-loc>ОбычноеДает премию к броскам умений и атрибутов объекта, направленным на поддержание или восстановление его свободы передвижения. Типичные примеры: Состязания ЛВ(DX) или СЛ(ST), чтобы избежать захвата, освободиться от него, или для проскальзывания; использования Побега или Взлома; перепрыгивание и перелезание через удерживающие стены; разгибание прутьев или выламывание дверей; сопротивление заклинаниям Клей, Левитация или Паралич и т.д.Это заклинание не помогает Маскировке, Изменению внешности или Скрытности; заклинаниям Контроля разума; уклонению от снарядов; использованию Взлома, Лазания и Прыжков, чтобы попасть в какое-нибудь место, и так далее. Решение за Мастером.Это также заклинание Защиты и Предупреждения.Длительность: 1 минута.Стоимость: 2 за единицу премии (максимум  5). Столько же поддержание.Требования: не менее трех заклинаний каждой из школ Контроля тела, Движения и Защиты и предупреждения.ПредметУкрашение или одежда. Включен постоянно. Владельца становится очень трудно удержать, держать в цепях или за решеткой... Редкий предмет! Энергостоимость создания: 500 за единицу премии.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2 per 1 pt of bonus</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M148</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="is">protection &amp; warning</college>
+				<quantity compare="at least">3</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">movement</college>
+				<quantity compare="at least">3</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">body control</college>
+				<quantity compare="at least">3</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 791px; left: 678px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Air Vortex</name><name-loc>Воздушный вихрь</name-loc><spell version="2">
+		<name>Air Vortex</name>
+		<name-loc>Воздушный вихрь</name-loc>
+		<description-loc>Областное; Сопротивление по ЗД(HT) или ЛВ(DX)Перемещает всех, оказавшихся в зоне сотворения эффекта, куда-то в другое место внутри огромного крутящегося Воздушного вихря. Вихрь имеет Движение 10. Заклинатель может исключить любого из площади захвата, определив это при сотворении. Можно сопротивляться захвату по лучшему значению из ЗД(HT) или ЛВ(DX). Захваченные вихрем принимают на время парообразную форму, как в заклинании Тело из воздуха (M24). Вихрь может не проходить сквозь однородные объекты.Длительность: 10 секунд.Базовая стоимость: 8 сотворение. 3 поддержание.Время сотворения: 2 секунды.Требования: Магичность(Magery) 2, Тело из воздуха и Ураган.ПредметПосох. Используется только магами. Стоимость создания: 1200 энергии и $800 за оникс.</description-loc>
+		<college>Air/Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area/R-HT or DX</spell_class>
+		<casting_cost>8</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>10 sec</duration>
+		<reference>M26</reference>
+		<categories>
+			<category>Air</category>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (air)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">windstorm</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">body of air</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 875px; left: 558px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Trace Teleport</name><name-loc>Отследить телепорт</name-loc><spell version="2">
+		<name>Trace Teleport</name>
+		<name-loc>Отследить телепорт</name-loc>
+		<description-loc>Информационное; Сопротивление заклинаниям объектаСотворенное вскоре после как кто-то или что-то телепортируется, хронопортируется или смещается в/из плана, дает заклинателю видение точки назначения отправленного объекта. Заклинатель также получит хорошее представления о величине штрафа к умению, примененного при сотворении заклинание. При критическом успехе будет известно текущее местоположение, но для преследования в течение минуты после сотворения Отследить телепорт достаточно любого успеха.Это также заклинание Движения.Модификаторы: накапливающийся штраф: -1 за каждую минуту, прошедшую между телепортацией и сотворением. Если заклинатель не видел телепортации, еще штраф -5Стоимость: 3.Требование: Телепортация, Хронопортация или Смещение плана.ПредметЛюбой. Энергостоимость создания: 100.</description-loc>
+		<college>Gate/Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M84</reference>
+		<categories>
+			<category>Gate</category>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">teleport</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">timeport</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">plane shift</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 875px; left: 660px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Beacon</name><name-loc>Маяк</name-loc><spell version="2">
+		<name>Beacon</name>
+		<name-loc>Маяк</name-loc>
+		<description-loc>Область«Смягчает» местное пространство-время, делая область эффекта легкой для теле- и хронопортации или смещения плана. При отправке к маяку энергостоимость и штрафы делятся на два (округлять в меньшую сторону). Маяк также можно использовать для помощи в телепортации объекта из его зоны к заклинателю.Маяк не будет личным; любой заклинатель, волшебно перемещающий себя (или кого-то еще) в область, получит выгоду от заклинания (хотя у навсегда зачарованных областей могут быть Доступ или Имя, см. M68).Заклинатель, при сотворении, должен определить, каким заклинаниям путешествия его маяк помогает. Многоцелевой маяк не требует добавочной стоимости создания.Это - также заклинание Движения.Длительность: 24 часа.Базовая стоимость: 10 на сотворение. Половина на поддержание.Время сотворения: 30 секунд.Требование: Телепортация, Хронопортация или Смещение плана. Маг должен знать Телепортацию, чтобы создать маяк телепортации, Хронопортацию, чтобы создать маяк хронопортации, Смещение плана, чтобы создать маяк смещения плана.Предмет(a) Любую область можно навсегда зачаровать как маяк телепортации за 100-кратную обычную энергостоимость. (b) Любой объект можно зачаровать как портативный маяк; любая попытка магического путешествия в район объекта получит премию. Энергостоимость создания: 1.500.</description-loc>
+		<college>Gate/Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>10</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>30 sec</casting_time>
+		<duration>24 hrs</duration>
+		<reference>M83</reference>
+		<categories>
+			<category>Gate</category>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">timeport</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">teleport</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">plane shift</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 935px; left: 558px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery3"><name>Divert Teleport</name><name-loc>Отклонить Телепортацию</name-loc><spell version="2" very_hard="yes">
+		<name>Divert Teleport</name>
+		<name-loc>Отклонить Телепортацию</name-loc>
+		<description-loc>Блокирующее; Сопротивление заклинаниям объектаСотворенное в ход чьей-либо телепортации, хронопортации или смещении плана, позволит заклинателю навязать место или время назначения объекту.Заклинатель должен знать отклоняемое заклинание; используется меньшее из умений: Отклонить телепортацию и заклинание объекта. Если заклинатель, например, хочет отклонить телепортацию в смещение плана, он должен знать оба заклинания и использовать меньшее из этих трех умений.Сопротивление обсчитывается, сравнением величин успеха обоих заклинаний - если телепортирующийся маг преуспевает на 5, то пытающийся отклонить его, должен преуспеть на 6 или выше, чтобы выиграть. Используются обычные штрафы за расстояние между заклинателями Отклонить телепортации и Телепортации (Хронопортации и т.д.) и обычный штраф к умению за место назначения, куда заклинатель направляет телепортера.Стоимость сотворения равна разнице стоимости для намеченного и нового места. Если мага телепортирующегося на 40 миль (9 энергии) вынуждают переместиться только на 10 ярдов (3 энергии), отклоняющий маг должен заплатить 6 энергии. Та же стоимость была бы, если места назначения полностью обратить. Минимальная стоимость сотворения 3 (высокое умение уменьшает ее обычным образом). Заклинатель платит полную энергостоимость независимо от успеха заклинание.Пример: Предположим, Северин знает Телепортация-16 и пытается телепортироваться на 100 ярдов к ждущему его вагону (штраф к умению -2, стоимость 4). На расстоянии двух ярдов стоит Элсдон, знающий Отклонить Телепортацию-18 и Телепортация-20, который предпочел бы, чтоб Северин оказался за милю отсюда, как раз над озером (штраф -4, стоимость 7).Северин предпринимает попытку, тратя 4 энергии и бросая 10. Так как ему нужно 14 или меньше, это успех на 4.Элсдон используя основное умение 18 (самое низкое из соответствующих заклинаний), получает -2 за расстоянии в два ярда до Северина, и еще -4 за намеченное место. Его эффективное умение 12. Он должен бросить 7 (успех на 5), чтобы выиграть соревнование и отклонить Северина. Получится ли это или нет, расчетная стоимость - 3, таким образом, Элсдон должен заплатить минимум.Это также заклинание Движения.Стоимость: Как описано выше; минимум 3.Требования: Магичность(Magery) 3 и Отследить телепорт.ПредметЛюбой. Используется только магами. Энергостоимость создания: 700.</description-loc>
+		<college>Gate/Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M84</reference>
+		<categories>
+			<category>Gate</category>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">trace teleport</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block>

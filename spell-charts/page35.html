@@ -1,0 +1,2240 @@
+<block style="top: 84px; left: 348px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Seek Water</name><name-loc>Искать воду</name-loc><spell version="2">
+		<name>Seek Water</name>
+		<name-loc>Искать воду</name-loc>
+		<description-loc>ИнформационноеОпределяет направление, расстояние, и общую природу ближайшего значительного источника воды. Используйте модификаторы больших расстояний (M14). Любые известные источники воды могут быть исключены, если заклинатель специально их укажет до того, как начнёт. Требуется раздвоенная палка; бросок на -3, если она не доступна.Стоимость: 2.ПредметРаздвоенная палка (может быть костью или вырезана из слоновой кости).Стоимость создания: 40 энергии и на $300 материал.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M184</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+	</spell></block><block style="top: 168px; left: 288px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Purify Water</name><name-loc>Очистить воду</name-loc><spell version="2">
+		<name>Purify Water</name>
+		<name-loc>Очистить воду</name-loc>
+		<description-loc>ОсобоеПозволяет изъять все примеси из воды, проливая её через любой обруч или кольцо (или, в крайнем случае, собственные пальцы) в ёмкость. Требуется  только один бросок умения, пока поток продолжается.Длительность: Пока снова не загрязнят.Стоимость: 1 за каждый очищенный галлон.Время сотворения: обычно от 5 до 10 секунд на галлон, если не используются большие ёмкость и кольцо.Требование: Искать водуПредметОбруч из кости. Энергостоимость создания 50.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>1/gal</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>5-10/gal#</casting_time>
+		<duration>Permanent</duration>
+		<reference>M184</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">seek water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 168px; left: 408px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Seek Coastline</name><name-loc>Искать берег</name-loc><spell version="2">
+		<name>Seek Coastline</name>
+		<name-loc>Искать берег</name-loc>
+		<description-loc>ИнформационноеСообщает заклинателю направление и приблизительное расстояние до ближайшего берега. Используйте модификаторы больших расстояний (M14). Любой известный берег, например ближайшего острова, можно исключить, если заклинатель специально его укажет при сотворении заклинания.Стоимость: 3.Время сотворения: 10 секунд.Требование: Искать воду.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M184</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">seek water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 252px; left: 180px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Foul Water</name><name-loc>Плохая вода</name-loc><spell version="2">
+		<name>Foul Water</name>
+		<name-loc>Плохая вода</name-loc>
+		<description-loc>ОбластноеДелает воду непригодной для питья. Плохая вода легко узнаётся по её неаппетитным цвету и запаху, в то время как загрязнённое пиво или вино может быть труднее обнаружить. Тот, кто достаточно глуп, чтобы выпить её, должен сделать бросок ЗД(HT). При успехе он  лишь чувствует тошноту и теряет 2 ЕЖ(HP). При провале ему сильно сводит желудок и он теряет 1d 1 ЕЖ(HP); у него -3 ко всем умениям, пока потерянные ЕЖ(HP) не восстановятся. Загрязнённая вода также не утоляет жажду, и не может поддерживать рыбу или других водных обитателей (любая рыба медленно задыхается в такой воде; морское млекопитающее заболевает от того, что глотает её). В водоёме, загрязнённая вода со временем растворяется до безвредности; если заклинание, например, сотворить в горном ручье, то оно длится всего секунду или две. Базовая стоимость: 3.Требования: Очистить воду и Разложение.ПредметПосох или жезл. Предмет должен коснуться воды. Энергостоимость создания: 100.</description-loc>
+		<college>Food/Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M185</reference>
+		<categories>
+			<category>Food</category>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">decay</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">purify water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 252px; left: 288px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Create Water</name><name-loc>Создать воду</name-loc><spell version="2">
+		<name>Create Water</name>
+		<name-loc>Создать воду</name-loc>
+		<description-loc>ОбычноеСоздаёт чистую воду из ничего. Эта вода может появиться в любой из нескольких форм. Она может появиться в ёмкости или как сфера в воздухе (она сразу падает). Или она может появиться как густой туман из капель; в этой форме, один галлон воды потушит все огни в радиусе одного ярда. Воду нельзя создать внутри врага, чтобы его утопить!Длительность: Вода создаётся навсегда.Стоимость: 2 за созданный галлон.Требование: Очистить воду.ПредметПосох, жезл или украшение. Энергостоимость создания: 200.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/gal</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M184</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">purify water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 336px; left: 192px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Destroy Water</name><name-loc>Уничтожить воду</name-loc><spell version="2">
+		<name>Destroy Water</name>
+		<name-loc>Уничтожить воду</name-loc>
+		<description-loc>ОбластноеЗаставляет воду (в любой форме) исчезнуть, оставив вместо себя вакуум – или, возможно, пятна сухих примесей. Если кругом есть ещё вода, она поспешит заполнить дыру. Полезна для сушки вещей, спасения утопающих, и т.д. Нельзя использовать в качестве «обезвоживающей» атаки на противника.Длительность: Навсегда.Базовая стоимость: 3. В глубокой воде, область имеет всего 2 ярда в высоту (или глубину). Столько же поддержка.Требование: Создать водуПредметПосох, жезл или украшение. Энергостоимость создания: 300.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M185</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 336px; left: 468px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Icy Weapon</name><name-loc>Ледяное оружие</name-loc><spell version="2">
+		<name>Icy Weapon</name>
+		<name-loc>Ледяное оружие</name-loc>
+		<description-loc>ОбычноеДелает любое оружие обжигающе холодным. Это не вредит держателю, но атака этим оружием нанесёт  2 вреда большинству врагов, если преодолеет СП(DR). Умножьте этоу премию на любую уязвимость ко льду или холоду. Добавляйте эту премию к окончательному вреду атаки – например, «проникающая» ледяная атака всё равно нанесёт  2 вреда, а не  4.Длительность: 1 минута.Стоимость: 3 сотворение. 1 поддержка.Время сотворения: 3 секундыТребование: Создать воду.ПредметОружие, ледянеющее, при применении. Владелец не тратит на это энергию. Стоимость создания:  750 энергии, на $2.000 материала.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M185</reference>
+		<notes> 2 freezing damage to melee weapons</notes>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 336px; left: 576px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Shape Water</name><name-loc>Формировать воду</name-loc><spell version="2">
+		<name>Shape Water</name>
+		<name-loc>Формировать воду</name-loc>
+		<description-loc>ОбычноеПридаёт воде (включая лёд или пар) любую форму, и даже двигает её. После того, как форма придана, вода удерживает её без дальнейшего сосредоточения, пока заклинание не закончится. Вода, которую двигают этим заклинанием, передвигается с Движением 3.Полезная форма – стена воды, как преграда огненным атакам – 20 галлонов создают стену в 2 ярда высотой и 1 ярд шириной. Она остановит Огненный шар и обычный огонь.Длительность: 1 минута.Стоимость: 1 за 20 сформированных галлонов. Столько же на поддержку.Время сотворения: 2 секунды.Требование: Создать воду.ПредметПосох, жезл или украшение. Энергостоимость создания: 400.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1#</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M185</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 336px; left: 684px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Breathe Air</name><name-loc>Дышать воздухом</name-loc><spell version="2">
+		<name>Breathe Air</name>
+		<name-loc>Дышать воздухом</name-loc>
+		<description-loc>ОбычноеПозволяет объекту дышать в воздухе так, как будто это вода; также защищает водяных созданий от обезвоживания на суше. Обычно используется для хранения рыбы, русалок и т.д. живыми вне воды. Во время действия заклинания объект может дышать водой как обычно.Также относится к заклинаниям Воды.Длительность: 1 минута.Стоимость: 3 сотворение. 1 поддержание.Требования: Создать воду и Уничтожить воздух.ПредметПосох, палочка, украшение или одежда; действует только на носителя. Энергостоимость создания: 150.</description-loc>
+		<college>Air/Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M26</reference>
+		<categories>
+			<category>Air</category>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">destroy air</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 168px; left: 180px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Decay</name><name-loc>Разложение</name-loc><spell version="2">
+		<name>Decay</name>
+		<name-loc>Разложение</name-loc>
+		<description-loc>ОбычноеЗаставляет пищу немедленно разлагаться, делая ее бесполезной (она может быть сохранена, если в течение минуты сотворить Контрзаклинание или Очистить пищу).Стоимость: 1 за уничтоженную порцию.Требования: Проверить пищу.Предмет Посох или палочка. Должен коснуться объекта. Энергостоимость создания: 100.</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/meal</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M77</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">test food</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 252px; left: 684px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Destroy Air</name><name-loc>Уничтожить воздух</name-loc><spell version="2">
+		<name>Destroy Air</name>
+		<name-loc>Уничтожить воздух</name-loc>
+		<description-loc>ОбластноеПозволяет уничтожить весь воздух выбранной области. На открытом пространстве это вызовет мгновенное заполнение окружающим воздухом. В результате заполнения все находящиеся в области получают 1d-2 вреда если провалят бросок ЗД(HT). Существа с мета-чертой Тело из воздуха (B262) получают 2d вреда. В герметичных или закрытых помещениях может быть намного опаснее, т.к. не оставит пригодного для дыхания воздуха.Длительность: мгновенно, но воздух исчезает навсегда.Базовая стоимость: 2.Требования: Создать воздух.</description-loc>
+		<college>Air</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M24</reference>
+		<categories>
+			<category>Air</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create air</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 504px; left: 12px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Create Earth</name><name-loc>Создать землю</name-loc><spell version="2">
+		<name>Create Earth</name>
+		<name-loc>Создать землю</name-loc>
+		<description-loc>ОбычноеПозволяет создать хорошую, твёрдую землю там, где её раньше не было. Земля должна быть создана в контакте с поверхностью, а не висящей в воздухе или плавающей в море!Длительность: навсегда.Стоимость: 2 за кубический ярд, чтобы создать землю из ничего (минимум 2); 1 за кубический ярд, чтобы сделать из грязи хорошую, твёрдую землю (минимум 1).Требуется: Землю в камень.ПредметПосох или жезл. Энергостоимость создания: 500.</description-loc>
+		<college>Earth</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/25 cu ft</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M51</reference>
+		<categories>
+			<category>Earth</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">earth to stone</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 336px; left: 300px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Shape Earth</name><name-loc>Формировать землю</name-loc><spell version="2">
+		<name>Shape Earth</name>
+		<name-loc>Формировать землю</name-loc>
+		<description-loc>ОбычноеДвигает землю, и придаёт ей любую форму. Если форма стабильна (например, холм), она навсегда сохранится после того, как её придали. Нестабильная форма (например, колонна или стена) держится, только пока действует заклинание – никакой концентрации не требуется –, а потом обрушивается. Может потребоваться бросок Архитектуры, чтобы создать стабильную форму.Земля, которую двигают этим заклинанием, передвигается с Движением 2; камень передвигается с Движением 1. Этим нельзя никому причинить вред, кроме как натечь на неподвижного человека и засыпать его. Если земля движется к человеку, чтобы его засыпать – или из-под него, чтобы сделать яму – он может нормально передвигаться в следующий свой ход, чтобы убежать. Он пойман, только если не сделал этого.Любой, засыпанный неплотной землёй, может попытаться выкопаться. Позволен один бросок в секунду с СЛ(ST)-4. Мастер может сделать этот бросок сложнее, если жертву засыпало более чем двумя кубическими ярдами земли. Жертва может задерживать дыхание (см. Задержка дыхания, B251), но велик риск задохнуться (см. Удушение, B436). Жертва, погребённая под камнем может задержать дыхание, но если у неё нет приспособлений, позволяющих пробиться сквозь сплошной камень, шансов выбраться мало.Длительность: 1 минутаСтоимость: 1 за кубический ярд формируемой земли (минимум 2). Двойная стоимость для каменя; шестикратная для резаного или обработанного камня, например стены. Нелегко сделать собственную дверь в замок.Требуется: Искать землю.ПредметПосох, жезл или украшение, или копательный инструмент. Энергостоимость создания: 200 (500 для предмета, формирующего камень).</description-loc>
+		<college>Earth</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/25 cu ft</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M50</reference>
+		<categories>
+			<category>Earth</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">seek earth</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 564px; left: 144px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Mature</name><name-loc>Созревание</name-loc><spell version="2">
+		<name>Mature</name>
+		<name-loc>Созревание</name-loc>
+		<description-loc>ОбычноеЗаставляет быстро состариться или созреть любые продукты, для которых это часть приготовления. Чаще всего используется для пива и вина, но также может использоваться для сыра, йогурта, хлебного теста, и даже мяса.Процессы старения, которые обычно занимают дни или недели (пиво, вино, выдержанный  сыр, соленые огурцы, вяленое мясо), занимают только час с заклинанием. Процессы, которые обычно занимают часы (хлебное тесто, йогурт, свежий сыр) – минуту. Процессы, которые занимают годы (марочные вина, тысячелетние яйца) ускоряются на год за каждое сотворение заклинания..., это - дивный способ проверить, будут ли марочные вина так же хороши выдержанными.Длительность: процесс занимает час (или минуту, см. выше), еда остается созревшей навсегда.Стоимость: 1 за фунт пищи. Не поддерживается.Время сотворения: 10 секунд.Требования: Разложение или Приправа.ПредметМаленький бочонок, работающий без энергозатрат пользователя, ограниченное число раз в день.Энергостоимость создания: 50 за каждый галлон объема и число использований в день. Например 10-галлонный бочонок, который работает дважды за день стоит 50*10*2 = 1.000 энергии для создания.</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/lb</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M78</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">decay</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">season</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 564px; left: 264px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Create Air</name><name-loc>Создать воздух</name-loc><spell version="2">
+		<name>Create Air</name>
+		<name-loc>Создать воздух</name-loc>
+		<description-loc>ОбластноеЭто заклинание создает воздух из «ничего». Сотворение его где уже есть воздух, приводит к появлению слабого ветра секунд на пять. В воде - появятся пузыри, в твердом материале - заполнит все пустоты, но не будет разрушать конструкцию. В вакууме - создает пригодный для дыхания воздух.При сотворении в области радиусом 1 ярд создает по 45 ф3 воздуха каждую секунду в течение 5 секунд; каждого куба воздуха хватит на минуту дыхания обычному человеку в покое. Однако, в некоторых средах созданный воздух быстро рассеется в вакууме или сформирует пузырь и всплывет. Воздух нельзя создать внутри живого существа. Длительность: Ветер, пузыри и т.п. длятся 5 секунд, воздух создаётся навсегда.Стоимость: 1. Не поддерживается.Требования: Очистка воздуха или Поиск воздуха.ПредметПосох, палочка, украшение. Энергостоимость создания: 200.</description-loc>
+		<college>Air</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>5 sec</duration>
+		<reference>M23</reference>
+		<categories>
+			<category>Air</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">purify air</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">seek air</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 564px; left: 624px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Shield</name><name-loc>Щит</name-loc><spell version="2">
+		<name>Shield</name>
+		<name-loc>Щит</name-loc>
+		<description-loc>ОбычноеСоздаёт перед объектом магический щит, который движется вместе с объектом и защищает его от атак спереди. ПЗ(DB), данная этим заклинанием, складывается с ПЗ(DB), даваемым щитом, но не даёт возможность блокировать, если щита нет. ПЗ(DB) данные Щитом и Блоком (M166) не складываются.Длительность: 1 минута.Стоимость: 2 за каждое очко ПЗ(DB), вплоть до  4 ПЗ(DB) (8 очков). Половина поддержка.Требования: Магичность(Magery) 2.Предмет:Это заклинание не накладывается на предметы, но вашу ПЗ(DB) может повысить на 1-5 очков броня с чарой Отражение (M67).</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2 per DB</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M167</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="no">
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="contains">one college (protection)
+				<level compare="at least">2</level>
+			</notes></advantage_prereq>
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="is anything"></notes>
+				<level compare="at least">2</level>
+			</advantage_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 420px; left: 144px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Dehydrate</name><name-loc>Обезвоживание</name-loc><spell version="2">
+		<name>Dehydrate</name>
+		<name-loc>Обезвоживание</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT).Убирает воду из тканей объекта, приводя к вреду или смерти. Действует на всю жертву, если творится на расстоянии; если заклинатель касается объекта, вред ограничен частью тела, к которой коснулись. Броня не защищает!Длительность: вред остается, пока не будет вылечен.Стоимость: 1 за 1d-1 вреда, вплоть до 3.Время сотворения: 2 секунды.Требования: По меньшей мере пять заклинаний Воды, включая Уничтожить воду. ПредметЖезл или посох. Используется только магами; Предмет должен касаться объекта. Стоимость создания:  700 энергии и на 1.000$ материала.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>Permanent</duration>
+		<melee_weapon>
+			<damage>1d-1 dehydrate/point</damage>
+			<reach>Special</reach>
+			<parry>No</parry>
+		</melee_weapon>
+		<reference>M188</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">destroy water</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="is">water</college>
+				<quantity compare="at least">5</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 420px; left: 252px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Dry Spring</name><name-loc>Осушить источник</name-loc><spell version="2">
+		<name>Dry Spring</name>
+		<name-loc>Осушить источник</name-loc>
+		<description-loc>ОбычноеОсушает и перекрывает поток воды в источнике, уменьшая его силу.Длительность: навсегда. Но учтите, что местная геология может со временем перемениться, восстановив силу источника до предыдущего уровня.Стоимость: 3 умножить на уменьшение силы источника, в галлонах в час. Время сотворения: 1 минута.Требования: Уничтожить воду и Формировать землю.ПредметПосох. Стоимость создания: 450 энергии, и изумруд за 500$.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>Permanent</duration>
+		<reference>M188</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape earth</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">destroy water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 420px; left: 360px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Earth to Water</name><name-loc>Землю в воду</name-loc><spell version="2">
+		<name>Earth to Water</name>
+		<name-loc>Землю в воду</name-loc>
+		<description-loc>ОбычноеПревращает землю в грязь (или воду). Различные применения этого заклинания включают замедление врагов или преследователей, изготовление лечебной грязи для обработки укусов насекомых, размягчение земли, чтобы использовать в качестве глиняных манекенов или ложных целей, и.т.д.Это также заклинание школы Воды.Длительность: навсегда.Стоимость: 1 за кубический ярд земли, превращённой в грязь. Удвоенная за превращения в воду.Требования: Магичность(Magery) 1, Создать воду и Формировать землю.ПредметПосох, жезл или украшение. Используется только магами; предмет должен прикасаться к цели. Энергостоимость создания: 500.</description-loc>
+		<college>Earth/Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/25 cu ft#</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M52</reference>
+		<categories>
+			<category>Earth</category>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (water)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">shape earth</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 408px; left: 468px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Icy Missiles</name><name-loc>Ледяные снаряды</name-loc><spell version="2">
+		<name>Icy Missiles</name>
+		<name-loc>Ледяные снаряды</name-loc>
+		<description-loc>ОбычноеКак Ледяное оружие, но творится на стрелковое оружие. Само оружие становится холодным на ощупь, но не вредит пользователю. Любой выпущенный им снаряд становится обжигающе холодным, нанося  2 вреда большинству противников; он разбивается после того, как попадёт в цель или спустя 10 секунд, в зависимости от того, что произойдёт раньше.Длительность: 1 минутаСтоимость: 4 сотворение. 2 поддержка.Время сотворения: 3 секундыТребование: Ледяное оружие.ПредметОружие, стреляющее ледяными снарядами, без энергетической стоимости для пользователя. Стоимость создания: 1.000; в оружие должен быть вставлен сапфир на $500.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M186</reference>
+		<notes> 2 freezing damage to missiles fired from weapon</notes>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">icy weapon</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 504px; left: 384px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Create Spring</name><name-loc>Создать источник</name-loc><spell version="2">
+		<name>Create Spring</name>
+		<name-loc>Создать источник</name-loc>
+		<description-loc>ОбычноеУвеличивает силу источника, или создаёт его там, где раньше не было.Длительность: навсегда. Но учтите, что местная геология может со временем перемениться, уменьшив силу источника до предыдущего уровня.Стоимость: 5 умножить на увеличение силы источника, в галлонах в час. Время сотворения: 1 минута.Требования: Осушить источник и Формировать воду.ПредметПосох. Стоимость создания: 675 энергии, и изумруд за 500$.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>Permanent</duration>
+		<reference>M190</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">dry spring</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 504px; left: 144px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Icy Touch</name><name-loc>Ледяное касание</name-loc><spell version="2">
+		<name>Icy Touch</name>
+		<name-loc>Ледяное касание</name-loc>
+		<description-loc>КасательноеПокрывает объект льдом. Заклинатель должен коснуться объекта для появления эффекта; место прикосновения неважно. Объект обездвижен, и не может действовать, пока не вырвется изо льда успешным броском СЛ(ST), со штрафом -1 за каждые 1/4 дюйма льда. Лёд можно сколоть снаружи, со скоростью 1/4 дюйма за каждый пункт базового вреда; У него есть СП(DR) 1 за каждые 1/2 дюйма льда. Если спасатели неосторожны, то могут проломить лёд и повредить объект (см. Пробивание, B408).Будучи закованным в лёд, объект уязвим к тепловому шоку (B430); он должен бросить ЗД(HT) немедленно. В случае успеха, он теряет 1 ЕУ(FP); в случае провала, он теряет количество ЕУ(FP), равное величине провала. Бросок ЗД(HT) необходимо повторять каждую минуту, пока цель остаётся закованной в лёд. Если ситуация становится настолько серьёзной, что объект должен делать проверки на смерть, критический успех означает, что объект впал в спячку, как под действием заклинания Приостановить жизнь.Длительность: навсегда. Если температура выше нуля, ледяное покрытие можно поддерживать, тратя энергии как на сотворение, каждые 10 минут. Стоимость: 2 за каждые 1/4 дюйма льда; Должно действовать на весь объект, а не на его часть! Каждые 1/4 дюйма нанесут 1d-1 вреда огненным существам.Время сотворения: 1 секунда на 1/4 дюйма льда.Требования: Магичность(Magery) 1 и минимум четыре заклинания Воды.ПредметПосох или жезл. Используется только магами; предмет должен касаться объекта. Кончик предмета должен быть белым. Энергостоимость создания: 800.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Melee</spell_class>
+		<casting_cost>2#</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec#</casting_time>
+		<duration>Permanent</duration>
+		<melee_weapon>
+			<damage>thr-1  paralysis</damage>
+			<usage>Punch</usage>
+			<reach>C</reach>
+			<parry>0</parry>
+			<default>
+				<type>DX</type>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Boxing</name>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Brawling</name>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Karate</name>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M188</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (water)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<college compare="is">water</college>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 588px; left: 24px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Rain of Acid</name><name-loc>Кислотный дождь</name-loc><spell version="2">
+		<name>Rain of Acid</name>
+		<name-loc>Кислотный дождь</name-loc>
+		<description-loc>ОбластноеКапли кислоты падают с неба на область действия, нанося 1d-1 вреда кислотой в секунду всем, кто в ней находится. Персонажи и существа под дождём получают вред кислотой в свои ходы; Если менее секунды проведены под дождём, вред делится на два (округлять вниз).Это заклинание можно сотворить только вне помещений. Броня защищает обычно. Щит с ПЗ(DB) 2 или лучше можно держать над головой, чтобы блокировать капли, но он может получить вред (B484). На это требуются две руки и манёвр Подготовки, и автоматически успешно защищает, как только щит подготовлен вверх, но это делает щит неготовым для его обычных защитных функций!Кроме того, кислотный дождь разъедает предметы со скоростью 1 ЕЖ(HP) в 10 секунд; СП(DR) предмета полностью защищает его на 3 секунды на единицу СП(DR). Это относится и к зданиям.Длительность: 1 минута.Базовая стоимость: 3. Столько же поддержка.Требования: Магичность(Magery) 2, Создать воду и Создать землю.ПредметПосох. Используется только магами. Энергостоимость создания: 1.200.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<melee_weapon>
+			<damage>1d-1 cor</damage>
+			<usage>Area</usage>
+			<reach>Special</reach>
+			<parry>No</parry>
+		</melee_weapon>
+		<reference>M191</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (water)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">create earth</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 828px; left: 12px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Acid Ball</name><name-loc>Кислотный шар</name-loc><spell version="2">
+		<name>Acid Ball</name>
+		<name-loc>Кислотный шар</name-loc>
+		<description-loc>МетательноеПозволяет бросить шар кислоты из руки. Когда он попадает во что-то, то лопается, нанося кислотный вред. У него 1/2Д 20, Max 40, Точ 1; используйте умение Природная атака. Стоимость: любая вплоть до уровня Магичности в секунду, за 3 секунды. Наносит 1d вреда за единицу вложенной энергии. Время сотворения: от 1 до 3 секунд.Требования: Магичность(Magery) 2 и Создать кислоту.ПредметПосох или жезл – снаряд выстреливается из вершины предмета. Используется только магами. Энергостоимость создания: 300.Малый элементаль водыЭто базовый элементаль воды, призываемый Вызовом элементаля воды с минимальными энергозатратами (4 энергии). Большие энергозатраты помогут вызвать более могущественных элементалей. Обычно это просто означает более крупного элементаля; единица энергии равна 1 доп. очку СЛ(ST), 5 ЕЖ(HP) или двум очкам СП(DR). Однако, Мастер может создать и необычных элементалей, добавляя необычные черты в данный ниже шаблон, или создать свой собственный.Малый элементаль воды40 очковМодификаторы атрибутов: СЛ(ST)-3 [-30]; ЛВ(DX)-2 [-40]; ИН(IQ)-3 [-60]; ЗД(HT)-1 [-10].Модификаторы вторичных характеристик: МР(SM)-1.Преимущества: Амфибия [10]; Хамелеон 1 [5]; Не дышит[20]; Не спит [20]; Иммунитет к метаболическим угрозам [30]; Устойчивость к ранениям (рассеяный) [100]; устойчивость к давлению 3 [15]; Скользкий 5 [10].Недостатки: Беспозвоночный [-20]; Уязвимость (Обезвоживание) [-10].</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Missile</spell_class>
+		<casting_cost>1-Magery</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1-3 sec</casting_time>
+		<duration>Instant</duration>
+		<ranged_weapon>
+			<damage>1d cor/point</damage>
+			<accuracy>1</accuracy>
+			<range>20/40</range>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Projectile</specialization>
+				<modifier>0</modifier>
+			</default>
+		</ranged_weapon>
+		<reference>M191</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create acid</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (water)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 672px; left: 12px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Create Acid</name><name-loc>Создать кислоту</name-loc><spell version="2">
+		<name>Create Acid</name>
+		<name-loc>Создать кислоту</name-loc>
+		<description-loc>ОбычноеСоздаёт сильный раствор кислоты из ничего. Он может появиться в нескольких формах. Он может появиться в ёмкости (которая должна быть из стекла или какого-то особого камня или металла, чтобы кислота его не разъела), как сфера в воздухе (которая немедленно упадёт), или как плотный туман капель (который наносит вред, как разбрызгивание).Длительность: навсегда, но может быть нейтрализована по мере реакций с предметами и существами. Стоимость: 4 за галлон.Время сотворения: 2 секунды.Требования: Создать воду и Создать землю.ПредметПосох, жезл или украшение. Используется только магами. Энергостоимость создания: 300.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4/gal</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M190</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create earth</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 648px; left: 144px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Distill</name><name-loc>Возгонка</name-loc><spell version="2">
+		<name>Distill</name>
+		<name-loc>Возгонка</name-loc>
+		<description-loc>ОбычноеКонцентрирует жидкость, удаляя из нее воду. Заклинание главным образом используется, для создания крепких алкогольных напитков, но алхимики также его используют и в других целях. Каждое использование уменьшает вдвое объем жидкости, удваивая ее концентрацию. Одно заклинание превращает вино в крепленое вино, два – в бренди, а три – в почти чистый спирт. Возгонка не работает над живыми объектами.Это также заклинание Воды.Длительность: навсегда.Стоимость: 1 за кварту первичной жидкости.Требования: Созревание и Уничтожить воду.ПредметБольшой закрытый котел, удерживающий  до 5 галлонов. Энергостоимость создания: 400. Нелегален везде, где запрещена обычная возгонка.</description-loc>
+		<college>Food/Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/quart</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M46</reference>
+		<categories>
+			<category>Food</category>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">destroy water</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">mature</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 756px; left: 84px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Resist Acid</name><name-loc>Сопротивление кислоте</name-loc><spell version="2">
+		<name>Resist Acid</name>
+		<name-loc>Сопротивление кислоте</name-loc>
+		<description-loc>ОбычноеОбъект (человек, существо или предмет) и всё, что он несёт, становится неподверженным воздействию кислоты.Также относится к школе Защиты и предупреждения.Длительность: 1 минута.Стоимость:  2 сотворение; 6, если объект должен сопротивляться Истинной кислоте. Половина за поддержку.Требование: Создать кислоту.Предмет(а) Посох, жезл или украшение; действует только на носителя. Энергостоимость создания: 800. (б) Посох, жезл или украшение. Энергостоимость создания: 1.200.Призыв Элементаля воды, Контроль Элементаля воды, Создание Элементаля воды.Summon Water Elemental, Control Water Elemental, Create Water Elementalсм. M27-27</description-loc>
+		<college>Protection/Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2 or 6</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M190</reference>
+		<categories>
+			<category>Protection</category>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create acid</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 648px; left: 264px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Breathe Water</name><name-loc>Дышать водой</name-loc><spell version="2">
+		<name>Breathe Water</name>
+		<name-loc>Дышать водой</name-loc>
+		<description-loc>ОбычноеПозволяет объекту дышать водой, как будто это воздух, временно давая преимущество Не дышит (жабры) (B49). Объект не теряет способность дышать обычным воздухом! На усмотрение Мастера, это заклинание может также давать эквивалент Устойчивости к давлению 1 (B77), позволяя объекту забираться глубоко под воду без опасений.Также относится к школе Воздуха.Длительность: 1 минута.Стоимость: 4 сотворение. 2 поддержка.Требования: Создать воздух и Уничтожить воду. ПредметОдежда или украшение. Энергостоимость создания: 400.</description-loc>
+		<college>Air/Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M189</reference>
+		<categories>
+			<category>Air</category>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">destroy water</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create air</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 648px; left: 384px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard"><name>Geyser</name><name-loc>Гейзер (ОС)</name-loc><spell version="2">
+		<name>Geyser</name>
+		<name-loc>Гейзер (ОС)</name-loc>
+		<description-loc>ОбластноеВызывает извержение гейзера обжигающей воды из земли. Он создаёт дыру заданного заклинателем радиуса. Все находящиеся внутри гейзера, получают 3d вреда. Их автоматически выталкивает из области действия, и они должны бросить ЛВ(DX)-5, чтобы остаться на ногах!Через две секунды после появления гейзера обжигающая вода начинает падать обратно мелкими брызгами. В нормальных условиях, она воздействует на площадь вдвое большего радиуса исходного гейзера. Все попавшие под брызги получают 1d вреда в секунду.Пример: создан гейзер радиусом 2 ярда. Все в этой области получают 3d вреда. Спустя 2 секунды, все в 4 ярдах (кроме исходных 2 ярдов) получают 1d вреда.Если заклинатель находится в области гейзера, то получает обычный вред, а в области брызг, он остаётся невредим. Гейзер всегда должен появляться из земли; он не будет работать на крыше. Сотворённый при необычных обстоятельствах, он может создать интересные эффекты, такие как непрерывный ручей обжигающей воды, текущий под гору на врагов, но это должен контролировать Мастер.Длительность: 1 секунда.Базовая стоимость: 5 сотворение. 2 поддержка.Время сотворения: 5 секунд.Требования:  Шесть заклинаний школы Воды, включая Создать источник, и либо четыре заклинания школы Земли, либо четыре заклинания школы Огня.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 sec</duration>
+		<reference>M190</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<college compare="is">fire</college>
+					<quantity compare="at least">4</quantity>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<college compare="is">earth</college>
+					<quantity compare="at least">4</quantity>
+				</spell_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<college compare="is">water</college>
+				<quantity compare="at least">6</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create spring</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 648px; left: 612px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Umbrella</name><name-loc>Зонтик</name-loc><spell version="2">
+		<name>Umbrella</name>
+		<name-loc>Зонтик</name-loc>
+		<description-loc>ОбычноеПозволяет ходить, при любых лёгких осадках, не намокая. Видно, как невидимый «щит» отклоняет капли. Зонтик не работает против сильного (или магического) града, дождей из камней или лягушек, и т.д.Также относится к школе Защиты и предупреждения.Длительность: 10 минут.Стоимость: 1.Время сотворения: 2 секунды.Требование: Формировать воду или Щит.ПредметУкрашение. Действует всегда. Действует только на носителя. Энергостоимость создания: 100.</description-loc>
+		<college>Protection/Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>10 min</duration>
+		<reference>M185</reference>
+		<categories>
+			<category>Protection</category>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">shield</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 732px; left: 576px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Resist Water</name><name-loc>Сопротивление воде</name-loc><spell version="2">
+		<name>Resist Water</name>
+		<name-loc>Сопротивление воде</name-loc>
+		<description-loc>ОбычноеОбъект (личность, существо или предмет) и всё, что он несет, становится неуязвимым к воздействию сырости, оставаясь сухим, даже если будучи полностью погружённым в воду. Это заклинание защищает от сырости пара или льда, но не от обжигания или замерзания! Оно также защищает от подобных воде веществ; например, разлитый напиток не оставляет пятен. Его защита от кислоты ограничена – объект получает 2 СП(DR) от кислоты или погружения в неё.Также относится к школе Защиты и предупреждения.Длительность: 1 минута.Стоимость: 2 сотворение. 1 поддержка.Требования: или Формировать воду и Уничтожить воду, или Зонтик.Предмет(а) Посох, жезл или украшение. Действует постоянно. Действует только на носителя. Стоимость создания: 200 энергии и изумруд на 200$. (б) Посох, жезл или украшение. стоимость создания 400 энергии и изумруд на 200$.</description-loc>
+		<college>Protection/Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M186</reference>
+		<categories>
+			<category>Protection</category>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">shape water</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">umbrella</name>
+				</spell_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">destroy water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 732px; left: 684px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Water Jet</name><name-loc>Струя воды</name-loc><spell version="2">
+		<name>Water Jet</name>
+		<name-loc>Струя воды</name-loc>
+		<description-loc>ОбычноеПозволяет выстрелить тонкой струёй воды из пальца. Каждый ход, заклинатель кидает ЛВ(DX)-4 или умение Природная атака, чтобы попасть. От этой атаки можно уклониться или блокировать, но нельзя парировать. Она отбрасывает все цели, и повреждает существа из огня; она может убить или сбить рои летающих существ. Она может погасить область обычного огня радиусом в 1 ярд. Любой, кому попали в лицо Струёй воды получает штраф в -3 к боевым умениям на следующий ход за каждую единицу энергии, вложенную в струю.Длительность: 1 секунда.Стоимость: от 1 до 3. Наносит 1d повреждений за каждую единицу энергии, вложенную в неё. Расстояние равно количеству кубиков. Требование: Формировать воду.ПредметПосох, жезл или украшение. Используется только магами. Если предмет посох или жезл, струя исходит из его вершины. Энергостоимость создания: 600.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-3</casting_cost>
+		<maintenance_cost>1-3</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 sec</duration>
+		<melee_weapon>
+			<damage>1d cr/point</damage>
+			<usage>Jet</usage>
+			<reach>1/point</reach>
+			<parry>No</parry>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Beam</specialization>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M187</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 828px; left: 144px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Acid Jet</name><name-loc>Струя кислоты</name-loc><spell version="2">
+		<name>Acid Jet</name>
+		<name-loc>Струя кислоты</name-loc>
+		<description-loc>ОбычноеПозволяет выстрелить струёй кислоты из руки. Каждый ход, заклинатель кидает ЛВ(DX)-4 или умение Природная атака, чтобы попасть. От струи можно уклониться, но нельзя парировать или блокировать. Она отбрасывает как Струя снега; если струя попадает в лицо, кислота может ослепить жертву, как описано на странице B428.Длительность: 1 секунда.Стоимость: от 1 до 3. Наносит 1d-1 ошпаривающего вреда за единицу вложенной энергии. Дальность равна количеству кубиков. Стоимость поддержания та же. Требования: Магичность(Magery) 2, Струя воды и Создать кислоту.ПредметПосох или жезл. Используется только магами. Струя исходит из вершины предмета. Энергостоимость создания: 400.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-3</casting_cost>
+		<maintenance_cost>1-3</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 sec</duration>
+		<melee_weapon>
+			<damage>1d-1 cor/point</damage>
+			<usage>Jet</usage>
+			<reach>1/point</reach>
+			<parry>No</parry>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Beam</specialization>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M192</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (water)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">create acid</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">water jet</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 913px; left: 144px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Spit Acid</name><name-loc>Плевок кислотой (ОС)</name-loc><spell version="2">
+		<name>Spit Acid</name>
+		<name-loc>Плевок кислотой (ОС)</name-loc>
+		<description-loc>ОбычноеПодобно Струе кислоты, за тем исключением, что кислота выходит изо рта заклинателя, Плевок кислотой невозможно поддерживать, и каждая единица энергии дает 1d вреда, а не 1d-1. Заклинатель кидает ЛВ(DX)-2 или умение Природной атаки (M201). Это считается атакой; от неё можно уклониться или блокировать, но её нельзя парировать. Заклинатель должен стоять лицом к цели. Чтобы творить это заклинание не требуются жесты руками; вместо этого делаются определённые движения губами и языком. Таким образом, Паровое Дыхание можно творить «без рук» на любом уровне.Длительность: 1 секунда.Стоимость: от 1 до 4. Невозможно поддерживать.Время сотворения: 2 секунды.Требования: Магичность(Magery) 3, Струя кислоты и Сопротивление кислоте.ПредметУкрашение. Используется только магами. Энергостоимость создания: 400.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-4</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 sec</duration>
+		<melee_weapon>
+			<damage>1d cor/point</damage>
+			<usage>Breath</usage>
+			<reach>1/point</reach>
+			<parry>No</parry>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Breath</specialization>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M192</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (water)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">resist acid</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">acid jet</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block>
+<div style="position:absolute; left:750px; top:0px;">
+<block style="top: 179px; left: 52px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Current</name><name-loc>Течение</name-loc><spell version="2">
+		<name>Current</name>
+		<name-loc>Течение</name-loc>
+		<description-loc>Специальное; ОбластноеВлияет на течения любого большого количества воды. Каждое наложение заклинания, может сдвинуть течение на 22,5 градуса или изменить скорость на 1 миль/ч (или узел). Для достижения комбинации изменения направления и скорости, или более мощного изменения в одном или другом, стоимость увеличивается пропорционально.Заклинание может быть наложено на площадь, влияя на течение, протекающее на глубине до 40 ярдов.  Также заклинание может быть наложено на объект, например корабль, который должен быть охвачен во всей его полноте. Область действия перемещается вместе с объектом.Это также заклинание Воды.Длительность: 1 час.Стоимость: 1/50 (минимум 1). Столько же на поддержание.Время сотворения: 1 минута.Требование: Как минимум шесть заклинаний Воды.ПредметПосох, жезл или украшение. Энергостоимость создания: 300</description-loc>
+		<college>Water/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special/Area</spell_class>
+		<casting_cost>1/50</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M194</reference>
+		<categories>
+			<category>Water</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">water</college>
+				<quantity compare="at least">6</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 179px; left: 172px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Essential Water</name><name-loc>Истинная вода</name-loc><spell version="2">
+		<name>Essential Water</name>
+		<name-loc>Истинная вода</name-loc>
+		<description-loc>ОбычноеПодобно заклинанию Создать воду, но созданная вода – магически истинная вода. Она тушит любой огонь в той же пропорции, что обычная вода тушит обычный огонь. Она также в три раза лучше утоляет жажду – другими словами, всего кварта Истинной воды обеспечит жидкостью человека на день физически напряжённой деятельности в горячем климате (B426).Длительность: навсегда, пока её не используют; если её использовать, чтобы потушить огонь, например, образовавшийся пар – это обычная вода. Стоимость: 3 за созданный галлон.Требование: минимум 6 других заклинаний Воды.ПредметПосох, жезл или украшение. Используется только магами. Энергостоимость создания: 800.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3/gal</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M189</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="is">water</college>
+				<quantity compare="at least">6</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 179px; left: 388px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery3 hard"><name>Essential Acid</name><name-loc>Истинная кислота (ОС)</name-loc><spell version="2">
+		<name>Essential Acid</name>
+		<name-loc>Истинная кислота (ОС)</name-loc>
+		<description-loc>ОбычноеПревращает обычную кислоту в магическую истинную кислоту. Ни одно вещество не устойчиво к её разъеданию, и она наносит в три раза больше вреда, прежде чем нейтрализоваться. Истинная вода или Пламя, в подобных количествах, аннулируют Истинную кислоту. Если её заморозить заклинанием Заморозить, она безобидна, пока не растает.На усмотрение Мастера, это заклинание может создавать алкахест (M220).Длительность: навсегда, пока она не нейтрализуется.Стоимость: 8 за галлон.Требования: Магичность(Magery) 3 и все шесть заклинаний Кислоты. ПредметПосох, жезл или украшение. Используется только магами. Энергостоимость создания: 1.100.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>8/gal</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M192</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">acid ball</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">acid jet</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create acid</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">rain of acid</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">resist acid</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">spit acid</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 431px; left: 292px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Tide</name><name-loc>Прилив</name-loc><spell version="2">
+		<name>Tide</name>
+		<name-loc>Прилив</name-loc>
+		<description-loc>Специальное; ОбластноеКаждое наложение этого заклинания может повысить или понизить уровень воды на один фут; для более крупных изменений, стоимость увеличивается пропорционально.«Холм воды» созданный таким образом распространяется органично в области действия, опускаясь на один фут на каждый ярд за пределами фактической области заклинания. Заклинание может быть наложено на площадь, влияя на предметы затронутые приливом. Также заклинание может быть наложено на объект, например корабль, который должен быть охвачен во всей его полноте. Область действия перемещается вместе с объектом.Это также заклинание Воды.Длительность: 1 час.Стоимость: 1/50 (минимум 1). Столько же на поддержание.Время сотворения: 1 минута.Требование: Как минимум восемь заклинаний Воды.ПредметПосох, жезл или украшение. Энергостоимость создания: 225</description-loc>
+		<college>Water/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special/Area</spell_class>
+		<casting_cost>1/30</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M194</reference>
+		<categories>
+			<category>Water</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">water</college>
+				<quantity compare="at least">8</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 431px; left: 172px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Summon Water Elemental</name><name-loc>Вызов водного элементаля</name-loc><spell version="2">
+		<name>Summon Water Elemental</name>
+		<name-loc>Вызов водного элементаля</name-loc>
+		<description-loc>ОсобоеОтдельное заклинание для каждого из четырех элементов. Позволяет магу вызвать ближайшего элементаля – если такой есть. В общем, Мастер должен подразумевать, что элементаль всегда будет присутствовать в подходящей локации, если сценарий или ситуация не предусматривают обратного. Уровень силы элементаля определяет маг, вкладывая определенное количество энергии в заклинание, но точные способности элементаля определяются Мастером.Призванный элементаль не подконтролен заклинателю, но должен оставаться на час с ним, пока не будет отозван или разрушен. Заметьте, что отзыв не гарантирует что элементаль уйдёт. Если он враждебен или просто любопытен, то может захотеть остаться!Заклинатель может спрашивать призванного элементаля, просить об услуге и т.д. Элементаль немедленно делает бросок реакции, чтобы понять своё отношение к волшебнику. При хорошей реакции, он сотрудничает в течение часа – не дольше –, а затем исчезает. Мнение элементаля можно поколебать соответствующими соблазнами, конечно если волшебник представляет что может заинтересовать элементаля.Длительность: 1 час. Может быть неподдерживаемым.Стоимость: 1 энергия за 10 очков персонажа для построения элементаля. Минимальная энергостоимость 4 (однако это не всегда призывает 40-очковое существо).Время сотворения: 30 секунд. Элементаль может появиться в течении 2d минут.Требования: Магичность(Magery) 1 также или восемь заклинаний соответствующего элемента или четыре заклинания соответствующего элемента  и иное заклинание Вызов элементаля.ПредметПосох, палочка или украшение, с соответствующими элементу изображениями – для каждого из четырёх элементов требуются различные чары. Стоимость создания: 800 энергии, $1.300 золотом и платиной.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>4#</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>30 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M27</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<prereq_list all="yes">
+					<prereq_list all="no">
+						<spell_prereq has="yes">
+							<name compare="is">summon fire elemental</name>
+						</spell_prereq>
+						<spell_prereq has="yes">
+							<name compare="is">summon air elemental</name>
+						</spell_prereq>
+						<spell_prereq has="yes">
+							<name compare="is">summon earth elemental</name>
+						</spell_prereq>
+					</prereq_list>
+					<spell_prereq has="yes">
+						<college compare="contains">water</college>
+						<quantity compare="at least">4</quantity>
+					</spell_prereq>
+				</prereq_list>
+				<spell_prereq has="yes">
+					<college compare="contains">water</college>
+					<quantity compare="at least">8</quantity>
+				</spell_prereq>
+			</prereq_list>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (water)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 503px; left: 172px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Control Water Elemental</name><name-loc>Контроль водного элементаля</name-loc><spell version="2">
+		<name>Control Water Elemental</name>
+		<name-loc>Контроль водного элементаля</name-loc>
+		<description-loc>Обычное; Сопротивление по большему из СЛ(ST) и Воля(Will)Контроль всех действий одного элементаля, пока длится заклинание. Для прямого управления элементаль должен быть в видимости заклинателя. Если элементалю просто говорят уйти, он сделает это. Если его посылают с заданием, без прямого управления, его ИН(IQ) должен быть достаточным (по решению Мастера) для выполнения инструкций!Это заклинание может использоваться как информационное, чтобы оценить четыре атрибута данного типа элементаля (в пределах 15 футов). Бросок успеха требуется, но не стоит энергии.Длительность: 1 минута.Стоимость: 1 энергия за 10 очков персонажа для построения элементаля. Половина этого (округлять вверх) на поддержание.Время сотворения: 2 секунды.Требования: Вызов элементаля соответствующего элемента.ПредметПосох, палочка или украшение, с соответствующими элементу изображениями – для каждого из четырёх элементов требуются различные чары. Предмет не позволяет пользователя творить заклинания, но даёт ненакапливаемую премию  2 к любым попыткам использовать заклинание. Стоимость создания: 1.000 энергии, $1.300 золотом или платиной.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>Special</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M28</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">summon water elemental</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 575px; left: 172px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Create Water Elemental</name><name-loc>Создание водного элементаля</name-loc><spell version="2">
+		<name>Create Water Elemental</name>
+		<name-loc>Создание водного элементаля</name-loc>
+		<description-loc>ОсобоеСоздание духа соответствующего элеменета. Заклинатель может определить возможности создаваемого элементаля увеличивая или уменьшая атрибуты базового элементаля данного типа; он может менять менять, добавлять или убирать преимущества и недостатки с разрешения Мастера. Нетпределов вариации атрибутов, однако очень глупые элементали могут не понимать сложных команд. Вновь созданный элементаль служит заклинателю примерно один чат. В конце этого времени проведите состязание между умением мага в данном заклинании и комбинацией ИН(IQ) и СЛ(ST) элемента. При победе заклинателя, элемент служит еще час, в его конце снова требуется состязание, и т.д. При проигрыше заклинателя, элементаль избегает контроля и уходит (или атакует, при очень плохой реакции).Стоимость: 1 энергия за 5 очков персонажа на построение элементаля.Время сотворения: количество секунд равное сумме очков персонажа на создание элементаля.Требования: Магичность(Magery) 2 и Контроль элементаля соответствующего элемента.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>Special</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>Special</casting_time>
+		<duration>Permanent</duration>
+		<reference>M28</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (water)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">control water elemental</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 407px; left: 508px;" class="other-college"><name>Sand Jet</name><name-loc>Струя песка</name-loc><spell version="2">
+		<name>Sand Jet</name>
+		<name-loc>Струя песка</name-loc>
+		<description-loc>ОбычноеВыстреливает тонкой струёй песка из одной руки. Каждый ход, заклинатель бросает ЛВ(DX)-4 или умение Природная атака для попадания. От этой атаки можно уклониться или заблокировать, но парировать её нельзя. Если заклинание попадает в лицо, оно не наносит ран, но временно ослепляет цель, если только она не сделает успешный бросок ЗД(HT).Если цель провалила бросок ЗД(HT), то она ослеплена (см. Видимость, B394) на одну секунду за каждую единицу энергии, вложенную в заклинание. После того, как к цели вернётся возможность видеть, размытость зрения даёт ей штраф -3 на все боевые умения ещё на 1d секунд. На критически проваленном броске ЗД(HT), цель ослеплена на 1d секунд на каждую единицу энергии, вложенную в заклинание. На успешном броске ЗД(HT), жертва закрывает глаза на время действия заклинания, и таким образом, не может видеть одну секунду. На критическом успехе, на жертву не производится никакого эффекта.Длительность: 1 секунда.Стоимость: 1-3. Длина струи в ярдах равна величине энергии, вложенной в него. Стоимость поддержания такая же.Требуется: Создать землю.ПредметУкрашение, посох или жезл. Используется только магами. Энергостоимость создания: 600.</description-loc>
+		<college>Earth</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-3</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 sec</duration>
+		<melee_weapon>
+			<damage>Blinds</damage>
+			<usage>Jet</usage>
+			<reach>1/point</reach>
+			<parry>No</parry>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Beam</specialization>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M52</reference>
+		<categories>
+			<category>Earth</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create earth</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 407px; left: 628px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Create Earth</name><name-loc>Создать землю</name-loc><spell version="2">
+		<name>Create Earth</name>
+		<name-loc>Создать землю</name-loc>
+		<description-loc>ОбычноеПозволяет создать хорошую, твёрдую землю там, где её раньше не было. Земля должна быть создана в контакте с поверхностью, а не висящей в воздухе или плавающей в море!Длительность: навсегда.Стоимость: 2 за кубический ярд, чтобы создать землю из ничего (минимум 2); 1 за кубический ярд, чтобы сделать из грязи хорошую, твёрдую землю (минимум 1).Требуется: Землю в камень.ПредметПосох или жезл. Энергостоимость создания: 500.</description-loc>
+		<college>Earth</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/25 cu ft</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M51</reference>
+		<categories>
+			<category>Earth</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">earth to stone</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 539px; left: 568px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Mud Jet</name><name-loc>Струя грязи</name-loc><spell version="2">
+		<name>Mud Jet</name>
+		<name-loc>Струя грязи</name-loc>
+		<description-loc>ОбычноеВыстреливает тонкой струёй грязи из одного пальца. Каждый ход, заклинатель бросает ЛВ(DX)-4 или умение Природная атака, чтобы попасть. От этой атаки можно уклониться или заблокировать, но парировать её нельзя. Она отбрасывает все цели;  может убить или сбить рои летающих существ. Гасит нормальный огонь на площади радиусом один ярд.Если заклинание попадает в лицо, то временно ослепляет цель (см. Видимость, B394), если только она не сделает успешный бросок ЗД(HT). Если она провалила бросок ЗД(HT), то каждая единица энергии, вложенная в заклинание, ослепляет её на одну секунду. После того, как к цели вернётся возможность видеть, размытость зрения даёт ей штраф -3 на все боевые умения ещё на 1d секунд. При критическом провале ЗД(HT), цель ослеплена на 1d секунд на каждую единицу энергии, вложенную в заклинание. При успешном броске ЗД(HT), жертва закрывает глаза, и, таким образом, не может видеть одну секунду. При критическом успехе, на жертву не производится никакого эффекта.Это также заклинание Школы воды.Длительность: 1 секунда.Стоимость: от 1 до 3. Наносит 1d отбрасывания за каждую потраченную единицу энергии.Требуется: Струя воды и Создать землю, или Создать воду и Струя песка.ПредметПосох или жезл. Используется только магами. Струя исходит из вершины предмета. Энергостоимость создания: 600.</description-loc>
+		<college>Earth/Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-3</casting_cost>
+		<maintenance_cost>1-3</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 sec</duration>
+		<melee_weapon>
+			<damage>1d kb/point - Blinds</damage>
+			<usage>Jet</usage>
+			<reach>1/point</reach>
+			<parry>No</parry>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Beam</specialization>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M52</reference>
+		<categories>
+			<category>Earth</category>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sand jet</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 683px; left: 604px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Levitation</name><name-loc>Левитация</name-loc><spell version="2">
+		<name>Levitation</name>
+		<name-loc>Левитация</name-loc>
+		<description-loc>Обычное; сопротивление по СЛ(ST) или Воле(Will).Объект должен быть живым существом. Объект плывет сквозь воздух, перемещаясь так, как желает заклинатель. Передвижение левитируемого объекта требует Концентрацию, если заклинатель не является объектом. Оставить объект подвешенным в воздухе можно без концентрации. Максимальное Движение объекта равно 3, горизонтально или вертикально. Заклинатель, который левитирует себя, использует ЛВ(DX)-умения как обычно; другие объекты используют их с -3.Длительность: 1 минута.Стоимость: 1 за 80 фунтов (минимум 2) сотворение. Половина (округлить вверх) поддержание.Время сотворения: 2 секунды.Требования: Перемещение.Предмет(а) Посох, жезл или украшение; действует только на носителя. Энергостоимость создания: 800.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1 per 80 lbs</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M143</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 767px; left: 52px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Fog</name><name-loc>Туман</name-loc><spell version="2">
+		<name>Fog</name>
+		<name-loc>Туман</name-loc>
+		<description-loc>ОбластноеСоздает в области густой туман. Видимость в тумане составляет 1 ярд. Огненные оружие и метательные снаряды теряют свою дополнительную мощь в тумане. Огненный шар теряет 1 единицу урона за ярд тумана, который необходимо преодолеть (например, 3d Огненный шар пересекает 5 ярдов тумана и наносит 3d-5 ущерба), в то же время жертвы взрыва Огненного шара, могут рассчитывать каждый ярд тумана как 2 ярда от взрыва. Однако никакое количество тумана не может потушить огонь.Это также заклинание Воды.Длительность: 1 минута.Стоимость: 2 сотворение. Половина поддержка.Требование: Формировать Воду.ПредметПосох, жезл или украшение.Энергостоимость создания: 300.</description-loc>
+		<college>Water/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M193</reference>
+		<categories>
+			<category>Water</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 767px; left: 197px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Whirlpool</name><name-loc>Водоворот</name-loc><spell version="2">
+		<name>Whirlpool</name>
+		<name-loc>Водоворот</name-loc>
+		<description-loc>ОбластноеСоздаёт круглый водоворот в водоёме (озёра, реки, моря, а также пруды и бассейны). Концентрируясь, заклинатель может двигать Водоворот на любое расстояние, вплоть до его  диаметра за секунду. Заклинатель может перемещаться с половинной скоростью, пока концентрируется. В центре водоворота есть «воронка», радиус которой (на поверхности) может быть вплоть до половины радиуса водоворота. Глубина воронки может быть до удвоенного радиуса водоворота. Воронка становится уже к низу.Крайний ярд водоворота имеет Движение 1, внутреннее по отношению к нему кольцо  Движение 2, и так далее. Любого, кто попал в водоворот, будет тянуть на дно; необходимо сделать бросок Плавания, со штрафом равным скорости текущего кольца, каждый оборот, чтобы не быть затянутым в следующее внутреннее кольцо (вдобавок к обычным последствиям провала – B354). Успех на 3 или больше означает, что пловец смог выплыть на одно кольцо наружу (если он этого хочет).Водоворот мало влияет на существа и предметы, которые весят более 90 фунтов, умноженных на его радиус в ярдах. В водовороте, все основанные на ловкости умения (кроме водных, таких как Плавание и Акваланг) получают штраф -5, сверх любых штрафов за нахождение в воде.Длительность: 1 минута после достижения максимальной силы.Базовая стоимость: 2 на сотворение, половина на поддержание.Время сотворения: Водоворот появляется сразу, но заклинатель должен концентрироваться количество секунд, равное радиусу Водоворота в ярдах, чтобы довести его до полной силы. Водовороту требуется столько же времени на остановку после того, как заклинание закончится, но никакой концентрации на это не требуется.Требование: Формировать воду.ПредметПосох, жезл или украшение. Только для магов. Энергостоимость создания: 200 энергии и  изумруд на $500.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>Varies</casting_time>
+		<duration>1 min#</duration>
+		<reference>M187</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 767px; left: 340px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Waves</name><name-loc>Волны</name-loc><spell version="2">
+		<name>Waves</name>
+		<name-loc>Волны</name-loc>
+		<description-loc>Специальное, областное.Изменение состояния поверхности любого большого количества воды. Каждое наложение заклинания может увеличить или уменьшить высоту волны на один Балл шкалы Бофорта (см. выше); чтобы добиться изменения нескольких баллов, умножьте на них стоимость. Ветер не влияет. Следует отметить, что шкала Бофорта для океанских волн; волны, созданные на берегах озера, обычно, намного ниже, относительно скорости ветра (на усмотрение Мастера).Заклинание может быть наложено на площадь, влияя на вещи пересекающие её. Также заклинание может быть наложено на объект, например корабль, который должен быть охвачен весь (обычно, 10-30 ярдов в радиусе). Область действия перемещается вместе с объектом.Это также заклинание Воды.Длительность: 1 час.Стоимость: 1/60 (минимум 1). Столько же на поддержание.Время сотворения: 1 минута.Требование: Формировать Воду.ПредметПосох, жезл или украшение. Энергостоимость создания: 300</description-loc>
+		<college>Water/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special/Area</spell_class>
+		<casting_cost>1/60</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M194</reference>
+		<categories>
+			<category>Water</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 767px; left: 484px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Water Vision</name><name-loc>Видеть сквозь воду</name-loc><spell version="2">
+		<name>Water Vision</name>
+		<name-loc>Видеть сквозь воду</name-loc>
+		<description-loc>ИнформационноеПозволяет видеть сквозь воду, снег и лёд – чтобы найти затонувшие сокровища, прячущихся чудовищ и т.д.Также относится к школе Знаний.Длительность: 30 секунд.Стоимость: 1 за 20 ярдов глубины на сотворение (вплоть до 200 ярдов). Столько же на поддержание.Требование: Формировать воду.ПредметЛюбой. Энергостоимость создания: 200.</description-loc>
+		<college>Knowledge/Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>1#</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>30 sec</duration>
+		<reference>M187</reference>
+		<categories>
+			<category>Knowledge</category>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 767px; left: 604px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Swim</name><name-loc>Плавание</name-loc><spell version="2">
+		<name>Swim</name>
+		<name-loc>Плавание</name-loc>
+		<description-loc>ОбычноеПозволяет двигаться сквозь воду с нормальным Движением (уменьшенным как обычно за нагрузку). Объект полностью контролирует свое передвижение, и может действовать и сражаться без обычных штрафов за подводный бой. Это заклинание не дает объекту воздух для дыхания! Однако, объект имеет автоматические успехи на всех бросках Плавания, независимо от усталости или нагрузки, если его силой не затаскивают целиком под воду. Это также заклинание Воды.Длительность: 1 минута.Стоимость: 6 сотворение. 3 поддержание.Время сотворения: 3 секунды.Требования: Формировать воду и Левитация.ПредметПосох, палочка, украшение или накидка. На предмете должно быть изображение рыбы . Действует только на носителя. Энергостоимость создания: 1.000.</description-loc>
+		<college>Movement/Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>6</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M147</reference>
+		<categories>
+			<category>Movement</category>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">levitation</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 839px; left: 124px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Snow Shoes</name><name-loc>Снегоступы</name-loc><spell version="2">
+		<name>Snow Shoes</name>
+		<name-loc>Снегоступы</name-loc>
+		<description-loc>ОбычноеПозволяет ходить по снегу или льду, как будто это обычная земля. Заклинание устраняет любые штрафы к движению, ловкости или умениям за лёд или снег. Объект всё ещё подвержен штрафам за неустойчивую поверхность, например раскачивающуюся плавучую льдину или снежную лавину.Длительность: 1 минутаСтоимость: 2 сотворение. 1 поддержка.Время сотворения: 2 секунды.Требование: Формировать воду.ПредметБашмаки, сапоги или сандалии. Действует только на носителя. Энергостоимость создания: 350.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M186</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 839px; left: 268px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Walk Through Water</name><name-loc>Проходить сквозь воду</name-loc><spell version="2">
+		<name>Walk Through Water</name>
+		<name-loc>Проходить сквозь воду</name-loc>
+		<description-loc>ОбычноеПозволяет проходить сквозь воду или лёд, как будто это воздух; объект может проходить сквозь ледники, по дну озёр и т.д. Как заклинание Плавание, это заклинание убирает штрафы в бою за сражение в воде. В жидкой воде, объекту нужна поверхность, чтобы ходить по ней. Это заклинание может стоить больше, если требуется сопротивление большим давлениям. Заклинание ни открывает проход, которым могли бы последовать остальные, ни открывает, что с другой стороны.… Если заклинатель (или объект) знает заклинание, которое позволит ему дышать, у объекта не будет сложностей с дыханием в это время, без энергостоимости. Иначе, он должен задерживать дыхание!Если заклинание закончится до того, как объект выйдет на открытый воздух, он обнаружит, что погружён в воду. Автоматически вреда он не получает, но тонет (или задыхается, если во льду), если он не может выбраться.Длительность: 1 секунда.Стоимость: 4 сотворение. 3 поддержка.Время сотворения: 3 секунды.Требования: Магичность(Magery) 1 и Формировать воду.ПредметОдежда или украшение; Действует только на носителя. Энергостоимость создания: 1.100.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 sec</duration>
+		<reference>M188</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (water)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 839px; left: 412px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Walk on Water</name><name-loc>Ходить по воде</name-loc><spell version="2">
+		<name>Walk on Water</name>
+		<name-loc>Ходить по воде</name-loc>
+		<description-loc>ОбычноеХодить по воде, как с преимуществом Ходьба по жидкости (B97).Длительность: 1 минутаСтоимость: 3 сотворение. 2 поддержка.Время сотворения: 4 секунды.Требование: Формировать воду.ПредметПосох, жезл, украшение или одежда. Действует только на носителя. Энергостоимость создания: 500.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>4 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M186</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block>
+</div>
+<div style="position:absolute; left:1500px; top:10px;">
+<block style="top: 189px; left: 296px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Boil Water</name><name-loc>Вскипятить Воду</name-loc><spell version="2">
+		<name>Boil Water</name>
+		<name-loc>Вскипятить Воду</name-loc>
+		<description-loc>ОбычноеПревращает воду в пар. Вода значительно расширяется, переходя из жидкости в газ; всего пинта воды создает очень много пара. Обжигающий эффекта пара таков, что гекс с паром следует рассматривать в точности как гекс с огнём, за тем исключением, что он не может ничего поджечь.Длительность: навсегда, хотя пар сконденсируется естественным путём (примерно спустя 10 минут).Стоимость: 2 за объем воды размером с кулак (образует примерно гекс пара), 4 за кубический фут (40 кубических ярдов пара), 6 за квадратный ярд воды до глубины в фут (примерно 400 кубических ярдов пара), 3 за каждую дополнительную треть кубического ярда.Время сотворения: 10 секунд.Требования: Формировать воду и Нагреть.ПредметПосох, жезл или украшение. Стоимость создания: 200 энергии и сердолик стоимостью 100$.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M189</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">heat</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 105px; left: 404px;" class="other-college"><name>Heat</name><name-loc>Нагреть</name-loc><spell version="2">
+		<name>Heat</name>
+		<name-loc>Нагреть</name-loc>
+		<description-loc>СтандартноеЭто заклинание увеличивает температуру объекта. Не создает огня само по себе, однако многие материалы будут загораться при достаточном нагреве. Магу, планирующему частое использование этого заклинания, будет полезно иметь под рукой табличку с температурами плавления и воспламенения. Заклинание может иметь некоторые побочные эффекты. Оно может быть полезным, если вы заперты за решеткой – вы можете ее попытаться расплавить, но жар от кипящего металла может поджарить и вас! (Эти рекомендации используйте лишь для ориентировки – не превращайте игру в физические опыты!)Длительность: 1 минута. За каждую минуту температура поднимается на 20°С. Максимально возможная температура – 2.800°С.Стоимость: 1 за предмет размером с кулак, 2 – куб.ярд, и еще по 2 за каждый кубический ярд объема. Скорость нагревания может быть увеличена: нагрев будет на 40°C в минуту за удвоенную цену, на 60°C – за утроенную, и так далее. Более медленный нагрев при желании возможен, но затрат не снижает. Столько же на поддержание.Время сотворения: 1 минута.Требования: Создать огонь, Формировать огонь.ПредметПосох, палочка или украшение. Энергостоимость создания: 400; предмет должен содержать рубин на $300.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 min</duration>
+		<reference>M74</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create fire</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shape fire</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 297px; left: 404px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Resist Cold</name><name-loc>Сопротивление холоду</name-loc><spell version="2">
+		<name>Resist Cold</name>
+		<name-loc>Сопротивление холоду</name-loc>
+		<description-loc>СтандартноеОбъект (существо или предмет) и все, что он имеет с собой, получает иммунитет к охлаждению и обморожению. Не защищает от ледяных копей, падающих ледяных глыб и т.д. Продолжительность: 1 минута.Энергостоимость: 2 на сотворение, 1 на поддержание. За двойную цену - защищает от -40° и ниже, за тройную - от абсолютного нуля!Требуется: Нагреть.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M74</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">heat</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 345px; left: 176px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Resist Fire</name><name-loc>Сопротивление огню</name-loc><spell version="2">
+		<name>Resist Fire</name>
+		<name-loc>Сопротивление огню</name-loc>
+		<description-loc>СтандартноеОбъект (существо или предмет) и все, что он имеет с собой, получает иммунитет к огню и жаре (но не электричеству).Длительность: 1 минута.Стоимость: 2 на сотворение, 1 на поддержание. За двойную стоимость - защищает от вулкана, за тройную - от жара звезды или ядерного взрыва. Против обычных заклинаний школы огня достаточно первого уровня.Требования: Огнеупорность.ПредметПосох, палочка или украшение; действует только на владельца. Энергостоимость создания: 800; предмет должен содержать рубин на $500 и чёрный оникс на $200.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2#</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M74</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">fireproof</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 465px; left: 356px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Cold</name><name-loc>Охладить</name-loc><spell version="2">
+		<name>Cold</name>
+		<name-loc>Охладить</name-loc>
+		<description-loc>СтандартноеЭто заклинание уменьшает температуру объекта. Многие материалы будут разрушаться при ударе, если будут достаточно охлаждены. Максимальное охлаждение – до абсолютного нуля. За пропорциональное увеличение затрат можно охлаждать быстрее.Длительность, Стоимость и Время сотворения: идентично Нагреть, за исключением того, что каждая минута поддержания заклинания охлаждает предмет на 20°C.Требования: Нагреть.ПредметПосох, палочка или украшение. Энергостоимость создания: 400; предмет должен содержать рубин на $300 и сапфир на $300.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 min</duration>
+		<reference>M74</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">heat</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 573px; left: 92px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Clouds</name><name-loc>Облака</name-loc><spell version="2">
+		<name>Clouds</name>
+		<name-loc>Облака</name-loc>
+		<description-loc>ОбластноеСоздает или рассеивает обычный облачный покров, на выбор заклинателя.Это также заклинание Воздуха.Длительность: 10 минут, после чего облака уходят или возвращаются, если заклинание не поддерживается.Стоимость: 1/20 (минимум 1). Столько же на поддержание.Время сотворения: 10 секунд.Требование: Как минимум два заклинания Воды и два заклинания Воздуха.ПредметПосох, жезл или украшение. Энергостоимость создания: 300</description-loc>
+		<college>Air/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1/20</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>10 min</duration>
+		<reference>M194</reference>
+		<categories>
+			<category>Air</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">air</college>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">water</college>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 237px; left: 404px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Melt Ice</name><name-loc>Растопить лёд</name-loc><spell version="2">
+		<name>Melt Ice</name>
+		<name-loc>Растопить лёд</name-loc>
+		<description-loc>ОбластноеПревращает твёрдый лёд в воду.Длительность: Навсегда при температуре ниже нуля; иначе 10 минут.Базовая стоимость: 1 (минимум 2). Ниже нуля стоимость поддержки такая же. Время сотворения: 10 секунд.Требование: Нагреть или Заморозить.ПредметПосох, жезл или украшение. Стоимость создания: 300 энергии, на $100 материала.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2#</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Perm #</duration>
+		<reference>M186</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">freeze</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">heat</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 153px; left: 608px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Freeze</name><name-loc>Заморозить</name-loc><spell version="2">
+		<name>Freeze</name>
+		<name-loc>Заморозить</name-loc>
+		<description-loc>ОбычноеПревращает воду в твёрдый лёд. Лёд сохраняет форму контейнера; в открытой воде, лёд замерзает в форме сферы или куба, по желанию заклинателя. Заклинание Формирования воды может быть сотворено на воду до того, как она будет заморожена, или чтобы изменить форму льда после того, как она заморожена.Длительность: Лёд остаётся пока не растает естественным образом. Стоимость: 2 за объект размером с кулак, 4 за размер вплоть до кубического фута, 6 за кубический ярд, ещё 3 за каждый доп. кубический ярд. Если температура выше нуля, то можно поддерживать заклинание за стоимость сотворения каждые 10 минут.Время сотворения: 10 секунд.Требование: Формировать воду.ПредметПосох, жезл или украшение. Стоимость создания: 200 энергии, синий драгоценный камень за $100.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M185</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 237px; left: 680px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Create Ice</name><name-loc>Создать лёд</name-loc><spell version="2">
+		<name>Create Ice</name>
+		<name-loc>Создать лёд</name-loc>
+		<description-loc>ОбычноеСоздаёт некоторое количество льда или снега. Он может появиться как: твёрдая глыба любой формы; в контейнере (который должен быть достаточно велик); как масса ледяных стружек (отлично подходит для охлаждения напитков); или как облако снега (которое оседает на землю). Требуются 60 галлонов ледяных стружек или снега, чтобы потушить огонь радиусом 1 ярд.Галлон снега, в зависимости от пушистости (M195), покроет область радиусом в один ярд на глубину от двух до 18 дюймов.Длительность: навсегда, пока не растает естественным путём.Стоимость: 2 за каждый галлон льда.Требование: Заморозить.ПредметПосох, жезл или украшение. Стоимость создания: 200 энергии и сапфир за 100$.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/gal</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M188</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">freeze</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 369px; left: 680px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Body of Water</name><name-loc>Тело из воды</name-loc><spell version="2">
+		<name>Body of Water</name>
+		<name-loc>Тело из воды</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Временно даёт объекту мета-черту «Тело из воды» (B262). Одежда (вплоть до 6 фунтов) становится жидкой вместе с ним, а остальные пожитки падают на землю.Длительность: 1 минута.Стоимость: 5 сотворение. 2 поддержка.Время сотворения: 5 секунд.Требование: Формировать водуПредмет(а) Посох, жезл или украшение. Действует только на носителя. Большой недостаток в падении предмета сквозь руку пользователя после активации – таким образом он действует всего минуту. Энергостоимость создания: 1.200. (б) Посох, жезл или украшение. Действует только на носителя. В отличие от предыдущего предмета, оно становится водянистым вместе с носителем, позволяя ему поддерживать заклинание больше чем минуту. Пока предмет водянистый, он теряет все магические силы, которые у него обычно есть. Энергостоимость создания: 2.500.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M185</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 297px; left: 512px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Snow Jet</name><name-loc>Струя снега</name-loc><spell version="2">
+		<name>Snow Jet</name>
+		<name-loc>Струя снега</name-loc>
+		<description-loc>ОбычноеПозволяет выстрелить тонкой струёй снега из пальца. Каждый ход, заклинатель кидает ЛВ(DX)-4 или умение Природная атака, чтобы попасть. От этой атаки можно уклониться или блокировать, но нельзя парировать. Она отбрасывает все цели, и повреждает существа из огня; может убить или сбить рои летающих существ. Может погасить область обычного огня радиусом в ярд. Если заклинание попадает в лицо цели, то временно ослепляет её, если она не выкинет ЗД(HT).Если бросок ЗД(HT) провален, каждая единица энергии, вложенная в заклинание, ослепляет цель на одну секунду. После возвращения зрения, из-за неясного зрения она получает штраф -3 ко всем боевым умениям ещё на 1d секунд. При критически провале ЗД(HT), цель ослеплена на 1d секунд за каждую единицу энергии, вложенную в заклинание. При успешном броске ЗД(HT), жертва закрывает глаза, и соответственно не может видеть, на одну секунду. При критическом успехе, на жертву заклинание не подействовало.Длительность: 1 секунда.Стоимость: от 1 до 3. Наносит 1d отбрасывания за каждую единицу энергии, вложенную в неё. Расстояние равно количеству кубиков. Стоимость поддержания та же.Требования: Струя воды и Заморозить.ПредметПосох или жезл. Используется только магами. Струя исходит из вершины предмета.Энергостоимость создания: 600; Посох или жезл должен заканчиваться сапфиром стоимостью в 500$.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-3</casting_cost>
+		<maintenance_cost>1-3</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 sec</duration>
+		<melee_weapon>
+			<damage>1d kb/point - Blinds</damage>
+			<usage>Jet</usage>
+			<reach>1/point</reach>
+			<parry>No</parry>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Beam</specialization>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M189</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">freeze</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">water jet</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 285px; left: 236px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Steam Jet</name><name-loc>Струя пара</name-loc><spell version="2">
+		<name>Steam Jet</name>
+		<name-loc>Струя пара</name-loc>
+		<description-loc>ОбычноеПозволяет выстрелить тонкой струёй обжигающего пара из пальца. Каждый ход, заклинатель кидает ЛВ(DX)-4 или умение Природная атака, чтобы попасть. От этой атаки можно уклониться или блокировать, но нельзя парировать. Она отбрасывает все цели вдобавок к обычному вреду; она наносит двойной вред существам из огня или льда. Она может погасить область обычного огня радиусом в 1 ярд. Если заклинание попадает в лицо цели, но временно ослепляет её, если она не выбросит ЗД(HT).Если бросок ЗД(HT) провален, каждая единица энергии, вложенная в заклинание, ослепляет цель на одну секунду. После возвращения зрение, из-за неясного зрения она получает штраф -3 ко всем боевым умениям ещё на 1d секунд. При критическом провале ЗД(HT), цель ослеплена на 1d секунд за каждую единицу энергии, вложенную в заклинание. При успешном броске ЗД(HT), жертва закрывает глаза, и соответственно не может видеть, на одну секунду. При критическом успехе, на жертву заклинание не подействовало.Длительность: 1 секундаСтоимость: от 1 до 3. Наносит 1d-1 ошпаривающего вреда за каждую единицу вложенной энергии. Дальность равна количеству кубиков. Стоимость поддержания та же. Требования: Струя воды и Вскипятить воду.ПредметПосох или жезл. Используется только магами. Струя исходит из вершины предмета. Энергостоимость создания: 700; Посох или жезл должен заканчиваться сердоликом стоимостью 300$.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-3</casting_cost>
+		<maintenance_cost>1-3</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 sec</duration>
+		<melee_weapon>
+			<damage>1d-1 burn/point</damage>
+			<usage>Jet</usage>
+			<reach>1/point</reach>
+			<parry>No</parry>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Beam</specialization>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M191</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">boil water</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">water jet</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 369px; left: 296px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Create Steam</name><name-loc>Создать пар</name-loc><spell version="2">
+		<name>Create Steam</name>
+		<name-loc>Создать пар</name-loc>
+		<description-loc>ОбластноеСоздаёт облако пара. Пока оно не рассеется, любой, стоящий в области действия заклинания рискует ошпариться (рассматривайте как окружение огнём, B443-B444, тлько пар не может ничего поджечь). Пар имеет тенденцию подниматься; скорость рассеяния зависит от местности, окружающей температуры и наличия ветра -  в помещении, пар остаётся пока заклинание не закончится, но вне помещений в ветреный или холодный день может продержаться всего около 10 секунд.Длительность: 5 минут или менее, как описано выше.Базовая стоимость:  2 сотворение. Невозможно поддержать.Требование: Вскипятить воду.ПредметПосох, жезл или украшение. Стоимость создания: 400 энергии и сердолик стоимостью в  100$.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>5 min #</duration>
+		<reference>M190</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">boil water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 345px; left: 68px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Ice Sphere</name><name-loc>Ледяная сфера</name-loc><spell version="2">
+		<name>Ice Sphere</name>
+		<name-loc>Ледяная сфера</name-loc>
+		<description-loc>МетательноеПозволяет швырнуть шар льда из руки. При ударе он наносит дробящий вред и рассыпается в водные брызги. Ледяная сфера в 1 куб также может потушить огонь в радиусе ярда, если хорошо прицелиться. Сфера имеет 1/2Д 40, Max 80, Точ 2.Стоимость: Любая, вплоть до уровня Магических способностей в секунду, на протяжении трех секунд. Сфера наносит 1d вреда за единицу энергии.Время сотворения: 1-3 секунд.Требование: Формировать водуПредметПосох или жезл – шар выстреливается из конца предмета. Используется только магами. Энергостоимость создания: 400; Посох или жезл должен иметь на конце сапфир на $500.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Missile</spell_class>
+		<casting_cost>1-Magery</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1-3 sec</casting_time>
+		<duration>Instant</duration>
+		<ranged_weapon>
+			<damage>1d cr/point</damage>
+			<accuracy>2</accuracy>
+			<range>40/80</range>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Projectile</specialization>
+				<modifier>0</modifier>
+			</default>
+		</ranged_weapon>
+		<reference>M186</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 441px; left: 32px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Ice Dagger</name><name-loc>Ледяной кинжал</name-loc><spell version="2">
+		<name>Ice Dagger</name>
+		<name-loc>Ледяной кинжал</name-loc>
+		<description-loc>МетательноеСоздаёт и метает острую как бритва сосульку. При попадании наносит проникающий вред и мгновенно тает. У неё 1/2Д 30, Max 60, Точ 3.Стоимость: любое количество вплоть до уровня Магичности в секунду, за 3 секунды. Наносит 1d-1 проникающего вреда за единицу вложенной энергии. Нет доп. эффекта против огненных существ.Время сотворения: от 1 до 3 секунд.Требование: Сфера льда или Струя воды.ПредметУкрашение; предмет должен либо иметь форму кинжала, или быть украшенным кинжалами. Используется только магами. Энергостоимость создания: 400.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Missile</spell_class>
+		<casting_cost>1-Magery</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1-3 sec</casting_time>
+		<duration>Instant</duration>
+		<ranged_weapon>
+			<damage>1d-1 imp/point</damage>
+			<accuracy>3</accuracy>
+			<range>30/60</range>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Projectile</specialization>
+				<modifier>0</modifier>
+			</default>
+		</ranged_weapon>
+		<reference>M188</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">water jet</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">ice sphere</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 573px; left: 248px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Frost</name><name-loc>Иней</name-loc><spell version="2">
+		<name>Frost</name>
+		<name-loc>Иней</name-loc>
+		<description-loc>ОбластноеПокрывает инеем все поверхности в области действия заклинаний. Иней является настоящим, и длится бесконечно долго, пока температура ниже нуля. В более теплых условиях, быстро таит, образуя росу. Если бросить сверху реальный или магический огонь, иней становится облаком пара и вызывает яркий свет со свистом на несколько секунд. На самом деле, достаточно крошечного огня – спичка или свеча – чтобы заклинание Иней перестало работать.Если использовать заклинание Иней на огненный элементаль или другое огненное создание, то оно наносит 1 единицу урона, но это скорее разозлит создание, чем прогонит.Это также заклинание Воды.Длительность: иней длится до тех пор, пока не растает.Стоимость: 1.Требование: Создание Воды или Охладить.ПредметПосох, жезл или украшение.Энергостоимость создания: 200, $350 голубой камень.</description-loc>
+		<college>Water/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Indef</duration>
+		<reference>M193</reference>
+		<categories>
+			<category>Water</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">cold</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 549px; left: 356px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Coolness</name><name-loc>Прохлада</name-loc><spell version="2">
+		<name>Coolness</name>
+		<name-loc>Прохлада</name-loc>
+		<description-loc>ОбычноеОбъекту комфортно прохладно в тёплую погоду, что исключает риск обезвоживания и теплового удара – но не солнечных ожогов! Объект получает Устойчивость к температуре 3 (B93) против жары на время действия заклинания. Заклинание не даёт защиты от настоящего пламени или огненных атак.Также относится к школе Защиты и предупреждения.Длительность: 1 час.Стоимость: 2 сотворение. 1 поддержка.Время сотворения: 10 секунд.Требование: Охладить.ПредметОдежда, посох или украшение. Действует только на носителя. Энергостоимость создания: 200.</description-loc>
+		<college>Protection/Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hour</duration>
+		<reference>M187</reference>
+		<categories>
+			<category>Protection</category>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">cold</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 549px; left: 464px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Condense Steam</name><name-loc>Конденсация пара</name-loc><spell version="2">
+		<name>Condense Steam</name>
+		<name-loc>Конденсация пара</name-loc>
+		<description-loc>ОбластноеПревращает пар в воду комнатной температуры.Длительность: навсегда, но вода может снова закипеть. Базовая стоимость: 1 (минимум 2).Время сотворения: 10 секунд.Требование: Охладить или Вскипятить воду.ПредметПосох, жезл или украшение.  Стоимость создания: 300 энергии и изумруд стоимостью 100$.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2#</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M189</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">boil water</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">cold</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 657px; left: 416px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Frostbite</name><name-loc>Обморожение</name-loc><spell version="2">
+		<name>Frostbite</name>
+		<name-loc>Обморожение</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Понижает температуры тканей тела объекта, вызывая повреждения или смерть. Действует на всю цель, если твориться на расстоянии; если сотворено при касании, вред ограничиваются частью тела. Броня не защищает.Длительность: Вред остаётся пока не будет вылечен. Стоимость: 1 за 1d вреда, вплоть до 3.Время сотворения: 3 секунды.Требования: Иней и Заморозить.ПредметПосох или жезл. Используется только магами; предмет должен касаться объекта. Стоимость создания: 700 энергии, $500 материалов для заклинания, и синий драгоценный камень за 500$.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>Permanent</duration>
+		<melee_weapon>
+			<damage>1d freezing/point</damage>
+			<reach>Special</reach>
+			<parry>No</parry>
+		</melee_weapon>
+		<reference>M189</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">freeze</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">frost</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 657px; left: 308px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Ice Slick</name><name-loc>Гололёд</name-loc><spell version="2">
+		<name>Ice Slick</name>
+		<name-loc>Гололёд</name-loc>
+		<description-loc>ОбластноеПокрывает пол или землю четвертьдюймовым слоем прозрачного льда. Рисковая опора для ног. Все атаки в рукопашную, и все активные защиты получают -3 на льду. Другие физические умения, включая дальнобойные и метательные оружия, производятся с -2. Даже ходить по льду тяжело – в целом, каждый кто пытается ходить или бегать должен кидать ЛВ(DX)-2 на каждый пройденный ярд. При провале он падает на лёд. Можно с ещё одним броском ЛВ(DX)-2 попытаться встать на следующем ходу. Шипованная обувь устраняет эти штрафы.Гололёд очень трудно увидеть. Все, кто не высматривает специально на земле лёд, должны кидать Зрение-3, чтобы заметить гололёд до того, как на него наступят.Гололёд потушит область нормального огня, которая с ним перекрывается, и наоборот.Длительность: Гололёд существует, пока не растает естественным образом.Базовая стоимость: 3.Время сотворения: 2 секунды на ярд радиуса.Требование: Иней.Предмет(а) Коврик или циновка. Стоимость за 10 квадратных футов: 100 энергии, на $250 материала. (б) Посох, жезл или украшение.  Стоимость создания: 250 энергии, синий драгоценный камень за $500.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>Varies</casting_time>
+		<duration>Permanent</duration>
+		<reference>M186</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">frost</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 657px; left: 200px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Snow</name><name-loc>Снег</name-loc><spell version="2">
+		<name>Snow</name>
+		<name-loc>Снег</name-loc>
+		<description-loc>ОбластноеСоздает (или предотвращает) 1 дюйм снега в обычных условиях. Для работы должны образом, это заклинание необходимо колдовать при температуре 32°F (0°C) и ниже. Если это заклинание колдуется в более теплых условиях, то оно призывает моросящий дождь, который увлажняет землю, но не оставляет каких-либо значительных луж.Это также заклинание Воздуха и заклинание Воды.Длительность: 1 час.Стоимость: 1/15 (минимум 1). Каждые дополнительные 1/15 единиц энергии на ярд радиуса увеличивает количество снега на 1 дюйм в час. Столько же на поддержание.Требование: Облака и Иней.ПредметПосох. Используется только магами. Предмет должен храниться в холоде, если не используется; он теряет свою силу, если находится под воздействием температуры 90°F (32°C) более чем два часа. Столько же на поддержание. Энергостоимость создания: 450.</description-loc>
+		<college>Air/Water/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1/15#</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M195</reference>
+		<categories>
+			<category>Air</category>
+			<category>Water</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">frost</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">clouds</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 657px; left: 92px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Rain</name><name-loc>Дождь</name-loc><spell version="2">
+		<name>Rain</name>
+		<name-loc>Дождь</name-loc>
+		<description-loc>ОбластноеСоздает (или предотвращает) 1 дюйм дождя в обычных условиях.Это также заклинание Воздуха и заклинание Воды.Длительность: 1 час.Стоимость: 1/10 (минимум 1). Стоимость сотворения дождя может быть удвоена в пустыне или на другой территории (на усмотрение Мастера) где дождь не свойствен. Стоимость для предотвращения дождя удваивается в естественных для дождя условиях или болотной местности. Столько же на поддержание.Время сотворения: 1 минута.Требование: Облака.ПредметПосох или палочка. Используется только магами. Предмет должен храниться в воде, если не используется; он теряет свою силу, если остается сухим более чем на час.Энергостоимость создания: 600</description-loc>
+		<college>Air/Water/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1/10#</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M195</reference>
+		<categories>
+			<category>Air</category>
+			<category>Water</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">clouds</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 729px; left: 200px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Hail</name><name-loc>Град</name-loc><spell version="2">
+		<name>Hail</name>
+		<name-loc>Град</name-loc>
+		<description-loc>Областное.Создает град. Температура должна быть чуть выше нуля. Главный эффект – подвергнуть интенсивному разрушению любое живое существо, на которое обрушился град; маг должен бросать кубик Воли(Will) каждую секунду, чтобы поддерживать концентрацию. При сотворении града стоимостью 5, Мастер может позволить реально большие градины, наносящие 1d-2 дробящего урона в секунду.Это также заклинание Воды.Длительность: 1 минута.Стоимость: 1/5 (минимум 1). Для разрушительных градин, стоимость 1. Столько же на поддержание.Требование: СнегПредметПосох. Используется только магами. Энергостоимость создания: 500.</description-loc>
+		<college>Water/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1/5#</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<melee_weapon>
+			<damage>1d-2 cr</damage>
+			<usage>Area</usage>
+			<reach>Special</reach>
+			<parry>No</parry>
+		</melee_weapon>
+		<reference>M195</reference>
+		<notes>base cost 1 for damaging hail</notes>
+		<categories>
+			<category>Water</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">snow</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 813px; left: 92px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Storm</name><name-loc>Шторм</name-loc><spell version="2">
+		<name>Storm</name>
+		<name-loc>Шторм</name-loc>
+		<description-loc>ОбластноеСоздает или рассеивает шторм. В зависимости от окружающей температуры и влажности, он может стать просто штормовым ветром или включать в себя дождь, снег или град – случайные молнии, также. Это особенно эффективно на море. Заклинание является непредсказуемым по своему воздействию (что позволяет Мастеру решить, что делает шторм… ).Заклинание может также использоваться для того, чтобы развеять шторм; эффективность заклинания зависит от размеров заколдованного района, в соотношении с естественной территорией шторма. Продолжительность: 1 час.Базовая стоимость: 1/50 (минимум 1). Столько же  поддержка.Требование: Дождь и Град.ПредметПосох. Используется только магами.Энергостоимость создания: 1.000.</description-loc>
+		<college>Air/Water/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1/50</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M195</reference>
+		<categories>
+			<category>Air</category>
+			<category>Water</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">hail</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">rain</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 897px; left: 247px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Rain Ice Daggers</name><name-loc>Дождь ледяных кинжалов</name-loc><spell version="2">
+		<name>Rain Ice Daggers</name>
+		<name-loc>Дождь ледяных кинжалов</name-loc>
+		<description-loc>ОбластноеЛедяные кинжалы падают с неба на область действия, нанося 1d-2 пронзающего вреда в секунду всем находящимся в ней. Персонажи и существа под Дождём ледяных кинжалов получают вред в свой ход; если менее секунды было проведено в области действия, вред делятся на два (округлять вниз).Это заклинание можно сотворить только вне помещений. Броня защищает обычно. Щит с ПЗ(DB) 2 или лучше можно держать над головой, чтобы блокировать лёд, но он может получить повреждения (B484). На это требуются две руки и манёвр Подготовки, и автоматически успешно защищает, как только щит подготовлен вверх, но это делает щит неготовым для его обычных защитных функций!Неподвижные предметы вроде зданий защищают своим СП(DR).Длительность: 1 минута.Базовая стоимость: 1 (минимум 2). За удвоенную базовую стоимость вред 1d в секунду!Требования: Магичность(Magery) 2, Град и Ледяной кинжал.ПредметПосох. Используется только магами. Стоимость создания: 800 энергии и сапфир стоимостью в 1.000$.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2#</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<melee_weapon>
+			<damage>1d-2 imp</damage>
+			<usage>Area</usage>
+			<reach>Special</reach>
+			<parry>No</parry>
+		</melee_weapon>
+		<reference>M192</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">ice dagger</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">hail</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (water)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 453px; left: 608px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Body of Ice</name><name-loc>Тело изо льда (ОС)</name-loc><spell version="2" very_hard="yes">
+		<name>Body of Ice</name>
+		<name-loc>Тело изо льда (ОС)</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Временно даёт мета-черту «Тело изо льда» (B262). Одежда (вплоть до 6 фунтов) также становится льдом, но теряет любые магические силы, которые у неё были.Длительность: 1 минута. Заканчивается, если объект теряет сознание. Стоимость: 7 сотворение. 3 поддержка.Время сотворения: 5 секунд.Требования:  Магичность(Magery) 2, Тело из воды и Заморозить.ПредметПосох, жезл или украшение. Работает только на носителя. Энергостоимость создания: 1.300.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>7</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M189</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (water)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">freeze</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">body of water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 381px; left: 464px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1 hard"><name>Icy Breath</name><name-loc>Ледяное дыхание (ОС)</name-loc><spell version="2">
+		<name>Icy Breath</name>
+		<name-loc>Ледяное дыхание (ОС)</name-loc>
+		<description-loc>ОбычноеЗаклинатель испускает смертоносный град льда и холодного воздуха изо рта. Заклинатель бросает ЛВ(DX)-4 или умение Природная атака, чтобы попасть. Это считается атакой; от неё можно уклониться или блокировать, но её нельзя парировать. Заклинатель должен стоять лицом к цели. Чтобы творить это заклинание не требуются жесты руками; вместо этого делаются определённые движения губами и языком. Таким образом, Ледяное дыхание можно творить «без рук» на любом уровне.Длительность: 1 секунда.Стоимость: от 1 до 4. Наносит 1d 1 вреда за вложенную единицу энергии. Невозможно поддерживать. Время сотворения: 2 секунды.Требования: Магичность(Magery) 1, Струя снега и Сопротивление холоду.ПредметУкрашение. Используется только магами. Стоимость создания: 400 энергии и сапфир стоимостью 500$.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-4</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 sec</duration>
+		<melee_weapon>
+			<damage>1d 1 freezing/point</damage>
+			<usage>Breath</usage>
+			<reach>1/point</reach>
+			<parry>No</parry>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Breath</specialization>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M192</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (water)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">snow jet</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">resist cold</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 429px; left: 236px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1 hard"><name>Breathe Steam</name><name-loc>Паровое дыхание (ОС)</name-loc><spell version="2">
+		<name>Breathe Steam</name>
+		<name-loc>Паровое дыхание (ОС)</name-loc>
+		<description-loc>ОбычноеПодобно Струе пара, за тем исключением, что пар выходит изо рта заклинателям, Паровое дыхание невозможно поддерживать, и каждая единица энергии дает 1d вреда, а не 1d-1. Заклинатель кидает ЛВ(DX)-2 или умение Природной атаки. Это считается атакой; от неё можно уклониться или блокировать, но её нельзя парировать. Заклинатель должен стоять лицом к цели. Чтобы творить это заклинание не требуются жесты руками; вместо этого делаются определённые движения губами и языком. Таким образом, Паровое дыхание можно творить «без рук» на любом уровне.Длительность: 1 секунда.Стоимость: от 1 до 4. Невозможно поддерживать.Время сотворения: 2 секунды.Требования: Магичность(Magery) 1, Струя Пара и Сопротивление огню. ПредметУкрашение. Используется только магами. Стоимость создания: 1.000 энергии и сердолик стоимостью 500$.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-4</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 sec</duration>
+		<melee_weapon>
+			<damage>1d burn/point</damage>
+			<usage>Breath</usage>
+			<reach>1/point</reach>
+			<parry>No</parry>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Breath</specialization>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M192</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (water)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">resist fire</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">steam jet</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 741px; left: 416px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1 hard"><name>Flesh to Ice</name><name-loc>Плоть в лёд (ОС)</name-loc><spell version="2" very_hard="yes">
+		<name>Flesh to Ice</name>
+		<name-loc>Плоть в лёд (ОС)</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Превращает живой объект (и всё его снаряжение!) в лёд. Камень в плоть может обратить эффект этого заклинания, но заклинатель получает штраф -4, если он не знает Плоть в лёд. Снять проклятье также может разрушить чары.Длительность:  навсегда, пока не обратит другое заклинание, или произойдёт существенное растопление (или разрушение). Стоимость: 12 сотворение; должно воздействовать на весь объект, а не на часть!Время сотворения: 2 секунды.Требования: Магичность(Magery) 1, Обморожение и Тело из воды.ПредметПосох или жезл. Используется только магами; предмет должен касаться объекта. Энергостоимость создания: 1.200.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>12</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M190</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (water)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">body of water</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">frostbite</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block>
+</div>
+

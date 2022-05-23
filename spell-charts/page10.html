@@ -1,0 +1,2142 @@
+<block style="top: 127px; left: 323px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Enchant</name><name-loc>Наложение чар</name-loc><spell version="2" very_hard="yes">
+		<name>Enchant</name>
+		<name-loc>Наложение чар</name-loc>
+		<description-loc>Наложение чарТребование для всех остальных заклинаний наложения чар. Для зачарования предмета, заклинатель должен так же знать и это заклинания тоже. Заклинатель бросает против навыка меньшего между этим заклинанием и спецефическим заклинанием, которое он хочет наложить на предмет. Если у него есть помощники, у них должны быть навыки не меньше 15 в обоих заклинаниях, но бросок определяется умением заклинателя.Длительность: до тех пор пока предмет не разрушитсяЭнергостоимость и время: см. Зачарование (M16).Требования: Магичность(Magery) 2 и как минимум по одному заклинанию из 10 других школ</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>Varies</casting_time>
+		<duration>Permanent</duration>
+		<reference>M56</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college_count compare="at least">10</college_count>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (enchantment)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 193px; left: 11px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Hex</name><name-loc>Неснимаемость</name-loc><spell version="2">
+		<name>Hex</name>
+		<name-loc>Неснимаемость</name-loc>
+		<description-loc>Наложение чарДелает невозможным бросить/снять/избавиться от предмета. Сам по себе, этот эффект очень неудобен, но может быть полезен — к примеру, вы никогда не уроните неснимаемое оружие, а неснимаемые очки никогда не упадут. Тем не менее, если на неснимаемый предмет наложено другое вредное заклинание, это становится намного опаснее. Неснимаемость «всегда включена».Для того, чтобы избавиться от неснимаемого объекта, вы должны убрать или подавить чары, найти кого-то, кто сотворит Убрать Проклятье, или ампутировать часть тела с предметом. Попытки сбить или срезать неснимаемую вещь не удадутся (или приведут к ампутации). ИМ должен позволить этому правилу давать нелогичные результаты, если необходимо, чтобы оставить предмет на теле жертвы. Неснимаемости не логичны!Неснимаемость может быть ограничена с помощью заклинаний Связь или Пароль. Например, можно сделать неснимаемое кольцо, которое сотворяет Поражение Слепотой и пароль  «Гесундхейт». Любой, кто оденет кольцо, ослепнет — но стоит сказать пароль и кольцо спадет!Энергостоимость создания: 200Требования: Наложение Чар</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>200</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M57</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 259px; left: 11px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Deflect</name><name-loc>Отражение</name-loc><spell version="2">
+		<name>Deflect</name>
+		<name-loc>Отражение</name-loc>
+		<description-loc>Наложение чарДобавляет ПЗ(DB) к броне, одежде, щиту или оружию. Оно добавляется ко всем броскам активной защиты, которые делает пользователь.Стоимость: см. таблицу нижеПЗ(DB)Стоимость1 | 1002 | 5003 | 20004 | 80005 | 20000Это заклинание может быть пересотворено для усиления, как и Точность (M65)Требование: Наложение чар</description-loc>
+		<college>Armor Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M67</reference>
+		<categories>
+			<category>Armor Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 325px; left: 11px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Staff</name><name-loc>Посох</name-loc><spell version="2">
+		<name>Staff</name>
+		<name-loc>Посох</name-loc>
+		<description-loc>Наложение чарЗачаровывает магический посох — см  магические посохи (с 13) для подробностей. Несмотря на то, что много предметов имеют форму палочки или посоха, они не обязательно зачарованы этим заклинанием. Многие маги используют различные ограничивающие чары чтобы другие не могли использовать их посохи — но это не происходит автоматически.Энергостоимость: 30Требование: Наложение чарПредметЛюбой кусок органического материала в форме палки (дерево, кость, слоновая кость и т. д.) вплоть до 6 футов длиной. Может быт украшен другими материалами, такими как драгоценный камни или драгоценные металлы. Маленький посох обычно называют «скипетром» и очень короткий и тонкий - «палочкой»</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>30</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M70</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 391px; left: 11px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Powerstone</name><name-loc>Энергокамень</name-loc><spell version="2">
+		<name>Powerstone</name>
+		<name-loc>Энергокамень</name-loc>
+		<description-loc>Наложение чарВливает ману в объект для последующего использования магом. Традиционным объектом этого заклинания являются драгоценные камни (именно из-за этого «Энергокамень» - это общее слово для объектов содержащих в себе ману), но в принципе можно использовать любой предмет. Любой маг, прикоснувшись к энергокамню, может использовать любое количество или всю энергию из него для сотворения заклинания вместо энергии из своего тела.У каждого энергокамня есть «емкость». Это максимальное количество энергии которое он может содержать. Так как маг может использовать только один энергокамень за раз, то большой большой энергокамень полезнее чем пригоршня маленьких. Большой энергокамень можно использовать для сотворения большого заклинания; с помощью нескольких маленьких можно использовать по одному для поддержания заклинания, однако их нельзя использовать все за один раз.Энергокамни перезаряжаются после использования, поглощая ману из окружающей среды. Скорость перезарядки зависит от уровня маны в данной местности:Локальный уровень маныСкорость перезарядкиНет НетНизкий 1 очко в неделюНормальный 1 очко в деньВысокий 1 очко в 12 часовОчень высокий 1 очко в 6 часовЭнергокамень не перезаряжается, если находится ближе чем шесть футов от большего энергокамня. Камни одинакового размера делят доступную ману и перезаряжаются медленнее. Этот прискорбный факт означает, что владелец нескольких энергокамней должен оставлять их вне своего поля зрения для перезарядки.Энергокамень зачаровывается на один шаг за раз. Когда заклиание Жнергокамень сотворяется в первый раз, на выходе получается незаряженный энергокамень емкостью 1. Каждое последующее сотворение заклинания увеличивает его емкость еще на 1. Таким образом 15 сотворений создаст энергокамень емкостью 15. Но учтите, что при увеличения количества сотворений растет шанс критического провала. Для 15 это будет уже шанс 1 из 4 того, что выпадет критический провал и уничтожит камень. Для 60 успешных сотворений этот шанс будет уже 2 из 3!Далее, каждый обычный провал накладывает на камень некоторую магическую «причуду». Таким образом, можно работать месяцами ио получить на выходе камень на 20 энергии который воняет рыбой и который можно использовать только по средам... Из-за этого большие камни без особыз недостатков дороже чем другие с такой же силой. Причуды энергокамней устанавливаются ИМ и их можно использоваться как инструмент для балансировки кампании. Большинство из них будут необычными, произвольными ограничениями того, как энекгокамень перезаряжается (например, только в ванночке с кровью летучих мышей) или того, как камень может быть использован (например только для заклинаний огня; только зеленоглазой девственницей; никем в шляпе). Тяжелые причуды затрагивают пользователя камня (например, делая его немым на час после использования)Заклинатель знает когда его заклинание не удалось, но не знает какую именно причуду получил камень. Это можно определить с помощью Анализа Магии. Два провала подряд означают что данный камень нельзя больше увеличивать.Энергокамень можно сделать из любого объекта. Тем не менее, намного проще зачаровать объект соответствующей стоимости. Энергетическая стоимость Энергокамня   учетверяется если зачаровываемый предмет дешевле чем $10*P^2   $40*P, где P — целевая емкость камня. Это одна из причин популярности драгоценностей: дорогой камень компактен и долговечен.Энергокамень не заряжен сразу после создания (если он уже содержит энергию, эта энергия не затрагивается заклинанием для увеличения емкости). Энергию из Энергокамня нельзя использовать для зачарования этого же камня — Энергокамень не может помочь зачаровать себя самого!Энергостоимость каждого зачарования: 20.Требование: Наложение чар«Выделенные» ЭнергокамниЕсли Энергокамень встраивается в предмет перед зачарованием этого предмета, он становится частью магической вещи. Теперь это «выделенный» энергокамень. Использующий вещь, может забирать энергию из него — но только для сотворения заклинаний с помощью или через этот предмет.Если убрать выделенный энергокамень из предмета, он автоматически сломан и теряет чары, но сам камень остается целым и снова становится «обычным» энергокамнем. (Конечно, если энергокамень встроен в предмет каким-либо способом — например часть магического кольца — может потребоваться успешный бросок умения что бы вытащив не повредить его).Преимущество выделенного энергокамня в том, что его энергия, будучи специально направлена, используется вдвое эффективнее. Одноочковый энергокамень  дает две единицы энергии (но все еще перезаряжается по одной в день в области нормальной маны).«Эксклюзивные» ЭнергокамниМожно сделать предмет с энергокамнями так, что только встроенные энергокамни могут питать его. Это делается точно так же как и для выделенных энергокамней, но энегия этих камней в три раза эффективнее — то есть одноочковый эксклюзивный энергокамень дает 3 очка энергии, но предмет бесполезен до тех пор пока камень не перезарядится.Энергокамни одной школыЭта вариация следующая обычным правилам Энергокамней. Энергокамень одной школы зачарован таким образом, что может давать энергию только для заклинаний одной конкретной школы. Такие энергокамни нельзя делать выделенными или эксклюзивными.Преимущество энергокамней одной школы в том, что для каждого зачарования требуется тольк 12 едеиниц энергии, а не 20.</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>20</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>Varies</casting_time>
+		<duration>Permanent</duration>
+		<reference>M69</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 457px; left: 11px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Suspend Enchantment</name><name-loc>Подавить чары</name-loc><spell version="2">
+		<name>Suspend Enchantment</name>
+		<name-loc>Подавить чары</name-loc>
+		<description-loc>Наложение чарКак Снять чары, но всего лишь подавляет а не снимает чару. Чара похоже пропадает, но появляется вновь, когда Подавление Чар заканчивается. Если кто-либо пытается изучить или обнаружить подавленную чару, она сопротивляется информационным заклинаниям с -5.Модификаторы: -3 если заклинатель не знает, как наложить чару, которую он пытается подавить. -3 если он не знает какая именно это чара. -3 за каждую дополнительную чару на предмете. Все модификаторы кумулятивны.Длительность: 1 часЭнергостоимость: 25 или 1/100 от стоимости наложения оригинальной чары, что больше. Половина на поддержание.Требования: Наложение чар</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>25 #</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M58</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 553px; left: 11px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Puissance</name><name-loc>Усиление</name-loc><spell version="2">
+		<name>Puissance</name>
+		<name-loc>Усиление</name-loc>
+		<description-loc>Наложение чарДобавляет к базовому повреждению оружия, когда оно попадает в цель.Стоимость: См. Таблицу ниже. Разделите стоимость на 10, если объект является снарядом (т. е. Стрела или пуля). Удвойте стоимость, если объект — метательное оружие (т. е. Лук или пистолет)Премия к повреждениямСтоимость 1 | 250 2 | 1000 3 | 5000Может быть пересотворено на более выском уровне как и Точность (M65)Требования: Наложение чар и как минимум 5 заклинаний земли</description-loc>
+		<college>Weapon Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M65</reference>
+		<categories>
+			<category>Weapon Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">earth</college>
+				<quantity compare="at least">5</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 619px; left: 11px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Manastone</name><name-loc>Камень маны</name-loc><spell version="2" very_hard="yes">
+		<name>Manastone</name>
+		<name-loc>Камень маны</name-loc>
+		<description-loc>Наложение чарКамень маны — это неперезаряжаемый энергокамень.Используйте все правила по энегокамням (ограничение по стоимости и т.д.), за исключением того, что Камень маны не восстанавливает свою энергию — но может быть перезаряжен этим заклинанием. Если камень маны получает причуду во время создания, эта причуда должна быть приемлемой для неперезаряжаемого объекта (никаких причуд связанных с перезарядкой!). Камни маны не оказывают никакого эффекта на скорость перезарядки близлежащих энергокамней.Энегостоимость: 5. Каждое сотворение заряжает камень один очком энергии.Требование: наложение чар</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Indefinite</duration>
+		<reference>M70</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 715px; left: 11px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Accuracy</name><name-loc>Точность</name-loc><spell version="2">
+		<name>Accuracy</name>
+		<name-loc>Точность</name-loc>
+		<description-loc>Делает оружие более часто попадающим добавляя к эффективному умению пользователя.Энергостоимость: см. таблицу ниже. Разделите стоимость на 10 если объектом является снаряд (стрела или пуля)ПремияСтоимость 1 | 250 2 | 1000 3 | 5000Требования: Наложение чар и как минимум 5 заклинаний школы ВоздухаПримечание: Если оружие уже зачаровано этим заклинанием на низком уровне, заклинатель может пересотворить заклинание на более высоком уровне (сделав оружие более точным). Стоимость нового заклинания будет равна разнице стоимости уровней; «старое» заклинание не сопротивляется «новому».</description-loc>
+		<college>Weapon Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M65</reference>
+		<categories>
+			<category>Weapon Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">air</college>
+				<quantity compare="at least">5</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 769px; left: 11px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Reshape</name><name-loc>Формирование</name-loc><spell version="2">
+		<name>Reshape</name>
+		<name-loc>Формирование</name-loc>
+		<description-loc>ОбычноеЛепит любую неодушевленную субстанцию, как глину. Однако, не передает дополнительной художественной ценности объекту! Любой неодушевленный предмет, взятый объктом под влиянием этого заклинания, станет чуть мягче – это может стать проблемой. К примеру, если объект попробует взять посох или меч, он будет наносить только половину повреждений! Оружие, выстрел из которого будет сделан в «мягком» состоянии, будет разрушено. Любой слепленный таким образом материал снова станет твердым в своей новой форме, как только объект уберет от него свои руки.Неудобные двери и стены могут быть убраны со скоростью двух горстей материала в секунду. Это заклинание даже может быть использовано, для прокладки тоннеля через камень, но поскольку объект вынужден копать мягкую землю руками, то процесс будет медленным и изматывающим.Длительность: 1 минута.Стоимость: 6 сотворение, 3 поддержка.Время сотворения: 10 секунд.Требования: Магичность(Magery) 1, Ослабить, и либо Формировать землю, либо Формировать растение.ПредметПерчатки. Энергостоимость создания: 500.</description-loc>
+		<college>Making &amp; Breaking</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>6</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M117</reference>
+		<categories>
+			<category>Making &amp; Breaking</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">shape plant</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">shape earth</name>
+				</spell_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">weaken</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (making &amp; breaking)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 901px; left: 11px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Name</name><name-loc>Имя</name-loc><spell version="2">
+		<name>Name</name>
+		<name-loc>Имя</name-loc>
+		<description-loc>Наложение чарДает магическое имя зачарованному объекту. Магия на объекте будет работать только для того, кто знает его имя. Пользователь должен произнести имя объекта при первом использовании чтобы показать, что он знает его имя.Энергостоимость: 400, или 200 если имя написано на объекте. Оно должно быть читаемым (решение ИМ). Оно может быть маленьким, скрытым или даже замаскированным, но когда кто-то будет рассматривать объект, он должен иметь возможность его увидеть. По этой причине так популярны среди магов мертвые и редкие языки: написание имени на таком вымершем  языке почти также надёжно как и не написание его вовсе, однако намного дешевле.Требование: Наложение чар</description-loc>
+		<college>Limiting Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>200 or 400#</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M68</reference>
+		<categories>
+			<category>Limiting Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 835px; left: 11px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Adjustable Clothing</name><name-loc>Изменяемая одежда</name-loc><spell version="2">
+		<name>Adjustable Clothing</name>
+		<name-loc>Изменяемая одежда</name-loc>
+		<description-loc>Наложение чарЗаставляет предмет одежды изменяться для того чтобы подойти тому, кто ее одевает, без ограничений. Изменения происходят в тот момент, когда пользователь начинает одевать  его, так чточару нельзя обнаружить, если поднять вещь и сразу выбросить из-за «очевидно» неподходящего размера. Если предмет снять, он возвращается к первоначальному размеру. Изменение в размере вызывает так же изменения в весе; объект, удвоивший размер, увосьмерит вес.Эта чара редко встречается — немногим заклинателям требуется создавать одежду, подходящую любому размеру. Иногда её можно среди исключительно дорогих театральных костюмов. Так же её используют когда вещь должна пережить первоначального носителя и часто предназначена стать семейной реликвией.Энергостоимость: стоимость зачарования тканевой рубашки или пары брюк, способных увеличиваться или уменьшатся на 10% - 50. Эта стоимость широко варьируется в зависимости от размера, материала и изменяемости. Округляйте дробные части вверх.Для перчаток, ботинок, туфлей, поясов или похожих маленьких предметов, разделите стоимость на 2. Для чего-то размером с кольцо или серьгу используйте треть стоимости. Для комбинезонов или длинных платьев удвойте стоимость. Для скафандров или для других вещей, которые закрывают тело полностью, утройте стоимость.Вещь с несколькими незначительными металлическими частями (запонки, пуговицы) считается тканевой, как и тонкая кожа. Кожа, достаточно толстая чтобы получить СП(DR), удваивает стоимость. Чешуйчатый доспех, кольчуга или похожие материалы утраивают стоимость. Пластинчатый доспех и другие цельнометаллические костюмы умножают стоимость на 5. Для исключительно легких предметов одежды, таких как вуаль или женская ночная рубашка, уполовиньте стоимость.Если предмет может подстраивать свой размер в пределах 25%, удвойте стоимость. Если может удвоить или уполовинить размер, утройте стоимость. Если может уменьшатся до 1/5 размера или увеличиваться в 5 раз, учетверите стоимость.Требования: Наложение чар и Формирование</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M58</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">reshape</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 193px; left: 119px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Limit</name><name-loc>Допуск</name-loc><spell version="2">
+		<name>Limit</name>
+		<name-loc>Допуск</name-loc>
+		<description-loc>Наложение чарЗачарованный предмет работает только для пользователя или группы пользователей определенной заклинателем во время сотворения заклинания. Эта группа может быть простой или сложной в зависимости от желания заклинателя. Допуск может затрагивать как все чары на предмете или только некоторые из них.Энергостоимость: 200Требование: Наложение чар</description-loc>
+		<college>Limiting Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>200</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M68</reference>
+		<categories>
+			<category>Limiting Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 259px; left: 119px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Temporary Enchantment</name><name-loc>Временные чары</name-loc><spell version="2">
+		<name>Temporary Enchantment</name>
+		<name-loc>Временные чары</name-loc>
+		<description-loc>Наложение чарПозволяет зачаровывающему создать магический предмет, который будет срабатывать всего несколько раз прежде чем потеряет чары, чтобы сильно сэкономить энергостоимость (и таким образом, время).Предмет может быть зачарован за 15% от нормальной цены за каждое использование. Предмет на только одно использование будет стоить 15% нормальной цены, два использования будут стоить 30%, четыре 60% (очень неэффективно по цене в большинстве условий) и стоимость 7 и более использований превосходит стоимость постоянной вещи.Временно зачарованный предмет работает, во всех отношениях, как нормальный предмет этого типа до тех пор, пока все его использования не закончатся. После этого предмет перестает быть магическим.Временные чары заменяют Наложение Чар. Конкретный предмет не может быть зачарован одновременно с помощью обоих заклинаний одновременно.Временные чары можно использовать только для того, чтобы дать предмету способность один раз сотворить заклинание, но не для того, чтобы сотворить заклинание на объект.Например, маг не может сделать одноразовый невидимый доспех — его можно вообще никогда не снимать. Но он может дать броне способность сотворить невидимость на себя за нормальные время и энергостоимость.Временный чары нельзя использовать вместе с любыми заклинаниями школы Наложения Чар и Метамагии за исключением следующих: Неснимаемость, Допуск, Связь, Имя, Энергия и Скорость. Временные чары абсолютно не могут быть использованы для уменьшения стоимости чар с уже ограниченным использованием (например Дух Черепа)Длительность: до тех пор, пока все использования не будут истраченыЭнергостоимость и время: см. Зачарование, M16Требования: Наложение Чар</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Indefinite#</duration>
+		<reference>M56</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 325px; left: 119px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Fortify</name><name-loc>Укрпеить</name-loc><spell version="2">
+		<name>Fortify</name>
+		<name-loc>Укрпеить</name-loc>
+		<description-loc>Наложение чарУвеличивает СП(DR) одежды или доспехаЭнергостоимость: см. таблицу нижеПремия к СП(DR)Стоимость1 | 502 | 2003 | 8004 | 30005 | 8000Это заклинание может быть пересотворено на более выском уровне как и Точность (M65)Требование: Наложение чар</description-loc>
+		<college>Armor Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M66</reference>
+		<categories>
+			<category>Armor Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 391px; left: 119px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Remove Enchant</name><name-loc>Снять чары</name-loc><spell version="2">
+		<name>Remove Enchant</name>
+		<name-loc>Снять чары</name-loc>
+		<description-loc>Наложение чарУбирает одну чару с предмета. Это не затрагивает остальные чары на этом же предмете. Исключение: проваленная попытка снять Ограничивающую чару убирает все чары с данного предмета.Модификаторы: -3 если заклинатель не может наложить чару, которую пытается снять. -3 если не знает точно, какое именно заклинание на предмете. -3 за каждое дополнительное заклинание на предмете. Все модификаторы кумулятивны.Длительность: снятие постоянноЭнергостоимость: 100 или 1/10 от стоимости оригинальной чары, что большеВремя на сотворение: см. Наложение ЧарТребования: Наложение чар</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>100 #</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>Varies</casting_time>
+		<duration>Permanent</duration>
+		<reference>M58</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 445px; left: 119px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Recover Energy</name><name-loc>Восстановление энергии</name-loc><spell version="2">
+		<name>Recover Energy</name>
+		<name-loc>Восстановление энергии</name-loc>
+		<description-loc>ОсобоеОтдохните и восстановите Единицы Усталости быстрее обычного, вытягивая энергию из маны вокруг. Каждые 10 минут обычный человек восстанавливает 1 ЕУ(FP). Маг, знающий это заклинание с навыком 15 и выше, восстанавливает 1 ЕУ(FP) каждые 5 минут; 20 и выше – 1 ЕУ(FP) каждые 2 минуты. Дальнейшее улучшение невозможно. Действует только на заклинателя и не может восстановить ЕУ(FP) другим.Маг должен просто спокойно отдохнуть, ритуалов или бросков не требуется. Отдыхая, можно поддерживать обычные заклинания, не требующие концентрации.Заклинание не функционирует в низко или безмановых областях.Стоимость: Нет.Требования: Магичность(Magery) 1 и Передать Энергию.ПредметДрагоценность. Позволяет носителю восстанавливаться, как под действием заклинания с уровнем равным Силе  предмета; всегда включен. Очень редкий предмет! Энергостоимость создания: 1.000; должен быть сделан из сплава золота и платины (минимальная цена маленького кольца $500).</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>0</casting_cost>
+		<maintenance_cost>0</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Special</duration>
+		<reference>M89</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (healing)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">lend energy</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 511px; left: 119px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Power</name><name-loc>Энергия</name-loc><spell version="2">
+		<name>Power</name>
+		<name-loc>Энергия</name-loc>
+		<description-loc>Наложение чарДает предмету автономный «источник питания», полностью или частично обеспечивающий сотворение заклинания. Каждое очко Энергии уменьшает энергию на сотворение или поддержание заклинания с предмета на 1. Уменьшите вдвое эту премию в областях с низким уровнем маны, удвойте в областях с высоким или очень высоким уровнем маны. Энергия не влияет на стоимость заклинаний пользователя!Если Энергия уменьшает стоимость поддержания до нуля, считайте предмет «всегда включенным» после того как стоимость на сотворение оплачена — но одевший должен оставаться в сознании для того, чтобы поддерживать заклинание. Если Энергия уменьшает стоимость сотворения до нуля, то предмет «всегда включен» для любых целей, владелец может выключить его по желанию.Энергостоимость: см. таблицу ниже.ЭнергияСтоимость1 очко  5002 очка  10003 очка  20004 очка  4000Удвойте стоимость для каждого дополнительного очка. Может быть пересотворено на   более высоком уровне как Точность (M65).Требования: Наложение Чар и Восстановление энергии</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M57</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">recover energy</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 607px; left: 119px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Talisman</name><name-loc>Талисман</name-loc><spell version="2">
+		<name>Talisman</name>
+		<name-loc>Талисман</name-loc>
+		<description-loc>Наложение чарТалисман — это предмет который дает одевшему одноразовое преимущество при атаке определенным заклинанием или немагической атакой или воздействием. Чара талисмана дает премию к броску сопротивления, проверке атрибута или броску защиты против его специфической атаки или воздействия. Талисман «всегда включен» когда одет или находиться в физическом контакте с владельцем, иначе неактивен. Он работает до тех пор, пока не случится вещь от которой он защищает, после чего теряет чары. Талисманы могут защищать от болезней, стрел, проклятий, молний и других бед.Несмотря на то, что большинство талисманов создаются из драгоценностей, любой предмет может быть зачарован таким образом. Возможно даже вытатуировать талисман на теле носителя! При создании талисмана против заклинания, заклинатель должен использовать меньшее из его умений Талисмана и заклинания, от которого талисман защищает.Каждая защита — это отдельное заклинание, которое должно быть изучено отдельно. Талисманы также работают против вариантов базового заклинания: талисман против Огненного Шара будет работать и против Разрывного Огненного Шара.Алхимики могут создавать магические объекты, называемые талисманами (M220); однако это не тоже самое, что предметы созданные с помощью этого заклинания.Энергостоимость: см. таблицу нижеЗащитаЭнергостоимость1 очко  152 очка  453 очка  904 очка  150Требования: Наложение чар и заклинание от которого защищает (если нужно)</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M58</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">spell to be opposed</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 733px; left: 119px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Bane</name><name-loc>Погибель</name-loc><spell version="2">
+		<name>Bane</name>
+		<name-loc>Погибель</name-loc>
+		<description-loc>Наложение чарЭто заклинание так считается Ограничивающей чарой (M68). Оно используется для создания оружия с силой, которая действует только против противников определенного типа. Успешно наложенное перед любой атакующей чарой, оно уменьшает стоимость этих последующих чар, однако они будут работать только против указанного противника. Например, можно создать меч который дает  3 повреждений против орков, и это будет дешевле, чем сделать меч, который будет добавлять 3 повреждения кому угодно. Заметьте, Погибель может быть убрана только вместе с чарой, которую она контролирует.Накладывать ограниченную чару должен тот же заклинатель, который сотворил Погибель. Чем более специфична (решение ИМ) погибель, тем большую скидку она даст. Погибели типа «Все мои враги» не разрешены! Пример правильных Погибелей:Против определенной нации, религии или расы: разделить стоимость на 2.Против определенного типа существ или жителей конкретного города: разделить стоимость на 3Против членов определённой семьи: разделить стоимость на 4Против одного конкретного врага: разделить стоимость на 10Энергостоимость: 100. Заклинатель должен так же пожертвовать предмет или останки принадлежавшие персоне, существу расе и так далее.Требование: Наложение чар</description-loc>
+		<college>Weapon Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>100</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M62</reference>
+		<categories>
+			<category>Weapon Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 667px; left: 119px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Amulet</name><name-loc>Амулет</name-loc><spell version="2">
+		<name>Amulet</name>
+		<name-loc>Амулет</name-loc>
+		<description-loc>Наложение чарАмулет — это предмет, который предоставляет одевшему магическое сопротивление против определенного заклинания. Амулеты часто зачаровываются с помощью нескольких заклинаний Амулета, чтобы противостоять широкому спектру эффектов. Несмотря на то, что обычно используются драгоценности, можно зачаровать любой предмет и даже вытатуировать амулет на теле носителя!Заклинатель должен использовать меньшее из его умений Амулет и заклинания, от которого защищает. Амулеты так же работают против вариантов базового заклинания: амулет против Огненного Шара будет работать и против Разрывного Огненного Шара.Алхимики могут создавать магические предметы, называемые амулетами (M220); не смотря на то, что они служат той же цели, это не тоже самое, что и амулеты, сделанные с помощью этого заклинания.Энергостоимость: 50 за очко магической защиты, которую дает амулет (максимум 5)Требования: соответствующее заклинания Талисмана (то есть для того, чтобы выучить Амулет против Паники, заклинатель должен знать Талисман против Паники)</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>50/ pt MR</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M58</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">talisman (@appropriate spell@)</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 793px; left: 119px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Attune</name><name-loc>Специализация</name-loc><spell version="2">
+		<name>Attune</name>
+		<name-loc>Специализация</name-loc>
+		<description-loc>Наложение чарЭта ограничивающая чара, производная от Погибели, делает магический предмет более эффективным против определенной цели. Она помогает любому Сопротивляемому заклинанию, создавая штраф к броску сопротивления жертвы. Если накладывается перед контролируемым заклинанием, то оно становиться вдвое дешевле.У заклинателя должно быть что-нибудь связанное с целью. Точность сиволического представления определяет штраф к броску сопротивления.В любом случае, представление должно быть встроено в магический предмет, но не должно оставаться целым (т.о. Видеопленку можно раздавить в порошок). Если цель присутствует, то вероятно она либо введена в заблуждение по поводу зачарования или согласилась на зачарование из каких-либо сложных причин (например, если боится впасть в амок в будущем).Недостаток этой чары в том, что все остальные цели получают бонус  5 для к броску сопротивления. Специализацию нельзя убрать с предмета до тех пор, пока не будут убраны чара или чары которые она контролирует.Энергостоимость: 100.Требование: ПогибельСимволическое представлениеШтрафМинимальное (рисунок) -2Небольшая вещь/часть одежды -4Кусочки волос или ногтей -5Фоторграфия или образец крови -6Образец ДНК или видео -7Цель присутствует при зачаровании -8</description-loc>
+		<college>Limiting Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>100</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M69</reference>
+		<categories>
+			<category>Limiting Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">bane</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 858px; left: 119px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Password</name><name-loc>Пароль</name-loc><spell version="2">
+		<name>Password</name>
+		<name-loc>Пароль</name-loc>
+		<description-loc>Наложение чарОбратная имени чара. Магический предмет с Паролем работает до тех пор, пока не будет произнесен пароль. Если пароль произнесен, предмет будет инертным до тех пор пока его сила не будет вызвана обычным образом — или минуту (выбор того, кто создает предмет). На предмете могут быть как запароленные заклинания так и не запароленные. Детали, конечно, зависят от заклинания.Примеры: (а) магическое кольцо которое силу полета — но еакладывает на обладателя Приостнановить Жизнь если не использован пароль;(б) Пентаграмма которая можыт быть «выключена» словом; (в) Танцующий меч, который перестает размахиваться на минуту, если сказан пароль.Энергостоимость: 400. Уполовиньте стоимость, если пароль написан на предмете (должен быть читаем).Требование: Наложение чар</description-loc>
+		<college>Limiting Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>400#</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M68</reference>
+		<categories>
+			<category>Limiting Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 193px; left: 227px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Lesser Wish</name><name-loc>Малое желание</name-loc><spell version="2" very_hard="yes">
+		<name>Lesser Wish</name>
+		<name-loc>Малое желание</name-loc>
+		<description-loc>Наложение чарЭто заклинание, как и более мощное заклинания Желание (ниже), должно быть сотворено на кольцо, амулет или украшение. Одевший эту вещь может указать любой результат броска кубиков, который делается в его присутствии, прямо перед броском — за исключением бросков использования магии. Это не «действие». Это не занимает времени и может быть сделано когда угодно. После использования заклинание пропадает.Одно желание может подействовать только на один бросок или действие; вы можете использовать желание для броска атаки или для броска повреждений, но не для обоих. ИМ волен запретить любое использование желаний, которое кажется ему злоупотреблением или нарушением баланса.Энергостоимость: 180Требования: Наложение Чар</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>180</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Special</duration>
+		<reference>M58</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 260px; left: 227px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Wish</name><name-loc>Желание</name-loc><spell version="2" very_hard="yes">
+		<name>Wish</name>
+		<name-loc>Желание</name-loc>
+		<description-loc>Наложение чарПозволяет желающему изменить ближайшее прошлое. Оно позволяет изменить любой только что сделанный бросок — исключая броски для сотворения заклинаний — на значение, которое укажет желающий. Ограничения для Малого Желания также применябтся и для этого заклинания.Энергостоимость: 250Требования: Малое желание и как минимум по одному заклинания из 15 различных школ</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>250</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Special</duration>
+		<reference>M61</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college_count compare="at least">15</college_count>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">lesser wish</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 325px; left: 227px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Great Wish</name><name-loc>Великое желание</name-loc><spell version="2" very_hard="yes">
+		<name>Great Wish</name>
+		<name-loc>Великое желание</name-loc>
+		<description-loc>Наложение чарЭто заклинание може делать практически все. В частности:1. Оно может быть использовано для сотворения любого другого заклинания с нулевой энергостоимостью, автоматическим успехом, и без шанса на сопротивление (для заклинаний с варьирующейся стоимостью, максимальная энергия равна 1000). Заклинатель может не знать это заклинания  - он только должне знать о том, что такое заклинание существует. Если заклинание «продолжительное», ИМ должен решить насколько долго оно будет держаться.Оно может навсегда увеличить очки персонажа. Оно может увеличить любой атрибут на 1 уровень или любое умение на 3 уровня. Оно так же может уменьшить очки персонажа врага, однако только в том случае, если враг присутствует при сотворении заклинания.Оно может дать любое преимущество стоимость 20 очков или меньше либо убрать недостаток стоимостью 20 или меньше очков. Враг может быть проклят таким же образом, путем потери преимущества стоимость до 20 очков, или приобретении недостатка такой стоимости, но только в том случае, если он присутствует при активации желания. Враг не получает шанса на сопротивление!Оно может делать абсолютно что угодно другое, что по мнению ИМ не разрушит кампанию полностьюИз-за своей невероятной мощи это заклинание нечасто используется. Оно никогда не может быть выучено на уровне больше 15. Более того, любой проваленный бросок при создании Великого Желания стоит заклинателю и каждому помощнику 1 очка ИН(IQ) и 6d повреждений! Критические провалы обрушивают цивилизации. Обычно Великое Желание нельзя купить, однако если все таки можно, его цена должна быть не меньше $100000.Энергостоимость: 2000Требования: Магичность(Magery) 3, Желание и сумма ЛВ(DX) и ИН(IQ) больше 30.</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>2000</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Special</duration>
+		<reference>M62</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<attribute_prereq has="yes" which="iq" combined_with="dx" compare="at least">30</attribute_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (enchantment)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">wish</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 379px; left: 227px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Summon Spirit</name><name-loc>Вызов духа</name-loc><spell version="2">
+		<name>Summon Spirit</name>
+		<name-loc>Вызов духа</name-loc>
+		<description-loc>Информационное; Сопротивление по Воле(Will) духаПризывает дух умершего человека. Объект сопротивляется с -5, если был другом мага. При успешном сотворении объект ответит на один вопрос, по мере своих знаний на момент смерти, и сможет отвечать далее на один вопрос в минуту. При провале заклинания данный маг (или церемониальная группа) не смогут вызывать этого духа в течение года. При критическом провале появляется враждебный дух, который сознательно лжет.Модификаторы: -5, если вы не знаете полного имени объекта. -1, если с момента смерти прошло более недели, -2 – если более месяца, -3 – если более года, -4, если более десятилетия, -5, если более 50 лет, и -6, если прошло более 500 лет.Длительность: 1 минутаСтоимость:  20 на сотворение. 10 на поддержание. Цена уменьшается вдвое, если заклинание творится на месте смерти или над телом объекта, и вчетверо, если соблюдены оба эти условия.Время сотворения: 5 минут.Требования: Магичность(Magery) 2 и Видение смерти.ПредметПосох, палочка, украшение. Используется только магами. Не дает возможности сотворять заклинание, но дает  2 к его уровню умения. Энергостоимость: 1000.</description-loc>
+		<college>Necromancy</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>20</casting_cost>
+		<maintenance_cost>10</maintenance_cost>
+		<casting_time>5 min</casting_time>
+		<duration>1 min</duration>
+		<reference>M150</reference>
+		<categories>
+			<category>Necromancy</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">death vision</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (necromancy)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 445px; left: 227px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Weapon Spirit</name><name-loc>Наложение чар</name-loc><spell version="2" very_hard="yes">
+		<name>Weapon Spirit</name>
+		<name-loc>Наложение чар</name-loc>
+		<description-loc>Перемещает личность и некоторую разумность недавно скончавшегося существа (гуманоидного или нет — собаки популярные объекты) в оружие, обычно меч. Наложение чар получает -1 за каждый полный день прошедший со смерти донора и началом зачарования. Большая часть тела должна присутствовать перед началом зачарования, однако может быть убрана после начала.Маг может вложить в предмет столько донорского ИН(IQ), сколько захочет, так же как и некоторые умения, преимущества и недостатки. Оружие не будет помнить о существовании в другой форме. Не смотря на то, что у оружия нет органов чувств, оно может видеть и слышать (восп 10). Причуды (или недостатки, уменьшенные до уровня причуд) иногда предаются оружию независимо от желания заклинателя (именно поэтому популярны собаки; их личности способствуют созданию привязчивого но эффективного оружия).Оружие может общаться с владельцем с помощью очень простой эмпатии. Когда владелец делает что-нибудь, что одобряется оружием, у него возникает «хорошее чувство», и если он делает что-то, что оружию не нравится, у него возникает такое же «плохое чувство». Оружие можно зачаровать заклинанием Голоса что бы дать ему голос. Так же можно использовать различные зачарования Общения и Понимания для улучшения общения.Каждый раз, когда оружие получает новго владельца, оно должно сделать бросок реакции, который задаст тон общения нового хозяина с этим оружием. При очень хорошей реакции сделает буквально все для своего владельца; при очень плохой — оно откажется общаться или сотрудничать любым способом. ИМ должен записать результат. Оружие нельзя заставить сделать еще один бросок реакции путем отдавания его другому персонажу и забирания обратно!Умения оружия не могут быть улучшены, но несмотря на это, умения, такие как История или Знание Местности оставаться на том же уровне за счет поступления новых знаний.Энергостоимость: 100 за каждое переданное очко ИН(IQ), плюс очки умений умноженные на 25, плюс очки всех достоинств и недостатков умноженные на 50 (минимум 0). добавьте 300 для Голосов.Требования: Наложение чар и Вызов Духа</description-loc>
+		<college>Weapon Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M64</reference>
+		<categories>
+			<category>Weapon Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">summon spirit</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 499px; left: 227px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Solidify</name><name-loc>Уплотнить</name-loc><spell version="2">
+		<name>Solidify</name>
+		<name-loc>Уплотнить</name-loc>
+		<description-loc>Особое; Сопротивление по СЛ(ST) или ИН(IQ)Это заклинание используется нематериальными духами, чтобы стать осязаемым и влиять на объекты материального мира. Осязаемый дух во всех отношениях подобен обычному материальному существу.Маги, используя это заклинание, могут вынудить духа материализоваться; в этом случае дух сопротивляется по лучшему из значений СЛ(ST) и ИН(IQ).Длительность: 1 минутаСтоимость: 50 на сотворение. 10 на поддержание.Требования: Материализовать.</description-loc>
+		<college>Necromancy</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>50</casting_cost>
+		<maintenance_cost>10</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M151</reference>
+		<categories>
+			<category>Necromancy</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">materialize</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 565px; left: 227px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Ghost Weapon</name><name-loc>Призрачное оружие</name-loc><spell version="2">
+		<name>Ghost Weapon</name>
+		<name-loc>Призрачное оружие</name-loc>
+		<description-loc>Наложение чарОружие зачарованное этим заклинанием может поражать призраков (и других нереальных сущностей и духов) как будто они материальны. Если оружие само сделано нематериальным (конечно если ИМ считает это возможным), оно будет воздействовать на физический мир по прихоти владельца.Энергостоимость: 250 за фунт веса (минимум 1 фунт)Требования: Наложение чар и УплотнитьПри очень хорошей реакции оружие сделает буквально все для своего владельца; при очень плохой оно откажется общаться и сотрудничать любым способом.</description-loc>
+		<college>Weapon Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>250/lb #</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M65</reference>
+		<categories>
+			<category>Weapon Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">solidify</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 631px; left: 227px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Lighten</name><name-loc>Облегчение</name-loc><spell version="2">
+		<name>Lighten</name>
+		<name-loc>Облегчение</name-loc>
+		<description-loc>Наложение чарДелает броню или щит легче и проще для ношения. Объект становится легче только когда одевается. Броня в рюкзаке будет весить свой полный вес.Энергостоимость: 100 за уменьшение веса на 25%, 500 за уменьшение в два раза.Требование: Наложение чар</description-loc>
+		<college>Armor Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M67</reference>
+		<categories>
+			<category>Armor Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 703px; left: 227px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Hideaway</name><name-loc>Скрытое пространство</name-loc><spell version="2">
+		<name>Hideaway</name>
+		<name-loc>Скрытое пространство</name-loc>
+		<description-loc>Наложение чарПри сотворении на объект, делает его больше внутри чем снаружи. Может быть использовано на карман, мешочек, ящик стола, кувшин — на все, что обычно может использоваться для хранения других вещей. Заклинатель может добавить любое количество фунтов дополнительного пространства, увеличивая так же внутренний объем на два кубических фута за фунт; дополнительное пространство может быть скрыто за фальшивым дном и т. д. В зависимости от энергии вложенной в заклинание, объекты в скрытом пространстве могут не считаться за нагрузку. Содержимое будет потеряно навсегда, если заклинание будет разрушено. Время, нужно для того, чтобы найти что-нибудь в скрытом пространстве зависит от того, насколько оно глубоко!Большое скрытое пространство может содержать персону. Проблем с воздухом не будет, если только скрытое пространство не запечатано.Энергостоимость: 50 за фунт дополнительного объема если объекты входят в нагрузку, 100 если не входят.Требования: Наложение чар, Создать Объект и Облегчение</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>50#</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M61</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create object</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">lighten</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 763px; left: 227px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Leak</name><name-loc>Течь</name-loc><spell version="2">
+		<name>Leak</name>
+		<name-loc>Течь</name-loc>
+		<description-loc>Наложение чарИзвращение заклинания Рог Изобилия (M64). Сумка, дамская сумочка, колчан, рюкзак любо другой контейнер зачарованный этим заклинанием будет необъяснимо терять предметы, положенные в него (монеты, стрелы, одежду и т.д.). Текущий кошелек будет терять монету или две в сутки, текущий колчан будет терять стрелу или две в день, текущий рюкзак время от времени будет терять что-то из снаряжения... Потерянные вещи могут «вываливаться» из контейнера, похватываться вороватыми магами или магически растворяться в воздухе (как подскажет ИМу его фантазия). Живые существа на затрагиваются.Энергостоимость: 100Требование: Скрытое пространство</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>100</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M61</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">hideaway</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 817px; left: 227px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Scryguard</name><name-loc>Защита от наблюдения</name-loc><spell version="2">
+		<name>Scryguard</name>
+		<name-loc>Защита от наблюдения</name-loc>
+		<description-loc>Обычное; Сопротивление любым Информационным заклинаниямЛюбое информационное заклинание, сотворяемое на объект, должно выиграть Быстрое состязание с Защитой , чтобы «увидеть» его. Обнаружить Защиту от наблюдения может Определить заклинание.Длительность: 10 часов.Стоимость: 3 на сотворение, 1 на поддержание.Время сотворения: 5 секунд.Требование: Магичность(Magery) 1.ПредметМожно навсегда зачаровать любой предмет, заставив его сопротивляться любой попытке магического обнаружения. Энергостоимость создания: 500; для предметов с МР(SM) больше 0, множитель 1 МР(SM)   .</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>10 hrs</duration>
+		<reference>M121</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 883px; left: 227px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Effigy</name><name-loc>Отвлечение магии</name-loc><spell version="2" very_hard="yes">
+		<name>Effigy</name>
+		<name-loc>Отвлечение магии</name-loc>
+		<description-loc>Наложение чарМаг может зачаровать статую самого себя в натуральную величину, которая будет притягивать враждебную магию на себя. Как и Проклятая кукла, Отвлечение магии - это временное заклинание, которое продолжается до тех пор, пока его Сопротивление не упадет до нуля. Каждый раз, когда создателя атакуют заклинанием, Отвлечение магии сопротивляется ему со своим текущим Сопротивлением, модифицированным расстоянием между магом и статуей (используйте модификаторы больших дистанций, M14). Если получилось, заклинание воздействует на статую а не на создателя.ИМ должен решить, что считать враждебным заклинанием, а что нет; например, Касание смерти враждебное, но Чтение мыслей — нет. Перенаправленное заклинание, которое обычно не может воздействовать на неподвижные статуи (такие как Парализовать конечность или Видение смерти) вместо этого «атакуют» чару. Отвлечение магии тогда сопротивляется со своим текущим Сопротивлением. Каждая такая успешная атака уменьшает сопротивление чары на один; когда же Сопротивление падает до 0, чара перестает действовать. Критический провал Отвлечения магии или критический успех атакующего заклинания так же ломаю чару, как и физическое разрушение статуи. Маг может иметь только одно отвлечение магии за раз.Энергостоимость: 1000Требования: Магичность(Magery) 2, Наложение чар, Защита проницания и Опека</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>1000</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M71</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (enchantment)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">scryfool</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">ward</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 319px; left: 335px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Animation</name><name-loc>Анимация</name-loc><spell version="2" very_hard="yes">
+		<name>Animation</name>
+		<name-loc>Анимация</name-loc>
+		<description-loc>ОбычноеВызывает духа (ИН(IQ) 9), вселяющегося в существующую скульптуру, изображение или другой предмет. Анимируемый объект должен изображать или представлять животное или человека. Способности и характеристики зависят от его тела. Это остается целиком на усмотрение Мастера – например, рисунок сможет говорить, но не передвигаться, а статуя может оставить свой пьедестал и свободно расхаживать вокруг. В этих пределах анимированный объект должен подчиняться устным приказам мага; он не имеет своей воли и подчиняется им в точности. В отличие от голема (M59), его нельзя заставить подчиняться другому.Длительность: 1 минутаСтоимость: 3, умноженная на МР(SM) 1 для объектов крупнее среднего человека. Половина на поддержание. Цена удваивается при анимации камня, утраивается – для металла. Время сотворения: 5 секунд.Требования: Вызов духа.</description-loc>
+		<college>Necromancy</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M150</reference>
+		<categories>
+			<category>Necromancy</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">summon spirit</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 439px; left: 335px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Perfect Illusion</name><name-loc>Совершенная иллюзия</name-loc><spell version="2">
+		<name>Perfect Illusion</name>
+		<name-loc>Совершенная иллюзия</name-loc>
+		<description-loc>ОбластноеПодобно Сложной иллюзии, но воздействует на все органы чувств, кроме осязания; рука просто пройдёт насквозь. Развеять иллюзию можно только заклинаниями Рассеять иллюзия и Рассеять магию. Любое повреждение будет только временной искажать её, выдавая иллюзию, но не развеивая её.  Длительность: 1 минута.Базовая стоимость: 3 на сотворение. Половина на поддержание. За удвоенную стоимость можно обмануть даже осязание, хотя от иллюзорного огня не согреешься «по-настоящему».Требования: Магичность(Magery) 1 и Сложная иллюзия.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M96</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">complex illusion</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (illusion &amp; creation)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 499px; left: 335px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Illusion Disguise</name><name-loc>Иллюзорная маскировка</name-loc><spell version="2">
+		<name>Illusion Disguise</name>
+		<name-loc>Иллюзорная маскировка</name-loc>
+		<description-loc>ОбычноеЭта иллюзия маскирует живое существо. Сначала заклинатель должен создать иллюзию (при помощи одного из базовых заклинаний иллюзии). Затем, при помощи Иллюзорной маскировки, иллюзия накладывается на объект, так, что она покрывает его и двигается вместе с ним. Чем лучше заклинание Иллюзия, тем надёжнее и долговечнее маскировка; Совершенная иллюзорная маскировка обманет даже осязание. Для поддержания заклинания концентрация на требуется. Иллюзорная маскировка считается одним «включённым» заклинанием.Длительность: Пока не развеется иллюзия.Стоимость: 3. Невозможно поддержать.Требования: Простая иллюзия.ПредметУкрашение или одежда; предмет творит заклинание Иллюзорная маскировка (качество иллюзии определяется при создании) на носящего. Энергостоимость создания: 150 — Простая иллюзия, 300 — Сложная, 500 — Совершенная. Носящий энергии не отдаёт!</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Until illusion ends</duration>
+		<reference>M96</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">simple illusion</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 631px; left: 329px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Create Object</name><name-loc>Создать объект</name-loc><spell version="2" very_hard="yes">
+		<name>Create Object</name>
+		<name-loc>Создать объект</name-loc>
+		<description-loc>ОбычноеСоздаёт любой простой предмет, знакомый заклинателю – например, мантию, меч или чашку. Заклинание не создаёт магических предметов или живых существ.Ограничения: Еда, созданная таким образом, будет только выглядеть питательной. Нельзя создать информацию; заклинатель может создать книгу, только если знает её всю наизусть. Произведение искусства будет настолько хорошо, насколько заклинатель может сам его сделать. Нельзя создать механическое устройство, если только заклинатель не может сделать его сам. (Мастера, цель этого правила – сделать для магов почти невозможным создание машин, транзисторного радио и т.д. Будьте строги.)Длительность: Созданный объект существует, пока касается живого мыслящего существа, теоретически - бесконечно долго. Так, заклинатель может создать меч и сражаться им или передать другу, но если он создаст монету, чтобы обмануть торговца, мошенничество может вскрыться, когда монета исчезнет, если торговец уронит её на прилавок или подбросит в воздух! Созданным предметам не обязательно касаться плоти, но они должны быть очень близко к кому-нибудь. Их можно держать рукой в перчатке, носить в кармане и т.д., но положить в рюкзак уже нельзя.Стоимость: 2 за каждые 5 фунтов массы созданного объекта.Время сотворения: Длительность в секундах равна стоимости заклинания.Требования: Магичность(Magery) 2, Создать землю, Совершенная иллюзия.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/5 lbs</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec/cost</casting_time>
+		<duration>While touching someone</duration>
+		<reference>M98</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create earth</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">perfect illusion</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (illusion &amp; creation)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 817px; left: 329px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Ward</name><name-loc>Отвод  заклинания</name-loc><spell version="2">
+		<name>Ward</name>
+		<name-loc>Отвод  заклинания</name-loc>
+		<description-loc>Блокирующие. Сопротивление от целевых заклинаний.Сотворенное сразу после того, как заклинание брошено в цель, может помешать его срабатыванию. Работает только против одиночной магической атаки. Если атакующее заклинание действует на нескольких человек, каждый Отвод может спасти только один объект. Не защищает от метательных заклинаний. Заклинатель может Отвести только те заклинания, которые он знает на уровне 12 и выше; зная, например, Сон, также может защитить отдельный объект от Массового сна. Заклинатель бросает против меньшего из значений Отвода или отражаемого заклинания. Должно объявить об использовании Отвода до того, как защищающийся  сделает бросок сопротивления. Если окажется, что сотворенное заклинание маг не может блокировать, Отвод потрачен впустую.Стоимость: 2 на себя, 3 на любого в пределах видимости. Нельзя отвести заклинание от тех, кого не видите.Требования: Магичность(Magery) 1.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>2 or 3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M122</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="no">
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="contains">one college (meta)
+				<level compare="at least">1</level>
+			</notes></advantage_prereq>
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="is anything"></notes>
+				<level compare="at least">1</level>
+			</advantage_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 565px; left: 335px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Simulacrum</name><name-loc>Симулякрум</name-loc><spell version="2" very_hard="yes">
+		<name>Simulacrum</name>
+		<name-loc>Симулякрум</name-loc>
+		<description-loc>Наложение чарСоздает голема, которые является точной копии определенной жертвы. Голем должен быть подготовлен под конкретную цель; это требует включения в процесс создания чего-либо от оригинального тела (волос, кровь и т. д.). В других отношениях, любой материал, подходящий для големов, подходит и для симулякруму. Необходимо использовать подходящее заклинание формовки либо бросок Художник (Скульптура) с -10 к уровню умения для достижения хорошего подобия, однако заклинатель но может не делать их самостоятельно. После создания симулякрум становиться идентичным с жертвой (включая такие детали, как цвет глаз и тон кожи), будучи таким образом вариацией всегда включенной Совершенной Иллюзорной Маскировки.У симулякрума будет те же атрибуты, что и у базового голема. Големы для симулякрумов обычно проектируются с более высоким ИН(IQ), для усложнения обмана.После активации симулякрум получает личность и знания персоны такими, какими воспринимает их заклинатель. Таким образом, симулякрум не может знать тех вещей, которые знает цель, если заклинатель их не знает. Бросок ИН(IQ) может потребоваться от заклинателя, если вдруг потребуется вспомнить что-нибудь этакое (в самом деле, а как звали его двоюродного дедушку?). Как и любой другой голем, симулякрум находится под прямым контролем заклинателя.Время на создание тела: как для базового голема, плюс одна неделя работы.Энергостоимость активации: в два раза больше, чем у базового голема.Требования: Магичность(Magery) 3, Голем, Совершенная иллюзия, Иллюзорная маскировка</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>2xgolem</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent#</duration>
+		<reference>M61</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (enchantment)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">golem</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">perfect illusion</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">illusion disguise</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 565px; left: 443px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Doppleganger</name><name-loc>Двойник</name-loc><spell version="2" very_hard="yes">
+		<name>Doppleganger</name>
+		<name-loc>Двойник</name-loc>
+		<description-loc>Наложение чарДвойник — это дубликат персоны, созданный с помощью могущественной магии. Двойник должен быть сделан для определенной цели; необходимы и образец тела(волос, кровь) цели, и желанное личное имущество цели. Статуя оригинала должны быть сделана используя какой-либо «чистый» элементальный материал — чистый лед с горной вершины, камень или огонь из кратера вулкана и подобные. Похожесть должна быть достигнута с помощью подходящего заклинания формовки либо умения Художник (Скульптура) с -10.У двойника будут те же атрибуты, умения и навыки что и у оригинала, за исключением магии. У него не будет Магичности и он не сможет сотворять заклинания. Он получает знания из внедренного объекта, так что он будет знать все, что можно узнать с помощью заклинания История. Двойник будет вести себя как оригинал, которого поработил создатель двойника. Приостановить проклятье парализует его, Снять проклятье разрушит. После разрушения заклинания, все что останется — это масса материала, использованного для создания (лужа воды, куча земли, вспышка огня) и личную вещь.Очень сложно определить подделку. Если по суждению ИМ информационные заклинания не проваливаются автоматически при попытке определить копию, он должен позволить заклинанию двойника сопротивляться. Например оно будет сопротивляться заклинанию Чтение Ауры и преимуществу Эмпатии.Время на создание тела: 6 недель  работы.Энергостоимость активации: 1000Требования: Магичность(Magery) 3, Голем, История и Порабощение</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>1000</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Perm#</duration>
+		<reference>M62</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (enchantment)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">golem</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">history</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">enslave</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 385px; left: 389px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Golem</name><name-loc>Голем</name-loc><spell version="2" very_hard="yes">
+		<name>Golem</name>
+		<name-loc>Голем</name-loc>
+		<description-loc>Наложение чарСоздание и оживление постоянного слуги или воина. Големы прекрасные воины; они никогда не устают и не восприимчивы к оглушению, боли и желаниям. Более того, не существует известных заклинаний для «воровства» голема у его создателя. Заклинание постоянное, голем «всегда включен». Голем следуем устным приказам своего создателя; создатель также может приказать подчиняться кому-либо еще. Он понимает только один язык (который должен знать заклинатель). Не проявляет инициативу и игнорирует любые ситуации, для которых не было приказов. Тем не менее, он никогда не забывает ничего из увиденного или сказанного при нем.Големы не лечатся сами по себе и уничтожаются, если здоровье уменьшается до -ЕЖ(HP). Они могут быть отремонтированы с помощью заклинаний лечения (исключая Воскрешение) если сотворено создателем голема. Другого способа починить голема нет. Для создания голема, создатель должен должен сделать тело голема — выполнив все работы самостоятельно — а потом оживить с помощью этого заклинания. Однажды оживленный, голем действует до тех пор, пока его здоровье не уменьшится до 0 ЕЖ(HP) или до тех пор, пока создатель не прикажет ему прекратить функционировать. Не требуется никакой концентрации или поддержки, чтобы контролировать голема.Глиняный ГолемГлина — это материал по умолчанию для создания голема; ее легко лепить, в обоих, физическом и сверхъестественном, смыслах. Создатели големов часто используют более сложные материалы, такие как камень, пластик, плоть, но если голем нужен срочно, большинство заклинателей возвращаются к глине.Глиняный Голем0 очковМодификаторы атрибутов: СЛ(ST) 5[50]; ЛВ(DX) 1[20]; ИН(IQ)-2[-40]; ЗД(HT) 4[40]Преимущества: Не дышит [20]; Не ест/не пьет [10]; Не спит [20]; Высокий болевой порог [10]; Иммунитет к метаболическим угрозам [30]; Сопротивление ранениям (Однородный, Нет крови) [45]; Целеустремленный [5]; Нестареющий [15]; Невозмутимый [15]; Устойчивость к вакууму [5].Недостатки: Автомат [-85]; Неспособен учиться [-30]; Неприятный голос [-10]; Нет чувства вкуса/запаха [-5]; Перепрограммируемый [-10]; Социальная дискриминация (Собственность) [-10]; Неисцеляемый (Полностью) [-30]; Неестественный [-50]; Богатство (Нищий) [-25].Особенности: не имеет и не может тратить единицы усталостиУмения: 10 очков в умениях, соответствующих предназначению голема [10]Големы — превосходные воины; они никогда не устают и имунны к оглушению, боли и желаниям.Зачаровать простого глиняного голема (см. врезку) стоит 250 единиц энергии. Более мощные големы стоят на 2 единицы энергии больше за каждое очко персонажа, добавленное голему. В большинстве случаем, дополнительные способности должны быть ограничены дополнительными СЛ(ST), ЕЖ(HP) или СП(DR) (практическое правило: 20 единиц энергии добавляют 1 СЛ(ST), 5 ЕЖ(HP) или 2 СП). Тем не менее, ИМ может позволить более широкие изменения, если ему удобно. Для создания более мощных големов возможно понадобятся более прочные (и дорогие) материалы, что увеличит стоимость и  время необходимые для изготовления тела голема. (Опционально ИМ может разрешить создавать менее мощных големов; големы, хуже чем 0 очков, стоят на 2 единицы энергии меньше за каждое очко персонажа меньше нуля, до минимум в 130 единиц энергии)Энергостоимость: 250 или большеТребования: Наложение чар, Формировать Землю и Анимация. Другие заклинания могут потребоваться для работы с необычными материалами, например Формировать растение для деревянного голема или Восстановление для голема из плоти.</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>Varies</casting_time>
+		<duration>Permanent</duration>
+		<reference>M59</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">animation</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shape earth</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 319px; left: 443px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Shape Earth</name><name-loc>Формировать землю</name-loc><spell version="2">
+		<name>Shape Earth</name>
+		<name-loc>Формировать землю</name-loc>
+		<description-loc>ОбычноеДвигает землю, и придаёт ей любую форму. Если форма стабильна (например, холм), она навсегда сохранится после того, как её придали. Нестабильная форма (например, колонна или стена) держится, только пока действует заклинание – никакой концентрации не требуется –, а потом обрушивается. Может потребоваться бросок Архитектуры, чтобы создать стабильную форму.Земля, которую двигают этим заклинанием, передвигается с Движением 2; камень передвигается с Движением 1. Этим нельзя никому причинить вред, кроме как натечь на неподвижного человека и засыпать его. Если земля движется к человеку, чтобы его засыпать – или из-под него, чтобы сделать яму – он может нормально передвигаться в следующий свой ход, чтобы убежать. Он пойман, только если не сделал этого.Любой, засыпанный неплотной землёй, может попытаться выкопаться. Позволен один бросок в секунду с СЛ(ST)-4. Мастер может сделать этот бросок сложнее, если жертву засыпало более чем двумя кубическими ярдами земли. Жертва может задерживать дыхание (см. Задержка дыхания, B251), но велик риск задохнуться (см. Удушение, B436). Жертва, погребённая под камнем может задержать дыхание, но если у неё нет приспособлений, позволяющих пробиться сквозь сплошной камень, шансов выбраться мало.Длительность: 1 минутаСтоимость: 1 за кубический ярд формируемой земли (минимум 2). Двойная стоимость для каменя; шестикратная для резаного или обработанного камня, например стены. Нелегко сделать собственную дверь в замок.Требуется: Искать землю.ПредметПосох, жезл или украшение, или копательный инструмент. Энергостоимость создания: 200 (500 для предмета, формирующего камень).</description-loc>
+		<college>Earth</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/25 cu ft</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M50</reference>
+		<categories>
+			<category>Earth</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">seek earth</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 439px; left: 443px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Enslave</name><name-loc>Поработить</name-loc><spell version="2" very_hard="yes">
+		<name>Enslave</name>
+		<name-loc>Поработить</name-loc>
+		<description-loc>Обычное; Сопротивление по Воле(Will)Похоже на заклинание Очаровать, но действует постоянно. Объект будет выполнять приказы заклинателя до тех пор, пока заклинание не будет закончено или развеяно. При любой концентрации, заклинатель может создавать ментальную связь с объектом и видеть его глазами, слышать его ушами и отдавать приказы.Стоимость: 30.Требования: Очаровать и Телепатия.</description-loc>
+		<college>Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>30</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M141</reference>
+		<categories>
+			<category>Mind Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">charm</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">telepathy</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 499px; left: 443px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>History</name><name-loc>История</name-loc><spell version="2">
+		<name>History</name>
+		<name-loc>История</name-loc>
+		<description-loc>ИнформацияБудучи сотворённым на любой неодушевлённых предмет (или на его часть радиусом в 1 ярд), позволяет заклинателю определить недавнее прошлое этого предмета, характер пользователя, и так далее – но никаких имён!Стоимость: 3 за вчерашнюю историю; 5 за неделю; 8 за месяц; 10 за год.Время сотворения: 1 секунда за единицу энергии.Требование: Слежка.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<casting_time>1 sec/pt</casting_time>
+		<duration>Instant</duration>
+		<reference>M106</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">trace</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 625px; left: 443px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Seeker</name><name-loc>Искатель</name-loc><spell version="2">
+		<name>Seeker</name>
+		<name-loc>Искатель</name-loc>
+		<description-loc>ИнформационноеНастраивает заклинателя на индивида или искусственный предмет, которого он ищет. Успех даёт заклинателю видение местонахождения предмета – или ведёт его к нему, если тот в пределах мили. Чтобы искать личность, заклинатель должен либо знать его имя или знать его достаточно хорошо, чтобы вообразить его.Например, нельзя использовать это заклинание, чтобы раскрыть убийство, ища «убийцу» если вы не знаете кто это – но если знаете, то Искатель его найдёт.Модификаторы: Модификаторы больших расстояний (M14). Что-то связанное с искомым (например, часть одежды личности) должно быть доступно во время сотворения; если нет, бросок делается с -5. Премия  1 если заклинатель держал или ещё как-то знаком с исходным предметом.Стоимость: 3. Одна попытка в неделю.Требования: Магичность(Magery) 1, ИН(IQ) 12 или выше, и по крайней мере два заклинания «Искать ...». ПредметРаздвоенная палка (дерево, кость или слоновая кость) или игла компаса (вырезная из слоновой кости), которая будет указывать на один конкретный объект, выбранный при создании предмета. Что-то, относящееся к объекту должно быть использовано при создании предметам, и включено в него. Энергостоимость создания: 500.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M105</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<attribute_prereq has="yes" which="iq" compare="at least">12</attribute_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (knowledge)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="contains">seek</name>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 805px; left: 443px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Scrywall</name><name-loc>Стена защиты от наблюдения</name-loc><spell version="2">
+		<name>Scrywall</name>
+		<name-loc>Стена защиты от наблюдения</name-loc>
+		<description-loc>Областное; Сопротивление любым Информационным заклинаниямКак Защита от наблюдения, но защищает область и содержимое целиком. Длительность: 10 часов.Базовая стоимость: 3 на сотворение, 2 на поддержание.Время сотворения: Секунда за единицу энергии. Требование: Защита от наблюдения.Предмет(а) Любой контейнер. Защищен он и содержимое. Энергостоимость создания: 200 за кубический фут (стоит минимум 500). (б) Любой коврик или область пола; защищает людей и вещи, стоящие на нем. Энергостоимость создания: 300 за ярд радиуса.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>sec=cost</casting_time>
+		<duration>10 hrs</duration>
+		<reference>M122</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">scryguard</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 691px; left: 443px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Malefice</name><name-loc>Проклятая кукла</name-loc><spell version="2" very_hard="yes">
+		<name>Malefice</name>
+		<name-loc>Проклятая кукла</name-loc>
+		<description-loc>Наложение чарПосредством этой грязной чары заклинатель может сделать жертву своим рабом. Для этого он должен сделать куклу (обычно из воска, но ИМ может позволить глину, солому или что-нибудь еще) содержащую что-то релевантное цели. Части тела (обрезки ногтей, волосы, кровь, слюна и т. д.) не дают штрафов. Другие предметы дают различные штрафы; например, нитки из рубашки, которую носили годами дадут -2, в то время как грязь из свежего следа даст -6.Проклятая кукла это длительное заклинание, которое продолжается до тех пор, пока его Сопротивление не уменьшится до 0 (M10). Начальное Сопротивление равно эффективному навыку заклинателя.Сделавший куклу (и только он) может использовать её для сотворения вредных заклинаний (таких как Боль) на цель, с нормально энергостоимостью и без штрафов за расстояние. Для сотворения заклинатель должен использовать меньшее значение из Сопротивления куклы и его умения в том заклинании, которое он посылает. Цель сопротивляется всем таким атакам, даже если заклинанию обычно нельзя сопротивляться (при заклинаниях, которым обычно сопротивляться нельзя, можно сопротивляться по ЗД(HT) когда они сотворены через Проклятую куклу).Если цель сопротивляется самому первому заклинанию, сотворенному через куклу, чара моментально ломается. В других случаях каждое успешное сопротивление просто ослабляет чару, уменьшая ее Сопротивление на 1. По достижению Сопротивления 0 Проклятая кукла рассеивается (хотя сама кукла остается пригодной для перезачарования, но ее магическая связь с целью даст штраф -1 при сотворении чары). Критический провал заклинание, направляемого через куклу, или критический успех сопротивления цели также ломают чару, уменьшая ее Сопротивление до 0.Уничтожение куклы ломает чару, но так же вызывает на цель Касание Смерти (M41) на количество кубиков, равное текущему значению Сопротивления Проклятой куклы разделенному на 5 (округлите вниз, максимум 3d). Это повреждение будет появляться в любом случае, если у Проклятой куклы осталось Сопротивление. Заклинание Снять проклятие поможет цели освободиться без вреда.Энергостоимость: 250. Воск и специальные компоненты стоят $500Требования: Наложение чар и  Искатель</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>250</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Indefinite#</duration>
+		<reference>M60</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">seeker</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 751px; left: 443px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Ensorcel</name><name-loc>Заклятье</name-loc><spell version="2" very_hard="yes">
+		<name>Ensorcel</name>
+		<name-loc>Заклятье</name-loc>
+		<description-loc>Наложение чар;Специально сопротивлениеЗаклятье — это продолжительное заклинание, вредное, хотя иногда может быть полезным, сотворенное на одиночное существо. Процесс требует компонент релевантный цели; используйте модификаторы как для Проклятой куклы.Эффективное умение заклинателя определяется как меньшее из этого заклинания и определенного заклинания, которое накладывается на объект. Если у заклинателя есть помощники, они должны знать оба заклинания на уровне 15 или больше, но бросок основан на умении заклинателя.Возможные заклятья включают довольно немного заклинаний из школы Контроля Тела или Контроля Разума и другие, такие как Превратить другого, Плоть в камень, всевозможные заклинания «Тело из», Ходить по воздуху, всевозможные заклинания сопротивления, Скрыть, Невидимость, разные заклинания «видения» и Растительная форма другому. Во всех случаях это должно быть поддерживаемое Стандартное заклинание.Когда заклинание сотворяется, объект может сопротивляться, если накладываемое заклинание это позволяет; расстояние не учитывается. Снять проклятие поможет против любого Заклятья.Стоимость заклинания можно уменьшить, если определить «условие избавления» - определенное действие или условие которое прервет заклинание. Примеры: сказать магическое слово, быть поцелованным как жест настоящей любви, отказ от речи на три года и так далее. Размер уменьшения зависит от того, насколько «условие избавления» легко достигаемо, оно должно быть как минимум возможно, чтобы дать уменьшение. Размер «скидки» может быть от 10% (для по настоящему сложных или неприятных условий) до 90% (для чего-то, что объект может сделать просто и автоматически и легко обнаружить)Энергостоимость: в 200 раз больше, чем стоит накладываемое на объект заклинание.Требуется: Проклятая кукла</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>200xspell cost</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M60</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">malefice</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 871px; left: 443px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Impression Blocker</name><name-loc>Блокатор ассоциаций</name-loc><spell version="2">
+		<name>Impression Blocker</name>
+		<name-loc>Блокатор ассоциаций</name-loc>
+		<description-loc>Наложение чарИскатель (M105) и родственные заклинания требуют объект, ассоциированный с предметом или персоной, которую ищут, для свое работы. Чара Блокатор ассоциаций создает контейнер, который позволяет людям переносить предметы без того, чтобы они стали «ассоциированы» с переносящим.Объект в закрытом блокирующем контейнере сохраняет отпечатки, которые были на нем до закрытия контейнера. Если объект вытащить, недолго использовать и положить обратно, то он приобретет очень слабый отпечаток использовавшего, которого будет недостаточно для заклинания Искатель, если только тот не будет делать это каждый день в течение нескольких недель. Так же можно оставить объект полезным в контейнере; например, книгу, открытую на важной странице и помещенную в прозрачный контейнер, все еще можно прочесть! На достаточно высоких техуровнях, можно зачаровать контейнер с манипуляторами, что позволит использовать объект не открывая контейнер.В некоторых игровых мирах такие контейнеры могут использоваться для сохранения доказательств. Если объект принадлежал кому-либо в течение большого времени, а потом передан кому-либо еще, то отпечаток первоначально хозяина может выветрится. Блокирующий контейнер сохраняет отпечаток первоначально хозяина. (в других мирах отпечаток может никуда не деваться, тогда предмет можно использовать для сотворения Искателя для любого из предыдущих хозяев).Энергостоимость: 20 за фунт вместимости, минимум 20Требуется: Наложение чар, Искатель,  Стена защиты от наблюдение</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>20/lb</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M60</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">seeker</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">scry wall</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 187px; left: 569px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Apportation</name><name-loc>Перемещение</name-loc><spell version="2">
+		<name>Apportation</name>
+		<name-loc>Перемещение</name-loc>
+		<description-loc>Обычное; сопротивление по Воле(Will)Позволяет двигать материальные объекты, не прикасаясь к ним. Это заклинание левитирует объект с Движением 1 — недостаточно быстро, чтобы нанести вред. Живые объекты могут сопротивляться Воле(Will)й.Длительность: 1 минута.Энергостоимость: зависит от веса объекта. Столько же поддержание.Вес	Энергостоимостьменее 1 фунта	1до 10 фунтов	2до 50 фунтов	3до 200 фунтов	4каждые дополнительные 100 фунтов	 4Требования: Магичность(Magery) 1.ПредметПосох или палочка. Используется только магами; предмет должен прикасаться или быть направленным на объект. Энергостоимость создания: 900.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M142</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 439px; left: 569px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Find Weakness</name><name-loc>Найти слабину</name-loc><spell version="2">
+		<name>Find Weakness</name>
+		<name-loc>Найти слабину</name-loc>
+		<description-loc>Почувствовать самую уязвимую часть объекта. Заклинание может быть сотворено на любую часть большого объекта; к примеру, вам не нужно творить его на всю городскую стену сразу, а можно проверить один ярд за раз. Конечно, у многих объектов не будет особых уязвимостей.Это заклинание может быть использовано для устранения неполадок в сложных объектах; дефект, мешающий работе машины, обычно рассматривается как ее самая уязвимая часть.Длительность: 1 минута.Стоимость: 1, или 1 за каждый ярд радиуса для большого объекта. Удваивается, если объект жив.Время сотворения: 2 секунды.Требования: одно заклинание каждого из четырех элементов.ПредметДрагоценности. Энергостоимость создания: 100.</description-loc>
+		<college>Making &amp; Breaking</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M116</reference>
+		<categories>
+			<category>Making &amp; Breaking</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">air</college>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">fire</college>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">water</college>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">earth</college>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 679px; left: 569px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Delay</name><name-loc>Отсрочка</name-loc><spell version="2">
+		<name>Delay</name>
+		<name-loc>Отсрочка</name-loc>
+		<description-loc>ОбычноеСотворяется на другое заклинание для задержки его активации, пока не случится указанное событие в присутствии связанного заклинания, т.е. в присутствии предмета или области, на которую оно  сотворено. Пусковое событие может быть простым или сложным по желанию заклинателя; сложное указывается в письменном виде. Пусковое событие должно сносно определяться на участке Отсрочки обычным человеком; решение за Мастером. Если Отсрочка должна быть вызвана более необычным  случаем, нужное заклинание, такое как Волшебное зрение, можно сотворить на Отсрочке. Она также может сработать при активации другого заклинания, такого как Сторожевой пес или другого связанного заклинания. Задержка может активировать только одно заклинание. Заклинания творятся одно за другим без задержек между ними. Отсрочка сотворяется первой и считается «включенной» при расчете умения для связанного заклинания (M10). Полная стоимость для связанного заклинания и для Отсрочки оплачивается во время сотворения. Если заклинатель определит заклинание для объекта человеческого размера, а Отсрочка сработает на большей жертве (требующей больше энергии - смотри M11), эффекта, либо не будет, либо он уменьшен, зависит от заклинания. Последнее слово за Мастером.Отсрочку можно сотворить двумя путями: активировать связанное заклинание на конкретный объект, или, как ловушка, активировать связанное заклинание на любой объект, удовлетворяющий условиям вызова. В последнем случае Отсрочка и связанное заклинание и творятся на «предмет-ловушку», и расстояние рассчитывается от него в момент вызова. Штрафы за Магическую устойчивость также применяются в момент вызова.Заклинатель делает бросок Отсрочки при первом сотворении; бросок для связанного заклинания не делается до момента вызова. Если намеченного объекта связанного заклинания нет во время сотворения, применяется дополнительный штраф -5 на связанное заклинание (но не на Связь) за неспособность касаться или видеть объект – смотри M11. Так, например, страшная «дверь  Смертельного касания» с установкой «напасть» на первого коснувшегося ее активируется со штрафом -5. Когда Отсрочка вызвана, связанное заклинание начинает активироваться, вступая в силу в следующий ход. Таким образом, Отсрочка не может использоваться как Блокирующее заклинание. Она может использоваться как ловушка, для захвата жертвы врасплох. А не ожидающая жертва должна сделать бросок ИН(IQ),  для ответа прежде, чем связанное заклинание полностью активируется - Боевые рефлексы дают  6 этому броску.И Отсрочка, и связанное заклинание считаются «включенными», как и добавленное Информационное. Связанное заклинание не надо поддерживать, хотя, возможно, нужно Отсрочку или Информационное заклинание. Как только Отсрочка вызвана, она исчезает, и больше не считается включенной. Связанное заклинание продолжает считаться таким, пока активно и может поддерживаться как обычно.Отсрочка можно настроить на «выключения» длящегося заклинание при возникновении события. В этом случае связанное заклинание длится, пока заклинатель поддерживает его, но сама Отсрочка не требует поддержания.Блокирующие и Метаемые заклинания нельзя Отсрочить, можно все другие. «Мгновенные» заклинания, как Гром, срабатывают однажды при активации, затем исчезают. Длящиеся заклинания, как Голоса, начинаются при активации и работают до истечения.Длительность: 2 часа.Время сотворения: 10 секунд.Стоимость: 3 на сотворение. 3 на поддержание.Требования: Магичность(Magery) 3 и любые 15 заклинаний.</description-loc>
+		<college>Meta/Linking</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>2 hrs</duration>
+		<reference>M130</reference>
+		<categories>
+			<category>Linking</category>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<any></any>
+				<quantity compare="at least">15</quantity>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 679px; left: 677px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Haste</name><name-loc>Ускорение</name-loc><spell version="2">
+		<name>Haste</name>
+		<name-loc>Ускорение</name-loc>
+		<description-loc>ОбычноеУвеличивает Движении и Уклонение на не более, чем на 3.Длительность: 1 минута.Стоимость: 2 сотворение за единицу, добавленную к Движению и Уклонению объекта. Половина  поддержание.Время сотворения: 2 секунды.ПредметОбувь или украшение. Действует только на носителя. Энергостоимость создания: 250 за каждые  1 к Движению.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/pt</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M142</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+	</spell></block><block style="top: 439px; left: 677px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Grace</name><name-loc>Изящество</name-loc><spell version="2">
+		<name>Grace</name>
+		<name-loc>Изящество</name-loc>
+		<description-loc>ОбычноеВременно увеличивает ЛВ(DX) объекта (максимум 5). Все умения и параметры, основанные на ловкости, также увеличиваются. Волшебник может увеличить и свою ЛВ(DX) для того чтобы повысить свои шансы в использовании метательных заклинаний и т.п.Длительность: 1 минута.Стоимость: 4 за каждое увеличиваемое очко ЛВ(DX) (максимум 5). Столько же поддержание.Требования: Неуклюжесть.Предмет(а) Любой предмет. Всегда включён; увеличивает ЛВ(DX) владельца только когда используется! Это очень редкий предмет. Энергостоимость создания: 2.000 за каждое увеличиваемое очко ЛВ(DX) (максимум 5). (б) Посох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 2.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4/ DX</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M37</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">clumsiness</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 187px; left: 677px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Dancing Object</name><name-loc>Танцующий объект</name-loc><spell version="2">
+		<name>Dancing Object</name>
+		<name-loc>Танцующий объект</name-loc>
+		<description-loc>ОбычноеОживляет один предмет для повторяющейся работы. Он может совершать примерно те же задания, что и человек с СЛ(ST) 15: ведро может носить воду из ручья в бочку, метла может подметать здание снова и снова, арбалет может самостоятельно взводиться и т.п. Задачи объекта не могут изменяться или зависеть от каких-либо событий... он просто бездумно продолжает свою работу. Умное использование Связи позволяет Танцующему объекту эффективно отвечать на ситуации, но это требует тщательного продумывания.Длительность: 1 час.Стоимость: 4 сотворение. 2 поддержка.Время сотворения: 10 секунд.Требования: Магичность(Magery) 2 и Перемещение.ПредметМожет быть наложено на любой предмет навсегда . Стоимость создания: 400 энергии и на $500 магических ингредиентов. Объект необходимо «проводить» по его программе 1 раз в день пока действует чара.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M144</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 253px; left: 569px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Graceful Weapon</name><name-loc>Изящное оружие</name-loc><spell version="2">
+		<name>Graceful Weapon</name>
+		<name-loc>Изящное оружие</name-loc>
+		<description-loc>Наложение чарЭта чара — упрощенная версия Быстрого выхватывания (ниже). Оружие на становится неготовым после атаки или парирования, даже при критическом промахе. Если Изящное оружие встречается с заклинаниями Повернуть Клинок или Отворот Клинков, оно сопротивляется по свое Силе.Энергостоимость: 150 за фунт веса (минимум 1 фунт)Требования: Наложение чар и ПеремещениеПредмет: может быть сотворено на любой тип инструмента, не только на оружие.</description-loc>
+		<college>Weapon Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>150/lb</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M63</reference>
+		<categories>
+			<category>Weapon Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 319px; left: 569px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Loyal Sword</name><name-loc>Верный меч</name-loc><spell version="2">
+		<name>Loyal Sword</name>
+		<name-loc>Верный меч</name-loc>
+		<description-loc>Наложение чарЦелевое оружие пытается вернуться в руку к владельцу, если было уронено или брошено — даже если тот не способен после этого сражаться. Если его уронить, оно вернется на следующих ход, как будто бы было быстро выхвачено (ниже). Если его бросить, оно летит до тех пор, пока не попадет в кого-либо или не упадет на землю, после чего возвращается настолько прямо, насколько возможно, со скоростью 12. Оно избегает врагов и препятствия во время возвращения! Если владелец умирает, оно возвращается к телу, но после этого становится верным тому, кто первый его подберет.Верное оружие может быть поймано, перехвачено в воздухе и т. д. во время возвращения, но для этого требуется бросок ЛВ(DX)-4, и оно в любом случае будет пытаться вернуться к владельцу, давая любому другом -4 к попыткам драться с помощью него.Верное оружие может быть продано или отдано в любое время, но подобный обмен должен быть полностью добровольным; после этого, оружие становится верным новому владельцу. У него может быть только один владелец в каждый  момент времени. Можно использовать ограничивающие чары, для ограничения типа людей, которые могут использовать это оружие.Заметьте, что использование этого заклинания вместе с Танцующим оружием, делает Танцующее оружие почти бесполезным. Получится Верное оружие, которое бьет врагов во время возвращения (но не в другое время)Энергостоимость: 750 за фунт веса оружия (минимум 1 фунт)Требования: Наложение чар и ПеремещениеПредмет: может быть сотворено на лбой тип инструмента, не только на оружие</description-loc>
+		<college>Weapon Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>750/lb</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M63</reference>
+		<categories>
+			<category>Weapon Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 385px; left: 569px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Quick-Draw</name><name-loc>Быстрое выхватывание</name-loc><spell version="2">
+		<name>Quick-Draw</name>
+		<name-loc>Быстрое выхватывание</name-loc>
+		<description-loc>Наложение чарОружие вскакивает в руку владельца когда он того хочет и мгновенно становиться готовым (не требуется маневра подготовки!). Нужна только ментальная команда владельца, не требуется никаких бросков кубиков.Чара не будет работать, если оружие более чем в ярде от владельца либо если он связан, соблюдается общественный порядок (оружие привязано к ножнам проволокой или веревкой), в рюкзаке и т. д. Оружие с этим заклинанием не становится неготовым после атаки или парирования. (B382)Энергостоимость: 300 за фунт веса (минимум 1 фунт); 2000 за колчан, сумку и т. д. Из которых обычные снаряды будут прыгать в руку владельца по мере необходимости.Требования: Наложение чар и ПеремещениеПредмет: может быт сотворено на любой тип инструмента — не только на оружие.</description-loc>
+		<college>Weapon Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>300/lb #</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M63</reference>
+		<categories>
+			<category>Weapon Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 505px; left: 569px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Penetrating Weapon</name><name-loc>Проникающее оружие</name-loc><spell version="2">
+		<name>Penetrating Weapon</name>
+		<name-loc>Проникающее оружие</name-loc>
+		<description-loc>Наложение чарРежущее, проникающее или пробивающее оружие с этой чарой проходит сквозь броню как сквозь масло. Технически, это заклинание дает оружию делитель брони (B268). Такое оружие на наносит дополнительное повреждение по небронированным врагам. Укрепленный СП(DR) защищает против делителя брони от данного заклинания как обычно.Энергостоимость: зависит от делителя брони, получаемого оружием:Делитель брониЭнергостоимость2   | 2503   | 7505   | 250010  | 7500Игнорирует СП(DR)  | 25000Удвойте стоимость, если объектом является метающее оружие (например лук). Разделите стоимость на 10, если объект — это снаряд (например стрела). Если предмет попадает под несколько категорий (оружие, метающее оружие, снаряд), используйте наивысшее значение стоимости. В дополнение к оружию, любой режущий инструмент может быть зачарован этим заклинанием. Заметьте, что это заклинание может быть пересотворено на большем уровне, как и Точность.Требования: Наложение чар и Найти Уязвимость</description-loc>
+		<college>Weapon Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M63</reference>
+		<categories>
+			<category>Weapon Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">find weakness</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 625px; left: 569px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Cornucopia</name><name-loc>Рог изобилия</name-loc><spell version="2">
+		<name>Cornucopia</name>
+		<name-loc>Рог изобилия</name-loc>
+		<description-loc>Наложение чарДает колчан, мешочек пуль или другой контейнер боеприпасов с бесконечным запасом одного типа боеприпасов — но при это он должны доставаться вручную, по одной штуке за раз. Каждый снаряд существует одну минуту после извлечения из контейнера; потом он исчезает (или, если бы поднят кем-то кроме владельца контейнера, исчезает немедленно). Таким образом, это заклинание нельзя использовать для создание одного колчана, которого хватит  для целой армии. Так же оно не может быть сотворено на оружие. Маги из высокотехнологичных миров могут создать карман, в котором всегда есть один бронебойный трассирующий патрон; они не могут зачаровать пулемет, что бы тот стрелял постоянно.Энергостоимость: это заклинание коварно. Потому что умелые игроки найдут кучу способов неправильного использования предмета. Если ИМ найдет это заклинание надоедливым, он может запретить это заклинание полностью. В общем: энергостоимость равна стоимости в $ боеприпаса, создаваемого рогом изобилия в текущем игровом мире умноженной на 50. Таким образом, колчан производящий обычные стрелы (2$ каждая) будет стоить 100 единиц энергии.Это так же означает, что маги из средневекового мира не могут создать «колчан» для высокотехнологичных боеприпасов: в их мире они ничего не стоят. Колчан с Рогом избилия можно сделать для производства магических стрел — но только если этот конкретный маг может делать такие стрелы  - и энергостоимость будет огромной.Требования: Наложение чар и 2 других заклинания зачарования оружия.</description-loc>
+		<college>Weapon Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>50x$ value#</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M64</reference>
+		<categories>
+			<category>Weapon Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">weapon enchantment</college>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 745px; left: 569px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Spell Stone</name><name-loc>Камень заклинаний</name-loc><spell version="2">
+		<name>Spell Stone</name>
+		<name-loc>Камень заклинаний</name-loc>
+		<description-loc>Наложение чарКамень заклинаний содержит в себе заклинание, до тех пор, пока кто-либо (даже не маг) использует его. Для использования достаточно концентрироваться в течение секунды, раздавливая камень в руке, таким образом сотворяя заклинание. В начале следующего хода, бросьте против Мощности камня. При успешном броске заклинание сотворено. Если бросок неудачный, камень просто потерян. Если камень раздавлен без необходимой секунды концентрации, он опять-таки просто теряется.Энергия заклинания включена в стоимость заклинания; ничего дополнительно от пользователя не требуется, который также не может вкладывать свою энергию для поддержки заклинания. Так же он не может прервать заклинание, если оно уже сотворено, правда создатель камня может указать меньшую чем обычно продолжительность либо вложить дополнительную энергию в зачарование, так что заклинание будет поддерживать само себя. Персонаж может использовать только один камень заклинаний в ход.Камень заклинаний должен быть сделан из драгоценности стоимостью $10xP^2   $40xP где P — это максимальная энергия заклинания, которое может содержать камень.Любое заклинание может быть помещено в Камень Заклинаний, исключая блокирующие и зачаровывающие заклинания. Можно также дополнительно наложить ограничивающие чары. Если заклинание в камне требует знания другого определенного заклинания (например Контрзаклинание), это другое заклинание должно быть указано при создании. Таким образом можно создать заклинание для противодействия одному конкретному заклинанию, но невозможно создать универсальный камень контрзаклинания.Так же можно создать камень, который будучи раздавлен сотворит заклинание не для пользователя, а на него!Анализ магии покажет какое заклинание содержит камень, будет ли оно сотворено для пользователя или на него, сколько энергии было потрачено и т. д. (один вопрос за одно сотворение Анализа магии)Будьте осторожны со своими желаниями.Они могут исполниться.Энергостоимость: в 20 раз больше чем обычно стоит заклинание, включая стоимость поддержки, если необходимо.Требования: Наложение чар и задержка</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>20xspell cost</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Varies</duration>
+		<reference>M60</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">delay</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 805px; left: 569px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Spell Arrow</name><name-loc>Стрела заклинания</name-loc><spell version="2">
+		<name>Spell Arrow</name>
+		<name-loc>Стрела заклинания</name-loc>
+		<description-loc>Наложение чарКак и Камень Заклинаний, стрела заклинания содержит в себе заклинание до тех пор, пока ее не выстрелят. Лучник может не быть магом. Пользователь должен концентрироваться такое же время, какое требуется для обычного сотворения данного заклинания, для того чтобы активировать «зарядить» заклинание. Это нельзя делать одновременно с прицеливанием и время не уменьшается в результате высокого уровня умения (но см. Ускоренная стрела заклинания, ниже). Неиспользованная стрела заклинаний разряжается через минуту. Заклинание активируется, когда стрела попадает в твердый объект; бросьте против эффективного уровня умения мага, зачаровавшего стрелу. Если бросок успешен, заклинание сотворено. Если произошел обычный провал, заклинание просто потеряно. Критический провал определяется по таблице критических провалов (M7). Если стрела была выпущена без  необходимой концентрации, заклинание теряется, но стрела наносит обычные повреждения.Энергия заклинание вложена в чару. Лучник не дожен (и не может) нечего передавать дл сотворения или поддержания его. Так же, лучник не сможет прервать сотворенное заклинание, так что маг, наложивший чару, может указать длительность короче, чем обычно или вложить больше энергии для автоматического поддержания заклинания.Наконечник стрелы должен содержать драгоценный камень стоимостью не меньше чем $10xP^2   $40xP, где P — максимальное количество энергии которое можно вложить в заклинание на стреле. Драгоценность уничтожается при активации заклинания. (Остальную часть стрелы можно восстановить, однако она уже не будет магической).В стрелу можно встроить любое заклинание, которое позволяет создание магического предмета, исключая Блокирующие заклинания, Наложение Чар и Рукопашных заклинаний или тех, в описании которых написано «должен коснуться». Заметьте, некоторые разрешенные заклинания бесполезны (например Успокоить Зверя), так как лучник в любом случае должен поразить объект стрелой любым способом. Чары на саму стрелу можно накладывать как обычно, включая ограничивающие чары.От лучника зависит только то, куда попадет стрела. Если для заклинания требуется объект, объектом считается то, во что попала стрела (если это неправильный объект, например деревянная стена для Поражения слепотой — заклинание просто теряется). Возможно потребуется суждение ИМ для того, что считать «твердым объектом» (например капель дождя недостаточно для активации заклинания). Если это площадное заклинание, точка касания является центром области. Если это метательное заклинание, эффект появляется как будто оно поразило цель сразу же после стрелы (заклинание не запускает себя из точки касания). Если заклинание создает объект, он появляется настолько близко от точки касания, насколько это возможно. Если заклинание обычно воздействует не только на объект, но и на заклинателя (например Контроль Животного), лучник считается заклинателем. Если заклинание должно быть сотворено на гуманоида, оно будет работать даже если стрела застряла в одежде не добравшись до кожи. Заклинатель определяет все остальное: длительность, площадь, точный эффект и т. д.С помощью Анализа магии можно выяснить какое заклинание содержится в стреле, сколько энергии вложено, и так далее, по одному вопросу за сотворение. Стрелы предназначенные для продажи обычно помечают цветом.Энергостоимость сотворения: в 30 раз больше чем требуется для содержащегося заклинания, включая стоимость поддержки если необходимо, если сотворяется на что-то длиной со стрелу или арбалетный болт.ИМ может решить, что это заклинание работоспособно на других типах снарядов (например пулях). Если так, умножьте стоимость содержащегося заклинания на 1/10 Максимальной дистанции снаряда вместо 30ти. Если пуля должна будет полететь дальше (например при выстреле из более мощного оружия) заклинание теряется. (Эти правила по потерям не касаются стрел и болтов). Помните, что требования по драгоценности так же применяются и для пуль!Требование: Камень заклинаний</description-loc>
+		<college>Weapon Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>30xspell cost</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M65</reference>
+		<categories>
+			<category>Weapon Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">spell stone</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 871px; left: 569px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Blank Spell Arrow</name><name-loc>Пустая стрела заклинаний</name-loc><spell version="2" very_hard="yes">
+		<name>Blank Spell Arrow</name>
+		<name-loc>Пустая стрела заклинаний</name-loc>
+		<description-loc>Наложение чарЭта чара создает стрелу заклинания бещ заклинания внутри. Вместо этого, любой заклинатель может позже поместить заклинание в стрелу и использовать ее как обычную стрелу заклинания.У пустых стрел заклинаний есть емкость, которая показывает сколько энергии заклинаний они могут вместить. Когда заклинатель желает использовать стрелу, он сотворяет заклинание как обычно, но направляет его в стрелу. Если заклинание слишком большое, оно просто теряется. После заполнения стрела должна быть использована в течение суток заклинателем или кем-нибудь еще иначе заклинание безвредно рассеется, оставив стрелу снова пустой.Все остальные правила по стрелам заклинаний применяются так же и к пустым стрелам заклинаний с одним исключением: если заклинатель сотворивший заклинание в стреле так является лучником ее выстрелившим, он может определить эффект во время выстрела и поддерживать его как обычно. (Он не может вложить больше или меньше энергии для сотворения заклинания во время выстрела; вся энергия на сотворение должна содержаться в стреле.)Энергостоимость: в 30 раз больше нужной емкости. Все правила для снарядов, не являющимися стрелами, так же применяются к Пустым стрелам заклинаний.Требование: Стрела заклинаний</description-loc>
+		<college>Weapon Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>30xcapacity#</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M66</reference>
+		<categories>
+			<category>Weapon Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">spell arrow</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 253px; left: 677px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Dancing Weapon</name><name-loc>Танцующее оружие</name-loc><spell version="2">
+		<name>Dancing Weapon</name>
+		<name-loc>Танцующее оружие</name-loc>
+		<description-loc>Наложение чарОружие зачарованное этим заклинанием сражается само по себе по команде владельца, вися в воздухе как будто в руках невидимого воина. У него будет умение 15, Базовая скорость 5 и СЛ(ST) (для расчета повреждений) равная Силе чары. Оно будет использовать разумную стратегию и следовать устным или ментальным командам хозяина атаковать определенного противника. Оно будет продолжать сражаться до тех пор, пока не будет остановлено (см. ниже) либо пока хозяин не умрет либо пока хозяин не прикажет прекратить. Это заклинание не работает с метательным оружием!Любая атака танцующего оружия производится с пенальти: от -4 (алебарда) до -5 (меч или топор) до -6 (кинжал или пистолет). Если оружие получает критический провал или по нему попали критическим ударом, оно «оглушено» и выходит из боя (если он не ломается, в таком случае оно уничтожено). Если хозяин убит, оно падает на пол — однако если хозяин всего лишь без сознания, оно продолжает атаковать ближайшего противника. Так же можно поймать танцующее орудие в сеть или сумку (такой же бросок как и ударить его, однако ИМ может дать премию или штраф в зависимости от остроумности использованного метода).Так же можно оставить оружие проинструктировав атаковать любого, кто подойдет на определенное расстояние; можно использовать Связь для активации его только в определенных условиях. Будучи однажды активированными и если владельца нет на месте, оно будет атаковать всех в диапазоне, ближайшего — первым, если Связь не запрограммирована иначе.Активированное танцующее оружие не может сменить владельца; просто схватить за рукоять недостаточно для того, чтобы заставить его сменить сторону.Энергостоимость: 1000 за фунт веса оружия (минимум один фунт). Удвойте стоимость чтобы получить оружие с базовой скоростью 6 или умением 18. Умножьте стоимость на 4 для получения обоих улучшений.Требования: Наложение чар и Танцующий Объект</description-loc>
+		<college>Weapon Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>1000/lb#</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M63</reference>
+		<categories>
+			<category>Weapon Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">dancing object</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 319px; left: 677px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Defending Weapon</name><name-loc>Защищающее оружие</name-loc><spell version="2">
+		<name>Defending Weapon</name>
+		<name-loc>Защищающее оружие</name-loc>
+		<description-loc>Наложение чарОружие — объект этого заклинания позволяет владельцу парировать более эффективно; каждый уровень чары дает  1 к парированию, вплоть до максимума в  3. Заклинание не защищает само оружие от поломки (с B401).Если эта чара скомбинирована с Танцующим Оружием, оружие сражается вместе с владельцем и по мере возможности отслеживает удары от атакующих. При этом оно использует оружейный навык как при Танцующем оружии плюс бонус от этого заклинания. Владелец может скомандовать ему защищать определенную его сторону (очень похоже на Танцующий щит) и либо защищаться (в этом случае оно получает два парирования в ход) либо атаковать (в этом случае оно получает одну атаку и одну защиту в ход). Если танцующее оружие не смогло спарировать удар, владелец все еще может использовать одну из своих активных защит.Это заклинание может быть сотворено только на сбалансированное оружие, которым обычно можно парировать.Энергостоимость: 500 за  1 к парированию, 1000 за  2 и 2000 за  3. Заклинание может быть пересотворено на более высоком уровне как и Точность.Требоваия: Наложение чар и Танцующий объектДух Оружия</description-loc>
+		<college>Weapon Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M64</reference>
+		<categories>
+			<category>Weapon Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">dancing object</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 385px; left: 677px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Dancing Shield</name><name-loc>Танцующий щит</name-loc><spell version="2">
+		<name>Dancing Shield</name>
+		<name-loc>Танцующий щит</name-loc>
+		<description-loc>Наложение чарЩит зачарованный этим заклинанием защищает своего владельца так, как будто одет невидимым щитовиком. У щита будет умение 16, Базовая Скорость 5 и СЛ(ST) равная Силе чары (для расчета толчков). Он подчиняется  мысленным или устным командам владельца, что бы выбрать с какой стороны защищать. Если владелец без сознания, щит продолжает защищать его так хорошо, как только может. Если же владелец умирает, щит падает на землю.Щит может отразить две атаки за ход, независимо от действий владельца (так, владелец может парировать любой удар направленный в щит, например). Можно проинструктировать щит ударить противника (B406), в этом случае владелец лишается его защиты до начала его следующего хода (щит не будет перемещаться на расстояние более двух ярдов от владельца чтобы совершить удар).Щит можно атаковать со штрафом равным его ПЗ(DB)-4. Щит при этом защищается либо Блокированием (используя Щит/2) или Уклонением (используя Скорость); он не получем никаких премий ПЗ(DB) от себя самого. Так же щит можно поймать сетью или мешком (с помощью стандартного броска атаки). В случае если шит совершает критический провал или получает критический удар, он «оглушается» и находится вне боя до тех пор, пока владелец не поднимет его и не «разбудит» (маневр Подготовки). При уничтожении щит теряет магию; будучи пробитым проникающим или пробивающим ударом, он теряет по одному очку Силы, умения Щит и Базовой Скорости. Как обычно, если его Сила падает ниже 15, предмет перестаёт работать.Энергостоимость: 250 за фунт веса щита (минимум 1 фунт). Удвойте стоимость для того, чтобы получить щит с Базовой Скоростью 6 или умением 18. Учетверите для получения обоих улучшений. Это заклинание может быть пересотворено на более высоком уровне как и Точность (M65), как для улучшения так и для ремнота щита.Требования: Танцующий объект и  Наложение чар</description-loc>
+		<college>Armor Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>250/lb#</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M67</reference>
+		<categories>
+			<category>Armor Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">dancing object</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 505px; left: 677px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Quick-Aim</name><name-loc>Быстрое прицеливание</name-loc><spell version="2">
+		<name>Quick-Aim</name>
+		<name-loc>Быстрое прицеливание</name-loc>
+		<description-loc>Наложение чарЗачарованное холодное дальнобойное оружие (лук, праща и т. д.) приобретает сверхъестественную отзывчивость; в игровых терминах односекундный маневр Прицеливания с этим оружием дает эффект двухсекундного прицеливания.Энергостоимость: 100. За 200 энергии одна секунда прицеливания может считаться тремя. Уполовиньте стоимость если оружие метательное (метательное копье или топор). Зачарование не работает на боеприпасы (такие как стрелы). Заклинание может быть пересотворено на более высоком уровне как Точность.Требования: Наложение чар и Изящество</description-loc>
+		<college>Weapon Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M65</reference>
+		<categories>
+			<category>Weapon Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">grace</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 571px; left: 677px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Defending Shield</name><name-loc>Защищающий щит</name-loc><spell version="2">
+		<name>Defending Shield</name>
+		<name-loc>Защищающий щит</name-loc>
+		<description-loc>Наложение чарЭта чара позволяет пользователю блокировать более умело; каждый уровень заклинания дает обладателю  1 к Блокированию, вплоть до максимума  3. Это заклинание нельзя комбинировать с Танцующим щитомЭнергостоимость: см. таблицу нижеПремия к блокированиюСтоимость 1 | 500 2 | 1000 3 | 2000 Это заклинание может быть пересотворено на более высоком уровне как и Точность (M65)Требования: Наложение чар и Изящество</description-loc>
+		<college>Armor Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M67</reference>
+		<categories>
+			<category>Armor Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">grace</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 745px; left: 677px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Speed</name><name-loc>Скорость</name-loc><spell version="2">
+		<name>Speed</name>
+		<name-loc>Скорость</name-loc>
+		<description-loc>Наложение чарУменьшает время на сотворение любой другой чары на предмете, сделанной вместе со Скоростью. Каждое очко Скорости уменьшает время на сотворение вдвое, так же как и высокий навык для мага. Если время уменьшается до уровня менее чем 1 секунда, заклинание может быть сотворено без концентрации.Энергостоимость создания: см. таблицу ниже.СкоростьСтоимость1 очко  5002 очка  10003 очка  20004 очка  4000Удвойте стоимость для каждого дополнительного очка. Может быть пересотворено на более высоком уровне как для Точности (M65)Требования: Наложение чар и Ускорение</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M57</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">haste</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 871px; left: 677px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Speed Spell Arrow</name><name-loc>Ускоренная стрела заклинания</name-loc><spell version="2">
+		<name>Speed Spell Arrow</name>
+		<name-loc>Ускоренная стрела заклинания</name-loc>
+		<description-loc>Наложение чарЭто заклинание можно сотворить только на снаряды, зачарованные Стрелой заклинания. Как и чара Скорость, оно уменьшает время, которое должен потратить лучник на концентрацию для активации заклинания на стреле. Каждый уровень Ускоренной стрелы заклинания уменьшает время на концентрацию в два раза. Если время становится меньше секунды, концентрация не требуется.Стоимость: см. таблицу нижеСкоростьСтоимость1 | 502 | 1003 | 200Удвойте стоимость за каждый дополнительное очко. Можно пересотворять на более высоком уровне как и Точность (M65).Требования: Скорость, Стрела заклинания</description-loc>
+		<college>Weapon Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M66</reference>
+		<categories>
+			<category>Weapon Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">spell arrow</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">speed</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block>
+<div style="position:absolute; left:800px; top:0px;">
+<block style="top: 164px; left: 93px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Scroll</name><name-loc>Свиток</name-loc><spell version="2">
+		<name>Scroll</name>
+		<name-loc>Свиток</name-loc>
+		<description-loc>Наложение чарНаписание магического свитка заряженного заклинанием из какой-либо другой школы. Если маг, понимающий язык свитка на уровне Акцент или лучше, громко читает его, свиток сотворяет свое заклинание, после чего его сила развеивается и написанное исчезает. Чтение свитка требует удвоенного времени на сотворение заклинания; маг, читающий свиток, платит нормальную энергостоимость заклинания. Бросок навыка не требуется, если только заклинание не является Сопротивляемым. В этом случае используется навык мага создавшего свиток.При громком чтении свитка важно произношение! Если у мага, читающего свиток, понимание языка свитка на уровне Акцента, свиток сотворяет заклинание со штрафом -1; если на уровне Ломаный, свиток сотворяет со штрафом -3. Если заклинатель не знает языка, он не может произнести слова как следует и не может сотворить заклинание.Свиток можно прочитать тихо, про себя, чтобы узнать что в нем написано. Любой маг, который понимает язык свитка, узнает какое заклинание в нем содержится. Это не приведет к сотворению заклинания!Заклинания могут быть написаны на любом материале, но традиционно используется пергамент. Поврежденный свиток не утрачивает своей силы, пока его можно прочитать.Время на сотворение: Количество дней, требуемых для написания свитка равно энергии требуемой для сотворения заклинания как обычно (базовой стоимости для областных заклинаний), не учитывая никакие премии от навыка. Умножьте это значение на $33 (или обычное для сеттинга значение за единицу зачарования; см. M21-M22) для того, чтобы получить нормальную магазинную цену свитка.Пример:: Заднее зрение обычно стоит 3 единицы энергии для сотворения. Свиток Заднего Зрения потребует 3 полных дня для написания и обычно будет стоит $100. В конце времени написания, ИМ делает бросок против навыка Свитка или заклинания, которое вписывается — что меньше. Успешный бросок означает что заклинание будет сотворено успешно. Неудача означает что свиток работать не будет. Критический провал означает, что будет сотворено испорченное заклинание!Длительность: до тех пор, пока заклинание не будет использовано. Маг, прочитавший свиток, может поддерживать заклинание, если его обычно можно поддерживать.Требования: Магичность(Magery) 1 и как минимум уровень понимая Акцент в языке, на котором пишется свиток. Маг не может писать свитков на языке, которого он не знает.</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>Special</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>days=cost</casting_time>
+		<duration>Varies</duration>
+		<reference>M57</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="starts with">Language</name>
+					<notes compare="contains">Written (Accented)
+				</notes></advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="starts with">Language</name>
+					<notes compare="contains">Written (Native)
+				</notes></advantage_prereq>
+			</prereq_list>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (enchantment)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 152px; left: 273px;" class="magery3"><name>Link</name><name-loc>Связь</name-loc><spell version="2">
+		<name>Link</name>
+		<name-loc>Связь</name-loc>
+		<description-loc>ОбластноеОткладывает активацию одного или более связанных заклинаний, сотворенных в его области, пока не случится указанное событие в присутствии Связи. Пусковое событие может быть простым или сложным по желанию заклинателя, по правилам Отсрочки (выше). Связь также можно вызвать активацией заклинания, помещенного в область после Связи, например Сторожевой пес, Отсрочка или другая Связь. Заклинатель платит энергию и делает броски заклинания Связи и всех связанных заклинаний во время сотворения. Связанные заклинания могут не получить пользы за сокращение стоимости для высокого умения. Если намеченный объект связанного заклинания не присутствует во время сотворения, есть дополнительные штраф -5 на связанное заклинание (но не на Связь) за неспособность касаться или видеть объект - смотри M11.Размер области Связи определяется во время сотворения. Любые связанные заклинания могут перемещаться в пределах области; например, если Создать огонь и Клей радиусом в ярд были связаны Связью радиусом 20 ярдов, для поимки злоумышленников, то первый, вошедший в область Связи, окажется в зоне пылающего клея, но последующие будут в безопасности (во всяком случае от этой Связи). Размер связанных заклинаний должно установить во время сотворения. Если объект больше чем предполагаемая цель, эффекта заклинания нет или он ослаблен, в зависимости от заклинания. Последнее слово за Мастером.Поражаются объекты только в пределах области Связи, если только результат не привязывающийся к области эффект – например, вызов демона! Однако пусковое событие может произойти за пределами области. Время сотворения связанных заклинаний тратится при установки Связи. Нет задержек при вызове Связи - все связанные заклинания активируются немедленно.Связанные заклинания не считаются «включенными», ни для каких целей. Каждые три Связи считаются одним «включенным» заклинанием (округлять вниз). Маг не может обнаружить Связь просто смотря на нее. Однако, заклинание Волшебное зрение или Обнаружить магию обнаружат ее. Если маг знает Скрыть магию, можно затруднить обнаружение Связи магическими методами. Просто добавьте стоимость Скрыть магию к базовой стоимости Связи для достижения эффекта. Маг должен знать, Скрыть магию, чтобы  использовать эту опцию. Чтобы определить результаты, если объект связанного заклинания не присутствовал при сотворении, и имеет Магическую устойчивость, пересчитайте начальный бросок, Если оригинал броска связанного заклинания не записан, перебросьте его. Блокирующие и Метаемые заклинания нельзя Связать – все другие можно. «Мгновенные» заклинания, как Гром, срабатывают однажды при активации, затем исчезают. Длящиеся заклинания, как Голоса, начинаются при активации и работают до истечения.Одиночную Связь можно сделать активирующей заклинание при входе в область и деактивирующей при выходе. Она будет длиться, пока связанное заклинание не истечет. Пример, маг может сотворить Связь на Непрерывный свет. Если он выбросит семь дней длительности Непрерывного света (168 часов), он может настроить Связь на включение света, когда он входит в комнату, и выключении, когда уходит. По окончанию 168 часов света, оба заклинания рассеиваются. Мгновенные заклинания исчезает вместе со Связью после срабатывания.Поддержание Связи не требуется, как для самой Связи, так и для связанных или любых информационных «пусковых» заклинаний.Связь можно сотворить наоборот, для остановки одного или более заклинаний, при «стоповом » событии. В этом случае, связанное заклинание длится, пока заклинатель поддерживает его, а сама связь не требует поддержания.Связь также может использоваться в Ограничивающих чарах (см. стр 68-69).Длительность: До запуска и истекания связанных заклинаний.Базовая стоимость: 8; связанные заклинания не поддерживаются.Время сотворения: 4 часа - нет сокращения во времени, несмотря на то, как хорошо Связь изучена.Требование: Отсрочка.Экстравагантно или даже бесполезно сотворять некоторые заклинания как Рефлекторные!ПредметЗаклинание можно навсегда сотворить на любой зачарованный предмет, определив обстоятельства, когда он работает. Допуск мог бы определить класс пользователей, способных использовать предмет, а Связь могла бы, например, заставить его работать только ночью. Энергостоимость создания: 200. Любые Информационные заклинания, требуемые для пуска (например, Обнаружить магию), должны сотворяться на предмет, как отдельные чары. Например, меч можно Связать с заклинаниями Свет и Почуять жизнь, так, чтобы он пылал в присутствии орков. Обратную Связь можно навсегда сотворить на любой зачарованный предмет, деактивируя его в указанном случае. Это часто используется, чтобы волшебные предметы не попали в неправильные руки. Энергостоимость создания: 200.</description-loc>
+		<college>Meta/Linking</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>8</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>4 hrs</casting_time>
+		<duration>Until triggered</duration>
+		<reference>M131</reference>
+		<categories>
+			<category>Linking</category>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">delay</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 152px; left: 393px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Resist Enchantment</name><name-loc>Сопротивление чарам</name-loc><spell version="2">
+		<name>Resist Enchantment</name>
+		<name-loc>Сопротивление чарам</name-loc>
+		<description-loc>Наложение чарПредмет зачарованный этим заклинанием сопротивляется дальнейшему зачарованию добавляя штраф к броску наложения чар. Далее, эта чара сопротивляется  любым попыткам снять или подавить ее добавляя удвоенный обычный штраф.Заклинатель может наложить Сопротивление Чарам, которая не будет сопротивляться определенным дальнейшим зачарованиям, но он должен либо сам наложить эти чары, либо присутствовать при всем процессе сотворения заклинания.Энергостоимость: см. таблицу нижеШтрафЭнергостоимость-1   | 50-2   | 100-3   | 200-4   | 500-5   | 1000Требования: Любая ограничивающая чара (см. с 68)</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M58</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">any limiting enchantment</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 152px; left: 513px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Homunculus</name><name-loc>Гомункулус</name-loc><spell version="2">
+		<name>Homunculus</name>
+		<name-loc>Гомункулус</name-loc>
+		<description-loc>Наложение чарВыращивает миниатюрное копию из вашей плоти.У этой копии, называемой гомункулусом, будет СЛ(ST) 1, ЛВ(DX) 0 и не будет ИН(IQ) или ЗД(HT). Ее необходимо держать в стеклянной бутылке и кормить не менее 1 ЕЖ(HP) человеческой крови каждый день для поддержания жизни. Если бутылку разбить или подвергнуть сильному свету или теплу, гомункулус умрет.В любое время по своему желанию маг может переместить свой дух в гомункулус, независимо от того, насколько он далеко (как при Вселении, M49), за 4 энергии в первую минуту и по 2 за каждую последующую. Он может наблюдать и общаться со всеми, кто находится в присутствии гомункулуса. Так же заклинатель может сотворять заклинания через гомункулуса (использую свою собственную энергию) и не может совершить никаких физических действий, так как гомункулус пойман в бутылку. Заклинатель может вернуться в свое собственное тело по желанию.Если враждебный маг получит в свои руки живого гомункулуса, он сможет сотворять заклинания школы Общения и Понимания на создателя гомункулуса без штрафов за расстояние! Более того, создатель сопротивляется этим заклинаниям с -5 если они сотворены через гомункулуса. Гомункулус таким образом является большой уязвимостью и доверяется только наиболее преданным слугам.У заклинателя может быть несколько гомункулусов; он может перемещать свой дух только в одного за раз. Пока он «отсутсвтует» его тело очень уязвимо и должно охраняться.Энергостоимость: 800Требования: Магичность(Magery) 2 и Отправка мыслей</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>800</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M70</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">mind-sending</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (enchantment)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 152px; left: 633px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Crystal Ball</name><name-loc>Хрустальный шар</name-loc><spell version="2">
+		<name>Crystal Ball</name>
+		<name-loc>Хрустальный шар</name-loc>
+		<description-loc>Наложение чарИспользуется при прорицании через хрустальный шар. Требует шар из безупречного кристалла как минимум 2 дюмов в диаметре (стоимость 1000$). Трёхдюймовый шар (стоимость 5000$) даст  1 к прорицанию. Четырёхдюймовый шар (стоимость 20000$) даст  2Энергостоимость: 1000Требование: Прорицание (Хрустальный шар)</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>1000</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M71</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">divination (crystal gazing)</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 80px; left: 273px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Delay</name><name-loc>Отсрочка</name-loc><spell version="2">
+		<name>Delay</name>
+		<name-loc>Отсрочка</name-loc>
+		<description-loc>ОбычноеСотворяется на другое заклинание для задержки его активации, пока не случится указанное событие в присутствии связанного заклинания, т.е. в присутствии предмета или области, на которую оно  сотворено. Пусковое событие может быть простым или сложным по желанию заклинателя; сложное указывается в письменном виде. Пусковое событие должно сносно определяться на участке Отсрочки обычным человеком; решение за Мастером. Если Отсрочка должна быть вызвана более необычным  случаем, нужное заклинание, такое как Волшебное зрение, можно сотворить на Отсрочке. Она также может сработать при активации другого заклинания, такого как Сторожевой пес или другого связанного заклинания. Задержка может активировать только одно заклинание. Заклинания творятся одно за другим без задержек между ними. Отсрочка сотворяется первой и считается «включенной» при расчете умения для связанного заклинания (M10). Полная стоимость для связанного заклинания и для Отсрочки оплачивается во время сотворения. Если заклинатель определит заклинание для объекта человеческого размера, а Отсрочка сработает на большей жертве (требующей больше энергии - смотри M11), эффекта, либо не будет, либо он уменьшен, зависит от заклинания. Последнее слово за Мастером.Отсрочку можно сотворить двумя путями: активировать связанное заклинание на конкретный объект, или, как ловушка, активировать связанное заклинание на любой объект, удовлетворяющий условиям вызова. В последнем случае Отсрочка и связанное заклинание и творятся на «предмет-ловушку», и расстояние рассчитывается от него в момент вызова. Штрафы за Магическую устойчивость также применяются в момент вызова.Заклинатель делает бросок Отсрочки при первом сотворении; бросок для связанного заклинания не делается до момента вызова. Если намеченного объекта связанного заклинания нет во время сотворения, применяется дополнительный штраф -5 на связанное заклинание (но не на Связь) за неспособность касаться или видеть объект – смотри M11. Так, например, страшная «дверь  Смертельного касания» с установкой «напасть» на первого коснувшегося ее активируется со штрафом -5. Когда Отсрочка вызвана, связанное заклинание начинает активироваться, вступая в силу в следующий ход. Таким образом, Отсрочка не может использоваться как Блокирующее заклинание. Она может использоваться как ловушка, для захвата жертвы врасплох. А не ожидающая жертва должна сделать бросок ИН(IQ),  для ответа прежде, чем связанное заклинание полностью активируется - Боевые рефлексы дают  6 этому броску.И Отсрочка, и связанное заклинание считаются «включенными», как и добавленное Информационное. Связанное заклинание не надо поддерживать, хотя, возможно, нужно Отсрочку или Информационное заклинание. Как только Отсрочка вызвана, она исчезает, и больше не считается включенной. Связанное заклинание продолжает считаться таким, пока активно и может поддерживаться как обычно.Отсрочка можно настроить на «выключения» длящегося заклинание при возникновении события. В этом случае связанное заклинание длится, пока заклинатель поддерживает его, но сама Отсрочка не требует поддержания.Блокирующие и Метаемые заклинания нельзя Отсрочить, можно все другие. «Мгновенные» заклинания, как Гром, срабатывают однажды при активации, затем исчезают. Длящиеся заклинания, как Голоса, начинаются при активации и работают до истечения.Длительность: 2 часа.Время сотворения: 10 секунд.Стоимость: 3 на сотворение. 3 на поддержание.Требования: Магичность(Magery) 3 и любые 15 заклинаний.</description-loc>
+		<college>Meta/Linking</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>2 hrs</duration>
+		<reference>M130</reference>
+		<categories>
+			<category>Linking</category>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<any></any>
+				<quantity compare="at least">15</quantity>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 80px; left: 513px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Mind-Sending</name><name-loc>Отправка мыслей</name-loc><spell version="2">
+		<name>Mind-Sending</name>
+		<name-loc>Отправка мыслей</name-loc>
+		<description-loc>ОбычноеОдностороннее средство коммуникации, позволяет заклинателю посылать свои мысли объекту. Передача происходит со скоростью сравнимой со скоростью обычной речи, однако также можно передать простые изображения (время на передачу похоже на время рисования этой картинки на бумаге или пергаменте).При подсчете модификатора за расстояние используйте модификаторы Дальних дистанций (M14). Незнакомство с объектом даёт штраф -4.Длительность: 1 минута.Стоимость: 4 сотворение. 4 поддержание.Время сотворения: 4 секунды.Требование: Чтение мыслей.ПредметШапка, корона, шлем или другой головной убор. Используется только магами. Энегостоимость создания: 1.500.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>4</maintenance_cost>
+		<casting_time>4 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M47</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">mind-reading</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 80px; left: 633px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Divination: Crystal-Gazing</name><name-loc>Прорицание</name-loc><spell version="2">
+		<name>Divination: Crystal-Gazing</name>
+		<name-loc>Прорицание</name-loc>
+		<description-loc>ИнформационноеДаёт заклинателю видение, имеющее отношение к его вопросу, или ответ на один вопрос, на которым можно ответить только да или нет. Существует много видов прорицания; каждый – это отдельное заклинание, и требует соответствующих материалов (см. ниже). У каждого есть свои плюсы и минусы. Те методы, которые связаны с определённой стихией или стихиями дают более подробные ответы, если ответ имеет какое-то отношение к этой стихии – например, леканомансия будет работать лучше, чем экстиспиция, в случае вопроса о море.Модификаторы умения: стандартные Модификаторы за большие расстояния (M14). Если задаются повторные вопросы об одном и том же объекте в течение дня, «флюиды» становятся мутными; -4 к умению для второго вопроса, -8 для третьего, и так далее. Вопросы о прошлом или будущем также труднее; используйте Модификаторы времени (M81).Стоимость: 10.Время сотворения: 1 час, если не указано иное.Требования: История, и другие заклинания, указанные для конкретных методов предсказания.Стандартные прорицания:Астрология (Astrology) – это прорицание с помощью изучения небес, включая погоду. Наблюдение за небом необходимо; заклинатель должен быть вне помещения, и получает штраф в -5, если наблюдение производится не в ясную ночь и вдали от городских огней. Без справочной библиотеки (стоимость 2000$, вес 200 фунтов), все броски с -5. Поскольку астрология полагается на предсказуемые движения звёзд, она хороша для прорицания далеко в прошлое или будущее; никакие модификаторы времени не применяются к астрологическим прорицаниям. Если прорицание касается индивидуума, должны быть известны его место и дата рождения, или все броски будут с -5. Все штрафы накапливаются! Требования: Предсказать погоду и Астрономия-15 .Авгурия (Augury) – это изучение предвестий или знамений. Точная природа знамений зависит от культуры прорицателя; древнеримские жрецы изучали полёт и поведение птиц, например. Фэнтезийные культуры могут находить предвестия во всём, от того, как ест медведь возле ручья, до движения ветра сквозь ивовое дерево; общее – наблюдение какого-то естественного события. Когда это прорицание твориться, Мастер должен в тайне кинуть Зрение заклинателя. При провале броска, бросок на сотворение прорицания делается с -5. Авгурия не идеальна для прорицания о прошлом; модификаторы времени удваиваются при использовании Авгурии, при ответе на вопросы о прошедших событиях. Требования: по одному заклинанию из каждой из четырёх стихий.Гадание на картах (Картомансия, Cartomancy) – это прорицание, используя карты таро или другие предсказательные карты. Карты, будучи очень символичными, редко дают прямой ответ вроде «да» или «нет». Единственное нужное оборудование – колода таро (раскрашенная вручную и стоящая 1000$ на ТУ3 и ниже, но массово и дешево производящаяся на более высоких ТУ). Картомансия – очень личный метод прорицания; любая попытка спросить о ком-то кроме объекта заклинания бросается с -5. Требования: по одному заклинанию из каждой из четырёх стихий.Гадание с кристаллом (Сrystal-gazing) – это использование Хрустального шара (M71) или зеркала чтобы способствовать видению. Если оно сработает, Мастер описывает сцену; интерпретировать её должен игрок! Заклинатель может использовать чистую, неподвижную воду для этого прорицания, но с -10 к умению. Требование: Видеть сквозь землю или Видеть сквозь воду.Дактиломантия (Dactylomancy) – это прорицание путём передвижения указателя по доске со всеми буквами алфавита, а также «да» и «нет». Дактиломантические прорицания обычно просты и понятны, но очень грубы; сложный вопрос (да и практически любой вопрос, на который не ответить пятью словами или меньше), скорее всего, даст загадочную тарабарщину. Требования: по одному заклинанию из каждой из четырёх стихий.Экстиспиция (гиероскопия, Extispicy) – это прорицание путём рассмотрения внутренностей убитого животного (должно весить по меньшей мере 20 фунтов – никаких голубей!). Во многих местах оно запрещено законом. Можно задать только один вопрос на животное. Экстиспиция наиболее полезна в прорицании, касающемся вопросов жизни и смерти: болезнь и здоровье, война и мир, победа и поражение – все они хорошие кандидаты для экстиспиции. Другие вопросы с большей вероятностью получат расплывчатые и бесполезные ответы. Требования: четыре заклинания школы Животных.Гастромансия (Gastromancy) – требует добровольца. Объект помещается в транс, в течение которого он говорит вещи пророческие и таинственные. Когда заклинание сотворено, объект теряет 5 ЕУ(FP) в добавок к энергии, потраченной заклинателем, вне зависимости от того, было ли заклинание успешным. Требования: Гипноз-15 или выше, и три заклинания из школы Контроля разума.Геомансия (Geomancy) – прорицание путём изучения почвы. Геомансией надо заниматься вне помещений, где геомант может осмотреть положение земли. Она очень привязана к месту. Любые вопросы, которые не относятся к области, где производится прорицание, получают штраф -10. Требования: четыре заклинания школы Земли.Леканомансия (Lecanomancy) – это прорицание путём наблюдения результатов бросания предметов в воду. Как и авгурия, леканомансия принимает разные формы в разных культурах. Некоторые прорицатели льют расплавленный металл в воду, чтобы пронаблюдать, какие формы примет металл, в то время как другие рассматривают чайные листья или просто кидают камни в бассейн и наблюдают рябь. Леканомансия всегда расплывчата, и всегда получает штраф -5; с другой стороны, все модификаторы времени делятся на два. Требования: четыре заклинания школы Воды.Нумерология или арифмансия (Numerology, arithmancy), это прорицание по различным числам, которые определяют индивидуума, включая выведенные из имени, дня рождения и, в современных сеттингах, даже таких вещей, как номера социального страхования. Если день рождения объекта неизвестен, заклинатель получает -10 к эффективному умению. Требование: Математические способности.Толкование снов (Онейромансия, Oneiromancy) – это интерпретация собственных снов заклинателя. Не требуется никакого снаряжения, но за ночь можно спросить только один вопрос, и всего 50% вероятности, что заклинатель вообще увидит сны! Использования умения Ясный сон  или любого заклинания снов, нарушает любую попытку толковать сны. Мастер говорит заклинателю, что он увидел во сне; игрок должен интерпретировать. Энергостоимость оплачивается по пробуждении. Требования: четыре заклинания школы Общения и Понимания.Физиогномия (Physiognomy) – это предсказание путём осмотра и измерения частей тела объекта. Различные традиции обычно фокусируются на определённой части тела – кистях рук, ногах, голове, и т.д. Физиогномия только подходит для ответов на вопрос об объекте или его судьбе; попытки прорицать информацию об отсутствующих лицах с -5. Требования: четыре заклинания Контроля тела.Пиромансия (Pyromancy) – это прорицание, наблюдая огонь или дым. Оно может создать видение, или заклинатель может услышать голос в пламени. Надо сжечь небольшое количество определённых редких растений (стоимостью 100$ за попытку). Вопросы с -4, если не сжечь ещё и что-то, относящееся к вопросу (например, волосы объекта прорицания). Требования: четыре заклинания школы Огня.Клеромансия (Sortilege) – это предсказание путём бросания жребия или других предметов, которые раскрывают информацию исходя из того, как они упали. И Цзинь (I Ching) – форма клеромансии; другие культуры использовали клеромансию, кидая на землю пучок стрел и осмысляя то, как они упали. Требования: по одному заклинанию из каждой из четырёх стихий.Символизм (Symbol-Casting) – это прорицание с помощью Символьных предметов (M205). Заклинатель должен иметь полный набор символов для своего символьного языка, и получает -1 за каждый предмет, которого не хватает. Просто предметы с символами вполне будут работать, но полный набор истинных символьных предметов даёт  2 к умению. Тщательное прорицание занимает 30 минут, но заклинатель может просто запустить руку в сумку и вытащить один или более камней. В последнем случае, энергостоимость всего 1. Мастер сообщает заклинателю, какие символ(ы) он вытащил; заклинатель должен это интерпретировать, и символы, вытащенные на проваленном броске, вводят в заблуждение. Требование: Рисование символов-15 или выше.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>10</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 hr</casting_time>
+		<duration>Instant</duration>
+		<reference>M108</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">earth vision</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">water vision</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 464px; left: 225px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Zombie</name><name-loc>Зомби</name-loc><spell version="2">
+		<name>Zombie</name>
+		<name-loc>Зомби</name-loc>
+		<description-loc>Обычноеобъектом этого заклинания должно быть относительно целое мертвое тело. Природа и состояние тела определяет свойства созидаемой нежити. Оживленный труп становится верным слугой мага. Его атрибуты – а также физические преимущества и ЛВ(DX)-умения – основаны на таковых исходного тела. Нежить не имеет «души», ментальных черт, ИН(IQ)-умений и памяти живого существа. Точные характеристики и способности определяет Мастер по необходимости кампании.Длительность: Пока не будет уничтожен.Стоимость: 8.Время сотворения: 1 минутаТребования: Вызов духа и Передать здоровье.</description-loc>
+		<college>Necromancy</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>8</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>until destroyed</duration>
+		<reference>M151</reference>
+		<categories>
+			<category>Necromancy</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">summon spirit</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">lend vitality</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 464px; left: 345px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Soul Jar</name><name-loc>Сосуд души (ОС)</name-loc><spell version="2" very_hard="yes">
+		<name>Soul Jar</name>
+		<name-loc>Сосуд души (ОС)</name-loc>
+		<description-loc>ОбычноеЗаключает душу объекта в некотором объекте (который должен присутствовать). Если объектом не является маг, объект должен присутствовать при сотворении, и быть желающим или бессознательным.Когда ваша душа находится в «сосуде», заклинание не действует, пока тело не умрет, или не будет уничтожен сосуд. Смерть тела не убивает вас. Сознание перемещается в «сосуд», откуда вы можете видеть, слышать и даже колдовать любые заклинания, известные вам на уровне 20  (то есть не требующие ни речи, ни жестов). Вы можете общаться на расстоянии при помощи подходящих заклинаний, если вам такие известны – или прямым ментальным контактом с любым, кто держит сосуд. Ваши ЕУ(FP) сохраняются. Вы не можете тратить ЕЖ(HP), но можете использовать любой энергокамень, касающийся вашего сосуда.Когда новое тело оказывается поблизости от сосуда, вы можете захватить его при помощи Переселения, Постоянного переселения или Обмена телами, если вам они знакомы. В этом случае душа данного тела занимает ваше место в сосуде. Пока ваша душа находится в сосуде, его уничтожение убьет вас навсегда – без надежды на воскрешение – даже если тело невредимо.Это заклинание можно сотворить еще раз, чтобы переместить душу в новый сосуд.Длительность: постоянноСтоимость: 8.Время сотворения: 1 минутаТребования: Магичность(Magery) 1 и шесть заклинаний некромагии, включая Украсть здоровье.</description-loc>
+		<college>Necromancy</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>8</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>Permanent</duration>
+		<reference>M154</reference>
+		<categories>
+			<category>Necromancy</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">necromancy</college>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">steal vitality</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (necromancy)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 614px; left: 285px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Halt Aging</name><name-loc>Прекратить старение</name-loc><spell version="2" very_hard="yes">
+		<name>Halt Aging</name>
+		<name-loc>Прекратить старение</name-loc>
+		<description-loc>ОбычноеОстанавливает старения объекта на 1 месяц. Не может быть сотворено повторно, пока не закончится подобное предыдущие заклинание.Длительность: 1 месяц.Стоимость: 20. Одна попытка в неделю.Требования: Магичность(Magery) 2 и по крайней мере 8 заклинаний школы Лечение.Предмет Драгоценность. Всегда включен. Предмет предотвращает старение, пока его носят. За обладание такими вещами разрушаются королевства... Энергостоимость создания: 10.000.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>20</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 month</duration>
+		<reference>M94</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (healing)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<college compare="contains">healing</college>
+				<quantity compare="at least">8</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 554px; left: 285px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Lich</name><name-loc>Лич (ОС)</name-loc><spell version="2" very_hard="yes">
+		<name>Lich</name>
+		<name-loc>Лич (ОС)</name-loc>
+		<description-loc>ЗачарованиеЭто заклинание позволяет магу стать личем – могущественным волшебником-нежитью, в совершенстве владеющим магией и алхимией. Он сохраняет личность, знания, ИН(IQ), умения и заклинания, и все свои ментальные черты (включая Магичность(Magery)), но получает физические и сверхъестественные черты лича, определенные Мастером. Чем сильнее шаблон лича, тем выше будут затраты энергии.После создания Мастером шаблона лича (и определения энергостоимости) маг колдует это заклинание как любую другую чару. После этого делается бросок умения. Любой провал наносит магу 6к вреда. Успешное сотворение подготавливает тело мага к следующему шагу.Для завершения трансформации будущий лич должен выпить алхимический эликсир Оличения. Этот эликсир готовится как любой другой алхимический препарат (см. M210); ингредиенты для него стоят $13.500, а готовится он 50 недель. Уровень умения по умолчанию равен Алхимии-7. Любой, не находящийся под действием заклинания Лич, и выпивший эликсир, подвергается действию эликсира Смерти (M215). Однако, эликсиру Оличения невозможно противодействовать – даже алхимическим Противоядием. Эликсир Оличения запрещен везде, и его формулу найти почти невозможно; большинству личей приходится создавать его заново.Когда маг под заклинанием Лич выпивает зелье Оличения, он делает бросок ЗД(HT). При успешном броске он умирает и через 2d дней поднимается в виде лича. При провале броска он просто умирает. Удача, а также Благословение и заклинания Желание могут помочь этому броску ЗД(HT).Это заклинание также относится к школе Зачарования.Стоимость: Равна суммарной очковой стоимости лича в окончательном виде, включая все его личные способности и черты шаблона лича. Для могущественных магов чара стоит больше, поскольку нужно сохранить больше черт. Минимальная цена – 100.Требования: Магичность(Magery) 3, ИН(IQ) 13 и выше, Наложение чар, Сосуд души и Зомби.</description-loc>
+		<college>Necromancy/Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>Varies</casting_time>
+		<duration>Permanent</duration>
+		<reference>M159</reference>
+		<categories>
+			<category>Enchantment</category>
+			<category>Necromancy</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">soul jar</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">zombie</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (enchantment)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<attribute_prereq has="yes" which="iq" compare="at least">13</attribute_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 548px; left: 405px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Soul Stone</name><name-loc>Камень души</name-loc><spell version="2" very_hard="yes">
+		<name>Soul Stone</name>
+		<name-loc>Камень души</name-loc>
+		<description-loc>Наложение чарПеремещая свою жизнь в Камень души, колдун становится бессмертным. Несмотря на то, что его тело все еще можно повредить (сжечь, порезать, разбить...), его нельзя убить до тех пор, пока камень цел. Заклинатель становиться неуязвим для болезней, ядов и старения. Он броски на умирание автоматически успешны. Но все еще может оказаться бес сознания.Если Камень души уничтожить, заклинатель умирает, так что его обычно прячут в очень труднодоступном месте. Смерть также может случиться из некоторых магических причин, таких как неудачный Планарный визит. Заметьте, что камень не должен быть буквально куском скалы; примеры из фольклора и фантастики включают собственное сердце заклинателя (вынутое сразу после сотворения заклинания, по видимому!), яйца и другие.Камень души и Сосуд души взамиоисключающи.Стоимость: 500. Одна попытка; если чара не удалась, заклинатель умирает!Требования: Магичность(Magery) 3, Наложение чар и Сосуд души</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>500</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M71</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (enchantment)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">soul jar</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 710px; left: 345px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Wraith</name><name-loc>Дух (ОС)</name-loc><spell version="2" very_hard="yes">
+		<name>Wraith</name>
+		<name-loc>Дух (ОС)</name-loc>
+		<description-loc>Чара; Сопротивление по ЗД(HT)Зачаровывает кольцо или амулет так, что будучи надетыми, они превращают владельца в духа, неупокоенного стража, поддерживаемого магией. Предмет пытается воздействовать на объект каждый раз, когда их надевают. Заклинанию можно сопротивляться по ЗД(HT), как обычно. Если любая из попыток проваливается (или объект решает не сопротивляться), он «погибает» и через 24 часа становится духом. Точный шаблон определяется Мастером, но ментальные черты сохраняются как при заклинании Лич. Дух всегда имеет Зависимость (B130) к предмету Духа (редкий предмет, постоянная потребность, за -150 очков) и умирает, если его снять или уничтожить. Обратить действие заклинания можно только Снятием проклятия.Каждый предмет Духа может поддерживать только одного духа за раз. Когда данный предмет создал духа, он не будет действовать на других носителей, пока его дух не будет уничтожен. Заклинание Дух не действует на нежить.За двойную стоимость чародей может создать предмет, делающий духа его слугой. Дух автоматически получает Перепрограммируемый (B150) с чародеем в качестве хозяина, и не может снять предмет сам. За половинную цену чародей может создать предмет, превращающий носителя в неупокоенного стража гробниц. Действует аналогично обычному предмету, но созданная нежить получает Разорительную привычку (оставаться в гробнице и охранять ее; убивать пришельцев и возвращаться, если будет насильно из нее извлечен) [-15].Это заклинание также относится к школе Зачарований.Стоимость: 500.Требования: Магичность(Magery) 3, ИН(IQ) 13 и выше, Наложение чар, Остановить старение и Сосуд души.ПредметКольцо или погребальный амулет, не должны быть украшены.</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>500</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M160</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">halt aging</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">soul jar</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (enchantment)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<attribute_prereq has="yes" which="iq" compare="at least">13</attribute_prereq>
+		</prereq_list>
+	</spell></block>
+</div>

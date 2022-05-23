@@ -1,0 +1,1035 @@
+<block style="top: 79px; left: 213px;" class=""><name>Ignite Fire</name><name-loc>Воспламенение</name-loc><spell version="2">
+		<name>Ignite Fire</name>
+		<name-loc>Воспламенение</name-loc>
+		<description-loc>СтандартноеСоздает на объекте разогретую точку и используется для поджигания легко воспламеняемых объектов. Лучше всего работает с бумагой или одежной, и не будет действовать на предметы, которые не загорятся под действием обычного огня. В частности, оно не подействует на живое существо. Зажжённое пламя горит как обычное.Длительность: одна секунда.Стоимость: зависит от желаемой температуры:1 – спичка. Зажигает за секунду табак, свечу или прут.2 – факел. Подожжет бумагу или тонкую одежду за секунду, обычная одежда загорится через 4 секунды.3 – паяльная лампа. Сухое дерево или одежда загорается за секунду, кожа – за две, толстое дерево – за шесть секунд.4 – вспышка магния. Толстое дерево загорается за две секунды, уголь – за одну.Столько же на поддержание.ПредметПосох, палочка или украшение. Энергостоимость создания: 100; в предмете должен быть маленький рубин за $50.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-4</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 sec</duration>
+		<reference>M72</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+	</spell></block><block style="top: 79px; left: 645px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Seek Fire</name><name-loc>Искать огонь</name-loc><spell version="2">
+		<name>Seek Fire</name>
+		<name-loc>Искать огонь</name-loc>
+		<description-loc>Информационное	Сообщает заклинателю направление и примерное расстояние до ближайшего существенного огня или источника сильного тепла. Используются Модификаторы дальних дистанций (M14). Любые из известных источников тепла или огня могут быть исключены из поиска перед сотворением. Заклинатель также может уточнить тип огня, по топливу (природный газ, спирт, дерево и т.д.). Стоимость: 1.ПредметРаздвоенная палочка. Энергостоимость создания: 50 энергии и маленький рубин за $100.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M72</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+	</spell></block><block style="top: 163px; left: 69px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Extinguish Fire</name><name-loc>Погасить огонь</name-loc><spell version="2">
+		<name>Extinguish Fire</name>
+		<name-loc>Погасить огонь</name-loc>
+		<description-loc>ОбластноеГасит горящую клетку или, при необходимости, небольшую горящую площадь. Гасит обычный и магический огонь, но не расплавленную сталь, лаву и т.п.Длительность: постоянно (но огонь можно зажечь снова).Базовая стоимость: 3.Требования: Воспламенение.ПредметПосох, палочка или украшение. Энергостоимость создания: 400; предмет должен содержать рубин на $300 и чёрного оникса на $100.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M72</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">ignite fire</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 163px; left: 213px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Shape Fire</name><name-loc>Формировать огонь</name-loc><spell version="2">
+		<name>Shape Fire</name>
+		<name-loc>Формировать огонь</name-loc>
+		<description-loc>ОбластноеПозволяет заклинателю контролировать форму любого пламени и перемещать его. Однажды сформированное, пламя сохраняет форму, пока не кончится действие заклинания, не требуя концентрации. Естественное пламя не сможет перемещаться туда, где нет топлива, но пламя, созданное с помощью заклинания Создать огонь, в топливе не нуждается, и может перемещаться куда угодно. Можно перемещать при постоянной концентрации со скоростью 5. Изменение формы требует секунды концентрации. Огонь должен сохранять свой объем, иначе будет изменяться наносимое повреждение. Огонь «растянутый» вдвое наносит лишь половину урона, а распространённый на площадь втрое больше естественного размера – 1/3 урона и т.д.Длительность: 1 минута.Базовая стоимость: 2, половина на поддержание.Требования: Воспламенение.ПредметПосох, палочка или украшение. Энергостоимость создания: 400; предмет должен содержать рубин на $300.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M72</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">ignite fire</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 163px; left: 621px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Create Fire</name><name-loc>Создать огонь</name-loc><spell version="2">
+		<name>Create Fire</name>
+		<name-loc>Создать огонь</name-loc>
+		<description-loc>ОбластноеПозволяет создать огонь без топлива. Создает клетку или больше, занятую огнём (или падающую сферу огня). Это настоящий огонь, который в конечном итоге поджигает любой горючий объект. Не может быть сотворен внутри камня, врага и т.п.Длительность: 1 минута.Базовая стоимость: 2. Половина на поддержание. Обычный огонь, полученный таким образом, не требует поддержания.Требования: Воспламенение или Искать огонь.ПредметПосох, палочка или украшение. Энергостоимость создания: 300; предмет должен содержать рубин на $200.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<melee_weapon>
+			<damage>1d-1 burn</damage>
+			<usage>Area</usage>
+			<reach>Special</reach>
+			<parry>No</parry>
+		</melee_weapon>
+		<reference>M72</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">seek fire</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">ignite fire</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 247px; left: 9px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Slow Fire</name><name-loc>Замедлить горение</name-loc><spell version="2">
+		<name>Slow Fire</name>
+		<name-loc>Замедлить горение</name-loc>
+		<description-loc>ОбластноеОстужает пламя, делая горение окружения (в том числе людей) медленным. Повреждение, наносимое огнём, уменьшается пропорционально. Это заклинание действует как заклинание Замедлить на огненных элементалей и существ с мета-чертой Тело из огня (B262). Замедление горения противодействует Быстрому огню.Длительность: 1 минута.Базовая стоимость: 2 для уменьшения скорости горения вдвое, 3 – втрое и т.д. Столько же за поддержание.Требования: Погасить огонь.ПредметПосох, палочка или украшение. Энергостоимость создания:350 энергии, рубин на $500 и чёрный оникс на $500.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M73</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">extinguish fire</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 319px; left: 9px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Fast Fire</name><name-loc>Быстрый огонь</name-loc><spell version="2">
+		<name>Fast Fire</name>
+		<name-loc>Быстрый огонь</name-loc>
+		<description-loc>СтандартноеДелает пламя горячее, соответственно ускоряя горение окружения (в том числе и людей). Повреждение, наносимое огнём, увеличивается пропорционально. Это заклинание действует как заклинание Великое ускорение на огненных элементалей и существ с мета-чертой Тело из огня.Длительность: 1 минута.Стоимость: 2 для увеличения скорости горения вдвое, 3 – втрое и т.д. Столько же за поддержание.Требования: Замедлить горение.ПредметПосох, палочка или украшение. Энергостоимость создания: 375 энергии и рубин на $500.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M73</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">slow fire</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 247px; left: 129px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Smoke</name><name-loc>Дым</name-loc><spell version="2">
+		<name>Smoke</name>
+		<name-loc>Дым</name-loc>
+		<description-loc>ОбластноеСоздаётся облако густого дыма. Слой такого дыма толщиной в ярд блокирует видимость. Пока дым не рассеется, он имеет свойства слезоточивого газа (провалившие бросок ЗД(HT) не могут делать ничего, кроме как кашлять и плакать). Дым тёплый и медленно поднимается (примерно на фут в секунду). Скорость рассеивания зависит от места и наличия ветра; в помещении дым может существовать, пока не закончится заклинание, а на открытом воздухе в ветреный день может рассеяться за 10 секунд.Длительность: 5 минут, если нет неблагоприятных факторов.Базовая стоимость: 1. Половина на поддержание.Требования: Формировать огонь и Погасить огонь.ПредметПосох, палочка или украшение. Энергостоимость создания: 50.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>5 min #</duration>
+		<melee_weapon>
+			<damage>Cough/Weep</damage>
+			<usage>Area</usage>
+			<reach>Special</reach>
+			<parry>No</parry>
+		</melee_weapon>
+		<reference>M73</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">extinguish fire</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shape fire</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 247px; left: 297px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Fireball</name><name-loc>Огненный шар</name-loc><spell version="2">
+		<name>Fireball</name>
+		<name-loc>Огненный шар</name-loc>
+		<description-loc>МетательноеПозволяет заклинателю швырнуть шар огня из руки. Шар имеет Точ  1, 1/2Д 25, Max 50. При попадании во что-либо он исчезает в клубах пламени, которое может поджечь воспламеняемые объекты. Стоимость: вплоть до уровня Магических способностей в секунду, на протяжении трех секунд. Каждая вложенная единица энергии наносит 1d обжигающего вреда.Время сотворения: 3 секунд.Требования: Минимум шесть других заклинаний школы Огня.ПредметПалочка, посох или украшение. Используется только магами. Энергостоимость создания: 800 энергии; рубин на $400.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Missile</spell_class>
+		<casting_cost>1-Magery</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1-3 sec</casting_time>
+		<duration>Instant</duration>
+		<ranged_weapon>
+			<damage>1d burn/point</damage>
+			<accuracy>1</accuracy>
+			<range>25/50</range>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Projectile</specialization>
+				<modifier>0</modifier>
+			</default>
+		</ranged_weapon>
+		<reference>M74</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (fire)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">shape fire</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create fire</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 247px; left: 525px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Rain of Fire</name><name-loc>Огненный дождь</name-loc><spell version="2">
+		<name>Rain of Fire</name>
+		<name-loc>Огненный дождь</name-loc>
+		<description-loc>ОбластноеС неба на область заклинания падают огненные капли, нанося всем находящимся в ней 1d-1 огненного повреждения. Существа, попавшие под Огненный дождь, получают повреждение в свой же ход; если в области дождя проведено меньше секунды, повреждение уменьшается вдвое (округлять вниз). Это заклинание может быть сотворено только на открытом воздухе. Броня действует обычным образом. Щит с ПЗ(DB) 2 и больше можно держать над головой, чтоб блокировать пламя, однако, он тоже может получить повреждения (B484). Это требует двух рук и манёвра Подготовки, и если успешно, автоматически защищает персонажа, пока щит поднят над головой, но такой манёвр делает щит неготовым для выполнения обычной защитной функции! Неподвижные объекты, например здания, защищены своим СП(DR), но некоторые структуры (см. ЕЖ(HP) и СП(DR) построек, БС (BS) B558) могут быть повреждены или загореться.Длительность: 1 минута.Базовая стоимость: 1 для заклинания (минимум 2). Столько же за поддержание. За удвоенную стоимость Огненный дождь наносит 2d-2 повреждения в секунду!Время сотворения: Одна минута.Требования: Магичность(Magery) 2 и Создать огонь.ПредметПосох. Используется только магами. Энергостоимость создания: 600.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1#</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<melee_weapon>
+			<damage>1d-1 burn</damage>
+			<usage>Area</usage>
+			<reach>Special</reach>
+			<parry>No</parry>
+		</melee_weapon>
+		<reference>M74</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (fire)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">create fire</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 331px; left: 297px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Explosive Fireball</name><name-loc>Разрывной огненный шар</name-loc><spell version="2">
+		<name>Explosive Fireball</name>
+		<name-loc>Разрывной огненный шар</name-loc>
+		<description-loc>МетательноеСоздаёт огненный шар, воздействующий как на цель, так и на её окружение. У шара 1/2Д 25, Max 50, Точ 1. Может метаться в стену, пол, и т.д. (с  4 к попаданию) для поражения целей пламенем. Цель и все находящиеся от неё в радиусе ярда получают полный вред. Все находящиеся дальше получают вред поделённый на три за каждый ярд удаления (округлять вверх). Стоимость: вплоть до удвоенного уровня Магических способностей в секунду, на протяжении трех секунд. Шар наносит 1d обжигающего вреда за каждые 2 единицы вложенной энергии.Время сотворения: 1-3 секунды.Требования: Огненный шар.ПредметПосох или палочка — шар вылетает из конца предмета. Энергостоимость создания: 1.200; должен содержать рубин за $500. Используется только магами.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Missile</spell_class>
+		<casting_cost>2-2xMagery#</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1-3 sec</casting_time>
+		<duration>Instant</duration>
+		<ranged_weapon>
+			<damage>1d burn ex/2 points</damage>
+			<accuracy>1</accuracy>
+			<range>25/50</range>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Projectile</specialization>
+				<modifier>0</modifier>
+			</default>
+		</ranged_weapon>
+		<reference>M75</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">fireball</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 328px; left: 417px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Fire Cloud</name><name-loc>Огненное облако</name-loc><spell version="2">
+		<name>Fire Cloud</name>
+		<name-loc>Огненное облако</name-loc>
+		<description-loc>ОбластноеСоздаёт кружащееся облако огня и тлеющих углей. Оно не блокирует видимость. Но наносит обжигающий урон всем, кто в нём находится. Существа в облаке получают урон в свой ход. Если в облаке проведено меньше секунды, урон уменьшается вдвое (округлять вниз). Броня защищает как обычно. Огнеопасные материалы могут загореться.Продолжительность:10 секунд.Стоимость: 1 до 5; Облако причиняет в секунду столько единиц урона, сколько вложено очков энергии. Та же стоимость поддержания.Время на сотворение: 1 до 5 секунд, в зависимости от стоимости.Требования: Формировать воздух и Огненный шар. Предмет:Посох, палочка или украшение. Применяется только магами. Энергостоимость создания: 175 энергии, рубин на $500.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1-5</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1-5 sec</casting_time>
+		<duration>10 sec</duration>
+		<melee_weapon>
+			<damage>1 point burn/point</damage>
+			<usage>Area</usage>
+			<reach>Special</reach>
+			<parry>No</parry>
+		</melee_weapon>
+		<reference>M75</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">fireball</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shape air</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 319px; left: 129px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Simple Illusion</name><name-loc>Простая иллюзия</name-loc><spell version="2">
+		<name>Simple Illusion</name>
+		<name-loc>Простая иллюзия</name-loc>
+		<description-loc>ОбластноеСоздаёт исключительно визуальный образ, видимый всем, кто может видеть место назначения заклинания. Это может быть как единичный предмет, так и целое зрелище. Если заклинатель сконцентрируется, образ может двигаться в другую область или изменять форму или размеры, вплоть до занятия всей области действия. Любое разумное существо может развеять заклинание «неверием» в образ — выполнить манёвр Концентрация и сделать успешный бросок Воли(Will). Иллюзия развеется автоматически от первой же атаки, любого заклинания, кроме Контроля иллюзии, или прикосновения любого разумного существа.Длительность: 1 минута.Базовая стоимость: 1 на сотворение. Половина на поддержание.Требования: Заклинатель должен быть зрячим и иметь ИН(IQ) не менее 11.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M95</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<advantage_prereq has="no">
+				<name compare="starts with">blind</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<attribute_prereq has="yes" which="iq" compare="at least">11</attribute_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 247px; left: 417px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Shape Air</name><name-loc>Формирование воздуха</name-loc><spell version="2">
+		<name>Shape Air</name>
+		<name-loc>Формирование воздуха</name-loc>
+		<description-loc>ОбластноеПозволяет заклинателю создать движения воздуха в небольшом объеме. Ветер начинает дуть из выбранной клетки (штрафы за расстояние до нее), потоком шириной в 1 клетку, на расстояние 5 ярдов за единицу вложенной энергии, после чего исчезает. Способно сдувать (см. Сбивание, B378) – каждую секунду бросается 1d за каждые две единицы энергии, вложенные в заклинание (выброшенный результат считается  вредом в целях сдувания, но не наносит никакого реального вреда).Длительность: 1 минута.Стоимость: 1-10. 1 даёт мягкий бриз, 4 ветер, 6 шторм, 8 и более сильный порыв. Столько же поддержку. Требования: Создать воздух.ПредметПосох, палочка, украшение. Энергостоимость создания: 200.</description-loc>
+		<college>Air</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-10</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M24</reference>
+		<categories>
+			<category>Air</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create air</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 415px; left: 669px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Sickness</name><name-loc>Болезнь</name-loc><spell version="2">
+		<name>Sickness</name>
+		<name-loc>Болезнь</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Объект начинает плохо себя чувствовать, его начинает тошнить (головокружение, рвота ит.д.). Он может бежать при необходимости (Движение в два раза меньше), но не может делать ничего кроме поддержания заклинаний и односложных ответов. Когда заклинание заканчивается, слабость сразу же пропадает.Это также заклинание школы Контроля тела.Длительность: 1 минута.Стоимость: 3 на сотворение. 3 на поддержание.Время сотворения: 4 секунды.Требования: Опьянение или Чума.Предмет(а) Любой. Всегда включён; наводит эффект Болезни на носящего. Энергостоимость создания: 300.           (б) Посох или палочка. Используется только магами; надо коснуться объекта. Энергостоимость создания: 1,500.</description-loc>
+		<college>Body Control/Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>4 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M138</reference>
+		<categories>
+			<category>Body Control</category>
+			<category>Mind Control</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">pestilence</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">drunkenness</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 391px; left: 153px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Phantom Flame</name><name-loc>Призрачное пламя</name-loc><spell version="2">
+		<name>Phantom Flame</name>
+		<name-loc>Призрачное пламя</name-loc>
+		<description-loc>ОбластноеСоздаёт область фантомного пламени. Стоящие вблизи чувствуют жар (и даже боль, если дотронутся до него); предметы внутри выглядят горящими. Однако пламя не распространяется и не наносит реального повреждения. Даже вызванная им боль утихает после первоначального шока. Формировать огонь и Погасить огонь влияют на это фантомное пламя; а вот вода – нет.Это заклинание также относится к школе Иллюзии и Создания.Длительность: 1 минута.Базовая стоимость: 1. Столько же за поддержание.Требования: Формировать огонь или Простая иллюзия.ПредметПалочка, посох или украшение. Энергостоимость создания: 200; должен содержать рубин на $100.</description-loc>
+		<college>Fire/Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M73</reference>
+		<categories>
+			<category>Fire</category>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">shape fire</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">simple illusion</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 475px; left: 153px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Deflect Energy</name><name-loc>Отклонить энергию</name-loc><spell version="2">
+		<name>Deflect Energy</name>
+		<name-loc>Отклонить энергию</name-loc>
+		<description-loc>БлокирующееОтражает одну энергетическую атаку на субъект – включая лучи, Молнии и Огненные шары. В игромеханических целях считается за парирование. Если субъектом заклинания является не маг, применяются модификаторы дистанций как для Стандартного заклинания. Отраженные атаки не теряют поражающей силы и могут ранить кого-нибудь рядом.Стоимость: 1.Требования: Магичность(Magery) 1 и Формировать огонь.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M73</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (fire)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">shape fire</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 547px; left: 69px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Fireproof</name><name-loc>Огнеупорность</name-loc><spell version="2">
+		<name>Fireproof</name>
+		<name-loc>Огнеупорность</name-loc>
+		<description-loc>ОбластноеПредотвращает возгорание в области действия: спичка не загорится, кремень не высечет искру и т.д. Не погасит внесённый извне огонь, но этот огонь не сможет ничего поджечь. Полезно там, где огонь опасен (например, на пороховой фабрике). Попытка зажечь магический огонь получает штраф -5. Это заклинание не выдержит очень сильной жары (например, лавы или боевых лазеров), но не даст работать огнестрельному оружию.Длительность: 1 день.Базовая стоимость: 3. Удвоение стоимости наложит штраф -10 на попытку зажечь магический огонь, и делает заклинание стойким к любой температуре ниже температуры звезд. Столько же за поддержание. Время сотворения: 5 минут.Требования: Погасить огонь.ПредметЗаклинание Огнеупорность может быть наложено на область навсегда, если умножить стоимость на 100. Должно применяться некоторое количество рубинового порошка (примерно $10 на единицу энергии).</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3#</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>5 min</casting_time>
+		<duration>1 day</duration>
+		<reference>M73</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">extinguish fire</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 619px; left: 69px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Resist Fire</name><name-loc>Сопротивление огню</name-loc><spell version="2">
+		<name>Resist Fire</name>
+		<name-loc>Сопротивление огню</name-loc>
+		<description-loc>СтандартноеОбъект (существо или предмет) и все, что он имеет с собой, получает иммунитет к огню и жаре (но не электричеству).Длительность: 1 минута.Стоимость: 2 на сотворение, 1 на поддержание. За двойную стоимость - защищает от вулкана, за тройную - от жара звезды или ядерного взрыва. Против обычных заклинаний школы огня достаточно первого уровня.Требования: Огнеупорность.ПредметПосох, палочка или украшение; действует только на владельца. Энергостоимость создания: 800; предмет должен содержать рубин на $500 и чёрный оникс на $200.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2#</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M74</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">fireproof</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 415px; left: 453px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Heat</name><name-loc>Нагреть</name-loc><spell version="2">
+		<name>Heat</name>
+		<name-loc>Нагреть</name-loc>
+		<description-loc>СтандартноеЭто заклинание увеличивает температуру объекта. Не создает огня само по себе, однако многие материалы будут загораться при достаточном нагреве. Магу, планирующему частое использование этого заклинания, будет полезно иметь под рукой табличку с температурами плавления и воспламенения. Заклинание может иметь некоторые побочные эффекты. Оно может быть полезным, если вы заперты за решеткой – вы можете ее попытаться расплавить, но жар от кипящего металла может поджарить и вас! (Эти рекомендации используйте лишь для ориентировки – не превращайте игру в физические опыты!)Длительность: 1 минута. За каждую минуту температура поднимается на 20°С. Максимально возможная температура – 2.800°С.Стоимость: 1 за предмет размером с кулак, 2 – куб.ярд, и еще по 2 за каждый кубический ярд объема. Скорость нагревания может быть увеличена: нагрев будет на 40°C в минуту за удвоенную цену, на 60°C – за утроенную, и так далее. Более медленный нагрев при желании возможен, но затрат не снижает. Столько же на поддержание.Время сотворения: 1 минута.Требования: Создать огонь, Формировать огонь.ПредметПосох, палочка или украшение. Энергостоимость создания: 400; предмет должен содержать рубин на $300.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 min</duration>
+		<reference>M74</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create fire</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shape fire</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 499px; left: 273px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Burning Touch</name><name-loc>Пылающее касание</name-loc><spell version="2">
+		<name>Burning Touch</name>
+		<name-loc>Пылающее касание</name-loc>
+		<description-loc>КасательноеРука заклинателя окутывается пламенем. Первая цель, пораженная после сотворения заклятия, получает 1d урона за каждое очко энергии, вложенное в заклинание. Броня не помогает, защищает только собственное СП(DR).Стоимость: 1 до 3.Требования: Магичность(Magery) 2 и минимум 6 заклинаний Огня, включая Нагреть.Предмет:Посох, палочка или перчатка. Предмет должен касаться субъекта. Энергостоимость создания: 300 энергии.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Melee</spell_class>
+		<casting_cost>1-3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<melee_weapon>
+			<damage>thr-1  1d burn/point</damage>
+			<usage>Punch</usage>
+			<reach>C</reach>
+			<parry>0</parry>
+			<default>
+				<type>DX</type>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Boxing</name>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Brawling</name>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Karate</name>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M79</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (fire)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<college compare="contains">fire</college>
+				<quantity compare="at least">5</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">heat</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 499px; left: 561px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Flaming Weapon</name><name-loc>Пылающее оружие</name-loc><spell version="2">
+		<name>Flaming Weapon</name>
+		<name-loc>Пылающее оружие</name-loc>
+		<description-loc>СтандартноеОружие вспыхивает не нанося вреда владельцу, но причиняя врагам и воспламеняющимся предметам  2 повреждения (после проникновения сквозь броню и применения других бонусов). Металлическое оружие не повреждается, деревянное рассыпается пеплом, как только заклинание закончится. Оружие даёт свет так же как факел.Длительность: 1 минута.Стоимость: 4 за сотворения. 1 за поддержание. Время на сотворение: 2 секунды.Требования: Магичность(Magery) 2 и Нагреть.ПредметОружие, пылающее при использовании, и не стоящее энергии пользователю. Энергостоимость создания: 750 энергии; рубин на $400.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M75</reference>
+		<notes> 2 points burn damage from attacks with melee weapon</notes>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (fire)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">heat</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 499px; left: 669px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Burning Death</name><name-loc>Пылающая смерть</name-loc><spell version="2" very_hard="yes">
+		<name>Burning Death</name>
+		<name-loc>Пылающая смерть</name-loc>
+		<description-loc>Касательное; Сопротивление по ЗД(HT).Сжигает жертву изнутри. Заклинатель должен попасть по цели чтоб заклинание сработало, место попадания значения не имеет. Каждый ход жертва должна бросать против ЗД(HT); при провале (как критическом, так и обычном) она получает 1d-1 огненного урона. В случае успеха жертва не получает урона в этот ход, при критическом успехе заклинание развеивается. Ни СП(DR), ни Сопротивление огню не защищают! При поддержке заклинания, жертва испытывает невыносимые муки, таки как при заклинании Болезнь (M138).Если заклинание поддерживается достаточно долго, кожа и одежда жертвы начинают обугливаться и там и тут возникают маленькие огоньки. Если жертва умирает, её тело загорается и горит до тех пор, пока не останется лишь маленькая кучка золы. Нежить не поддаётся этому заклинанию. Для поддержки заклинания заклинатель должен сосредоточиться, но не должен поддерживать физический контакт.Это заклинание также относится к школе Некромантии.Продолжительность: 1 секунда.Стоимость: 3 на сотворение, 2 на поддержание.Требования: Магичность(Magery) 2, Нагреть и Болезнь.Предмет:Посох, палочка или украшение. Используется только магами; предмет должен касаться субъекта. Энергостоимость создания: 700 энергии, рубин на $500.</description-loc>
+		<college>Fire/Necromancy</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Melee</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 sec</duration>
+		<melee_weapon>
+			<damage>thr-1 cr  1d-1 burn/second</damage>
+			<usage>Punch</usage>
+			<reach>C</reach>
+			<parry>0</parry>
+			<default>
+				<type>DX</type>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Boxing</name>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Brawling</name>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Karate</name>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M76</reference>
+		<categories>
+			<category>Fire</category>
+			<category>Necromancy</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sickness</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">heat</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (necromancy)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 499px; left: 393px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Warmth</name><name-loc>Теплота</name-loc><spell version="2">
+		<name>Warmth</name>
+		<name-loc>Теплота</name-loc>
+		<description-loc>СтандартноеСубъект сохраняет тепло на холоде, избегая обморожения и гипотермии. Это заклинание поднимает «местную температуру» на 30°F к «комфортной зоне» температур (B93). Это заклинание не защищает от атак магическим холодом, например заклинания Обморожение. Это заклинание так же относится к школе заклинаний Защиты и Предупреждения.Длительность: 1 час.Стоимость: 2 на сотворение, 1 на поддержание.Время сотворения: 10 секунд.Требования: Нагреть.ПредметОдежда, посох, украшение или попона (одеяло [blanket]); действует только на надевшего (в случае посоха - держащего). Энергостоимость создания: 200 энергии.</description-loc>
+		<college>Fire/Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M74</reference>
+		<categories>
+			<category>Fire</category>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">heat</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 559px; left: 333px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Resist Cold</name><name-loc>Сопротивление холоду</name-loc><spell version="2">
+		<name>Resist Cold</name>
+		<name-loc>Сопротивление холоду</name-loc>
+		<description-loc>СтандартноеОбъект (существо или предмет) и все, что он имеет с собой, получает иммунитет к охлаждению и обморожению. Не защищает от ледяных копей, падающих ледяных глыб и т.д. Продолжительность: 1 минута.Энергостоимость: 2 на сотворение, 1 на поддержание. За двойную цену - защищает от -40° и ниже, за тройную - от абсолютного нуля!Требуется: Нагреть.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M74</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">heat</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 559px; left: 453px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Cold</name><name-loc>Охладить</name-loc><spell version="2">
+		<name>Cold</name>
+		<name-loc>Охладить</name-loc>
+		<description-loc>СтандартноеЭто заклинание уменьшает температуру объекта. Многие материалы будут разрушаться при ударе, если будут достаточно охлаждены. Максимальное охлаждение – до абсолютного нуля. За пропорциональное увеличение затрат можно охлаждать быстрее.Длительность, Стоимость и Время сотворения: идентично Нагреть, за исключением того, что каждая минута поддержания заклинания охлаждает предмет на 20°C.Требования: Нагреть.ПредметПосох, палочка или украшение. Энергостоимость создания: 400; предмет должен содержать рубин на $300 и сапфир на $300.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 min</duration>
+		<reference>M74</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">heat</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 571px; left: 561px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Flaming Missiles</name><name-loc>Пылающие стрелы</name-loc><spell version="2">
+		<name>Flaming Missiles</name>
+		<name-loc>Пылающие стрелы</name-loc>
+		<description-loc>СтандартноеТо же, что и Пылающее оружие, но творится на дистанционное оружие. Оружие приобретает мерцающий, огненный вид. Снаряд загорается при выстреле и наносит дополнительно  2 повреждения, как при Пылающем оружии; он рассыпается пеплом после попадания в цель или через 10 секунд после поджога, в зависимости от того, что случится раньше.Длительность: 1 минута.Стоимость: 4 на сотворение. 2 на поддержание. Стоимость удваивается, если снаряд каменный или металлический.Время на сотворение: 3 секунды.Требования: Пылающее оружие.ПредметДальнобойное оружие, всегда стреляющее пылающими снарядами и не стоящее энергии пользователю. Энергостоимость создания: 1000 энергии; $500 за инкрустированные в оружие рубины.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4#</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M75</reference>
+		<notes> 2 points burn damage with missiles fired from weapon</notes>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">flaming weapon</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 655px; left: 261px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Flame Jet</name><name-loc>Струя огня</name-loc><spell version="2">
+		<name>Flame Jet</name>
+		<name-loc>Струя огня</name-loc>
+		<description-loc>СтандартноеПозволяет выстрелить струю огня из кулака. Каждый ход заклинатель кидает ЛВ(DX)-4 или умение Природная атака для попадания, и повреждение, если попал. От этой атаки можно защититься блоком или уклонением, парировать её нельзя. Считайте струю контактным оружием – пылающий меч без реального клинка – но он не может парировать! Это замечательное эффектное [flashy] заклинание, подходящее для магических шоу, контактного боя, разрезания верёвок и т.д. Заклинатель может творить столько заклинаний, сколько имеет рук и держать в каждой руке по Струе огня; к Струе огня, находящейся в неосновной руке, применяется обычный штраф -4. Для «киношной» дуэли магов Мастер может разрешить парирование Струи огня другой Струёй огня. Это позволит провести вместо обычной магической дуэли в виде перестрелки, провести ближний бой между магами.Длительность: 1 секунда.Стоимость: от 1 до 3 очков. Наносит 1d повреждения за каждое очко стоимости. Дальность струи в ярдах равна количеству кубиков повреждения. Столько же на поддержание.Требования: Создать огонь и Формировать огонь.ПредметУкрашение. Энергостоимость создания: 800; должен содержать золота на $500, и рубинов на $300. Используется только магами.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-3</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 sec</duration>
+		<melee_weapon>
+			<damage>1d burn/point</damage>
+			<usage>Jet</usage>
+			<reach>1/point</reach>
+			<parry>No</parry>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Beam</specialization>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M73</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create fire</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shape fire</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 739px; left: 177px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Flaming Armor</name><name-loc>Пылающая броня</name-loc><spell version="2">
+		<name>Flaming Armor</name>
+		<name-loc>Пылающая броня</name-loc>
+		<description-loc>СтандартноеСубъект покрывается пламенем, которое не доставляет ему никакого дискомфорта – он и всё что он несёт под защитой базового заклинания Сопротивления Огню. Внешне пламя такое же, как и обычное. Контактная атака субъекта наносит дополнительное очко огненного урона. Любая контактная атака, попавшая по субъекту, вызывает Струю огня с уроном 1d, которая бьёт врага, пролетая вдоль оружия. Эта атака автоматически попадает по руке, держащей оружие, если Досягаемость (reach) оружия не больше 1. Если субъекта схватили или он схватил, то врагу наносится 3d обжигающего урона, но заклинание рассеивается.Продолжительность: 1 минутаСтоимость: 6 на сотворение, 3 на поддержание.Требования: Магичность(Magery) 1, Сопротивление Огню и Струя огня.Предмет:(а) Посох или украшение. Используется только магами. Энергостоимость создания:600 энергии; должно быть использовано рубин на $300.(б) Накидка или броня. Действует только на носящего. При активации накидка выглядит буквально сплетенной из огня; она будет защищать со спины и сбоку, но не спереди. Если только не держится в руках как лёгкий плащ (см. B184). Энергостоимость создания: 700 энергии за накидку, 1000 за броню.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>6</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M75</reference>
+		<notes> 1 point burn damage to all melee attacks</notes>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (fire)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">flame jet</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">resist fire</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 823px; left: 177px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1 hard"><name>Breathe Fire</name><name-loc>Огненное дыхание</name-loc><spell version="2" very_hard="yes">
+		<name>Breathe Fire</name>
+		<name-loc>Огненное дыхание</name-loc>
+		<description-loc>СтандартноеПохоже на Струю огня, только огонь исходит изо рта заклинателя, Огненное дыхание нельзя поддерживать, и за одно очко энергии покупается 1d 1 очков урона, вместо 1d. Для попадания заклинатель кидает против ЛВ(DX)-2 или Природной атаки. Это считается действием; заклинатель должен смотреть в сторону цели. Для сотворения заклинания не требуются жесты руками; вместо этого совершаются определённые движения губами и языком. Таким образом, Огненное дыхание может быть сотворено без рук на любом уровне умения.Продолжительность: 1 секунда.Стоимость: от 1 до 4. Не поддерживается.Время на сотворение: 2 секунды.Требования: Магичность(Magery) 1, Струя огня и Сопротивление огню.Предмет:Украшение. Применяется только магами. Энергостоимость создания: 1000 энергии; должно применяться золота на $500 и рубин на $500.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-4</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 sec</duration>
+		<melee_weapon>
+			<damage>1d 1 burn/point</damage>
+			<usage>Breath</usage>
+			<reach>1/point</reach>
+			<parry>No</parry>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Breath</specialization>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M76</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (fire)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">resist fire</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">flame jet</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 895px; left: 177px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1 hard"><name>Body of Flames</name><name-loc>Тело из Огня</name-loc><spell version="2" very_hard="yes">
+		<name>Body of Flames</name>
+		<name-loc>Тело из Огня</name-loc>
+		<description-loc>Стандартное; Сопротивление по ЗД(HT)Субъект получает мета-черту Тело из огня (B262) на время действия заклинания. Одежда (весом меньше 6 фунтов) также становится огненной, но теряет всякие магические свойства. Персонаж в таком состоянии не может ничего нести.Продолжительность: 1 минута. Заклинание рассеивается если субъект теряет сознание.Стоимость: 12 на сотворение, 4 на поддержание.Время на сотворение: 5 секунд.Требования: Огненное дыханиеПредмет:(а) Посох, палочка или украшение. Действует только на носящего. Серьёзным недостатком является то, что как только заклинание активировано, предмет падает сквозь руки пользователя. Таким образом, заклинание, творимое с помощью предмета, длится только одну минуту. Энергостоимость создания: 3000 энергии.(б) Посох, палочка или украшение. Действует только на носящего. В отличии от предыдущего предмета, обращается в огонь вместе с носящим, позволяя поддерживать заклинание. В огненной форме предмет теряет магические силы, которые обычно имел. Энергостоимость создания: 6000 энергии.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>12</casting_cost>
+		<maintenance_cost>4</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 min</duration>
+		<melee_weapon>
+			<damage>1d burn</damage>
+			<usage>Punch</usage>
+			<reach>C</reach>
+			<parry>0</parry>
+			<default>
+				<type>DX</type>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Boxing</name>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Brawling</name>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Karate</name>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M76</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">breathe fire</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 823px; left: 345px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Essential Flame</name><name-loc>Истинный огонь</name-loc><spell version="2">
+		<name>Essential Flame</name>
+		<name-loc>Истинный огонь</name-loc>
+		<description-loc>ОбластноеПодобно Создать огонь, но созданный огонь является магической эссенцией огня. Любой маг заметит разницу на взгляд. Он не может быть потушен обычной водой или простой магией, а только достаточным количеством Истинной воды или заклинанием Рассеять магию. Истинный огонь наносит  1 вреда ( 2 водным созданиям). Продолжительность: 1 минута.Базовая стоимость: 3. 2 поддержание. Огонь воспламеняет все горючие материалы, оставаясь Истинным огнём пока поддерживается заклинание. Когда поддержка прекращается, горение продолжается как обычный огонь.Время сотворения:3 секунды.Требования: минимум шесть иных заклинаний Огня.ПредметПалочка, посох или украшение. Используется только магами. Энергостоимость создания: 800; должен включать рубин за $400.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3#</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<melee_weapon>
+			<damage>1d burn</damage>
+			<usage>Area</usage>
+			<reach>Special</reach>
+			<parry>No</parry>
+		</melee_weapon>
+		<reference>M75</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">fire</college>
+				<quantity compare="at least">6</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 787px; left: 597px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Summon Fire Elemental</name><name-loc>Вызов огненного элементаля</name-loc><spell version="2">
+		<name>Summon Fire Elemental</name>
+		<name-loc>Вызов огненного элементаля</name-loc>
+		<description-loc>ОсобоеОтдельное заклинание для каждого из четырех элементов. Позволяет магу вызвать ближайшего элементаля – если такой есть. В общем, Мастер должен подразумевать, что элементаль всегда будет присутствовать в подходящей локации, если сценарий или ситуация не предусматривают обратного. Уровень силы элементаля определяет маг, вкладывая определенное количество энергии в заклинание, но точные способности элементаля определяются Мастером.Призванный элементаль не подконтролен заклинателю, но должен оставаться на час с ним, пока не будет отозван или разрушен. Заметьте, что отзыв не гарантирует что элементаль уйдёт. Если он враждебен или просто любопытен, то может захотеть остаться!Заклинатель может спрашивать призванного элементаля, просить об услуге и т.д. Элементаль немедленно делает бросок реакции, чтобы понять своё отношение к волшебнику. При хорошей реакции, он сотрудничает в течение часа – не дольше –, а затем исчезает. Мнение элементаля можно поколебать соответствующими соблазнами, конечно если волшебник представляет что может заинтересовать элементаля.Длительность: 1 час. Может быть неподдерживаемым.Стоимость: 1 энергия за 10 очков персонажа для построения элементаля. Минимальная энергостоимость 4 (однако это не всегда призывает 40-очковое существо).Время сотворения: 30 секунд. Элементаль может появиться в течении 2d минут.Требования: Магичность(Magery) 1 также или восемь заклинаний соответствующего элемента или четыре заклинания соответствующего элемента  и иное заклинание Вызов элементаля.ПредметПосох, палочка или украшение, с соответствующими элементу изображениями – для каждого из четырёх элементов требуются различные чары. Стоимость создания: 800 энергии, $1.300 золотом и платиной.Малый огненный элементальЭто базовый элементаль, призываемый заклинанием Призыв огненного элементаля при минимальных затратах энергии 4. При вложении в заклинание большего количества энергии призываются более сильные элементали. Обычно это означает просто элементаля больших размеров; 1 очко энергии равно 1 дополнительному очку СЛ(ST), 5 ЕЖ(HP) или 2 очкам СП(DR). Однако, Мастер может создать более экзотического элементаля, прибавляя необычные черты шаблону данному ниже, или создав свой.Малый огненный элементаль40 очковМодификаторы атрибутов: СЛ(ST)-2 [-20]; ЛВ(DX)-1[-20]; ИН(IQ)-2[-40]; ЗД(HT)-3[-30].Модификаторы вторичных характеристик: МР(SM) -1; ЕЖ(HP)  2[4].Преимущества: Обжигающая природная атака 2d (Действует постоянно, -40%; Аура,  80%; Контактный бой, Досягаемость В (reach C), -30%)[11]; Харизма 1[5]; Не дышит (Сжигание кислорода, -50%)[10]; Не ест/не пьёт[10]; Не спит[20]; СП(DR) 10 (Ограниченная: тепло/огонь, -40%) [30]; Иммунитет к нарушениям метаболизма [30]; Устойчивость к ранениям (рассеянный) [100].Недостатки: Нет хороших манипуляторов [-30]; Ослабление (Вода, 1d/мин.) [-40].</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>4#</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>30 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M27</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (fire)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<prereq_list all="no">
+				<prereq_list all="yes">
+					<prereq_list all="no">
+						<spell_prereq has="yes">
+							<name compare="is">summon air elemental</name>
+						</spell_prereq>
+						<spell_prereq has="yes">
+							<name compare="is">summon water elemental</name>
+						</spell_prereq>
+						<spell_prereq has="yes">
+							<name compare="is">summon earth elemental</name>
+						</spell_prereq>
+					</prereq_list>
+					<spell_prereq has="yes">
+						<college compare="contains">fire</college>
+						<quantity compare="at least">4</quantity>
+					</spell_prereq>
+				</prereq_list>
+				<spell_prereq has="yes">
+					<college compare="contains">fire</college>
+					<quantity compare="at least">8</quantity>
+				</spell_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 859px; left: 597px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Control Fire Elemental</name><name-loc>Контроль огненного элементаля</name-loc><spell version="2">
+		<name>Control Fire Elemental</name>
+		<name-loc>Контроль огненного элементаля</name-loc>
+		<description-loc>Обычное; Сопротивление по большему из СЛ(ST) и Воля(Will)Контроль всех действий одного элементаля, пока длится заклинание. Для прямого управления элементаль должен быть в видимости заклинателя. Если элементалю просто говорят уйти, он сделает это. Если его посылают с заданием, без прямого управления, его ИН(IQ) должен быть достаточным (по решению Мастера) для выполнения инструкций!Это заклинание может использоваться как информационное, чтобы оценить четыре атрибута данного типа элементаля (в пределах 15 футов). Бросок успеха требуется, но не стоит энергии.Длительность: 1 минута.Стоимость: 1 энергия за 10 очков персонажа для построения элементаля. Половина этого (округлять вверх) на поддержание.Время сотворения: 2 секунды.Требования: Вызов элементаля соответствующего элемента.ПредметПосох, палочка или украшение, с соответствующими элементу изображениями – для каждого из четырёх элементов требуются различные чары. Предмет не позволяет пользователя творить заклинания, но даёт ненакапливаемую премию  2 к любым попыткам использовать заклинание. Стоимость создания: 1.000 энергии, $1.300 золотом или платиной.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>Special</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M28</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">summon fire elemental</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 931px; left: 597px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Create Fire Elemental</name><name-loc>Создание огненного элементаля</name-loc><spell version="2">
+		<name>Create Fire Elemental</name>
+		<name-loc>Создание огненного элементаля</name-loc>
+		<description-loc>ОсобоеСоздание духа соответствующего элеменета. Заклинатель может определить возможности создаваемого элементаля увеличивая или уменьшая атрибуты базового элементаля данного типа; он может менять менять, добавлять или убирать преимущества и недостатки с разрешения Мастера. Нетпределов вариации атрибутов, однако очень глупые элементали могут не понимать сложных команд. Вновь созданный элементаль служит заклинателю примерно один чат. В конце этого времени проведите состязание между умением мага в данном заклинании и комбинацией ИН(IQ) и СЛ(ST) элемента. При победе заклинателя, элемент служит еще час, в его конце снова требуется состязание, и т.д. При проигрыше заклинателя, элементаль избегает контроля и уходит (или атакует, при очень плохой реакции).Стоимость: 1 энергия за 5 очков персонажа на построение элементаля.Время сотворения: количество секунд равное сумме очков персонажа на создание элементаля.Требования: Магичность(Magery) 2 и Контроль элементаля соответствующего элемента.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>Special</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>Special</casting_time>
+		<duration>Permanent</duration>
+		<reference>M28</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (fire)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">control fire elemental</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block>

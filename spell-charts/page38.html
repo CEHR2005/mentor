@@ -1,0 +1,1118 @@
+<block style="top: 152px; left: 214px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Weather Dome</name><spell version="2">
+		<name>Weather Dome</name>
+		<name-loc>Погодный купол</name-loc>
+		<description-loc>ОбластноеСоздаёт мерцающий купол, отражающий любую плохую погоду (вплоть до заклинаний Буря включительно, вулканический пепел, дождь из лягушек и даже летающих насекомых!). Наводнения, оползни и другие подобные катастрофы разрушают купол. Под куполом воздух остаётся свежим, а температура- комфортной для заклинателя. Это также заклинание школы Погоды.Длительность: 6 часов.Базовая стоимость: 3 сотворение. 2 поддержание.Требования: Не меньше двух заклинаний из школы каждого элемента (стихии).</description-loc>
+		<college>Protection/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>6 hrs</duration>
+		<reference>M169</reference>
+		<categories>
+			<category>Protection</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">water</college>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">earth</college>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">fire</college>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">air</college>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 224px; left: 34px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Current</name><spell version="2">
+		<name>Current</name>
+		<name-loc>Течение</name-loc>
+		<description-loc>Специальное; ОбластноеВлияет на течения любого большого количества воды. Каждое наложение заклинания, может сдвинуть течение на 22,5 градуса или изменить скорость на 1 миль/ч (или узел). Для достижения комбинации изменения направления и скорости, или более мощного изменения в одном или другом, стоимость увеличивается пропорционально.Заклинание может быть наложено на площадь, влияя на течение, протекающее на глубине до 40 ярдов.  Также заклинание может быть наложено на объект, например корабль, который должен быть охвачен во всей его полноте. Область действия перемещается вместе с объектом.Это также заклинание Воды.Длительность: 1 час.Стоимость: 1/50 (минимум 1). Столько же на поддержание.Время сотворения: 1 минута.Требование: Как минимум шесть заклинаний Воды.ПредметПосох, жезл или украшение. Энергостоимость создания: 300</description-loc>
+		<college>Water/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special/Area</spell_class>
+		<casting_cost>1/50</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M194</reference>
+		<categories>
+			<category>Water</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">water</college>
+				<quantity compare="at least">6</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 236px; left: 214px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Clouds</name><spell version="2">
+		<name>Clouds</name>
+		<name-loc>Облака</name-loc>
+		<description-loc>ОбластноеСоздает или рассеивает обычный облачный покров, на выбор заклинателя.Это также заклинание Воздуха.Длительность: 10 минут, после чего облака уходят или возвращаются, если заклинание не поддерживается.Стоимость: 1/20 (минимум 1). Столько же на поддержание.Время сотворения: 10 секунд.Требование: Как минимум два заклинания Воды и два заклинания Воздуха.ПредметПосох, жезл или украшение. Энергостоимость создания: 300</description-loc>
+		<college>Air/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1/20</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>10 min</duration>
+		<reference>M194</reference>
+		<categories>
+			<category>Air</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">air</college>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">water</college>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 320px; left: 214px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Rain</name><spell version="2">
+		<name>Rain</name>
+		<name-loc>Дождь</name-loc>
+		<description-loc>ОбластноеСоздает (или предотвращает) 1 дюйм дождя в обычных условиях.Это также заклинание Воздуха и заклинание Воды.Длительность: 1 час.Стоимость: 1/10 (минимум 1). Стоимость сотворения дождя может быть удвоена в пустыне или на другой территории (на усмотрение Мастера) где дождь не свойствен. Стоимость для предотвращения дождя удваивается в естественных для дождя условиях или болотной местности. Столько же на поддержание.Время сотворения: 1 минута.Требование: Облака.ПредметПосох или палочка. Используется только магами. Предмет должен храниться в воде, если не используется; он теряет свою силу, если остается сухим более чем на час.Энергостоимость создания: 600</description-loc>
+		<college>Air/Water/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1/10#</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M195</reference>
+		<categories>
+			<category>Air</category>
+			<category>Water</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">clouds</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 476px; left: 214px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Storm</name><spell version="2">
+		<name>Storm</name>
+		<name-loc>Шторм</name-loc>
+		<description-loc>ОбластноеСоздает или рассеивает шторм. В зависимости от окружающей температуры и влажности, он может стать просто штормовым ветром или включать в себя дождь, снег или град – случайные молнии, также. Это особенно эффективно на море. Заклинание является непредсказуемым по своему воздействию (что позволяет Мастеру решить, что делает шторм… ).Заклинание может также использоваться для того, чтобы развеять шторм; эффективность заклинания зависит от размеров заколдованного района, в соотношении с естественной территорией шторма. Продолжительность: 1 час.Базовая стоимость: 1/50 (минимум 1). Столько же  поддержка.Требование: Дождь и Град.ПредметПосох. Используется только магами.Энергостоимость создания: 1.000.</description-loc>
+		<college>Air/Water/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1/50</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M195</reference>
+		<categories>
+			<category>Air</category>
+			<category>Water</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">hail</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">rain</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 344px; left: 34px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Tide</name><spell version="2">
+		<name>Tide</name>
+		<name-loc>Прилив</name-loc>
+		<description-loc>Специальное; ОбластноеКаждое наложение этого заклинания может повысить или понизить уровень воды на один фут; для более крупных изменений, стоимость увеличивается пропорционально.«Холм воды» созданный таким образом распространяется органично в области действия, опускаясь на один фут на каждый ярд за пределами фактической области заклинания. Заклинание может быть наложено на площадь, влияя на предметы затронутые приливом. Также заклинание может быть наложено на объект, например корабль, который должен быть охвачен во всей его полноте. Область действия перемещается вместе с объектом.Это также заклинание Воды.Длительность: 1 час.Стоимость: 1/50 (минимум 1). Столько же на поддержание.Время сотворения: 1 минута.Требование: Как минимум восемь заклинаний Воды.ПредметПосох, жезл или украшение. Энергостоимость создания: 225</description-loc>
+		<college>Water/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special/Area</spell_class>
+		<casting_cost>1/30</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M194</reference>
+		<categories>
+			<category>Water</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">water</college>
+				<quantity compare="at least">8</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 236px; left: 358px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Frost</name><spell version="2">
+		<name>Frost</name>
+		<name-loc>Иней</name-loc>
+		<description-loc>ОбластноеПокрывает инеем все поверхности в области действия заклинаний. Иней является настоящим, и длится бесконечно долго, пока температура ниже нуля. В более теплых условиях, быстро таит, образуя росу. Если бросить сверху реальный или магический огонь, иней становится облаком пара и вызывает яркий свет со свистом на несколько секунд. На самом деле, достаточно крошечного огня – спичка или свеча – чтобы заклинание Иней перестало работать.Если использовать заклинание Иней на огненный элементаль или другое огненное создание, то оно наносит 1 единицу урона, но это скорее разозлит создание, чем прогонит.Это также заклинание Воды.Длительность: иней длится до тех пор, пока не растает.Стоимость: 1.Требование: Создание Воды или Охладить.ПредметПосох, жезл или украшение.Энергостоимость создания: 200, $350 голубой камень.</description-loc>
+		<college>Water/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Indef</duration>
+		<reference>M193</reference>
+		<categories>
+			<category>Water</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">cold</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 320px; left: 358px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Snow</name><spell version="2">
+		<name>Snow</name>
+		<name-loc>Снег</name-loc>
+		<description-loc>ОбластноеСоздает (или предотвращает) 1 дюйм снега в обычных условиях. Для работы должны образом, это заклинание необходимо колдовать при температуре 32°F (0°C) и ниже. Если это заклинание колдуется в более теплых условиях, то оно призывает моросящий дождь, который увлажняет землю, но не оставляет каких-либо значительных луж.Это также заклинание Воздуха и заклинание Воды.Длительность: 1 час.Стоимость: 1/15 (минимум 1). Каждые дополнительные 1/15 единиц энергии на ярд радиуса увеличивает количество снега на 1 дюйм в час. Столько же на поддержание.Требование: Облака и Иней.ПредметПосох. Используется только магами. Предмет должен храниться в холоде, если не используется; он теряет свою силу, если находится под воздействием температуры 90°F (32°C) более чем два часа. Столько же на поддержание. Энергостоимость создания: 450.</description-loc>
+		<college>Air/Water/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1/15#</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M195</reference>
+		<categories>
+			<category>Air</category>
+			<category>Water</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">frost</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">clouds</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 392px; left: 358px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Hail</name><spell version="2">
+		<name>Hail</name>
+		<name-loc>Град</name-loc>
+		<description-loc>Областное.Создает град. Температура должна быть чуть выше нуля. Главный эффект – подвергнуть интенсивному разрушению любое живое существо, на которое обрушился град; маг должен бросать кубик Воли(Will) каждую секунду, чтобы поддерживать концентрацию. При сотворении града стоимостью 5, Мастер может позволить реально большие градины, наносящие 1d-2 дробящего урона в секунду.Это также заклинание Воды.Длительность: 1 минута.Стоимость: 1/5 (минимум 1). Для разрушительных градин, стоимость 1. Столько же на поддержание.Требование: СнегПредметПосох. Используется только магами. Энергостоимость создания: 500.</description-loc>
+		<college>Water/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1/5#</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<melee_weapon>
+			<damage>1d-2 cr</damage>
+			<usage>Area</usage>
+			<reach>Special</reach>
+			<parry>No</parry>
+		</melee_weapon>
+		<reference>M195</reference>
+		<notes>base cost 1 for damaging hail</notes>
+		<categories>
+			<category>Water</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">snow</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 236px; left: 466px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Cool</name><spell version="2">
+		<name>Cool</name>
+		<name-loc>Похолодание</name-loc>
+		<description-loc>ОбластноеПонижает температуру окружающего воздуха в области. Это может вызвать туман, если позволяют условия. Заклинание не может понизить температуру ниже -40.Это также заклинание Воздуха.Длительность: 1 час.Время сотворения: 1 минута на 1 единицу энергии вложенного в заклинание.Стоимость: 1/10 (минимум 1). Каждое сотворение понижает температуру окружающей среды  на 10F(12C).Требование: Охладить и как минимум четыре заклинания Воздуха.ПредметПосох. Используется только магами.Энергостоимость создания: 150.</description-loc>
+		<college>Air/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1/10</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M195</reference>
+		<categories>
+			<category>Air</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">air</college>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">cold</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 236px; left: 574px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Predict Weather</name><spell version="2">
+		<name>Predict Weather</name>
+		<name-loc>Предсказать погоду</name-loc>
+		<description-loc>ИнформационноеПрогноз погоды для данного места через заданное время. Этот прогноз не принимает во внимание магическое вмешательство или предсказания других магов!Это также заклинание Воздуха.Стоимость: 2 за промежуток времени предсказания, в днях. Двойная стоимость за область вне пределов данного района (скажем, за горизонтом). Учетверенная стоимость за область на другом континенте. Это заклинание не может предсказать погоду на планете или астральном плане, отличном от того, в котором находится заклинатель.Время сотворения: 5 секунд за день предсказания.Требование: Как минимум четыре заклинания Воздуха.</description-loc>
+		<college>Air/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M193</reference>
+		<categories>
+			<category>Air</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">air</college>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 236px; left: 682px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Warm</name><spell version="2">
+		<name>Warm</name>
+		<name-loc>Потепление</name-loc>
+		<description-loc>ОбластноеПоднимает температуру окружающего воздуха в области. Это может быть использовано для рассеивания Тумана, например. Заклинание не может поднять температура выше 100F(38°C).Это также заклинание Воздуха.Длительность: 1 час.Время сотворения: 1 минута на 1 энергию в заклинании.Стоимость: 1/10 (минимум 1). Каждое сотворение повышает температуру окружающей среды  на 10F(12C).Требование: Нагреть и как минимум четыре заклинания Воздуха.ПредметПосох. Используется только магами.Энергостоимость создания: 150.</description-loc>
+		<college>Air/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1/10</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M195</reference>
+		<categories>
+			<category>Air</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">heat</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">air</college>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 392px; left: 514px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Fog</name><spell version="2">
+		<name>Fog</name>
+		<name-loc>Туман</name-loc>
+		<description-loc>ОбластноеСоздает в области густой туман. Видимость в тумане составляет 1 ярд. Огненные оружие и метательные снаряды теряют свою дополнительную мощь в тумане. Огненный шар теряет 1 единицу урона за ярд тумана, который необходимо преодолеть (например, 3d Огненный шар пересекает 5 ярдов тумана и наносит 3d-5 ущерба), в то же время жертвы взрыва Огненного шара, могут рассчитывать каждый ярд тумана как 2 ярда от взрыва. Однако никакое количество тумана не может потушить огонь.Это также заклинание Воды.Длительность: 1 минута.Стоимость: 2 сотворение. Половина поддержка.Требование: Формировать Воду.ПредметПосох, жезл или украшение.Энергостоимость создания: 300.</description-loc>
+		<college>Water/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M193</reference>
+		<categories>
+			<category>Water</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 392px; left: 634px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Waves</name><spell version="2">
+		<name>Waves</name>
+		<name-loc>Волны</name-loc>
+		<description-loc>Специальное, областное.Изменение состояния поверхности любого большого количества воды. Каждое наложение заклинания может увеличить или уменьшить высоту волны на один Балл шкалы Бофорта (см. выше); чтобы добиться изменения нескольких баллов, умножьте на них стоимость. Ветер не влияет. Следует отметить, что шкала Бофорта для океанских волн; волны, созданные на берегах озера, обычно, намного ниже, относительно скорости ветра (на усмотрение Мастера).Заклинание может быть наложено на площадь, влияя на вещи пересекающие её. Также заклинание может быть наложено на объект, например корабль, который должен быть охвачен весь (обычно, 10-30 ярдов в радиусе). Область действия перемещается вместе с объектом.Это также заклинание Воды.Длительность: 1 час.Стоимость: 1/60 (минимум 1). Столько же на поддержание.Время сотворения: 1 минута.Требование: Формировать Воду.ПредметПосох, жезл или украшение. Энергостоимость создания: 300</description-loc>
+		<college>Water/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special/Area</spell_class>
+		<casting_cost>1/60</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M194</reference>
+		<categories>
+			<category>Water</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 152px; left: 334px;" class="other-college"><name>Create Water</name><spell version="2">
+		<name>Create Water</name>
+		<name-loc>Создать воду</name-loc>
+		<description-loc>ОбычноеСоздаёт чистую воду из ничего. Эта вода может появиться в любой из нескольких форм. Она может появиться в ёмкости или как сфера в воздухе (она сразу падает). Или она может появиться как густой туман из капель; в этой форме, один галлон воды потушит все огни в радиусе одного ярда. Воду нельзя создать внутри врага, чтобы его утопить!Длительность: Вода создаётся навсегда.Стоимость: 2 за созданный галлон.Требование: Очистить воду.ПредметПосох, жезл или украшение. Энергостоимость создания: 200.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/gal</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M184</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">purify water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 152px; left: 466px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Cold</name><spell version="2">
+		<name>Cold</name>
+		<name-loc>Охладить</name-loc>
+		<description-loc>СтандартноеЭто заклинание уменьшает температуру объекта. Многие материалы будут разрушаться при ударе, если будут достаточно охлаждены. Максимальное охлаждение – до абсолютного нуля. За пропорциональное увеличение затрат можно охлаждать быстрее.Длительность, Стоимость и Время сотворения: идентично Нагреть, за исключением того, что каждая минута поддержания заклинания охлаждает предмет на 20°C.Требования: Нагреть.ПредметПосох, палочка или украшение. Энергостоимость создания: 400; предмет должен содержать рубин на $300 и сапфир на $300.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 min</duration>
+		<reference>M74</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">heat</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 152px; left: 682px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Heat</name><spell version="2">
+		<name>Heat</name>
+		<name-loc>Нагреть</name-loc>
+		<description-loc>СтандартноеЭто заклинание увеличивает температуру объекта. Не создает огня само по себе, однако многие материалы будут загораться при достаточном нагреве. Магу, планирующему частое использование этого заклинания, будет полезно иметь под рукой табличку с температурами плавления и воспламенения. Заклинание может иметь некоторые побочные эффекты. Оно может быть полезным, если вы заперты за решеткой – вы можете ее попытаться расплавить, но жар от кипящего металла может поджарить и вас! (Эти рекомендации используйте лишь для ориентировки – не превращайте игру в физические опыты!)Длительность: 1 минута. За каждую минуту температура поднимается на 20°С. Максимально возможная температура – 2.800°С.Стоимость: 1 за предмет размером с кулак, 2 – куб.ярд, и еще по 2 за каждый кубический ярд объема. Скорость нагревания может быть увеличена: нагрев будет на 40°C в минуту за удвоенную цену, на 60°C – за утроенную, и так далее. Более медленный нагрев при желании возможен, но затрат не снижает. Столько же на поддержание.Время сотворения: 1 минута.Требования: Создать огонь, Формировать огонь.ПредметПосох, палочка или украшение. Энергостоимость создания: 400; предмет должен содержать рубин на $300.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 min</duration>
+		<reference>M74</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create fire</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shape fire</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 584px; left: 682px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Shape Air</name><spell version="2">
+		<name>Shape Air</name>
+		<name-loc>Формирование воздуха</name-loc>
+		<description-loc>ОбластноеПозволяет заклинателю создать движения воздуха в небольшом объеме. Ветер начинает дуть из выбранной клетки (штрафы за расстояние до нее), потоком шириной в 1 клетку, на расстояние 5 ярдов за единицу вложенной энергии, после чего исчезает. Способно сдувать (см. Сбивание, B378) – каждую секунду бросается 1d за каждые две единицы энергии, вложенные в заклинание (выброшенный результат считается  вредом в целях сдувания, но не наносит никакого реального вреда).Длительность: 1 минута.Стоимость: 1-10. 1 даёт мягкий бриз, 4 ветер, 6 шторм, 8 и более сильный порыв. Столько же поддержку. Требования: Создать воздух.ПредметПосох, палочка, украшение. Энергостоимость создания: 200.</description-loc>
+		<college>Air</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-10</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M24</reference>
+		<categories>
+			<category>Air</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create air</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 668px; left: 574px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Apportation</name><spell version="2">
+		<name>Apportation</name>
+		<name-loc>Перемещение</name-loc>
+		<description-loc>Обычное; сопротивление по Воле(Will)Позволяет двигать материальные объекты, не прикасаясь к ним. Это заклинание левитирует объект с Движением 1 — недостаточно быстро, чтобы нанести вред. Живые объекты могут сопротивляться Воле(Will)й.Длительность: 1 минута.Энергостоимость: зависит от веса объекта. Столько же поддержание.Вес	Энергостоимостьменее 1 фунта	1до 10 фунтов	2до 50 фунтов	3до 200 фунтов	4каждые дополнительные 100 фунтов	 4Требования: Магичность(Magery) 1.ПредметПосох или палочка. Используется только магами; предмет должен прикасаться или быть направленным на объект. Энергостоимость создания: 900.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M142</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 836px; left: 574px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Windstorm</name><spell version="2">
+		<name>Windstorm</name>
+		<name-loc>Ураган</name-loc>
+		<description-loc>ОбластноеКруговорот ветра с центром спокойствия внутри (хорошее место для мага). Центр спокойствия может быть диаметром вплоть до половины диаметра бури – или меньше, по желанию мага. Концентрируясь, маг может перемещать бурю на любое расстояние вплоть до ее собственного диаметра в секунду; центр спокойствия перемещается вместе с ней. Маг может перемещаться сам со скоростью до половины своего нормального Движения в пределах центра, концентрируясь на заклинании.Любой, попавший в достигший полной силы Ураган должен делать бросок СЛ(ST) каждую секунду, или будет сбит с ног ветром. Все ЛВ(DX)-умения получают -5, а дистанционные атаки штраф -10 за каждый ярд бури, через который они проходят.За удвоенную стоимость маг может создать еще более мощный Ураган, подобный торнадо. Броски СЛ(ST), чтобы остаться на ногах, делаются с -5, дистанционные атаки сквозь него вообще невозможы;  видимость в пределах действия в лучшем случае один ярд. Этот мощный ураган физически поднимает и разбрасывает объекты весом вплоть до 30 фунтов за каждый ярд радиуса.Длительность: 1 минута после достижения полной силы.Базовая стоимость: 2. Половина за поддержание.Время сотворения: Ураган возникает немедля, но маг должен концентрироваться в течение количества секунд, равного радиусу урагана в ярдах, чтобы вихрь достиг полной силы.Требования: Формирование воздуха.</description-loc>
+		<college>Air</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>Instant</casting_time>
+		<duration>1 min</duration>
+		<reference>M25</reference>
+		<categories>
+			<category>Air</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape air</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 776px; left: 70px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Walk on Air</name><spell version="2">
+		<name>Walk on Air</name>
+		<name-loc>Ходьба по воздуху</name-loc>
+		<description-loc>ОбычноеВременно дает преимущество Ходьба по воздуху (B97). Если по любой причине объект падает - заклинание ломается. Если пересоздать заклинание сразу же, субъект будет падать всего секунду (около 5 ярдов) и «приземлится» на воздух, получив 1d вреда (если он до этого не упадет на землю!). Если он находится в 10 футах над пропастью с лавой – у него проблемы!Длительность: 1 минута.Стоимость: 3 создание, 2 поддержание.Требования: Формирование воздуха.ПредметПосох, палочка, украшение или обувь; действует только на носителя. Стоимость: 500 энергии и $1000.</description-loc>
+		<college>Air</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M25</reference>
+		<categories>
+			<category>Air</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape air</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 836px; left: 130px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Jump</name><spell version="2">
+		<name>Jump</name>
+		<name-loc>Прыжок</name-loc>
+		<description-loc>ОбычноеУлучшает способность объекта к прыжкам, увеличивая его Базовое Движение только для прыжков.Длительность: 1 минута.Стоимость: от 1 до 3 сотворение. Не поддерживается. Увеличение Базового Движения равно удвоенной вложенной энергии.Требования: Перемещение.ПредметПосох, украшение или обувь. На предмете должно быть изображение кузнечика, кролика или оленя. Энергостоимость создания: 250 за единицу премии к прыжку, которую дает предмет (максимум 6).</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M143</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 836px; left: 10px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Walk on Water</name><spell version="2">
+		<name>Walk on Water</name>
+		<name-loc>Ходить по воде</name-loc>
+		<description-loc>ОбычноеХодить по воде, как с преимуществом Ходьба по жидкости (B97).Длительность: 1 минутаСтоимость: 3 сотворение. 2 поддержка.Время сотворения: 4 секунды.Требование: Формировать воду.ПредметПосох, жезл, украшение или одежда. Действует только на носителя. Энергостоимость создания: 500.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>4 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M186</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 584px; left: 346px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Resist Lightning</name><spell version="2">
+		<name>Resist Lightning</name>
+		<name-loc>Сопротивление молнии</name-loc>
+		<description-loc>ОбычноеОбъект и все что на нем, защищено от воздействия молнии и электричества. В низко технологичных мирах, это заклинание наиболее часто используется для защиты от враждебной магии; в высоко технологичных мирах - становится ценным профессиональным инструментом.Это также заклинание Защиты и предупреждения и заклинание Воздуха.Длительность: 1 минута.Стоимость: 2 сотворение. 1 поддержка.Требование: Любые шесть заклинаний воздуха.Предмета) Любой. Влияет только на пользователя. Энергостоимость создания: 1000 единиц энергии и $1000 платины. б) Посох, жезл или украшение. Энергостоимость создания: 1500 единиц энергии и $1000 платины.</description-loc>
+		<college>Air/Protection/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M196</reference>
+		<categories>
+			<category>Air</category>
+			<category>Protection</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">air</college>
+				<quantity compare="at least">6</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 584px; left: 466px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Lightning</name><spell version="2">
+		<name>Lightning</name>
+		<name-loc>Молния</name-loc>
+		<description-loc>МетательноеСтреляйте молнией прямо из пальцев! Такой снаряд имеет 1/2Д 50, Мах 100, Точ 3. Против этого заклинания любая металлическая броня защищает с СП(DR) 1. Если цель поражена, она должна сделать бросок ЗД(HT) с -1 за каждые потерянные 2 ЕЖ(HP), иначе оглушена. Против электронного оборудования, считать эту атаку, как если бы она имела модификатор Импульс (M105).Молния ведет себя непредсказуемо вокруг проводников. Молнию нельзя пустить сквозь металлическую решетку, между прутьями, изнутри автомобиля и т.д. – она перескочит на металл и заземлится. Однако, Мастер может позволить (для примера) магу выстрелить молнией в металлический пол. Это не убьет током тех, кто на нем находился, но может шокировать всех, прерывая концентрацию и нанося незначительные повреждения (не более 1 очка, или же вовсе ничего). Мастер может поощрять креативное использование молнии, до тех пор, пока это не начнет раздражать.Это также заклинание Воздуха.Стоимость: Не более вашего уровня Магических способностей в секунду, на протяжении трех секунд. Снаряд наносит 1d-1 обжигающего урона, на 1 единицу вложенной энергии.Время сотворения: 1-3 секунды (во время сотворения заклинания пальцы мага сверкают).Требование: Магические способности 1 и как минимум шесть заклинаний Воздуха.ПредметПосох или жезл – молния срывается с конца предмета. Используется только магами. Энергостоимость создания: 800, украшений с камнями на $1.200.</description-loc>
+		<college>Air/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Missile</spell_class>
+		<casting_cost>1-Magery</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1-3 sec</casting_time>
+		<duration>Instant</duration>
+		<ranged_weapon>
+			<damage>1d-1 burn/point</damage>
+			<accuracy>3</accuracy>
+			<range>50/100</range>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Beam</specialization>
+				<modifier>0</modifier>
+			</default>
+		</ranged_weapon>
+		<reference>M196</reference>
+		<categories>
+			<category>Air</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (weather)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<college compare="contains">air</college>
+				<quantity compare="at least">6</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 668px; left: 466px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Explosive Lightning</name><spell version="2">
+		<name>Explosive Lightning</name>
+		<name-loc>Разрывная молния</name-loc>
+		<description-loc>МетательноеСоздает снаряд молнии, который затрагивает непосредственно цель и вещи поблизости. Такой снаряд имеет 1/2Д 50, Мах 100, Точ 3. Это заклинание можно бросить на стену, пол, и т.д. (с  4 на попадание) чтобы задеть врагов взрывом. Цель и все кто рядом с целью на расстоянии 1 ярда получают полный вред. Тот, кто находится дальше, уменьшает повреждения в три раза на ярд расстояния от взрыва (округляя вниз). Последствия от применения заклинания такие же, как и у заклинания Молния.Это также заклинание Воздуха.Стоимость: Не более вашего удвоенного уровня Магических способностей в секунду, на протяжении трех секунд. Снаряд наносит 1d-1 обжигающего урона, на 2 единицы вложенной энергии.Время сотворения: 1-3 секунды.Требование: Молния.ПредметПосох или жезл – молния срывается с конца предмета. Используется только магами. Энергостоимость создания: 1.200; предмет должен содержать в себе украшений на $500 платины.</description-loc>
+		<college>Air/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Missile</spell_class>
+		<casting_cost>2-2xMagery</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1-3 sec</casting_time>
+		<duration>Instant</duration>
+		<ranged_weapon>
+			<damage>1d-1 burn ex/2 points</damage>
+			<accuracy>3</accuracy>
+			<range>50/100</range>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Beam</specialization>
+				<modifier>0</modifier>
+			</default>
+		</ranged_weapon>
+		<reference>M196</reference>
+		<categories>
+			<category>Air</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lightning</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 752px; left: 466px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Lightning Whip</name><spell version="2">
+		<name>Lightning Whip</name>
+		<name-loc>Молниевый кнут</name-loc>
+		<description-loc>ОбычноеСоздает кнут из молний в руках мага. Кнут обладает теми же свойствами, что и обычный кнут (B404), за исключением того, что для его подготовки необходима всего секунда, и его нельзя использовать для парирования или опутывания. Кнут наносит 1d обжигающего вреда каждый раз, когда поражает противника. Последствия от применения заклинания такие же, как и у заклинания Молния.Это также заклинание Воздуха.Длительность: 10 секунд.Стоимость: 1 на два ярда длины (максимум 8 ярдов). Столько же на поддержку.Время сотворения: 2 секунды.Требование: Молния.ПредметПерчатка, кнут или украшение. Используется только магами. Энергостоимость создания: 350.</description-loc>
+		<college>Air/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1 per 2 yards</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>10 sec</duration>
+		<melee_weapon>
+			<damage>1d burn</damage>
+			<reach>2/point</reach>
+			<parry>No</parry>
+			<default>
+				<type>DX</type>
+				<modifier>-5</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Whip</name>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Kusari</name>
+				<modifier>-3</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Monowire Whip</name>
+				<modifier>-3</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M196</reference>
+		<categories>
+			<category>Air</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lightning</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 836px; left: 466px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Wall of Lightning</name><spell version="2">
+		<name>Wall of Lightning</name>
+		<name-loc>Стена молний</name-loc>
+		<description-loc>ОбластноеСоздает мерцающий, потрескивающий занавес молний вокруг области.Стена четыре ярда высотой, но может быть выше, в зависимости от стоимости (двойная для 8 ярдов высоты, тройная для 12 ярдов высоты, и т.д.).Каждый ход, каждый, кто пытается пересечь или дотронутся до стены, получает обжигающий урон. Она затрудняет видимость  слышимость сквозь неё: -1 к броскам Чувств.Это также заклинание Воздуха.Длительность: 1 минута.Стоимость: 2-6 сотворение. Столько же поддержка. Каждый ход Стена наносит 1d-1 обжигающего урона на каждые две единицы энергии вложенных в заклинание.Требование: Молния.Предмета) Посох, жезл или украшение. Используется только магами. Стоимость создания: 500 энергии и опал за $500. б) Стена молний может быть создана навсегда за 100-кратную стоимость.</description-loc>
+		<college>Air/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2-6</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M197</reference>
+		<categories>
+			<category>Air</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lightning</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 920px; left: 466px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Spark Storm</name><spell version="2">
+		<name>Spark Storm</name>
+		<name-loc>Искрящий шторм</name-loc>
+		<description-loc>ОбластноеСоздает нормальный штормовой ветер, с опасным дополнением: каждый ход Молния поражает одну случайную цель, находящуюся в области эффекта. Чтобы избежать удара молнии, бросьте кубик против умения мага в заклинании, без какой-либо корректировки. Жертва получает активную защиту, как обычно.На усмотрение Мастера, удары молний могут быть не полностью случайными: высокие цели могут быть подвержены большему риску, чем низкие, также металлическая броня более привлекательна для попадания молнии. Маги, которые используют это заклинание, знают какие на самом деле правила в их мире.Это также заклинание Воздуха.Длительность: 1 минута после достижения полной силы.Стоимость: 2 (для 1d-1 Молнии), 4 (для 2d-2 Молнии) или 6 (для 3d-3 Молнии). Половина на поддержку.Время сотворения: Шторм начинается немедленно, но колдующий должен концентрироваться столько секунд, какой радиус в ярдах необходим до достижения полной силы.Требование: Буря и Молния.ПредметПосох, жезл или украшение. Используется только магами. Стоимость создания: 300, $500 платины, и опал за $500.</description-loc>
+		<college>Air/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2/4/6</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>sec=radius in yards</casting_time>
+		<duration>1 min</duration>
+		<melee_weapon>
+			<damage>1d-1 burn/2 points</damage>
+			<usage>Area</usage>
+			<reach>Special</reach>
+			<parry>No</parry>
+		</melee_weapon>
+		<reference>M197</reference>
+		<categories>
+			<category>Air</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lightning</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">windstorm</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 668px; left: 682px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Spark Cloud</name><spell version="2">
+		<name>Spark Cloud</name>
+		<name-loc>Искрящее облако</name-loc>
+		<description-loc>ОбластноеСоздает облако насыщенное электричеством на уровне земли. Оно не блокирует видимость, но наносит обжигающий вред тому, кто станет в него. Броня защищает с обычным СП(DR) (металлическая броня обеспечивает минимальную защиту как против заклинания Молния).Это также заклинание Воздуха.Длительность: 10 секунд.Стоимость: 1-5; облако наносит 1 единицу повреждений в секунду на каждое очко вложенной энергии.Время сотворения: 1-5 секунд, в зависимости от стоимости. Не поддерживается.Требование: Формировать воздух и Молния.ПредметПосох, жезл или украшение. Используется только магами. Стоимость создания: 150, $500 платины, и опал  за $500.</description-loc>
+		<college>Air/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1-5</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1-5 sec</casting_time>
+		<duration>10 sec</duration>
+		<melee_weapon>
+			<damage>1 point burn/second</damage>
+			<usage>Area</usage>
+			<reach>Special</reach>
+			<parry>No</parry>
+		</melee_weapon>
+		<reference>M196</reference>
+		<categories>
+			<category>Air</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lightning</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shape air</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 752px; left: 574px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Ball of Lightning</name><spell version="2">
+		<name>Ball of Lightning</name>
+		<name-loc>Молниевый шар</name-loc>
+		<description-loc>МетательноеСоздает шар из молний в руках мага. Молниевый шар отличается от обычных метательных заклинаний, однако, он плывет прочь в направлении заданном магом; его нельзя метнуть обычным образом. Шар бесшумно двигается по прямой с максимальной скоростью, равной умению мага деленного на 5 (округляется вниз), независимо от ветра и неметаллических препятствий – шар проплывает прямо через окна, шторы, стены, и т.д. Он сохраняет своё направление и скорость до тех пор, пока заклинатель, концентрируясь, не изменит их. Шар взрывается по мысленной команде мага или при контакте с живым существом или металлическим объектом. Если время заклинания заканчивается, шар мгновенно исчезает без взрыва.Это также заклинание Воздуха.Длительность: 1 минута.Стоимость: Не более вашего удвоенного уровня Магических способностей в секунду, на протяжении трех секунд; половина на поддержку. Шар наносит 1d-1 обжигающего урона за каждые 2 единицы вложенной энергии кому-либо в пределах 1 ярда от взрыва. Тот, кто находится дальше, уменьшает повреждения в три раза на ярд расстояния от взрыва (округляя вниз).Время сотворения: 1-3 секунды; шар растет в руке мага пока заклинание колдуется.Требование: Перемещение и Молния.ПредметПосох, жезл или украшение. Используется только магами. Энергостоимость создания: 600 и опал стоимостью $500.</description-loc>
+		<college>Air/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Missile</spell_class>
+		<casting_cost>2-6</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1-3 sec</casting_time>
+		<duration>1 min</duration>
+		<melee_weapon>
+			<damage>1d-1 burn ex/point</damage>
+			<reach>Special</reach>
+			<parry>No</parry>
+		</melee_weapon>
+		<reference>M197</reference>
+		<categories>
+			<category>Air</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lightning</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 668px; left: 238px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Lightning Armor</name><spell version="2">
+		<name>Lightning Armor</name>
+		<name-loc>Молниевая броня</name-loc>
+		<description-loc>ОбычноеОбъект заключается в оболочку потрескивающих молний, не испытывая какого-либо дискомфорта (объект и все что он носит, получают Сопротивление молнии). Контактным атакам объекта добавляются дополнительные очки обжигающего урона. Любое металлическое оружие, которое попадает по объекту, запускает обратную реакцию, которая наносит 1d-1 обжигающего вреда вдоль оружия. Эти атаки автоматически попадают по рукам, которые держат оружие, независимо от длины оружия. Схвативший получает 3d-3 обжигающего урона, но заклинание перестает действовать.Это также заклинание Воздуха.Длительность: 1 минута.Стоимость: 7 сотворение. 4 поддержка.Требование: Как минимум шесть заклинаний Молний, включая Сопротивление молнии.Предмета) Жезл или украшение. Используется только магами. Стоимость создания: 1.000 энергии, на $300 платины и опал. б) Плащ или доспех; влияет только на пользователя. Когда предмет активирован, плащ выглядит как кусок полосы молний; он защищает от атак со спины и боков, но не с фронта, если не обладает свойствами  легкого плаща (см. Плащ, с 184). Энергостоимость создания: 700 для плаща, 1.000 для доспеха.</description-loc>
+		<college>Air/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>7</casting_cost>
+		<maintenance_cost>4</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M198</reference>
+		<categories>
+			<category>Air</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="contains">lightning</name>
+				<quantity compare="at least">5</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">resist lightning</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 920px; left: 574px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Wind</name><spell version="2">
+		<name>Wind</name>
+		<name-loc>Ветер</name-loc>
+		<description-loc>Специальное; ОбластноеИзменяет текущий открытый поток ветра. Каждое наложение заклинания может сместить направление ветра на 22,5 градуса (например, с З на ЮЗ), или изменить скорость на один уровень по шкале Бофорта (см. вставку). Для достижения комбинации изменения направления и скорости, или более мощного изменения в одном или другом, стоимость увеличивается пропорционально.Заклинание может быть наложено на площадь, заставляя воздушный поток двигаться от земли и на высоте около 300 футов над нею.  Также заклинание может быть наложено на объект, например корабль, который должен быть охвачен во всей его полноте. Область действия перемещается вместе с объектом.Это также заклинание Воздуха.Длительность: 1 час.Стоимость: 1/50 (минимум 1). Столько же на поддержание.Время сотворения: 1 минута.Требование: Буря.ПредметПосох, жезл или украшение. Энергостоимость создания: 300</description-loc>
+		<college>Air/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special/Area</spell_class>
+		<casting_cost>1/50</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M195</reference>
+		<categories>
+			<category>Air</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">windstorm</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 668px; left: 346px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Lightning Stare</name><spell version="2">
+		<name>Lightning Stare</name>
+		<name-loc>Молниевый взор</name-loc>
+		<description-loc>ОбычноеМаг стреляет молниями из глаз, с ЛВ(DX)-4 или, используя навык Природная Атака. Маг должен повернуться лицом к цели, чтобы использовать это заклинание. Обычный способ для этого заклинания, использование лицевых мышц, а не жестов руками; таким образом, Молниевый взор может колдовать «без рук» на любом уровне навыка.Это также заклинание Воздуха.Длительность: 1 секунда.Стоимость: 1-4. Не поддерживается.Наносит 1d обжигающего урона на единицу вложенной энергии. Диапазон – 2 ярда на единицу энергии.Время сотворения: 2 секунды.Требование: Молния, Сопротивление молнии.ПредметУкрашение. Используется только магами.Стоимость создания: 1.000, драгоценностей на $500 и опал за $500.</description-loc>
+		<college>Air/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-4</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 sec</duration>
+		<melee_weapon>
+			<damage>1d burn/point</damage>
+			<usage>Gaze</usage>
+			<reach>2/point</reach>
+			<parry>No</parry>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Gaze</specialization>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M198</reference>
+		<categories>
+			<category>Air</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">resist lightning</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">lightning</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 920px; left: 346px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Shocking Touch</name><spell version="2">
+		<name>Shocking Touch</name>
+		<name-loc>Шоковое касание</name-loc>
+		<description-loc>КасательноеЗаряжает руки мага или жезл электричеством. Колдующий должен ударить объект, чтобы это заклинание сработало; место касания значения не имеет. Объект получает 1d 1 обжигающего урона за единицу вложенной энергии. Броня не защищает. Шоковое касание имеет необычный побочный эффект на электронику и проводящие материалы, как Молния (см. выше).Это также заклинание Воздуха.Стоимость: 1-3Требование: Молния.ПредметПосох, жезл или перчатки. Предмет должен касаться объекта. Энергостоимость создания: 1.500.</description-loc>
+		<college>Air/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Melee</spell_class>
+		<casting_cost>1-3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<melee_weapon>
+			<damage>thr-1 cr  1d 1 burn/point</damage>
+			<usage>Punch</usage>
+			<reach>C</reach>
+			<parry>0</parry>
+			<default>
+				<type>DX</type>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Brawling</name>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Boxing</name>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Karate</name>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M196</reference>
+		<categories>
+			<category>Air</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lightning</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 752px; left: 238px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Body of Lightning</name><spell version="2">
+		<name>Body of Lightning</name>
+		<name-loc>Тело из молний</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Объект становится подвижной фигурой из молний, временно предоставляется ему мета-черта Тело из Молний (см. вставку). Одежда (до 6 фунтов) также превращаются в молнии, но теряют всякие магические силы, которыми могли обладать.На объект заклинания Остановить энергию действует как Клей, а Украсть электроэнергию действует как Украсть СЛ(ST)Это также заклинание Воздуха.Длительность: 1 минута. Заклинание перестает работать, если объект теряет сознание.Стоимость: 12 сотворение. 4 поддержка.Время сотворения: 5 секунд.Требование: Магические способности 2 и Молния.Предмета) Посох, жезл или украшение. Влияет только на пользователя. Серьезным недостатком является то, что как только предмет будет активирован, он падает сквозь руки пользователя – таким образом, заклинание длится всего минуту. Энергостоимость создания: 3.000. б) Посох, жезл или украшение. Влияет только на пользователя.  В отличие от предыдущего предмета, этот предмет пребывает в форме молний вместе с пользователем. Пока он в этой форме, он теряет какие-либо магические силы, которые у него могли быть. Энергостоимость создания: 6.000.</description-loc>
+		<college>Air/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>12</casting_cost>
+		<maintenance_cost>4</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 min</duration>
+		<melee_weapon>
+			<damage>1d burn</damage>
+			<usage>Punch</usage>
+			<reach>C</reach>
+			<parry>0</parry>
+			<default>
+				<type>DX</type>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Boxing</name>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Brawling</name>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Karate</name>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M198</reference>
+		<categories>
+			<category>Air</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lightning</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (weather)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 752px; left: 346px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Lightning Weapon</name><spell version="2">
+		<name>Lightning Weapon</name>
+		<name-loc>Молниевое оружие</name-loc>
+		<description-loc>ОбычноеКонтактное оружие объекта заключается в оболочку из молний, которая заметно шипит и искрится, не повреждая его обладателя. Оружие должно быть, по крайней мере, частично металлическим; оружие, сделанное из дерева и/или камня, не может удерживать заклинание. Оружие наносит дополнительные 2 очка повреждений после того, как проникло сквозь броню и нанесло рассчитанный урон. При попадании по металлическим доспехам, оружие наносит как минимум 1 очко повреждений.Это также заклинание Воздуха.Длительность: 1 минута.Стоимость: 4 сотворение. 1 поддержка.Время сотворение: 2 секунды.Требование: Магические способности 2 и Молния.ПредметОружие, которое будет заключено в оболочку из молний, не стоит очков энергии. Энергостоимость создания: 750, и как минимум $300 опаловых украшениях.</description-loc>
+		<college>Air/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M198</reference>
+		<notes> 2 burn damage with melee weapon</notes>
+		<categories>
+			<category>Air</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (weather)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">lightning</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 824px; left: 346px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Lightning Missiles</name><spell version="2">
+		<name>Lightning Missiles</name>
+		<name-loc>Молниевые снаряды</name-loc>
+		<description-loc>ОбычноеТакже как и Молниевое оружие, но твориться на дистанционное оружие. Оружие само по себе окружается электрическим сиянием. Любой снаряд которым стреляют из этого оружия, заряжается электричеством и наносит дополнительные 2 очка повреждений так же как и Молниевое оружие. Деревянные части снарядов, обращаются в пепел, после того как попадают в цель или же по истечении 10 секунд, что первее.Это также заклинание Воздуха.Длительность: 1 минута.Стоимость: 4 сотворение. 2 поддержка. Стоимость удваивается, если выстреливаемые снаряды не металлические.Время сотворения: 3 секунды.Требование: Молниевое оружие.ПредметДистанционное оружие, из которого будут стрелять заряженными снарядами, не стоит очков энергии. Энергостоимость создания: 1.000, и как минимум на $400 опаловых украшениях.</description-loc>
+		<college>Air/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M198</reference>
+		<notes> 2 points burn damage to missiles fired with weapon</notes>
+		<categories>
+			<category>Air</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lightning weapon</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 920px; left: 10px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Cloud Walking</name><spell version="2">
+		<name>Cloud Walking</name>
+		<name-loc>Ходьба по облакам</name-loc>
+		<description-loc>ОбычноеПозволяет ходить по облакам (включая туман), как если бы они были твердыми. Если объект по какой-либо причине (например, ранение) падает, заклинание нарушено! Если заклинание немедленно наложено еще раз, объект падает только 1 секунду (примерно 5 ярдов); если он все еще в облаке, ему придется «прокапывать» свой путь наружу, что займет около 5 секунд. Если он уже провалился сквозь облако - у него проблемы! Это также заклинание Погоды.Длительность: 1 час.Стоимость: 3 сотворение. 2 поддержание.Требования: Ходить по воздуху и Ходить по воде.ПредметПосох, палочка, украшение или обувь. Украшение и обувь действуют только на носителя. Энергостоимость создания: 500.</description-loc>
+		<college>Movement/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M148</reference>
+		<categories>
+			<category>Movement</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">walk on air</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">walk on water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 920px; left: 130px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Cloud Vaulting</name><spell version="2" very_hard="yes">
+		<name>Cloud Vaulting</name>
+		<name-loc>Прыжки по облакам</name-loc>
+		<description-loc>ОбычноеПреодолевать огромные расстояния несколькими движениями. Объект подбрасывается в воздух и прыгает к своему назначению, используя облака как батуты. Прыжки по облакам можно творить только под открытым небом.Каждый раз при сотворении объект перемещается на не более чем 100 миль, плюс 100 миль за каждую единицу умения выше ЛВ(DX) в Акробатике. Если в небе нет облаков (что часто случается в пустынях), объект не может переместиться более чем на 100 миль. Бури аналогичным образом перекроют путь объекта. Каждые 100 миль требуется бросок Акробатики, со штрафом, равным уровню нагрузки объекта. При провале, объект падает 3dx3 ярдов (B431), и приземляется в случайной точке на запланированном пути — Замедлить падение спасет объект от вреда, но заклинание Прыжков по облакам все равно нарушено.Это заклинание вызывает головокружение; как только объект прибудет на место назначения (или провалит бросок Акробатики), объект будет физически оглушен, если не проведет бросок Чувства тела на -1 за каждые 100 миль, которые он преодолел.Это также заклинание Погоды.Длительность: 1 секунда за 100 миль.Стоимость: 7 сотворение. Не поддерживается.Требования: Магичность(Magery) 2, Прыжок и Ходить по воздуху.Предмет(а) Обувь. На предмете должен быть узор из облаков. Энергостоимость создания: 4.000. (б) Украшение, палочка, или посох. Используется только магами. Энергостоимость создания: 3.000.</description-loc>
+		<college>Movement/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>7</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 sec/100 miles</duration>
+		<reference>M148</reference>
+		<categories>
+			<category>Movement</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">walk on air</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">jump</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (weather)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 308px; left: 574px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Shape Water</name><spell version="2">
+		<name>Shape Water</name>
+		<name-loc>Формировать воду</name-loc>
+		<description-loc>ОбычноеПридаёт воде (включая лёд или пар) любую форму, и даже двигает её. После того, как форма придана, вода удерживает её без дальнейшего сосредоточения, пока заклинание не закончится. Вода, которую двигают этим заклинанием, передвигается с Движением 3.Полезная форма – стена воды, как преграда огненным атакам – 20 галлонов создают стену в 2 ярда высотой и 1 ярд шириной. Она остановит Огненный шар и обычный огонь.Длительность: 1 минута.Стоимость: 1 за 20 сформированных галлонов. Столько же на поддержку.Время сотворения: 2 секунды.Требование: Создать воду.ПредметПосох, жезл или украшение. Энергостоимость создания: 400.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1#</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M185</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block>

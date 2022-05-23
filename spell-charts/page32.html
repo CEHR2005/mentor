@@ -1,0 +1,930 @@
+<block style="top: 108px; left: 322px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Sound</name><name-loc>Звук</name-loc><spell version="2">
+		<name>Sound</name>
+		<name-loc>Звук</name-loc>
+		<description-loc>ОбычноеПроизводит какой-либо бессмысленно звук по желанию заклинателя – гул насекомых, далекий лепет голосов, звук  падения, или что-то подобное. Заклинание не может произвести громкий шум. После сотворения заклинания Концентрация не требуется.Длительность и стоимость: 1 для создания 5-секундного звука; 2 для создания звука, длящегося минуту; 1 за поддержание ещё минуту.ПредметЛюбой. Шумит постоянно (хотя для его включения и выключения часто используют Связь) Энергостоимость создания: 50.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>1/ min</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Varies</duration>
+		<reference>M171</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+	</spell></block><block style="top: 192px; left: 82px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Voices</name><name-loc>Голоса</name-loc><spell version="2">
+		<name>Voices</name>
+		<name-loc>Голоса</name-loc>
+		<description-loc>ОбычноеСоздаёт осмысленный звук нормальной громкости – голоса, музыку ит.д. от заклинателя требуется постоянная концентрация.Длительность: 1 минута.Стоимость: 3 на сотворение. 2 на поддержание.Требования: Звук.ПредметЛюбой. Предмет повторяет одно высказывание снова и снова (если только не подвержен заклинанию Связь). Энергостоимость создания: 20 за слово.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M172</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sound</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 192px; left: 322px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Silence</name><name-loc>Тишина</name-loc><spell version="2">
+		<name>Silence</name>
+		<name-loc>Тишина</name-loc>
+		<description-loc>ОбластноеСоздаёт область тишины. Ни один, находящийся в этой области, ничего не слышит, и ничто, происходящее в области, не производит звуков. Заклинание действует на область, а не на находящихся в ней; любой, покинувший область, снова сможет говорить. В области тишины невозможно сотворить заклинание, требующее произнесения слов или звуков!Длительность: 1 минута.Базовая стоимость: 2 сотворение. 1 поддержание.Требования: Звук.ПредметОбласть можно «заглушить» навсегда; заклинание накладывается на пол или почву, но оно рассеивается, если поверхность, на которую наложено заклинание, разорвана. В качестве переносной «заглушённой» зоны может выступать большой ковёр. Энергостоимость создания: 80 за каждый ярд радиуса, но для всей области надо сотворить лишь одно заклинание.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M171</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sound</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 192px; left: 466px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Thunderclap</name><name-loc>Гром</name-loc><spell version="2">
+		<name>Thunderclap</name>
+		<name-loc>Гром</name-loc>
+		<description-loc>ОбычноеРаздаётся один громкий звук, вроде взрыва или раската грома. «Объектом» является точка, которую заклинатель выбрал центром заклинания. На открытой местности каждый в радиусе 3 ярдов должен сделать бросок против ЗД(HT)  или будет оглушён, оглушённый может каждый час делать бросок против ЗД(HT), чтобы прийти в себя. В закрытом помещении (меньше 10 ярдов хоть в одном измерении) увеличьте радиус до 6 ярдов! Заклинатель делает бросок против ЗД(HT) 2.Стоимость: 2.Требования: Звук.ПредметПерчатки, посох, палочка или украшение. Энергостоимость создания: 300.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M171</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sound</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 132px; left: 10px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Sense Life</name><name-loc>Почуять жизнь</name-loc><spell version="2">
+		<name>Sense Life</name>
+		<name-loc>Почуять жизнь</name-loc>
+		<description-loc>Информационное; ОбластноеСообщает заклинателю, есть ли жизнь в данном месте, и (при хорошем броске) общее представление о типе этой жизни. Заклинатель также может точно указать, какого рода жизнь он ищет: растения, эльфов, рыжих девок или конкретную личность, с которой он знаком.Базовая стоимость: 1/2 (минимум 1).ПредметПосох, палочка или украшение. Энергостоимость создания: 80.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info/Area</spell_class>
+		<casting_cost>1/2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M45</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+	</spell></block><block style="top: 336px; left: 142px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>History</name><name-loc>История</name-loc><spell version="2">
+		<name>History</name>
+		<name-loc>История</name-loc>
+		<description-loc>ИнформацияБудучи сотворённым на любой неодушевлённых предмет (или на его часть радиусом в 1 ярд), позволяет заклинателю определить недавнее прошлое этого предмета, характер пользователя, и так далее – но никаких имён!Стоимость: 3 за вчерашнюю историю; 5 за неделю; 8 за месяц; 10 за год.Время сотворения: 1 секунда за единицу энергии.Требование: Слежка.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<casting_time>1 sec/pt</casting_time>
+		<duration>Instant</duration>
+		<reference>M106</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">trace</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 252px; left: 526px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Shape Air</name><name-loc>Формирование воздуха</name-loc><spell version="2">
+		<name>Shape Air</name>
+		<name-loc>Формирование воздуха</name-loc>
+		<description-loc>ОбластноеПозволяет заклинателю создать движения воздуха в небольшом объеме. Ветер начинает дуть из выбранной клетки (штрафы за расстояние до нее), потоком шириной в 1 клетку, на расстояние 5 ярдов за единицу вложенной энергии, после чего исчезает. Способно сдувать (см. Сбивание, B378) – каждую секунду бросается 1d за каждые две единицы энергии, вложенные в заклинание (выброшенный результат считается  вредом в целях сдувания, но не наносит никакого реального вреда).Длительность: 1 минута.Стоимость: 1-10. 1 даёт мягкий бриз, 4 ветер, 6 шторм, 8 и более сильный порыв. Столько же поддержку. Требования: Создать воздух.ПредметПосох, палочка, украшение. Энергостоимость создания: 200.</description-loc>
+		<college>Air</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-10</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M24</reference>
+		<categories>
+			<category>Air</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create air</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 840px; left: 598px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Invisibility</name><name-loc>Невидимость</name-loc><spell version="2">
+		<name>Invisibility</name>
+		<name-loc>Невидимость</name-loc>
+		<description-loc>ОбычноеЦель невозможно увидеть, она не появляется в отражениях или фотографиях. Однако она по-прежнему издает звуки и может быть выслежена по запаху или по следам. Что-либо поднятое субъектом, становится невидимым, если он не пожелает оставить этот предмет видимым. Невидимку можно обнаружить с помощью Видеть невидимое, но не с помощью Инфразрения. У невидимых персонажей огромное преимущество в бою (B394).Длительность: 1 минута.Стоимость: 5 на сотворение, 3 на поддержание.Время сотворения: 3 секунды.Требования: Шесть Заклинаний света, включая Размыть.Предмет(a) Украшение, палочка или посох; действует только на владельца. Энергостоимость создания: 1.200. (б) предмет можно сделать невидимым навсегда по 500 энергии за клетку размера или 50 фунтов веса, смотря, что больше.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M114</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="is">light</college>
+				<quantity compare="at least">6</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">blur</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 732px; left: 382px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Apportation</name><name-loc>Перемещение</name-loc><spell version="2">
+		<name>Apportation</name>
+		<name-loc>Перемещение</name-loc>
+		<description-loc>Обычное; сопротивление по Воле(Will)Позволяет двигать материальные объекты, не прикасаясь к ним. Это заклинание левитирует объект с Движением 1 — недостаточно быстро, чтобы нанести вред. Живые объекты могут сопротивляться Воле(Will)й.Длительность: 1 минута.Энергостоимость: зависит от веса объекта. Столько же поддержание.Вес	Энергостоимостьменее 1 фунта	1до 10 фунтов	2до 50 фунтов	3до 200 фунтов	4каждые дополнительные 100 фунтов	 4Требования: Магичность(Magery) 1.ПредметПосох или палочка. Используется только магами; предмет должен прикасаться или быть направленным на объект. Энергостоимость создания: 900.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M142</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 708px; left: 130px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Seeker</name><name-loc>Искатель</name-loc><spell version="2">
+		<name>Seeker</name>
+		<name-loc>Искатель</name-loc>
+		<description-loc>ИнформационноеНастраивает заклинателя на индивида или искусственный предмет, которого он ищет. Успех даёт заклинателю видение местонахождения предмета – или ведёт его к нему, если тот в пределах мили. Чтобы искать личность, заклинатель должен либо знать его имя или знать его достаточно хорошо, чтобы вообразить его.Например, нельзя использовать это заклинание, чтобы раскрыть убийство, ища «убийцу» если вы не знаете кто это – но если знаете, то Искатель его найдёт.Модификаторы: Модификаторы больших расстояний (M14). Что-то связанное с искомым (например, часть одежды личности) должно быть доступно во время сотворения; если нет, бросок делается с -5. Премия  1 если заклинатель держал или ещё как-то знаком с исходным предметом.Стоимость: 3. Одна попытка в неделю.Требования: Магичность(Magery) 1, ИН(IQ) 12 или выше, и по крайней мере два заклинания «Искать ...». ПредметРаздвоенная палка (дерево, кость или слоновая кость) или игла компаса (вырезная из слоновой кости), которая будет указывать на один конкретный объект, выбранный при создании предмета. Что-то, относящееся к объекту должно быть использовано при создании предметам, и включено в него. Энергостоимость создания: 500.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M105</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<attribute_prereq has="yes" which="iq" compare="at least">12</attribute_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (knowledge)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="contains">seek</name>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 336px; left: 22px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Emotion Control</name><name-loc>Контроль эмоций</name-loc><spell version="2">
+		<name>Emotion Control</name>
+		<name-loc>Контроль эмоций</name-loc>
+		<description-loc>Областное; Сопротивление по Воле(Will)Внушает объекту(-ам) одну эмоцию по выбору заклинателя. Пока Мастер не посчитает нужным, это не влечёт никакого изменения характеристик, но должно быть отыграно! Некоторые простые эмоции: любовь, ненависть, злость, жадность, похоть, ревность, голод, страх, печаль, радость, умиротворение, беспокойство, депрессия, патриотизм, скука.Длительность: 1 час.Базовая стоимость: 2. Не может быть поддержано; надо творить заклинание заново.Требования: Верность или Ментальное оглушение.ПредметЛюбой предмет. Всегда включён; надевший чувствует эмоцию, заключённую в предмете при создании. Энергостоимость создания: 300.Посох или палочка. Используется только магами; надо коснуться объекта. Энергостоимость создания: 1,000 за предмет, внушающий одну эмоцию, 2,200 за предмет, внушающий любую эмоцию на выбор.</description-loc>
+		<college>Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M137</reference>
+		<categories>
+			<category>Mind Control</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">mental stun</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">loyalty</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 492px; left: 142px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Dancing Object</name><name-loc>Танцующий объект</name-loc><spell version="2">
+		<name>Dancing Object</name>
+		<name-loc>Танцующий объект</name-loc>
+		<description-loc>ОбычноеОживляет один предмет для повторяющейся работы. Он может совершать примерно те же задания, что и человек с СЛ(ST) 15: ведро может носить воду из ручья в бочку, метла может подметать здание снова и снова, арбалет может самостоятельно взводиться и т.п. Задачи объекта не могут изменяться или зависеть от каких-либо событий... он просто бездумно продолжает свою работу. Умное использование Связи позволяет Танцующему объекту эффективно отвечать на ситуации, но это требует тщательного продумывания.Длительность: 1 час.Стоимость: 4 сотворение. 2 поддержка.Время сотворения: 10 секунд.Требования: Магичность(Magery) 2 и Перемещение.ПредметМожет быть наложено на любой предмет навсегда . Стоимость создания: 400 энергии и на $500 магических ингредиентов. Объект необходимо «проводить» по его программе 1 раз в день пока действует чара.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M144</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 672px; left: 322px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Far-Tasting</name><name-loc>Удаленная дегустация</name-loc><spell version="2">
+		<name>Far-Tasting</name>
+		<name-loc>Удаленная дегустация</name-loc>
+		<description-loc>ОбычныйСубъект может ощутить вкус и запах любого объекта, который он может видеть (даже на большом расстоянии) или ощутить вкус и запах сквозь твердые объекты не больше двух ярдов толщиной. Все броски Вкус/Запах автоматически успешны, хотя любое вещество, не определяемое на вкус или по запаху (например, угарный газ без вкуса и аромата), останется необнаруженным. Это может быть особенно полезным для вынюхивания ядов, так как их эффекты не передаются через запахи.Так же это заклинание Школы знаний.Длительность: 1 минута.Стоимость: 3 сотворение, 1 поддержание.Время сотворения: 3 секунды.Требования: Магичность(Magery) 1 и  Искать пищу или Искать воздух; отсутствие  недостатка Нет обоняния/вкуса.Предмет Одежда или украшение, влияет только на носителя. Энергостоимость создания: 200.</description-loc>
+		<college>Food/Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M77</reference>
+		<categories>
+			<category>Food</category>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<advantage_prereq has="no">
+				<name compare="contains">no taste/smell</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">seek food</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">seek air</name>
+				</spell_prereq>
+			</prereq_list>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (food)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 276px; left: 10px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Delayed Message</name><name-loc>Отложенное сообщение</name-loc><spell version="2">
+		<name>Delayed Message</name>
+		<name-loc>Отложенное сообщение</name-loc>
+		<description-loc>ОбластноеСоздаёт устное сообщение, произнесение которого может быть отложено до вхождения в зону действия заклинания определённого человека. Получатель, независимо от шума, слышит сообщение хорошо, остальные сообщение не слышат. Если в области сотворить заклинание Обнаружить магию, оно покажет, что в области висит отложенное сообщение, но больше информации можно получит только при критическом успехе. При критическом успехе становится известным (случайно выбирается из): отправитель, получатель или слова (но не скрытый смысл) сообщения.Это заклинание не считается «поддерживаемым» - после сотворения заклинатель может забыть о нём.Длительность: пока не прибудет получатель.Стоимость: 3 за простое предложение – одна мысль. Не поддерживается.Время сотворения: 4 секунды.Требования: Магичность(Magery) 1, Голоса и Почуять жизнь.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3#</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>4 sec</casting_time>
+		<duration>Indef #</duration>
+		<reference>M173</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sense life</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">voices</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (sound)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 276px; left: 142px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Imitate Voice</name><name-loc>Имитация голоса</name-loc><spell version="2">
+		<name>Imitate Voice</name>
+		<name-loc>Имитация голоса</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Изменяет голос объекта, точно имитируя голос известного заклинателю существа (в том числе интонацию и акцент). Если знакомый голос воссоздаётся из памяти, на умение накладывается штраф -2; если заклинатель слышал голос всего несколько раз или давно, штраф -3 и больше (в этом случае помогут Отличная или Фотографическая память). Для того, чтобы определить обмануло ли заклинание кого-то хорошо знающего подделываемый голос, при первой встрече проведите быстрое состязание заклинания против ИН(IQ) слушающего.Модификаторы:  2 хорошо знакомым с имитируемым голосом; -2 слушателю, не ожидающему подвоха или не прислушивающемуся.Длительность: 1 минута.Стоимость: 3 на сотворение. 1 на поддержание.Требования: Голоса.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M172</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">voices</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 276px; left: 250px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Garble</name><name-loc>Искажение</name-loc><spell version="2">
+		<name>Garble</name>
+		<name-loc>Искажение</name-loc>
+		<description-loc>Обычное; Сопротивление по Воле(Will)Объект (живое существо) может произносить лишь бессмысленные звуки; что бы он ни сказал, всё звучит искажённо. Это заклинание может сделать вражеского волшебника беспомощным!Длительность: 1 минута.Стоимость: 4 на сотворение. 2 на поддержание.Требования: Голоса.Предмет(а) Одежда или украшение; действует лишь на надевшего. Всегда включено. Энергостоимость создания: 400. (b) Посох или палочка. Применяется лишь магами; надо коснуться объекта. Энергостоимость создания:1,000.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M172</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">voices</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 276px; left: 394px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Hush</name><name-loc>Молчание</name-loc><spell version="2">
+		<name>Hush</name>
+		<name-loc>Молчание</name-loc>
+		<description-loc>Обычное; Сопротивление по Воле(Will)Объект (живое существо или предмет) не может издать ни звука, ни случайно, ни специально. Прибавьте при броске  3 к умению объекта Скрытность, или отнимите 5 от броска Слуха для присушивающегося. Это заклинание может заглушить вражеского волшебника в бою!Длительность: 10 секунд, если объект сопротивляется, иначе 1 минута.Стоимость: 2 на сотворение. 1 на поддержание.Время сотворения: 2 секунды.Требования: Тишина.ПредметОдежда или украшение; Действует лишь на надевшего. Энергостоимость создания: 200.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>10 sec#</duration>
+		<reference>M172</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">silence</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 348px; left: 394px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Mage-Stealth</name><name-loc>Волшебная бесшумность</name-loc><spell version="2">
+		<name>Mage-Stealth</name>
+		<name-loc>Волшебная бесшумность</name-loc>
+		<description-loc>ОбычноеОбъект может бесшумно двигаться и дышать, но при надобности может говорить. Другие преимущества как при Молчании.Длительность:1 минута.Стоимость: 3 на сотворение. 2 на поддержание.Время сотворения: 3 секунды.Требования: Молчание.ПредметОдежда или украшение; Действует лишь на надевшего. Энергостоимость создания: 500.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M172</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">hush</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 336px; left: 526px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Concussion</name><name-loc>Сотрясение</name-loc><spell version="2">
+		<name>Concussion</name>
+		<name-loc>Сотрясение</name-loc>
+		<description-loc>МетательноеМаг создает в руке шар плотного воздуха. При попадании в цель шар громко взрывается; Все в радиусе 10 ярдов должны сделать бросок ЗД(HT)-3, или будут оглушены. Оглушенные могут каждую секунду делать бросок ЗД(HT)-3 для восстановления. Защищенный слух дает  5 к этому броску. Сотрясение имеет 1/2Д 20, Max 40, Точ 1; на попадания бросок умения Природная атаки.Также относится к заклинаниям Звука.Стоимость: любая, вплоть до удвоенного уровня Магичности за секунду, в течение трех секунд. За каждые 2 единцы энергии, вложенные в заклинание, снаряд наносит 1d тупого вреда. Полные правила по взрывам см. Взрывы, B414.Время сотворения: от 1 до 3 секунд.Требования: Формирование воздуха и Гром (M171).ПредметПосох или палочка – снаряд вылетает с конца. Используется только магами. Стоимость создания: 1000 энергии и $400 за оникс.</description-loc>
+		<college>Air/Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Missile</spell_class>
+		<casting_cost>2-2xMagery</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1-3 sec</casting_time>
+		<duration>Instant</duration>
+		<ranged_weapon>
+			<damage>1d cr ex/2 points</damage>
+			<accuracy>1</accuracy>
+			<range>20/40</range>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Projectile</specialization>
+				<modifier>0</modifier>
+			</default>
+		</ranged_weapon>
+		<reference>M26</reference>
+		<categories>
+			<category>Air</category>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape air</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">thunderclap</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 360px; left: 250px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Converse</name><name-loc>Разговор</name-loc><spell version="2">
+		<name>Converse</name>
+		<name-loc>Разговор</name-loc>
+		<description-loc>ОбычноеПозволяет заклинателю и объекту заклинания спокойно говорить, не опасаясь подслушивания, даже в шумном окружении (например, на вечеринке). Вне зависимости от окружающего шума собеседники будут слышать каждое слово друг друга. Другие существа в пределах слышимости будут слышать лишь бессмысленный гул разговора. Разговор сопротивляется заклинаниям, блокирующим звук, например Тишине и Шуму.Длительность: пока поддерживается зрительный контакт.Стоимость: 2 .Требования: Магичность(Magery) 1, Искажение и Тишина.ПредметЛюбой. Используется лишь магами. Энергостоимость создания:150.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Indef #</duration>
+		<reference>M173</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (sound)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">silence</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">garble</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 420px; left: 142px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Echoes of the Past</name><name-loc>Эхо прошлого</name-loc><spell version="2">
+		<name>Echoes of the Past</name>
+		<name-loc>Эхо прошлого</name-loc>
+		<description-loc>СтандартноеБудучи сотворено на стену или какой-то предмет, это заклинание «проигрывает» звуки, которые оно могло «слышать» в прошлом. Заклинатель указывает момент, с которого начинать слушать («послушаем, что  было сказано в этой комнате год назад…»). Модификаторы времени (M81) действуют. Каждый раз, когда заклинание твориться для того же периода времени, есть дополнительный штраф -1 к умению. Критический провал стирает «память» предмета о том периоде времени. Это также заклинание Звука.Длительность: 1 минута.Стоимость: 2 сотворение. 2 поддержка. Величина модификатора Времени добавляется к цене, так что если заклинание стоит 3 (3 0) на момент времени «в течение минуты», то оно будет стоить 8 (3 5) на момент времени «от 4 до 40 дней».Время сотворения: 10 секунд.Требования: Магичность(Magery) 2, История и Голоса.ПредметПосох, жезл или украшение. Используется только магами. Энергостоимость создания: 500.ПрорицаниеВ отличие от более бросающихся в глаза видов магии, которые имеют прямые и измеримые эффекты на игровой мир (взрывают драконов, лечат героев, создают каменные мосты, и т.д.), предсказания и другие Информационные заклинания имеют дело только со знаниями игровых персонажей, и поэтому требуют особого рассмотрения.Когда у PC есть доступ к информации в таких широких пределах, может возникнуть множество проблем. Иногда, у Мастера нет ответа на вопросы игроков; Возможно, он не ожидал, что континент за океаном будет иметь значение в эту сессию. В то же время, особенно проницательный вопрос заданный в правильный момент может разрушить планы Мастера на приключение. Особенно подвержены разрушению предсказаниями приключения о загадках и тайнах.Вряд ли справедливо изворачиваться или намеренно врать игрокам, которые потратили ценные очки персонажа, чтобы играть предсказателями. К счастью, есть альтернативы. Символические видения – это вполне подходящий ответ на любой вопрос, кроме тех, на которые можно ответить только «да» или «нет», и часто более интересны, чем прямой ответ. Штрафы за непрерывные вопросы на одну и ту же тему могут, по крайней мере, дать Мастеру время, чтобы подготовиться к вопросам игровых персонажей.Мастер должен всегда делать бросок на успешность прорицания, ему не следует стесняться быть двусмысленным, когда требуется; предсказатели никогда не должны быть до конца уверены, что их видения полны и надёжны.Существование предсказаний может сильно повлиять на игровой мир. Большинство людей захотят проконсультироваться с прорицателем, прежде чем принимать важные решения – браки, преступления, войны, и тому подобное. Судебные процедуры будут в корне изменены. Более того, закон может строго регулировать использование прорицаний.Не каждый вид прорицания будет существовать в каждом игровом мире. Мастер должен выбрать те методы, которые, на его взгляд, подходят к его сеттингу.</description-loc>
+		<college>Knowledge/Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2   time modifier</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M107</reference>
+		<categories>
+			<category>Knowledge</category>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (knowledge)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">voices</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">history</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 420px; left: 22px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Silver Tongue</name><name-loc>Серебряный язык</name-loc><spell version="2">
+		<name>Silver Tongue</name>
+		<name-loc>Серебряный язык</name-loc>
+		<description-loc>ОбычноеДаёт объекту преимущество Голос (B97). На существ уже имеющих это преимущество заклинание не действует.Длительность: 1 минута.Стоимость: 3 на сотворение. 2 на поддержание.Требования: Голоса и Контроль эмоций.Предмет(а) Посох или палочка. Используется только магами; надо коснуться объекта. Энергостоимость создания: 200. (б) Украшение; на нём должно быть изображение соловья. Всегда включено, действует лишь на надевшего. Энергостоимость создания: 600.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M174</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">emotion control</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">voices</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 576px; left: 82px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Scribe</name><name-loc>Писарь</name-loc><spell version="2">
+		<name>Scribe</name>
+		<name-loc>Писарь</name-loc>
+		<description-loc>ОбычноеНа время действия заклинания оживляет ручку, которая будет записывать всё, что диктует ей заклинатель. Если величина провала при чтении заклинания 1 или 2, ручка будет писать, но с грамматическими ошибками! Поэтому заклинатель должен проверять свою работу. На высоких ТУ это заклинание можно применять к пишущим машинкам, компьютерным клавиатурам и прочим устройствам для письма.Длительность: 1 минута.Стоимость: 3 на сотворение. 1 на поддержание.Требования: Голоса, Танцующий объект и знание письма хотя бы для одного языка на уровне не ниже чем «с акцентом».ПредметРучку можно оживить навсегда за 250 очков. За дополнительные 100 очков энергии (можно и отдельным зачарованием)  заклинатель может настроить ручку на чей-то ещё голос.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M174</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<advantage_prereq has="yes">
+				<name compare="is">accented language</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">dancing object</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">voices</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 648px; left: 82px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Musical Scribe</name><name-loc>Нотный писарь</name-loc><spell version="2">
+		<name>Musical Scribe</name>
+		<name-loc>Нотный писарь</name-loc>
+		<description-loc>ОбычноеНа время действия заклинания оживляет ручку, которая будет записывать музыкальной грамотой любую мелодию, которую заклинатель будет бурчать, петь или играть на музыкальном инструменте. Заклинатель может настроить ручку не на себя, а на другого человек (или на радио ит.д.). Ручка записывает только музыку; если надо записать текст, это может сделать вторая ручка, под действием заклинания Писарь!Длительность: 1 минута.Стоимость: 3 на сотворение. 1 на поддержание. Если бумага не разлинована для записи нот. Увеличьте стоимость сотворения и поддержания на 1, так как ручке приходится кроме записи нот линовать бумагу.Требования: Писарь.ПредметРучку можно оживить навсегда за 350 очков. Заклинатель может по желанию «направлять» её на тот или иной источник музыки.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3#</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M174</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">scribe</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 432px; left: 322px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Wall of Silence</name><name-loc>Стена тишины</name-loc><spell version="2">
+		<name>Wall of Silence</name>
+		<name-loc>Стена тишины</name-loc>
+		<description-loc>ОбластноеОкружает заколдовываемую область стеной, не пропускающей звуки. Находящиеся внутри не могут ни  слышать, ни докричаться до оставшихся снаружи. Сотворение заклинаний, требующих произнесения слов не нарушается.Длительность: 1 минута.Базовая стоимость: 2 на сотворение. 1 не поддержание.Требования: Тишина.ПредметКак для Тишины, но стоимость – 100 за каждый ярд радиуса.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M172</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">silence</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 504px; left: 322px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Noise</name><name-loc>Шум</name-loc><spell version="2">
+		<name>Noise</name>
+		<name-loc>Шум</name-loc>
+		<description-loc>ОбластноеНаполняет область бессмысленным, длительным и очень громким шумом. Никто, находящийся в этой области не может разговаривать или слышать другие звуки. Применение любого умения, основанного на ИН(IQ), или рассеяно [distracted](например заклинания), или получает штраф -3 (или и то и другое! по желанию Мастера). Область, на которую наложено заклинание, окружает Стена тишины. Заклинание взаимно резистивно с заклинанием Тишина.Длительность: 5 секунд.Стоимость: 4 на сотворение. 2 на поддержание.Требования: Стена тишины.ПредметОбласть можно навсегда сделать шумной; заклинание накладывается на пол или почву, но оно рассеивается, если поверхность, на которую наложено заклинание, разорвана. В качестве переносной «шумной» зоны может выступать большой ковёр. Энергостоимость создания: 100 за каждый ярд радиуса, но для всей области надо сотворить лишь одно заклинание.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>5 sec</duration>
+		<reference>M173</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">wall of silence</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 588px; left: 250px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Great Voice</name><name-loc>Великий голос</name-loc><spell version="2">
+		<name>Great Voice</name>
+		<name-loc>Великий голос</name-loc>
+		<description-loc>ОбычноеОбъекта могут слышать чётко и ясно все, кого он видит, даже на большом расстоянии. Объект может выбрать тех, кто может его слышать перед тем, как начать говорить (конечно, те, кто находятся в пределах зоны обычной слышимости, будут слышать его в любом случае). Заметьте, что спрятавшись за камень, слышимость не испортить. Это заклинание широко применяется капитанами кораблей, военными командирами и ораторами. Если голос изначально громки, под действием заклинания он может стать раздражающим. Но не оглушит  и не причинит вреда.Длительность:1 минута.Стоимость: 3 на сотворение. 1 на поддержание.Время сотворения: 2 секунды.Требования: Голоса и ГромПредметПосох, палочка, шлем или украшение; действует лишь на надевшего. Энергостоимость создания: 200.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M173</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">thunderclap</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">voices</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 612px; left: 550px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Alter Voice</name><name-loc>Изменить голос</name-loc><spell version="2">
+		<name>Alter Voice</name>
+		<name-loc>Изменить голос</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Изменяет голос объекта по желанию заклинателя. Для копирования голоса нужен «образец» – по памяти знакомый голос копируется с -2, незнакомый -3 и хуже, если заклинатель слышал его пару раз или давно. Идеальная память (B51)  хорошо помогает в этом. Голос может быть изменён на более приятный или грубый, давая модификаторы от  2 до -2 к броскам реакции и умениям, связанным с общением на время действия заклинания. Заклинание не «дарует» голос немым. Если заклинание улучшает голос объекта навсегда (давая преимущество Голос), то Мастер может потребовать заплатить соответствующее количество очков персонажа!Относится также к заклинаниям Звука.Длительность: 1 час.Стоимость: 2 создание. 2 поддержание. Изменение можно сделать постоянным, как чары, если вложить 200 энергии.Время сотворения: 1 минута.Требования:  четыре заклинания школы Контроля тела и четыре заклинания школы Звука.ПредметЛюбой, но, обычно, это украшение. Даёт владельцу новый голос, который был заложен во время создания. Энергостоимость создания: 1.000.</description-loc>
+		<college>Body Control/Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M41</reference>
+		<categories>
+			<category>Body Control</category>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="contains">body</name>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">sound</college>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 792px; left: 130px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Message</name><name-loc>Сообщение</name-loc><spell version="2">
+		<name>Message</name>
+		<name-loc>Сообщение</name-loc>
+		<description-loc>Обычное; Сопротивление по заклинаниям, блокирующим звукОтсылает объекту звуковое послание. Используйте модификаторы Больших расстояний (M14). Если заклинатель не знает объект, он получает штраф -2. Если заклинатель не знает местоположение объекта, он получает штраф -5 (исправляется успешным применением заклинания Искатель). Эти штрафы складываются. Успешный применение заклинания Слежка даёт бонус  5. Объект слышит сообщение чётко и ясно не зависимо от звуков, его окружающих, но сообщение слышит только он. Тишина, Стена тишины и Шум будут сопротивляться входящему сообщению. Это так же заклинание школы Общения и понимания.Длительность: Сообщение идёт со скоростью 50миль/час. Если удвоить стоимость удвоится и скорость.Стоимость: 1 за 15 секунд сообщения.Время сотворения: Столько же, сколько заклинатель говорит сообщение.Требования: Великий голос и Искатель.ПредметРаковина, в которую надо говорить, концентрируясь на виде объекта и его окружения. Энергостоимость создания: 1,000.</description-loc>
+		<college>Communication/Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/15 sec</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>Varies</casting_time>
+		<duration>Varies</duration>
+		<reference>M174</reference>
+		<categories>
+			<category>Communication</category>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">seeker</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">great voice</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 816px; left: 322px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Wizard Mouth</name><name-loc>Волшебный рот</name-loc><spell version="2">
+		<name>Wizard Mouth</name>
+		<name-loc>Волшебный рот</name-loc>
+		<description-loc>СтандартноеСоздаёт копию – примерно 4 дюйма шириной – физического рта и губ заклинателя, через который он может говорить и ощущать вкус. Рот летает по воздуху с Движением 10, в ход заклинателя, хотя он не может этого делать, не врезаясь в препятствия, если его не сопровождает Волшебный глаз или ухо!Концентрация требуется, чтобы двигать Рот, но не чтобы говорить или пробовать сквозь него. Любые улучшающие голос или вкус заклинания, действующие на заклинателя, можно также использовать через Рот. Рот не может творить заклинания! Когда заклинатель пробует через Рот, его собственный рот нечувствителен. Каждый ход, он должен указывать, пробует ли он через Рот или через собственный рот.Рот маленький, с МР(SM) -6, поэтому по нему трудно попасть – но если в него попадут физической атакой, или любым заклинанием, которое могло бы его вывести из строя, он уничтожен. Сам Рот не может наносить вреда укусом.Это также заклинание Пищи и Звука.Длительность: 1 минута.Стоимость: 4 сотворение. 2 поддержка.Время сотворения: 2 секунды.Требования: Перемещение, Удалённая дегустация и Великий голос Предмет(а) Любой предмет, изображающий человеческий рот может быть превращён в неподвижный Волшебный рот, через который держатель амулета в форме рта, зачарованный одновременно, может говорить независимо от расстояния. Каждый Рот подключен к одному амулету и наоборот. Энергостоимость создания: 325. (б) Рот, вырезанный из красного коралла, с зубами из слоновой кости. Используется только магами. По приказу держащего его, он превращается в Волшебный рот; по возвращению в его руку он возвращается в форму предмета. Стоимость создания: 650 энергии, $1000 за умелую резьбу по кораллу и $400 за слоновую кость.</description-loc>
+		<college>Food/Knowledge/Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M104</reference>
+		<categories>
+			<category>Food</category>
+			<category>Knowledge</category>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">far-tasting</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">great voice</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 612px; left: 670px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Far-Hearing</name><name-loc>Удаленный слух</name-loc><spell version="2">
+		<name>Far-Hearing</name>
+		<name-loc>Удаленный слух</name-loc>
+		<description-loc>ИнформационноеЗаклинатель может слышать любой разговор, который он может видеть, не зависимо от расстояния; он может слышать через препятствия толщиной до 6 футов. Он автоматически выполняет проверку слуха. Это также заклинание школы Знаний.Длительность: 1 минута.Стоимость: 4 на сотворение. 2 на поддержание.Время сотворения: 3 секунды.Требования: Магичность(Magery) 1 и четыре других заклинаний Звука. Нельзя при недостатках Глухота или Тугоухость.ПредметОдежда или украшение. Действует лишь на надевшего. Энергостоимость: 400.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M173</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">sound</college>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+			<advantage_prereq has="no">
+				<name compare="is">hard of hearing</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<advantage_prereq has="no">
+				<name compare="is">deafness</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (sound)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 672px; left: 430px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Keen Hearing</name><name-loc>Обострённый слух</name-loc><spell version="2">
+		<name>Keen Hearing</name>
+		<name-loc>Обострённый слух</name-loc>
+		<description-loc>Описано в Заклинаниях контроля разума, M133.</description-loc>
+		<college>Mind Control/Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>30 min</duration>
+		<reference>M133</reference>
+		<categories>
+			<category>Mind Control</category>
+			<category>Sound</category>
+		</categories>
+	</spell></block><block style="top: 756px; left: 490px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Sound Vision</name><name-loc>Звуковое зрение</name-loc><spell version="2">
+		<name>Sound Vision</name>
+		<name-loc>Звуковое зрение</name-loc>
+		<description-loc>ОбычноеОбъект видит звуком, как летучая мышь или дельфин, как если бы имел преимущество Сканирование (Радар) (B81). Заклинания Тишина и Стена тишины действуют на объект как заклинание Темнота, а использующий заклинания Молчание или Волшебная бесшумность будет невидим для объекта Звукового зрения. Объект может пользоваться обычным зрением, если хочет, и достаточно светло.Длительность: 1 минута.Стоимость: 5 на сотворение. 2 на поддержание.Требования: Обострённый слух или преимущество Обострённый слух.Предмет:Посох, палочка или украшение; действует лишь на надевшего. Энергостоимость создания: 400.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M171</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="no">
+			<advantage_prereq has="yes">
+				<name compare="is">acute hearing</name>
+				<notes compare="is anything"></notes>
+				<level compare="at least">1</level>
+			</advantage_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">keen hearing</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 756px; left: 610px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Resist Sound</name><name-loc>Сопротивление звуку</name-loc><spell version="2">
+		<name>Resist Sound</name>
+		<name-loc>Сопротивление звуку</name-loc>
+		<description-loc>ОбычноеОбъект (личность, существо и предмет) и всё, что он несёт, становится иммунным к звуковым эффектам: Гром их не оглушит, звуковое оружие не причинит вреда, Струя звука не оглушит ит.д. Однако, шум всё ещё может отвлекать. Заклинание популярно на высоких ТУ. Это заклинание также относится к школе Заклинаний защиты и предупреждения.Длительность: 1 минута.Стоимость: 2 на сотворение. 1 на поддержание.Требования: Не меньше 4 заклинаний звука.Предмет(а) Любой. Действует лишь на надевшего. Энергостоимость создания: 800. (б) Палочка, посох или украшение. Энергосоимость создания: 1,200.</description-loc>
+		<college>Protection/Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M173</reference>
+		<categories>
+			<category>Protection</category>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">sound</college>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 876px; left: 250px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Sound Jet</name><name-loc>Струя звука</name-loc><spell version="2">
+		<name>Sound Jet</name>
+		<name-loc>Струя звука</name-loc>
+		<description-loc>ОбычноеИз пальца выстреливается узкий луч пронзительного звука. Для попадания заклинатель бросает каждый ход против ЛВ(DX)-4 или Природной атаки. От такой атаки можно уклониться или блокировать её, но парировать её нельзя. Заклинание не наносит урона, но каждый поражённый должен сделать бросок против ЗД(HT) минус стоимость заклинания, чтобы избежать оглушения (см. Эффекты оглушения B420) . За каждые пять единиц СП(DR) персонаж получает бонус к ЗД(HT) при проверке  1. Для восстановления оглушённый может каждый ход кидать против ЗД(HT) минус стоимость заклинания.Длительность: 1 секунда.Стоимость: От 1 до 4 на сотворение. Столько же на поддержание. Дальность в ярдах равна стоимости .Требования: Великий голос.ПредметПосох, палочка или украшение. Используется только магами. Энергостоимость создания: 400.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-4</casting_cost>
+		<maintenance_cost>1-4</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 sec</duration>
+		<melee_weapon>
+			<damage>Stuns</damage>
+			<usage>Jet</usage>
+			<reach>1/point</reach>
+			<parry>No</parry>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Beam</specialization>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M173</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">great voice</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 840px; left: 490px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Wizard Ear</name><name-loc>Волшебное ухо</name-loc><spell version="2">
+		<name>Wizard Ear</name>
+		<name-loc>Волшебное ухо</name-loc>
+		<description-loc>ОбычноеСоздаёт копию уха заклинателя, которым он может слышать. Ухо может двигаться, не врезаясь в предметы (как если бы у него было Звуковое зрение), однако оно может различать лишь размер и общую форму коридоров и комнат. Это заклинание может быть сотворено на ранее созданный Волшебный глаз (обычный или невидимый); это не изменит его формы, но даст возможность слышать разговоры и прочие звуки.Длительность: 1 минута.Стоимость: 4 на сотворение. 3 на поддержание.Время сотворения: 2 секунды.Требования: Перемещение, Удалённый слух и Звуковое зрение.ПредметЛюбое рисованное или скульптурное изображение уха можно превратить в неподвижное Волшебное ухо, таким образом, два носителя амулета в форме уха могут слышать друг друга  независимо от расстояния. Каждое такое Ухо соединено лишь с одним амулетом и наоборот [бред какой-то]. Энергостоимость создания: 450.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M174</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sound vision</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">far-hearing</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 924px; left: 490px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Invisible Wizard Ear</name><name-loc>Невидимое волшебное ухо</name-loc><spell version="2">
+		<name>Invisible Wizard Ear</name>
+		<name-loc>Невидимое волшебное ухо</name-loc>
+		<description-loc>ОбычноеСоздаёт Волшебное ухо, которое нельзя увидеть без заклинания Видеть невидимое. Его можно атаковать наугад, но складывающиеся штрафы за его невидимость и малый размер делают это практически невыполнимым.Длительность: 1 минута.Стоимость: 5 на сотворение. 3 на поддержание.Время сотворения: 4 секунды.Требования: Волшебное ухо и Невидимость.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>4 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M174</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">invisibility</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">wizard ear</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block>

@@ -1,0 +1,2107 @@
+<block style="top: 80px; left: 12px;" class="other-college"><name>Lend Energy</name><name-loc>Передать энергию</name-loc><spell version="2">
+		<name>Lend Energy</name>
+		<name-loc>Передать энергию</name-loc>
+		<description-loc>ОбычноеВосстанавливает потерянные Единицы Усталости объекта из энергии, затраченной заклинателем. Не может увеличить ЕУ(FP) объекта  выше его обычного максимума.Стоимость: Любое количество; потраченная энергия перейдет объекту как восстановленные ЕУ(FP) (т.е. если заклинатель потратит 5 энергии, объект восстановит 5 ЕУ(FP)). Стоимость не уменьшается с уровнем умения.Требования: Магичность(Magery) 1 или Эмпатия (B51)ПредметПосох, палочка или украшение. Энергостоимость создания: 100.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/pt</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M89</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="no">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (healing)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<advantage_prereq has="yes">
+				<name compare="is">empathy</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 164px; left: 72px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Might</name><name-loc>Мощь</name-loc><spell version="2">
+		<name>Might</name>
+		<name-loc>Мощь</name-loc>
+		<description-loc>ОбычноеВременно увеличивает СЛ(ST) объекта. Это соответственно увеличивает нагрузку, вред и ЕЖ(HP), но не лечит раны. Когда действие заклинания заканчивается, а ЕЖ(HP) из-за ранений остается меньше -ЗД(HT), то следует делать проверку ЗД(HT) чтобы не умереть. Стоимость не уменьшается за высокий уровень умения.Длительность: 1 минута.Стоимость: 2 за каждое увеличиваемое очко СЛ(ST) (максимум 5). Столько же поддержание.Требования: Передать энергию (M89).Предмет(а) Любой. Всегда включён; увеличивает СЛ(ST) владельца только когда используется. Энергостоимость создания: 1.500 за каждое увеличиваемое очко СЛ(ST) (максимум 5). (б) Посох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 1.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/ ST</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M37</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lend energy</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 236px; left: 72px;" class=""><name>Boost Strength</name><name-loc>Увеличить силу</name-loc><spell version="2">
+		<name>Boost Strength</name>
+		<name-loc>Увеличить силу</name-loc>
+		<description-loc>Обычное или БлокирующееИмеет четыре вида, по одному на каждый атрибут: Увеличить Ловкость, Увеличить Здоровье, Увеличить Силу и Увеличить интеллект. Каждый вариант заклинания имеет собственные требования, и должен изучаться отдельно, но работают они совершенно одинаково.Увеличивает указанный атрибут объекта, только для одного броска или одного короткого действия, занимающего не более секунды – одного Быстрого состязания, броска атрибута, нанесения удара, подготовки оружия, сопротивления заклинанию, метания предмета и т.д. Не может увеличить бросок, представляющий несколько секунд усилий – например, обычного Состязания. Увеличенный атрибут также увеличивает все зависимые от него параметры, кроме единиц жизни и усталости. Стоимость не уменьшается за высокий уровень умения.Заклинание Увеличить интеллект относится к заклинаниям Контроля разума, а не Контроля тела.Стоимость: 1 за каждое увеличиваемое очко атрибута (максимум 5).Требования: каждый вид заклинания имеет собственные требования:Заклинание	ТребованияУвеличить ловкость	ИзяществоУвеличить здоровье	ЗдравиеУвеличить силу	МощьУвеличить интеллект	МудростьПредметПосох, палочка, украшение или предмет одежды. Энергостоимость создания: 300.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular/Blocking</spell_class>
+		<casting_cost>1-5</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M37</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">might</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 296px; left: 12px;" class=""><name>Frailty</name><name-loc>Хрупкость</name-loc><spell version="2">
+		<name>Frailty</name>
+		<name-loc>Хрупкость</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Временно понижает ЗД(HT) объекта. Уменьшение действует на все зависимые от ЗД(HT) параметры и броски (Базовую Скорость, умения, основанные на ЗД(HT), сопротивление заклинаниям и ядам, броски против потери сознания и смерти и т.д.). Стоимость не уменьшается за высокий уровень умения.Длительность: 1 минута.Стоимость: 2 за каждое уменьшаемое очко ЗД(HT) (максимум 5). Столько же поддержание.Требования: Передать энергию (M89).Предмет(а) Любой предмет. Всегда включён; уменьшает ЗД(HT) владельца, пока одет. Энергостоимость создания: 200 за каждое уменьшаемое очко ЗД(HT). (б) Посох или волшебная палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 1.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/-HT</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M37</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lend energy</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 380px; left: 36px;" class=""><name>Vigor</name><name-loc>Здравие</name-loc><spell version="2">
+		<name>Vigor</name>
+		<name-loc>Здравие</name-loc>
+		<description-loc>ОбычноеУвеличивает ЗД(HT) объекта. Влияет на Базовую Скорость, ЕУ(FP), способность противостоять заклинаниям и болезням. Заклинатель может увеличить свой показатель ЗД(HT). После окончания действия заклинания объект теряет столько же ЕУ(FP), сколько было добавлено заклинанием. Если ЕУ(FP) субъекта после окончания действия заклинания окажутся отрицательными, то следует отнять по одной ЕЖ(HP) за каждую отрицательную ЕУ(FP). Стоимость заклинания не уменьшается за высокий уровень умения.Длительность: 1 минута.Стоимость: 2 за каждое увеличиваемое очко ЗД(HT) (максимум 5). Столько же поддержание.Требования: Передать жизнь или Хрупкость.Предмет(а) Любой предмет. Всегда включён; увеличивает ЗД(HT) владельца только когда используется. Энергостоимость создания: 1.500 за каждое увеличиваемое очко (максимум 5). (б) Посох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 1.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/ HT</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M37</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">lend vitality</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">frailty</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 296px; left: 120px;" class="other-college"><name>Lend Vitality</name><name-loc>Передать здоровье</name-loc><spell version="2">
+		<name>Lend Vitality</name>
+		<name-loc>Передать здоровье</name-loc>
+		<description-loc>ОбычноеВременно восстанавливает объекту потерянные Единицы Жизни из энергии, затраченной заклинателем. Не может увеличить ЕЖ(HP) объекта выше его обычного максимума. Восстановленные ЕЖ(HP) исчезают через час. Заклинание не может быть поддержано - это только временная мера.Длительность: 1 час.Стоимость: Любое количество; потраченная энергия перейдет объекту как восстановленные ЕЖ(HP) (например, заклинатель тратит 5 энергии - объект восстановит 5 ЕЖ(HP)). Стоимость не уменьшается с уровнем умения. Не поддерживается; должно сотвориться заново.ПредметПосох, палочка или украшение. Энергостоимость создания: 250.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/pt</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 hour</duration>
+		<reference>M89</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lend energy</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 476px; left: 12px;" class="magery1"><name>Hold Breath</name><name-loc>Задержать дыхание</name-loc><spell version="2">
+		<name>Hold Breath</name>
+		<name-loc>Задержать дыхание</name-loc>
+		<description-loc>ОбычноеВременно снимает потребность заклинателя в воздухе, давая Не дышит (B49). Он может без проблем оставаться под водой или в комнате с ядовитым газом, если, конечно, он не действует через кожу. Заклинание не создаёт воздух; оно просто откладывает удушение, пока заклинатель ищет (или создаёт) безопасное место. Это заклинание не защищает от изменения давления в вакууме или глубинах океанов.Длительность: 1 минута.Стоимость: 4 создание. 2 поддержание.Требования: Магичность(Magery) 1 и Здравие.ПредметПосох, палочка или украшение. Энергостоимость создания: 900.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M39</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">vigor</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 476px; left: 120px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Boost Health</name><name-loc>Увеличить здоровье</name-loc><spell version="2">
+		<name>Boost Health</name>
+		<name-loc>Увеличить здоровье</name-loc>
+		<description-loc>Обычное или БлокирующееИмеет четыре вида, по одному на каждый атрибут: Увеличить Ловкость, Увеличить Здоровье, Увеличить Силу и Увеличить интеллект. Каждый вариант заклинания имеет собственные требования, и должен изучаться отдельно, но работают они совершенно одинаково.Увеличивает указанный атрибут объекта, только для одного броска или одного короткого действия, занимающего не более секунды – одного Быстрого состязания, броска атрибута, нанесения удара, подготовки оружия, сопротивления заклинанию, метания предмета и т.д. Не может увеличить бросок, представляющий несколько секунд усилий – например, обычного Состязания. Увеличенный атрибут также увеличивает все зависимые от него параметры, кроме единиц жизни и усталости. Стоимость не уменьшается за высокий уровень умения.Заклинание Увеличить интеллект относится к заклинаниям Контроля разума, а не Контроля тела.Стоимость: 1 за каждое увеличиваемое очко атрибута (максимум 5).Требования: каждый вид заклинания имеет собственные требования:Заклинание	ТребованияУвеличить ловкость	ИзяществоУвеличить здоровье	ЗдравиеУвеличить силу	МощьУвеличить интеллект	МудростьПредметПосох, палочка, украшение или предмет одежды. Энергостоимость создания: 300.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular/Blocking</spell_class>
+		<casting_cost>1-5</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M37</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">vigor</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 380px; left: 180px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Stop Spasm</name><name-loc>Остановить спазм</name-loc><spell version="2">
+		<name>Stop Spasm</name>
+		<name-loc>Остановить спазм</name-loc>
+		<description-loc>ОбычноеНемедленно прекращает спазмы любого рода – включая рвоту и эпилепсию. Магические причины получают право на сопротивление.Также относится к заклинаниям Лечения.Стоимость: 1.Требования: Спазм или Передать здоровье.Предмет(а) Посох или волшебная палочка, с нанесенным изображением змеи. Используется только магами или обладающими умением Врачебное дело на уровне 15 или выше. Энергостоимость создания: 400. (б) Любой предмет. Всегда включён. Он защищает владельца от спазмов (даёт  5 к сопротивлению Спазму). Энергостоимость создания: 750.</description-loc>
+		<college>Healing/Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M35</reference>
+		<categories>
+			<category>Body Control</category>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">spasm</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">lend vitality</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 116px; left: 216px;" class=""><name>Climbing</name><name-loc>Лазание</name-loc><spell version="2">
+		<name>Climbing</name>
+		<name-loc>Лазание</name-loc>
+		<description-loc>ОбычноеПридаёт объекту силу и цепкость, повышая умение Лазание.Длительность: 1 минута.Стоимость: 1-3. Столько же поддержание. Увеличение умения равно удвоенной вложенной энергии.ПредметОбувь, перчатки, одежда или украшения, влияет только на владельца. Энергостоимость создания: 250 за премию  1 (максимум 5).</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-3</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M35</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+	</spell></block><block style="top: 200px; left: 252px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Touch</name><name-loc>Касание</name-loc><spell version="2">
+		<name>Touch</name>
+		<name-loc>Касание</name-loc>
+		<description-loc>ОбычноеОбъект чувствует легкое касание к месту на выбор заклинателя. Касание обходит любую броню, но не имеет никаких других эффектов, кроме привлечения внимания. Оно не может нанести вред или дискомфорта, но очень хорошо отвлекает.Стоимость: 1.ПредметПосох, палочка или украшение. Энергостоимость создания: 50.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M35</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+	</spell></block><block style="top: 152px; left: 432px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Itch</name><name-loc>Зуд</name-loc><spell version="2">
+		<name>Itch</name>
+		<name-loc>Зуд</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Вызывает у объекта сильный зуд в выбранном заклинателем месте. Объект получает -2 к ЛВ(DX), пока не потратит полный ход на «почесаться» (дольше, если мешает броня или что-то еще!). Одновременно на объект может быть наложено только одно такое заклинание.Длительность: пока объект не потратит полный ход на почёсывание.Стоимость: 2. Не поддерживается.Предмет(а) Посох или палочка; используется только магами. Предмет должен коснуться жертвы. Энергостоимость создания: 100. (б) Любой предмет; действует всегда. Владелец чешется постоянно и получает -2 ЛВ(DX) пока предмет одет. Энергостоимость создания: 60.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Until scratched</duration>
+		<reference>M35</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+	</spell></block><block style="top: 80px; left: 576px;" class="other-college"><name>Odor</name><name-loc>Запах</name-loc><spell version="2">
+		<name>Odor</name>
+		<name-loc>Запах</name-loc>
+		<description-loc>ОбластноеСоздает любой знакомый магу запах. В замкнутом помещении запах держится около часа (вне помещения быстро развеивается). Не может произвести никакого вредоносного эффекта- например, запах яда не ядовит.Длительность: 1 час.Базовая стоимость: 1. Не поддерживается.Требования: Убрать запах.ПредметУкрашение, постоянно распространяющее установленный при создании запах. Энергостоимость создания: 40.</description-loc>
+		<college>Air</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M24</reference>
+		<categories>
+			<category>Air</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">no-smell</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 152px; left: 576px;" class=""><name>Perfume</name><name-loc>Аромат</name-loc><spell version="2">
+		<name>Perfume</name>
+		<name-loc>Аромат</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Объект источает сильный запах на выбор мага. Субъект может ощущать запах, но не сочтет его слишком ярким (хотя его соседи – определенно смогут), независимо от его вида.Длительность: 10 минут.Стоимость: 2 на сотворение. 1 на поддержание.Требования: Запах (M24).ПредметПосох или палочка. Предмет должен касаться объекта. Энергостоимость создания: 200.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>10 min</duration>
+		<reference>M35</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">odor</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 224px; left: 432px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Spasm</name><name-loc>Спазм</name-loc><spell version="2">
+		<name>Spasm</name>
+		<name-loc>Спазм</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Может быть направлено против любого мускула (c произвольным контролем) объекта. Направленное против руки заставляет объект бросить то, что зажато в руке (обычно это оружие). Если объект в этот момент выполняет пассы для сотворения заклинания, он должен выполнить бросок ЛВ(DX), чтобы продолжить. Изобретательные маги найдут и другие возможности для использования этого заклинания.Длительность: мгновенно.Стоимость: 2. Не поддерживается.Требования: Зуд.Предмет(а) Посох или волшебная палочка; используется только магами. Предмет должен касаться жертвы. Энергостоимость создания: 300. (б) Любой предмет; действует всегда. Владелец должен бросать ЗД(HT) каждый раз, когда делает что-то деликатное (например, взлом замка, произнесение заклинания). При провале владелец получает Спазм. Энергостоимость создания: 100.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M35</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">itch</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 224px; left: 684px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Nauseate</name><name-loc>Тошнота</name-loc><spell version="2">
+		<name>Nauseate</name>
+		<name-loc>Тошнота</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)У объекта немедленно появляются тошнотворные позывы (см. Тошнота, B428).Длительность: 10 секунд.Стоимость: 2. Столько же поддержание.Требования: Аромат и минимум одно любое заклинание Контроля тела.ПредметПосох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 100.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>10 sec</duration>
+		<reference>M38</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">body control</college>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">perfume</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 308px; left: 684px;" class=""><name>Retch</name><name-loc>Рвота</name-loc><spell version="2">
+		<name>Retch</name>
+		<name-loc>Рвота</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Объекта немедленно начинает рвать, это продолжается в течение 25-ЗД(HT) секунд (см. Тошнота, B428).Стоимость: 3. Не поддерживается.Время сотворения: 4 секунды.Требования: Тошнота и Спазм.ПредметПосох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 100.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>4 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M38</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">nauseate</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">spasm</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 308px; left: 432px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Tickle</name><name-loc>Щекотка</name-loc><spell version="2">
+		<name>Tickle</name>
+		<name-loc>Щекотка</name-loc>
+		<description-loc>Обычное; Сопротивление по Воли(Will)Объект чувствует сильную щекотку. При провале сопротивления он не сможет делать ничего, кроме как смеяться и пытаться убежать. Это серьезное воздействие; жертва выводится из строя как при судорогах (см. Состояния недееспособности, B428). Если необходимо вести себя тихо – необходим дополнительный бросок Воли(Will). Высокий или низкий болевой порог никак не влияют на сопротивление заклинанию. Невозмутимые получают  5 к сопротивлению.Длительность: 1 минута.Стоимость: 5 создание. 5 поддержание (необходима концентрация).Требования: Спазм.Предмет(а) Посох, палочка или перо. Используется только магами; предмет должен касаться объекта. Энергостоимость создания: 600. (б) Стул, кресло или подушка. Всегда включён. Любой, кто сядет в стул или кресло будет немедленно «атакован» заклинанием. Это отличная шутка. Энергостоимость создания: 250.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>5</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M36</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">itch</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 308px; left: 324px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Pain</name><name-loc>Боль</name-loc><spell version="2">
+		<name>Pain</name>
+		<name-loc>Боль</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Объект испытывает приступ ужасной боли. Нужен бросок Воли(Will), чтобы не закричать и не прервать действие. Если объект выполняет какое-то опасное действие (лезет по стене, например) – необходим бросок ЛВ(DX), чтобы избежать катастрофы. Жертва получает -3 к ЛВ(DX) и всем умениям, основанным на ней, на всю следующую секунду. Если в момент действия жертва творит заклинание, она должна бросить Волю(Will), чтобы не прерваться. Высокий болевой порог дает  3 к вышеуказанным броскам ЛВ(DX) и Воли(Will), Низкий болевой порог -4.Длительность: 1 секунда.Стоимость: 2. Не поддерживается.Время сотворения: 2 секунды.Требования: Спазм.Предмет(а) Посох или палочка; используется только магами. Предмет должен касаться жертвы. Энергостоимость создания: 400. (б) Любой предмет; действует всегда. Владелец чувствует острую боль, которая будет продолжаться до тех пор, пока не будет произведена успешная проверка ЗД(HT). Также владелец не может ни чего делать пока не будет успешного броска ЗД(HT)! Энергостоимость создания: 300.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 sec</duration>
+		<reference>M36</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">spasm</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 380px; left: 564px;" class=""><name>Choke</name><name-loc>Удушение</name-loc><spell version="2">
+		<name>Choke</name>
+		<name-loc>Удушение</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Объект неспособен вдохнуть (или что-то сказать) и получает эффект удушения (B436). Заклинание не может быть поддержано, поэтому только постоянным пересотворением, отрезая жертве доступ воздуха, можно будет нанести реальный вред.Длительность: 30 секунд.Стоимость: 4. Не поддерживается.Требования: Магичность(Magery) 1 и пять любых заклинания школы Контроля тела, включая Спазм.ПредметПосох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 200.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>30 sec</duration>
+		<reference>M40</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<college compare="contains">body control</college>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">spasm</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 380px; left: 324px;" class=""><name>Resist Pain</name><name-loc>Сопротивление боли</name-loc><spell version="2">
+		<name>Resist Pain</name>
+		<name-loc>Сопротивление боли</name-loc>
+		<description-loc>Обычное Субъект становится временно невосприимчив к боли. Он может игнорировать действие заклинания Спазм и других заклинаний, вызывающих боль. Он не может быть оглушен в бою, не получает штрафа за болевой шок при ранении и не теряет скорость при снижении ЕЖ(HP) ниже 1/3. Не дает защиты собственно от ран – только от боли.Длительность: 1 минута.Стоимость: 4 создание. 2 поддержание.Требования: Магичность(Magery) 2 и Боль.ПредметЛюбой предмет; действует только на владельца. Энергостоимость создания: 800.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M38</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">pain</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 452px; left: 324px;" class=""><name>Strike Numb</name><name-loc>Онемение</name-loc><spell version="2">
+		<name>Strike Numb</name>
+		<name-loc>Онемение</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Временно лишает объект осязания и болевой чувствительности (недостаток Нет осязания B146). Включает эффекты заклинания Сопротивление боли, поэтому иногда может оказаться полезным. Субъект не чувствует ни ударов (beyond a jolt), ни чужих, шарящих по его карманам, ни даже жара раскаленных плит, на которых стоит. Возможно избирательное лишение чувствительности (только для рук, например).Длительность: 10 секунд.Стоимость: 3 создание. 1 поддержание.Требования: Сопротивление боли.Предмет(а) Любой. Всегда включён; действует только на владельца. Энергостоимость создания: 300. (б) Посох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 800.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>10 sec</duration>
+		<reference>M40</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">resist pain</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 464px; left: 445px;" class=""><name>Clumsiness</name><name-loc>Неуклюжесть</name-loc><spell version="2">
+		<name>Clumsiness</name>
+		<name-loc>Неуклюжесть</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Уменьшает ЛВ(DX) объекта на 1 за каждое очко энергии, вложенное в заклинание. Все умения зависящие от ЛВ(DX) тоже уменьшаются.Длительность: 1 минута.Стоимость: 1-5. Половина за поддержание (округлять вверх).Требования: Спазм.Предмет(а) Любой предмет. Всегда включён; Уменьшает ЛВ(DX) владельца. Энергостоимость создания: 100 за каждое уменьшаемое очко ЛВ(DX). (б) Посох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 800.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-5</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M36</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">spasm</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 464px; left: 564px;" class="magery1"><name>Control Limb</name><name-loc>Контроль конечности</name-loc><spell version="2">
+		<name>Control Limb</name>
+		<name-loc>Контроль конечности</name-loc>
+		<description-loc>Обычное; Сопротивление по Воли(Will)Одна из конечностей (включая крылья, щупальца и т.п.) объекта попадает под контроль заклинателя!  Руки могут бить оружием (используя умение заклинателя); ноги пинать и т.п. После сотворения необходимо концентрироваться для поддержания контроля; провал означает «омертвение» конечности на оставшуюся длительность. Жертва может пытаться схватить свою конечность, не давая ей действовать, но получает -3 на броски состязания по СЛ(ST) или ЛВ(DX) с самим собой!Если заклинатель пожелает атаковать конечностью (оружием в ней или кулаком) саму жертву, то нужен бросок атаки (против умения объекта  4), а цель может уклоняться с -2. Цель даже может парировать (тоже с -2), если у неё есть оружие в другой руке! Трактуется как Бой вплотную со всеми штрафами.Длительность: 5 секунд.Стоимость: 3 создание. 3 поддержание. Если твориться только на кисть (или подобное) , то стоимость сотворения и поддержки только 2, но субъекта в этом случае можно вынудить только усилить или ослабить захват. Ваше влияние может помешать жестикуляции, броску гранаты или заставить выбросить оружие.Требования: Магичность(Magery) 1 и пять любых заклинания школы Контроля тела, включая Спазм.ПредметПосох или палочка; используется только магами. Предмет должен указывать на объект. Энергостоимость создания: 800.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>5 sec</duration>
+		<reference>M40</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">body control</college>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">spasm</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 464px; left: 684px;" class=""><name>Alter Voice</name><name-loc>Изменить голос</name-loc><spell version="2">
+		<name>Alter Voice</name>
+		<name-loc>Изменить голос</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Изменяет голос объекта по желанию заклинателя. Для копирования голоса нужен «образец» – по памяти знакомый голос копируется с -2, незнакомый -3 и хуже, если заклинатель слышал его пару раз или давно. Идеальная память (B51)  хорошо помогает в этом. Голос может быть изменён на более приятный или грубый, давая модификаторы от  2 до -2 к броскам реакции и умениям, связанным с общением на время действия заклинания. Заклинание не «дарует» голос немым. Если заклинание улучшает голос объекта навсегда (давая преимущество Голос), то Мастер может потребовать заплатить соответствующее количество очков персонажа!Относится также к заклинаниям Звука.Длительность: 1 час.Стоимость: 2 создание. 2 поддержание. Изменение можно сделать постоянным, как чары, если вложить 200 энергии.Время сотворения: 1 минута.Требования:  четыре заклинания школы Контроля тела и четыре заклинания школы Звука.ПредметЛюбой, но, обычно, это украшение. Даёт владельцу новый голос, который был заложен во время создания. Энергостоимость создания: 1.000.</description-loc>
+		<college>Body Control/Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M41</reference>
+		<categories>
+			<category>Body Control</category>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="contains">body</name>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">sound</college>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 512px; left: 264px;" class=""><name>Stun</name><name-loc>Оглушение</name-loc><spell version="2">
+		<name>Stun</name>
+		<name-loc>Оглушение</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Объект физически оглушен (B420) и должен делать проверку ЗД(HT) каждую секунду, чтобы оправиться от оглушения.Стоимость: 2. Не поддерживается.Требования: Боль.Предмет(а) Любой предмет. Всегда включён; владелец оглушен пока не снимет предмет. Энергостоимость создания: 500. (б) Посох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 1.100.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M37</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">pain</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 584px; left: 144px;" class=""><name>Strike Dumb</name><name-loc>Поражение немотой</name-loc><spell version="2">
+		<name>Strike Dumb</name>
+		<name-loc>Поражение немотой</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Объект временно не может говорить. Это может сорвать колдовство, требующее речи (M8).Длительность: 10 секунд.Стоимость: 3 создание. 1 поддержание.Требования: Спазм.Предмет(а) Любой предмет. Всегда включён; владелец не может говорить. Энергостоимость создания: 500. (б) Посох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 2.500.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>10 sec</duration>
+		<reference>M38</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">spasm</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 740px; left: 84px;" class=""><name>Strike Deaf</name><name-loc>Поражение глухотой</name-loc><spell version="2">
+		<name>Strike Deaf</name>
+		<name-loc>Поражение глухотой</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Объект временно глохнет.Длительность: 10 секунд.Стоимость: 3 создание. 1 поддержание.Требования: Спазм и два любых заклинания школы Звука.Предмет(а) Любой предмет. Всегда включён; владелец глух. Энергостоимость создания: 400. (б) Посох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 1.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>10 sec</duration>
+		<reference>M38</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">sound</college>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">spasm</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 740px; left: 204px;" class=""><name>Strike Blind</name><name-loc>Поражение слепотой</name-loc><spell version="2">
+		<name>Strike Blind</name>
+		<name-loc>Поражение слепотой</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Объект временно ослеплён. См. Слепота B124, для полного описания воздействия. Главное, что объект получает -10 к физической атаке и не может видеть цель заклинания.Длительность: 10 секунд.Стоимость: 4 создание. 2 поддержание.Требования: Спазм и два любых заклинания школы Света и тьмы.Предмет(а) Любой предмет. Всегда включён; владелец не видит. Энергостоимость создания: 500. (б) Посох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 2.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>10 sec</duration>
+		<reference>M38</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">light</college>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">spasm</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 584px; left: 264px;" class="magery1"><name>Sensitize</name><name-loc>Чувствительность</name-loc><spell version="2">
+		<name>Sensitize</name>
+		<name-loc>Чувствительность</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Объект очень чувствителен к боли, получает Низкий болевой порог (B142). Не влияет на существ, уже имеющих этот недостаток.Длительность: 1 минута.Стоимость: 3 создание. 2 поддержание.Требования: Магичность(Magery) 1 и Оглушение.Предмет(а) Любой. Всегда включён; действует только на владельца. Энергостоимость создания: 300. (б) Посох или палочка; используется только магами. Должен касаться объекта. Энергостоимость создания: 400.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M39</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">stun</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 656px; left: 264px;" class="magery2"><name>Agonize</name><name-loc>Агония</name-loc><spell version="2">
+		<name>Agonize</name>
+		<name-loc>Агония</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Чувствительность кожи объекта становится крайне высокой: даже легкое касание причиняет боль, как удар, чье-то дыхание – как пламя, а прохладный ветерок – как ледяная буря. Даже прикосновение к одежде приносит невыносимую боль – объект испытывает чувство, как будто с него сдирают кожу. Он переходит в состояние полной беспомощности, агонии (см. Состояния недееспособности; B428).Длительность: 1 минута.Стоимость: 8 создание. 6 поддержание.Требования: Магичность(Magery) 2 и Чувствительность.Предмет(а) Любой. Всегда включён; действует только на владельца. Энергостоимость создания: 500. (б) Посох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 800.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>8</casting_cost>
+		<maintenance_cost>6</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M40</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">sensitize</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 548px; left: 384px;" class=""><name>Tanglefoot</name><name-loc>Спутать ноги</name-loc><spell version="2">
+		<name>Tanglefoot</name>
+		<name-loc>Спутать ноги</name-loc>
+		<description-loc>Обычное; Сопротивление по ЛВ(DX)Объект немедленно спотыкается и падает.Длительность: мгновенно.Стоимость: 2.Требования: Неуклюжесть.ПредметПосох или палочка. Используется только магами; необходимо указать на объект (касание не обязательно). Энергостоимость создания: 600.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M36</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">clumsiness</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 620px; left: 384px;" class=""><name>Roundabout</name><name-loc>Развернуть</name-loc><spell version="2">
+		<name>Roundabout</name>
+		<name-loc>Развернуть</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Поворачивает субъект на месте в нужном магу направлении. Это не телепортация, а физическое действие. Для нормального действия в свой ход субъект должен бросить Чувство тела (или ЛВ(DX)-6). Если объект в предыдущий ход двигался со скоростью 2 и больше, он должен бросать также и ИН(IQ), или продолжит двигаться в новом направлении.Длительность: мгновенно.Стоимость: 3.Требования: Спутать ноги.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M36</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">tanglefoot</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 704px; left: 384px;" class=""><name>Fumble</name><name-loc>Провал</name-loc><spell version="2">
+		<name>Fumble</name>
+		<name-loc>Провал</name-loc>
+		<description-loc>Блокирующее; Сопротивление по ЛВ(DX)Объект автоматически прерывает текущее физическое действие. Применяются обычные штрафы за расстояние. Если действием была атака или парирование – провал считается критическим. Провальный блок делает щит неготовым, провальное уклонение приводит к падению. Другие действия приводят к результатам, которые Мастер сочтет подходящими. Ментальные действия не затрагиваются, если это не заклинание, требующее жестикуляции. Стоимость: 3.Требования: Неуклюжесть.Предмет(а) Посох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 1.000. (б) Драгоценность. Всегда включён; действует только на владельца. Тот, кто носит этот предмет, постоянно заваливает все физические действия! Энергостоимость создания: 1.500.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M38</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">clumsiness</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 536px; left: 624px;" class="magery1"><name>Paralyze Limb</name><name-loc>Паралич конечности</name-loc><spell version="2">
+		<name>Paralyze Limb</name>
+		<name-loc>Паралич конечности</name-loc>
+		<description-loc>Касательное; Сопротивление по ЗД(HT)Маг должен коснуться нужной конечности объекта (иное касание не дает эффекта). Броня не защищает. Бросок сопротивления делается при касании. Если маг побеждает, конечность считается покалеченной в течение одной минуты.Длительность: 1 минута.Стоимость:  3. Не поддерживается.Требования: Магичность(Magery) 1 и пять любых заклинания школы Контроля тела, Неуклюжесть.ПредметПосох или палочка; используется только магами. Предмет должен касаться объекта.  Энергостоимость создания: 1.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Melee</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M40</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<college compare="contains">body control</college>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">clumsiness</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 620px; left: 564px;" class="magery1"><name>Total Paralysis</name><name-loc>Полный паралич</name-loc><spell version="2">
+		<name>Total Paralysis</name>
+		<name-loc>Полный паралич</name-loc>
+		<description-loc>Касательное; Сопротивление по ЗД(HT)Требуется коснуться головы (-5 к атаке). Объект не способен двигаться в течение минуты, если проваливает сопротивление (в большинстве игр – до конца боя).Длительность: 1 минута.Стоимость: 5. Не поддерживается.Требования: Паралич конечности.ПредметПосох или палочка; используется только магами. Предмет должен касаться объекта.  Энергостоимость создания: 2.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Melee</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<melee_weapon>
+			<damage>thr-1 cr   Paralysis</damage>
+			<usage>Punch</usage>
+			<reach>C</reach>
+			<parry>0</parry>
+			<default>
+				<type>DX</type>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Boxing</name>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Brawling</name>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Karate</name>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M40</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">paralyze limb</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 620px; left: 684px;" class="magery2"><name>Wither Limb</name><name-loc>Иссушение конечности</name-loc><spell version="2">
+		<name>Wither Limb</name>
+		<name-loc>Иссушение конечности</name-loc>
+		<description-loc>Касательное; Сопротивление по ЗД(HT)Маг должен коснуться одной из конечностей объекта (иное касание не дает эффекта). Броня не защищает. Бросок сопротивления делается при касании. Если маг побеждает, конечность усыхает и считается покалеченной (см. Калечащие ранения, B420). Объект также получает 1d вреда.Длительность: постоянно пока не будет вылечено магией или необычной технологией.Стоимость: 5.Требования:  Магичность(Magery) 2 и Паралич конечности.ПредметПосох или палочка; используется только магами. Предмет должен касаться объекта.  Энергостоимость создания: 2.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Melee</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<melee_weapon>
+			<damage>thr-1 cr  1d</damage>
+			<usage>Punch</usage>
+			<reach>C</reach>
+			<parry>0</parry>
+			<default>
+				<type>DX</type>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Boxing</name>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Brawling</name>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Karate</name>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M40</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">paralyze limb</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 692px; left: 684px;" class="magery2"><name>Deathtouch</name><name-loc>Касание смерти</name-loc><spell version="2">
+		<name>Deathtouch</name>
+		<name-loc>Касание смерти</name-loc>
+		<description-loc>Касательное Маг должен коснуться цели; место касания значения не имеет. Объект получает 1d вреда за каждое очко энергии, вложенное в это заклинание. СП(DR) не защищает от этой атаки. Действует также на нежить.Стоимость: 1-3.Требования: Иссушение конечности.ПредметПосох или палочка; предмет должен быть угольно чёрным. Используется только магами. Должен касаться объекта. Энергостоимость создания: 2.500.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Melee</spell_class>
+		<casting_cost>1-3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<melee_weapon>
+			<damage>thr-1 cr  1d/point</damage>
+			<usage>Punch</usage>
+			<reach>C</reach>
+			<parry>0</parry>
+			<default>
+				<type>DX</type>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Boxing</name>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Brawling</name>
+				<modifier>0</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Karate</name>
+				<modifier>0</modifier>
+			</default>
+		</melee_weapon>
+		<reference>M41</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">wither limb</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 764px; left: 444px;" class=""><name>Grace</name><name-loc>Изящество</name-loc><spell version="2">
+		<name>Grace</name>
+		<name-loc>Изящество</name-loc>
+		<description-loc>ОбычноеВременно увеличивает ЛВ(DX) объекта (максимум 5). Все умения и параметры, основанные на ловкости, также увеличиваются. Волшебник может увеличить и свою ЛВ(DX) для того чтобы повысить свои шансы в использовании метательных заклинаний и т.п.Длительность: 1 минута.Стоимость: 4 за каждое увеличиваемое очко ЛВ(DX) (максимум 5). Столько же поддержание.Требования: Неуклюжесть.Предмет(а) Любой предмет. Всегда включён; увеличивает ЛВ(DX) владельца только когда используется! Это очень редкий предмет. Энергостоимость создания: 2.000 за каждое увеличиваемое очко ЛВ(DX) (максимум 5). (б) Посох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 2.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4/ DX</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M37</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">clumsiness</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 764px; left: 588px;" class="other-college"><name>Haste</name><name-loc>Ускорение</name-loc><spell version="2">
+		<name>Haste</name>
+		<name-loc>Ускорение</name-loc>
+		<description-loc>ОбычноеУвеличивает Движении и Уклонение на не более, чем на 3.Длительность: 1 минута.Стоимость: 2 сотворение за единицу, добавленную к Движению и Уклонению объекта. Половина  поддержание.Время сотворения: 2 секунды.ПредметОбувь или украшение. Действует только на носителя. Энергостоимость создания: 250 за каждые  1 к Движению.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/pt</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M142</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+	</spell></block><block style="top: 848px; left: 192px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Boost Dexterity</name><name-loc>Увеличить ловкость</name-loc><spell version="2">
+		<name>Boost Dexterity</name>
+		<name-loc>Увеличить ловкость</name-loc>
+		<description-loc>Обычное или БлокирующееИмеет четыре вида, по одному на каждый атрибут: Увеличить Ловкость, Увеличить Здоровье, Увеличить Силу и Увеличить интеллект. Каждый вариант заклинания имеет собственные требования, и должен изучаться отдельно, но работают они совершенно одинаково.Увеличивает указанный атрибут объекта, только для одного броска или одного короткого действия, занимающего не более секунды – одного Быстрого состязания, броска атрибута, нанесения удара, подготовки оружия, сопротивления заклинанию, метания предмета и т.д. Не может увеличить бросок, представляющий несколько секунд усилий – например, обычного Состязания. Увеличенный атрибут также увеличивает все зависимые от него параметры, кроме единиц жизни и усталости. Стоимость не уменьшается за высокий уровень умения.Заклинание Увеличить интеллект относится к заклинаниям Контроля разума, а не Контроля тела.Стоимость: 1 за каждое увеличиваемое очко атрибута (максимум 5).Требования: каждый вид заклинания имеет собственные требования:Заклинание	ТребованияУвеличить ловкость	ИзяществоУвеличить здоровье	ЗдравиеУвеличить силу	МощьУвеличить интеллект	МудростьПредметПосох, палочка, украшение или предмет одежды. Энергостоимость создания: 300.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular/Blocking</spell_class>
+		<casting_cost>1-5</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M37</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">grace</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 848px; left: 300px;" class=""><name>Balance</name><name-loc>Равновесие</name-loc><spell version="2">
+		<name>Balance</name>
+		<name-loc>Равновесие</name-loc>
+		<description-loc>ОбычноеДаёт прекрасное чувство равновесия (Идеальное равновесие, B74). Не дает дополнительных выгод уже имеющим преимущество Идеальное равновесие.Длительность: 1 минута.Стоимость: 5 создание. 3 поддержание.Требования: Изящество.Предмет(а) Посох или волшебная палочка. Используется только магами; должен касаться объекта.  Энергостоимость создания: 300. (б) Драгоценность или головной убор. Всегда включён; действует только на владельца. Энергостоимость создания: 750.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M39</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">grace</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 848px; left: 408px;" class=""><name>Ambidexterity</name><name-loc>Обоюдорукость</name-loc><spell version="2">
+		<name>Ambidexterity</name>
+		<name-loc>Обоюдорукость</name-loc>
+		<description-loc>ОбычноеОбъект получает преимущество Обоюдорукость (B39). Действует только на одну пару конечностей; цели с большим количеством рук нуждаются в повторном сотворении этого заклинания. Не даёт дополнительных выгод уже имеющим преимущество Обоюдорукость.Длительность: 1 минута.Стоимость: 3 создание. 2 поддержание.Требования: Изящество.Предмет(а) Любой. Всегда включён; владелец получает преимущество Обоюдорукость. Довольно редкий предмет! Энергостоимость создания: 1.500. (б) Посох или палочка; используется только магами. Энергостоимость создания: 500.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M39</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">grace</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 848px; left: 528px;" class=""><name>Reflexes</name><name-loc>Рефлексы</name-loc><spell version="2">
+		<name>Reflexes</name>
+		<name-loc>Рефлексы</name-loc>
+		<description-loc>ОбычноеОбъект получает Боевые рефлексы (B43). Не дает дополнительных выгод уже имеющим преимущество Боевые рефлексыДлительность: 1 минута.Стоимость: 5 создание. 3 поддержание.Требования: Изящество и Ускорение.Предмет(а) Любой. Всегда включён; владелец получает преимущество Боевые рефлексы. Довольно редкий предмет! Энергостоимость создания: 1.200. (б) Посох или волшебная палочка; используется только магами. Энергостоимость создания: 800.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M39</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">grace</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">haste</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 848px; left: 684px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Hinder</name><name-loc>Помеха</name-loc><spell version="2">
+		<name>Hinder</name>
+		<name-loc>Помеха</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Уменьшает базовое движение(BM) и Уклонение (dodge) объекта на 1 за каждое вложенное очко энергии. Также относится к заклинаниям школы Движения.Длительность: 1 минута.Стоимость: 1-4. Столько же поддержание.Требования: Неуклюжесть или Ускорение (M142).Предмет(а) Посох или палочка. Используется только магами; необходимо указать на объект (касание не обязательно). Энергостоимость создания: 600. (б) Любой предмет. Всегда включён; уменьшает базовое движение(BM) владельца. Энергостоимость создания: 200 за каждый ярд, на который уменьшается базовое движение(BM) владельца.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-4</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M36</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">clumsiness</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">haste</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 920px; left: 684px;" class=""><name>Rooted Feet</name><name-loc>Вросшие ноги</name-loc><spell version="2">
+		<name>Rooted Feet</name>
+		<name-loc>Вросшие ноги</name-loc>
+		<description-loc>Обычное; Сопротивление по СЛ(ST)Ноги объекта приклеиваются к поверхности! Он может пытаться освободиться каждый ход, делая новый бросок сопротивления с -5 против исходного уровня умения заклинания. Пока ноги приклеены, объект получает штраф -2 на любые боевые/оружейные умения, кроме дальнобойных. Уклонение также падает наполовину (округлять вниз). Длительность: 1 минута или пока объект не освободится.Стоимость: 3. Не поддерживается.Требования: Помеха.Предмет(а) Посох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 400. (б) Любой предмет. Всегда включён; владелец должен делать бросок (СЛ(ST)-5) каждый ход для того чтобы сдвинуться с места. Провал броска означает, что он не может сдвинуться с места. Энергостоимость создания: 600.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min or until free</duration>
+		<reference>M36</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">hinder</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 932px; left: 528px;" class=""><name>Cadence</name><name-loc>Ритм</name-loc><spell version="2">
+		<name>Cadence</name>
+		<name-loc>Ритм</name-loc>
+		<description-loc>ОбычноеУдваивает скорость выполнения ремесленных работ и уменьшает выход брака. Действует на любое умение, создающее или улучшающее рукотворный объект; не воздействует на магические ремёсла (написание свитков, наложение чар и т.д.). Может ускорять также и скорость письма. Не воздействует на умения, требующие частых или продолжительных перерывов в работе, или требующих в основном ментальной активности (Счет, Архитектор, Письмо).Длительность: 1 час. Прерывается, если объект прерывает свою работу.Стоимость: 5 создание. 3 поддержание. Стоимость поддержки заклинания снимается также и с объекта – если маг не творит это заклинание на себя.Время сотворения: 10 секунд.Требования: Изящество и Ускорение.ПредметНабор инструментов. Энергостоимость создания: 1.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M39</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">grace</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">haste</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block>
+<div style="position:absolute; left:800px; top:0px;">
+<block style="top: 149px; left: 7px;" class=""><name>Hair Growth</name><name-loc>Рост волос</name-loc><spell version="2">
+		<name>Hair Growth</name>
+		<name-loc>Рост волос</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Ноги и волосы объекта растут в миллион раз быстрее - волосы прорастают на 1 дюйм за 5 секунд, а ногти - за 30). Если оставить без контроля, такой быстрый рост будет мешать зрению (волосы закрывают глаза), движению (запутывается в бороде), работе (ногти мешают). Если объект лыс, это позволит ему вырастить волосы, которые выпадут по естественным причинам примерно через месяц.Длительность: 5 секунд.Стоимость: 1 создание. 1 поддержание.Требования: пять любых заклинания школы Контроля тела.Предмет(а) Любой. Всегда включён. Волосы начинают расти спустя час после одевания и заканчивают расти лишь спустя час после снятия предмета. Энергостоимость создания: 100. (б) Посох или палочка. Предмет должен касаться объекта. Энергостоимость создания: 250.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>5 sec</duration>
+		<reference>M39</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">body control</college>
+				<quantity compare="at least">5</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 221px; left: 7px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Haircut</name><name-loc>Стрижка</name-loc><spell version="2">
+		<name>Haircut</name>
+		<name-loc>Стрижка</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Состригает волосы объекта (может и бороду, усы и прочий волосяной или шерстяной покров) на усмотрение мага. Эстетическое качество работы проверяется по броску умения Парикмахер (профессиональное ЛВ(DX)/Среднее умение). Также может использоваться для стрижки овец, ощипывания кур и постригания ногтей. Заклинание не может затупить или сломать зубы, когти и рога (хотя может сделать маникюр).Длительность:  мгновенно.Стоимость: 2.Время сотворения: 2 секунды.Требования: Рост волос.Предмет(а) Эффект заклинания можно сделать постоянным (заставить волосы перестать расти) за 10-кратную цену заклинания. (б) Головной убор. При надевании делает стрижку указанную создателем этого предмета. Энергостоимость создания: 150. (в) Посох или палочка. Энергостоимость создания: 300.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M39</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">hair growth</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 149px; left: 259px;" class=""><name>Debility</name><name-loc>Слабость</name-loc><spell version="2">
+		<name>Debility</name>
+		<name-loc>Слабость</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Временно снижает СЛ(ST) объекта. Это уменьшит наносимый им вред, но не повлияет на ЕЖ(HP). Также уменьшает и грузоподъемность, но Мастер может проигнорировать это в интересах играбельности.Длительность: 1 минута.Стоимость: 1 за каждое уменьшаемое очко СЛ(ST) (максимум -5). Половина за поддержание (округлять вверх).Предмет(а) Посох или палочка. Используется только магами; необходимо указать на объект (касание не обязательно). Энергостоимость создания: 900. (б) Любой предмет. Всегда включён; уменьшает СЛ(ST) владельца. Энергостоимость создания: 100 за каждое уменьшаемое очко СЛ(ST).</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/-ST</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M36</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+	</spell></block><block style="top: 209px; left: 199px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Destroy Water</name><name-loc>Уничтожить воду</name-loc><spell version="2">
+		<name>Destroy Water</name>
+		<name-loc>Уничтожить воду</name-loc>
+		<description-loc>ОбластноеЗаставляет воду (в любой форме) исчезнуть, оставив вместо себя вакуум – или, возможно, пятна сухих примесей. Если кругом есть ещё вода, она поспешит заполнить дыру. Полезна для сушки вещей, спасения утопающих, и т.д. Нельзя использовать в качестве «обезвоживающей» атаки на противника.Длительность: Навсегда.Базовая стоимость: 3. В глубокой воде, область имеет всего 2 ярда в высоту (или глубину). Столько же поддержка.Требование: Создать водуПредметПосох, жезл или украшение. Энергостоимость создания: 300.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M185</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 209px; left: 319px;" class="other-college"><name>Decay</name><name-loc>Разложение</name-loc><spell version="2">
+		<name>Decay</name>
+		<name-loc>Разложение</name-loc>
+		<description-loc>ОбычноеЗаставляет пищу немедленно разлагаться, делая ее бесполезной (она может быть сохранена, если в течение минуты сотворить Контрзаклинание или Очистить пищу).Стоимость: 1 за уничтоженную порцию.Требования: Проверить пищу.Предмет Посох или палочка. Должен коснуться объекта. Энергостоимость создания: 100.</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/meal</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M77</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">test food</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 125px; left: 559px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Pestilence</name><name-loc>Чума</name-loc><spell version="2">
+		<name>Pestilence</name>
+		<name-loc>Чума</name-loc>
+		<description-loc>ОбычноеЗаражает цель жуткой инфекцией на выбор мага (Хотя Мастер может отклонить неподходящий выбор). Болезнь идет своим нормальным ходом; инфекции обычно не будет заметно какое-то время.Длительность: До исцеления.Стоимость: 6.Время сотворения: 30 секунд.Требования: Магичность(Magery) 1, Украсть здоровье и Разложение.ПредметПосох или палочка. Используется только магами; требуется коснуться предметом объекта. Налагаемая болезнь устанавливается зачарователем. Энергостоимость: 1000.</description-loc>
+		<college>Necromancy</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>6</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>30 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M154</reference>
+		<categories>
+			<category>Necromancy</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (necromancy)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">steal vitality</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">decay</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 125px; left: 679px;" class="other-college"><name>Drunkenness</name><name-loc>Опьянение</name-loc><spell version="2">
+		<name>Drunkenness</name>
+		<name-loc>Опьянение</name-loc>
+		<description-loc>Обычное; Сопротивление по Воле(Will).Временно опьяняет жертву: она шумна, весела и у неё плохо с координацией. И ИН(IQ), и ЛВ(DX) снижены на то же количество очков, которое вложили в заклинание. Если жертва – PC, ему должны сообщить, что он чувствует себя пьяным и предложить отыграть это! Заклинание прекращается мгновенно (похмелья нет).Длительность: 1 минута.Стоимость: 1 очко за снижение на единицу ИН(IQ) и ЛВ(DX) (максимум 5). Половина на поддержание.Время сотворения: 2 секунды.Требования: Глупость и Неуклюжесть.ПредметЛюбой предмет. Всегда включён; надевший подвергается эффекту заклинания Опьянение. Энергостоимость создания: 200 за единицу снижения ИН(IQ) и ЛВ(DX).Посох или палочка. Используется только магами; надо коснуться объекта. Энергостоимость создания: 800.</description-loc>
+		<college>Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/pt of IQ &amp; DX loss</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M136</reference>
+		<categories>
+			<category>Mind Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">foolishness</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">clumsiness</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 209px; left: 499px;" class="other-college"><name>Steal Vitality</name><name-loc>Украсть здоровье</name-loc><spell version="2">
+		<name>Steal Vitality</name>
+		<name-loc>Украсть здоровье</name-loc>
+		<description-loc>ОбычноеОтнимает ЕЖ(HP) у объекта, восстанавливая их у мага. Объект должен желать этого или быть беспомощным; маг должен касаться объекта. Действует только на живых, разумных существ! Действие заклинания прекращается, когда ЕЖ(HP) мага будут полностью восстановлены, либо маг решит остановить его, либо ЕЖ(HP) объекта снизятся до -1 (что автоматически его убьет).Длительность: постоянно.Стоимость: Бесплатно для мага! За каждые 3 ЕЖ(HP), украденные у объекта, маг восстанавливает 1 ЕЖ(HP).Время сотворения: 1 минута за каждые 3 ЕЖ(HP), украденные у объекта.Требования: Украсть энергию.Предмет(а) Посох, палочка, украшение. Носитель и предмет должны касаться жертвы. Используется только магами. Энергостоимость: 1500. (б) Любой предмет. Пока одет, снижает ЕЖ(HP) владельца на 1-5 единиц. Персонаж восстановит потерянные ЕЖ(HP), когда снимет предмет. Энергостоимость: 200 за каждое очко ЕЖ(HP).</description-loc>
+		<college>Necromancy</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>0</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 min per 3 HP drained</casting_time>
+		<duration>Permanent</duration>
+		<reference>M150</reference>
+		<categories>
+			<category>Necromancy</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">steal energy</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 209px; left: 619px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Sickness</name><name-loc>Болезнь</name-loc><spell version="2">
+		<name>Sickness</name>
+		<name-loc>Болезнь</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Объект начинает плохо себя чувствовать, его начинает тошнить (головокружение, рвота ит.д.). Он может бежать при необходимости (Движение в два раза меньше), но не может делать ничего кроме поддержания заклинаний и односложных ответов. Когда заклинание заканчивается, слабость сразу же пропадает.Это также заклинание школы Контроля тела.Длительность: 1 минута.Стоимость: 3 на сотворение. 3 на поддержание.Время сотворения: 4 секунды.Требования: Опьянение или Чума.Предмет(а) Любой. Всегда включён; наводит эффект Болезни на носящего. Энергостоимость создания: 300.           (б) Посох или палочка. Используется только магами; надо коснуться объекта. Энергостоимость создания: 1,500.</description-loc>
+		<college>Body Control/Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>4 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M138</reference>
+		<categories>
+			<category>Body Control</category>
+			<category>Mind Control</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">pestilence</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">drunkenness</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 293px; left: 91px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Earth to Air</name><name-loc>Землю в воздух</name-loc><spell version="2">
+		<name>Earth to Air</name>
+		<name-loc>Землю в воздух</name-loc>
+		<description-loc>ОбычнаяПревращает землю или камень в воздух, пригодный для дыхания – это может оказаться полезным для тех, кто завален под землей. Чем больше маг затратит энергии, тем больше земли он сможет превратить; но полученное помещение будет ограничено простейшими геометрическими формами, наибольшее измерение которых не превышает четырехкратного наименьшего измерения.Также это заклинанием школы Земли.Длительность: навсегда.Стоимость: 1 для превращения одного ф3 земли/камня в воздух, которого достаточно для дыхания одному персонажу в течение одной минуты. Большие объемы превращаются по цене 5 очков энергии за ярд3. Металл можно превратить в воздух за тройную стоимость.Время сотворения: 2 секунды.Требования: Создать воздух и Формировать воздух.ПредметПосох, палочка или украшение. Используется только магами. Для превращения нужно дотронуться предметом до камня. Стоимость создания: 750 энергии и $1.000 за украшение.</description-loc>
+		<college>Air/Earth</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5/25 cu ft#</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M25</reference>
+		<categories>
+			<category>Air</category>
+			<category>Earth</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape earth</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create air</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 293px; left: 199px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Thirst</name><name-loc>Жажда</name-loc><spell version="2">
+		<name>Thirst</name>
+		<name-loc>Жажда</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Вызывает потерю 4 ЕУ(FP) и 1 ЕЖ(HP) от обезвоживания, равносильную суткам, проведенным без воды. Снимается только обильным питьем и отдыхом (см. Обезвоживание, B426). ЕЖ(HP) восстанавливаются как обычно. Несколько повторных сотворений могут лишить объект речи – во рту пересохнет, язык приклеивается к небу.Это заклинание также относится и к школе Пищи.Стоимость: 5.Время сотворения: 10 секунд.Требования: Магичность(Magery) 1, Слабость и Уничтожить воду (M185).ПредметПосох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 2.000.</description-loc>
+		<college>Body Control/Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Until drink/rest</duration>
+		<reference>M38</reference>
+		<categories>
+			<category>Body Control</category>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">debility</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">destroy water</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 293px; left: 319px;" class="magery1"><name>Hunger</name><name-loc>Голод</name-loc><spell version="2">
+		<name>Hunger</name>
+		<name-loc>Голод</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Вызывает потерю 1 ЕУ(FP) от голода, равносильно пропуску одного приёма пищи. Восстанавливается только днём отдыха и хорошим питанием (см. Голод, B426).Это заклинание также школы Пищи.Стоимость: 2.Время сотворения: 5 секунд.Требования:  Магичность(Magery) 1, Слабость и Разложение.ПредметПосох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 2.000.</description-loc>
+		<college>Body Control/Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>Until eat/rest</duration>
+		<reference>M38</reference>
+		<categories>
+			<category>Body Control</category>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">debility</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">decay</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 293px; left: 439px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Strike Barren</name><name-loc>Поражение бесплодием</name-loc><spell version="2">
+		<name>Strike Barren</name>
+		<name-loc>Поражение бесплодием</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Объект становится бесплодным. Можно творить на растения. Убрать можно заклинаниями Снять проклятье или Восстановление. Сотворённое на растение лишает его пыльцы, плодов, семян и т.п.Это также заклинание Некромантии.Длительность: постоянно.Стоимость: 5.Время сотворения: 30 секунд.Требования: Магичность(Magery) 1, Вытянуть здоровье и Разложение.Предмет(а) Посох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 200. (б) Любой предмет. Всегда включён; владелец бесплоден пока предмет одет. Энергостоимость создания: 800.</description-loc>
+		<college>Body Control/Necromancy</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>30 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M41</reference>
+		<categories>
+			<category>Body Control</category>
+			<category>Necromancy</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">steal vitality</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">decay</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 293px; left: 559px;" class="magery1"><name>Weaken Blood</name><name-loc>Слабая кровь</name-loc><spell version="2">
+		<name>Weaken Blood</name>
+		<name-loc>Слабая кровь</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Объект получает недостаток Гемофилия (B138) на время действия заклинания. Любые раны вызывают сильное кровотечение.Это заклинание также является заклинанием школы Некромагии.Длительность: 1 деньСтоимость: 9 создание. 5 поддержание.Требования: Болезнь или Украсть здоровье.ПредметЛюбой; всегда включён. Владелец страдает гемофилией!  Энергостоимость создания: 200. (Обычно комбинируется с заклинанием Неснимаемость.)</description-loc>
+		<college>Body Control/Necromancy</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>9</casting_cost>
+		<maintenance_cost>5</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 day</duration>
+		<reference>M40</reference>
+		<categories>
+			<category>Body Control</category>
+			<category>Necromancy</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">sickness</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">steal vitality</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 365px; left: 235px;" class="other-college"><name>Destroy Water</name><name-loc>Уничтожить воду</name-loc><spell version="2">
+		<name>Destroy Water</name>
+		<name-loc>Уничтожить воду</name-loc>
+		<description-loc>ОбластноеЗаставляет воду (в любой форме) исчезнуть, оставив вместо себя вакуум – или, возможно, пятна сухих примесей. Если кругом есть ещё вода, она поспешит заполнить дыру. Полезна для сушки вещей, спасения утопающих, и т.д. Нельзя использовать в качестве «обезвоживающей» атаки на противника.Длительность: Навсегда.Базовая стоимость: 3. В глубокой воде, область имеет всего 2 ярда в высоту (или глубину). Столько же поддержка.Требование: Создать водуПредметПосох, жезл или украшение. Энергостоимость создания: 300.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M185</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 461px; left: 163px;" class="magery2"><name>Gauntness</name><name-loc>Измождение</name-loc><spell version="2">
+		<name>Gauntness</name>
+		<name-loc>Измождение</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Объект теряет в весе и переходит на 1 категорию ниже (противоположность заклинания Утолщить). Броня обвисает, давая -2 ЛВ(DX). Уже худой потеряет 20% веса и 1d ЕУ(FP) за каждое применение. Создания, на которых уже сотворено данное заклинание сопротивляются повторному сотворению с  5 (эффект накапливается).Длительность: 10 минут.Стоимость: 6 создание. 6 поддержание.Время сотворения: 3 секунды.Требования:  Магичность(Magery) 2, Землю в воздух, Уничтожить воду, и четыре любых заклинания школы контроля тела включая Голод.Предмет(а) Любой предмет. Владелец получает новую комплекцию, которая была заложена во время создания предмета. Энергостоимость создания: 2.000. (б) Волшебная палочка. Используется только магами; предмет должен касаться объекта. Энергостоимость создания: 1.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>6</casting_cost>
+		<maintenance_cost>6</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>10 min</duration>
+		<reference>M43</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">earth to air</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">destroy water</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">body control</college>
+				<quantity compare="at least">3</quantity>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">hunger</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 389px; left: 415px;" class="other-college"><name>Shapeshifting (@Specialty@)</name><name-loc>Превращение</name-loc><spell version="2" very_hard="yes">
+		<name>Shapeshifting (@Specialty@)</name>
+		<name-loc>Превращение</name-loc>
+		<description-loc>СпециальноеЗаклинатель превращается в животное. Каждая животная форма требует разных заклинаний, изучаемых отдельно. Заклинатель способен научиться превращаться лишь в тот тип животного, с которым он знаком. Во многих мирах можно превращаться только в некоторых животных.  Одежда, украшения и доспехи исчезают при принятии животной формы, и появляются вновь при возвращении в человеческую форму (магические украшения не могут быть обнаружены, когда «исчезают» при смене формы). Рюкзак, вещи и т.п. просто падают на землю. Заклинатель сохраняет свой интеллект, но получает физические способности новой формы. Это значит, что заклинания могут твориться, только если не требуют жестикуляции. Учтите, что силы, затрачиваемые на заклинания не увеличивается.Также, в каждый час действия заклинания должен быть сделан бросок ИН(IQ), про провале заклинатель теряет единицу ИН(IQ), это продолжается пока ИН(IQ) не достигнет животного. Если ИН(IQ) заклинателя упадет до 5 - он заперт в теле животного пока заклинание не будет снято сотворением Убрать проклятие (другие заклинания не помогут). Потерянный ИН(IQ) восстанавливается при возвращении в человеческую форму.Для большинства естественных животных форм приемлемая энергостоимость 6 на сотворение и 2 на поддержку; животные с большой силой, например, балансируются пониженной ловкостью. Тем не менее, если Мастер позволяет использовать сверхъестественных существ либо озабочен большой мощью данной животной формы, он может захотеть изменить стоимость этого заклинания. Подходящий способ расчета очков физических характеристик звериной формы - это 1/20  энергии за очко на сотворение и 1/60 на поддержание, минимум 3 на сотворение и 1 на поддержку.Длительность: 1 час.Стоимость: различна (см. выше).Время сотворения: 3 секунды.Требования: Магичность(Magery) 1 и минимум шесть других заклинаний любого типа.Предмет(а) Украшение. Должно иметь сходство с формой животного, в которое будет превращаться владелец. Используется только магами или натуральными оборотнями. Остается на заклинателе после превращения, так что в большинстве случаев это ошейник или ожерелье. Не имеет стоимости поддержания, однако заклинатель не может превратиться обратно в человека, если предмета на нём нет; или Убрать проклятие должно быть использовано для возвращения в нормальную форму. Энергостоимость создания: 1.500. (б) Шкура животного, форму которого примет владелец, также как и выше, однако шкура врастает в тело и не может быть потеряна! Энергостоимость создания: 3.000.</description-loc>
+		<college>Animal</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M32</reference>
+		<categories>
+			<category>Animal</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (animal)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<any></any>
+				<quantity compare="at least">6</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 389px; left: 655px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Perfect Illusion</name><name-loc>Совершенная иллюзия</name-loc><spell version="2">
+		<name>Perfect Illusion</name>
+		<name-loc>Совершенная иллюзия</name-loc>
+		<description-loc>ОбластноеПодобно Сложной иллюзии, но воздействует на все органы чувств, кроме осязания; рука просто пройдёт насквозь. Развеять иллюзию можно только заклинаниями Рассеять иллюзия и Рассеять магию. Любое повреждение будет только временной искажать её, выдавая иллюзию, но не развеивая её.  Длительность: 1 минута.Базовая стоимость: 3 на сотворение. Половина на поддержание. За удвоенную стоимость можно обмануть даже осязание, хотя от иллюзорного огня не согреешься «по-настоящему».Требования: Магичность(Magery) 1 и Сложная иллюзия.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M96</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">complex illusion</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (illusion &amp; creation)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 473px; left: 415px;" class="magery3"><name>Lengthen Limb</name><name-loc>Удлинить конечность</name-loc><spell version="2">
+		<name>Lengthen Limb</name>
+		<name-loc>Удлинить конечность</name-loc>
+		<description-loc>Обычное Рука (возможно и нога или любая другая подобная конечность) заклинателя удлиняется, становясь похожей на длинную змею. Удлинение происходит со скоростью 1 ярд в секунду, без ограничения. Заклинатель сохраняет осязание и может удлинять руку в пределах своей видимости, а следить за ней при помощи заклинания Волшебный глаз или схожего. Рост требует концентрации, но после достижения желаемой длины можно расслабиться.Удлинённая конечность может стать хорошей целью атаки! Когда заклинание заканчивается или в случае опасности, конечность «сматывается» обратно с Базовой скоростью заклинателя. Это полезно для доставания ключей из камеры или кражи алмаза халифа, пока он спит.Длительность: 1 минута.Стоимость: 2 создание. 2 поддержание.Время сотворения: 5 секунд.Требования: Магичность(Magery) 3 и Превращение.ПредметПалочка. Используется только магами. Энергостоимость создания: 1.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M41</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="contains">shapeshifting</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 473px; left: 535px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Alter Visage</name><name-loc>Изменить лицо</name-loc><spell version="2">
+		<name>Alter Visage</name>
+		<name-loc>Изменить лицо</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Изменяет лицо по желанию мага. Возможно любое изменение, но новые органы (например дополнительные глаза) не будут функционировать. При попытке скопировать чье-то лицо -1, если нет модели (или картинки); -2, если только по описанию. Заклинание не может нанести вреда объекту. Маги не получают права на бросок ИН(IQ)   Магичности для определения того, что внешность субъекта изменена данным заклинанием. Если это заклинание или Изменить тело улучшает внешность навсегда, то Мастер может потребовать заплатить за это очки персонажа!Длительность: 1 час, если не сделано постоянным. Может быть снято заклинаниями Изменить лицо, Изменить тело  или Снять проклятье.Стоимость: 4 создание. 3 поддержание. Можно сделать постоянным, если вложить 40 энергии.Время сотворения: 1 минута.Требования:  восемь заклинаний школы Контроля тела и любое из двух заклинаний Превращение или Совершенная иллюзия.ПредметЛюбой, но, обычно, это часть одежды или украшение. Даёт владельцу новое лицо, которое было заложено во время создания предмета. Энергостоимость создания: 1.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M41</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="contains">shapeshifting</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">perfect illusion</name>
+				</spell_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<college compare="contains">body control</college>
+				<quantity compare="at least">8</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 543px; left: 535px;" class=""><name>Alter Body</name><name-loc>Изменить тело</name-loc><spell version="2">
+		<name>Alter Body</name>
+		<name-loc>Изменить тело</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Подобно Изменить лицо, выше, но можно менять всё тело (кожу, волосы, конечности и т.д.). Основная форма тела не может измениться: гуманоид останется гуманоидом. Нельзя добавлять конечности, крылья, и т.п.. Возможны простые дополнения (нехватательный хвост, рога, копыта), но персонаж, непривыкший к ним, на период адаптации (решает Мастер) будет иметь штрафы к ЛВ(DX). Масса тела и атрибуты персонажа не меняются.Длительность: 1 час, если не сделано постоянным. Может быть снято заклинаниями Изменить тело  или Снять проклятье.Стоимость: 8 создание. 6 поддержание. Можно сделать постоянным, если вложить 200 энергии.Время сотворения: 2 минуты.Требования: Изменить лицо.ПредметЛюбой, но, обычно, это предмет одежды или украшение. Даёт владельцу новый внешний вид, который был заложен во время создания. Энергостоимость создания: 4.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>8</casting_cost>
+		<maintenance_cost>6</maintenance_cost>
+		<casting_time>2 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M41</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">alter visage</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 629px; left: 451px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Decapitation</name><name-loc>Обезглавить</name-loc><spell version="2">
+		<name>Decapitation</name>
+		<name-loc>Обезглавить</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT) 2Голова отваливается от тела! При сотворении заклинания голова субъекта (или одна из них, если голов несколько) отделяется от тела, но продолжает жить. Не наносит вреда, голова может быть повреждена, если упадет с шеи! Она может говорить, видеть, слышать и контролировать тело. Если голова будет ослеплена (засунута в мешок, например) то с управлением тела могут возникнуть большие проблемы. Заклинание действует постоянно и для его отмены надо приставить голову и пожелать присоединить. Если голова присоединения не желает, то делается обычное состязание по Воле(Will). Если заклинание сотворяется на врага, который затем возвращает ее себе и пытается прирастить, то маг не сможет ничем ему помешать – но он может сотворить это заклинание снова…Это заклинание при всей его полезности в бою, можно использовать и иначе. Маг, лишившийся ноги, может сотворить это заклинаине на себя… и отправиться с группой в путешествие одной только головой! Однако тело нельзя надолго оставлять без головы, т.к. ему необходима еда, а без головы есть невозможно. Также если заклинатель без головы пытается сделать заклинание, в котором должны участвовать руки, то штрафы за дальность будут рассчитываться исходя из расстояния до тела, а не головы.Длительность: Описана выше.Стоимость: 4.Время сотворения: 2 секунды.Требования: Магичность(Magery) 2 и Изменить тело.ПредметПосох, волшебная палочка или драгоценность. Используется только магами. Энергостоимость создания: 1.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>Semi-permanent</duration>
+		<reference>M42</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">alter body</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 629px; left: 343px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Transform Body (@Race@)</name><name-loc>Трансформировать тело</name-loc><spell version="2">
+		<name>Transform Body (@Race@)</name>
+		<name-loc>Трансформировать тело</name-loc>
+		<description-loc>ОсобоеПревращает мага в существо другой разумной расы. Каждая раса – отдельное заклинание, изучаемое само по себе. Маг может изучить превращение только в известную ему расу. Одежда, украшения и доспехи не исчезают, хотя могут быть повреждены, если целевая форма имеет более крупное телосложение (см. заклинание Утолщить). Маг принимает все физические черты новой формы, сохраняя свои ментальные. Обратите внимание, что Единицы усталости в отношении сотворения заклинаний не увеличиваются. Затраты энергии на это заклинание рассчитываются исходя из стоимости физических особенностей принятой формы; 1/10 на создание и 1/20 на поддержание, при минимуме в 5 на сотворение и 2 на поддержание.Длительность: 1 час.Стоимость: Разная (см. выше).Время сотворения: 1 минута.Требования: Изменить тело и три формы заклинания Превращение.ПредметДрагоценность. Должна иметь схожую форму с тем обликом, который приобретёт владелец; используется только магами. Не поддерживается, но и вернуть собственную форму можно, только если драгоценность при маге; иначе можно применить заклинание Убрать проклятье для возвращения нормальной формы магу. Энергостоимость создания: 1,500.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M43</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">alter body</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="contains">shapeshift</name>
+				<quantity compare="at least">3</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 629px; left: 223px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Shapeshift Others</name><name-loc>Превратить другого</name-loc><spell version="2" very_hard="yes">
+		<name>Shapeshift Others</name>
+		<name-loc>Превратить другого</name-loc>
+		<description-loc>То же что и Превращение, но действует на объект (другого человека). Объект не может прекратить действие заклинания, это может сделать только заклинатель или успешное сотворение Убрать проклятье. Если ИН(IQ) объекта падает до 5, то он заперт в звериной форме!Длительность: 1 час.Стоимость: как и для Превращения, но минимум 6 на сотворение, 2 на поддержание.Время сотворения: 30 секунд.Требования: Магичность(Magery) 2 и соответствующее Превращение.Предмет(а) Посох или палочка. Используется только магами; нужно коснуться объекта. Энергостоимость создания: 3.000. (б) Шкура принимаемой формы. Всегда «включена». Одетая на объект, накладывает на него  эффект навсегда (быстрая потеря ИН(IQ) как описано выше), пока не будет снята заклинанием Убрать проклятие; затем её можно использовать снова. Энергостоимость создания: 3.000.</description-loc>
+		<college>Animal</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>30 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M33</reference>
+		<categories>
+			<category>Animal</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (animal)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">shapeshifting (@specialty@)</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 713px; left: 175px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Flesh to Stone</name><name-loc>Плоть в камень</name-loc><spell version="2">
+		<name>Flesh to Stone</name>
+		<name-loc>Плоть в камень</name-loc>
+		<description-loc>Обычное; Сопротивление ЗД(HT)Превращает живой объект (и всё его снаряжение!) в камень. Обязательно действует на объект целиком.Длительность: мгновенно, пока не обратят обратно закинанием Камень в плоть.Стоимость: 10. За двойную цену, объект можно превратить в металлическую статую.Время сотворения: 2 секунды.Требуется:  Землю в камень.ПредметПосох или жезл. Используется только магами. Энергостоимость создания: 1.000. Предмет должен прикасаться к жертве заклинания, чтобы заклинание сработало.</description-loc>
+		<college>Earth</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>10#</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M31</reference>
+		<categories>
+			<category>Earth</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">earth to stone</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 821px; left: 43px;" class="other-college"><name>Create Water</name><name-loc>Создать воду</name-loc><spell version="2">
+		<name>Create Water</name>
+		<name-loc>Создать воду</name-loc>
+		<description-loc>ОбычноеСоздаёт чистую воду из ничего. Эта вода может появиться в любой из нескольких форм. Она может появиться в ёмкости или как сфера в воздухе (она сразу падает). Или она может появиться как густой туман из капель; в этой форме, один галлон воды потушит все огни в радиусе одного ярда. Воду нельзя создать внутри врага, чтобы его утопить!Длительность: Вода создаётся навсегда.Стоимость: 2 за созданный галлон.Требование: Очистить воду.ПредметПосох, жезл или украшение. Энергостоимость создания: 200.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/gal</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M184</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">purify water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 797px; left: 163px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Create Earth</name><name-loc>Создать землю</name-loc><spell version="2">
+		<name>Create Earth</name>
+		<name-loc>Создать землю</name-loc>
+		<description-loc>ОбычноеПозволяет создать хорошую, твёрдую землю там, где её раньше не было. Земля должна быть создана в контакте с поверхностью, а не висящей в воздухе или плавающей в море!Длительность: навсегда.Стоимость: 2 за кубический ярд, чтобы создать землю из ничего (минимум 2); 1 за кубический ярд, чтобы сделать из грязи хорошую, твёрдую землю (минимум 1).Требуется: Землю в камень.ПредметПосох или жезл. Энергостоимость создания: 500.</description-loc>
+		<college>Earth</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/25 cu ft</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M51</reference>
+		<categories>
+			<category>Earth</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">earth to stone</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 714px; left: 283px;" class="magery2"><name>Transform Other (@Race@)</name><name-loc>Трансформировать другого</name-loc><spell version="2">
+		<name>Transform Other (@Race@)</name>
+		<name-loc>Трансформировать другого</name-loc>
+		<description-loc>Особое; Сопротивление по Воли(Will)Идентично Трансформации тела, но применяется на других. Объект не может прекратить действия заклинания сам – только по желанию мага или заклинанием Убрать проклятье.Длительность: 1 час.Стоимость: Та же как и у заклинания Трансформировать тело, но только минимальные затраты на заклинание составляют: 10 создание и 4 поддержание.Время сотворения: 2 минуты.Требования: Превращение другого и соответствующую форму в заклинании Трансформировать тело.Предмет(а) Волшебная палочка. Используется только магами; предмет должен касаться объекта. Энергостоимость создания: 3.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>2 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M43</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">transform body (@race@)</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shapeshift others</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 797px; left: 283px;" class="magery3"><name>Transmogrification</name><name-loc>Превратить в предмет</name-loc><spell version="2">
+		<name>Transmogrification</name>
+		<name-loc>Превратить в предмет</name-loc>
+		<description-loc>Обычное; Сопротивление по Воли(Will)Превращает объекта в неживой предмет того же веса. Предмет может быть любым из известных магу. Живые существа с ИН(IQ) 0 – растения, например – считаются в этом отношении неодушевленными объектами. Объект находится в сознании, сохраняя лишь слух (в ограниченных пределах) и сильно ослабленное осязание. Он не может предпринимать никаких действий, включая использование магии и псионики. Если предмет будет поврежден, объект потеряет пропорциональное количество ЕЖ(HP) при возвращении в нормальную форму. Если предмет будет уничтожен, объект погибает.Длительность: 1 час.Стоимость: 20. Столько же поддержание.Время сотворения: 2 минуты.Требования: Магичность(Magery) 3, Трансформировать другого, Трансформировать объект, и Плоть в камень.ПредметПосох, волшебная палочка или драгоценность; используется только магами. Энергостоимость создания: 5.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>20</casting_cost>
+		<maintenance_cost>20</maintenance_cost>
+		<casting_time>2 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M43</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">transform other</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">transform object</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">flesh to stone</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 713px; left: 391px;" class="other-college"><name>Transform Object</name><name-loc>Изменить объект</name-loc><spell version="2" very_hard="yes">
+		<name>Transform Object</name>
+		<name-loc>Изменить объект</name-loc>
+		<description-loc>Обычное; Специальное сопротивлениеПревращает один объект в другой того же веса. Превращение может быть любым – пистолет может быть превращен в тряпичную куклу, к примеру. Также как и в случае с Создать объект (M98) все, что маг притворяет в реальность должно быть ему знакомо. Чтобы превратить в функциональный объект, заклинатель должен иметь подходящее умение для создания похожего объекта; вышеупомянутая тряпичная кукла будет довольно плохой, если заклинатель не обладает умением Шитья, и если он захочет превратить тряпичную куклу в пистолет, ему лучше иметь Оружейное умение.Объект, удерживаемый или надетый кем-то, сопротивляется с помощью Воли(Will) своего владельца.Длительность: 1 час.Стоимость: 1 на сотворение за каждый фунт веса объекта, при превращении в камень (или из него) стоимость удваивается, в случае с металлом утраивается. Та же цена поддержки.Время сотворения:равно стоимости, в секундах.Требования: Магичность(Magery) 2, Изменить форму и не менее 4 заклинаний «Создать».ПредметПосох, палочка или драгоценность. Может использоваться только магами. Энергостоимость создания: 1.000.</description-loc>
+		<college>Making &amp; Breaking</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/lb</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>cost=sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M120</reference>
+		<categories>
+			<category>Making &amp; Breaking</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="contains">create</name>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">reshape</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (making &amp; breaking)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 917px; left: 103px;" class="magery2 hard"><name>Corpulence</name><name-loc>Дородность</name-loc><spell version="2">
+		<name>Corpulence</name>
+		<name-loc>Дородность</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Увеличивает комплекцию на 1 уровень вверх (Худой -&gt; Нормальный -&gt; Полнота -&gt; Толстый) (см. B18). Уже Толстые существа увеличивают вес на  100% (не считая модификации за Худобу или излишний вес) за каждое сотворение. Создания, на которых уже сотворено данное заклинание сопротивляются повторному сотворению с  5 (эффект накапливается). Кроме обычных эффектов увеличения веса, одежда на персонаже будет рваться; каждая часть жесткой брони нанесет СП(DR)/3 (округлять вниз) тупого вреда или начнет душить (B436). Когда субъект из-за излишнего веса окажется не в состоянии двигаться, он начнет задыхаться под собственным весом.Длительность: 10 минут.Стоимость: 6 создание. 6 поддержание.Время сотворения: 3 секунды.Требования:  Магичность(Magery) 2, Создать землю, Создать воду, и четыре любых заклинания школы контроля тела включая Изменить тело.Предмет(а) Любой предмет. Владелец получает новую комплекцию, которая была заложена во время создания предмета. Энергостоимость создания: 2.000. (б) Волшебная палочка. Используется только магами; предмет должен касаться объекта. Энергостоимость создания: 1.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>6</casting_cost>
+		<maintenance_cost>6</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>10 min</duration>
+		<reference>M43</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">create earth</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">body control</college>
+				<quantity compare="at least">3</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">alter body</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 629px; left: 571px;" class="magery2 hard"><name>Shrink</name><name-loc>Уменьшение</name-loc><spell version="2" very_hard="yes">
+		<name>Shrink</name>
+		<name-loc>Уменьшение</name-loc>
+		<description-loc>ОбычноеУменьшает размеры тела волшебника, снижая Модификатор размера. За каждые -1 МР(SM): на 2/3 умножаются СЛ(ST), ЕЖ(HP), Базовое движение; за каждые 2 уровня уменьшения СП(DR) уменьшается на 1. Одежда уменьшается вместе с магом, если он пожелает, но более значительные объемы вещей остаются неизменными (хотя маг может уменьшить их при помощи Уменьшения объекта). ИН(IQ), ЛВ(DX), ЗД(HT), ЕЖ(HP), Базовая скорость и Уклонение остаются неизменными.  Вес сильно уменьшается; за каждые -1 МР(SM) следует делить вес волшебника на 3.5. По магу сложнее попасть, соответственно его новому МР(SM). Чтобы маг все же мог иметь хоть какую-то возможность физического действия, Мастер может установить порог уменьшения до 1 ЕЖ(HP) и 1 базовое движение(BM). Может, это и нереалистично, но сохраняет традиции героической фэнтези.Длительность: 1 час.Стоимость: 2 за -1 МР(SM). Столько же поддержание.Время сотворения: 5 секунд. Уменьшение происходит по 1 МР(SM) в секунду после окончания сотворения заклинания.Требования:  Магичность(Magery) 2 и Изменить тело.Предмет(а) Волшебная палочка. Используется только магами. Энергостоимость создания: 2.000. (б) Изменение размера может быть постоянным, если заплатить 100-кратную стоимость за заклинание (Мастер может потребовать постоянную поддержку).</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2 per -1 SM</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M42</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">alter body</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 629px; left: 679px;" class="magery2 hard"><name>Enlarge</name><name-loc>Увеличиться</name-loc><spell version="2" very_hard="yes">
+		<name>Enlarge</name>
+		<name-loc>Увеличиться</name-loc>
+		<description-loc>ОбычноеУвеличивает размеры тела волшебника, увеличивая его Модификатор размера. За каждые -1 МР(SM): на 1.5 умножаются СЛ(ST), ЕЖ(HP), Базовое движение; за каждые 2 уровня СП(DR) увеличивается на 1. Одежда увеличивается вместе с магом, если он пожелает, но более значительные объемы вещей остаются неизменными (хотя маг может уменьшить их при помощи Увеличения объекта). Эффекты влияния брони см. в заклинании Дородность, M43. ИН(IQ), ЛВ(DX), ЗД(HT), ЕЖ(HP), Базовая скорость и Уклонение остаются неизменными.  Вес значительно увеличивается; за каждые  1 МР(SM) следует умножить вес на 3.5. Если маг находится в помещении, которое не может вместить его новый размер, то рост останавливается. Однако, если максимальный прямой вред превышает СП(DR) этого помещения, то маг может пробить его за (СП(DR)) секунд.Длительность: 1 час.Стоимость: 2 за  1 МР(SM). Столько же поддержание.Время сотворения: 5 секунд.Требования:  Магичность(Magery) 2 и Изменить телоПредмет(а) Волшебная палочка. Используется только магами. Энергостоимость создания: 2.000. (б) Изменение размера может быть постоянным, если заплатить 100-ую цену за заклинание (ГМ может потребовать постоянную поддержку).</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2 per  1 SM</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M42</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">alter body</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 701px; left: 571px;" class="magery3 hard"><name>Shrink Other</name><name-loc>Уменьшить другого</name-loc><spell version="2" very_hard="yes">
+		<name>Shrink Other</name>
+		<name-loc>Уменьшить другого</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Аналогично заклинанию Уменьшение, но творится на других. Действие заклинания может прервать только сотворивший его или заклинание Убрать проклятье. Также Мастеру следует учесть психологический аспект этого заклинания для объекта. Длительность: 1 час.Стоимость: 2 за -1 МР(SM). Столько же поддержание.Время сотворения: 10 секунд.Требования: Магичность(Magery) 3 и Уменьшение.Предмет(a) Волшебная палочка. Используется только магами; предмет должен касаться объекта. Энергостоимость создания: 2.000. (б) Изменение размера может быть постоянным, если заплатить 100-кратную стоимость за заклинание (Мастер может потребовать постоянную поддержку).</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2 per -1 SM</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M42</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">shrink</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 701px; left: 679px;" class="magery3 hard"><name>Enlarge Other</name><name-loc>Увеличить другого</name-loc><spell version="2" very_hard="yes">
+		<name>Enlarge Other</name>
+		<name-loc>Увеличить другого</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Действует как заклинание Увеличиться, но с возможностью применять на других существ. Действие заклинания может прервать сотворивший его или заклинание Убрать проклятье. Сотворите это заклинание на добровольца, и он станет отличной осадной машиной … но это сделает его главной целью для вражеской артиллерии и магии.Длительность: 1 час.Стоимость: 2 за  1 МР(SM). Столько же поддержание.Время сотворения: 10 секунд.Требования: Магичность(Magery) 3 и Увеличиться.Предмет(а) Волшебная палочка. Используется только магами. Энергостоимость создания: 2.000. (б) Изменение размера может быть постоянным, если заплатить 100-ую цену за заклинание (Мастер может потребовать постоянную поддержку).</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2 per  1 SM</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M43</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">enlarge</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block>
+</div>

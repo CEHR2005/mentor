@@ -1,0 +1,1477 @@
+<block style="top: 145px; left: 287px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Lend Energy</name><name-loc>Передать энергию</name-loc><spell version="2">
+		<name>Lend Energy</name>
+		<name-loc>Передать энергию</name-loc>
+		<description-loc>ОбычноеВосстанавливает потерянные Единицы Усталости объекта из энергии, затраченной заклинателем. Не может увеличить ЕУ(FP) объекта  выше его обычного максимума.Стоимость: Любое количество; потраченная энергия перейдет объекту как восстановленные ЕУ(FP) (т.е. если заклинатель потратит 5 энергии, объект восстановит 5 ЕУ(FP)). Стоимость не уменьшается с уровнем умения.Требования: Магичность(Magery) 1 или Эмпатия (B51)ПредметПосох, палочка или украшение. Энергостоимость создания: 100.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/pt</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M89</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="no">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (healing)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<advantage_prereq has="yes">
+				<name compare="is">empathy</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 217px; left: 179px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Share Energy</name><name-loc>Поделиться энергией</name-loc><spell version="2">
+		<name>Share Energy</name>
+		<name-loc>Поделиться энергией</name-loc>
+		<description-loc>ОбычноеДелает ЕУ(FP) заклинателя доступными для другого мага творящего заклинание. Можно сотворить только на себя. Заклинатель должен указать, кто может черпать ЕУ(FP) в следующую секунду, и никто другой не сможет это сделать. Можно выбрать более одного мага, и за секунду можно черпать не более 5 ЕУ(FP). Заклинатель может определить более низкий порог! ЕЖ(HP) не может использоваться для сотворения заклинания. Если указанный маг не черпает ЕУ(FP) до следующего хода заклинателя, действие закончится, стоя одну ЕУ(FP). Маг, творящий другое заклинание, не должен знать о существовании Поделиться энергией. Поскольку он творит заклинание, то будет чувствовать внешнюю энергию пытающуюся помочь ему - можно уступить ей или нет, платя стоимость самому.Черпать энергию можно только из одного заклинания Поделиться энергией. Если сотворено более одного заклинания, используется ближайшее; из двух одинаково близких выбирается случайным броском.Длительность: ЕУ(FP) должны использоваться в данный ход. Не поддерживается. Стоимость: Удвоенное количество энергии фактически потраченной магом, черпающим ЕУ(FP). Энергия заклинателя усиливает заклинание другого мага. ЕУ(FP), сверх необходимых заклинанию, не передаются – для этого используется Передать энергию. Стоимость, сотворения не уменьшается высоким навыком, всегда тратится минимум 1 ЕУ(FP).Требования: Передать энергию.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2-10</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 sec</duration>
+		<reference>M89</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lend energy</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 217px; left: 287px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Lend Vitality</name><name-loc>Передать здоровье</name-loc><spell version="2">
+		<name>Lend Vitality</name>
+		<name-loc>Передать здоровье</name-loc>
+		<description-loc>ОбычноеВременно восстанавливает объекту потерянные Единицы Жизни из энергии, затраченной заклинателем. Не может увеличить ЕЖ(HP) объекта выше его обычного максимума. Восстановленные ЕЖ(HP) исчезают через час. Заклинание не может быть поддержано - это только временная мера.Длительность: 1 час.Стоимость: Любое количество; потраченная энергия перейдет объекту как восстановленные ЕЖ(HP) (например, заклинатель тратит 5 энергии - объект восстановит 5 ЕЖ(HP)). Стоимость не уменьшается с уровнем умения. Не поддерживается; должно сотвориться заново.ПредметПосох, палочка или украшение. Энергостоимость создания: 250.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/pt</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 hour</duration>
+		<reference>M89</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lend energy</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 217px; left: 395px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Recover Energy</name><name-loc>Восстановление энергии</name-loc><spell version="2">
+		<name>Recover Energy</name>
+		<name-loc>Восстановление энергии</name-loc>
+		<description-loc>ОсобоеОтдохните и восстановите Единицы Усталости быстрее обычного, вытягивая энергию из маны вокруг. Каждые 10 минут обычный человек восстанавливает 1 ЕУ(FP). Маг, знающий это заклинание с навыком 15 и выше, восстанавливает 1 ЕУ(FP) каждые 5 минут; 20 и выше – 1 ЕУ(FP) каждые 2 минуты. Дальнейшее улучшение невозможно. Действует только на заклинателя и не может восстановить ЕУ(FP) другим.Маг должен просто спокойно отдохнуть, ритуалов или бросков не требуется. Отдыхая, можно поддерживать обычные заклинания, не требующие концентрации.Заклинание не функционирует в низко или безмановых областях.Стоимость: Нет.Требования: Магичность(Magery) 1 и Передать Энергию.ПредметДрагоценность. Позволяет носителю восстанавливаться, как под действием заклинания с уровнем равным Силе  предмета; всегда включен. Очень редкий предмет! Энергостоимость создания: 1.000; должен быть сделан из сплава золота и платины (минимальная цена маленького кольца $500).</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>0</casting_cost>
+		<maintenance_cost>0</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Special</duration>
+		<reference>M89</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (healing)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">lend energy</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 217px; left: 683px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Wisdom</name><name-loc>Мудрость</name-loc><spell version="2">
+		<name>Wisdom</name>
+		<name-loc>Мудрость</name-loc>
+		<description-loc>ОбычноеВременно повышает ИН(IQ) объекта. Вместе с ИН(IQ) увеличиваются умения, но заклинания остаются на прежнем уровне. ИН(IQ) объекта не может стать выше ИН(IQ) заклинателя.Длительность: 1 минута.Стоимость: 4 за каждое очко ИН(IQ) (максимально 5). Столько же на поддержание.Требования: как минимум шесть других заклинаний школы контроля разума.ПредметЛюбой предмет. Всегда включён; пока предмет надет, ИН(IQ) носящего увеличен! Это очень редкие и ценные вещи. Энергостоимость создания: 2,000 за каждое очко ИН(IQ) (максимум 5).Посох или палочка. Используется только магами; надо коснуться объекта. Энергостоимость создания: 2,000.</description-loc>
+		<college>Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4/pt of IQ</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M135</reference>
+		<categories>
+			<category>Mind Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">mind control</college>
+				<quantity compare="at least">6</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 355px; left: 23px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Awaken</name><name-loc>Пробудить</name-loc><spell version="2">
+		<name>Awaken</name>
+		<name-loc>Пробудить</name-loc>
+		<description-loc>ОбластноеПриводит объект(ы) в сознание и боевую готовность. Немедленно снимает эффекты оглушения. Если объект очень утомлен (менее 1/3 базовых ЕУ(FP)), заклинание действует в течение часа и стоит ему 1 ЕУ(FP) в конце. Не действует  для тех, у кого 0 ЕУ(FP) или менее. Спящие или без сознания выполняют бросок ЗД(HT), чтобы проснуться, с премией, равной успеху заклинателя. Объект бросает с -3 если он без сознания из-за раны, с -6 если под наркотиками.Базовая стоимость: 1.Требования: Передать здоровье.ПредметПосох или палочка. Должен коснуться объекта. Энергостоимость создания: 300.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M90</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lend vitality</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 355px; left: 131px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Stop Spasm</name><name-loc>Остановить спазм</name-loc><spell version="2">
+		<name>Stop Spasm</name>
+		<name-loc>Остановить спазм</name-loc>
+		<description-loc>ОбычноеНемедленно прекращает спазмы любого рода – включая рвоту и эпилепсию. Магические причины получают право на сопротивление.Также относится к заклинаниям Лечения.Стоимость: 1.Требования: Спазм или Передать здоровье.Предмет(а) Посох или волшебная палочка, с нанесенным изображением змеи. Используется только магами или обладающими умением Врачебное дело на уровне 15 или выше. Энергостоимость создания: 400. (б) Любой предмет. Всегда включён. Он защищает владельца от спазмов (даёт  5 к сопротивлению Спазму). Энергостоимость создания: 750.</description-loc>
+		<college>Healing/Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M35</reference>
+		<categories>
+			<category>Body Control</category>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">spasm</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">lend vitality</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 355px; left: 239px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Cleansing</name><name-loc>Очищение</name-loc><spell version="2">
+		<name>Cleansing</name>
+		<name-loc>Очищение</name-loc>
+		<description-loc>Обычное; специальное сопротивлениеЧистит ткани объекта от любых инородных тел, включая иглы кактуса или дикобраза, наконечники стрел и копий, пули, осколки, и т.д. Также устраняет бактерий и паразитов (только внешних). Не работает  против болезней, ядов или наркотиков. Объект не должен возражать или быть полностью беспомощным (например, связанным или без сознания), и заклинатель должен его коснуться. «Инородные тела», так или иначе являющиеся неотъемлемой частью объекта (золотые зубы, стальные пластины или пруты, стеклянные глаза, киберимпланты, и так далее) должны быть исключены заклинателем, или они могут быть разрушены! Если заклинатель является небрежным (или злонамеренным), каждый предмет сопротивляется отдельно с ЗД(HT) 5 объекта.Стоимость: 2, чтобы очистить кисть или ступню, 4 для туловища или конечности, 6 для всего тела.Время сотворения: 3 секунды.Требования: Малое лечение и Очистить Землю.ПредметПалочка или посох с образом змеи. Предмет должен коснуться объекта. Используется только магом либо  немагом с Хирургией-15 и выше. Энергостоимость создания: 250.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/4/6</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M94</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">minor healing</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">purify earth</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 289px; left: 347px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Minor Healing</name><name-loc>Малое лечение</name-loc><spell version="2">
+		<name>Minor Healing</name>
+		<name-loc>Малое лечение</name-loc>
+		<description-loc>ОбычноеВосстанавливает объекту до 3 ЕЖ(HP). Не устранит болезнь или отравление, но вылечит повреждение, вызванное ими.Заклинание опасно, если заклинатель сотворяет его несколько раз в день на один и тот же объект. Если пробуете, бросаете c -3 для первого повтора, -6 для второго, и так далее.Если есть умение Врач   уровня 15 и выше, критическая неудача считается обычной, если заклинание не сотворено повторно на тот же самый объект.Стоимость: от 1 до 3. Столько же ЕЖ(HP) восстановит объект.Требования: Передать здоровье.ПредметПалочка или посох с образом змеи. Предмет должен коснуться объекта. Используется магами либо немагами с умением Врач уровня 15 и выше. Энергостоимость создания: 600.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M91</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lend vitality</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 289px; left: 575px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Share Vitality</name><name-loc>Поделиться жизнью</name-loc><spell version="2">
+		<name>Share Vitality</name>
+		<name-loc>Поделиться жизнью</name-loc>
+		<description-loc>ОбычноеЗаклинатель излечивает чьи - либо раны, передавая их себе, теряя столько ЕЖ(HP), сколько вылечил объекту. Увечья объекта остаются - лечится только потеря ЕЖ(HP). Аналогично, новые раны заклинателя не увечат (хотя, конечно, могут лишить сознания  или даже убить; заклинание не имеет «сети безопасности» для чрезмерно добрых волшебников). Заклинатель не получает обычный штраф к навыку за трату ЕЖ(HP) на заклинание и за повторное сотворение на тот же объект.Длительность: Навсегда; заклинатель может быть излечен от новых ран обычным или магическим способом.Стоимость: Не тратит энергии; высокий уровень влияет только на время сотворения.Время сотворения:1 секунда на переданную ЕЖ(HP).Требования: Передать здоровье.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>None</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec/HP</casting_time>
+		<duration>Permanent</duration>
+		<reference>M90</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lend vitality</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 289px; left: 683px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Relieve Madness</name><name-loc>Облегчить безумие</name-loc><spell version="2">
+		<name>Relieve Madness</name>
+		<name-loc>Облегчить безумие</name-loc>
+		<description-loc>ОбычноеВременно восстанавливает здравомыслие объекта, освобождая его от одного Заблуждения, Фобии, Принуждения, или наведенного заклинанием Безумия (по выбору заклинателя). Заклинания Безумие и Постоянное Безумие сопротивляются данному.Это - также заклинание Контроля разума.Длительность: 10 минут.Стоимость: 2. Не поддерживается.Время сотворения: 10 секунд.Требования: Передать здоровье и Мудрость.ПредметПалочка, посох или украшение. Энергостоимость создания: 800.</description-loc>
+		<college>Healing/Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>10 min</duration>
+		<reference>M92</reference>
+		<categories>
+			<category>Healing</category>
+			<category>Mind Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lend vitality</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">wisdom</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 343px; left: 629px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Stop Bleeding</name><name-loc>Остановить кровотечение</name-loc><spell version="2">
+		<name>Stop Bleeding</name>
+		<name-loc>Остановить кровотечение</name-loc>
+		<description-loc>ОбычноеОбъект сразу прекращает кровоточить, как будто перевязанный кем-то с навыком Первой помощи (B195). Это восстанавливает 1 ЕЖ(HP), и препятствует их дальнейшей потери, при использовании дополнительных правил кровотечения (B420). Объект, может, не получить дальнейшей выгоды из перевязки тех же самых ран. Заклинание может также использоваться, чтобы стабилизировать смертельную рану (B423), за существенно большую стоимость.Длительность: Навсегда, хотя более поздние раны будут кровоточить как всегда.Стоимость: 1, чтобы прекратить кровотечение нормальной раны; 10, чтобы стабилизировать смертную рану.Требование: Передать здоровье.ПредметЛюбой Предмет с изображением пеликана. Препятствует кровотечению владельца и страданию от смертельных ран. Энергостоимость создания: 500.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1 or 10</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M91</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lend vitality</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 355px; left: 515px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Relieve Sickness</name><name-loc>Облегчить болезнь</name-loc><spell version="2">
+		<name>Relieve Sickness</name>
+		<name-loc>Облегчить болезнь</name-loc>
+		<description-loc>Обычное; Сопротивление от заклинаний на объектеВременно облегчает любые внешние симптомы болезни (лихорадка, головокружение, сыпь, кашель, и т.д.). Заклинания Болезнь и Опьянение могут сопротивляться  . Отметьте, лечатся только симптомы. Облегчить Болезнь отрезвит пьяного на время, для постоянного лечения используйте Нейтрализовать Яд.Длительность: 10 минут.Стоимость: 2. Не поддерживается, должно быть сотворено повторно.Время сотворения: 10 секунд.Требования: Передать здоровье.ПредметПалочка, посох или украшение. Энергостоимость создания: 250.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>10 min</duration>
+		<reference>M90</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lend vitality</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 355px; left: 407px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery1"><name>Major Healing</name><name-loc>Большое лечение</name-loc><spell version="2" very_hard="yes">
+		<name>Major Healing</name>
+		<name-loc>Большое лечение</name-loc>
+		<description-loc>ОбычноеВосстанавливает объекту до 8 ЕЖ(HP). Не устранит болезнь или отравление, но вылечит повреждение, вызванное ими. Другие функции заклинания такие же, как в Малом лечении: -3 к сотворению на тот же объект в тот же день, и умение Врач уровня 15 и выше для смягчения эффекта критической неудачи.Штрафы за повторное сотворение накапливаются отдельно для Малого и Большого лечения. Заклинатель может сотворить оба заклинания на один объект за день без штрафа.Стоимость: от 1 до 4. Удвоенное число ЕЖ(HP) восстановится.Требования: Магичность(Magery) 1 и Малое лечение.ПредметПалочка или посох с образом змеи. Предмет должен коснуться объекта. Используется магами либо немагами с умением Врач уровня 20 и выше. Энергостоимость создания: 1.500.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-4</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M91</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (healing)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">minor healing</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 421px; left: 347px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Great Healing</name><name-loc>Великое лечение</name-loc><spell version="2" very_hard="yes">
+		<name>Great Healing</name>
+		<name-loc>Великое лечение</name-loc>
+		<description-loc>ОбычноеВосстанавливает все недостающие ЕЖ(HP) объекта. Не устранит ни болезнь или отравление, ни поврежденные или недостающие части тела, но может излечить ЕЖ(HP), потерянные любым образом.Любой объект может быть вылечен данным заклинанием только раз в день, независимо сотворено ли оно одним заклинателем или разными.Если есть умение Врач уровня 15 или выше, критическая неудача считается обычной.Стоимость: 20. Одна попытка в день на один объект.Время сотворения: 1 минута.Требования: Магичность(Magery) 3 и Большое лечение.ПредметПалочка или посох с образом змеи. Предмет должен коснуться объекта. Используется магами либо немагами с умением Врач уровня 25 и выше. Энергостоимость создания: 4.000.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>20</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>Permanent</duration>
+		<reference>M91</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (healing)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">major healing</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 481px; left: 17px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Body-Reading</name><name-loc>Чтение тела</name-loc><spell version="2">
+		<name>Body-Reading</name>
+		<name-loc>Чтение тела</name-loc>
+		<description-loc>Информационное; Сопротивление по Воле(Will)Создает в уме заклинателя визуальное и тактильное «изображение» внутренностей тела объекта. Полезно для диагностирования боли или болезни неясного происхождения. Заклинание показывает разрывы органа и внутреннее кровотечение, переломы кости и даже пол будущего ребенка. Используются обычные модификаторы расстояний. По существу, это - волшебный эквивалент подробных рентген снимков. Что заклинатель сможет сделать с полученной информацией, зависит от его медицинских навыков.Не показывает точную природу ядов или болезней, влияющих на объект, но дает  2 любым последующим броскам Яды или Диагноз. Заклинатель должен коснуться объекта.Модификаторы:-2, если объект отличается по виду от заклинателя (например, эльфийский маг, читающий человека); -4 и ниже, если полностью чуждый!  Стоимость: 2.Время сотворение: 30 секунд.Требование: Чувство жизни или ПробудитьПредметГоловной убор или украшение. Действует только на носителя. Энергостоимость создания: 200.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>30 sec</casting_time>
+		<duration>-</duration>
+		<reference>M88</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">awaken</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">sense life</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 601px; left: 17px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Restore Memory</name><name-loc>Восстановить память</name-loc><spell version="2">
+		<name>Restore Memory</name>
+		<name-loc>Восстановить память</name-loc>
+		<description-loc>ОбычноеИспользуется, для лечения жертв потери памяти, обычной или волшебной. Восстанавливает один забытый факт или навык за раз. Заклинание Забвения сопротивляется; Постоянное забвение сопротивляется с  5. Это заклинание не разрешает объекту вспомнить что-то, чего он фактически никогда не запоминал (но см. заклинание Вспомнить, M106).Рискованно применять больше раза в день на том же объекте: заклинание повторно сотворяется с накапливающимся штрафом -3. Критическая неудача очень опасна – искомый фрагмент памяти разрушается навсегда, и объект погружается в пугающее чередование похороненных воспоминаний, длящуюся 2d минуты, что вызывает Проверку испуга с -6.Если у заклинателя есть навык Психологии 15 и выше, «критическая неудача» считается обычной - если он уже не попробовал заклинание несколько раз за этот день на данном объекте.Длительность: память восстанавливается навсегда.Время сотворения: 10 секунд.Стоимость: 3.Требования: Пробудить и ИН(IQ) 11 или выше.ПредметПалочка или посох, с изображением медведя. Предмет должен коснуться объекта. Энергостоимость создания: 600.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M92</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<attribute_prereq has="yes" which="iq" compare="at least">11</attribute_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">awaken</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 481px; left: 185px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Restore Sight</name><name-loc>Восстановить зрение</name-loc><spell version="2">
+		<name>Restore Sight</name>
+		<name-loc>Восстановить зрение</name-loc>
+		<description-loc>ОбычноеВременно восстанавливает зрение объекта, независимо от того, что вызвало потерю (если природа потери волшебная, соответствующие заклинания сопротивляются данному). Глаза не должны полностью отсутствовать (требует Регенерации). Для постоянного лечения, используйте Восстановление.Длительность: 1 час.Стоимость: Половина восстановленных очков Зрения (Восп   Обостренное зрение ); половина на поддержание.Время сотворения: 5 секунд.Требования: Малое лечение и или Поражение слепотой или Обостренное зрение .ПредметУкрашение или одежда. Всегда включен. Энергостоимость создания: 1.000.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 hour</duration>
+		<reference>M92</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">minor healing</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">keen vision</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">strike blind</name>
+				</spell_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 607px; left: 185px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Restore Hearing</name><name-loc>Восстановить слух</name-loc><spell version="2">
+		<name>Restore Hearing</name>
+		<name-loc>Восстановить слух</name-loc>
+		<description-loc>ОбычноеСхож с Восстановить зрение, но для слуха. Барабанные перепонки и другие органы слуха не должны полностью отсутствовать.Длительность: 1 час.Стоимость: Половина восстановленных очков слуха (Восп   Обостренный слух); половина на поддержание.Время сотворения: 5 секунд.Требования: Малое лечение и или Поражение глухотой или Обостренный слух.ПредметУкрашение (сережки особенно подходят) или одежда. Всегда включен. Энергостоимость создания: 1.000.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 Hour</duration>
+		<reference>M92</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">minor healing</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">keen hearing</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">strike deaf</name>
+				</spell_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 733px; left: 107px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Restore Speech</name><name-loc>Восстановить речь</name-loc><spell version="2">
+		<name>Restore Speech</name>
+		<name-loc>Восстановить речь</name-loc>
+		<description-loc>ОбычноеСхож с Восстановить зрение, но для речи. Глотка и голосовые связки не должны полностью отсутствовать.Длительность: 1 час.Стоимость: 5 на сотворение; 3 на поддержание.Время сотворения: 5 секунд.Требования: Малое лечение и или Поражение немотой, или Великий голос.ПредметУкрашение или одежда. Всегда включен. Энергостоимость создания: 1.000.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 Hour</duration>
+		<reference>M93</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">great voice</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">strike dumb</name>
+				</spell_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">minor healing</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 541px; left: 347px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Cure Radiation</name><name-loc>Исцеление радиации</name-loc><spell version="2" very_hard="yes">
+		<name>Cure Radiation</name>
+		<name-loc>Исцеление радиации</name-loc>
+		<description-loc>ОбычноеИзлечивает объект от радиационного заражения; это заклинание выводит радиацию из тела объекта, в том числе и «постоянные» 10% полученной дозы (однако, «постоянная» доза – последняя, которую можно вывести). Уже потерянные ЕЖ(HP), как и другие повреждения, не восстанавливаются, они должны быть излечены другими способами. Это заклинание также относится к школе Лечения.Длительность: радиация выводится навсегда.Стоимость: 1 за каждые 10 выведенных из организма рад; минимальная стоимость – 5.Время сотворения: 30 секунд.Требования: Сопротивление радиации и Большое лечение.Предмет:Палочка или посох. Надо коснуться объекта. Используется только магом или немагом с умением Врачебное дело 20 . Энергостоимость создания: 1.000.</description-loc>
+		<college>Healing/Technological</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/10 Rads</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>30 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M182</reference>
+		<categories>
+			<category>Healing</category>
+			<category>Technological</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">major healing</name>
+				<quantity compare="is">1</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">resist radiation</name>
+				<quantity compare="is">1</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 661px; left: 347px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Healing Slumber</name><name-loc>Целительный сон</name-loc><spell version="2">
+		<name>Healing Slumber</name>
+		<name-loc>Целительный сон</name-loc>
+		<description-loc>Обычное; Автоматическое сопротивлениеОбъект впадает в глубокий укрепляющий сон, и излечивает 1 ЕЖ(HP) в течение каждого часа отдыха. Усталость восстанавливается с удвоенной скоростью. Объект проснется, когда полностью излечится, или после 8 часов сна; за это время также полностью восстановится усталость от недосыпа. Также может быть разбужен словом заклинателя, раной или заклинанием Пробудить (Удалить Проклятие, Противозаклинание, и т.д.). Возражающий  объект сопротивляется автоматически.Длительность: до 8 часов (максимум восстанавливает 8 ЕЖ(HP) в день)Стоимость: 6. За 10 скорость восстановления удвоится. Максимум восстановления не меняется.Время сотворения: 30 секундТребования: Магичность(Magery) 2, Сон и Малое лечение.Предмета) Палочка или посох, с образом змеи. Предмет должен коснуться объекта. Употребляется только магом либо немагом с умением Врач-15 и выше. Энергостоимость создания: 1.000.б) Любой предмет. Включается, если владелец желает спать или теряет сознание от усталости или ран. Владелец проснется, если предмет убран или по истечению заклинания (если ЕЖ(HP) владельца все еще отрицательны, см. Восстановление сознания, B423). Энергостоимость создания: 900.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>6 or 10</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>30 sec</casting_time>
+		<duration>Up to 8 hrs</duration>
+		<reference>M94</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (healing)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">sleep</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">minor healing</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 661px; left: 449px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Suspended Animation</name><name-loc>Приостановить жизнь</name-loc><spell version="2">
+		<name>Suspended Animation</name>
+		<name-loc>Приостановить жизнь</name-loc>
+		<description-loc>Обычное; сопротивление по ЗД(HT).Погружает объект в клинический сон  на неограниченный срок. Пока действует, остановлены эффекты серьезного кровотечения, болезни, возраста, и т.д. Объект не требует ни пищи, ни воздуха, но может быть поврежден огнем, оружием, и другими обычными опасностями.Продолжительность: Остается в силе пока не нарушено (например, заклинанием Пробудить).Стоимость: 6.Время сотворения: 30 секунд.Требования: Сон и по крайней мере четыре заклинания Лечения.Предмет(а) Драгоценности, стрела, или одежда. Всегда включен; немедленно приостанавливает жизнедеятельность владельца. Как только предмет убран, заклинание сразу снимается. Энергостоимость создания: 2.000.(б) Склеп, гроб, и т.д. Всегда включен; приостанавливает жизнедеятельность находящегося в нём . Энергостоимость создания: 2.000 за место размером с человека.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>6</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>30 sec</casting_time>
+		<duration>Until Awakened</duration>
+		<reference>M94</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sleep</name>
+				<quantity compare="is">1</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">healing</college>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 847px; left: 317px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Relieve Paralysis</name><name-loc>Облегчить паралич</name-loc><spell version="2">
+		<name>Relieve Paralysis</name>
+		<name-loc>Облегчить паралич</name-loc>
+		<description-loc>ОбычноеВременно возвращает объекту возможность использовать искалеченные или парализованные конечности. Конечно, если они не отсутствуют полностью (требует Регенерации). Конечности ослабевают без использования, поэтому Мастер должен на свое усмотрение определить ЛВ(DX) и СЛ(ST) штрафы к использованию. Продолжительность: 1 минута.Стоимость: Равна порогу калечащего вреда этой части тела . Столько же на поддержание.Время, чтобы сотворить: 10 секунд.Требование: Остановить Паралич.ПредметДрагоценности или одежда. Всегда включен. Энергостоимость создания: 200 за восстановленную единицу из калечащего порога (если калечащий порог носителя ваше ёмкости  предмета, рекомендуется учесть разницу как штраф к ЛВ(DX) и СЛ(ST) для конечности)</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M93</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">stop paralysis</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 787px; left: 317px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Stop Paralysis</name><name-loc>Остановить паралич</name-loc><spell version="2">
+		<name>Stop Paralysis</name>
+		<name-loc>Остановить паралич</name-loc>
+		<description-loc>ОбычноеПротиводействует временному параличу (из-за заклинания, парализующего оружия, и т.д.). Постоянные заклинания (такие, как Паралич конечности или Полный паралич) получают бросок сопротивления.Стоимость:1 за конкретную конечность; 2 за все тело.Требования: Или Малое лечение и Паралич конечности или Большое лечение.ПредметПосох, палочка или украшение. Энергостоимость создания: 200.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1 or 2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M93</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">major healing</name>
+				</spell_prereq>
+				<prereq_list all="yes">
+					<prereq_list all="yes">
+						<spell_prereq has="yes">
+							<name compare="is">minor healing</name>
+						</spell_prereq>
+					</prereq_list>
+					<spell_prereq has="yes">
+						<name compare="is">paralyze limb</name>
+					</spell_prereq>
+				</prereq_list>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 475px; left: 515px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Cure Disease</name><name-loc>Исцеление болезни</name-loc><spell version="2">
+		<name>Cure Disease</name>
+		<name-loc>Исцеление болезни</name-loc>
+		<description-loc>ОбычноеУстраняет один тип болезни или инфекции из тела объекта. Успешный бросок Диагноза (заклинателем, или кем-то другим) должен предшествовать сотворению; в противном случае используйте заклинания со штрафом -5! Не лечит повреждения, нанесенные болезнью, только устраняет ее саму.Длительность: Болезнь уходит, но объект не получает иммунитет навсегдаСтоимость: 4.Время сотворения: 10 минут. Одна попытка.Требования: Облегчить болезнь и Большое лечение.ПредметПалочка или посох с образом змеи. Предмет должен коснуться объекта. Используется только магами. Энергостоимость создания: 800 за излечение от конкретной болезни; 1.500 за предмет, лечащий все болезни.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 min</casting_time>
+		<duration>Permanent</duration>
+		<reference>M91</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">relieve sickness</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">major healing</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 541px; left: 569px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Remove Contagion</name><name-loc>Дезинфицировать</name-loc><spell version="2">
+		<name>Remove Contagion</name>
+		<name-loc>Дезинфицировать</name-loc>
+		<description-loc>ОбластноеОчищает целевую область от заразных болезнетворных агентов  - микробов, духов болезни, зараженного воздуха, и т.д. – делая ее стерильной и дезинфицированной. Может использоваться для чистки и стерилизации чего угодно, от храма болезнепоклонников  до операционной. Не лечит и не облегчает болезни живых существ; служит только для дезинфекции и очистки объектов и поверхностей. Области или объекты очищенные заклинанием, не могут быть источниками инфекции (см. Инфекция, B443) пока не заразятся повторно.Продолжительность: Пока болезнетворные агенты не вернутся в зачищенную область. Базовая стоимость: 3.Время сотворения: 2 секунды.Требование: Разложение, Очистка или Вылечить болезнь.ПредметПалочка или посох, с образом змеи. Предмет должен коснуться объекта . Энергостоимость создания: 400.Прекратить спазмОбычноеОписано в заклинаниях Контроля тела, M35.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M90</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">decay</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">clean</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">cure disease</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 607px; left: 581px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Resist Disease</name><name-loc>Сопротивление болезни</name-loc><spell version="2">
+		<name>Resist Disease</name>
+		<name-loc>Сопротивление болезни</name-loc>
+		<description-loc>ОбычноеНа время действия объект получает иммунитет к болезням, как преимущество Иммунитет к болезням (B80). Также заклинание Защиты и предупреждения.Длительность: 1 часСтоимость: 4 на сотворение; 3 на поддержание.Время сотворения: 10 секунд.Требования: Дезинфицировать или Здравие.Предмета)  Украшение. Всегда включен, носитель имуннен к болезням. Редкий и ценный предмет! Энергостоимость создания: 1.000 за иммунитет от одной заданной болезни; 2.500 за иммунитет ко всем болезням.б) Украшение. Всегда включен; предотвращает распространение любой болезни носителя. «Кандалы  прокаженных», например. Энергостоимость создания:250.</description-loc>
+		<college>Healing/Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M90</reference>
+		<categories>
+			<category>Healing</category>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">remove contagion</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">vigor</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 607px; left: 683px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Resist Poison</name><name-loc>Сопротивление яду</name-loc><spell version="2">
+		<name>Resist Poison</name>
+		<name-loc>Сопротивление яду</name-loc>
+		<description-loc>ОбычноеНа время действия заклинания объект становится неуязвимым к ядам. Для очень стойких ядов это - только задержка неизбежного, так как следы яда могут все еще быть в организме, к концу действия заклинания! Также заклинание Защиты и предупреждения.Длительность: 1 часСтоимость: 4 на сотворение; 3 на поддержание.Время сотворения: 10 секунд.Требования: Здравие.ПредметДрагоценность,  должна иметь картину единорога. Всегда включен; владелец имунен к ядам. Редкий и дорогой предмет! Энергостоимость создания: 500 за иммунитет к конкретному яду, 4.000 за сопротивление всем ядам.</description-loc>
+		<college>Healing/Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 Hour</duration>
+		<reference>M91</reference>
+		<categories>
+			<category>Healing</category>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">vigor</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 727px; left: 629px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Detect Poison</name><name-loc>Обнаружить яд</name-loc><spell version="2">
+		<name>Detect Poison</name>
+		<name-loc>Обнаружить яд</name-loc>
+		<description-loc>Областное; ИнформационноеОпределяет наличие ядов и даёт бонус  2 к последующему броску Ядов для определения конкретного вещества. Заклинатель может по желанию исключить некоторые яды из поиска перед сотворением заклинания (например, чтобы искать именно нервнопаралитические яды, или исключить «лёгкие» яды вроде алкоголя). Это также заклинание школы Лечения.Базовая стоимость: 2.Время сотворения: 2 секунды.Требования: Почуять опасность или Проверить пищу.ПредметПосох, палочка или украшение. Энергостоимость создания: 250.</description-loc>
+		<college>Healing/Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area/Info</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>-</duration>
+		<reference>M166</reference>
+		<categories>
+			<category>Healing</category>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">sense danger</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">test food</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 811px; left: 611px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Neutralize Poison</name><name-loc>Нейтрализовать яд</name-loc><spell version="2">
+		<name>Neutralize Poison</name>
+		<name-loc>Нейтрализовать яд</name-loc>
+		<description-loc>ОбычноеУстраняет все следы одного выбранного яда из тела объекта. Успешный бросок Ядов (заклинателем или другим персонажем) должен предшествовать сотворению, чтобы определить очищаемый яд; в противном случае используйте заклинания со штрафом -5! Бесполезно против алхимических эликсиров, кроме наносящих прямой урон. Не лечит существующие повреждения, только удаляет сам яд, предотвращая дальнейшие.Длительность: Навсегда.Стоимость: 5.Время сотворения: 30 секунд (остерегайтесь быстродействующих ядов!). Одна попытка.Требования: Магичность(Magery) 3 и Проверить пищу либо Исцеление болезни.ПредметПосох или палочка с образом змеи. Используется магами либо немагами с умением Врач-20 и выше. Предмет должен коснуться объекта. Энергостоимость создания: 400 за предмет, лечащий определенный яд, 1.500 за предмет, лечащий любой яд.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>30 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M92</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="no">
+			<skill_prereq has="yes">
+				<name compare="is">poisons</name>
+				<specialization compare="is anything"></specialization>
+			</skill_prereq>
+			<prereq_list all="yes">
+				<spell_prereq has="yes">
+					<name compare="is">test food</name>
+				</spell_prereq>
+				<prereq_list all="no">
+					<advantage_prereq has="yes">
+						<name compare="is">magery</name>
+						<notes compare="contains">one college (healing)
+						<level compare="at least">3</level>
+					</notes></advantage_prereq>
+					<advantage_prereq has="yes">
+						<name compare="is">magery</name>
+						<notes compare="is anything"></notes>
+						<level compare="at least">3</level>
+					</advantage_prereq>
+				</prereq_list>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">cure disease</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 895px; left: 557px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Relieve Addiction</name><name-loc>Облегчить привыкание</name-loc><spell version="2">
+		<name>Relieve Addiction</name>
+		<name-loc>Облегчить привыкание</name-loc>
+		<description-loc>ОбычноеЧастично заменяет «ежедневную дозу» некоторых препаратов, требуемых объекту. Объект все еще будет чувствовать психологические эффекты пропуска дозы (т.е. все еще требуется бросок ЗД(HT) модифицированный Воле(Will)й  для учета дней до избавления от привыкания), но не будет страдать от физических повреждений при ломке .Модификаторы: -4, если заклинатель сотворил заклинание на себя, и накапливающийся по -4 за каждый следующий день сотворения на тот же объект (таким образом, заклинанию становится все труднее и труднее заменить препарат). Кроме того, штраф абстиненции, свойственный препарату, применяется к любому сотворению!Продолжительность: 1 день.Стоимость: 6. Не поддерживается.Время, чтобы сотворить: 10 секунд.Требование: Нейтрализовать яд.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>6</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 day</duration>
+		<reference>M92</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">neutralize poison</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 895px; left: 665px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery2"><name>Instant Neutralize Poison</name><name-loc>Мгновенная нейтрализация яда</name-loc><spell version="2" very_hard="yes">
+		<name>Instant Neutralize Poison</name>
+		<name-loc>Мгновенная нейтрализация яда</name-loc>
+		<description-loc>ОбычноеТо же что Нейтрализовать яд, но действует мгновенно.Стоимость: 8. Одна попытка в день.Требования Магичность(Magery) 2 и Нейтрализовать яд.ПредметПосох или палочка с образом змеи. Используется магами либо немагами с умением Врач-20 и выше. Предмет должен коснуться объекта. Энергостоимость создания: 800 за предмет, лечащий определенный яд, 3.000 за предмет, лечащий любой яд.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>8</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M92</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (healing)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">neutralize poison</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 289px; left: 239px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Purify Earth</name><name-loc>Очистить землю</name-loc><spell version="2">
+		<name>Purify Earth</name>
+		<name-loc>Очистить землю</name-loc>
+		<description-loc>ОбластноеУдаляет посторонние предметы, яды и вредные элементы из почвы, делая её пригодной для выращивания растений. Это заклинание также помогает от любых недостатков в составе почвы. Маленькие сторонние предметы (монеты, гвозди) находящиеся под землёй уничтожаются; средние (мечи, артиллерийские снаряды, сундуки, статуэтки) «всплывают» на поверхность. Большие предметы (гробы, стены, большие статуи) приводят к провалу заклинания, но заклинатель получает общее представление о причине провала.Это также заклинание школы Растений.Длительность: навсегда.Базовая стоимость: 2. Удвоенная за плохую почву, как каменистые равнины или пустыня.Время сотворения: 30 секунд.Требования:  Создать землю и Рост Растений.ПредметПосох. Энергостоимость создания: 400.Песчаная буря</description-loc>
+		<college>Plant/Earth</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>30 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M54</reference>
+		<notes>Double casting cost in poor or rocky soil/desert</notes>
+		<categories>
+			<category>Earth</category>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create earth</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">plant growth</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 289px; left: 106px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Spasm</name><name-loc>Спазм</name-loc><spell version="2">
+		<name>Spasm</name>
+		<name-loc>Спазм</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Может быть направлено против любого мускула (c произвольным контролем) объекта. Направленное против руки заставляет объект бросить то, что зажато в руке (обычно это оружие). Если объект в этот момент выполняет пассы для сотворения заклинания, он должен выполнить бросок ЛВ(DX), чтобы продолжить. Изобретательные маги найдут и другие возможности для использования этого заклинания.Длительность: мгновенно.Стоимость: 2. Не поддерживается.Требования: Зуд.Предмет(а) Посох или волшебная палочка; используется только магами. Предмет должен касаться жертвы. Энергостоимость создания: 300. (б) Любой предмет; действует всегда. Владелец должен бросать ЗД(HT) каждый раз, когда делает что-то деликатное (например, взлом замка, произнесение заклинания). При провале владелец получает Спазм. Энергостоимость создания: 100.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M35</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">itch</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 415px; left: 17px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Sense Life</name><name-loc>Почуять жизнь</name-loc><spell version="2">
+		<name>Sense Life</name>
+		<name-loc>Почуять жизнь</name-loc>
+		<description-loc>Информационное; ОбластноеСообщает заклинателю, есть ли жизнь в данном месте, и (при хорошем броске) общее представление о типе этой жизни. Заклинатель также может точно указать, какого рода жизнь он ищет: растения, эльфов, рыжих девок или конкретную личность, с которой он знаком.Базовая стоимость: 1/2 (минимум 1).ПредметПосох, палочка или украшение. Энергостоимость создания: 80.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info/Area</spell_class>
+		<casting_cost>1/2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M45</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+	</spell></block><block style="top: 415px; left: 131px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Strike Blind</name><name-loc>Поражение слепотой</name-loc><spell version="2">
+		<name>Strike Blind</name>
+		<name-loc>Поражение слепотой</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Объект временно ослеплён. См. Слепота B124, для полного описания воздействия. Главное, что объект получает -10 к физической атаке и не может видеть цель заклинания.Длительность: 10 секунд.Стоимость: 4 создание. 2 поддержание.Требования: Спазм и два любых заклинания школы Света и тьмы.Предмет(а) Любой предмет. Всегда включён; владелец не видит. Энергостоимость создания: 500. (б) Посох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 2.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>10 sec</duration>
+		<reference>M38</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">light</college>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">spasm</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 541px; left: 131px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Strike Deaf</name><name-loc>Поражение глухотой</name-loc><spell version="2">
+		<name>Strike Deaf</name>
+		<name-loc>Поражение глухотой</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Объект временно глохнет.Длительность: 10 секунд.Стоимость: 3 создание. 1 поддержание.Требования: Спазм и два любых заклинания школы Звука.Предмет(а) Любой предмет. Всегда включён; владелец глух. Энергостоимость создания: 400. (б) Посох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 1.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>10 sec</duration>
+		<reference>M38</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">sound</college>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">spasm</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 415px; left: 239px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Keen Vision</name><name-loc>Обострённое зрение</name-loc><spell version="2">
+		<name>Keen Vision</name>
+		<name-loc>Обострённое зрение</name-loc>
+		<description-loc>ОбычноеНа самом деле это несколько заклинаний, так же как Контроль (животных) и Увеличить (атрибут). Наиболее распространённые варианты – Обострённое Зрение, Обострённый Слух, Обострённый Вкус и Обоняние, но возможны и необычные варианты для необычных способов восприятия , таких как Обнаружение, Сканирование и Чувство вибрации.Обострённое (чувство) даёт бонус  1 при соответствующих бросках чувств за каждое затраченное очко энергии.Обострённый слух также является заклинанием школы Звука.Длительность: 30 минут.Стоимость: 1 очко за каждое бонусное очко (максимум 5). Половина (округляется вверх) на поддержание.Предмет:Одежда или украшение. Энергостоимость создания: 150 за каждое бонусное очко.</description-loc>
+		<college>Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/pt increase</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>30 min</duration>
+		<reference>M133</reference>
+		<categories>
+			<category>Mind Control</category>
+		</categories>
+	</spell></block><block style="top: 541px; left: 239px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Keen Hearing</name><name-loc>Обострённый слух</name-loc><spell version="2">
+		<name>Keen Hearing</name>
+		<name-loc>Обострённый слух</name-loc>
+		<description-loc>Описано в Заклинаниях контроля разума, M133.</description-loc>
+		<college>Mind Control/Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>30 min</duration>
+		<reference>M133</reference>
+		<categories>
+			<category>Mind Control</category>
+			<category>Sound</category>
+		</categories>
+	</spell></block><block style="top: 667px; left: 53px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Strike Dumb</name><name-loc>Поражение немотой</name-loc><spell version="2">
+		<name>Strike Dumb</name>
+		<name-loc>Поражение немотой</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Объект временно не может говорить. Это может сорвать колдовство, требующее речи (M8).Длительность: 10 секунд.Стоимость: 3 создание. 1 поддержание.Требования: Спазм.Предмет(а) Любой предмет. Всегда включён; владелец не может говорить. Энергостоимость создания: 500. (б) Посох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 2.500.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>10 sec</duration>
+		<reference>M38</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">spasm</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 667px; left: 161px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Great Voice</name><name-loc>Великий голос</name-loc><spell version="2">
+		<name>Great Voice</name>
+		<name-loc>Великий голос</name-loc>
+		<description-loc>ОбычноеОбъекта могут слышать чётко и ясно все, кого он видит, даже на большом расстоянии. Объект может выбрать тех, кто может его слышать перед тем, как начать говорить (конечно, те, кто находятся в пределах зоны обычной слышимости, будут слышать его в любом случае). Заметьте, что спрятавшись за камень, слышимость не испортить. Это заклинание широко применяется капитанами кораблей, военными командирами и ораторами. Если голос изначально громки, под действием заклинания он может стать раздражающим. Но не оглушит  и не причинит вреда.Длительность:1 минута.Стоимость: 3 на сотворение. 1 на поддержание.Время сотворения: 2 секунды.Требования: Голоса и ГромПредметПосох, палочка, шлем или украшение; действует лишь на надевшего. Энергостоимость создания: 200.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M173</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">thunderclap</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">voices</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 595px; left: 347px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Sleep</name><name-loc>Сон</name-loc><spell version="2">
+		<name>Sleep</name>
+		<name-loc>Сон</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Объект засыпает. Если он стоит, он падает, но это его не будит. Он может быть разбужен взрывом, громким звуком ит.д. но после пробуждения он будет ментально оглушён (смотри Эффекты Оглушения B420). Заклинание Пробудить (M90) разбудит его немедленно. Если объект не будить, он проспит восемь часов и проснётся.Стоимость: 4.Время сотворения: 3 секунды.Требования: Оцепенение.ПредметЛюбой предмет. Всегда включён; усыпляет надевшего до тех пор, пока предмет не снимут. При создании предмета зачарователь может указать будет ли усыпление мгновенным или постепенным. Энергостоимость создания: 600.Посох или палочка. Используется только магами; надо коснуться объекта. Энергостоимотсь создания: 1.200.</description-loc>
+		<college>Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>Until awakened</duration>
+		<reference>M135</reference>
+		<categories>
+			<category>Mind Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">daze</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 721px; left: 233px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Paralyze Limb</name><name-loc>Паралич конечности</name-loc><spell version="2">
+		<name>Paralyze Limb</name>
+		<name-loc>Паралич конечности</name-loc>
+		<description-loc>Касательное; Сопротивление по ЗД(HT)Маг должен коснуться нужной конечности объекта (иное касание не дает эффекта). Броня не защищает. Бросок сопротивления делается при касании. Если маг побеждает, конечность считается покалеченной в течение одной минуты.Длительность: 1 минута.Стоимость:  3. Не поддерживается.Требования: Магичность(Magery) 1 и пять любых заклинания школы Контроля тела, Неуклюжесть.ПредметПосох или палочка; используется только магами. Предмет должен касаться объекта.  Энергостоимость создания: 1.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Melee</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M40</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<college compare="contains">body control</college>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">clumsiness</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 475px; left: 347px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Resist Radiation</name><name-loc>Сопротивление радиации</name-loc><spell version="2">
+		<name>Resist Radiation</name>
+		<name-loc>Сопротивление радиации</name-loc>
+		<description-loc>ОбычноеОбъект (человек, создание или предмет) и все, что он держит, получают сопротивляемость радиации. Это выражается Степенью защиты (см. B436). Это заклинание также относится к школе Защиты и предупреждения.Длительность: 1 минута.Стоимость: 1 за СЗ 10, 2 за СЗ 100, 3 за СЗ 1000.  Половина для поддержания (округлять вверх).Требования: не меньше трёх заклинаний Радиации.Предмет:(а) Любой, действует лишь на носящего. Энергостоимость создания: 1.000.(б) Палочка, посох или украшение. Энергостоимость создания: 1.000.</description-loc>
+		<college>Protection/Technological/Radiation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M182</reference>
+		<categories>
+			<category>Protection</category>
+			<category>Radiation</category>
+			<category>Technological</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">radiation</college>
+				<quantity compare="at least">3</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 415px; left: 569px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Decay</name><name-loc>Разложение</name-loc><spell version="2">
+		<name>Decay</name>
+		<name-loc>Разложение</name-loc>
+		<description-loc>ОбычноеЗаставляет пищу немедленно разлагаться, делая ее бесполезной (она может быть сохранена, если в течение минуты сотворить Контрзаклинание или Очистить пищу).Стоимость: 1 за уничтоженную порцию.Требования: Проверить пищу.Предмет Посох или палочка. Должен коснуться объекта. Энергостоимость создания: 100.</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/meal</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M77</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">test food</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 475px; left: 623px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Clean</name><name-loc>Уборка</name-loc><spell version="2">
+		<name>Clean</name>
+		<name-loc>Уборка</name-loc>
+		<description-loc>ОбластноеОчищает область или существо (т.е. убирает грязь и пятна, и полирует поверхности, которые могут быть отполированы). Не убирает застоявшихся запахов (для этого используйте Очистка воздуха).Длительность: Навсегда.Стоимость: 2Требования: Восстановить.ПредметПалочка, посох или чистящий инструмент (метла, тряпка, и т.д.). Должен коснуться очищаемой области. Энергостоимость создания: 100.</description-loc>
+		<college>Making &amp; Breaking</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M116</reference>
+		<categories>
+			<category>Making &amp; Breaking</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">restore</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 541px; left: 683px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Vigor</name><name-loc>Здравие</name-loc><spell version="2">
+		<name>Vigor</name>
+		<name-loc>Здравие</name-loc>
+		<description-loc>ОбычноеУвеличивает ЗД(HT) объекта. Влияет на Базовую Скорость, ЕУ(FP), способность противостоять заклинаниям и болезням. Заклинатель может увеличить свой показатель ЗД(HT). После окончания действия заклинания объект теряет столько же ЕУ(FP), сколько было добавлено заклинанием. Если ЕУ(FP) субъекта после окончания действия заклинания окажутся отрицательными, то следует отнять по одной ЕЖ(HP) за каждую отрицательную ЕУ(FP). Стоимость заклинания не уменьшается за высокий уровень умения.Длительность: 1 минута.Стоимость: 2 за каждое увеличиваемое очко ЗД(HT) (максимум 5). Столько же поддержание.Требования: Передать жизнь или Хрупкость.Предмет(а) Любой предмет. Всегда включён; увеличивает ЗД(HT) владельца только когда используется. Энергостоимость создания: 1.500 за каждое увеличиваемое очко (максимум 5). (б) Посох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 1.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/ HT</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M37</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">lend vitality</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">frailty</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 661px; left: 575px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Sense Danger</name><name-loc>Почуять опасность</name-loc><spell version="2">
+		<name>Sense Danger</name>
+		<name-loc>Почуять опасность</name-loc>
+		<description-loc>ИнформационноеСообщает заклинателю, есть ли поблизости непосредственная опасность; также может сообщить об отдалённой опасности, если она приближается. Если времени до беды осталось около минуты, ощущается природа опасности; если не больше пяти минут, то появляется только дурное предчувствие (более точное предчувствие возможно только при критическом успехе).Длительность: мгновенная.Стоимость: 3.Требования: Почуять врагов или Чувство опасности.ПредметПалочка, посох или украшение. Энергостоимость создания:400.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M166</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">sense foes</name>
+			</spell_prereq>
+			<advantage_prereq has="yes">
+				<name compare="is">danger sense</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 661px; left: 683px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Test Food</name><name-loc>Проверить пищу</name-loc><spell version="2">
+		<name>Test Food</name>
+		<name-loc>Проверить пищу</name-loc>
+		<description-loc>ИнформационноеОпределяет, подходит ли субстанция для еды. Заклинание ничего не скажет о вкусе или питательности, но определит яды, опасное гниение или инородные объекты (лезвие во фрукте). Не проверяет наличие магии в еде.Стоимость: 1 за проверку одной порции или бутылки; 3 за всю еду и питье в радиусе 1 ярда.ПредметПосох, палочка или украшение. Энергостоимость создания: 100.</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>1 or 3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M77</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+	</spell></block>
+<div style="position:absolute; left:700px; top:0px;">
+<block style="top: 303px; left: 267px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard"><name>Restoration</name><name-loc>Восстановление</name-loc><spell version="2" very_hard="yes">
+		<name>Restoration</name>
+		<name-loc>Восстановление</name-loc>
+		<description-loc>ОбычноеВозвращает возможность использовать одной искалеченной конечности, или поврежденного глаза, также восстанавливает слух, обоняние, и т.д. Не действует на потерянную конечность или глаз (требует Регенерации). Если часть тела ампутирована и не повреждена, можно попробовать восстановить ее в течение часа, со штрафом -5!Длительность: Навсегда.Стоимость: 15. Одна попытка.Время сотворения: 1 минута, на сотворение; 1 месяц на завершение процесса восстановления. Весь месяц конечность не может использоваться; она просто не будет работать, даже если  кажется здоровой.Требования: Либо Большое лечение, либо любые два из Облегчить паралич и различных заклинаний «Восстановить».ПредметПалочка или посох, с образом змеи. Употребляется только магами. Предмет должен коснуться объекта.  Энергостоимость создания: 2.000.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>15</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>Permanent</duration>
+		<reference>M93</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">major healing</name>
+			</spell_prereq>
+			<prereq_list all="yes">
+				<prereq_list all="yes">
+					<spell_prereq has="yes">
+						<name compare="is">relieve paralysis</name>
+					</spell_prereq>
+				</prereq_list>
+				<spell_prereq has="yes">
+					<name compare="contains">restore</name>
+				</spell_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 387px; left: 207px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery2"><name>Instant Restoration</name><name-loc>Мгновенное восстановление</name-loc><spell version="2" very_hard="yes">
+		<name>Instant Restoration</name>
+		<name-loc>Мгновенное восстановление</name-loc>
+		<description-loc>ОбычноеТо же что Восстановление, но работает мгновенно.Стоимость: 50. Одна попытка.Требования: Магичность(Magery) 2 и Восстановление.ПредметПалочка или посох, с образом змеи. Используется только магами. Предмет должен коснуться объекта. Энергостоимость создания: 2.500.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>50</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M93</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (healing)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">restoration</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 387px; left: 327px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery2"><name>Regeneration</name><name-loc>Регенерация</name-loc><spell version="2" very_hard="yes">
+		<name>Regeneration</name>
+		<name-loc>Регенерация</name-loc>
+		<description-loc>ОбычноеВыращивает заново одну потерянную конечность или глаз.Длительность: Навсегда.Стоимость: 20. Одна попытка.Время сотворения: 1 минута на сотворение; 1 месяц на завершение процесса регенерации. Регенерирующая часть не может использоваться, пока не пройдет весь месяц.Требования: Магичность(Magery) 2 и Восстановление.ПредметПалочка или посох, с образом змеи. Используется только магами. Предмет  должен коснуться объекта. Энергостоимость создания: 3.000.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>20</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>Permanent</duration>
+		<reference>M93</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (healing)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">restoration</name>
+				<quantity compare="is">1</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 458px; left: 327px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Instant Regeneration</name><name-loc>Мгновенная регенерация</name-loc><spell version="2" very_hard="yes">
+		<name>Instant Regeneration</name>
+		<name-loc>Мгновенная регенерация</name-loc>
+		<description-loc>ОбычноеТо же что Регенерация, но работает мгновенно.Стоимость: 80. Одна попытка.Требования: Магичность(Magery) 3 и Регенерация.ПредметПалочка или посох, с образом змеи. Используется только магами. Предмет должен коснуться объекта. Энергостоимость создания: 4.000.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>80</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M93</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (healing)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">regeneration</name>
+				<quantity compare="is">1</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 543px; left: 387px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Resurrection</name><name-loc>Воскрешение</name-loc><spell version="2" very_hard="yes">
+		<name>Resurrection</name>
+		<name-loc>Воскрешение</name-loc>
+		<description-loc>ОбычноеВозвращает объект к жизни, при условии, что тело, или большая его часть, доступно (по решению Мастера). Отметьте, что тело, достигшее -10хЕЖ, по определению слишком повреждено для воскрешения. Возрожденный объект имеет 0 ЕУ(FP) и ЕЖ(HP), и должен восстановить их обычным способом. Независимо от убивших ран, все его члены будут целыми. За каждые сутки  после смерти объекта заклинание получает штраф -1.Это - также заклинание Некромагии.Продолжительность: Навсегда, пока вас снова не убьют...Стоимость: 300. Одна попытка.Время, чтобы сотворить: 2 часа.Требования: Мгновенная регенерация и Вызов духа.Предмет</description-loc>
+		<college>Healing/Necromancy</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>300</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 Hours</casting_time>
+		<duration>Permanent</duration>
+		<reference>M94</reference>
+		<categories>
+			<category>Healing</category>
+			<category>Necromancy</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">instant regeneration</name>
+				<quantity compare="is">1</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">summon spirit</name>
+				<quantity compare="is">1</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 819px; left: 315px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Final Rest</name><name-loc>Вечный покой</name-loc><spell version="2">
+		<name>Final Rest</name>
+		<name-loc>Вечный покой</name-loc>
+		<description-loc>ОбычноеСотворенное на труп, делает объект неуязвимым к Некромагии. Дух покойного не может быть вызван, и при этом тело нельзя оживить или Воскресить. Не оказывает физического эффекта на тело. Может быть сотворено в любое время после смерти объекта. Есть накапливающийся  штраф -1 за каждый месяц со дня смерти, до максимума -10. Каждый заклинатель может сделать только одну попытку сотворения для одного объекта.Заклинание не действует на живых людей и уже поднятых немертвых.Во многих сеттингах это заклинание - часть похоронных обрядов, и может применяться только духовенством. По желанию, Мастер может заменить требование (prerequisite) Магичности на Дарованную силу (B77)  или Благословени е (B40). В других сеттингах заклинание ненужно; обычных не волшебных похоронных обрядов хватит, чтобы оградить умершего от некромантии.Обычно считается, что заклинание посылает душу покойного из смертного плана в царство его божества. Однако, кое-кто (обычно члены того или иного культа смерти) полагают, что заклинание работает, разрушая бесплотную душу умершего! Это - также заклинание Некромагии.Длительность: навсегда.Время сотворения: 10 минут; заклинание всегда церемониальное.Требования: Магичность(Magery) 1 или  Понимание духов. «Святые» могут сотворить заклинание без любых требований.ПредметЗаклинанием можно освятить похоронные принадлежности. Энергостоимость создания: 1.200</description-loc>
+		<college>Healing/Necromancy</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>20</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 min</casting_time>
+		<duration>Permanent</duration>
+		<reference>M89</reference>
+		<categories>
+			<category>Healing</category>
+			<category>Necromancy</category>
+		</categories>
+		<prereq_list all="no">
+			<advantage_prereq has="yes">
+				<name compare="is">spirit empathy</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (necromancy)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 747px; left: 531px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery2"><name>Halt Aging</name><name-loc>Прекратить старение</name-loc><spell version="2" very_hard="yes">
+		<name>Halt Aging</name>
+		<name-loc>Прекратить старение</name-loc>
+		<description-loc>ОбычноеОстанавливает старения объекта на 1 месяц. Не может быть сотворено повторно, пока не закончится подобное предыдущие заклинание.Длительность: 1 месяц.Стоимость: 20. Одна попытка в неделю.Требования: Магичность(Magery) 2 и по крайней мере 8 заклинаний школы Лечение.Предмет Драгоценность. Всегда включен. Предмет предотвращает старение, пока его носят. За обладание такими вещами разрушаются королевства... Энергостоимость создания: 10.000.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>20</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 month</duration>
+		<reference>M94</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (healing)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<college compare="contains">healing</college>
+				<quantity compare="at least">8</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 819px; left: 531px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Youth</name><name-loc>Молодость</name-loc><spell version="2" very_hard="yes">
+		<name>Youth</name>
+		<name-loc>Молодость</name-loc>
+		<description-loc>ОбычноеОмолаживает объект на год.  Автоматически восстанавливает потерянные за тот период уровни атрибутов. Не затрагивает воспоминания, навыки, раны, и т.д., полученный в течение «потерянных» месяцев.Длительность: Объект начинает молодеть немедленноСтоимость: 100. Одна попытка в месяц.Требования: Магичность(Magery) 3 и Прекратить старение</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>100</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1</casting_time>
+		<duration>Instant; aging starts immediately</duration>
+		<reference>M94</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (healing)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">halt aging</name>
+				<quantity compare="is">1</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 459px; left: 447px;" class="other-college"><name>Summon Spirit</name><name-loc>Вызов духа</name-loc><spell version="2">
+		<name>Summon Spirit</name>
+		<name-loc>Вызов духа</name-loc>
+		<description-loc>Информационное; Сопротивление по Воле(Will) духаПризывает дух умершего человека. Объект сопротивляется с -5, если был другом мага. При успешном сотворении объект ответит на один вопрос, по мере своих знаний на момент смерти, и сможет отвечать далее на один вопрос в минуту. При провале заклинания данный маг (или церемониальная группа) не смогут вызывать этого духа в течение года. При критическом провале появляется враждебный дух, который сознательно лжет.Модификаторы: -5, если вы не знаете полного имени объекта. -1, если с момента смерти прошло более недели, -2 – если более месяца, -3 – если более года, -4, если более десятилетия, -5, если более 50 лет, и -6, если прошло более 500 лет.Длительность: 1 минутаСтоимость:  20 на сотворение. 10 на поддержание. Цена уменьшается вдвое, если заклинание творится на месте смерти или над телом объекта, и вчетверо, если соблюдены оба эти условия.Время сотворения: 5 минут.Требования: Магичность(Magery) 2 и Видение смерти.ПредметПосох, палочка, украшение. Используется только магами. Не дает возможности сотворять заклинание, но дает  2 к его уровню умения. Энергостоимость: 1000.</description-loc>
+		<college>Necromancy</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>20</casting_cost>
+		<maintenance_cost>10</maintenance_cost>
+		<casting_time>5 min</casting_time>
+		<duration>1 min</duration>
+		<reference>M150</reference>
+		<categories>
+			<category>Necromancy</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">death vision</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (necromancy)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block>
+</div>

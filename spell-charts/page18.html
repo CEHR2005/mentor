@@ -1,0 +1,1852 @@
+<block style="top: 107px; left: 168px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Detect Magic</name><name-loc>Обнаружить магию</name-loc><spell version="2">
+		<name>Detect Magic</name>
+		<name-loc>Обнаружить магию</name-loc>
+		<description-loc>ОбычноеОпределяет, является ли один субъект магическим. Если заклинание успешно, второе сотворение сообщает, является ли магия постоянной или временной. Критический успех на любом из этих бросков полностью определяет заклинание, как заклинание Анализ магии.Это не то же самое, что и способность определять магические предметы, которая входит в Магичность(Magery) 0; та способность определяет только постоянные магические предметы, в то время как Обнаружить магию - предметы, заклинания, магических существ или любой другой длительный магический эффект.Стоимость: 2.Время сотворения: 5 секунд.Требование: Магичность(Magery) 1.Предмет(а) Посох, жезл или украшение. Используется только магами. Энергостоимость создания: 100. (б) Кольцо или ожерелье. Действует всегда. Оно вибрирует, предупреждая носителя, когда любой магический предмет находится в пределах 5 ярдов. Часто используется заклинание Допуск, для предупреждения носителя только об определённых типах магии. Энергостоимость создания: 300.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M101</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="no">
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="contains">one college (knowledge)
+				<level compare="at least">1</level>
+			</notes></advantage_prereq>
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="is anything"></notes>
+				<level compare="at least">1</level>
+			</advantage_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 227px; left: 108px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Identify Spell</name><name-loc>Определить заклинание</name-loc><spell version="2">
+		<name>Identify Spell</name>
+		<name-loc>Определить заклинание</name-loc>
+		<description-loc>ИнформационноеОпределяет, какое заклинание или заклинания были только что сотворены (в течение последних пяти секунд), или творятся в данный момент, объектом или на объект. Оно не определяет заклинания на постоянно зачарованном предмете. Одно сотворение определяет все заклинания сотворённые объектом или на объект. Тем не менее, если любое из этих заклинаний полностью неизвестно заклинателю – не просто заклинания, которых он не знает, но и о которых  никогда не слышал – Мастер должен дать только расплывчатое описание; например, «какая-то физическая защита».Волшебники слышали о каждом заклинании в этой книге (если только Мастер не решил, что часть из них – секретные), но не о новых заклинаниях, созданных Мастером или игроками.Стоимость: 2.Требование: Обнаружить магию.ПредметПосох, жезл или украшение. Энергостоимость создания: 1.100.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M102</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">detect magic</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 311px; left: 108px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Analyze Magic</name><name-loc>Анализ магии</name-loc><spell version="2">
+		<name>Analyze Magic</name>
+		<name-loc>Анализ магии</name-loc>
+		<description-loc>Информационное; Сопротивление против скрывающих магию заклинанийОпределяет, какие именно заклинания наложены на объект. Если на объект наложено больше одного заклинания, Анализ магии определяет то, на которое потребовалось меньше всего энергии, и сообщает заклинателю «есть ещё заклинания».После этого, его можно сотворить ещё раз, чтобы определить следующее заклинание, и так далее. Чары Имя и Пароль считаются отдельными заклинаниями, которые сопротивляются с  5; каждый конкретный волшебник может пытаться Анализировать Имя или Пароль только один раз. Как и Определить заклинание, выше, оно даст ограниченные результаты, когда заклинатель сталкивается с неизвестным заклинанием.Стоимость: 8.Время сотворения: 1 час.Требование: Определить заклинание.ПредметПосох, жезл или украшение. Энергостоимость создания: 1.200.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>8</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 hr</casting_time>
+		<duration>Instant</duration>
+		<reference>M102</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">identify spell</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 407px; left: 108px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Seek Magic</name><name-loc>Искать магию</name-loc><spell version="2">
+		<name>Seek Magic</name>
+		<name-loc>Искать магию</name-loc>
+		<description-loc>ИнформационноеОпределяет направление и приблизительную дистанцию до ближайшего значительного магического предмета, активного заклинания, или магического существа (магические существа – это демоны, элеменали, духи, и т.д., но не расы или отдельные существа с Магичность(Magery)ю). Действуют стандартные штрафы за расстояние. Любые известные экземпляры магии могут быть исключены, если заклинатель отдельно упомянет их перед сотворением.Это также Мета-заклинание.Стоимость: 6.Время сотворения: 10 секунд.Требование: Обнаружить магию.Предмет.Посох, жезл или украшение. Энергостоимость создания: 1.200.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>6</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M102</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">detect magic</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 407px; left: 228px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Sense Mana</name><name-loc>Почуять ману</name-loc><spell version="2">
+		<name>Sense Mana</name>
+		<name-loc>Почуять ману</name-loc>
+		<description-loc>ИнформационноеСообщает заклинателю уровень маны в точке, где он стоит, и является ли местная мана «направленной» (см. GURPS Фэнтези) или какой-то ещё необычной. Если заклинание удалось, то второе сотворение откроет точную природу и уровень «направленности» или любой другой особенности.Стоимость: 3.Время сотворения: 5 секунд.Требование: Обнаружить магию.Предмет(а) Посох, жезл или украшение. Используется только магами. Энергостоимость создания: 200. (б) Кольцо или украшение. Действует всегда. Оно вибрирует каждый раз, когда носитель проходит через границу между областями с различной маной. Энергостоимость создания: 500.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M101</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">detect magic</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 323px; left: 228px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Mage Sense</name><name-loc>Чувство магии</name-loc><spell version="2">
+		<name>Mage Sense</name>
+		<name-loc>Чувство магии</name-loc>
+		<description-loc>ИнформационноеСообщает заклинателю, есть ли какой-то невидимый магический предмет или существо поблизости. Заклинатель может указать, ищет ли он любой магический предмет, или конкретный. Модификатор умения: расстояние в ярдах до искомого объекта. Используйте ближайшее расстояние, если заклинатель движется во время действия заклинания, и делайте бросок в конце этого времени. По решению Мастера, некоторые очень могучие магические предметы можно почувствовать проще.Длительность: 1 минута.Стоимость: 3 сотворение. 2, поддержка.Требование: Обнаружить магию.ПредметПосох, жезл или украшение. Энергостоимость создания: 1.200.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M102</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">detect magic</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 239px; left: 228px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Mage Sight</name><name-loc>Волшебное зрение</name-loc><spell version="2">
+		<name>Mage Sight</name>
+		<name-loc>Волшебное зрение</name-loc>
+		<description-loc>СтандартноеОбнаруживает все магические предметы в поле зрения. Каждый такой предмет будет иметь свечение или «ауру», похожую на ауру живого существа. Это свечение будет видно сквозь одежду, броню и вплоть до 1/2 дюйма твёрдого материала.Аура навсегда зачарованного предмета будет сильнее, чем у чего-то под действием временного заклинания. Зачарованные (или магические) существа тоже светятся, хотя сами маги – нет, если на них нет в данный момент заклинаний. Аура также может дать ключ к пониманию природы предмета. При хорошем броске, например, заклинания огня будут иметь характерное красное свечение, а злые предметы будут показывать некое «чёрное свечение» в своих аурах. Критический успех на этом заклинании позволяет заклинателю полностью опознать каждый магический предмет, который он видит. Отметим, что эта способность, по сути, более надёжная версия магических чувств, которые входят в Магичность(Magery) 0 (B66).Длительность: 1 минута.Стоимость: 3 сотворение, 2 поддержание.Требование: Обнаружить магию.ПредметПосох, жезл или украшение. Энергостоимость создания: 800.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M102</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">detect magic</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 239px; left: 456px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Aura</name><name-loc>Аура</name-loc><spell version="2">
+		<name>Aura</name>
+		<name-loc>Аура</name-loc>
+		<description-loc>ИнформационноеСоздаёт светящийся ореол или «ауру» вокруг объекта. Эта аура даёт заклинателю общее представление о личности объекта – чем лучше бросок, тем полнее информация. Аура также показывает, есть ли у объекта Магичность(Magery), Сопротивление магии или Подверженность магии (и на каком уровне); одержим или контролируется ли объект каким-то способом; и находится ли объект во власти какой-то сильной эмоции. Критический успех обнаружит «тайные» черты, такие как ликантропия, вампиризм и неестественное долгожительство.У всех живых существ есть ауры; у неодушевлённых предметов их нет. Зомби можно обнаружить по его слабой ауре смерти, а вампир сохраняет ауру, которая у него была при жизни. Иллюзии и созданные существа не имеют ауры, поэтому успешное произнесение этого заклинания отличает их от настоящих существ. Стоимость: 3 (для объекта любого размера).Требование: Обнаружить магию.ПредметПосох, жезл или украшение. Используется только магами. Энергостоимость создания: 100.Составлять много книг - конца не будет, и много читать - утомительно для тела.Екклесиаст 12:12</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M101</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">detect magic</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 239px; left: 564px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Seeker</name><name-loc>Искатель</name-loc><spell version="2">
+		<name>Seeker</name>
+		<name-loc>Искатель</name-loc>
+		<description-loc>ИнформационноеНастраивает заклинателя на индивида или искусственный предмет, которого он ищет. Успех даёт заклинателю видение местонахождения предмета – или ведёт его к нему, если тот в пределах мили. Чтобы искать личность, заклинатель должен либо знать его имя или знать его достаточно хорошо, чтобы вообразить его.Например, нельзя использовать это заклинание, чтобы раскрыть убийство, ища «убийцу» если вы не знаете кто это – но если знаете, то Искатель его найдёт.Модификаторы: Модификаторы больших расстояний (M14). Что-то связанное с искомым (например, часть одежды личности) должно быть доступно во время сотворения; если нет, бросок делается с -5. Премия  1 если заклинатель держал или ещё как-то знаком с исходным предметом.Стоимость: 3. Одна попытка в неделю.Требования: Магичность(Magery) 1, ИН(IQ) 12 или выше, и по крайней мере два заклинания «Искать ...». ПредметРаздвоенная палка (дерево, кость или слоновая кость) или игла компаса (вырезная из слоновой кости), которая будет указывать на один конкретный объект, выбранный при создании предмета. Что-то, относящееся к объекту должно быть использовано при создании предметам, и включено в него. Энергостоимость создания: 500.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M105</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<attribute_prereq has="yes" which="iq" compare="at least">12</attribute_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (knowledge)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="contains">seek</name>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 239px; left: 684px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Pathfinder</name><name-loc>Навигатор</name-loc><spell version="2">
+		<name>Pathfinder</name>
+		<name-loc>Навигатор</name-loc>
+		<description-loc>ИнформационноеСообщает заклинателю направление на определённое место, или правильную дорогу в нужное место. Используйте Модификаторы больших расстояний (M14). Мастер должен применить штрафы, если заклинатель никогда не был в том месте, и большие штрафы, если заклинатель не уверен, что место на самом деле существует или на что оно похоже. Это заклинание не ищет людей или предметы. Город, горный проход, или общественное здание может быть местом. Дом или офис определённого человека не является «местом» для этого заклинания, если заклинатель там не был.Стоимость: 4. Одна попытка в день.Время сотворения: 10 секунд.Требования: Магичность(Magery) 1, ИН(IQ) 12 или выше, и по минимум два заклинания «Искать ...». ПредметРаздвоенная палка или игла компаса, которая будет показывать один раз в день, на цель, названную пользователем. Будет продолжать показывать в течение 10 минут за каждую единицу величины успеха заклинания, на основании Силы предмета. Энергостоимость создания: 1.000.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M105</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<attribute_prereq has="yes" which="iq" compare="at least">12</attribute_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (knowledge)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="contains">seek</name>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 323px; left: 456px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>See Secrets</name><name-loc>Видеть скрытое</name-loc><spell version="2">
+		<name>See Secrets</name>
+		<name-loc>Видеть скрытое</name-loc>
+		<description-loc>СтандартноеДелает так, что скрытые двери, ловушки и т.д. резко выделяются для зрения субъекта. Это заклинание работает только на вещи, которые были намеренно спрятаны, а не потеряны.Длительность: 1 минута.Стоимость: 5 сотворение. 2 поддержка.Время сотворения: 5 секунд.Требования: Искатель и Аура.ПредметПосох, жезл или украшение. На предмете должно быть вырезано изображение глаза. Энергостоимость создания: 400.Схема/ТУSchematic/TLИнформационноеОписано среди Технологических заклинаний, M177.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M107</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">aura</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">seeker</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 323px; left: 564px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Trace</name><name-loc>Слежка</name-loc><spell version="2">
+		<name>Trace</name>
+		<name-loc>Слежка</name-loc>
+		<description-loc>СтандартноеМожет быть сотворено на любой предмет или живое существо. Пока заклинание поддерживается, заклинатель будет знать, где объект находится, если сосредоточится на секунду. Либо объект должен быть рядом с заклинателем, когда заклинание твориться в первый раз, либо заклинатель должен сперва успешно сотворить заклинание Искатель.Модификаторы для больших расстояний применяются, если объект не присутствует рядом с заклинателем. Длительность: 1 часСтоимость: 3 сотворение. 1 поддержка. Одна попытка в день.Время сотворения: 1 минута.Требование: Искатель.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M106</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">seeker</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 323px; left: 348px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Know True Shape</name><name-loc>Распознать истинную форму</name-loc><spell version="2">
+		<name>Know True Shape</name>
+		<name-loc>Распознать истинную форму</name-loc>
+		<description-loc>ИнформационноеСообщает, находится ли объект под действием любого типа заклинания Превращения или подобного магического эффекта, включая Изменить Лицо, Изменить Тело и иллюзии. Заклинатель должен иметь возможность видеть объект. Заклинание также даёт общее представление об истинном облике объекта; на критическом успехе, оно определяет истинную природу объекта (включая распространенное название или описание) и магию, которая используется чтобы опознать её. Оно не открывает истинную природу Галлюцинаций.Стоимость: 2.Требования: Магичность(Magery) 1, любое заклинание изменения формы (Превращение, Изменить лицо, Изменить тело), и либо Аура либо Распознать иллюзию.ПредметПосох, жезл или украшение (популярны медальоны или монеты с «Отверстием истинного зрения» в них). Используется только магами. Энергостоимость создания: 250.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M106</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">aura</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">know illusion</name>
+				</spell_prereq>
+			</prereq_list>
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">shrink</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">plant form</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">alter body</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">alter visage</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="contains">shift</name>
+				</spell_prereq>
+			</prereq_list>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (knowledge)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 395px; left: 564px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>History</name><name-loc>История</name-loc><spell version="2">
+		<name>History</name>
+		<name-loc>История</name-loc>
+		<description-loc>ИнформацияБудучи сотворённым на любой неодушевлённых предмет (или на его часть радиусом в 1 ярд), позволяет заклинателю определить недавнее прошлое этого предмета, характер пользователя, и так далее – но никаких имён!Стоимость: 3 за вчерашнюю историю; 5 за неделю; 8 за месяц; 10 за год.Время сотворения: 1 секунда за единицу энергии.Требование: Слежка.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<casting_time>1 sec/pt</casting_time>
+		<duration>Instant</duration>
+		<reference>M106</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">trace</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 479px; left: 564px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Ancient History</name><name-loc>Древняя история</name-loc><spell version="2">
+		<name>Ancient History</name>
+		<name-loc>Древняя история</name-loc>
+		<description-loc>ИнформационноеКак история, но даёт общее представление о истории предмета за гораздо больший промежуток времени.Стоимость: 3 за 1 год истории; 5 за 10 лет; 8 за 100 лет; 10 за 1000 лет.Время сотворения: 1 минута за единицу энергии.Требование: История.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 min/pt</casting_time>
+		<duration>Instant</duration>
+		<reference>M106</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">history</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 551px; left: 564px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Prehistory</name><name-loc>Древнейшая история</name-loc><spell version="2">
+		<name>Prehistory</name>
+		<name-loc>Древнейшая история</name-loc>
+		<description-loc>ИнформационноеЭто заклинание похоже на Древнюю историю, но даёт ещё менее конкретную информацию за период тысячелетий. Возраст и функция предмета определяются всегда, но если предмет не принимал участия в важных событиях, то это может быть единственной доступной информацией. К счастью, этого часто достаточно для магов-археологов, которые чаще всего используют Древнейшую историю.Стоимость: 3 за 1.000 лет истории; 5 за 10.000 лет; 8 за 100.000 лет; 10 за большие промежутки времени. Время сотворения: 1 час за единицу энергии.Требование: Древняя история.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 hr/pt</casting_time>
+		<duration>Instant</duration>
+		<reference>M106</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">ancient history</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 563px; left: 396px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Divination</name></block><block style="top: 479px; left: 336px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Echoes of the Past</name><name-loc>Эхо прошлого</name-loc><spell version="2">
+		<name>Echoes of the Past</name>
+		<name-loc>Эхо прошлого</name-loc>
+		<description-loc>СтандартноеБудучи сотворено на стену или какой-то предмет, это заклинание «проигрывает» звуки, которые оно могло «слышать» в прошлом. Заклинатель указывает момент, с которого начинать слушать («послушаем, что  было сказано в этой комнате год назад…»). Модификаторы времени (M81) действуют. Каждый раз, когда заклинание твориться для того же периода времени, есть дополнительный штраф -1 к умению. Критический провал стирает «память» предмета о том периоде времени. Это также заклинание Звука.Длительность: 1 минута.Стоимость: 2 сотворение. 2 поддержка. Величина модификатора Времени добавляется к цене, так что если заклинание стоит 3 (3 0) на момент времени «в течение минуты», то оно будет стоить 8 (3 5) на момент времени «от 4 до 40 дней».Время сотворения: 10 секунд.Требования: Магичность(Magery) 2, История и Голоса.ПредметПосох, жезл или украшение. Используется только магами. Энергостоимость создания: 500.ПрорицаниеВ отличие от более бросающихся в глаза видов магии, которые имеют прямые и измеримые эффекты на игровой мир (взрывают драконов, лечат героев, создают каменные мосты, и т.д.), предсказания и другие Информационные заклинания имеют дело только со знаниями игровых персонажей, и поэтому требуют особого рассмотрения.Когда у PC есть доступ к информации в таких широких пределах, может возникнуть множество проблем. Иногда, у Мастера нет ответа на вопросы игроков; Возможно, он не ожидал, что континент за океаном будет иметь значение в эту сессию. В то же время, особенно проницательный вопрос заданный в правильный момент может разрушить планы Мастера на приключение. Особенно подвержены разрушению предсказаниями приключения о загадках и тайнах.Вряд ли справедливо изворачиваться или намеренно врать игрокам, которые потратили ценные очки персонажа, чтобы играть предсказателями. К счастью, есть альтернативы. Символические видения – это вполне подходящий ответ на любой вопрос, кроме тех, на которые можно ответить только «да» или «нет», и часто более интересны, чем прямой ответ. Штрафы за непрерывные вопросы на одну и ту же тему могут, по крайней мере, дать Мастеру время, чтобы подготовиться к вопросам игровых персонажей.Мастер должен всегда делать бросок на успешность прорицания, ему не следует стесняться быть двусмысленным, когда требуется; предсказатели никогда не должны быть до конца уверены, что их видения полны и надёжны.Существование предсказаний может сильно повлиять на игровой мир. Большинство людей захотят проконсультироваться с прорицателем, прежде чем принимать важные решения – браки, преступления, войны, и тому подобное. Судебные процедуры будут в корне изменены. Более того, закон может строго регулировать использование прорицаний.Не каждый вид прорицания будет существовать в каждом игровом мире. Мастер должен выбрать те методы, которые, на его взгляд, подходят к его сеттингу.</description-loc>
+		<college>Knowledge/Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2   time modifier</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M107</reference>
+		<categories>
+			<category>Knowledge</category>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (knowledge)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">voices</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">history</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 563px; left: 48px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Reconstruct Spell</name><name-loc>Восстановить заклинание</name-loc><spell version="2">
+		<name>Reconstruct Spell</name>
+		<name-loc>Восстановить заклинание</name-loc>
+		<description-loc>ИнформационноеСообщает заклинателю, какие заклинания были сотворены субъектом, на него или рядом с ним, в определённый момент в прошлом, указанный заклинателем. Если заклинание было не одно, Восстановить заклинание определяет заклинание, которое стоило меньше всего энергии и сообщит «есть ещё заклинания». Действуют модификаторы времени (M81). Заклинания опознаются как в Определить заклинание (M102).Стоимость: 3. Модификатор Времени добавляется к цене, так что если заклинание стоит 3 (3 0) за «в течение минуты», то оно будет стоить 8 (3 5) за «от 4 до 40 дней». Время сотворения: 10 секунд.Требования: Магичность(Magery) 2, История и Определить заклинание.ПредметПосох, жезл или украшение. Используется только магами. Энергостоимость создания: 1.400.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M106</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (knowledge)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">history</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">identify spell</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 479px; left: 684px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Scents of the Past</name><name-loc>Запахи прошлого</name-loc><spell version="2">
+		<name>Scents of the Past</name>
+		<name-loc>Запахи прошлого</name-loc>
+		<description-loc>СтандартноеБудучи сотворено на стену или какой-то предмет, это заклинание испускает запахи, которым он был подвергнут в прошлом. Заклинатель указывает момент, с которого начинать «воспроизведение». Модификаторы времени (M81) действуют. Каждый раз, когда заклинание твориться для того же периода времени, есть дополнительный штраф -1 к умению. Критический провал стирает «память» предмета о том периоде времени. Это также заклинание Пищи.Длительность: 1 минута.Стоимость: 1 сотворение. Столько же поддержание. Модификатор времени добавляется к цене, так что если заклинание стоит 3 (3 0) на момент времени «в течение минуты», то оно будет стоить 8 (3 5) на момент времени «от 4 до 40 дней».Время сотворения: 10 секунд.Требования: Магичность(Magery) 2, История и Запах.ПредметПосох, жезл или украшение. Используется только магами. Энергостоимость создания: 350.</description-loc>
+		<college>Food/Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M107</reference>
+		<categories>
+			<category>Food</category>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (food)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">history</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">odor</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 623px; left: 684px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Images of the Past</name><name-loc>Картины прошлого</name-loc><spell version="2">
+		<name>Images of the Past</name>
+		<name-loc>Картины прошлого</name-loc>
+		<description-loc>СтандартноеБудучи сотворено на зеркало или отражающую поверхность, это заклинание «проигрывает» изображения, которые оно могло «видеть» в прошлом. Заклинатель указывает момент, с которого начинать просмотр («посмотрим, что случилось в этой комнате год назад…»). Модификаторы времени (M81) действуют. Каждый раз, когда заклинание твориться для того же периода времени, есть дополнительный штраф -1 к умению. Критический провал стирает «память» предмета о том периоде времени. Мастер также может позволить творить это заклинание на любой пол, стену или предмет, «воспроизведение» при этом проявится как Простая иллюзия.Это также заклинание Света и тьмы.Длительность: 1 минута.Стоимость: 3 сотворение. 3 поддержка. Величина модификатора Времени добавляется к цене, так что если заклинание стоит 3 (3 0) на момент времени «в течение минуты», то оно будет стоить 8 (3 5) на момент времени «от 4 до 40 дней».Время сотворения: 10 секунд.Требования: Магичность(Magery) 2, История и Простая иллюзия. ПредметПосох, жезл или украшение. Используется только магами. Энергостоимость создания: 700.</description-loc>
+		<college>Knowledge/Light &amp; Darkness</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3   Time modifier</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M107</reference>
+		<categories>
+			<category>Knowledge</category>
+			<category>Light &amp; Darkness</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">history</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">simple illusion</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (knowledge)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 923px; left: 624px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Recall</name><name-loc>Вспомнить</name-loc><spell version="2">
+		<name>Recall</name>
+		<name-loc>Вспомнить</name-loc>
+		<description-loc>СтандартноеОбъект вспоминает один забытый или незамеченный факт или событие, как если бы у него была Фотографическая память (B51). Действуют штрафы, данные в Модификаторах времени (M81), на основании времени, прошедшего с тех пор, как это событие произошло. Отличная Память даёт бонус  5. Фотографическая Память даёт бонус  10 (хотя тем, у кого есть Фотографическая память, это заклинание потребуется только чтобы восстановить неестественно отнятые воспоминания). Только критический успех позволяет вспомнить магически заблокированную память. Критический провал может привести к фальшивому или скаженному воспоминанию, или уничтожить воспоминание так, что его уже больше не вернуть!Это также заклинание Контроля разума.Длительность: 1 день. Впоследствии, память тает как и при использовании заклинания Запомнить. Стоимость: 4. Не поддерживается.Время сотворения: 10 секунд.Требования: Магичность(Magery) 2, Запомнить и История.Предмет(а) Головной убор, жезл или украшение. Используется только магом. Энергостоимость создания: 2.500. (б) Память может быть сделана постоянной за 50 единиц энергии, но память должна сохраняться в течение всего процесса зачарования.</description-loc>
+		<college>Knowledge/Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 day</duration>
+		<reference>M106</reference>
+		<categories>
+			<category>Knowledge</category>
+			<category>Mind Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">history</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">memorize</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (mind control)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 839px; left: 432px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Find Direction</name><name-loc>Узнать направление</name-loc><spell version="2">
+		<name>Find Direction</name>
+		<name-loc>Узнать направление</name-loc>
+		<description-loc>ИнформационноеСообщает заклинателю направление на север. Альтернативно, может сообщить направление домой. Учтите, что ни у кого не может быть более одного настоящего дома, а у странника его может вообще не быть!Стоимость: 2.Требование: Магичность(Magery) 1.ПредметЗачарованная стрелка компаса, которая показывает на север, или на дом пользователя, по команде. Энергостоимость создания: 250.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M101</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="no">
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="contains">one college (knowledge)
+				<level compare="at least">1</level>
+			</notes></advantage_prereq>
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="is anything"></notes>
+				<level compare="at least">1</level>
+			</advantage_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 923px; left: 486px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Remember Path</name><name-loc>Запомнить путь</name-loc><spell version="2">
+		<name>Remember Path</name>
+		<name-loc>Запомнить путь</name-loc>
+		<description-loc>СтандартноеПока это заклинание активно, объект будет идеально запоминать любой путь, по которому он идёт. Запомненное позволит объекту нарисовать точную карту своих путешествий или пройти обратно без ошибок, даже в кромешной тьме или через отвлекающие внимание обстоятельства вроде сражений. Конечно, последующие изменения ранее пройденной местности будут неизвестны объекту (например, завал в шахте после того, как объект из неё вышел).Длительность: 1 час. Когда заклинание заканчивает своё действие, память начинает таять как при заклинании Запомнить, причём проверки на ИН(IQ) делаются ежечасно а не ежедневно. Когда её вспомнят, память может быть сделана постоянной за 50 единиц энергии (с помощью наложения чар), но память должна сохраняться в процессе зачарования. Стоимость: 3 сотворение. 1 поддержка.Время сотворения: 10 секунд.Требования: Узнать направление и Запомнить.Предмет(а) Украшение или посох. Энергостоимость создания: 600. (б) раздвоенная палка или игла компаса, которая будет показывать дорогу вдоль одного пути, заданного создателем. Если её активировать вне пути, она будет показывать на ближайшую точку пути. Альтернативная форма этого предмета – маленький магический мячик, который будет катиться вдоль пути чуть впереди путешественника, со скоростью ходьбы. Ещё одна форма этого предмета – обувь, которая, когда её носят, ведёт носителя по заданному пути. Энергостоимость создания: 400.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M107</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">find direction</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">memorize</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 839px; left: 540px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Memorize</name><name-loc>Запомнить</name-loc><spell version="2">
+		<name>Memorize</name>
+		<name-loc>Запомнить</name-loc>
+		<description-loc>СтандартноеВсё, что заклинатель воспринимает во время сотворения (и ещё 10 секунд после этого) идеально впечатывается в память, как если бы у него была Фотографическая память (B51). Заклинание можно использовать, чтобы запоминать карты, лица, события, и т.д. Оно не может быть использовано, чтобы выучить умения или сохранить временные магические эффекты.Это также заклинание Контроля разума.Длительность: 1 день. После этого, проверяйте ИН(IQ) каждый день, с накопительным штрафом -1 за день. При критическом успехе, память остаётся навсегда; при обычном - всё ещё вспоминается. При провале память тает до нормального уровня памяти о данном событии; при критическом провале, создаётся фальшивая память(которая тоже может со временем исчезнуть).Стоимость: 3 сотворение. Не поддерживается.Время сотворения: 2 секунды.Требования: Мудрость или минимум шесть заклинаний Знаний.Предмет(а) Украшение или головной убор. Энергостоимость создания: 1.000. (б) Любой. Действует всегда; носитель может вспомнить одну вещь, указанную создателем. Память тает полностью спустя час после того, как предмет снят. Энергостоимость создания: 400. (с) Память может быть сделана постоянной за 50 единиц энергии, но должна сохраняться всё время, пока происходит зачарование.</description-loc>
+		<college>Knowledge/Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 day</duration>
+		<reference>M105</reference>
+		<categories>
+			<category>Knowledge</category>
+			<category>Mind Control</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<college compare="contains">knowledge</college>
+				<quantity compare="at least">6</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">wisdom</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 179px; left: 288px;" class="other-college"><name>Know Illusion</name><name-loc>Распознать иллюзию</name-loc><spell version="2">
+		<name>Know Illusion</name>
+		<name-loc>Распознать иллюзию</name-loc>
+		<description-loc>ИнформационноеСообщает заклинателю является объект иллюзией, или настоящим, или созданием. Заклинатель должен видеть объект.Стоимость: 2.Требования: Простая иллюзия.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M97</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">simple illusion</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 395px; left: 336px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Voices</name><name-loc>Голоса</name-loc><spell version="2">
+		<name>Voices</name>
+		<name-loc>Голоса</name-loc>
+		<description-loc>ОбычноеСоздаёт осмысленный звук нормальной громкости – голоса, музыку ит.д. от заклинателя требуется постоянная концентрация.Длительность: 1 минута.Стоимость: 3 на сотворение. 2 на поддержание.Требования: Звук.ПредметЛюбой. Предмет повторяет одно высказывание снова и снова (если только не подвержен заклинанию Связь). Энергостоимость создания: 20 за слово.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M172</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sound</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 395px; left: 684px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Odor</name><name-loc>Запах</name-loc><spell version="2">
+		<name>Odor</name>
+		<name-loc>Запах</name-loc>
+		<description-loc>ОбластноеСоздает любой знакомый магу запах. В замкнутом помещении запах держится около часа (вне помещения быстро развеивается). Не может произвести никакого вредоносного эффекта- например, запах яда не ядовит.Длительность: 1 час.Базовая стоимость: 1. Не поддерживается.Требования: Убрать запах.ПредметУкрашение, постоянно распространяющее установленный при создании запах. Энергостоимость создания: 40.</description-loc>
+		<college>Air</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M24</reference>
+		<categories>
+			<category>Air</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">no-smell</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 623px; left: 456px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Summon Spirit</name><name-loc>Вызов духа</name-loc><spell version="2">
+		<name>Summon Spirit</name>
+		<name-loc>Вызов духа</name-loc>
+		<description-loc>Информационное; Сопротивление по Воле(Will) духаПризывает дух умершего человека. Объект сопротивляется с -5, если был другом мага. При успешном сотворении объект ответит на один вопрос, по мере своих знаний на момент смерти, и сможет отвечать далее на один вопрос в минуту. При провале заклинания данный маг (или церемониальная группа) не смогут вызывать этого духа в течение года. При критическом провале появляется враждебный дух, который сознательно лжет.Модификаторы: -5, если вы не знаете полного имени объекта. -1, если с момента смерти прошло более недели, -2 – если более месяца, -3 – если более года, -4, если более десятилетия, -5, если более 50 лет, и -6, если прошло более 500 лет.Длительность: 1 минутаСтоимость:  20 на сотворение. 10 на поддержание. Цена уменьшается вдвое, если заклинание творится на месте смерти или над телом объекта, и вчетверо, если соблюдены оба эти условия.Время сотворения: 5 минут.Требования: Магичность(Magery) 2 и Видение смерти.ПредметПосох, палочка, украшение. Используется только магами. Не дает возможности сотворять заклинание, но дает  2 к его уровню умения. Энергостоимость: 1000.</description-loc>
+		<college>Necromancy</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>20</casting_cost>
+		<maintenance_cost>10</maintenance_cost>
+		<casting_time>5 min</casting_time>
+		<duration>1 min</duration>
+		<reference>M150</reference>
+		<categories>
+			<category>Necromancy</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">death vision</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (necromancy)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 695px; left: 564px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Wisdom</name><name-loc>Мудрость</name-loc><spell version="2">
+		<name>Wisdom</name>
+		<name-loc>Мудрость</name-loc>
+		<description-loc>ОбычноеВременно повышает ИН(IQ) объекта. Вместе с ИН(IQ) увеличиваются умения, но заклинания остаются на прежнем уровне. ИН(IQ) объекта не может стать выше ИН(IQ) заклинателя.Длительность: 1 минута.Стоимость: 4 за каждое очко ИН(IQ) (максимально 5). Столько же на поддержание.Требования: как минимум шесть других заклинаний школы контроля разума.ПредметЛюбой предмет. Всегда включён; пока предмет надет, ИН(IQ) носящего увеличен! Это очень редкие и ценные вещи. Энергостоимость создания: 2,000 за каждое очко ИН(IQ) (максимум 5).Посох или палочка. Используется только магами; надо коснуться объекта. Энергостоимость создания: 2,000.</description-loc>
+		<college>Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4/pt of IQ</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M135</reference>
+		<categories>
+			<category>Mind Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">mind control</college>
+				<quantity compare="at least">6</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 539px; left: 684px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Simple Illusion</name><name-loc>Простая иллюзия</name-loc><spell version="2">
+		<name>Simple Illusion</name>
+		<name-loc>Простая иллюзия</name-loc>
+		<description-loc>ОбластноеСоздаёт исключительно визуальный образ, видимый всем, кто может видеть место назначения заклинания. Это может быть как единичный предмет, так и целое зрелище. Если заклинатель сконцентрируется, образ может двигаться в другую область или изменять форму или размеры, вплоть до занятия всей области действия. Любое разумное существо может развеять заклинание «неверием» в образ — выполнить манёвр Концентрация и сделать успешный бросок Воли(Will). Иллюзия развеется автоматически от первой же атаки, любого заклинания, кроме Контроля иллюзии, или прикосновения любого разумного существа.Длительность: 1 минута.Базовая стоимость: 1 на сотворение. Половина на поддержание.Требования: Заклинатель должен быть зрячим и иметь ИН(IQ) не менее 11.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M95</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<advantage_prereq has="no">
+				<name compare="starts with">blind</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<attribute_prereq has="yes" which="iq" compare="at least">11</attribute_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 683px; left: 684px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Reveal Function</name><name-loc>Определить функцию/ТУ</name-loc><spell version="2">
+		<name>Reveal Function</name>
+		<name-loc>Определить функцию/ТУ</name-loc>
+		<description-loc>Информационное; Сопротивление по заклинаниям, скрывающим наличие магииОпределяет функцию исследуемого механизма. Если субъект имеет более одной функции, заклинание определяет их по порядку сложности (начиная с простейших) и сообщает заклинателю о наличии дополнительных функций. Повторное сотворение определяет по одной дополнительной функции за сотворение. Также заклинание может быть использовано для того, чтобы определить как активировать одну из известных функций (например, какую кнопку нажать); заклинатель имеет одну попытку со штрафом -5! При успехе заклинатель может использовать механизм, применяя соответствующее умение (или ИН(IQ)-6) получая за незнакомство с этим механизмом штраф всего -1.Стоимость: 8.Время сотворения: 10 минут.Требования: Искать механизм.ПредметПосох, палочка или украшение. Энергостоимость создания: 1.500.</description-loc>
+		<tech_level></tech_level>
+		<college>Technological/Machine</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>8</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 min</casting_time>
+		<duration>Instant</duration>
+		<reference>M176</reference>
+		<categories>
+			<category>Machine</category>
+			<category>Technological</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">seek machine</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 707px; left: 396px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Summon Shade</name><name-loc>Вызов тени</name-loc><spell version="2" very_hard="yes">
+		<name>Summon Shade</name>
+		<name-loc>Вызов тени</name-loc>
+		<description-loc>Информационное; Сопротивление по Воле(Will)Вызывает «тень» объекта из возможного будущего, чтобы ответить на вопросы заклинателя. Тень не будет лгать (кроме как на критическом провале), но она будет дезориентирована; поэтому её ответы могут быть неясными или неточными. Можно задать один вопрос на минуту поддержки заклинания. Поскольку тень всего лишь из наиболее вероятного будущего, предсказание, сделанное этим заклинанием, может быть ненадёжно.Пример: Феликс Магистр может вызвать тень своего друга Рудольфа с двух месяцев тому вперёд, и спросить, удалось ли нападение на дракона – и затем, если ответ был «нет», убедить настоящего Рудольфа не пытаться. Тень просто пришла из другого будущего. Конечно, тень может также ответить «нет – решили не нападать».Во времени, из которого взята тень, у объекта будет яркий сон, в котором он увидит спрашивающего или вспомнит всё, что было сказано – в случае, если предсказанное событие сбудется.Модификаторы умения: -1 за каждый год в будущее, из которого взята тень; -5, если объект не присутствует при сотворении, или -10, если нет ничего, относящегося к объекту (одежда, срезанные волосы, и т.д.); -10, если не известно полное имя объекта.Это заклинание можно пытаться сотворить не больше, чем один раз в год на одну и ту же личность. Это очень могучее заклятие, и Мастер может захотеть ограничить доступ к этому заклинанию, или потребовать дорогие материалы.Длительность: 1 минута.Стоимость: 50 сотворение. 20 поддержка.Время сотворения: 10 минут. Одна попытка в год.Требования: Вызов духа или Прорицание.ПредметПосох, жезл или украшение. Используется только магами. Предмет не даёт возможности произнести заклинание, но даёт  2 к знанию этого заклинания. Энергостоимость создания: 800.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>50</casting_cost>
+		<maintenance_cost>20</maintenance_cost>
+		<casting_time>10 min</casting_time>
+		<duration>1 min</duration>
+		<reference>M102</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">summon spirit</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="contains">divination</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 767px; left: 684px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery1"><name>Schematic</name><name-loc>Схема/ТУ</name-loc><spell version="2" very_hard="yes">
+		<name>Schematic</name>
+		<name-loc>Схема/ТУ</name-loc>
+		<description-loc>ИнформационноеСоздаёт в уме заклинателя детальную схему механизма. Заклинатель может изучить схему на досуге или проверить напечатанную схему. Однако заклинание не даёт никаких бонусов навыкам; например, чтобы понять схему термоядерной электростанции звездолёта заклинатель должен иметь некоторый уровень умения Инженерия (Термоядерный синтез). Чтобы извлечь толк из схем оружия понадобятся Инженерия или Оружейник. Продолжительность заклинания – время, в течении которого заклинатель помнит схему достаточно ясно. При сотворении заклинатель должен касаться объекта. По желанию схема может отражать как текущее состояние объекта (показывая внутренние повреждения, модификации и износ), так и объект в идеальном состоянии. Второй способ применения заклинания даёт возможность составить схему, имея лишь часть объекта (часть должна весить не менее 5% от общей массы). Например, это позволит восстановить схему устройства Предвестника по его части. В любом случае стоимость сотворения рассчитывается из массы неповреждённого механизма. Даже поддерживаемое заклинание не учитывается при расчёте штрафов. Это заклинание также относится к школе заклинаний Знаний.Длительность: 1 минута.Базовая стоимость: 5 для объекта с массой не больше одной тонны, еще по 1 очку за каждую тонну массы. Половина для поддержки.Время сотворения: 5 секунд.Требования: Определить функцию и История.ПредметКалька или головной убор. Используется только магами; нужно коснуться объекта. Энергостоимость создания: 200.</description-loc>
+		<tech_level></tech_level>
+		<college>Knowledge/Technological/Machine</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>5 1/ton</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M177</reference>
+		<categories>
+			<category>Knowledge</category>
+			<category>Machine</category>
+			<category>Technological</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">reveal function</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">history</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block>
+<div style="position:absolute; left:800px; top:0px;">
+<block style="top: 142px; left: 502px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Seek Food</name><name-loc>Искать пищу</name-loc><spell version="2">
+		<name>Seek Food</name>
+		<name-loc>Искать пищу</name-loc>
+		<description-loc>ИнформационноеОпределяет направление, расстояние и общую природу ближайшего значительного источника пищи. Используются Модификаторы больших расстояний (M14). Обнаруженная пища будет полноценной, но не обязательно аппетитной, например съедобные насекомые. Любые известные источники пищи (те самые вкуснейшие насекомые) могут быть исключены из поиска. Стоимость: 2.ПредметРаздвоенная палочка. Энергостоимость создания: 300.</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M77</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+	</spell></block><block style="top: 142px; left: 622px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Seek Air</name><name-loc>Поиск воздуха</name-loc><spell version="2">
+		<name>Seek Air</name>
+		<name-loc>Поиск воздуха</name-loc>
+		<description-loc>ИнформационноеСообщает магу примерное расстояние и направление до ближайшего значительного количества воздуха. Используются Модификаторы больших расстояний (M14). В мирах, где известно, что воздух – смесь газов, маг может искать любой определенный газ или их комбинацию, а не обычный воздух. Любой из известных источников может быть исключен из поиска.Стоимость: 1.ПредметРаздвоенная палочка (обычно из кости птицы). Стоимость создания: 60 энергии, $200 за оникс.</description-loc>
+		<college>Air</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Information</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M23</reference>
+		<categories>
+			<category>Air</category>
+		</categories>
+	</spell></block><block style="top: 226px; left: 682px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Season</name><name-loc>Приправа</name-loc><spell version="2">
+		<name>Season</name>
+		<name-loc>Приправа</name-loc>
+		<description-loc>ОбычныйДобавляет приправы и заправку в одну емкость пищи по вкусу заклинателя. Станет ли вкус блюда лучше, зависит  от умения заклинателя, заклинание лишь добавляет затребованные вкусы.Длительность: навсегда.Стоимость: 2 за порцию.Время сотворения: 10 секунд.Требования: Проверить пищу. ПредметЛожка, которая при размешивании пищи придаст ей заложенный вкус. Энергостоимость создания: 150.</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/meal</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M77</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">test food</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 226px; left: 442px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Apportation</name><name-loc>Перемещение</name-loc><spell version="2">
+		<name>Apportation</name>
+		<name-loc>Перемещение</name-loc>
+		<description-loc>Обычное; сопротивление по Воле(Will)Позволяет двигать материальные объекты, не прикасаясь к ним. Это заклинание левитирует объект с Движением 1 — недостаточно быстро, чтобы нанести вред. Живые объекты могут сопротивляться Воле(Will)й.Длительность: 1 минута.Энергостоимость: зависит от веса объекта. Столько же поддержание.Вес	Энергостоимостьменее 1 фунта	1до 10 фунтов	2до 50 фунтов	3до 200 фунтов	4каждые дополнительные 100 фунтов	 4Требования: Магичность(Magery) 1.ПредметПосох или палочка. Используется только магами; предмет должен прикасаться или быть направленным на объект. Энергостоимость создания: 900.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M142</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 226px; left: 293px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Keen Vision</name><name-loc>Обострённое зрение</name-loc><spell version="2">
+		<name>Keen Vision</name>
+		<name-loc>Обострённое зрение</name-loc>
+		<description-loc>ОбычноеНа самом деле это несколько заклинаний, так же как Контроль (животных) и Увеличить (атрибут). Наиболее распространённые варианты – Обострённое Зрение, Обострённый Слух, Обострённый Вкус и Обоняние, но возможны и необычные варианты для необычных способов восприятия , таких как Обнаружение, Сканирование и Чувство вибрации.Обострённое (чувство) даёт бонус  1 при соответствующих бросках чувств за каждое затраченное очко энергии.Обострённый слух также является заклинанием школы Звука.Длительность: 30 минут.Стоимость: 1 очко за каждое бонусное очко (максимум 5). Половина (округляется вверх) на поддержание.Предмет:Одежда или украшение. Энергостоимость создания: 150 за каждое бонусное очко.</description-loc>
+		<college>Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/pt increase</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>30 min</duration>
+		<reference>M133</reference>
+		<categories>
+			<category>Mind Control</category>
+		</categories>
+	</spell></block><block style="top: 370px; left: 10px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Shape Earth</name><name-loc>Формировать землю</name-loc><spell version="2">
+		<name>Shape Earth</name>
+		<name-loc>Формировать землю</name-loc>
+		<description-loc>ОбычноеДвигает землю, и придаёт ей любую форму. Если форма стабильна (например, холм), она навсегда сохранится после того, как её придали. Нестабильная форма (например, колонна или стена) держится, только пока действует заклинание – никакой концентрации не требуется –, а потом обрушивается. Может потребоваться бросок Архитектуры, чтобы создать стабильную форму.Земля, которую двигают этим заклинанием, передвигается с Движением 2; камень передвигается с Движением 1. Этим нельзя никому причинить вред, кроме как натечь на неподвижного человека и засыпать его. Если земля движется к человеку, чтобы его засыпать – или из-под него, чтобы сделать яму – он может нормально передвигаться в следующий свой ход, чтобы убежать. Он пойман, только если не сделал этого.Любой, засыпанный неплотной землёй, может попытаться выкопаться. Позволен один бросок в секунду с СЛ(ST)-4. Мастер может сделать этот бросок сложнее, если жертву засыпало более чем двумя кубическими ярдами земли. Жертва может задерживать дыхание (см. Задержка дыхания, B251), но велик риск задохнуться (см. Удушение, B436). Жертва, погребённая под камнем может задержать дыхание, но если у неё нет приспособлений, позволяющих пробиться сквозь сплошной камень, шансов выбраться мало.Длительность: 1 минутаСтоимость: 1 за кубический ярд формируемой земли (минимум 2). Двойная стоимость для каменя; шестикратная для резаного или обработанного камня, например стены. Нелегко сделать собственную дверь в замок.Требуется: Искать землю.ПредметПосох, жезл или украшение, или копательный инструмент. Энергостоимость создания: 200 (500 для предмета, формирующего камень).</description-loc>
+		<college>Earth</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/25 cu ft</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M50</reference>
+		<categories>
+			<category>Earth</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">seek earth</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 382px; left: 130px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Shape Plastic</name><name-loc>Формировать пластик</name-loc><spell version="2">
+		<name>Shape Plastic</name>
+		<name-loc>Формировать пластик</name-loc>
+		<description-loc>ОбычноеПохоже на Формировать металл, но действует на «пластик». Материал движется этим заклинанием с Движением 1/2  или быстрее, если он вязкий или жидкий.Длительность: 1 минута.Стоимость: 6 сотворение. 3 поддержка.Требования: Магичность(Magery) 1 и либо Формировать растение, либо шесть заклинаний Технологии.</description-loc>
+		<college>Technological/Plastic</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>6</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M183</reference>
+		<categories>
+			<category>Plastic</category>
+			<category>Technological</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<college compare="contains">technological</college>
+					<quantity compare="at least">6</quantity>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">shape plant</name>
+				</spell_prereq>
+			</prereq_list>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (technological)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 370px; left: 502px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Great Voice</name><name-loc>Великий голос</name-loc><spell version="2">
+		<name>Great Voice</name>
+		<name-loc>Великий голос</name-loc>
+		<description-loc>ОбычноеОбъекта могут слышать чётко и ясно все, кого он видит, даже на большом расстоянии. Объект может выбрать тех, кто может его слышать перед тем, как начать говорить (конечно, те, кто находятся в пределах зоны обычной слышимости, будут слышать его в любом случае). Заметьте, что спрятавшись за камень, слышимость не испортить. Это заклинание широко применяется капитанами кораблей, военными командирами и ораторами. Если голос изначально громки, под действием заклинания он может стать раздражающим. Но не оглушит  и не причинит вреда.Длительность:1 минута.Стоимость: 3 на сотворение. 1 на поддержание.Время сотворения: 2 секунды.Требования: Голоса и ГромПредметПосох, палочка, шлем или украшение; действует лишь на надевшего. Энергостоимость создания: 200.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M173</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">thunderclap</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">voices</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 418px; left: 682px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Shape Air</name><name-loc>Формирование воздуха</name-loc><spell version="2">
+		<name>Shape Air</name>
+		<name-loc>Формирование воздуха</name-loc>
+		<description-loc>ОбластноеПозволяет заклинателю создать движения воздуха в небольшом объеме. Ветер начинает дуть из выбранной клетки (штрафы за расстояние до нее), потоком шириной в 1 клетку, на расстояние 5 ярдов за единицу вложенной энергии, после чего исчезает. Способно сдувать (см. Сбивание, B378) – каждую секунду бросается 1d за каждые две единицы энергии, вложенные в заклинание (выброшенный результат считается  вредом в целях сдувания, но не наносит никакого реального вреда).Длительность: 1 минута.Стоимость: 1-10. 1 даёт мягкий бриз, 4 ветер, 6 шторм, 8 и более сильный порыв. Столько же поддержку. Требования: Создать воздух.ПредметПосох, палочка, украшение. Энергостоимость создания: 200.</description-loc>
+		<college>Air</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-10</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M24</reference>
+		<categories>
+			<category>Air</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create air</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 526px; left: 130px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Earth Vision</name><name-loc>Видеть сквозь землю</name-loc><spell version="2">
+		<name>Earth Vision</name>
+		<name-loc>Видеть сквозь землю</name-loc>
+		<description-loc>ОбычноеПозволяет смотреть сквозь землю – чтобы находить пещеры, залежи руды, зарытые сокровища, погребённых, и.т.д. Земля и необработанный камень (вплоть до 50 ярдов глубины) прозрачны для объекта заклинания, куда бы он ни посмотрел. Металл не прозрачен; как и обработанные камни, кирпичи, и.т.д. Таким образом, это заклинание не позволит смотреть сквозь стены замка.Это также заклинание Школы знаний.Длительность: 30 секунд.Стоимость: 2 за 10 ярдов глубины. Столько же за поддержку.Требуется: Формировать землю.ПредметЛюбой. Энергостоимость создания: 400.</description-loc>
+		<college>Earth/Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/10 yds#</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>30 sec</duration>
+		<reference>M51</reference>
+		<categories>
+			<category>Earth</category>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape earth</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 526px; left: 310px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Manipulate</name><name-loc>Манипулировать</name-loc><spell version="2">
+		<name>Manipulate</name>
+		<name-loc>Манипулировать</name-loc>
+		<description-loc>ОбычноеПозволяет манипулировать более крупными предметами, чем заклинание Взлом. Может развязывать веревки, поворачивать дверные ручки, поворачивать рычаг ручной мельницы и т.п. Заклинателю не обязательно прикасаться к объекту. Любая работа, достаточно сложная для того, чтобы давать штраф к ЛВ(DX), дает тот же штраф к этому заклинанию.Длительность: 1 минута. (Это позволяет развязать обычный узел.)Стоимость: 4 сотворение и 3 поддержка за каждые 10 фунтов, которыми манипулирует заклинание.Требования: Взлом.ПредметПалочка, посох или перчатка. Энергостоимость создания: 600.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M145</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">locksmith</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 634px; left: 238px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Shape Metal</name><name-loc>Формировать металл</name-loc><spell version="2">
+		<name>Shape Metal</name>
+		<name-loc>Формировать металл</name-loc>
+		<description-loc>ОбычноеДвигает твёрдый и жидкий металл и придаёт ему форму. Если форма стабильна, она навсегда сохраняется после того. Как её придали. Нестабильная форма держится, только пока действует заклинание – никакой концентрации не требуется – а потом обрушается. Для создания стабильной формы, например навеса, может потребоваться бросок Архитектуры. Твёрдый металл движется этим заклинанием с Движением 1/2; жидкий металл движется вверх на такой же скорости, но гораздо быстрее горизонтально (Движение 4) и вниз (до Движения 10).Длительность: 1 минута.Стоимость: 6 (для мягких металлов, например свинца, золота или магния 4). Половина поддержка.Требования: Магичность(Magery) 1 и либо Формировать землю, либо шесть заклинаний Технологии.</description-loc>
+		<college>Technological/Metal</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>6 or 4</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M182</reference>
+		<categories>
+			<category>Metal</category>
+			<category>Technological</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<college compare="contains">technological</college>
+					<quantity compare="at least">6</quantity>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">shape earth</name>
+				</spell_prereq>
+			</prereq_list>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (technological)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 682px; left: 118px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Shape Water</name><name-loc>Формировать воду</name-loc><spell version="2">
+		<name>Shape Water</name>
+		<name-loc>Формировать воду</name-loc>
+		<description-loc>ОбычноеПридаёт воде (включая лёд или пар) любую форму, и даже двигает её. После того, как форма придана, вода удерживает её без дальнейшего сосредоточения, пока заклинание не закончится. Вода, которую двигают этим заклинанием, передвигается с Движением 3.Полезная форма – стена воды, как преграда огненным атакам – 20 галлонов создают стену в 2 ярда высотой и 1 ярд шириной. Она остановит Огненный шар и обычный огонь.Длительность: 1 минута.Стоимость: 1 за 20 сформированных галлонов. Столько же на поддержку.Время сотворения: 2 секунды.Требование: Создать воду.ПредметПосох, жезл или украшение. Энергостоимость создания: 400.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1#</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M185</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 682px; left: 10px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Shape Plant</name><name-loc>Формировать растение</name-loc><spell version="2">
+		<name>Shape Plant</name>
+		<name-loc>Формировать растение</name-loc>
+		<description-loc>ОбычнаяПозволяет руками лепить и формовать растения и растительный материал.Заклинание дает  2 к умениям Плотник и Художник (Деревообработка), или позволяет заклинателю работать без каких-либо средств со штрафом -1. Это полезно для строительства дома и создания мебели, ремонта щитов и снаряжения, и устранения деревянных препятствий. Также это может быть использовано на оружие врага в бою, нанося 2d повреждения деревянному оружию; смотри Удары по оружию (B400) для подробной информации об уроне оружию.Длительность: 1 минута.Стоимость: 3 сотворение. 1 поддержка. Двойная цена, если материал недолговечный.Время сотворения: 10 секунд.Требования: Определить растение.ПредметПерчатка из растительного материала. Энергостоимость создания: 500.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M161</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">identify plant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 838px; left: 10px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>See Invisible</name><name-loc>Видеть невидимое</name-loc><spell version="2">
+		<name>See Invisible</name>
+		<name-loc>Видеть невидимое</name-loc>
+		<description-loc>ОбычноеОбъект может видеть что-нибудь скрытое заклинанием Невидимости или «естественной» невидимостью. Такие вещи будут немного прозрачными, так что сквозь них можно видеть и понять, что они невидимы для других.Длительность: 1 минута.Стоимость: 4 на сотворение,  2 на поддержание.Требования: Или Зрение в темноте и Инфразрение, или Невидимость.ПредметПосох, палочка или украшение; действует только на владельца. Энергостоимость создания: 400.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M113</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">invisibility</name>
+			</spell_prereq>
+			<prereq_list all="yes">
+				<spell_prereq has="yes">
+					<name compare="is">dark vision</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">infravision</name>
+				</spell_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 838px; left: 118px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Sense Spirit</name><name-loc>Почуять духов</name-loc><spell version="2">
+		<name>Sense Spirit</name>
+		<name-loc>Почуять духов</name-loc>
+		<description-loc>Информационное; ОбластноеОбнаруживает любых духов, призраков, нежить и прочих подобных сверхъестественных существ в области действия. При успешном броске дает общее впечатление о видах присутствующих духов. Маг в момент сотворения может ограничить заклинание определенным типом сущностей, либо исключить какие-то из них.Базовая стоимость: 1/2 (минимум 1).Требования: Магичность(Magery) 1 и либо Почуять жизнь, либо Видение смерти.Предмет(а) Посох, палочка, украшение. Энергостоимость: 100. (б) Самоцвет, который будет светиться или вибрировать, когда дух окажется в заданном радиусе. Энергостоимость: 100 за радиус 1 ярд, 200 – за два ярда и т.д.</description-loc>
+		<college>Necromancy</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info/Area</spell_class>
+		<casting_cost>1/2 (min 1)</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M149</reference>
+		<categories>
+			<category>Necromancy</category>
+		</categories>
+		<prereq_list all="no">
+			<prereq_list all="yes">
+				<prereq_list all="no">
+					<advantage_prereq has="yes">
+						<name compare="is">magery</name>
+						<notes compare="contains">one college (necromancy)
+						<level compare="at least">1</level>
+					</notes></advantage_prereq>
+					<advantage_prereq has="yes">
+						<name compare="is">magery</name>
+						<notes compare="is anything"></notes>
+						<level compare="at least">1</level>
+					</advantage_prereq>
+				</prereq_list>
+				<spell_prereq has="yes">
+					<name compare="is">sense life</name>
+				</spell_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">death vision</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 310px; left: 166px;" class=""><name>Small Vision</name><name-loc>Микрозрение</name-loc><spell version="2">
+		<name>Small Vision</name>
+		<name-loc>Микрозрение</name-loc>
+		<description-loc>ОбычноеОбъект может исследовать предметы в пределах досягаемости, как-будто они под x100 усилением, аналогично Микроскопическому зрению 2 (B68). На время действия заклинания объект чрезвычайно близорук (см. Плохое зрение, B123): он не может ясно видеть объекты далее одного ярда, они кажутся размытыми. Все контактные атаки производятся со штрафом -2 к навыку. Также относится к школе Знаний.Длительность: 1 минута.Стоимость: 4 на сотворение, 2 на поддержание. Каждое удвоение стоимости десятикратно увеличивает приближение.Время сотворения: 2 секунды.Требования: Острое зрение или, по крайней мере, пять заклинаний Света и тьмы. Объект не должен страдать от Слепоты или Плохого зрения.Предмет(a) Одежда или украшение. Должен иметь изображение блохи в натуральную величину. Действует только на владельца. Энергостоимость создания: 400. (б) Драгоценный камень, работающий как лупа. Стоимость создания: 400 энергии плюс стоимость камня.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4#</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M111</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<advantage_prereq has="no">
+				<name compare="is">blindness</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">keen vision</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<college compare="is">light</college>
+					<quantity compare="at least">5</quantity>
+				</spell_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 310px; left: 274px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Invisibility</name><name-loc>Невидимость</name-loc><spell version="2">
+		<name>Invisibility</name>
+		<name-loc>Невидимость</name-loc>
+		<description-loc>ОбычноеЦель невозможно увидеть, она не появляется в отражениях или фотографиях. Однако она по-прежнему издает звуки и может быть выслежена по запаху или по следам. Что-либо поднятое субъектом, становится невидимым, если он не пожелает оставить этот предмет видимым. Невидимку можно обнаружить с помощью Видеть невидимое, но не с помощью Инфразрения. У невидимых персонажей огромное преимущество в бою (B394).Длительность: 1 минута.Стоимость: 5 на сотворение, 3 на поддержание.Время сотворения: 3 секунды.Требования: Шесть Заклинаний света, включая Размыть.Предмет(a) Украшение, палочка или посох; действует только на владельца. Энергостоимость создания: 1.200. (б) предмет можно сделать невидимым навсегда по 500 энергии за клетку размера или 50 фунтов веса, смотря, что больше.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M114</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="is">light</college>
+				<quantity compare="at least">6</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">blur</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 310px; left: 382px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Wizard Eye</name><name-loc>Волшебный глаз</name-loc><spell version="2">
+		<name>Wizard Eye</name>
+		<name-loc>Волшебный глаз</name-loc>
+		<description-loc>СтандартноеСоздаёт физический глаз – двухдюймовый шарик – через который заклинатель может видеть. Глаз может летать в воздухе, вертикально или горизонтально, с Движением 10; он движется в ход заклинателя. Концентрация требуется, чтобы двигать глаз, но не чтобы видеть через него. Глаз маленький, его МР(SM) равен -7, поэтому в него трудно попасть – но если в него попадут физической атакой, или любым заклинанием, которое могло бы вывести его из строя, он будет уничтожен.Длительность: 1 минута.Стоимость: 4 сотворение. 2 поддержка.Время сотворения: 2 секунды.Требования: Перемещение и Обострённое зрение.ПредметГлазное яблоко, вырезанное из слоновой кости с врезанными драгоценными камнями. Используется только магами. По команде держателя, оно превратится в Волшебный глаз; по возвращению в его руку оно вновь примет форму драгоценности. Стоимость создания: 1.100 энергии, $1000 за умелую резьбу по слоновой кости и $600 за изумруды.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M104</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">keen vision</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 310px; left: 502px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Wizard Nose</name><name-loc>Волшебный нос</name-loc><spell version="2">
+		<name>Wizard Nose</name>
+		<name-loc>Волшебный нос</name-loc>
+		<description-loc>СтандартноеСоздаёт отделённую копию – примерно 2 или 3 дюйма длиной – физического носа заклинателя, через который он может ощущать запах. Нос летает по воздуху с Движением 10, в ход заклинателя, хотя он не может этого делать, не врезаясь в препятствия, если его не сопровождает Волшебный глаз или ухо!Концентрация требуется, чтобы двигать Нос, но не чтобы нюхать через него. Любые улучшающие обоняние заклинания, действующие на заклинателя, можно также использовать через Нос. Когда заклинатель нюхает через Нос, его собственный нос нечувствителен. Каждый ход он должен указывать, нюхает ли он через Волшебный нос или через собственный. Нос маленький, с МР(SM) -7,– но если в него попадут физической атакой, или любым заклинанием, которое обосновано могло бы его вывести из строя, он уничтожен.Это также заклинание Пищи.Длительность: 1 минутаСтоимость: 3 сотворение. 2 поддержка.Время сотворения: 2 секунды.Требования: Перемещение, Удалённая дегустация.Предмет(а) Любой предмет, изображающий человеческий нос может быть превращён в неподвижный Волшебный Нос, через который держатель амулета в форме цветка, зачарованный одновременно, может нюхать независимо от расстояния. Каждый Нос соединяется с одним амулетом и наоборот. Энергостоимость создания: 475. (б) Нос, вырезанный из драгоценного камня. Используется только магами. По приказу держащего его, он превращается в Волшебный Нос; по возвращению в его руку он возвращается в форму предмета. Стоимость создания: 500 энергии, $500 за материалы и работу.</description-loc>
+		<college>Food/Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M104</reference>
+		<categories>
+			<category>Food</category>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">far-tasting</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 310px; left: 682px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Know Recipe</name><name-loc>Узнать рецепт</name-loc><spell version="2">
+		<name>Know Recipe</name>
+		<name-loc>Узнать рецепт</name-loc>
+		<description-loc>ИнформационноеОсобое сопротивлениеЗаклинание применяется на готовое блюдо и помещает полную информацию о компонентах еды (и методах приготовления использованных поваром) в мозг заклинателя. Так же может применяться на  алхимические составы. Однако эликсиры отражают заклинание с умением создавшего их алхимика. На усмотрение Мастера может использоваться для анализа химикатов или лекарств.Так же это заклинание школы Знаний.Длительность: запомненное остается предельно ясным в уме заклинателя 1 день. После чего угасает как в заклинании Запомнить (M105). Искажение рецептов может привести к чему угодно от неловкого положения (замена сахара солью в десерте) до серьезной неприятности (замена сахара солью в десерте для Короля).Стоимость: 3. Не поддерживается.Время сотворения: 15 секунд.Требования:  Удаленная дегустация и Приправа.ПредметПосох, палочка или украшение. Энергостоимость создания: 450.</description-loc>
+		<college>Food/Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>15 sec</casting_time>
+		<duration>1 day</duration>
+		<reference>M78</reference>
+		<categories>
+			<category>Food</category>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">far-tasting</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">season</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 226px; left: 562px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Far-Tasting</name><name-loc>Удаленная дегустация</name-loc><spell version="2">
+		<name>Far-Tasting</name>
+		<name-loc>Удаленная дегустация</name-loc>
+		<description-loc>ОбычныйСубъект может ощутить вкус и запах любого объекта, который он может видеть (даже на большом расстоянии) или ощутить вкус и запах сквозь твердые объекты не больше двух ярдов толщиной. Все броски Вкус/Запах автоматически успешны, хотя любое вещество, не определяемое на вкус или по запаху (например, угарный газ без вкуса и аромата), останется необнаруженным. Это может быть особенно полезным для вынюхивания ядов, так как их эффекты не передаются через запахи.Так же это заклинание Школы знаний.Длительность: 1 минута.Стоимость: 3 сотворение, 1 поддержание.Время сотворения: 3 секунды.Требования: Магичность(Magery) 1 и  Искать пищу или Искать воздух; отсутствие  недостатка Нет обоняния/вкуса.Предмет Одежда или украшение, влияет только на носителя. Энергостоимость создания: 200.</description-loc>
+		<college>Food/Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M77</reference>
+		<categories>
+			<category>Food</category>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<advantage_prereq has="no">
+				<name compare="contains">no taste/smell</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">seek food</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">seek air</name>
+				</spell_prereq>
+			</prereq_list>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (food)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 490px; left: 682px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Air Vision</name><name-loc>Воздушное зрение</name-loc><spell version="2">
+		<name>Air Vision</name>
+		<name-loc>Воздушное зрение</name-loc>
+		<description-loc>ОбычноеПозволяет видеть сквозь любой дым, пыль, песок в воздухе, уничтожает все штраф за состояние воздуха.Также относится к школе Знания.Длительность: 1 минута.Стоимость: 1 за милю сотворения. Половина за поддержание.Требования: Формирование воздуха.ПредметЛюбой. Энергостоимость создания: 200.</description-loc>
+		<college>Air/Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1 per mile</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M24</reference>
+		<categories>
+			<category>Air</category>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape air</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 454px; left: 502px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Wizard Mouth</name><name-loc>Волшебный рот</name-loc><spell version="2">
+		<name>Wizard Mouth</name>
+		<name-loc>Волшебный рот</name-loc>
+		<description-loc>СтандартноеСоздаёт копию – примерно 4 дюйма шириной – физического рта и губ заклинателя, через который он может говорить и ощущать вкус. Рот летает по воздуху с Движением 10, в ход заклинателя, хотя он не может этого делать, не врезаясь в препятствия, если его не сопровождает Волшебный глаз или ухо!Концентрация требуется, чтобы двигать Рот, но не чтобы говорить или пробовать сквозь него. Любые улучшающие голос или вкус заклинания, действующие на заклинателя, можно также использовать через Рот. Рот не может творить заклинания! Когда заклинатель пробует через Рот, его собственный рот нечувствителен. Каждый ход, он должен указывать, пробует ли он через Рот или через собственный рот.Рот маленький, с МР(SM) -6, поэтому по нему трудно попасть – но если в него попадут физической атакой, или любым заклинанием, которое могло бы его вывести из строя, он уничтожен. Сам Рот не может наносить вреда укусом.Это также заклинание Пищи и Звука.Длительность: 1 минута.Стоимость: 4 сотворение. 2 поддержка.Время сотворения: 2 секунды.Требования: Перемещение, Удалённая дегустация и Великий голос Предмет(а) Любой предмет, изображающий человеческий рот может быть превращён в неподвижный Волшебный рот, через который держатель амулета в форме рта, зачарованный одновременно, может говорить независимо от расстояния. Каждый Рот подключен к одному амулету и наоборот. Энергостоимость создания: 325. (б) Рот, вырезанный из красного коралла, с зубами из слоновой кости. Используется только магами. По приказу держащего его, он превращается в Волшебный рот; по возвращению в его руку он возвращается в форму предмета. Стоимость создания: 650 энергии, $1000 за умелую резьбу по кораллу и $400 за слоновую кость.</description-loc>
+		<college>Food/Knowledge/Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M104</reference>
+		<categories>
+			<category>Food</category>
+			<category>Knowledge</category>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">far-tasting</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">great voice</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 394px; left: 328px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Invisible Wizard Eye</name><name-loc>Невидимый волшебный глаз</name-loc><spell version="2">
+		<name>Invisible Wizard Eye</name>
+		<name-loc>Невидимый волшебный глаз</name-loc>
+		<description-loc>СтандартноеСоздаёт Волшебный глаз, который нельзя увидеть без заклинания Видеть невидимое. Любой, кто угадает, где он находится, всё ещё может атаковать, но с -7 за МР(SM) в сочетании со штрафом -6 за невидимость приводит к тому, что по нему крайне трудно попасть.Длительность: 1 минута.Стоимость: 5 сотворение. 3 поддержка.Время сотворения: 4 секунды.Требования: Волшебный глаз и Невидимость.ПредметКак для Волшебного глаза, но дороже. Стоимость создания: 1.600 энергии, $1000 за умелую резьбу по слоновой кости и $900 за изумруды и опалы.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>4 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M104</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">wizard eye</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">invisibility</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 454px; left: 130px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Plastic Vision</name><name-loc>Видеть сквозь пластик</name-loc><spell version="2">
+		<name>Plastic Vision</name>
+		<name-loc>Видеть сквозь пластик</name-loc>
+		<description-loc>ОбычноеВидеть сквозь пластик. Это также заклинание Знаний.Длительность: 30 секунд.Стоимость: 2 за каждые 5 ярдов толщины (максимум 50 ярдов) на сотворение. Столько же поддержка.Требования: Формировать пластик.Предмет:Любой. Действует лишь на носящего. Энергостоимость создания: 800.</description-loc>
+		<college>Knowledge/Technological/Plastic</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2 per 5 yd</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>30 sec</duration>
+		<reference>M183</reference>
+		<categories>
+			<category>Knowledge</category>
+			<category>Plastic</category>
+			<category>Technological</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape plastic</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 442px; left: 10px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Earth Vision</name><name-loc>Видеть сквозь землю</name-loc><spell version="2">
+		<name>Earth Vision</name>
+		<name-loc>Видеть сквозь землю</name-loc>
+		<description-loc>ОбычноеПозволяет смотреть сквозь землю – чтобы находить пещеры, залежи руды, зарытые сокровища, погребённых, и.т.д. Земля и необработанный камень (вплоть до 50 ярдов глубины) прозрачны для объекта заклинания, куда бы он ни посмотрел. Металл не прозрачен; как и обработанные камни, кирпичи, и.т.д. Таким образом, это заклинание не позволит смотреть сквозь стены замка.Это также заклинание Школы знаний.Длительность: 30 секунд.Стоимость: 2 за 10 ярдов глубины. Столько же за поддержку.Требуется: Формировать землю.ПредметЛюбой. Энергостоимость создания: 400.</description-loc>
+		<college>Earth/Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/10 yds#</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>30 sec</duration>
+		<reference>M51</reference>
+		<categories>
+			<category>Earth</category>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape earth</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 610px; left: 70px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Glass Wall</name><name-loc>Стеклянная стена</name-loc><spell version="2">
+		<name>Glass Wall</name>
+		<name-loc>Стеклянная стена</name-loc>
+		<description-loc>СтандартноеПозволяет видеть сквозь одну стену, пол, потолок, или другой подобный барьер вплоть до 4 футов толщины (материал не имеет значения).Длительность: 1 минута.Стоимость: 4 сотворение. 2 поддержка.Требования: Либо пять других заклинаний школы Знаний, либо Видеть сквозь землю.ПредметПосох, жезл или украшение. Энергостоимость создания: 600.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M103</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<college compare="contains">knowledge</college>
+				<quantity compare="at least">5</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">earth vision</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 754px; left: 10px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Plant Vision</name><name-loc>Видеть сквозь растения</name-loc><spell version="2">
+		<name>Plant Vision</name>
+		<name-loc>Видеть сквозь растения</name-loc>
+		<description-loc>ОбычноеЗаклинание позволяет видеть сквозь растительность, чтобы найти заросшие здания, скрытых врагов, и т.д. Зачарованные природные растения становятся прозрачными для заклинателя. Магические растения, мертвые деревья, и деревянные конструкции – нет.Это также заклинание Знаний.Длительность: 30 секунд.Стоимость: 1 за 10 ярдов дистанции (100 ярдов максимум). Та же стоимость поддержки.Длительность: 30 секунд.Требования: Рост растений.ПредметЛюбой. Энергостоимость создания: 300.</description-loc>
+		<college>Plant/Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1 per 10 yards</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>30 sec</duration>
+		<reference>M162</reference>
+		<categories>
+			<category>Knowledge</category>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape plant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 754px; left: 118px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Water Vision</name><name-loc>Видеть сквозь воду</name-loc><spell version="2">
+		<name>Water Vision</name>
+		<name-loc>Видеть сквозь воду</name-loc>
+		<description-loc>ИнформационноеПозволяет видеть сквозь воду, снег и лёд – чтобы найти затонувшие сокровища, прячущихся чудовищ и т.д.Также относится к школе Знаний.Длительность: 30 секунд.Стоимость: 1 за 20 ярдов глубины на сотворение (вплоть до 200 ярдов). Столько же на поддержание.Требование: Формировать воду.ПредметЛюбой. Энергостоимость создания: 200.</description-loc>
+		<college>Knowledge/Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>1#</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>30 sec</duration>
+		<reference>M187</reference>
+		<categories>
+			<category>Knowledge</category>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 526px; left: 430px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Far-Feeling</name><name-loc>Удалённое осязание</name-loc><spell version="2">
+		<name>Far-Feeling</name>
+		<name-loc>Удалённое осязание</name-loc>
+		<description-loc>ОбычноеЦель может осязать любой объект, который видит (даже на большом расстоянии) или сквозь твёрдые предметы не более 6 футов в толщину. Ощущения односторонние (чтобы щипать девиц, используйте заклинание Манипулировать); в частности, маг не может доставлять заклинание через Удалённое осязание!Длительность: 1 минута.Стоимость: 3 сотворение, 1 поддержание.Время сотворения: 3 секунды.Требование: Магичность(Magery) 1.ПредметПерчатки или украшение. Действует только на носящего. Энергостоимость создания: 200.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M100</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="no">
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="contains">one college (knowledge)
+				<level compare="at least">1</level>
+			</notes></advantage_prereq>
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="is anything"></notes>
+				<level compare="at least">1</level>
+			</advantage_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 610px; left: 370px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Wizard Hand</name><name-loc>Волшебная рука</name-loc><spell version="2">
+		<name>Wizard Hand</name>
+		<name-loc>Волшебная рука</name-loc>
+		<description-loc>СтандартноеСоздаёт копию физической кисти заклинателя, которой он может хватать и осязать. Рука летает по воздуху с Движением 10, в ход заклинателя, хотя она не может этого делать, не врезаясь в препятствия, если её не сопровождает Волшебный глаз или ухо! Альтернативно, она может ощупывать себе дорогу вдоль стен, полов и потолков с Движением 3. Концентрация требуется, чтобы двигать Руку, но не чтобы держать или осязать через неё. Рука не может колдовать или удерживать заклинания. Любые улучшающие осязание заклинания, действующие на заклинателя, можно также использовать через Руку. Когда заклинатель осязает через Руку, его собственные руки нечувствительны. Каждый ход, он должен указывать, осязает ли он через Руку или через собственные руки.Рука маленькая, с МР(SM) -5, но если в неё попадут физической атакой, или любым заклинанием, которое могло бы её вывести из строя, это её уничтожит. Сама рука не может наносить урон ударом; у неё СЛ(ST) 2 и ЛВ(DX) заклинателя.Это также заклинание Движения.Длительность: 1 минута.Стоимость: 4 сотворение, 2 поддержка для одной Руки; 6 сотворение, 4 поддержка для двух Рук.Время сотворения: 3 секунды.Требования: Манипулировать и Удалённое осязание.Предмет(а) Любой предмет, изображающий человеческую руку, может быть превращён в стационарную Волшебную Руку, через которую носитель перчатки, зачарованной одновременно, может ощупывать независимо от расстояния. Каждая Рука соединяется с одной перчаткой и наоборот. Энергостоимость создания: 300. (б) Рука, вырезанная из драгоценной древесины. Используется только магами. По приказу держащего её, она превращается в Волшебную руку; по возвращению в его руку она возвращается в форму предмета. Стоимость создания: 400 энергии, $500 за материалы и работу.</description-loc>
+		<college>Knowledge/Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M104</reference>
+		<categories>
+			<category>Knowledge</category>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">manipulate</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">far-feeling</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 706px; left: 238px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Metal Vision</name><name-loc>Видеть сквозь металл</name-loc><spell version="2">
+		<name>Metal Vision</name>
+		<name-loc>Видеть сквозь металл</name-loc>
+		<description-loc>ОбычноеВидеть сквозь металл, чтобы узнать что лежит за дверью или в сундуке. Некоторые металлы (свинец) сопротивляются заклинанию или полностью непроницаемы для него. Это также заклинание Знаний.Длительность: 30 секунд.Стоимость: 2 за каждые 5 ярдов толщины (максимум 50 ярдов) на сотворение. Столько же поддержка.Требования: Формировать металл.Предмет:Любой. Действует лишь на носящего. Энергостоимость создания: 800.</description-loc>
+		<college>Knowledge/Technological/Metal</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2 per 5 yd</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>30 sec</duration>
+		<reference>M183</reference>
+		<categories>
+			<category>Knowledge</category>
+			<category>Metal</category>
+			<category>Technological</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape metal</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 802px; left: 346px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Tell Time</name><name-loc>Узнать время</name-loc><spell version="2">
+		<name>Tell Time</name>
+		<name-loc>Узнать время</name-loc>
+		<description-loc>ИнформационноеСообщает заклинателю сколько времени – а также день и год, если в этом будут сомнения.Стоимость: 1.ПредметУкрашение, позволяет носителю узнать точное время, когда он захочет. Энергостоимость создания: 250.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M100</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+	</spell></block><block style="top: 874px; left: 346px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Alarm</name><name-loc>Будильник</name-loc><spell version="2">
+		<name>Alarm</name>
+		<name-loc>Будильник</name-loc>
+		<description-loc>ОбычноеПредупреждает объект в указанное время в будущем, пробуждая его, если необходимо. Также делает напоминание (по сути, доставляя сообщение), при условии, что оно было указано при сотворении. Может быть настроено на «срабатывание» в пределах недели от времени сотворения.Длительность: 1 неделя.Стоимость: 1. Не поддерживается.Требование: Узнать Время.ПредметУкрашение. Будет гудеть или вибрировать каждый день в одно и то же время, установленное создателем. Энергостоимость создания: 60.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 week</duration>
+		<reference>M100</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">tell time</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 922px; left: 178px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Projection</name><name-loc>Проекция</name-loc><spell version="2">
+		<name>Projection</name>
+		<name-loc>Проекция</name-loc>
+		<description-loc>СтандартноеЗаклинатель на короткое время выпускает свой разум из своего тела, в любую точку в прямой видимости (используйте модификаторы больших расстояний), чтобы рассмотреть свое окружение из другой точки обзора. Его проецированная сущность полностью бесплотна и может только видеть, слышать, осязать, нюхать и пробовать на вкус. Её присутствие можно обнаружить Астральным зрением, Чувством духов, Чувством наблюдения, и тому подобными; иначе она незаметна.Проекция не может пересечь Астральный блок, Пентаграмму или Сплошные заклинания. Отталкивание духов будет сопротивляться её вторжению. Проекция не может двигаться; она может только поворачиваться, чтобы посмотреть в разные стороны. Тело неподвижно на время действия этого заклинания; оно не может действовать. Если кто-то атакует тело, заклинание автоматически прерывается.Длительность: 1 минута.Стоимость: 4 сотворение. 2 поддержка.Время сотворения: 3 секунды.Требования: Чувство духов и не меньше четырёх заклинаний школы Знаний.ПредметПосох, жезл или украшение. Используется только магами; действует только на носителя. Энергостоимость создания: 500.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M105</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sense spirit</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">knowledge</college>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 922px; left: 58px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1 hard"><name>Astral Vision</name><name-loc>Астральное зрение</name-loc><spell version="2" very_hard="yes">
+		<name>Astral Vision</name>
+		<name-loc>Астральное зрение</name-loc>
+		<description-loc>СтандартноеПозволяет видеть бесплотные сущности. Например, привидений или объектов заклинаний Эфирное тело, Проекция или Планарный визит.Это также заклинание школы Некромагии.Длительность: 1 минута.Стоимость: 4 сотворение. 2 поддержка.Требования: Чувство духов и Видеть невидимое.Предмет(а) Посох или жезл. Используется только магами. Энергостоимость создания: 900. (б) Очки или украшение. Действует только на носителя, Действует всегда. Энергостоимость создания: 1.400.</description-loc>
+		<college>Knowledge/Necromancy</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M105</reference>
+		<categories>
+			<category>Knowledge</category>
+			<category>Necromancy</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sense spirit</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">see invisible</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 886px; left: 574px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Know Location</name><name-loc>Узнать местонахождение</name-loc><spell version="2">
+		<name>Know Location</name>
+		<name-loc>Узнать местонахождение</name-loc>
+		<description-loc>ИнформационноеДаёт заклинателю приемлемое представление о его географическом местоположении (с точностью до пары миль). Это будет выражено в терминах ближайших ориентиров, о которых заклинатель слышал (если есть сомнения, слышал ли заклинатель об этом, Мастер должен кинуть Знание местности заклинателя). Например, «Вы в пустыне Сахара, примерно на 30 миль к северу от Тимбукту».Стоимость: 2.Время сотворения: 10 секунд. При последующих попытках, заклинание повторяет последний ответ (правильный он или нет), пока заклинатель не сдвинется с места примерно на милю.Требования: Магичность(Magery) 1 и Узнать расположение. ПредметЛюбая карта, глобус, и т.д., может быть зачарована, чтобы показывать местонахождение пользователя каждый раз, когда творится это заклятие. Отметка (выбранная создателем предмета) появляется в подходящем месте в случае успеха. Никакой отметки не появляется, если пользователь за пределами границ карты. Если заклинание не удаётся, либо не появляется никакой отметки, либо появляется ошибочная. Энергостоимость создания: 225.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M103</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (knowledge)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">tell position</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 658px; left: 628px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Far-Hearing</name><name-loc>Удаленный слух</name-loc><spell version="2">
+		<name>Far-Hearing</name>
+		<name-loc>Удаленный слух</name-loc>
+		<description-loc>ИнформационноеЗаклинатель может слышать любой разговор, который он может видеть, не зависимо от расстояния; он может слышать через препятствия толщиной до 6 футов. Он автоматически выполняет проверку слуха. Это также заклинание школы Знаний.Длительность: 1 минута.Стоимость: 4 на сотворение. 2 на поддержание.Время сотворения: 3 секунды.Требования: Магичность(Magery) 1 и четыре других заклинаний Звука. Нельзя при недостатках Глухота или Тугоухость.ПредметОдежда или украшение. Действует лишь на надевшего. Энергостоимость: 400.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M173</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">sound</college>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+			<advantage_prereq has="no">
+				<name compare="is">hard of hearing</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<advantage_prereq has="no">
+				<name compare="is">deafness</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (sound)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 730px; left: 574px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Measurement</name><name-loc>Измерить</name-loc><spell version="2">
+		<name>Measurement</name>
+		<name-loc>Измерить</name-loc>
+		<description-loc>Областное; Информационное.Сообщает заклинателю одну из следующих вещей о субъекте: (а) вес; (б) размеры во всех измерениях; (с) площадь; (д) объем. Заклинание предоставит информацию в родной системе заклинателя, будь то фунты, граммы, или камни примерно размером с голову. Измерение настолько точно, насколько заклинатель может его понять.В некоторых сеттингах, где часто меряются другие величины, могут быть возможны и другие измерения. На высоких ТУ, например, может быть определена длина волны света, или частота звука. Скорость двигающегося субъекта или местная гравитация тоже может быть измерена в некоторых сеттингах.Базовая стоимость: 1.ПредметСуществует отдельный предмет для каждой из вышеуказанных функций: зачарованная линейка для измерения длины, весы для веса, линза для цвета, или ониксовый куб для объема. Предмет должен прикасаться к объекту. Энергостоимость создания: 50.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area/Info</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M100</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+	</spell></block><block style="top: 814px; left: 574px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Tell Position</name><name-loc>Узнать расположение</name-loc><spell version="2">
+		<name>Tell Position</name>
+		<name-loc>Узнать расположение</name-loc>
+		<description-loc>ИнформационноеСообщает заклинателю точное расстояние, азимут и высоту субъекта относительно заклинателя. Заклинатель должен иметь возможность видеть субъект.Стоимость: 1.Требование: Измерить.ПредметПосох, жезл или украшение. Энергостоимость создания: 150.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M101</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">measurement</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 814px; left: 682px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Test Load</name><name-loc>Проверить на нагрузку</name-loc><spell version="2">
+		<name>Test Load</name>
+		<name-loc>Проверить на нагрузку</name-loc>
+		<description-loc>Областное; ИнформационноеСообщает заклинателю, сколько ещё веса субъект может выдержать, прежде чем искривится или сломается. Это может открыть грузоподъемность мостов, корзин, верёвок, и т.д.Базовая стоимость: 1 (минимум 2).Требование: Измерить.ПредметПосох или жезл; предмет должен коснуться цели. Энергостоимость создания: 80.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area/Info</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M101</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">measurement</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block>
+</div>

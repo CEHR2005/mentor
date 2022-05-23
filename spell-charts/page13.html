@@ -1,0 +1,832 @@
+<block style="top: 104px; left: 392px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Test Food</name><name-loc>Проверить пищу</name-loc><spell version="2">
+		<name>Test Food</name>
+		<name-loc>Проверить пищу</name-loc>
+		<description-loc>ИнформационноеОпределяет, подходит ли субстанция для еды. Заклинание ничего не скажет о вкусе или питательности, но определит яды, опасное гниение или инородные объекты (лезвие во фрукте). Не проверяет наличие магии в еде.Стоимость: 1 за проверку одной порции или бутылки; 3 за всю еду и питье в радиусе 1 ярда.ПредметПосох, палочка или украшение. Энергостоимость создания: 100.</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>1 or 3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M77</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+	</spell></block><block style="top: 104px; left: 68px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Create Fire</name><name-loc>Создать огонь</name-loc><spell version="2">
+		<name>Create Fire</name>
+		<name-loc>Создать огонь</name-loc>
+		<description-loc>ОбластноеПозволяет создать огонь без топлива. Создает клетку или больше, занятую огнём (или падающую сферу огня). Это настоящий огонь, который в конечном итоге поджигает любой горючий объект. Не может быть сотворен внутри камня, врага и т.п.Длительность: 1 минута.Базовая стоимость: 2. Половина на поддержание. Обычный огонь, полученный таким образом, не требует поддержания.Требования: Воспламенение или Искать огонь.ПредметПосох, палочка или украшение. Энергостоимость создания: 300; предмет должен содержать рубин на $200.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<melee_weapon>
+			<damage>1d-1 burn</damage>
+			<usage>Area</usage>
+			<reach>Special</reach>
+			<parry>No</parry>
+		</melee_weapon>
+		<reference>M72</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">seek fire</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">ignite fire</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 200px; left: 68px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Cook</name><name-loc>Приготовить</name-loc><spell version="2">
+		<name>Cook</name>
+		<name-loc>Приготовить</name-loc>
+		<description-loc>ОбычноеПревращает сырые ингредиенты в готовое блюдо. Производит только простую пищу (тушеное мясо и т.д.), которая, однако также полезна, как ингредиенты. Огонь для приготовления  не нужен; высокую температуру обеспечивает заклинание.Стоимость: 1 за порцию.Время сотворения: 5 секунд.Требования: Проверить пищу и Создать огонь.ПредметКотелок, готовящий любую еду, помещенную в него, не тратя энергии пользователя. Требует около минуты на готовку. Размер не имеет значения, каждый котелок может использоваться ограниченное число раз в день. Энергостоимость создания: 30 за порцию в день (например, котелок, готовящий три порции за день, будет стоить 90 энергии для создания).</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M78</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">test food</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create fire</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 224px; left: 392px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Season</name><name-loc>Приправа</name-loc><spell version="2">
+		<name>Season</name>
+		<name-loc>Приправа</name-loc>
+		<description-loc>ОбычныйДобавляет приправы и заправку в одну емкость пищи по вкусу заклинателя. Станет ли вкус блюда лучше, зависит  от умения заклинателя, заклинание лишь добавляет затребованные вкусы.Длительность: навсегда.Стоимость: 2 за порцию.Время сотворения: 10 секунд.Требования: Проверить пищу. ПредметЛожка, которая при размешивании пищи придаст ей заложенный вкус. Энергостоимость создания: 150.</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/meal</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M77</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">test food</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 224px; left: 512px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Decay</name><name-loc>Разложение</name-loc><spell version="2">
+		<name>Decay</name>
+		<name-loc>Разложение</name-loc>
+		<description-loc>ОбычноеЗаставляет пищу немедленно разлагаться, делая ее бесполезной (она может быть сохранена, если в течение минуты сотворить Контрзаклинание или Очистить пищу).Стоимость: 1 за уничтоженную порцию.Требования: Проверить пищу.Предмет Посох или палочка. Должен коснуться объекта. Энергостоимость создания: 100.</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/meal</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M77</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">test food</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 296px; left: 188px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Seek Food</name><name-loc>Искать пищу</name-loc><spell version="2">
+		<name>Seek Food</name>
+		<name-loc>Искать пищу</name-loc>
+		<description-loc>ИнформационноеОпределяет направление, расстояние и общую природу ближайшего значительного источника пищи. Используются Модификаторы больших расстояний (M14). Обнаруженная пища будет полноценной, но не обязательно аппетитной, например съедобные насекомые. Любые известные источники пищи (те самые вкуснейшие насекомые) могут быть исключены из поиска. Стоимость: 2.ПредметРаздвоенная палочка. Энергостоимость создания: 300.</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M77</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+	</spell></block><block style="top: 320px; left: 452px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Mature</name><name-loc>Созревание</name-loc><spell version="2">
+		<name>Mature</name>
+		<name-loc>Созревание</name-loc>
+		<description-loc>ОбычноеЗаставляет быстро состариться или созреть любые продукты, для которых это часть приготовления. Чаще всего используется для пива и вина, но также может использоваться для сыра, йогурта, хлебного теста, и даже мяса.Процессы старения, которые обычно занимают дни или недели (пиво, вино, выдержанный  сыр, соленые огурцы, вяленое мясо), занимают только час с заклинанием. Процессы, которые обычно занимают часы (хлебное тесто, йогурт, свежий сыр) – минуту. Процессы, которые занимают годы (марочные вина, тысячелетние яйца) ускоряются на год за каждое сотворение заклинания..., это - дивный способ проверить, будут ли марочные вина так же хороши выдержанными.Длительность: процесс занимает час (или минуту, см. выше), еда остается созревшей навсегда.Стоимость: 1 за фунт пищи. Не поддерживается.Время сотворения: 10 секунд.Требования: Разложение или Приправа.ПредметМаленький бочонок, работающий без энергозатрат пользователя, ограниченное число раз в день.Энергостоимость создания: 50 за каждый галлон объема и число использований в день. Например 10-галлонный бочонок, который работает дважды за день стоит 50*10*2 = 1.000 энергии для создания.</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/lb</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M78</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">decay</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">season</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 320px; left: 608px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Preserve Food</name><name-loc>Консервация пищи</name-loc><spell version="2">
+		<name>Preserve Food</name>
+		<name-loc>Консервация пищи</name-loc>
+		<description-loc>ОбычноеПредохраняет любую органику от порчи, высыхания и т.п. Весьма полезно путешественникам.Длительность: 2 недели.Стоимость: 2 за фунт пищи; 1 за поддержание.Требования: Разложение.Предмет(а) Посох, палочка или украшение. Энергостоимость создания: 200.(б) Сундук или мешок; включен постоянно; содержимое сохраняется достаточно долго. Энергостоимость создания: 20 за каждый сохраняемый фунт (округлять вверх).</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/lb</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 week</duration>
+		<reference>M79</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">decay</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 392px; left: 8px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Fool's Banquet</name><name-loc>Пир дураков</name-loc><spell version="2">
+		<name>Fool's Banquet</name>
+		<name-loc>Пир дураков</name-loc>
+		<description-loc>ОбычноеЗаставляет любую вещь казаться  привлекательной и вкусной едой. Основные свойства материи не изменяются, но едоки сочтут ее восхитительной – не обязательно питательной, но восхитительной. Может применяться только на то, что физически можно съесть; сработает с грязью, но не с камнями. Классическое дополнение к часто унылому корму, созданному заклинанием Создать пищу.Длительность: 1 день.Стоимость: 2 за порцию; не поддерживается.Требования: Магичность(Magery) 1, Приготовить и Глупость.ПредметПосох, палочка или украшение; используется только магами. Предмет должен коснуться материала. Энергостоимость создания: 600.</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 day</duration>
+		<reference>M79</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">foolishness</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">cook</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (food)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 392px; left: 128px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Create Food</name><name-loc>Создать пищу</name-loc><spell version="2">
+		<name>Create Food</name>
+		<name-loc>Создать пищу</name-loc>
+		<description-loc>ОбычноеПроизводит съедобную пищу. Это заклинание легче использовать для преобразования существующего материала; чем он ближе к пище, тем вкуснее результат.Длительность: навсегда.Стоимость: 2 для превращения органики в пищу; 3  для превращения неорганики в пищу; 4 для вызова пищи из воздуха.Время сотворения: 30 секунд.Требования: Приготовить и Искать пищу.Предмет(а) Посох, палочка или украшение; используется только магами. Должен коснуться материала превращаемого в пищу. Энергостоимость создания: 600.(б) Горшок, как указанно в Приготовить, обращающий все положенное в него в готовую еду. Энергостоимость создания: 200 за фунт пищи в день.(в) Сосуд , создающий пищу из ничего. Энергостоимость создания: 400 за фунт пищи в день.</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>30 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M79</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">cook</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">seek food</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 392px; left: 272px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Far-Tasting</name><name-loc>Удаленная дегустация</name-loc><spell version="2">
+		<name>Far-Tasting</name>
+		<name-loc>Удаленная дегустация</name-loc>
+		<description-loc>ОбычныйСубъект может ощутить вкус и запах любого объекта, который он может видеть (даже на большом расстоянии) или ощутить вкус и запах сквозь твердые объекты не больше двух ярдов толщиной. Все броски Вкус/Запах автоматически успешны, хотя любое вещество, не определяемое на вкус или по запаху (например, угарный газ без вкуса и аромата), останется необнаруженным. Это может быть особенно полезным для вынюхивания ядов, так как их эффекты не передаются через запахи.Так же это заклинание Школы знаний.Длительность: 1 минута.Стоимость: 3 сотворение, 1 поддержание.Время сотворения: 3 секунды.Требования: Магичность(Magery) 1 и  Искать пищу или Искать воздух; отсутствие  недостатка Нет обоняния/вкуса.Предмет Одежда или украшение, влияет только на носителя. Энергостоимость создания: 200.</description-loc>
+		<college>Food/Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M77</reference>
+		<categories>
+			<category>Food</category>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<advantage_prereq has="no">
+				<name compare="contains">no taste/smell</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">seek food</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">seek air</name>
+				</spell_prereq>
+			</prereq_list>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (food)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 296px; left: 8px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Foolishness</name><name-loc>Глупость</name-loc><spell version="2">
+		<name>Foolishness</name>
+		<name-loc>Глупость</name-loc>
+		<description-loc>Обычное; Сопротивление по Воле(Will)За каждое очко стоимости заклинания объект получает штраф -1 к ИН(IQ) и всем умениям (в том числе заклинаниям) основанным на ИН(IQ). Также пока объект под действием заклинания, Мастер может потребовать бросок ИН(IQ) для того, чтобы вспомнить какую-нибудь сложную вещь.Длительность: 1 минута.Стоимость: от 1 до 5 на сотворение. Половина (округляется вверх) на поддержание.Требования: Ин 12 или вышеПредметЛюбой предмет. Всегда включён; предмет снижает ИН(IQ) носящего. Энергостоимсоть создания: 100 за каждое отнимаемое очко ИН(IQ).Посох или палочка. Используется только магами; надо коснуться объекта. Энергостоимость создания: 800.</description-loc>
+		<college>Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-5</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M134</reference>
+		<categories>
+			<category>Mind Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<attribute_prereq has="yes" which="iq" compare="at least">12</attribute_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 296px; left: 332px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Seek Air</name><name-loc>Поиск воздуха</name-loc><spell version="2">
+		<name>Seek Air</name>
+		<name-loc>Поиск воздуха</name-loc>
+		<description-loc>ИнформационноеСообщает магу примерное расстояние и направление до ближайшего значительного количества воздуха. Используются Модификаторы больших расстояний (M14). В мирах, где известно, что воздух – смесь газов, маг может искать любой определенный газ или их комбинацию, а не обычный воздух. Любой из известных источников может быть исключен из поиска.Стоимость: 1.ПредметРаздвоенная палочка (обычно из кости птицы). Стоимость создания: 60 энергии, $200 за оникс.</description-loc>
+		<college>Air</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Information</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M23</reference>
+		<categories>
+			<category>Air</category>
+		</categories>
+	</spell></block><block style="top: 392px; left: 512px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Destroy Water</name><name-loc>Уничтожить воду</name-loc><spell version="2">
+		<name>Destroy Water</name>
+		<name-loc>Уничтожить воду</name-loc>
+		<description-loc>ОбластноеЗаставляет воду (в любой форме) исчезнуть, оставив вместо себя вакуум – или, возможно, пятна сухих примесей. Если кругом есть ещё вода, она поспешит заполнить дыру. Полезна для сушки вещей, спасения утопающих, и т.д. Нельзя использовать в качестве «обезвоживающей» атаки на противника.Длительность: Навсегда.Базовая стоимость: 3. В глубокой воде, область имеет всего 2 ярда в высоту (или глубину). Столько же поддержка.Требование: Создать водуПредметПосох, жезл или украшение. Энергостоимость создания: 300.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M185</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 392px; left: 632px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Debility</name><name-loc>Слабость</name-loc><spell version="2">
+		<name>Debility</name>
+		<name-loc>Слабость</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Временно снижает СЛ(ST) объекта. Это уменьшит наносимый им вред, но не повлияет на ЕЖ(HP). Также уменьшает и грузоподъемность, но Мастер может проигнорировать это в интересах играбельности.Длительность: 1 минута.Стоимость: 1 за каждое уменьшаемое очко СЛ(ST) (максимум -5). Половина за поддержание (округлять вверх).Предмет(а) Посох или палочка. Используется только магами; необходимо указать на объект (касание не обязательно). Энергостоимость создания: 900. (б) Любой предмет. Всегда включён; уменьшает СЛ(ST) владельца. Энергостоимость создания: 100 за каждое уменьшаемое очко СЛ(ST).</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/-ST</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M36</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+	</spell></block><block style="top: 608px; left: 512px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Purify Water</name><name-loc>Очистить воду</name-loc><spell version="2">
+		<name>Purify Water</name>
+		<name-loc>Очистить воду</name-loc>
+		<description-loc>ОсобоеПозволяет изъять все примеси из воды, проливая её через любой обруч или кольцо (или, в крайнем случае, собственные пальцы) в ёмкость. Требуется  только один бросок умения, пока поток продолжается.Длительность: Пока снова не загрязнят.Стоимость: 1 за каждый очищенный галлон.Время сотворения: обычно от 5 до 10 секунд на галлон, если не используются большие ёмкость и кольцо.Требование: Искать водуПредметОбруч из кости. Энергостоимость создания 50.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>1/gal</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>5-10/gal#</casting_time>
+		<duration>Permanent</duration>
+		<reference>M184</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">seek water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 560px; left: 392px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Apportation</name><name-loc>Перемещение</name-loc><spell version="2">
+		<name>Apportation</name>
+		<name-loc>Перемещение</name-loc>
+		<description-loc>Обычное; сопротивление по Воле(Will)Позволяет двигать материальные объекты, не прикасаясь к ним. Это заклинание левитирует объект с Движением 1 — недостаточно быстро, чтобы нанести вред. Живые объекты могут сопротивляться Воле(Will)й.Длительность: 1 минута.Энергостоимость: зависит от веса объекта. Столько же поддержание.Вес	Энергостоимостьменее 1 фунта	1до 10 фунтов	2до 50 фунтов	3до 200 фунтов	4каждые дополнительные 100 фунтов	 4Требования: Магичность(Magery) 1.ПредметПосох или палочка. Используется только магами; предмет должен прикасаться или быть направленным на объект. Энергостоимость создания: 900.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M142</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 524px; left: 68px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Resist Pain</name><name-loc>Сопротивление боли</name-loc><spell version="2">
+		<name>Resist Pain</name>
+		<name-loc>Сопротивление боли</name-loc>
+		<description-loc>Обычное Субъект становится временно невосприимчив к боли. Он может игнорировать действие заклинания Спазм и других заклинаний, вызывающих боль. Он не может быть оглушен в бою, не получает штрафа за болевой шок при ранении и не теряет скорость при снижении ЕЖ(HP) ниже 1/3. Не дает защиты собственно от ран – только от боли.Длительность: 1 минута.Стоимость: 4 создание. 2 поддержание.Требования: Магичность(Magery) 2 и Боль.ПредметЛюбой предмет; действует только на владельца. Энергостоимость создания: 800.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M38</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">pain</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 704px; left: 8px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>History</name><name-loc>История</name-loc><spell version="2">
+		<name>History</name>
+		<name-loc>История</name-loc>
+		<description-loc>ИнформацияБудучи сотворённым на любой неодушевлённых предмет (или на его часть радиусом в 1 ярд), позволяет заклинателю определить недавнее прошлое этого предмета, характер пользователя, и так далее – но никаких имён!Стоимость: 3 за вчерашнюю историю; 5 за неделю; 8 за месяц; 10 за год.Время сотворения: 1 секунда за единицу энергии.Требование: Слежка.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<casting_time>1 sec/pt</casting_time>
+		<duration>Instant</duration>
+		<reference>M106</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">trace</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 704px; left: 128px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Odor</name><name-loc>Запах</name-loc><spell version="2">
+		<name>Odor</name>
+		<name-loc>Запах</name-loc>
+		<description-loc>ОбластноеСоздает любой знакомый магу запах. В замкнутом помещении запах держится около часа (вне помещения быстро развеивается). Не может произвести никакого вредоносного эффекта- например, запах яда не ядовит.Длительность: 1 час.Базовая стоимость: 1. Не поддерживается.Требования: Убрать запах.ПредметУкрашение, постоянно распространяющее установленный при создании запах. Энергостоимость создания: 40.</description-loc>
+		<college>Air</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M24</reference>
+		<categories>
+			<category>Air</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">no-smell</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 728px; left: 332px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Great Voice</name><name-loc>Великий голос</name-loc><spell version="2">
+		<name>Great Voice</name>
+		<name-loc>Великий голос</name-loc>
+		<description-loc>ОбычноеОбъекта могут слышать чётко и ясно все, кого он видит, даже на большом расстоянии. Объект может выбрать тех, кто может его слышать перед тем, как начать говорить (конечно, те, кто находятся в пределах зоны обычной слышимости, будут слышать его в любом случае). Заметьте, что спрятавшись за камень, слышимость не испортить. Это заклинание широко применяется капитанами кораблей, военными командирами и ораторами. Если голос изначально громки, под действием заклинания он может стать раздражающим. Но не оглушит  и не причинит вреда.Длительность:1 минута.Стоимость: 3 на сотворение. 1 на поддержание.Время сотворения: 2 секунды.Требования: Голоса и ГромПредметПосох, палочка, шлем или украшение; действует лишь на надевшего. Энергостоимость создания: 200.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M173</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">thunderclap</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">voices</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 620px; left: 8px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Monk's Banquet</name><name-loc>Пир монаха</name-loc><spell version="2">
+		<name>Monk's Banquet</name>
+		<name-loc>Пир монаха</name-loc>
+		<description-loc>ОбычноеПозволяет обходиться без воды и пищи в течение суток без вредных последствий.Длительность: 24 часа.Стоимость: 6. Не поддерживается.Требования: Пир дураков и Сопротивление боли.ПредметОдежда или украшение; применяется только магами или (по решению Мастера) «чистыми» или «святыми». Энергостоимость создания: 1.000.</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>6</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>24 hrs</duration>
+		<reference>M79</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">fool's banquet</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">resist pain</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 548px; left: 176px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Essential Food</name><name-loc>Истинная пища</name-loc><spell version="2">
+		<name>Essential Food</name>
+		<name-loc>Истинная пища</name-loc>
+		<description-loc>ОбычноеПреобразует еду, или любой другой материал, в невероятно хорошую, насыщенную, и питательную пищу. Истинная пища не портится, а шесть порций весят лишь фунт.Длительность: неопределённа.Стоимость: 3 за порцию из какой-либо органики; 5 за порцию из полностью несъедобных веществ.Время сотворения: 30 секунд.Требования: 6 заклинаний Пищи, включая Создать пищу.</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3 or 5</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>30 sec</casting_time>
+		<duration>Indefinite</duration>
+		<reference>M79</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">food</college>
+				<quantity compare="at least">5</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create food</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 488px; left: 392px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Know Recipe</name><name-loc>Узнать рецепт</name-loc><spell version="2">
+		<name>Know Recipe</name>
+		<name-loc>Узнать рецепт</name-loc>
+		<description-loc>ИнформационноеОсобое сопротивлениеЗаклинание применяется на готовое блюдо и помещает полную информацию о компонентах еды (и методах приготовления использованных поваром) в мозг заклинателя. Так же может применяться на  алхимические составы. Однако эликсиры отражают заклинание с умением создавшего их алхимика. На усмотрение Мастера может использоваться для анализа химикатов или лекарств.Так же это заклинание школы Знаний.Длительность: запомненное остается предельно ясным в уме заклинателя 1 день. После чего угасает как в заклинании Запомнить (M105). Искажение рецептов может привести к чему угодно от неловкого положения (замена сахара солью в десерте) до серьезной неприятности (замена сахара солью в десерте для Короля).Стоимость: 3. Не поддерживается.Время сотворения: 15 секунд.Требования:  Удаленная дегустация и Приправа.ПредметПосох, палочка или украшение. Энергостоимость создания: 450.</description-loc>
+		<college>Food/Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>15 sec</casting_time>
+		<duration>1 day</duration>
+		<reference>M78</reference>
+		<categories>
+			<category>Food</category>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">far-tasting</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">season</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 488px; left: 572px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Thirst</name><name-loc>Жажда</name-loc><spell version="2">
+		<name>Thirst</name>
+		<name-loc>Жажда</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Вызывает потерю 4 ЕУ(FP) и 1 ЕЖ(HP) от обезвоживания, равносильную суткам, проведенным без воды. Снимается только обильным питьем и отдыхом (см. Обезвоживание, B426). ЕЖ(HP) восстанавливаются как обычно. Несколько повторных сотворений могут лишить объект речи – во рту пересохнет, язык приклеивается к небу.Это заклинание также относится и к школе Пищи.Стоимость: 5.Время сотворения: 10 секунд.Требования: Магичность(Magery) 1, Слабость и Уничтожить воду (M185).ПредметПосох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 2.000.</description-loc>
+		<college>Body Control/Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Until drink/rest</duration>
+		<reference>M38</reference>
+		<categories>
+			<category>Body Control</category>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">debility</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">destroy water</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 548px; left: 632px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Hunger</name><name-loc>Голод</name-loc><spell version="2">
+		<name>Hunger</name>
+		<name-loc>Голод</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Вызывает потерю 1 ЕУ(FP) от голода, равносильно пропуску одного приёма пищи. Восстанавливается только днём отдыха и хорошим питанием (см. Голод, B426).Это заклинание также школы Пищи.Стоимость: 2.Время сотворения: 5 секунд.Требования:  Магичность(Magery) 1, Слабость и Разложение.ПредметПосох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 2.000.</description-loc>
+		<college>Body Control/Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>Until eat/rest</duration>
+		<reference>M38</reference>
+		<categories>
+			<category>Body Control</category>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">debility</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">decay</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 548px; left: 512px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Distill</name><name-loc>Возгонка</name-loc><spell version="2">
+		<name>Distill</name>
+		<name-loc>Возгонка</name-loc>
+		<description-loc>ОбычноеКонцентрирует жидкость, удаляя из нее воду. Заклинание главным образом используется, для создания крепких алкогольных напитков, но алхимики также его используют и в других целях. Каждое использование уменьшает вдвое объем жидкости, удваивая ее концентрацию. Одно заклинание превращает вино в крепленое вино, два – в бренди, а три – в почти чистый спирт. Возгонка не работает над живыми объектами.Это также заклинание Воды.Длительность: навсегда.Стоимость: 1 за кварту первичной жидкости.Требования: Созревание и Уничтожить воду.ПредметБольшой закрытый котел, удерживающий  до 5 галлонов. Энергостоимость создания: 400. Нелегален везде, где запрещена обычная возгонка.</description-loc>
+		<college>Food/Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/quart</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M46</reference>
+		<categories>
+			<category>Food</category>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">destroy water</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">mature</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 704px; left: 452px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Water to Wine</name><name-loc>Воду в вино</name-loc><spell version="2">
+		<name>Water to Wine</name>
+		<name-loc>Воду в вино</name-loc>
+		<description-loc>ОбычноеПревращает воду или другое питье в слабоалкогольный напиток. Природа полученного напитка зависит от начального материала. Вода или виноградный сок становится вином; фруктовые соки – «коктейлями». Качество результата зависит от броска заклинателя и качества начальной жидкости.Длительность: навсегда.Время сотворения: 10 секунд.Стоимость: 4 за галлон (половина стоимости за пиво; двойная за спиртное).ПредметБутылка или сосуд для питья, который раз в день, может превратить содержимое в алкогольный напиток. Качество результата зависит от начального материала; из морской воды получилось бы довольно плохое пиво, а из растопленного горного снега -  превосходное вино. Энергостоимость создания: 500 за галлон емкости сосуда. Отметьте, что критический провал заклинания, известен созданием опасных вещей, таких как кубки, отравляющие создаваемое ими вино; но зачаровать так осознанно еще ни у кого не получилось!</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4 per gal#</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M79</reference>
+		<notes>Half cost for beer, double cost for spirits</notes>
+		<categories>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">purify water</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">mature</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 704px; left: 572px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Foul Water</name><name-loc>Плохая вода</name-loc><spell version="2">
+		<name>Foul Water</name>
+		<name-loc>Плохая вода</name-loc>
+		<description-loc>ОбластноеДелает воду непригодной для питья. Плохая вода легко узнаётся по её неаппетитным цвету и запаху, в то время как загрязнённое пиво или вино может быть труднее обнаружить. Тот, кто достаточно глуп, чтобы выпить её, должен сделать бросок ЗД(HT). При успехе он  лишь чувствует тошноту и теряет 2 ЕЖ(HP). При провале ему сильно сводит желудок и он теряет 1d 1 ЕЖ(HP); у него -3 ко всем умениям, пока потерянные ЕЖ(HP) не восстановятся. Загрязнённая вода также не утоляет жажду, и не может поддерживать рыбу или других водных обитателей (любая рыба медленно задыхается в такой воде; морское млекопитающее заболевает от того, что глотает её). В водоёме, загрязнённая вода со временем растворяется до безвредности; если заклинание, например, сотворить в горном ручье, то оно длится всего секунду или две. Базовая стоимость: 3.Требования: Очистить воду и Разложение.ПредметПосох или жезл. Предмет должен коснуться воды. Энергостоимость создания: 100.</description-loc>
+		<college>Food/Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M185</reference>
+		<categories>
+			<category>Food</category>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">decay</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">purify water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 704px; left: 680px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Purify Food</name><name-loc>Очистить пищу</name-loc><spell version="2">
+		<name>Purify Food</name>
+		<name-loc>Очистить пищу</name-loc>
+		<description-loc>ОбычноеУдаляет инородные объекты, яды, гниль и приводит пищу к пригодному для еды состоянию. Работает только на съедобных и бывших съедобных объектах. Предмет, испорченный целиком, заклинание полностью уничтожит.Стоимость: 1 за фунт материала для очистки.Требование: Разложение.ПредметПосох, палочка или украшение. Должен коснуться объекта. Энергостоимость создания: 400.</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/lb</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M78</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">decay</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 800px; left: 620px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Prepare Game</name><name-loc>Обработка дичи</name-loc><spell version="2">
+		<name>Prepare Game</name>
+		<name-loc>Обработка дичи</name-loc>
+		<description-loc>Обычное«Потрошит» убитое животное. Если сотворить, например, на оленя, удалится шкура, наряду с ненужными внешними деталями и внутренностями. На рыбу - будет почищена и выпотрошена. Заклинание ничего не уничтожает, просто все части отделяются и вычищаются лучшим способом для данного животного перед его готовкой.Длительность: навсегда.Стоимость: 2.Время сотворения: 10 секунд.Требования: Очистить пищу.Предмет.(а) Посох, палочка, украшение или нож. Энергостоимость создания 300.(б) Нож для свежевания, чистки рыбы, чистки овощей и т.д. Используются для подходящего типа продуктов. Энергостоимость создания: 150.</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M78</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">purify food</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 872px; left: 680px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Poison Food</name><name-loc>Отравить пищу</name-loc><spell version="2">
+		<name>Poison Food</name>
+		<name-loc>Отравить пищу</name-loc>
+		<description-loc>ОбычноеВводит в пищу соматический неопределяемый яд. Может быть обнаружен только с помощью Проверить пищу. Любой, съевший отравленную пищу, должен сделать проверку ЗД(HT). При успешном броске он чувствует себя больным и теряет 2 ЕЖ(HP). При провале - испытывает болезненные спазмы желудка, теряет сразу 1d 1 ЕЖ(HP)  и получает -3 ко всем умениям или заклинаниям, пока потерянные ЕЖ(HP) не восстановятся.Стоимость: 3 за порцию.Требования: Очистить пищу.ПредметПосох или палочка. Должен коснуться объекта. Энергостоимость создания: 600.</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M78</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">purify food</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 824px; left: 332px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Wizard Mouth</name><name-loc>Волшебный рот</name-loc><spell version="2">
+		<name>Wizard Mouth</name>
+		<name-loc>Волшебный рот</name-loc>
+		<description-loc>СтандартноеСоздаёт копию – примерно 4 дюйма шириной – физического рта и губ заклинателя, через который он может говорить и ощущать вкус. Рот летает по воздуху с Движением 10, в ход заклинателя, хотя он не может этого делать, не врезаясь в препятствия, если его не сопровождает Волшебный глаз или ухо!Концентрация требуется, чтобы двигать Рот, но не чтобы говорить или пробовать сквозь него. Любые улучшающие голос или вкус заклинания, действующие на заклинателя, можно также использовать через Рот. Рот не может творить заклинания! Когда заклинатель пробует через Рот, его собственный рот нечувствителен. Каждый ход, он должен указывать, пробует ли он через Рот или через собственный рот.Рот маленький, с МР(SM) -6, поэтому по нему трудно попасть – но если в него попадут физической атакой, или любым заклинанием, которое могло бы его вывести из строя, он уничтожен. Сам Рот не может наносить вреда укусом.Это также заклинание Пищи и Звука.Длительность: 1 минута.Стоимость: 4 сотворение. 2 поддержка.Время сотворения: 2 секунды.Требования: Перемещение, Удалённая дегустация и Великий голос Предмет(а) Любой предмет, изображающий человеческий рот может быть превращён в неподвижный Волшебный рот, через который держатель амулета в форме рта, зачарованный одновременно, может говорить независимо от расстояния. Каждый Рот подключен к одному амулету и наоборот. Энергостоимость создания: 325. (б) Рот, вырезанный из красного коралла, с зубами из слоновой кости. Используется только магами. По приказу держащего его, он превращается в Волшебный рот; по возвращению в его руку он возвращается в форму предмета. Стоимость создания: 650 энергии, $1000 за умелую резьбу по кораллу и $400 за слоновую кость.</description-loc>
+		<college>Food/Knowledge/Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M104</reference>
+		<categories>
+			<category>Food</category>
+			<category>Knowledge</category>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">far-tasting</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">great voice</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 656px; left: 332px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Wizard Nose</name><name-loc>Волшебный нос</name-loc><spell version="2">
+		<name>Wizard Nose</name>
+		<name-loc>Волшебный нос</name-loc>
+		<description-loc>СтандартноеСоздаёт отделённую копию – примерно 2 или 3 дюйма длиной – физического носа заклинателя, через который он может ощущать запах. Нос летает по воздуху с Движением 10, в ход заклинателя, хотя он не может этого делать, не врезаясь в препятствия, если его не сопровождает Волшебный глаз или ухо!Концентрация требуется, чтобы двигать Нос, но не чтобы нюхать через него. Любые улучшающие обоняние заклинания, действующие на заклинателя, можно также использовать через Нос. Когда заклинатель нюхает через Нос, его собственный нос нечувствителен. Каждый ход он должен указывать, нюхает ли он через Волшебный нос или через собственный. Нос маленький, с МР(SM) -7,– но если в него попадут физической атакой, или любым заклинанием, которое обосновано могло бы его вывести из строя, он уничтожен.Это также заклинание Пищи.Длительность: 1 минутаСтоимость: 3 сотворение. 2 поддержка.Время сотворения: 2 секунды.Требования: Перемещение, Удалённая дегустация.Предмет(а) Любой предмет, изображающий человеческий нос может быть превращён в неподвижный Волшебный Нос, через который держатель амулета в форме цветка, зачарованный одновременно, может нюхать независимо от расстояния. Каждый Нос соединяется с одним амулетом и наоборот. Энергостоимость создания: 475. (б) Нос, вырезанный из драгоценного камня. Используется только магами. По приказу держащего его, он превращается в Волшебный Нос; по возвращению в его руку он возвращается в форму предмета. Стоимость создания: 500 энергии, $500 за материалы и работу.</description-loc>
+		<college>Food/Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M104</reference>
+		<categories>
+			<category>Food</category>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">far-tasting</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 800px; left: 71px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Scents of the Past</name><name-loc>Запахи прошлого</name-loc><spell version="2">
+		<name>Scents of the Past</name>
+		<name-loc>Запахи прошлого</name-loc>
+		<description-loc>СтандартноеБудучи сотворено на стену или какой-то предмет, это заклинание испускает запахи, которым он был подвергнут в прошлом. Заклинатель указывает момент, с которого начинать «воспроизведение». Модификаторы времени (M81) действуют. Каждый раз, когда заклинание твориться для того же периода времени, есть дополнительный штраф -1 к умению. Критический провал стирает «память» предмета о том периоде времени. Это также заклинание Пищи.Длительность: 1 минута.Стоимость: 1 сотворение. Столько же поддержание. Модификатор времени добавляется к цене, так что если заклинание стоит 3 (3 0) на момент времени «в течение минуты», то оно будет стоить 8 (3 5) на момент времени «от 4 до 40 дней».Время сотворения: 10 секунд.Требования: Магичность(Magery) 2, История и Запах.ПредметПосох, жезл или украшение. Используется только магами. Энергостоимость создания: 350.</description-loc>
+		<college>Food/Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M107</reference>
+		<categories>
+			<category>Food</category>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (food)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">history</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">odor</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block>

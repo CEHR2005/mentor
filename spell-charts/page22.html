@@ -1,0 +1,1373 @@
+<block style="top: 80px; left: 405px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Counterspell</name><name-loc>Контрзаклинание</name-loc><spell version="2">
+		<name>Counterspell</name>
+		<name-loc>Контрзаклинание</name-loc>
+		<description-loc>Обычное; Сопротивление от целевых заклинанийОтменяет одно любое действующее заклинание. Не может «противостоять» заклинаниям, вносящим в мир постоянные изменения (Погасить огонь, Плоть в камень, Зомби и т.д.). Не действует на предметы зачарованные навсегда, но влияет на сотворенные ими заклинания. «Объектом» контрзаклинания может быть или объект противостоящего заклинания, или сотворивший его персонаж.Контрзаклинание - отдельное заклинание,  но для отмены конкретного заклинания его тоже надо знать. Бросьте против меньшего из умений Контрзаклинания или отменяемого заклинания. Для отмены заклинания надо выиграть Быстрое состязание с ним. Можно сотворять Контрзаклинание много раз, отменяя областное заклинание по частям.Стоимость: Половина цены отменяемого заклинания, без учета премий другого заклинателя за высокий уровень.Время сотворения: 5 секунд.Требование: Магичность(Magery) 1.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Half countered spell</casting_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M121</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="no">
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="contains">one college (meta)
+				<level compare="at least">1</level>
+			</notes></advantage_prereq>
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="is anything"></notes>
+				<level compare="at least">1</level>
+			</advantage_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 164px; left: 405px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Suspend Spell</name><name-loc>Подавить заклинание</name-loc><spell version="2">
+		<name>Suspend Spell</name>
+		<name-loc>Подавить заклинание</name-loc>
+		<description-loc>Обычное; Сопротивление от целевых заклинанийВременно отменяет любое действующее заклинание. Заклинатель должен знать подавляемое заклинание. Подавить заклинание не работает на магические предметы, но действует на сотворенные ими заклинания. Не могут быть приостановлены заклинания, удаляемые только с помощью Снять проклятие; для них используется Подавить проклятие.Сотворятся на меньшем из уровней Подавить заклинание и останавливаемого заклинания. По истечению подавления, остановленное заклинание продолжит действовать с «места прекращения». Если целевое заклинание поддерживается, то его заклинатель автоматически узнает, что оно подавлено. Иначе, бросок против Восприятия(Per)   Магичность(Magery) - 3 – без учета расстояния.  Длительность: 1 минута.Стоимость: 1/10 подавляемого заклинания, без учета возможной премии другого заклинателя за высокий уровень (округлять вверх). Столько же на поддержание.Требования: Магичность(Magery) 1 и Контрзаклинание.ПредметПосох, палочка, или украшение. Используется только магами. Энергостоимость создания: 500.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/10th suspended spell</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M121</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">counterspell</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 164px; left: 297px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Dispel Magic</name><name-loc>Рассеять магию</name-loc><spell version="2">
+		<name>Dispel Magic</name>
+		<name-loc>Рассеять магию</name-loc>
+		<description-loc>Областное, Сопротивление от целевых заклинанийПри успехе уничтожает другие заклинания в области. Совсем не влияет на чары, но рассеивает любое временное, длительное, или постоянное заклинание (M10), если в его описании не сказано иное. Каждое заклинание сопротивляется отдельно. Заклинатель не должен знать рассеиваемое заклинание(я).  Рассеять магию, не выборочное! Чтобы аннулировать отдельное заклинание, не затрагивая другие, используйте Контрзаклинание.Длительность: Рассеянная магия исчезает навсегда.Базовая стоимость: 3Время сотворения: 1 секунда на единицу вложенной энергии.Требования: Контрзаклинание и как минимум 12 любых других заклинаний.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>sec=cost</casting_time>
+		<duration>Permanent</duration>
+		<reference>M126</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<any></any>
+				<quantity compare="at least">12</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">counterspell</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 248px; left: 237px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1 hard"><name>Spellguard</name><name-loc>Защита заклинания</name-loc><spell version="2" very_hard="yes">
+		<name>Spellguard</name>
+		<name-loc>Защита заклинания</name-loc>
+		<description-loc>Обычное. Сопротивление попыткам вмешаться в целевое заклинаниеТвориться на другое заклинание для защиты его от попыток вмешательства . Удвоенная энергия, вложенная в заклинание (до 3 единиц) вычитается из любого умения сотворения следующих Мета-заклинаний: Контрзаклинание, Сместить заклинание, Ложная аура, Убрать ауру, Снять проклятия, Украсть заклинание, Подавит проклятие, Подавить заклинание.  Удвоенная вложенная энергия, добавляется к эффективному умению сотворившего защищаемое заклинание, при его сопротивлении  заклинаниям Рассеять магию или Подавить магию. Когда защищаемое заклинание истекает или рассеяно, Защита заклинания также рассеивается.Длительность: 10 часов.Стоимость: 1 - 3 на сотворение. Столько же на поддержание. Не уменьшается с повышением умения.Время сотворения: 1 секунда за каждую единицу энергии.Требование: Рассеять магию.Предмет(а) Посох, палочка, или украшение. Используется только магами. Энергостоимость создания: 500. (б) Может быть, сотворено навсегда на зачарованном предмете или области, сделав вмешательство сложнее; тогда также затрудняет Подавить чары и Снять чары. Энергостоимость сотворения: 100-кратная нормальная.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-3</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>sec=cost</casting_time>
+		<duration>10 hrs</duration>
+		<reference>M127</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">dispel magic</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 308px; left: 129px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Conceal Magic</name><name-loc>Скрыть магию</name-loc><spell version="2">
+		<name>Conceal Magic</name>
+		<name-loc>Скрыть магию</name-loc>
+		<description-loc>ОбычноеСотворенное на одну персону или предмет, мешает любому информационному заклинанию, применяемому к этому объекту. Удвоенная энергия, вложенная в заклинание (до 5 единиц), вычитается из любого броска умений поиска предмета, получения информации и т.д. Пример: 4 единицы энергии вложено в Скрыть магию, сотворенное на кольцо. Пока заклинание действует: Обнаружить магию на кольце с -8; Идентифицировать магию для поиска любых заклинаний на кольце с -8; Волшебное зрение не увидит кольцо, пока маг не выбросит, по крайней мере, 8 (хотя остальные вещи видны) и т.д.Заметьте, что эффекты заклинания в чем-то схожи с Защитой от наблюдения, но не точно такие же.Длительность: 10 часовСтоимость: от 1 до 5 на сотворение, столько же на поддержание.Время сотворения: 3 секундыТребования: Магичность(Magery) 1 и Обнаружить магиюПредметЗаклинание можно сотворить на предмет навсегда, усложнив его обнаружение или определение магией. Энергостоимость создания: 100-кратная от указанной, т.е. 200 за -4 к попыткам определения или обнаружениям.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-5</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>10 hrs</duration>
+		<reference>M122</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">detect magic</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 308px; left: 21px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Seek Magic</name><name-loc>Искать магию</name-loc><spell version="2">
+		<name>Seek Magic</name>
+		<name-loc>Искать магию</name-loc>
+		<description-loc>ИнформационноеОпределяет направление и приблизительную дистанцию до ближайшего значительного магического предмета, активного заклинания, или магического существа (магические существа – это демоны, элеменали, духи, и т.д., но не расы или отдельные существа с Магичность(Magery)ю). Действуют стандартные штрафы за расстояние. Любые известные экземпляры магии могут быть исключены, если заклинатель отдельно упомянет их перед сотворением.Это также Мета-заклинание.Стоимость: 6.Время сотворения: 10 секунд.Требование: Обнаружить магию.Предмет.Посох, жезл или украшение. Энергостоимость создания: 1.200.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>6</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M102</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">detect magic</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 392px; left: 129px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>False Aura</name><name-loc>Ложная Аура</name-loc><spell version="2">
+		<name>False Aura</name>
+		<name-loc>Ложная Аура</name-loc>
+		<description-loc>Обычное, Областное; Специальное сопротивление; Сопротивление Информационным заклинаниямЗаменяет волшебные эманации существа, области или объекта ложными; для живых существ буквально «аура». Например, человека можно заставить иметь ауру Зомби, меч может казаться зачарован Танцующим оружием, область может казаться под связанными заклинаниями Создать огонь и Клей, и т.д. Используют быстрое соревнование между Ложной аурой и любым заклинанием (Информационным или обычным), способным видеть или обнаружить эманации (такие как Аура, Волшебное зрение, Анализ магии). Если победит Ложная аура, другое заклинание одурачено. Ложная аура также работает против похожих чувств, которые могут быть у некоторых существ.Возражающие объекты сопротивляются с ИН(IQ). Выбранная Ложная аура должна быть знакомой заклинателю, например, маг не cможет поместить Ложную ауру Голема на статуе, если не знает заклинание Голема.Длительность: 10 часов.Стоимость: 4 на сотворение. Половина на поддержание. При сотворении на область, базовая стоимость 4.Время сотворения: 10 секунд.Требования: Скрыть магию и Аура.Предмет(а) Любой. Действует только на владельца. Энергостоимость создания: 300. (б) Любой объект или область можно навсегда зачаровать Ложной аурой за 100-кратную стоимость.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular/Area</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>10 hrs</duration>
+		<reference>M122</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">conceal magic</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">aura</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 392px; left: 240px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Remove Aura</name><name-loc>Убрать ауру</name-loc><spell version="2">
+		<name>Remove Aura</name>
+		<name-loc>Убрать ауру</name-loc>
+		<description-loc>Обычное; Специальное сопротивление; Сопротивление Информационным заклинаниямСхожа с Ложной аурой, но удаляет магические эманации объекта полностью. Сотворенное на неодушевленный объект превратит его в чистый лист для таких заклинаний как Древняя история, История, Видеть скрытое, или Искатель (в последнем случае, Убрать ауру ломает «ассоциацию»,  таким образом Искатель сотворяется с -5). Чтобы решить это, Убрать Ауру сопротивляется любым последующим сотворениям упомянутых заклинаний - всякий раз, когда другое заклинание терпит неудачу, информация, которую оно пробовало получить, успешно удаляется. Конечно все, что случилось с объектом после удаления его ауры, свободно доступно этим заклинаниям.Сотворенное на живой или магический объект, Убрать ауру длится только день и не может быть поддержана. Оно мешает таким заклинаниям как Аура, Обнаружить магию, Искать магию, или Волшебное зрение. Нежелающие живые объекты сопротивляются с Воле(Will)й.Длительность: Постоянная (но см. выше).Стоимость: 5.Время сотворения: 10 секунд.Требования: Рассеять магию и Аура.Предмет(a) Палочка, посох, или украшение. Используется только магами; предмет должен коснуться объекта. Энергостоимость создания: 250. (b) Украшение или одежда. Всегда включен; действует только на владельца. Энергостоимость создания: 750.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M127</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">aura</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">dispel magic</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 332px; left: 405px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Displace Spell</name><name-loc>Сместить заклинание</name-loc><spell version="2">
+		<name>Displace Spell</name>
+		<name-loc>Сместить заклинание</name-loc>
+		<description-loc>Обычное. Сопротивление от целевого заклинанияНавсегда изменяет положение любого областного заклинания. Не влияет на особо мощные, как и на убираемые Снять проклятием. Каждое заклинание перемещается отдельно, за исключением связанных между собой, перемещаемых вместе. Заклинатель не обязан знать передвигаемые заклинания. После завершения сотворения область перемещается с БД (BM), равным Магичности заклинателя. Каждый ход перемещаемое заклинание выполняет бросок сопротивления, как только он хоть раз успешен, заклинание останавливается, а Сместить заклинание прерывается, хотя может быть сотворено заново. Целевое заклинание всегда делает бросок сопротивления, даже если его заклинатель не желает этого (заклинания самого заклинателя  сопротивляются с -5). Будучи перемещенным, заклинание остается активным (таким образом, заклинатель может спровоцировать Связь, перемещая его к намеченной цели). Если целевое заклинание поддерживается, сотворивший его автоматически узнает о перемещении. Иначе бросок против Восприятия(Per)   Магичность(Magery)-3, расстояние не влияет .Длительность: до прекращения концентрации заклинателем или успешного сопротивления заклинания.Стоимость: 1/4 перемещаемого заклинания, без учета бонусов другого заклинателя за высокий уровень (округлять вверх). Время сотворения: 5 секундТребования:  Подавить магиюПредметПосох, палочка или украшение. Используется только магами.  Энергостоимость создания: 1.000.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/4th displaced spell</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>Varies</duration>
+		<reference>M124</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">suspend magic</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 247px; left: 405px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Suspend Magic</name><name-loc>Подавить магию</name-loc><spell version="2">
+		<name>Suspend Magic</name>
+		<name-loc>Подавить магию</name-loc>
+		<description-loc>Областное; сопротивление от целевых заклинаниямВременно аннулирует все другие заклинания в данной области. Не влияет на зачарованные вещи и некоторые особо мощные заклинания (особенно убираемые Снять проклятием). Каждое заклинание сопротивляется отдельно.Подавить магию не избирательное, заклинатель может выбрать форму области, за которую он платит энергию (как для всех областных), но не может исключить объекты внутри нее. Знать подавляемое заклинание(я) не обязательно. Чтобы подавить конкретное заклинание не влияя на остальные используйте Подавить заклинание.Длительность: 1 минутаБазовая стоимость: 3 на сотворение, 2 на поддержание.Время сотворения: 1 секунда за каждую вложенную единицу энергии.Требования: Подавить заклинание и, по крайней мере, восемь других заклинаний любого вида.ПредметПосох, палочка или украшение. Используется только магами. Энергостоимость создания 1.500.Волшебные существа (демоны, големы, создания, зомби, элементали, и т.п.) не могут пересечь границу пентаграммы; и так же не могут сотворять заклинания, или перемещать любой физический объект, через нее.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec/pt</casting_time>
+		<duration>1 min</duration>
+		<reference>M123</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is anything"></name>
+				<quantity compare="at least">8</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">suspend spell</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 416px; left: 405px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1 hard"><name>Drain Mana</name><name-loc>Истощить ману</name-loc><spell version="2" very_hard="yes">
+		<name>Drain Mana</name>
+		<name-loc>Истощить ману</name-loc>
+		<description-loc>ОбластноеУбирает всю ману из области навсегда, оставляя ее «мертвой» к магии. Заклинания не работают, и магия не может ощутить кого-либо или что-либо в зоне без маны; заклинания  останавливаются, магические предметы не работают, пока их не вынесут из области.Это заклинание используется, для создания области, в которых маги, волшебные существа и объекты могут быть благополучно ограничены или скрыты. Зона без маны остается постоянной относительно земли, но не объектов. Так, если сделать внутреннюю часть коробки безманой , то при ее перемещении, мертвое место останется, где было, вместо того, чтобы переместиться с коробкой.Критическая неудача стоит заклинателю одного уровеня Магичности!Длительность: Постоянное.Основная стоимость: 10.Время сотворения: 1 час.Требования: Рассеять магию и Подавить ману.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>10</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 hr</casting_time>
+		<duration>Permanent</duration>
+		<reference>M127</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">dispel magic</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">suspend magic</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 332px; left: 513px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1 hard"><name>Suspend Mana</name><name-loc>Подавить ману</name-loc><spell version="2" very_hard="yes">
+		<name>Suspend Mana</name>
+		<name-loc>Подавить ману</name-loc>
+		<description-loc>ОбластноеЦелевая область временно становится зоной без маны, мертвой к потоку магии. Критическая неудача стоит заклинателю уровня Магичности в течение 2d дней. В конце этого времени заклинатель должен бросить против ИН(IQ) Магичность(Magery); любой результат, кроме критической неудачи означает, что потерянная Магичность(Magery) возвращена, критическая неудача - потеря постоянна!Длительность: зона восстанавливается в зависимости от окружающего уровня маны. При низком уровне зона заклинания сжимается в радиусе на ярд каждые три дня;  при нормальном на ярд каждый час; при высоком  или очень высоком на ярд каждую минуту!Основная стоимость: 5. Не поддерживается.Время сотворения: 10 минут.Требования: Подавить магию и заклинания, по крайней мере, из 10 разных школ.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 min</casting_time>
+		<duration>Varies</duration>
+		<reference>M125</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college_count compare="at least">10</college_count>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">suspend magic</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 332px; left: 621px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Telecast</name><name-loc>Удаленное сотворение</name-loc><spell version="2" very_hard="yes">
+		<name>Telecast</name>
+		<name-loc>Удаленное сотворение</name-loc>
+		<description-loc>ОсобоеСоздает и телепортирует Волшебный глаз в отдаленное место. Теперь заклинатель может творить заклинания через него, как при своем присутствии. Нельзя удаленно сотворить Снаряды, но можно Струйные  заклинания. Контактные заклинания также можно сотворить удаленно, но Волшебный Глаз должен попасть в цель, и защищающийся должен провалить защиту.Используйте стоимость и штрафы сотворения от заклинания Телепортация (M147). Заклинания сотворенные с «другого конца» измеряют расстояние от той точки. Удаленное сотворение считается «включенным» и требует концентрации. Мастера, желающие ограничить это сильное заклинание, могут применять штрафы за речь, движения ног или рук (M9). Если бросок Удаленного сотворения провален на 1, Волшебный глаз достигает намеченной дислокации, но заклинатель ментально оглушен. Если бросок провален более чем на 1, Волшебный Глаз оказывается где-то в другом месте (по выбору Мастера!) и заклинатель также ментально оглушен. Во всех случаях требуется бросок Чувства тела со штрафом -2, прежде чем заклинатель сможет придти в себя и начать сотворять другое заклинание; при критической неудаче он заклинатель ментально оглушен.Ходят упорные слухи о вариантах заклинания, где Волшебный Глаз заменен Хронопортацией или Планарным смещением.Длительность: 5 секунд.Стоимость: Как у Телепортации для сотворения, столько же на поддержание. Высокое умение не уменьшает стоимость. Энергия тратится, успешно ли заклинание или нет.Время сотворения: 1 минута.Требования: Магичность(Magery) 3, Телепортация, Волшебный глаз, и заклинания, по крайней мере, из 10 разных школ.ПредметГлазное яблоко, вырезанное слоновой кости и инкрустированное драгоценностями. Используется только магами. По команде хозяина телепортируется; когда заклинание истекает, оно вновь появляется в руке хозяина (если не было физически уничтожено). Стоимость создания: 1.900 энергии, 1.000 $ на качественную резьбу из кости, 600 $ на драгоценности.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>same as Teleport</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>5 sec</duration>
+		<reference>M128</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college_count compare="at least">10</college_count>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">teleport</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">wizard eye</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 500px; left: 405px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1 hard"><name>Restore Mana</name><name-loc>Восстановить Ману</name-loc><spell version="2" very_hard="yes">
+		<name>Restore Mana</name>
+		<name-loc>Восстановить Ману</name-loc>
+		<description-loc>ОбластноеОбратное к Истощить ману; восстанавливает ману в мертвой зоне. Область получает уровень маны, равный «среднему» по окружающей области, независимо, какой он, возможно, был прежде. Стоимость, время, и требования такие же как для Истощить ману, но полностью нет риска потерять Магичность(Magery).</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>10</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 hr</casting_time>
+		<duration>Permanent</duration>
+		<reference>M127</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">dispel magic</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">suspend mana</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 224px; left: 75px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Detect Magic</name><name-loc>Обнаружить магию</name-loc><spell version="2">
+		<name>Detect Magic</name>
+		<name-loc>Обнаружить магию</name-loc>
+		<description-loc>ОбычноеОпределяет, является ли один субъект магическим. Если заклинание успешно, второе сотворение сообщает, является ли магия постоянной или временной. Критический успех на любом из этих бросков полностью определяет заклинание, как заклинание Анализ магии.Это не то же самое, что и способность определять магические предметы, которая входит в Магичность(Magery) 0; та способность определяет только постоянные магические предметы, в то время как Обнаружить магию - предметы, заклинания, магических существ или любой другой длительный магический эффект.Стоимость: 2.Время сотворения: 5 секунд.Требование: Магичность(Magery) 1.Предмет(а) Посох, жезл или украшение. Используется только магами. Энергостоимость создания: 100. (б) Кольцо или ожерелье. Действует всегда. Оно вибрирует, предупреждая носителя, когда любой магический предмет находится в пределах 5 ярдов. Часто используется заклинание Допуск, для предупреждения носителя только об определённых типах магии. Энергостоимость создания: 300.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M101</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="no">
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="contains">one college (knowledge)
+				<level compare="at least">1</level>
+			</notes></advantage_prereq>
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="is anything"></notes>
+				<level compare="at least">1</level>
+			</advantage_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 248px; left: 621px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Wizard Eye</name><name-loc>Волшебный глаз</name-loc><spell version="2">
+		<name>Wizard Eye</name>
+		<name-loc>Волшебный глаз</name-loc>
+		<description-loc>СтандартноеСоздаёт физический глаз – двухдюймовый шарик – через который заклинатель может видеть. Глаз может летать в воздухе, вертикально или горизонтально, с Движением 10; он движется в ход заклинателя. Концентрация требуется, чтобы двигать глаз, но не чтобы видеть через него. Глаз маленький, его МР(SM) равен -7, поэтому в него трудно попасть – но если в него попадут физической атакой, или любым заклинанием, которое могло бы вывести его из строя, он будет уничтожен.Длительность: 1 минута.Стоимость: 4 сотворение. 2 поддержка.Время сотворения: 2 секунды.Требования: Перемещение и Обострённое зрение.ПредметГлазное яблоко, вырезанное из слоновой кости с врезанными драгоценными камнями. Используется только магами. По команде держателя, оно превратится в Волшебный глаз; по возвращению в его руку оно вновь примет форму драгоценности. Стоимость создания: 1.100 энергии, $1000 за умелую резьбу по слоновой кости и $600 за изумруды.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M104</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">keen vision</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 188px; left: 681px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Teleport</name><name-loc>Телепортация</name-loc><spell version="2" very_hard="yes">
+		<name>Teleport</name>
+		<name-loc>Телепортация</name-loc>
+		<description-loc>ОсобоеМгновенно перемещает заклинателя на другое место. Однако, чем дальше находится это место, тем больше энергии требуется потратить, и тем больше штраф к умению, как указано далее:Обычно можно телепортироваться только на место, на которое вы смотрите, или на место, с которым вы знакомы. Штрафы: -2 за место, которое вы «видели» только через разум или память кого-то еще, или по телевизору; -2 за место, где вы не были больше месяца (кроме, возможно, вашего дома!); и от -1 до -3 за место, которое видели мельком.Это заклинание еще и опасно. Если вы провалите свой бросок на 1, то получите 1d вреда и попадете в точку назначения физически оглушенным (бросок ЗД(HT), чтобы восстановится). Если вы провалите бросок заклинания больше, чем на 1, вы не получаете вреда — но оказываетесь где-то не там. Где именно — решает Мастер! Критический провал этого заклинания может послать заклинателя куда угодно Мастеру — пусть это будет интересно! — и наносит физический вред, пока заклинатель не умрет.Даже успешная телепортация может сбить с толку. Волшебник должен сделать бросок умения Чувства тела (B181), чтобы действовать дальше в ход телепортации. Проваленный бросок означает дезориентацию — никакие действия кроме защиты невозможны на этом ходу. Критический провал означает, что он падает и физически оглушен. Телепортирующийся прибывает в той же самой позе, в которой он был. Он может быть повернутым в другую сторону, но это делает более вероятным то, что он будет дезориентирован по прибытии: -2 чтобы быть направленным в другую сторону, -5 чтобы из вертикального положения принять горизонтальное, или наоборот!Расстояние	Стоимость	УмениеНе более 10 ярдов	3	011-20 ярдов	4	-120-100 ярдов	5	-2101-500 ярдов	6	-3От 501 ярда до 1.99 мили	7	-4От 2 до 9.99 мили	8	-5От 10 до 99.99 мили	9	-6От 100 до 999.99 мили	10	-7Расстояние x10	1	-1Все, что было у вас с собой, вплоть до «тяжелой» нагрузки, перемещается с вами. Вы также можете взять с собой одного человека, держась с ним за руки, если добавленный вес не превышает предел вашей «тяжелой» нагрузки. На проваленном броске, он будет страдать от тех же побочных эффектов, что и вы.Это также заклинание Врат.Требования: или ИН(IQ) не ниже 13 и хотя бы одно заклинание из 10 разных школ, или Полет сокола.ПредметПосох или палочка; используется только магами. Энергостоимость создания: 3.000. Предмет, берущий носителя в одно заранее определенное место, имеет энергостоимость создания 2.000; заклинатель должен знать это место очень хорошо.</description-loc>
+		<college>Gate/Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M147</reference>
+		<categories>
+			<category>Gate</category>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">hawk flight</name>
+			</spell_prereq>
+			<prereq_list all="yes">
+				<attribute_prereq has="yes" which="iq" compare="at least">13</attribute_prereq>
+				<spell_prereq has="yes">
+					<college_count compare="at least">10</college_count>
+				</spell_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 620px; left: 681px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Lend Skill</name><name-loc>Передать умение</name-loc><spell version="2">
+		<name>Lend Skill</name>
+		<name-loc>Передать умение</name-loc>
+		<description-loc>ОбычноеОбъект получает умение на (базовый атрибут)   4 или увеличивает свое существующее умение на 4 уровня, что больше. Умение объекта не может превосходить умение заклинателя. Заклинатель должен знать передаваемое умение (либо как обычно, либо с помощью Заимствования умения, ниже). Не работает на языки и заклинания.Длительность: 1 минута.Стоимость: 3 сотворение, 2 поддержание.Время сотворения: 3 секунды.Требования: Отправка мыслей и ИН(IQ) 11 </description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M47</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<attribute_prereq has="yes" which="iq" combined_with="iq" compare="at least">11</attribute_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">mind-sending</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 536px; left: 9px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Return Missile</name><name-loc>Обратить снаряд</name-loc><spell version="2">
+		<name>Return Missile</name>
+		<name-loc>Обратить снаряд</name-loc>
+		<description-loc>БлокирующееЗаставляет один снаряд (в том числе метательное заклинание), летевший в объект, развернуться и лететь в атакующего. Если бросок атакующего «для попадания» удачен, он попадает сам в себя; если нет – он видит, как снаряд летит обратно в него, но не попадает. Считается, что заклинатель выполняет манёвр Парирование. Если объектом заклинания является не заклинатель, применяются обычные модификаторы расстояний.Стоимость: 2.Требования: Поймать снаряд.ПредметУкрашение, оружие или щит. Энергостоимость создания: 400.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M168</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">catch missile</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 680px; left: 501px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Ward</name><name-loc>Отвод  заклинания</name-loc><spell version="2">
+		<name>Ward</name>
+		<name-loc>Отвод  заклинания</name-loc>
+		<description-loc>Блокирующие. Сопротивление от целевых заклинаний.Сотворенное сразу после того, как заклинание брошено в цель, может помешать его срабатыванию. Работает только против одиночной магической атаки. Если атакующее заклинание действует на нескольких человек, каждый Отвод может спасти только один объект. Не защищает от метательных заклинаний. Заклинатель может Отвести только те заклинания, которые он знает на уровне 12 и выше; зная, например, Сон, также может защитить отдельный объект от Массового сна. Заклинатель бросает против меньшего из значений Отвода или отражаемого заклинания. Должно объявить об использовании Отвода до того, как защищающийся  сделает бросок сопротивления. Если окажется, что сотворенное заклинание маг не может блокировать, Отвод потрачен впустую.Стоимость: 2 на себя, 3 на любого в пределах видимости. Нельзя отвести заклинание от тех, кого не видите.Требования: Магичность(Magery) 1.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>2 or 3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M122</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="no">
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="contains">one college (meta)
+				<level compare="at least">1</level>
+			</notes></advantage_prereq>
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="is anything"></notes>
+				<level compare="at least">1</level>
+			</advantage_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 764px; left: 681px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Lend Spell</name><name-loc>Передать заклинание</name-loc><spell version="2">
+		<name>Lend Spell</name>
+		<name-loc>Передать заклинание</name-loc>
+		<description-loc>Обычное«Передает» – сотворенное поддерживаемое заклинание кому-то еще. Получатель полностью контролирует и ответственен за переданное заклинание, так же, как если бы сотворил его сам; он может поддерживать его или управлять им по желанию, в рамках  самого заклинания.Получатель должен подходить по всем преимуществам и атрибутам, нужным заклинанию, но не должен знать его требований. Т.е. заклинание, требующее Магичности 2, может быть дано взаймы только персонажу с Магичность(Magery)ю 2, но заклинание, не требующее Магичности и других специальных преимуществ или атрибутов, может быть передано любому. Если у получателя есть Устойчивость к магии, Передать заклинание должно преодолеть ее.Передать заклинание, сотворяется на меньшем из уровней Передать заклинание или целевого заклинание. Заклинатель должен коснуться получателя.Модификаторы: Если получатель не знает всех требований получаемого заклинания, заклинатель получает -2 к умению. Если знает ¬– сотворение по номиналу. Если получатель фактически знает заклинание, заклинатель получает  2.Длительность: Постоянное; «данное взаймы» заклинание больше не принадлежит его первоначальному заклинателю.Стоимость: равна стоимости поддержания переданного заклинания.Время сотворения: 3 секунды.Требования: Магичность(Magery) 1, Передать умение, и заклинания, по крайней мере, шести разных школ.ПредметПосох, палочка, или украшение. Используется только магами. Маг передает целевое заклинание, активируя предмет и физически отдавая его получателю; чтобы магия работала, надо постоянно держать предмет - перебросить его нельзя. Заклинание «принадлежит» получателю, пока он держит предмет, и его можно передать еще одному получателю, независимо маг он или нет. Энергостоимость создания: 1.000.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>maint cost of lent spell</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M126</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college_count compare="at least">6</college_count>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">lend skill</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 824px; left: 393px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Hang Spell</name><name-loc>Отложенное заклинание</name-loc><spell version="2" very_hard="yes">
+		<name>Hang Spell</name>
+		<name-loc>Отложенное заклинание</name-loc>
+		<description-loc>ОсобоеТворится на другое заклинании, для задержки его активации до желания заклинателя. Блокирующие заклинаний нельзя отложить. Отложенное заклинание, сотворяется непосредственно перед заклинанием - объектом, без задержек между сотворениями. Заклинатель бросает Отложенное заклинание при сотворении; бросок целевого заклинания не делается, пока оно не активируется. Штрафы за расстояние, «включенные» заклинания, Магическая устойчивость, изменения уровня маны и т.п. применяются во время активации целевого заклинания.Заклинатель должен заплатить полную энергию и затраты времени за Отложенное заклинание, и его объект во время сотворения. Если заклинатель откладывает заклинание, настроенное на объект человеческих размеров, и затем активирует его на большем объекте, то эффекта, либо не будет, либо он уменьшен, как сочтет нужным Мастер.Отложенное заклинание рассчитывает как одно «включенное» заклинание (M10) для целей сотворения; и не считается против себя при активации. Таким образом, если у мага есть четыре отложенных заклинания, он сотворяет другие с -4, но любое из отложенных с -3. Отложенное заклинание требует действия Концентрация при активации. Отложенные заклинания восприимчивы к Рассеять магию и Контрзаклинание, разрушающие их, и к Подавить магию и Подавить заклинание, временно препятствующие их активации. Они не могут быть украдены или переданны, потому что еще не сотворены.Длительность: 1 час.Стоимость: такая же, как основного заклинания при сотворении (минимум 2); столько же на поддержание. Отложенное заклинание может поддерживаться как обычно при вступлении в силу.Время сотворения: 10 секунд.Требование: Отсрочка.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>same as underlying spell</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M128</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">delay</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 836px; left: 285px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Maintain Spell</name><name-loc>Поддержать заклинание</name-loc><spell version="2" very_hard="yes">
+		<name>Maintain Spell</name>
+		<name-loc>Поддержать заклинание</name-loc>
+		<description-loc>ОсобоеСотворяется на одно из длящихся заклинаний самого заклинателя, предавая резерв энергии для поддержания. Как только Поддержать заклинание сотворено, целевое заклинание тянет энергию поддержания из него. Оно больше не принадлежит первоначальному заклинателю: не считается «включенным», не может быть отменено и т.д. Поддержать заклинание можно сотворить в любое время, пока активно заклинание - объект. Некоторые поддерживаемые заклинания можно «запрограммировать» согласно Независимости (M96) или даже Инициативе (M97) ( по усмотрению Мастера). Контроль над заклинанием, работающим под Поддержать заклинание можно украсть, используя Украсть заклинание.Длительность: Пока не истощен резерв энергии или не рассеяно основное заклинание. Стоимость: Равна обычному поддержанию целевого заклинания, на срок по желанию заклинатель (с учетом сокращения стоимости за высокий уровень). Так, заклинание, поддерживаемое за 1 в минуту, может само поддерживаться в течение 10 минут за 10 энергии. Если заклинатель может поддерживать заклинание бесконечно без энергозатрат (из-за высокого уровня), стоимость 1 за каждые пять полных периодов работы. Так, маг с Землетрясением-20 может заставить заклинание длиться 30 минут за 6 энергии. Высокий уровень в этом заклинании также уменьшает стоимость как обычно! Время сотворения: 2 секунды, плюс «время программирования» если нужно.Требование: Связь.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>maint cost of subject spell</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>Varies</duration>
+		<reference>M128</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">link</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 680px; left: 9px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery2"><name>Catch Spell</name><name-loc>Поймать заклинание</name-loc><spell version="2" very_hard="yes">
+		<name>Catch Spell</name>
+		<name-loc>Поймать заклинание</name-loc>
+		<description-loc>Блокирующее, СпециальноеСотворенное сразу после броска метаемого заклинания (не после его сотворения), позволит своему заклинателю поймать «снаряд», когда он окажется в пределах досягаемости. Заклинатель может удерживать пойманное заклинание, как если бы он сам его сотворил и позже бросить (возможно обратно в первоначального заклинателя …). Заклинатель не обязан знать ловимое заклинание.При успешном броске Поймать заклинание, заклинатель физически ловит снаряд, как только он достаточно приблизится для захвата. Если бросок провален, заклинателя обязательно поражает заклинанием  (при критической неудаче он получит максимальные повреждения от заклинания).Стоимость 3.Требования Магичность(Magery) 2, ЛВ(DX) 12 и выше, Обратить снаряд.ПредметПерчатки. Используются только магами. Одна пара может поймать только конкретное метаемое заклинание. В данном случае варианты (такие как Огненный шар/ Разрывной огненный шар) считаются отдельными. Энергостоимость создания: 300. Перчатки, которые могут поймать любое метаемое заклинание, потребуют 1.200 энергии.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking/Special</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M123</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">return missile</name>
+			</spell_prereq>
+			<attribute_prereq has="yes" which="dx" compare="at least">12</attribute_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 848px; left: 627px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery2"><name>Steal Spell</name><name-loc>Украсть заклинание</name-loc><spell version="2" very_hard="yes">
+		<name>Steal Spell</name>
+		<name-loc>Украсть заклинание</name-loc>
+		<description-loc>Обычное; Сопротивление от целевых заклинанийПохищает контролируемое или уже сотворенное поддерживаемое заклинание у его первоначального заклинателя. Отметьте, что оно творится около целевого заклинателя , и поэтому учитываются штрафы за расстояние. Заклинатель должен точно знать, что он крадет – Определить заклинание будет весьма полезно. Заклинания, работающие под Поддержать заклинание, также можно украсть; «заклинатель», для определения расстояния, область или объект поддерживаемого заклинания.Нельзя украсть заклинание, если нет необходимой Магичности, преимущества, уровня атрибута, или отсутствия недостатка (см. условия для Передать заклинание). Удерживаемый Снаряд не может быть украден.Модификаторы: -3, если заклинатель не знает воруемое  заклинание; еще -2, если также не знает требуемого для воруемого заклинания .Длительность: Навсегда; украденное заклинание больше не принадлежит владельцу.Стоимость: Равна стоимости поддержания краденного заклинания. Время сотворения: 1 секунда за единицу потраченной энергии.Требования: Передать заклинание и Великий отвод заклинания.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>maint cost of stolen spell</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>sec=cost</casting_time>
+		<duration>Permanent</duration>
+		<reference>M127</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lend spell</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">great ward</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 824px; left: 513px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Reflect</name><name-loc>Отразить магию</name-loc><spell version="2">
+		<name>Reflect</name>
+		<name-loc>Отразить магию</name-loc>
+		<description-loc>Блокирующее, сопротивление от целевых заклинанийЭто улучшенная версия Отвода заклинания, и работает схожим образом. Различие в том, что оно отразит враждебное заклинание, вместо рассеивания. Таким образом, если отражение успешно, враждебное заклинание атакует своего заклинателя, как если бы сразу было сотворено на него. Успешное отражение областного заклинания, защитит его объект и подействует на заклинателя, как будто он в атакованной зоне, а в остальной области действует как обычно.Стоимость: 4 на себя, 6 на любого в пределах видимости. Нельзя защитить того, кого не видите.Требования:  Отвод заклинания</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>4 or 6</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M122</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">ward</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 764px; left: 285px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery3"><name>Link</name><name-loc>Связь</name-loc><spell version="2">
+		<name>Link</name>
+		<name-loc>Связь</name-loc>
+		<description-loc>ОбластноеОткладывает активацию одного или более связанных заклинаний, сотворенных в его области, пока не случится указанное событие в присутствии Связи. Пусковое событие может быть простым или сложным по желанию заклинателя, по правилам Отсрочки (выше). Связь также можно вызвать активацией заклинания, помещенного в область после Связи, например Сторожевой пес, Отсрочка или другая Связь. Заклинатель платит энергию и делает броски заклинания Связи и всех связанных заклинаний во время сотворения. Связанные заклинания могут не получить пользы за сокращение стоимости для высокого умения. Если намеченный объект связанного заклинания не присутствует во время сотворения, есть дополнительные штраф -5 на связанное заклинание (но не на Связь) за неспособность касаться или видеть объект - смотри M11.Размер области Связи определяется во время сотворения. Любые связанные заклинания могут перемещаться в пределах области; например, если Создать огонь и Клей радиусом в ярд были связаны Связью радиусом 20 ярдов, для поимки злоумышленников, то первый, вошедший в область Связи, окажется в зоне пылающего клея, но последующие будут в безопасности (во всяком случае от этой Связи). Размер связанных заклинаний должно установить во время сотворения. Если объект больше чем предполагаемая цель, эффекта заклинания нет или он ослаблен, в зависимости от заклинания. Последнее слово за Мастером.Поражаются объекты только в пределах области Связи, если только результат не привязывающийся к области эффект – например, вызов демона! Однако пусковое событие может произойти за пределами области. Время сотворения связанных заклинаний тратится при установки Связи. Нет задержек при вызове Связи - все связанные заклинания активируются немедленно.Связанные заклинания не считаются «включенными», ни для каких целей. Каждые три Связи считаются одним «включенным» заклинанием (округлять вниз). Маг не может обнаружить Связь просто смотря на нее. Однако, заклинание Волшебное зрение или Обнаружить магию обнаружат ее. Если маг знает Скрыть магию, можно затруднить обнаружение Связи магическими методами. Просто добавьте стоимость Скрыть магию к базовой стоимости Связи для достижения эффекта. Маг должен знать, Скрыть магию, чтобы  использовать эту опцию. Чтобы определить результаты, если объект связанного заклинания не присутствовал при сотворении, и имеет Магическую устойчивость, пересчитайте начальный бросок, Если оригинал броска связанного заклинания не записан, перебросьте его. Блокирующие и Метаемые заклинания нельзя Связать – все другие можно. «Мгновенные» заклинания, как Гром, срабатывают однажды при активации, затем исчезают. Длящиеся заклинания, как Голоса, начинаются при активации и работают до истечения.Одиночную Связь можно сделать активирующей заклинание при входе в область и деактивирующей при выходе. Она будет длиться, пока связанное заклинание не истечет. Пример, маг может сотворить Связь на Непрерывный свет. Если он выбросит семь дней длительности Непрерывного света (168 часов), он может настроить Связь на включение света, когда он входит в комнату, и выключении, когда уходит. По окончанию 168 часов света, оба заклинания рассеиваются. Мгновенные заклинания исчезает вместе со Связью после срабатывания.Поддержание Связи не требуется, как для самой Связи, так и для связанных или любых информационных «пусковых» заклинаний.Связь можно сотворить наоборот, для остановки одного или более заклинаний, при «стоповом » событии. В этом случае, связанное заклинание длится, пока заклинатель поддерживает его, а сама связь не требует поддержания.Связь также может использоваться в Ограничивающих чарах (см. стр 68-69).Длительность: До запуска и истекания связанных заклинаний.Базовая стоимость: 8; связанные заклинания не поддерживаются.Время сотворения: 4 часа - нет сокращения во времени, несмотря на то, как хорошо Связь изучена.Требование: Отсрочка.Экстравагантно или даже бесполезно сотворять некоторые заклинания как Рефлекторные!ПредметЗаклинание можно навсегда сотворить на любой зачарованный предмет, определив обстоятельства, когда он работает. Допуск мог бы определить класс пользователей, способных использовать предмет, а Связь могла бы, например, заставить его работать только ночью. Энергостоимость создания: 200. Любые Информационные заклинания, требуемые для пуска (например, Обнаружить магию), должны сотворяться на предмет, как отдельные чары. Например, меч можно Связать с заклинаниями Свет и Почуять жизнь, так, чтобы он пылал в присутствии орков. Обратную Связь можно навсегда сотворить на любой зачарованный предмет, деактивируя его в указанном случае. Это часто используется, чтобы волшебные предметы не попали в неправильные руки. Энергостоимость создания: 200.</description-loc>
+		<college>Meta/Linking</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>8</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>4 hrs</casting_time>
+		<duration>Until triggered</duration>
+		<reference>M131</reference>
+		<categories>
+			<category>Linking</category>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">delay</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 680px; left: 177px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery3"><name>Delay</name><name-loc>Отсрочка</name-loc><spell version="2">
+		<name>Delay</name>
+		<name-loc>Отсрочка</name-loc>
+		<description-loc>ОбычноеСотворяется на другое заклинание для задержки его активации, пока не случится указанное событие в присутствии связанного заклинания, т.е. в присутствии предмета или области, на которую оно  сотворено. Пусковое событие может быть простым или сложным по желанию заклинателя; сложное указывается в письменном виде. Пусковое событие должно сносно определяться на участке Отсрочки обычным человеком; решение за Мастером. Если Отсрочка должна быть вызвана более необычным  случаем, нужное заклинание, такое как Волшебное зрение, можно сотворить на Отсрочке. Она также может сработать при активации другого заклинания, такого как Сторожевой пес или другого связанного заклинания. Задержка может активировать только одно заклинание. Заклинания творятся одно за другим без задержек между ними. Отсрочка сотворяется первой и считается «включенной» при расчете умения для связанного заклинания (M10). Полная стоимость для связанного заклинания и для Отсрочки оплачивается во время сотворения. Если заклинатель определит заклинание для объекта человеческого размера, а Отсрочка сработает на большей жертве (требующей больше энергии - смотри M11), эффекта, либо не будет, либо он уменьшен, зависит от заклинания. Последнее слово за Мастером.Отсрочку можно сотворить двумя путями: активировать связанное заклинание на конкретный объект, или, как ловушка, активировать связанное заклинание на любой объект, удовлетворяющий условиям вызова. В последнем случае Отсрочка и связанное заклинание и творятся на «предмет-ловушку», и расстояние рассчитывается от него в момент вызова. Штрафы за Магическую устойчивость также применяются в момент вызова.Заклинатель делает бросок Отсрочки при первом сотворении; бросок для связанного заклинания не делается до момента вызова. Если намеченного объекта связанного заклинания нет во время сотворения, применяется дополнительный штраф -5 на связанное заклинание (но не на Связь) за неспособность касаться или видеть объект – смотри M11. Так, например, страшная «дверь  Смертельного касания» с установкой «напасть» на первого коснувшегося ее активируется со штрафом -5. Когда Отсрочка вызвана, связанное заклинание начинает активироваться, вступая в силу в следующий ход. Таким образом, Отсрочка не может использоваться как Блокирующее заклинание. Она может использоваться как ловушка, для захвата жертвы врасплох. А не ожидающая жертва должна сделать бросок ИН(IQ),  для ответа прежде, чем связанное заклинание полностью активируется - Боевые рефлексы дают  6 этому броску.И Отсрочка, и связанное заклинание считаются «включенными», как и добавленное Информационное. Связанное заклинание не надо поддерживать, хотя, возможно, нужно Отсрочку или Информационное заклинание. Как только Отсрочка вызвана, она исчезает, и больше не считается включенной. Связанное заклинание продолжает считаться таким, пока активно и может поддерживаться как обычно.Отсрочка можно настроить на «выключения» длящегося заклинание при возникновении события. В этом случае связанное заклинание длится, пока заклинатель поддерживает его, но сама Отсрочка не требует поддержания.Блокирующие и Метаемые заклинания нельзя Отсрочить, можно все другие. «Мгновенные» заклинания, как Гром, срабатывают однажды при активации, затем исчезают. Длящиеся заклинания, как Голоса, начинаются при активации и работают до истечения.Длительность: 2 часа.Время сотворения: 10 секунд.Стоимость: 3 на сотворение. 3 на поддержание.Требования: Магичность(Magery) 3 и любые 15 заклинаний.</description-loc>
+		<college>Meta/Linking</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>2 hrs</duration>
+		<reference>M130</reference>
+		<categories>
+			<category>Linking</category>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<any></any>
+				<quantity compare="at least">15</quantity>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 764px; left: 9px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery3"><name>Throw Spell</name><name-loc>Метнуть заклинание</name-loc><spell version="2">
+		<name>Throw Spell</name>
+		<name-loc>Метнуть заклинание</name-loc>
+		<description-loc>Метаемое; ОсобоеТвориться на другое заклинание, преобразовывая его в Метаемое. Заклинания творятся одно за другим без задержек.  Метнуть заклинание, твориться первым и считается «включенным» при определении уровня умения заклинания - объекта (M10).Заклинатель должен оплатить полную энергию и затраты времени для Метнуть заклинание и его объекта во время сотворения; если заклинатель метает заклинание, рассчитанное на человеческий размер, в больший объект, то эффект, либо отсутствует, либо уменьшен, на усмотрение Мастера. Заклинатель бросает Метнуть заклинание при сотворении; бросок для целевого заклинания не делается, до его запуска. Запущенные  заклинания имеют: 1/2Д нет, Max 80, Точ 1; для попадания бросок против ЛВ(DX)-4 или Природной атаки.Все запущенные заклинания вступают в силу как только поразят что-либо. Центр запущенных Областных заклинаний находится в точке попадания . Эффект Струйных заклинаний начинается в точке попадания, по направлению прибытия (считайте их Ударом наугад, B388). Большинство других заклинаний просто позволяют заклинателю использовать их на более длинные дистанции, чем обычно - брошенное Почуять эмоции, например, или Малое лечение. Это заклинание позволит, применять на расстоянии контактные заклинания (Касание смерти, например). Метаемые и Блокирующие заклинания запустить нельзя.Запущенные заклинания можно блокировать или уклониться, но не парировать. Однако любой, включая врагов, может их поймать, используя Поймать заклинание!Длительность: Пока не запущено. Стоимость: 3. Запущенные заклинание поддерживаются как обычно, после вступления их в силу.Требования: Отсрочка и Поймать заклинание.ПредметЛюбое метательное оружие может быть зачаровано для метания одного определенного заклинания, которое летит так же, как обычные боеприпасы оружия. Энергостоимость создания: 2.500-кратная  стоимость сотворения целевого заклинания-объекта. Есть слухи о зачарованном оружии, способном метать любое заклинание, известное его хозяину, но ничего более точного не известно.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Missile/Special</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Until thrown</duration>
+		<ranged_weapon>
+			<damage>Special</damage>
+			<accuracy>1</accuracy>
+			<range>80</range>
+			<default>
+				<type>DX</type>
+				<modifier>-4</modifier>
+			</default>
+			<default>
+				<type>Skill</type>
+				<name>Innate Attack</name>
+				<specialization>Projectile</specialization>
+				<modifier>0</modifier>
+			</default>
+		</ranged_weapon>
+		<reference>M128</reference>
+		<notes>transforms another spell into a Missile spell</notes>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">delay</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">catch spell</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 836px; left: 177px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery3"><name>Penetrating Spell</name><name-loc>Проникающее заклинание</name-loc><spell version="2">
+		<name>Penetrating Spell</name>
+		<name-loc>Проникающее заклинание</name-loc>
+		<description-loc>ОбычноеНакладывается на другое наносящее урон заклинание, предоставляя ему делитель брони. Заклинания сотворяются одно за другим без задержек. Проникающее заклинание сотворяется первым и считается «включенным» при расчете эффективного умения второго заклинания.Заклинание усиленное Проникающим не наносит дополнительного  урона небронированным врагам. Укрепленный СП(DR) защищает от делителя брони предоставленного заклинанием как обычный.Длительность: пока не закончится второе заклинание.Стоимость: смотри таблицу Делитель брони	Цена2  |	23  |	45  |	610 | 	8Игнорирование СП(DR)	10Время сотворения: 3 секундыТребования: Отсрочка и Найти слабину.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>Varies</duration>
+		<reference>M123</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">delay</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">find weakness</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 764px; left: 453px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery3"><name>Reflex</name><name-loc>Рефлекс</name-loc><spell version="2">
+		<name>Reflex</name>
+		<name-loc>Рефлекс</name-loc>
+		<description-loc>ОсобоеCотворенное на другое заклинание, преобразует его в одноразовое Блокирующее, а затем исчезает. В отличие от Отсрочки или Связи, Рефлекс вызывается желанием заклинателя, не внешним случаем. Это значит, что Обратить снаряды Рефлекторно  можно активировать, если заклинатель видит, что кто-то стреляет в него и нельзя если стреляют в спину. Он считается активной защитой, как Парировать или Блокировать, во всех практических целях (кроме  3 к броску за отступления). Сотворение Рефлекса прервет любую концентрацию мага на заклинаниях и обрабатывается как любое другое Блокирующее заклинание - см. стр 12-13.Связанное заклинание сотворяется немедленно после сотворения Рефлекса, тем же заклинателем. Каждое сотворение Отражения действует только на одно заклинание - нельзя иметь несколько заклинаний, работающих как одно. Рефлекс бросают во время сотворения, но бросок связанного заклинания не делают, пока оно не сотворено как Блокирующее. Энергостоимость Рефлекса платится во время сотворения, но энергия для связанного заклинания не платится, пока оно сотворено как активная защита или иначе. Время сотворения связанного заклинание тратится сразу после сотворения Рефлекса, но бросок успеха и энергостоимость обрабатываются позже. Связанное заклинание вместе с Рефлексом считаются одним «включенным» в целях сотворения - смотри M10. И не считается «включенным», при своем сотворении. Так, если у мага есть четыре Рефлекторные заклинания  , любое другое заклинание он творит с -4, но творя один из Рефлексов, он только с -3 за три других Рефлекса.Рефлекс используется только раз. Затем он исчезает, и больше не считается «включенным». Эффект немедленный и мгновенный, а не с длительностью указанной в описании заклинания. Это значит, что экстравагантно или даже бесполезно сотворять некоторые заклинания как Рефлекторные! Силовой купол, например, остановил бы одну физическую атаку, а затем исчез  - затратная, но эффективная защита! Созданное животное появится, затем исчезнет прежде, чем сможет сделать что-либо. (Хотя, оно могло бы остановить снаряд во время краткого существования. Мастер может решить, что животное должно быть почти равно по размеру прикрытой цели). Исключения из правила «результат-мгновение » – заклинания с постоянными эффектом, как Большое лечение – его эффект действительно постоянный.Персонаж может «нести» любое число Рефлексов. Однако только одно заклинание можно сотворить за ход. Учтите, если Рефлекс использован как активная защита, против этой атаки нельзя использовать другую активную защиту, кроме случая Тотальной защиты (all-out defense), см. B366.Рефлекторное заклинание можно сотворить как обычное действие, а не обязательно как защиту. На что требуется секунда, независимо от обычного времени сотворения.Все обычные модификаторы расстояния и Магической устойчивости используются при сотворении Рефлекторного заклинание, если его объект удален от персонажа или объект Рефлекса сам Рефлекс .Заметьте, маг может сотворить Рефлекс на другого человека. Заклинатель (не объект) может активировать его в любое время, учтя штрафы за расстояние. Если связанное заклинание творится на объект отличный от объекта самого Рефлекса, обычный штраф на расстояния до того объекта добавляется к штрафу за расстояние для заклинателя.Пример: Феликс дает Рудольфу Успокоить животное как Рефлекторное заклинание. Для наблюдения за охотой Рудольфа он использует Волшебный глаз. Охотник встречает разъяренного вепря, Феликс это видит через Волшебный Глаз. Рудольф не может активировать заклинание. К счастью он и не должен! Феликс активирует Успокоить животное, пока Рудольф пытается Приручить животное, успокаиваю вепря. Рудольф ушел в лес почти на две мили, так что у Феликса -3 за большое расстояние. Боров на расстоянии 3 ярда от Рудольфа, т.е. у Феликс еще -3 за расстояние до объекта Рефлекторного заклинания. Еще -1 за включенный Волшебный глаз. Таким образом, Феликс творит Успокоить животное с -7 и только теперь платит энергию за него. К счастью он знает заклинание на уровне 21, так что творит его с максимальным эффектом. Вепрь успокоен, и Рудольф идет дальше, а Феликс отдыхает. Рефлекторное Успокоить животное больше не существует. Если Рудольф встретит другое животное, он будет справляться сам, хотя Феликс все еще может видеть любое его действие Волшебным глазом.Блокирующие и метаемые заклинания не могут быть Рефлекторными; другие заклинания – вполне.Длительность: 1 час.Время сотворения: 10 секунд.Стоимость: Равна стоимости сотворения целевого заклинания, минимум 1. Столько же на поддержание. Учтите, уровень владения Рефлексом не влияет на стоимость.Требования: Отсрочка и Отвод заклинания.</description-loc>
+		<college>Meta/Linking</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>cost of subject spell</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M132</reference>
+		<categories>
+			<category>Linking</category>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">delay</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">ward</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 764px; left: 573px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Great Ward</name><name-loc>Великий отвод заклинания</name-loc><spell version="2">
+		<name>Great Ward</name>
+		<name-loc>Великий отвод заклинания</name-loc>
+		<description-loc>Блокирующее; Сопротивление от целевых заклинанийКак Отвод  заклинания, но если сработает, защитит любое число атакованных.Цена: 1 за объект защиты (стоит минимум 4).Требования: Магичность(Magery) 2 и Отвод заклинания.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>1/subject</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M122</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">ward</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 752px; left: 117px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Find Weakness</name><name-loc>Найти слабину</name-loc><spell version="2">
+		<name>Find Weakness</name>
+		<name-loc>Найти слабину</name-loc>
+		<description-loc>Почувствовать самую уязвимую часть объекта. Заклинание может быть сотворено на любую часть большого объекта; к примеру, вам не нужно творить его на всю городскую стену сразу, а можно проверить один ярд за раз. Конечно, у многих объектов не будет особых уязвимостей.Это заклинание может быть использовано для устранения неполадок в сложных объектах; дефект, мешающий работе машины, обычно рассматривается как ее самая уязвимая часть.Длительность: 1 минута.Стоимость: 1, или 1 за каждый ярд радиуса для большого объекта. Удваивается, если объект жив.Время сотворения: 2 секунды.Требования: одно заклинание каждого из четырех элементов.ПредметДрагоценности. Энергостоимость создания: 100.</description-loc>
+		<college>Making &amp; Breaking</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M116</reference>
+		<categories>
+			<category>Making &amp; Breaking</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">air</college>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">fire</college>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">water</college>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">earth</college>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 308px; left: 240px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Aura</name><name-loc>Аура</name-loc><spell version="2">
+		<name>Aura</name>
+		<name-loc>Аура</name-loc>
+		<description-loc>ИнформационноеСоздаёт светящийся ореол или «ауру» вокруг объекта. Эта аура даёт заклинателю общее представление о личности объекта – чем лучше бросок, тем полнее информация. Аура также показывает, есть ли у объекта Магичность(Magery), Сопротивление магии или Подверженность магии (и на каком уровне); одержим или контролируется ли объект каким-то способом; и находится ли объект во власти какой-то сильной эмоции. Критический успех обнаружит «тайные» черты, такие как ликантропия, вампиризм и неестественное долгожительство.У всех живых существ есть ауры; у неодушевлённых предметов их нет. Зомби можно обнаружить по его слабой ауре смерти, а вампир сохраняет ауру, которая у него была при жизни. Иллюзии и созданные существа не имеют ауры, поэтому успешное произнесение этого заклинания отличает их от настоящих существ. Стоимость: 3 (для объекта любого размера).Требование: Обнаружить магию.ПредметПосох, жезл или украшение. Используется только магами. Энергостоимость создания: 100.Составлять много книг - конца не будет, и много читать - утомительно для тела.Екклесиаст 12:12</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M101</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">detect magic</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block>
+<div style="position:absolute; left:800px; top:0px;">
+<block style="top: 216px; left: 56px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Curse</name><name-loc>Проклятие</name-loc><spell version="2">
+		<name>Curse</name>
+		<name-loc>Проклятие</name-loc>
+		<description-loc>ОбычноеТочная противоположность Благословения. Все броски объекта изменены неблагоприятно, длясь пока он не получит значительный успех, несмотря на плохие броски, Мастер решает что им считать. Тогда успеха так или иначе превращается в пепел, и проклятие окончено.Стоимость: 3 для Проклятия в 1 очко, 10 – в 2 очка, 20 – в 3 очка. Как и Благословения, не «складываются». Время сотворения: 2 секунды на Проклятие в 1 очко, 4 на Проклятие в 2 очка, 6 на Проклятие в 3 очка.Требования: Что и для Благословения, за исключением, что проклясть могут и очень хорошие, и очень злые персонажи.ПредметЛюбой. Проклятие твориться на предмет, а не на человека и действует на владельца предмета. Мастер должны бросать в секрете или делать все, что может, чтобы не дать игрокам понять, что они столкнулись с проклятым предметом! Когда Проклятие выдаст заключительное «столкновение», чары исчезнут. Энергостоимость создания: 10-кратная стоимости сотворения на человека.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3/10/20</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2/4/6 sec</casting_time>
+		<duration>Varies</duration>
+		<reference>M129</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college_count compare="at least">10</college_count>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 216px; left: 272px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Bless</name><name-loc>Благословить</name-loc><spell version="2">
+		<name>Bless</name>
+		<name-loc>Благословить</name-loc>
+		<description-loc>ОбычноеОбщее заклинание помощи и защиты. Сотворяется на другом, нельзя благословить себя. В некоторых игровых миров только святые люди или «хорошие» волшебники могут сотворить это заклинание, по решению Мастера.Эффект благословения следующий: все броски кубиков объекта благоприятно изменены на одно очко (или больше, для более сильного благословения). Изменение затрагивает критические успехи и неудачи. Он  длится до те пор... пока объект не провалит какой либо бросок (или противник сделает хороший бросок) и попадет в серьезную опасность. Тогда благословение чудесно предотвращает или уменьшает опасность и заканчивается. Мастера решить, когда благословение выдаст заключительный эффект и какого вида будет защита. Если стрела нацелена в сердце, благословение в 1 очко могло бы перенацелить ее в руку, в то время как в 2 очка пробило бы ей шляпу, а в 3 очка позволило бы ей убить противника сзади.Длительность: Как указанно.Стоимость: 10 для благословения в 1 очко, 50 – в 2 очка, 500 – в 3 очка. Благословения «складываются» - более сильное рассеет более слабое.Время сотворения: 1 минута за каждую единицу энергии в заклинании.Требования: Магичность(Magery) 2 и по крайней мере два заклинания от каждо1 из 10 разных школ. Магичность(Magery) 3 для сотвориния благословение в 3 очка. Мастер может потребовать «святого» или «хорошего» статуса.ПредметЛюбой. Благословение сотворяется на предмет, а не на человека и действует владельца предмета. Когда благословение, наконец, предотвращает большую угрозу, предмет теряет свои чары. Энергостоимость создания: 10-кратная стоимости сотвориния на человека.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>10/50/500</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>min=cost</casting_time>
+		<duration>Varies</duration>
+		<reference>M129</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college_count compare="at least">10</college_count>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 216px; left: 164px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Suspend Magery</name><name-loc>Подавить Магичность(Magery)</name-loc><spell version="2" very_hard="yes">
+		<name>Suspend Magery</name>
+		<name-loc>Подавить Магичность(Magery)</name-loc>
+		<description-loc>Обычное; Сопротивление по Воле(Will) Магичность(Magery)Временно аннулирует Магичность(Magery) объекта. Заклинатель должен коснуться объекта при сотворении. Объект сохраняет знания заклинаний, но не может сотворить их - если, конечно, не находится в области высокой маны, когда он просто теряет премию. Даже в области высокой маны, объект не может сотворить заклинания, которые требуют Магичности любого уровня. Подавить Магичность(Magery) можно убрать только Снять проклятие.Критическая неудача стоит заклинателю уровеня Магичности в течение 2d дней. В конце периода заклинатель должен бросить против. ИН(IQ) Магичность(Magery); любой бросок кроме критической неудачи означает, что Магичность(Magery) восстановлена, критическая неудача – потеря навсегда!Длительность: 1 час.Стоимость: 12 на сотворение. Столько же на поддержание. Однако, объект сопротивляется каждый раз при продлении заклинание.Время сотворения: 10 секунд.Требования: Магичность(Magery) 2 и два заклинания по крайней мере из 10 разных школ.ПредметОдежда или украшение (лучше кандалы ). Всегда включен действует только на владельца. Энергостоимость создания: 2.200.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>12</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M130</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college_count compare="at least">10</college_count>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college_count compare="at least">10</college_count>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 288px; left: 164px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Drain Magery</name><name-loc>Истощить Магичность(Magery)</name-loc><spell version="2" very_hard="yes">
+		<name>Drain Magery</name>
+		<name-loc>Истощить Магичность(Magery)</name-loc>
+		<description-loc>Обычное; Сопротивление по Воле(Will) Магичность(Magery)Навсегда истощает один уровень Магичности объекта. Заклинатель должен коснуться объекта при сотворении. Объект сохраняет знание заклинаний (хотя на более низком уровне), но не может сотворить требующие более высокой степени Магичности чем его новая.Критическая неудача стоит заклинателю уровня Магичности и очко ИН(IQ)!Длительность: Навсегда.Стоимость: 30.Время сотворения: 10 минут.Требования: Магичность(Magery) 3 и Подавить Магичность(Magery).ПредметХодят упорные слухи о злобных предметах, истощающих Магичность(Magery) своих жертв, но точно ничего не известно.Связующие заклинанияЭто три родственных заклинания. Отсрочка (Обычное) используется для быстрой сцепки заклинаний, а Связь (Областное) более полезна для долгосрочного связывания. Отражение (Специальное) сотворенное на другое заклинание превратит его в одноразовое Блокирующее, правила управления ими  на стр 12-13.Любое из них: Отсрочка, Связь, Отражение - «связующее заклинание». «Связанное заклинание» – другое заклинание, управляемое «связующим». Связанные заклинания должны быть сотворены тем же самым заклинателем, в течение одной минуты после сотворения связующего.По усмотрению Мастера решаются любые вопросы о способности заклинания обнаружить данное событие, или возможности данного заклинание быть связанным. Мастера, желающие ограничить связующие заклинания, могут разрешить маленький список заклинаний для связи, или исключить некоторые заклинания.Любой предмет с заклинанием, связанным с ним, видим как таковой Волшебному зрению, но не броску ИН(IQ) Магичность(Magery). Только Анализ магии может указать природу связанного заклинания.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>30</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 min</casting_time>
+		<duration>Permanent</duration>
+		<reference>M130</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">suspend magery</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 540px; left: 188px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Scryfool</name><name-loc>Обман наблюдения</name-loc><spell version="2">
+		<name>Scryfool</name>
+		<name-loc>Обман наблюдения</name-loc>
+		<description-loc>Обычное; Специальное сопротивлениеПереадресует Информационные заклинания, предназначенные  первому объекту, на второй - «приманку». Оба объекта должны присутствовать во время сотворения; иначе штраф за расстояние. Возражающие объекты сопротивляются с Воле(Will)й.С этих пор, любое Информационное заклинание, пытающееся наблюдать  первый объект, должно выиграть Быстрое соревнование с Обманом, чтобы его увидеть. Иначе увидит «приманку».Длительность: 10 часов.Стоимость: 4 на сотворение, 2 на  поддержание.Время сотворения: 10 секунд.Требования: Магичность(Magery) 2, Почуять наблюдение и Простая иллюзия.ПредметПалочка, посох, или украшение. Используется  для отклонения Информационных заклинаний только от владельца. Энергостоимость создания: 300.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>10 hrs</duration>
+		<reference>M123</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sense observation</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">simple illusion</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 504px; left: 524px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Charge Powerstone</name><name-loc>Зарядить энергокамень</name-loc><spell version="2" very_hard="yes">
+		<name>Charge Powerstone</name>
+		<name-loc>Зарядить энергокамень</name-loc>
+		<description-loc>ОбычноеПерезаряжает энергокамень с более высокой скоростью, чем он зарядится сам. Каждые 3 энергии, потраченные заклинателем, восстановят единицу энергии камня, но каждый такая единица считается «улучшенной» против будущей «обычной » перезарядки. Таким образом, Энергокамень на 10 единиц перезаряженный заклинанием в области нормальной маны, не начнет перезаряжаться сам в течение следующих 10 дней. Если он будет использован и снова перезаряжен заклинанием, то камень не начнет перезаряжаться сам 20 дней, и так далее. Присутствие нескольких Энергокамней не запрещает сотворение заклинания.При любой обычной неудаче Энергокамень получает новую причуду (M69). При критической неудаче Энергокамень трескается и разрушается. Заклинанием можно благополучно перезарядить Энергокамень с причудами, ограничивающими перезарядку, только соблюдая условия, наложенные причудой. Попытки проигнорировать их могут расколоть Энергокамень.Это заклинание не действует на Камни маны.Длительность: энергия остается в камне до востребования.Стоимость: 3 за единицу заряженной энергии.Время сотворения: 10 минут.Требования: Магичность(Magery) 3, Энергокамень, и Передать энергию.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3/pt of energy</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 min</casting_time>
+		<duration>until used</duration>
+		<reference>M126</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">powerstone</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">lend energy</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 888px; left: 194px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Remove Curse</name><name-loc>Снять проклятие</name-loc><spell version="2">
+		<name>Remove Curse</name>
+		<name-loc>Снять проклятие</name-loc>
+		<description-loc>Обычное; Сопротивление от целевых заклинанийАннулирует любое из следующих заклинаний: Изменить (любого вида), Проклятие, Увеличить другого, Заклятье  (любого вида), Плоть в лед, Зарок (любого типа), Целительный сон, Неснимаемость, Проклятая кукла, Тайная метка, Клятва, Частичное окаменение, Растительная форма (любого вида), Вселение (любого вида), Превращение (любого вида), Уменьшить другого, Камень в плоть, Остановить лечение, Поражение бесплодием, Подавить Магичность(Magery), Остановить время. Также уберет любое физическое или умственное ухудшение, вызванное враждебным Желанием любого вида. Если по какой-либо причине уровень заклинания на объекте неизвестен, оценка Мастера решающая.Стоимость: 20.Время сотворения: 1 час.Требования: Магичность(Magery) 2 и, по крайней мере, по одному заклинание из 15 разных школ</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>20</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 hr</casting_time>
+		<duration>Permanent</duration>
+		<reference>M126</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college_count compare="at least">15</college_count>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 888px; left: 338px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Suspend Curse</name><name-loc>Подавить проклятие</name-loc><spell version="2">
+		<name>Suspend Curse</name>
+		<name-loc>Подавить проклятие</name-loc>
+		<description-loc>Обычное. Сопротивление от целевых заклинанийВременно аннулирует любое из следующих заклинаний: Изменить (любого вида), Проклятие, Увеличить другого, Заклятье  (любого вида), Плоть в лед, Зарок (любого типа), Целительный сон, Неснимаемость, Проклятая кукла, Тайная метка, Клятва, Частичное окаменение, Растительная форма (любого вида), Вселение (любого вида), Превращение (любого вида), Уменьшить другого, Камень в плоть, Остановить лечение, Поражение бесплодием, Подавить Магичность(Magery), Остановить время. Также приостановит любое физическое или умственное ухудшение, вызванное враждебным Желанием любого вида. Если по какой-либо причине уровень заклинания на объекте неизвестен, оценка Мастера решающая.Длительность: 10 минут.Стоимость: 10, столько же на поддержание.Время сотворения: 1 минута.Требования: Магичность(Magery) 1 и заклинания, по крайней мере, из 12 разных школ.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>10</casting_cost>
+		<maintenance_cost>10</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>10 min</duration>
+		<reference>M125</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college_count compare="at least">12</college_count>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 732px; left: 650px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Scryguard</name><name-loc>Защита от наблюдения</name-loc><spell version="2">
+		<name>Scryguard</name>
+		<name-loc>Защита от наблюдения</name-loc>
+		<description-loc>Обычное; Сопротивление любым Информационным заклинаниямЛюбое информационное заклинание, сотворяемое на объект, должно выиграть Быстрое состязание с Защитой , чтобы «увидеть» его. Обнаружить Защиту от наблюдения может Определить заклинание.Длительность: 10 часов.Стоимость: 3 на сотворение, 1 на поддержание.Время сотворения: 5 секунд.Требование: Магичность(Magery) 1.ПредметМожно навсегда зачаровать любой предмет, заставив его сопротивляться любой попытке магического обнаружения. Энергостоимость создания: 500; для предметов с МР(SM) больше 0, множитель 1 МР(SM)   .</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>10 hrs</duration>
+		<reference>M121</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 732px; left: 542px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Magic Resistance</name><name-loc>Устойчивость к магии</name-loc><spell version="2">
+		<name>Magic Resistance</name>
+		<name-loc>Устойчивость к магии</name-loc>
+		<description-loc>Обычное; сопротивление по Воле(Will)   Магичность(Magery)За каждый пункт энергии вложенной в заклинание (до 5ти), Устойчивость к магии объекта растет на 2 или на 1 если он сопротивляется. Эта МУ работает как обычная (B67) при сотворении заклинания на объект. Он по-прежнему может творить заклинания, но со штрафом равным МУ. Заклинания уже наложенные на объект (или сотворенные им) не меняются. Зелья и магические предметы используются объектом как обычно.Длительность: 1 минута.Стоимость: от 1 до 5. Столько же на поддержание.Время сотворения: 3 секунды.Требования: Магичность(Magery) 1 и по одному (или больше) заклинанию из семи разных школ.Предмет(а) Палочка, посох, оружие, или украшение; действует только на владельца. Используется кем угодно, но для немагов стоимость удвоена. Энергостоимость создания: 300 за единицу максимально возможной к сотворению магической устойчивости. (б) Любой предмет. Собственная магическая устойчивость предмета увеличена на 1 - 10; не влияет на устойчивость пользователя. Энергостоимость создания: 200 за единицу добавленной устойчивости. Не влияет на способность пользователя творить заклинания.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-5</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M123</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college_count compare="at least">7</college_count>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 816px; left: 650px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Scrywall</name><name-loc>Стена защиты от наблюдения</name-loc><spell version="2">
+		<name>Scrywall</name>
+		<name-loc>Стена защиты от наблюдения</name-loc>
+		<description-loc>Областное; Сопротивление любым Информационным заклинаниямКак Защита от наблюдения, но защищает область и содержимое целиком. Длительность: 10 часов.Базовая стоимость: 3 на сотворение, 2 на поддержание.Время сотворения: Секунда за единицу энергии. Требование: Защита от наблюдения.Предмет(а) Любой контейнер. Защищен он и содержимое. Энергостоимость создания: 200 за кубический фут (стоит минимум 500). (б) Любой коврик или область пола; защищает людей и вещи, стоящие на нем. Энергостоимость создания: 300 за ярд радиуса.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>sec=cost</casting_time>
+		<duration>10 hrs</duration>
+		<reference>M122</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">scryguard</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 816px; left: 542px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Spell Shield</name><name-loc>Щит от заклинаний</name-loc><spell version="2">
+		<name>Spell Shield</name>
+		<name-loc>Щит от заклинаний</name-loc>
+		<description-loc>Областное; Сопротивление всем заклинаниям, сотворенным через него.Сопротивляется любому заклинанию, сотворенному через него на уровне своей Стойкости   (M10). Действует подобно Стене защиты от наблюдения. Исключение: полностью не влияет на метаемые заклинания, включая брошенные Метнуть заклинание . Если атакующее заклинание выигрывает состязание, оно проходит Щит, уменьшая его Стойкость на 1.  Когда Стойкость опустится до 0, щит рассеивается и не может быть поддержан.Длительность: 1 минута.Базовая стоимость: 3 на сотворение, 2 на поддержание.Требования: Магичность(Magery) 2, Защита от наблюдения, Устойчивость к магии.Предмет(а) Любой контейнер. Он и содержимое защищено Щитом. Энергостоимость создания : 250 за кубический фут (минимум 500). (б) коврик или область пола, защищает людей и предметы стоящие на нем. Энергостоимость создания: 400 за ярд радиуса.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M124</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">scryguard</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">magic resistance</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 900px; left: 488px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Pentagram</name><name-loc>Пентаграмма</name-loc><spell version="2">
+		<name>Pentagram</name>
+		<name-loc>Пентаграмма</name-loc>
+		<description-loc>Особенное; Сопротивляется попыткам пересечь его.Создает магический барьер, блокирующий прохождение враждебных заклинаний и волшебных существ в любом направлении. Барьер - звездообразная фигура, начертанная на полу или земле. Волшебные существа (демоны, големы, создания, зомби, элементали, и т.п.) не могут пересечь границу пентаграммы; и так же не могут сотворять заклинания, или перемещать любой физический объект, через нее. Не волшебные существа, включая магов, могут свободно пересекать пентаграмму, но не могут сотворять заклинания через границу. Заклинания транспортировки (например Полет или Телепортация) не могут использоваться, чтобы войти в пентаграмму во враждебных целях.Некоторых очень враждебных существ можно вызвать в пределах пентаграммы; заклинатель стоит снаружи и вызывает существо к месту в пентаграмме. Он откроет пентаграмму только, когда будет уверен, что сможет управлять вызванным существом.У Гильдий Магов могут быть постоянные пентаграммы, сотворенные на очень высоком уровне, инкрустированные мозаикой  или драгоценностями, чтобы избежать случайного шарканья ногами.Если часть пентаграммы разомкнута или стерта, вся сила будет потеряна, пока заклинатель не восстановит ее – все что нужно кусок мела и время (обычно только секунда), чтобы начертить линию. Никакое магическое заклинание не повредит пентаграмму, но физические атаки, как подойти и стереть линии ногами, могут получиться, если они сделаны не волшебными существами. Демон или тварь не могут сделать этого, а обычный человек может. Аналогично, обычный человек может кинуть камнем внутрь пентаграммы, а демон или голем нет.Волшебное существо может попытаться пробиться через пентаграмму. Нужно соревнование между существом (СЛ(ST)   Воля(Will))/2 и уровнем сотворения пентаграммы. Если существо побеждает, пентаграмма разрушается! Ни одно существо не может таким образом «проверить» пентаграмму более раза в день.Длительность: Постоянная, пока не разрушится.Стоимость: 1 за квадратный фут защиты (минимум 10). Когда заклинание сотворено церимониально, заклинатели могут потратить дополнительную энергию, увеличив эффективное умение Пентаграммы. Маг может также использовать Медленный и верный метод зачарования (хотя технически Пентаграмма не Чара) для создания большой пентаграммы одному.Время сотворения: Одна секунда на квадратный фут. Время тратится на черчение линий и нужно независимо от того, как хорошо заклинание известно, или сколько силы доступно. Требования: Щит от заклинанийПредметУ Гильдий Магов могут быть постоянные пентаграммы, сотворенные на очень высоком уровне, инкрустированные мозаикой или драгоценностями, чтобы избежать случайного шарканья ногами. Такой проект может быть ритуально «сокращен», если надо, меловым рисунком. Нет никакого существенного различия между ними и обычной пентаграммой - любая пентаграмма является «постоянной» пока не стерта или сломана. (Если враждебное существо прорывается через заклинание Пентаграммы, это разрушает зачарование, но не затрагивает физический чертеж, который может быть повторно зачарован позже... если его владелец выживет).</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>1/sq foot</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec/sq foot</casting_time>
+		<duration>Permanent</duration>
+		<reference>M124</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">spell shield</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 900px; left: 596px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Spell Wall</name><name-loc>Защита от заклинаний, стена</name-loc><spell version="2">
+		<name>Spell Wall</name>
+		<name-loc>Защита от заклинаний, стена</name-loc>
+		<description-loc>Обычное. Сопротивление всем заклинаниям, сотворенным сквозь негоСоздает стену антимагии. Стена сопротивляется всем заклинаниям творящимся через нее с одной стороны, определенной заклинателем в момент создания. Также действует подобно Стене защиты от наблюдения. Исключение: полностью не влияет на метаемые заклинания, включая Запущенные. Если Стена проваливает сопротивление проходящему сквозь нее заклинанию, оно пробивает Стену, уменьшая ее стойкость на 1.  При нулевой Стойкости рассеивается. Не сопротивляется и не влияет на заклинания проходящие ее в «безопасном» направлении (обычно со стороны сотворившего!).Стена твориться увеличением размера от ярда, либо кусочками. При добавлении нового сегмента к ослабевшей Стене, новый сегмент принимает Стойкость «слабейшего звена». Единственный способ «починить» ослабленную Стену – создать ее заново.Стена 4 ярда в высоту, так что возможно творить  через нее с достаточного возвышения. Более высокие стены можно сотворить пропорциональным увеличением энергии (удвоенная для удвоенной высоты и т.д.).Длительность: 1 минута.Стоимость: 2 за ярдовый фрагмент , столько же на поддержание. Стена также может быть горизонтальной, как «потолок» или «пол»; каждая единица энергии покрывает 2 клетки боевой карты.Требования: Щит от заклинаний.ПредметСтена от заклинаний может быть постоянной за 100-кратную стоимость. Маги часто покрывают таким образом окна и люк и. «Постоянная» стена не слабеет от пробивания.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/1 yard wall</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M124</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">spell shield</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 456px; left: 128px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Sense Observation</name><name-loc>Почуять наблюдение</name-loc><spell version="2">
+		<name>Sense Observation</name>
+		<name-loc>Почуять наблюдение</name-loc>
+		<description-loc>ОбластноеСообщает заклинателю о том, что за областью ведётся магическое или обычное наблюдение. Проводится быстрое состязание: ИН(IQ) шпиона или эффективное умение сотворившего Информационное заклинание (Слежка, Искатель, Хрустальный шар или заклинания с названием, начинающимся на «Чуять»…) против эффективного умения заклинателя, творящего Почуять наблюдение; если заклинатель выигрывает, ему становится известно, что за областью следят. Критический успех (в состязании) может дать намёк кто или что наблюдает за областью. Если заклинатель попытается найти наблюдателя, значение успеха при состязании может быть добавлено как бонус к броску Искателя, максимальный бонус -  5 (что нейтрализует штраф -5 за отсутствие чего-либо связанного с искомым человеком). Другой возможный вариант развития событий – сотворить Контрзаклинание на шпионящее заклинание; модификаторы больших расстояний не применяются, но налагается штраф -5 за отсутствие субъекта. Почуять наблюдение также можно наложить на живое существо; в этом случае заклинатель может сделать так, чтобы в случае подслушивания оповещался объект, а не он.Длительность: 1 час.Базовая стоимость: 1, при сотворении на живое существо – 3. Половина поддержка.Время сотворения: 5 секунд.Требования: Почуять опасность или Защита от наблюдения.Предмет(а) Палочка, посох или украшение. Энергостоимость создания:300. (б) Украшение или одежда. Действуют всегда. Предупреждает лишь надевшего. Энергостоимость создания:1.500.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1 or 3</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M167</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">sense danger</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">scryguard</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 456px; left: 248px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Simple Illusion</name><name-loc>Простая иллюзия</name-loc><spell version="2">
+		<name>Simple Illusion</name>
+		<name-loc>Простая иллюзия</name-loc>
+		<description-loc>ОбластноеСоздаёт исключительно визуальный образ, видимый всем, кто может видеть место назначения заклинания. Это может быть как единичный предмет, так и целое зрелище. Если заклинатель сконцентрируется, образ может двигаться в другую область или изменять форму или размеры, вплоть до занятия всей области действия. Любое разумное существо может развеять заклинание «неверием» в образ — выполнить манёвр Концентрация и сделать успешный бросок Воли(Will). Иллюзия развеется автоматически от первой же атаки, любого заклинания, кроме Контроля иллюзии, или прикосновения любого разумного существа.Длительность: 1 минута.Базовая стоимость: 1 на сотворение. Половина на поддержание.Требования: Заклинатель должен быть зрячим и иметь ИН(IQ) не менее 11.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M95</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<advantage_prereq has="no">
+				<name compare="starts with">blind</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<attribute_prereq has="yes" which="iq" compare="at least">11</attribute_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 420px; left: 464px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Lend Energy</name><name-loc>Передать энергию</name-loc><spell version="2">
+		<name>Lend Energy</name>
+		<name-loc>Передать энергию</name-loc>
+		<description-loc>ОбычноеВосстанавливает потерянные Единицы Усталости объекта из энергии, затраченной заклинателем. Не может увеличить ЕУ(FP) объекта  выше его обычного максимума.Стоимость: Любое количество; потраченная энергия перейдет объекту как восстановленные ЕУ(FP) (т.е. если заклинатель потратит 5 энергии, объект восстановит 5 ЕУ(FP)). Стоимость не уменьшается с уровнем умения.Требования: Магичность(Magery) 1 или Эмпатия (B51)ПредметПосох, палочка или украшение. Энергостоимость создания: 100.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/pt</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M89</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="no">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (healing)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<advantage_prereq has="yes">
+				<name compare="is">empathy</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 420px; left: 584px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Powerstone</name><name-loc>Энергокамень</name-loc><spell version="2">
+		<name>Powerstone</name>
+		<name-loc>Энергокамень</name-loc>
+		<description-loc>Наложение чарВливает ману в объект для последующего использования магом. Традиционным объектом этого заклинания являются драгоценные камни (именно из-за этого «Энергокамень» - это общее слово для объектов содержащих в себе ману), но в принципе можно использовать любой предмет. Любой маг, прикоснувшись к энергокамню, может использовать любое количество или всю энергию из него для сотворения заклинания вместо энергии из своего тела.У каждого энергокамня есть «емкость». Это максимальное количество энергии которое он может содержать. Так как маг может использовать только один энергокамень за раз, то большой большой энергокамень полезнее чем пригоршня маленьких. Большой энергокамень можно использовать для сотворения большого заклинания; с помощью нескольких маленьких можно использовать по одному для поддержания заклинания, однако их нельзя использовать все за один раз.Энергокамни перезаряжаются после использования, поглощая ману из окружающей среды. Скорость перезарядки зависит от уровня маны в данной местности:Локальный уровень маныСкорость перезарядкиНет НетНизкий 1 очко в неделюНормальный 1 очко в деньВысокий 1 очко в 12 часовОчень высокий 1 очко в 6 часовЭнергокамень не перезаряжается, если находится ближе чем шесть футов от большего энергокамня. Камни одинакового размера делят доступную ману и перезаряжаются медленнее. Этот прискорбный факт означает, что владелец нескольких энергокамней должен оставлять их вне своего поля зрения для перезарядки.Энергокамень зачаровывается на один шаг за раз. Когда заклиание Жнергокамень сотворяется в первый раз, на выходе получается незаряженный энергокамень емкостью 1. Каждое последующее сотворение заклинания увеличивает его емкость еще на 1. Таким образом 15 сотворений создаст энергокамень емкостью 15. Но учтите, что при увеличения количества сотворений растет шанс критического провала. Для 15 это будет уже шанс 1 из 4 того, что выпадет критический провал и уничтожит камень. Для 60 успешных сотворений этот шанс будет уже 2 из 3!Далее, каждый обычный провал накладывает на камень некоторую магическую «причуду». Таким образом, можно работать месяцами ио получить на выходе камень на 20 энергии который воняет рыбой и который можно использовать только по средам... Из-за этого большие камни без особыз недостатков дороже чем другие с такой же силой. Причуды энергокамней устанавливаются ИМ и их можно использоваться как инструмент для балансировки кампании. Большинство из них будут необычными, произвольными ограничениями того, как энекгокамень перезаряжается (например, только в ванночке с кровью летучих мышей) или того, как камень может быть использован (например только для заклинаний огня; только зеленоглазой девственницей; никем в шляпе). Тяжелые причуды затрагивают пользователя камня (например, делая его немым на час после использования)Заклинатель знает когда его заклинание не удалось, но не знает какую именно причуду получил камень. Это можно определить с помощью Анализа Магии. Два провала подряд означают что данный камень нельзя больше увеличивать.Энергокамень можно сделать из любого объекта. Тем не менее, намного проще зачаровать объект соответствующей стоимости. Энергетическая стоимость Энергокамня   учетверяется если зачаровываемый предмет дешевле чем $10*P^2   $40*P, где P — целевая емкость камня. Это одна из причин популярности драгоценностей: дорогой камень компактен и долговечен.Энергокамень не заряжен сразу после создания (если он уже содержит энергию, эта энергия не затрагивается заклинанием для увеличения емкости). Энергию из Энергокамня нельзя использовать для зачарования этого же камня — Энергокамень не может помочь зачаровать себя самого!Энергостоимость каждого зачарования: 20.Требование: Наложение чар«Выделенные» ЭнергокамниЕсли Энергокамень встраивается в предмет перед зачарованием этого предмета, он становится частью магической вещи. Теперь это «выделенный» энергокамень. Использующий вещь, может забирать энергию из него — но только для сотворения заклинаний с помощью или через этот предмет.Если убрать выделенный энергокамень из предмета, он автоматически сломан и теряет чары, но сам камень остается целым и снова становится «обычным» энергокамнем. (Конечно, если энергокамень встроен в предмет каким-либо способом — например часть магического кольца — может потребоваться успешный бросок умения что бы вытащив не повредить его).Преимущество выделенного энергокамня в том, что его энергия, будучи специально направлена, используется вдвое эффективнее. Одноочковый энергокамень  дает две единицы энергии (но все еще перезаряжается по одной в день в области нормальной маны).«Эксклюзивные» ЭнергокамниМожно сделать предмет с энергокамнями так, что только встроенные энергокамни могут питать его. Это делается точно так же как и для выделенных энергокамней, но энегия этих камней в три раза эффективнее — то есть одноочковый эксклюзивный энергокамень дает 3 очка энергии, но предмет бесполезен до тех пор пока камень не перезарядится.Энергокамни одной школыЭта вариация следующая обычным правилам Энергокамней. Энергокамень одной школы зачарован таким образом, что может давать энергию только для заклинаний одной конкретной школы. Такие энергокамни нельзя делать выделенными или эксклюзивными.Преимущество энергокамней одной школы в том, что для каждого зачарования требуется тольк 12 едеиниц энергии, а не 20.</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>20</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>Varies</casting_time>
+		<duration>Permanent</duration>
+		<reference>M69</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block>
+</div>

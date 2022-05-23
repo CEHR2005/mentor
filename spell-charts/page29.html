@@ -1,0 +1,852 @@
+<block style="top: 79px; left: 191px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Seek Plant</name><name-loc>Поиск растения</name-loc><spell version="2">
+		<name>Seek Plant</name>
+		<name-loc>Поиск растения</name-loc>
+		<description-loc>ИнформационноеСообщает магу примерное расстояние и направление до ближайшего растущего растения, или одного особого типа растения. Используются Модификаторы больших расстояний (M14). Любые из известных растений могут быть исключены из поиска, если заклинатель упоминает их до сотворения.Стоимость: 2.ПредметПосох, палочка, украшение. Энергостоимость создания: 50.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M161</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+	</spell></block><block style="top: 151px; left: 191px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Identify Plant</name><name-loc>Определить растение</name-loc><spell version="2">
+		<name>Identify Plant</name>
+		<name-loc>Определить растение</name-loc>
+		<description-loc>ИнформационноеЗаклинание определяет тип и вид какого-либо одного растения. Оно также дает основную информацию о нем (съедобное, ядовитое, и т.д.). Успешное сотворение этого заклинания дает  3 к умениям Натуралист (Naturalist) или Знахарь (Physician) для определения лекарственных или других специальных свойств растения.Стоимость: 2.Требование: Поиск растений.ПредметПосох, палочка. Энергостоимость создания: 200.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M161</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">seek plant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 235px; left: 191px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Heal Plant</name><name-loc>Исцеление растений.</name-loc><spell version="2">
+		<name>Heal Plant</name>
+		<name-loc>Исцеление растений.</name-loc>
+		<description-loc>ОбластноеИсцеляет зараженные, поврежденные, больные растения в области. Растения должны быть еще живы для срабатывания заклинания.Длительность: Постоянно.Базовая стоимость: 3. Деревья больше саженцев, требуют радиус, по крайней мере, 3 ярда.Время сотворения: 1 минута.Требования: Определить растение.ПредметПалочка. Предмет должен касаться растения. Энергостоимость создания: 400.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 Min</casting_time>
+		<duration>Permanent</duration>
+		<reference>M161</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">identify plant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 319px; left: 191px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Hide Path</name><name-loc>Скрыть следы</name-loc><spell version="2">
+		<name>Hide Path</name>
+		<name-loc>Скрыть следы</name-loc>
+		<description-loc>ОбычнаяПозволяет заклинателю и другим существам размером с человека (вплоть до пяти), или одному заклинателю верхом, пройти сквозь траву, подлесок, или джунгли не оставляя каких-либо следов. Любая попытка выследить на этом скрытом пути производится со штрафом -8!Длительность: 1 минута.Стоимость: 2 сотворение. 1 поддержка.Требования: Исцеление растений.ПредметПлащ из растительного материала. Энергостоимость создания: 300.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M162</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">Heal Plant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 403px; left: 191px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Walk Through Plants</name><name-loc>Проходить сквозь растения</name-loc><spell version="2">
+		<name>Walk Through Plants</name>
+		<name-loc>Проходить сквозь растения</name-loc>
+		<description-loc>ОбычноеПозволяет объекту пройти через траву, подлесок, большой лес или джунгли, без каких-либо помех от растительности. Он может путешествовать как по голой земле (нормальное движение); растения раздвигаются в стороны, позволяя объекту пройти, и затем становятся на место.Заклинание затрудняет проследить за целью, давая штраф от -1 до -8, в зависимости от толщины местной растительности. Если против объекта используется Заросли, проводите быстрое состязание магических умений каждую секунду.Длительность: 1 минута.Стоимость: 3 сотворение. 1 поддержка.Требования: Скрыть следы и Формировать растение.ПредметПлащ из растительного материала. Энергостоимость создания: 400.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M163</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">hide path</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shape plant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 475px; left: 191px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Walk Through Wood</name><name-loc>Проходить сквозь дерево</name-loc><spell version="2">
+		<name>Walk Through Wood</name>
+		<name-loc>Проходить сквозь дерево</name-loc>
+		<description-loc>ОбычноеПозволяет объекту пройти через массивное дерево (живое или мертвое) как сквозь воздух. Он не открывает проход чтобы другие могли последовать, ни показывает что находится на другой стороне…Объект должен задержать дыхание, т.к. заклинание не дает воздуха!Если заклинание закончится прежде, чем объект окажется на открытом воздухе, он будет погружен в дерево. Это не наносит автоматического вреда, но объект задохнется (B436), если не сможет выбраться.Длительность: 1 секунда.Стоимость: 3 сотворение. 2 поддержкаТребования: Проходить сквозь растения.ПредметПлащ из растительного материала. Энергостоимость создания: 500.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 sec</duration>
+		<reference>M164</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">walk through plants</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 547px; left: 191px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Arboreal Immurement</name><name-loc>Замуровать в дереве</name-loc><spell version="2">
+		<name>Arboreal Immurement</name>
+		<name-loc>Замуровать в дереве</name-loc>
+		<description-loc>Обычное; сопротивление ЗД(HT)Аналог Захоронения, но вместо земли объект заключается в дерево. Объект мгновенно поглощается ближайшим деревом, достаточно большим, чтобы вместить его. Объект погружается в клинический сон  (как в заклинании Приостановить жизнь; см M94) в крошечной цилиндрической камере, внутри дерева, пока не будет вырублен из дерева или до отмены заклинания.Маг, сотворивший Замуровать в дереве на себя, может решить остаться в сознании, но это глупо без воздуха!Модификаторы: Применяется модификатор расстояния (M14) для расстояния от объекта до ближайшего дерева, достаточного по размеру, чтобы поглотить объект.Длительность: Не определена.Стоимость: 8 на сотворение. 5 для отмены Древесного заточения.Время сотворения: 3 секунды.Требования: Магичность(Magery) 2 and Проходить сквозь дерево.ПредметПосох или палочка. Предмет должен быть деревянным, и работает только с деревьями этой породы деревьев. Используется только магами; предмет должен касаться объекта. Энергостоимость создания: 1000.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>8</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>Indefinite</duration>
+		<reference>M165</reference>
+		<notes>Costs 5 to reverse an Arboreal Immurement</notes>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (plant)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">walk through wood</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 235px; left: 71px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Shape Plant</name><name-loc>Формировать растение</name-loc><spell version="2">
+		<name>Shape Plant</name>
+		<name-loc>Формировать растение</name-loc>
+		<description-loc>ОбычнаяПозволяет руками лепить и формовать растения и растительный материал.Заклинание дает  2 к умениям Плотник и Художник (Деревообработка), или позволяет заклинателю работать без каких-либо средств со штрафом -1. Это полезно для строительства дома и создания мебели, ремонта щитов и снаряжения, и устранения деревянных препятствий. Также это может быть использовано на оружие врага в бою, нанося 2d повреждения деревянному оружию; смотри Удары по оружию (B400) для подробной информации об уроне оружию.Длительность: 1 минута.Стоимость: 3 сотворение. 1 поддержка. Двойная цена, если материал недолговечный.Время сотворения: 10 секунд.Требования: Определить растение.ПредметПерчатка из растительного материала. Энергостоимость создания: 500.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M161</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">identify plant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 319px; left: 11px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Pollen Cloud</name><name-loc>Облако пыльцы</name-loc><spell version="2">
+		<name>Pollen Cloud</name>
+		<name-loc>Облако пыльцы</name-loc>
+		<description-loc>Областное. Сопротивление по ЗД(HT).Облако пыльцы заполняет область; все кто находятся в нем, начинают чихать, плакать и кашлять. Все жертвы получают штраф -2 к ЛВ(DX), пока находятся в облаке и до 3d ходов после. Скорость распыления зависит от области и наличия ветра; в помещении оно длится пока действует заклинание, а на открытом воздухе в ветреный день может продолжаться только 10 секунд или около того.Длительность: 5 минут или меньше.Базовая стоимость: 1. Не поддерживается.Требования: Рост растений.ПредметПосох, палочка, украшение. Энергостоимость создания: 100.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>5 min#</duration>
+		<melee_weapon>
+			<damage>Cough/Sneeze</damage>
+			<usage>Area</usage>
+			<reach>Special</reach>
+			<parry>No</parry>
+		</melee_weapon>
+		<reference>M162</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape plant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 379px; left: 11px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Shape Earth</name><name-loc>Формировать землю</name-loc><spell version="2">
+		<name>Shape Earth</name>
+		<name-loc>Формировать землю</name-loc>
+		<description-loc>ОбычноеДвигает землю, и придаёт ей любую форму. Если форма стабильна (например, холм), она навсегда сохранится после того, как её придали. Нестабильная форма (например, колонна или стена) держится, только пока действует заклинание – никакой концентрации не требуется –, а потом обрушивается. Может потребоваться бросок Архитектуры, чтобы создать стабильную форму.Земля, которую двигают этим заклинанием, передвигается с Движением 2; камень передвигается с Движением 1. Этим нельзя никому причинить вред, кроме как натечь на неподвижного человека и засыпать его. Если земля движется к человеку, чтобы его засыпать – или из-под него, чтобы сделать яму – он может нормально передвигаться в следующий свой ход, чтобы убежать. Он пойман, только если не сделал этого.Любой, засыпанный неплотной землёй, может попытаться выкопаться. Позволен один бросок в секунду с СЛ(ST)-4. Мастер может сделать этот бросок сложнее, если жертву засыпало более чем двумя кубическими ярдами земли. Жертва может задерживать дыхание (см. Задержка дыхания, B251), но велик риск задохнуться (см. Удушение, B436). Жертва, погребённая под камнем может задержать дыхание, но если у неё нет приспособлений, позволяющих пробиться сквозь сплошной камень, шансов выбраться мало.Длительность: 1 минутаСтоимость: 1 за кубический ярд формируемой земли (минимум 2). Двойная стоимость для каменя; шестикратная для резаного или обработанного камня, например стены. Нелегко сделать собственную дверь в замок.Требуется: Искать землю.ПредметПосох, жезл или украшение, или копательный инструмент. Энергостоимость создания: 200 (500 для предмета, формирующего камень).</description-loc>
+		<college>Earth</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/25 cu ft</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M50</reference>
+		<categories>
+			<category>Earth</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">seek earth</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 319px; left: 431px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Sense Danger</name><name-loc>Почуять опасность</name-loc><spell version="2">
+		<name>Sense Danger</name>
+		<name-loc>Почуять опасность</name-loc>
+		<description-loc>ИнформационноеСообщает заклинателю, есть ли поблизости непосредственная опасность; также может сообщить об отдалённой опасности, если она приближается. Если времени до беды осталось около минуты, ощущается природа опасности; если не больше пяти минут, то появляется только дурное предчувствие (более точное предчувствие возможно только при критическом успехе).Длительность: мгновенная.Стоимость: 3.Требования: Почуять врагов или Чувство опасности.ПредметПалочка, посох или украшение. Энергостоимость создания:400.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M166</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">sense foes</name>
+			</spell_prereq>
+			<advantage_prereq has="yes">
+				<name compare="is">danger sense</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 535px; left: 503px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Create Earth</name><name-loc>Создать землю</name-loc><spell version="2">
+		<name>Create Earth</name>
+		<name-loc>Создать землю</name-loc>
+		<description-loc>ОбычноеПозволяет создать хорошую, твёрдую землю там, где её раньше не было. Земля должна быть создана в контакте с поверхностью, а не висящей в воздухе или плавающей в море!Длительность: навсегда.Стоимость: 2 за кубический ярд, чтобы создать землю из ничего (минимум 2); 1 за кубический ярд, чтобы сделать из грязи хорошую, твёрдую землю (минимум 1).Требуется: Землю в камень.ПредметПосох или жезл. Энергостоимость создания: 500.</description-loc>
+		<college>Earth</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/25 cu ft</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M51</reference>
+		<categories>
+			<category>Earth</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">earth to stone</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 835px; left: 251px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Shape Water</name><name-loc>Формировать воду</name-loc><spell version="2">
+		<name>Shape Water</name>
+		<name-loc>Формировать воду</name-loc>
+		<description-loc>ОбычноеПридаёт воде (включая лёд или пар) любую форму, и даже двигает её. После того, как форма придана, вода удерживает её без дальнейшего сосредоточения, пока заклинание не закончится. Вода, которую двигают этим заклинанием, передвигается с Движением 3.Полезная форма – стена воды, как преграда огненным атакам – 20 галлонов создают стену в 2 ярда высотой и 1 ярд шириной. Она остановит Огненный шар и обычный огонь.Длительность: 1 минута.Стоимость: 1 за 20 сформированных галлонов. Столько же на поддержку.Время сотворения: 2 секунды.Требование: Создать воду.ПредметПосох, жезл или украшение. Энергостоимость создания: 400.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1#</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M185</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 463px; left: 11px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>False Tracks</name><name-loc>Ложные следы</name-loc><spell version="2">
+		<name>False Tracks</name>
+		<name-loc>Ложные следы</name-loc>
+		<description-loc>Обычное. Сопротивление по Воле(Will).Объект оставляет следы похожие на следы животного или другого существа. Нежалающий этого объект сопротивляется по Воле(Will). Быстрое состязание между охотником (Следопыт) и заклинателем (Натуралист) (или его умение заклинания, что меньше) определяет смог ли заклинатель обмануть охотника.Длительность: 1 минута.Цена: 2 сотворение. 1 поддержание.Требования: Формировать растение и Формировать землю.ПредметОбувь. Предмет должен содержать изображение животного или того, чьи следы должен создавать. Энергостоимость создания: 300.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M163</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape earth</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shape plant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 595px; left: 11px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Rain of Nuts</name><name-loc>Дождь орехов</name-loc><spell version="2">
+		<name>Rain of Nuts</name>
+		<name-loc>Дождь орехов</name-loc>
+		<description-loc>ОбластноеВ указанной области выпадает дождь из орехов, исходящий от близлежащих деревьев, как если бы они были заполнены сумасшедшими белками. Шумный ливень барабанит о шлемы, жалит открытые участки кожи, и препятствует дистанционным атакам. Любые персонажи в области получают штраф -1 к любым задачам, требующим концентрации или умениям, включая боевые и колдовство. Также есть дополнительный штраф к видимости от -1 до -8 ярдов расстояния, применимые к дистанционным атакам и броскам Зрения. Маг может выбрать, область, где нет эффекта от заклинания, фокусируя «гнев» леса на врагах.Это заклинание может быть сотворено снаружи, в лесу. Оно не будет работать в глухую зиму, или в редком лесу. В зависимости от видов деревьев, орехи могут оказаться съедобными.Человеческие маги редко используют это заклинание (большинство считают, это ниже своего достоинства), но разновидности лесных жителей и природных духов, используют его для того, чтобы выгнать захватчиков из их лесов.Длительность: 1 минута.Базовая стоимость: 1/10 на сотворение. Столько же на поддержание. За двойную стоимость, заклинатель может удвоить эффект заклинания (штраф -2 к умениям и -1 штрафа на 4 ярда видимости), если Мастер соглашается с тем, что леса являются достаточно плотные и дикие.Требования: Магичность(Magery) 1 и по крайней мере шесть заклинаний Растений, включая Формировать растение.ПредметПосох или палочка. Используется только магами. Энергостоимость создания: 500.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1 per 10 yds</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M165</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape plant</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="is">plant</college>
+				<quantity compare="at least">5</quantity>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (plant)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 667px; left: 71px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Plant Vision</name><name-loc>Видеть сквозь растения</name-loc><spell version="2">
+		<name>Plant Vision</name>
+		<name-loc>Видеть сквозь растения</name-loc>
+		<description-loc>ОбычноеЗаклинание позволяет видеть сквозь растительность, чтобы найти заросшие здания, скрытых врагов, и т.д. Зачарованные природные растения становятся прозрачными для заклинателя. Магические растения, мертвые деревья, и деревянные конструкции – нет.Это также заклинание Знаний.Длительность: 30 секунд.Стоимость: 1 за 10 ярдов дистанции (100 ярдов максимум). Та же стоимость поддержки.Длительность: 30 секунд.Требования: Рост растений.ПредметЛюбой. Энергостоимость создания: 300.</description-loc>
+		<college>Plant/Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1 per 10 yards</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>30 sec</duration>
+		<reference>M162</reference>
+		<categories>
+			<category>Knowledge</category>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape plant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 487px; left: 311px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Plant Sense</name><name-loc>Восприятие растений</name-loc><spell version="2">
+		<name>Plant Sense</name>
+		<name-loc>Восприятие растений</name-loc>
+		<description-loc>Обычное; Сопротивление по умению Скрыть следы.Объект видит и слышит мельчайшие детали известные растениям вокруг него – такие как нарушения вызванные прошедшими или спрятавшимися созданиями. Это заклинание дает   4 к умению Следопыт,  2 ко всем броскам Чувств, и способность обнаруживать невидимые или магически скрытые создания с нормальным броском Чувств. Работает только в области с густым покровом растительности (джунгли, лес, и т.д.); может работать с половинным эффектом (без возможности обнаружить невидимые или магически скрытые создания) в местности с редкой растительностьюДлительность: 1 минута.Стоимость: 3 сотворение. 2 поддержание.Требования: Лесное предупреждение и Скрыть следы.ПредметПосох или статуэтка. Энергостоимость создания: 500.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M163</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">forest warning</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">hide path</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 403px; left: 371px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Forest Warning</name><name-loc>Лесное предупреждение</name-loc><spell version="2">
+		<name>Forest Warning</name>
+		<name-loc>Лесное предупреждение</name-loc>
+		<description-loc>ОбластноеТак же как и Соловей (M167), но работает в области с растениями.Длительность: 10 часов.Базовая стоимость: 1/2 (минимум 2). Такая же стоимость поддержки.Требования: Чувство опасности или четыре заклинания Растений.ПредметМожет быть сотворено навсегда на область или растения. Энергостоимость создания: 100 на ярд радиуса.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>10 hours</duration>
+		<reference>M162</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="no">
+			<advantage_prereq has="yes">
+				<name compare="is">Sense Danger</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<spell_prereq has="yes">
+				<college compare="is">plant</college>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 571px; left: 311px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Plant Control</name><name-loc>Контроль растений</name-loc><spell version="2">
+		<name>Plant Control</name>
+		<name-loc>Контроль растений</name-loc>
+		<description-loc>Обычное; сопротивление по Воле(Will)Контролировать действия одного большого растения (любого размера) или группы небольших - от одного до 100 фунтов . Возможно, только если растение может начать двигаться самопроизвольно. Требуется концентрация. Это заклинание не будет работать с умными растениями (ИН(IQ) 6 и выше). Учитывайте, что такое заклинание дает возможность использовать умения Всадник, Ментальный наездник,  Вселение в зверя и схожие умения над созданными растениями. Контроль растений сопротивляется умению Анимировать растение.Длительность: 1 минута.Стоимость: 3 сотворение. Половина на поддержание.Требования: Восприятие растений.ПредметПосох, палочка или статуэтка. Энергостоимость создания: 600 (контроль любого типа растений).</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M164</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">plant sense</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 643px; left: 371px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Plant Speech</name><name-loc>Разговор с растениями</name-loc><spell version="2">
+		<name>Plant Speech</name>
+		<name-loc>Разговор с растениями</name-loc>
+		<description-loc>Обычное«Общение» с растениями в самой элементарной форме (полу-телепатически; маг должен говорить вслух). Чем старше растение, тем больше информации оно может дать. Например, трава может сказать кто ходил по ней недавно (в течении дня), в то время как вековой дуб, может вспомнить детали средства передвижения, одежды, запаха… Разумные растения могут вести более содержательный разговор.Длительность: 1 минута. Каждая минута позволяет задать один вопрос и получить один ответ.Стоимость: 3 сотворение. 2 поддержку.Требования: Магичность(Magery) 1 и Восприятие растений.ПредметПосох. Энергостоимость создания: 750 для объекта, который будет разговаривать с одним конкретным видом, 2.000 для разговора с любыми растениями.Растительные Мета-черты (Plant Meta-Traits)Тело из дерева: Ваше тело сделано из дерева. Базовая скорость -1[-20]; Подъемная СЛ(ST)  5[15]; Тупой Коготь [3]; СП(DR) 2 (полу-разрушающийся, -20%); Не дышит [20]; Иммунитет к Метаболическим угрозам [30]; Устойчивость к ранениям (Однородный) [40]; Беспомощный [-20] и Находится под воздействием заклинаний Растений [0]. 76 очков.Тело из слизи: Ваше тело состоит из органической слизи например морская водоросль или плесень. Амфибия [10]; Не дышит [20]; Иммунитет к Метаболическим угрозам [30]; Устойчивость к ранениям (Однородный) [40]; Плохо пахнет [-10]; Неприятный голос [-10]; Беспозвоночный [-20]; Находится под влиянием заклинаний Растений [0]. 60 очков.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M164</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (plant)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">plant sense</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 319px; left: 563px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Plant Growth</name><name-loc>Рост растений</name-loc><spell version="2">
+		<name>Plant Growth</name>
+		<name-loc>Рост растений</name-loc>
+		<description-loc>ОбластноеЗаклинание вызывает эквивалент одного месяца роста в одну минуту. Деревья изменяются лишь незначительно, в то время как сорняки растут чрезвычайно. Полезно для садоводства (после удаления всех сорняков!), и посева.Длительность: 1 минута.Базовая стоимость: 3 сотворение. 2 поддержка.Время сотворения: 10 секунд.Требования: Исцеление растений.ПредметПосох или палочка. Энергостоимость создания: 300.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M162</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">heal plant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 319px; left: 683px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Bless Plant</name><name-loc>Благословить растения</name-loc><spell version="2">
+		<name>Bless Plant</name>
+		<name-loc>Благословить растения</name-loc>
+		<description-loc>ОбластноеЗаставляет растения в области эффекта расти быстрее и сильнее, чем в обычный период. Урожайность в области эффекта удваивается.Длительность: один урожай или сезон.Базовая стоимость: 1. Что бы заклинание подействовало, растения должны полностью находиться в области эффекта.Время сотворения: 5 минут.Требования: Исцеление растений.ПредметПалочка. Используется только магами. Энергостоимость создания: 500.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1 minimum</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>5 min</casting_time>
+		<duration>1 Crop or Season</duration>
+		<reference>M161</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">heal plant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 403px; left: 503px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Blight</name><name-loc>Увядание</name-loc><spell version="2">
+		<name>Blight</name>
+		<name-loc>Увядание</name-loc>
+		<description-loc>ОбластноеЗаставляет растения в области эффекта расти более медленно и более слабо, чем в обычный сезон. Урожай в области сокращается вдвое. Незамедлительные последствия включают потерю листьев, плодов и цветов; пострадавшие растения восстанавливаются (частично) на следующий день.Длительность: Один урожай или сезон.Базовая стоимость: 1. Что бы заклинание подействовало, растения должны полностью находиться в области эффекта.Время сотворения: 5 минут.Требования: Рост растений.ПредметПалочка. Используется только магами. Энергостоимость создания: 500.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1 minimum</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>5 min</casting_time>
+		<duration>1 Crop or Season</duration>
+		<reference>M162</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">plant growth</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 475px; left: 503px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Wither Plant</name><name-loc>Иссушение растений</name-loc><spell version="2">
+		<name>Wither Plant</name>
+		<name-loc>Иссушение растений</name-loc>
+		<description-loc>Областное; Сопротивление по ЗД(HT).Заставляет растения в области чахнуть и погибать. Заклинатель может выбрать на своё усмотрение эффект – заклинание затрагивает одно растение или все, но одного вида. Любым крупным растениям или живым, необходимо назначить ЗД(HT), чтобы они могли сопротивляться этому заклинанию – смотри Анимировать растение.Длительность: Постоянно.Базовая стоимость: 2.Время сотворения: 10 секунд.Требования: Увядание.ПредметПосох или палочка мертвого дерева. Энергостоимость создания: 200.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M163</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">blight</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 619px; left: 503px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Purify Earth</name><name-loc>Очистить землю</name-loc><spell version="2">
+		<name>Purify Earth</name>
+		<name-loc>Очистить землю</name-loc>
+		<description-loc>ОбластноеУдаляет посторонние предметы, яды и вредные элементы из почвы, делая её пригодной для выращивания растений. Это заклинание также помогает от любых недостатков в составе почвы. Маленькие сторонние предметы (монеты, гвозди) находящиеся под землёй уничтожаются; средние (мечи, артиллерийские снаряды, сундуки, статуэтки) «всплывают» на поверхность. Большие предметы (гробы, стены, большие статуи) приводят к провалу заклинания, но заклинатель получает общее представление о причине провала.Это также заклинание школы Растений.Длительность: навсегда.Базовая стоимость: 2. Удвоенная за плохую почву, как каменистые равнины или пустыня.Время сотворения: 30 секунд.Требования:  Создать землю и Рост Растений.ПредметПосох. Энергостоимость создания: 400.Песчаная буря</description-loc>
+		<college>Plant/Earth</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>30 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M54</reference>
+		<notes>Double casting cost in poor or rocky soil/desert</notes>
+		<categories>
+			<category>Earth</category>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create earth</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">plant growth</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 403px; left: 623px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Blossom</name><name-loc>Цветение</name-loc><spell version="2">
+		<name>Blossom</name>
+		<name-loc>Цветение</name-loc>
+		<description-loc>ОбластноеЗаставляет растения в области, цвести и плодоносить в течении одного часа действия заклинания. Что бы заклинание подействовало, растения должны полностью находиться в области эффекта. Растения остаются в таком состоянии в течении 24 часов, в конце которых, они вступают в конечную фазу – листья деревьев возвращают свой цвет, цветы и плоды опадают, и т.д. Заклинание может быть ограничено одним растением или определенным типом растений.Длительность: 1 час.Базовая стоимость: 2. Не поддерживается.Время сотворения: 5 минут.Требования: Рост растений.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>5 min</casting_time>
+		<duration>1 hour</duration>
+		<reference>M162</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">plant growth</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 487px; left: 623px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Conceal</name><name-loc>Скрыть в зарослях</name-loc><spell version="2">
+		<name>Conceal</name>
+		<name-loc>Скрыть в зарослях</name-loc>
+		<description-loc>ОбластноеЗаставляет местную растительность быстро расти вокруг какого-либо объекта в области, скрывая его от случайного поиска. Каждый, кто ищет в этой области, должен провести быстрое состязание (Зрение против вашего заклинания), чтобы заметить скрытый объект. Большие объекты могут быть замаскированы под «холмы», заросшие травой или мхом.Длительность: 1 час.Базовая стоимость: В лесу или джунглях (или под водой), 1 сотворение; на равнинах или в саванне, 2; в тундре, 3. Такая же цена на поддержку.Время сотворения: 4 секунды.Требования: Рост растений.ПредметПосох или палочка. Энергостоимость создания: 250.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>4 sec</casting_time>
+		<duration>1 hour</duration>
+		<reference>M162</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+	</spell></block><block style="top: 571px; left: 623px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Create Plants</name><name-loc>Создать растение</name-loc><spell version="2">
+		<name>Create Plants</name>
+		<name-loc>Создать растение</name-loc>
+		<description-loc>ОбластноеСоздает растительность там, где ничего не росло раньше. Выживет ли эта растительность, зависит от района.Длительность: Постоянно.Базовая стоимость: 4 для травы; 8 для кустарников; 15 для деревьев.Время сотворения: 1 секунда на единицу энергии.Требования: Магичность(Magery) 1 и Рост растений.ПредметПалочка. Используется только магами. Предмет должен касаться области, где должны появиться растения. Энергостоимость создания: 1.000.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>Varies</casting_time>
+		<duration>Permanent</duration>
+		<reference>M163</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">plant growth</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (plant)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 655px; left: 623px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Rejuvenate Plant</name><name-loc>Омолодить растение</name-loc><spell version="2">
+		<name>Rejuvenate Plant</name>
+		<name-loc>Омолодить растение</name-loc>
+		<description-loc>ОбычноеЗаставляет мертвое, умирающее или старое растение, внезапно наполнится жизнью.Столы (или луки!) прорастают листьями, старое плодовое дерево, приносит плоды еще раз, и т.д. Сможет ли растение поддерживать жизнестойкость, зависит от непосредственного окружения. Например, обновленный стул будет разрушаться медленно, если его ножки пустят корни в питательной почве.Длительность: Постоянно.Стоимость: 3.Требования: Магичность(Magery) 1 и Рост растений.ПредметПосох. Используется только магами; предмет должен касаться объекта. Энергостоимость создания: 700.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M163</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">plant growth</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (plant)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 727px; left: 563px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Tangle Growth</name><name-loc>Заросли</name-loc><spell version="2">
+		<name>Tangle Growth</name>
+		<name-loc>Заросли</name-loc>
+		<description-loc>ОбластноеЗаставляет траву или другие растения в области вырасти и стать препятствием (движение сокращается вдвое, -2 к уклонению), или кусты и низкие деревья вырастают в препятствие, которое нужно миновать. Рассматривать такое препятствие как 3” деревянный забор (B558) на метр ширины. Любой в области где твориться заклинание может передвигаться с нормальной скорость в следующий ход; если он не покинул область, то препятствие появляется перед ним.  Длительность: 1 минута.Базовая стоимость: 1 для травы, 2 для кустов и деревьев. Половина для поддержки.Время сотворения: 2 секунды.Требования: Рост растений.ПредметОбласть может быть постоянно «сложной».Энергостоимость создания 20 на ярд радиуса для травы, или 30 на ярд радиуса для деревьев и кустов.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1 to 2#</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>2</casting_time>
+		<duration>1 min</duration>
+		<reference>M162</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">plant growth</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 847px; left: 419px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Animate Plant</name><name-loc>Анимировать растение</name-loc><spell version="2">
+		<name>Animate Plant</name>
+		<name-loc>Анимировать растение</name-loc>
+		<description-loc>ОбычноеПодобно Анимации (M150), исключая что только одно растение может быть анимировано. Анимированное растение получает ЗД(HT) равное удвоенному количеству энергии, вложенному в заклинание. Следует помнить, что древесные растения часто имеют высокий показатель СП(DR) и могут напугать противника.Разумное растение (ИН(IQ) 6 и выше) не может быть анимировано.Длительность: 1 минута.Стоимость: 3 сотворение. Половина на поддержание. Двойная стоимость, если растение должно вытянуться с земли и пройтись на своих корнях! (Движение 4)Время сотворения: 5 секунд.Требования: Семь заклинаний Растений.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>5 secs</casting_time>
+		<duration>1 min</duration>
+		<reference>M164</reference>
+		<notes>Double casting cost if plant moves</notes>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="is">plant</college>
+				<quantity compare="at least">7</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 835px; left: 11px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Essential Wood</name><name-loc>Истинное древо</name-loc><spell version="2">
+		<name>Essential Wood</name>
+		<name-loc>Истинное древо</name-loc>
+		<description-loc>ОбычноеПреобразует любую неповрежденную древесину в волшебную эссенцию дерева. Эссенция дерева, в три раза сильнее обычного дерева, и имеет в три раза больше ЗД(HT) и СП(DR), перечисленных на B558, и выдерживает в три раза больше веса. Она трудно воспламеняется огнем (Огнеупорный согласно таблице на B433), но один раз воспламенившись, горит в три раза дольше. Также горит жарче, добавляя дополнительные очки урона на кубик (это также увеличивает тепло Истинного огня!).Рукотворные предметы из дерева, могут быть превращены в аналогичные из Истинного древа; однако живые растения не могут быть преобразованы.Длительность: Постоянно.Стоимость: 8.Время сотворения: 30 секунд.Требования: Шесть заклинаний Растений.ПредметПосох. Используется только магами. Энергостоимость создания: 800.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>8</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>30 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M164</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="is">plant</college>
+				<quantity compare="at least">6</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 835px; left: 131px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Plant Form</name><name-loc>Формировать растение</name-loc><spell version="2">
+		<name>Plant Form</name>
+		<name-loc>Формировать растение</name-loc>
+		<description-loc>ОсобоеПринять форму любого растения или дерева между 1/2 и 5 вашего собственного размера. Одежда исчезает и появляется вновь, когда вы приобретаете свою форму; большое имущество падает на землю, в то время как небольшие вещи (до размера браслета или палочки) могут быть встроены в вашу растительную форму.Заклинатель не может передвигаться, атаковать и т.п., только если растение с этими способностями существует в игровом мире и маг принимает его форму, или если на его форму растения сотворено заклятие Анимировать растение. Заклинатель в форме растения может творить заклинания, если он знает их настолько хорошо, что может обойтись без речи или жеста! Он может нормально слышать, но может не видеть, кроме ощущения самого света и темноты. Он может быть лишен речи.Травмы, полученные в форме растения, переносятся пропорционально. Это означает, например, что для дерева попавшая стрела, все равно, что булавочный укол для человека; здесь необходима гибкость Мастера! Время, проведенное в растительной форме, автоматически подсчитывается как «отдых», только если растение не атакуют. Однако, заклинатель должен делать бросок ИН(IQ) каждый час, находясь в форме растения. Неудачный бросок временно уменьшает его ИН(IQ) на 1. Если ИН(IQ) падает до 5, он остается в форме растения с ИН(IQ) растения, пока кто-то другой не освободит его с помощью Снять проклятие.Длительность: 1 час.Стоимость: 5 сотворение. 2 поддержка.Требования: Магичность(Magery) 1 и шесть заклинаний Растений.ПредметПосох или палочка. Энергостоимость создания: 1.200.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 hour</duration>
+		<reference>M164</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="is">plant</college>
+				<quantity compare="at least">6</quantity>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (plant)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 919px; left: 11px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Body of Wood</name><name-loc>Тело из дерева</name-loc><spell version="2">
+		<name>Body of Wood</name>
+		<name-loc>Тело из дерева</name-loc>
+		<description-loc>Обычное; сопротивление по ЗД(HT)Объект становится подвижной деревянной статуей, временно дайте объекту мета-черту Тело из дерева (см. вставку). Одежда (до 6 фунтов) также становится деревянной, но теряются её любые магические свойства. Объект может по-прежнему говорить, колдовать и т.д.Объект под действием Тело из дерева, может также погрузится в деревянный предмет, если имеет преимущество Проникновение (Дерево) (B75).Длительность: 1 минута. Заклинание истекает, если объект теряет сознание.Стоимость: 7 сотворение. 3 поддержка.Время сотворения: 5 секунд.Требования: Магичность(Magery) 2 и Растительная форма.ПредметПосох, палочка или статуэтка. Действует только на пользователя. Энергостоимость создания: 1.300.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>7</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M165</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">plant form</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (plant)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 919px; left: 251px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Body of Slime</name><name-loc>Тело из слизи</name-loc><spell version="2">
+		<name>Body of Slime</name>
+		<name-loc>Тело из слизи</name-loc>
+		<description-loc>Обычное; сопротивление по ЗД(HT)Водный эквивалент Тело из дерева. Объект становится подвижной массой зеленой слизи – водорослей, озерной тины и другой мерзости которую можно найти в болоте – временно объекту предоставляется мета-черта Тело из слизи (см. вставку). Одежда (до 6 фунтов) также трансформируется, но теряет всякие магические свойства.Длительность: 1 минута. Заклинание истекает, если объект теряет сознание.Стоимость: 6 сотворение. 2 поддержка.Время сотворения: 5 секунд.Требования: Магичность(Magery) 2, Растительная форма, Формировать воду.ПредметПосох, палочка или статуэтка. Влияет только на пользователя. Энергостоимость создания: 1.300.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>6</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M165</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">plant form</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (plant)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 919px; left: 131px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Plant Form Other</name><name-loc>Растительная форма другому (ОС)</name-loc><spell version="2" very_hard="yes">
+		<name>Plant Form Other</name>
+		<name-loc>Растительная форма другому (ОС)</name-loc>
+		<description-loc>Особое; сопротивление по Воле(Will)Как и Растительная форма, но используется на других. Только колдующий или заклинание Снять проклятие может завершить действие заклинания. Потери ИН(IQ) вскоре превратят объект в настоящее растение!Длительность: 1 час.Стоимость: 5 на сотворение. 2 на поддержание.Время сотворения: 30 секунд.Требования: Магичность(Magery) 2 и Растительная форма.ПредметПосох или палочка. Используется только магами; предмет должен касаться объекта. Энергостоимость создания: 3.000.</description-loc>
+		<college>Plant</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>30 sec</casting_time>
+		<duration>1 hour</duration>
+		<reference>M165</reference>
+		<categories>
+			<category>Plant</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">plant form</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (plant)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block>

@@ -1,0 +1,1413 @@
+<block style="top: 168px; left: 502px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Weather Dome</name><name-loc>Погодный купол</name-loc><spell version="2">
+		<name>Weather Dome</name>
+		<name-loc>Погодный купол</name-loc>
+		<description-loc>ОбластноеСоздаёт мерцающий купол, отражающий любую плохую погоду (вплоть до заклинаний Буря включительно, вулканический пепел, дождь из лягушек и даже летающих насекомых!). Наводнения, оползни и другие подобные катастрофы разрушают купол. Под куполом воздух остаётся свежим, а температура- комфортной для заклинателя. Это также заклинание школы Погоды.Длительность: 6 часов.Базовая стоимость: 3 сотворение. 2 поддержание.Требования: Не меньше двух заклинаний из школы каждого элемента (стихии).</description-loc>
+		<college>Protection/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>6 hrs</duration>
+		<reference>M169</reference>
+		<categories>
+			<category>Protection</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">water</college>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">earth</college>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">fire</college>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">air</college>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 168px; left: 382px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Apportation</name><name-loc>Перемещение</name-loc><spell version="2">
+		<name>Apportation</name>
+		<name-loc>Перемещение</name-loc>
+		<description-loc>Обычное; сопротивление по Воле(Will)Позволяет двигать материальные объекты, не прикасаясь к ним. Это заклинание левитирует объект с Движением 1 — недостаточно быстро, чтобы нанести вред. Живые объекты могут сопротивляться Воле(Will)й.Длительность: 1 минута.Энергостоимость: зависит от веса объекта. Столько же поддержание.Вес	Энергостоимостьменее 1 фунта	1до 10 фунтов	2до 50 фунтов	3до 200 фунтов	4каждые дополнительные 100 фунтов	 4Требования: Магичность(Magery) 1.ПредметПосох или палочка. Используется только магами; предмет должен прикасаться или быть направленным на объект. Энергостоимость создания: 900.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M142</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 168px; left: 682px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Purify Air</name><name-loc>Очистка воздуха</name-loc><spell version="2">
+		<name>Purify Air</name>
+		<name-loc>Очистка воздуха</name-loc>
+		<description-loc>ОбластноеУбирает все примеси из воздуха. Это заклинание часто используется для нейтрализации отравляющих газов и ядовитых испарений. Дым можно убирать по частям, но от ядовитых газов лучше избавляться сразу – иначе они могут распространяться уже на очищенное пространство.Может также превратить старый спертый воздух в свежий и пригодный для дыхания. Воздуха в радиусе  ярда достаточно для одного человека в течение 45 минут (если он не занимается тяжелым трудом).Длительность: срабатывает мгновенно, очищает навсегда.Базовая стоимость: 1. Не поддерживается.ПредметПосох, палочка, украшение. Энергостоимость создания: 50.</description-loc>
+		<college>Air</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M23</reference>
+		<categories>
+			<category>Air</category>
+		</categories>
+	</spell></block><block style="top: 240px; left: 130px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Continual Light</name><name-loc>Постоянный свет</name-loc><spell version="2">
+		<name>Continual Light</name>
+		<name-loc>Постоянный свет</name-loc>
+		<description-loc>ОбычноеЗаставляет маленький объект (до 1 фунта или с кулак размером) или маленькую часть большего объекта, излучать белый свет.Длительность: Разная – бросьте 2d для определения количества дней. Не считается «активным» заклинанием. Стоимость: 2 – тусклое лунное свечение, 4 – яркость факела, 6 – яркий дневной свет.Требование: Свет.ПредметЗа 100-кратную энергостоимость  (например, 200 для тусклого свечения, и т.д.) можно любой предмет сделать светящимся навсегда.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2 moon, 4 torch, 6 day</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>2d days</duration>
+		<reference>M110</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">light</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 396px; left: 154px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Spasm</name><name-loc>Спазм</name-loc><spell version="2">
+		<name>Spasm</name>
+		<name-loc>Спазм</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Может быть направлено против любого мускула (c произвольным контролем) объекта. Направленное против руки заставляет объект бросить то, что зажато в руке (обычно это оружие). Если объект в этот момент выполняет пассы для сотворения заклинания, он должен выполнить бросок ЛВ(DX), чтобы продолжить. Изобретательные маги найдут и другие возможности для использования этого заклинания.Длительность: мгновенно.Стоимость: 2. Не поддерживается.Требования: Зуд.Предмет(а) Посох или волшебная палочка; используется только магами. Предмет должен касаться жертвы. Энергостоимость создания: 300. (б) Любой предмет; действует всегда. Владелец должен бросать ЗД(HT) каждый раз, когда делает что-то деликатное (например, взлом замка, произнесение заклинания). При провале владелец получает Спазм. Энергостоимость создания: 100.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M35</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">itch</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 396px; left: 634px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Spell Shield</name><name-loc>Щит от заклинаний</name-loc><spell version="2">
+		<name>Spell Shield</name>
+		<name-loc>Щит от заклинаний</name-loc>
+		<description-loc>Областное; Сопротивление всем заклинаниям, сотворенным через него.Сопротивляется любому заклинанию, сотворенному через него на уровне своей Стойкости   (M10). Действует подобно Стене защиты от наблюдения. Исключение: полностью не влияет на метаемые заклинания, включая брошенные Метнуть заклинание . Если атакующее заклинание выигрывает состязание, оно проходит Щит, уменьшая его Стойкость на 1.  Когда Стойкость опустится до 0, щит рассеивается и не может быть поддержан.Длительность: 1 минута.Базовая стоимость: 3 на сотворение, 2 на поддержание.Требования: Магичность(Magery) 2, Защита от наблюдения, Устойчивость к магии.Предмет(а) Любой контейнер. Он и содержимое защищено Щитом. Энергостоимость создания : 250 за кубический фут (минимум 500). (б) коврик или область пола, защищает людей и предметы стоящие на нем. Энергостоимость создания: 400 за ярд радиуса.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M124</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">scryguard</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">magic resistance</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 480px; left: 670px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Spell Wall</name><name-loc>Защита от заклинаний, стена</name-loc><spell version="2">
+		<name>Spell Wall</name>
+		<name-loc>Защита от заклинаний, стена</name-loc>
+		<description-loc>Обычное. Сопротивление всем заклинаниям, сотворенным сквозь негоСоздает стену антимагии. Стена сопротивляется всем заклинаниям творящимся через нее с одной стороны, определенной заклинателем в момент создания. Также действует подобно Стене защиты от наблюдения. Исключение: полностью не влияет на метаемые заклинания, включая Запущенные. Если Стена проваливает сопротивление проходящему сквозь нее заклинанию, оно пробивает Стену, уменьшая ее стойкость на 1.  При нулевой Стойкости рассеивается. Не сопротивляется и не влияет на заклинания проходящие ее в «безопасном» направлении (обычно со стороны сотворившего!).Стена твориться увеличением размера от ярда, либо кусочками. При добавлении нового сегмента к ослабевшей Стене, новый сегмент принимает Стойкость «слабейшего звена». Единственный способ «починить» ослабленную Стену – создать ее заново.Стена 4 ярда в высоту, так что возможно творить  через нее с достаточного возвышения. Более высокие стены можно сотворить пропорциональным увеличением энергии (удвоенная для удвоенной высоты и т.д.).Длительность: 1 минута.Стоимость: 2 за ярдовый фрагмент , столько же на поддержание. Стена также может быть горизонтальной, как «потолок» или «пол»; каждая единица энергии покрывает 2 клетки боевой карты.Требования: Щит от заклинаний.ПредметСтена от заклинаний может быть постоянной за 100-кратную стоимость. Маги часто покрывают таким образом окна и люк и. «Постоянная» стена не слабеет от пробивания.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/1 yard wall</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M124</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">spell shield</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 480px; left: 442px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Sense Foes</name><name-loc>Почуять врагов</name-loc><spell version="2">
+		<name>Sense Foes</name>
+		<name-loc>Почуять врагов</name-loc>
+		<description-loc>Информационное; ОбластноеПозволяет заклинателю узнать о враждебных намерениях и о степени этой враждебности. Может быть сотворено на персону или область. При сотворении на область будет сообщать лишь присутствие враждебности, но не ее источник.Базовая стоимость: 1 (минимум 2).ПредметПосох, палочка или украшение. Энергостоимость создания: 200.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info/Area</spell_class>
+		<casting_cost>1/area, min 2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M44</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+	</spell></block><block style="top: 576px; left: 382px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Test Food</name><name-loc>Проверить пищу</name-loc><spell version="2">
+		<name>Test Food</name>
+		<name-loc>Проверить пищу</name-loc>
+		<description-loc>ИнформационноеОпределяет, подходит ли субстанция для еды. Заклинание ничего не скажет о вкусе или питательности, но определит яды, опасное гниение или инородные объекты (лезвие во фрукте). Не проверяет наличие магии в еде.Стоимость: 1 за проверку одной порции или бутылки; 3 за всю еду и питье в радиусе 1 ярда.ПредметПосох, палочка или украшение. Энергостоимость создания: 100.</description-loc>
+		<college>Food</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>1 or 3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M77</reference>
+		<categories>
+			<category>Food</category>
+		</categories>
+	</spell></block><block style="top: 636px; left: 670px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Scryguard</name><name-loc>Защита от наблюдения</name-loc><spell version="2">
+		<name>Scryguard</name>
+		<name-loc>Защита от наблюдения</name-loc>
+		<description-loc>Обычное; Сопротивление любым Информационным заклинаниямЛюбое информационное заклинание, сотворяемое на объект, должно выиграть Быстрое состязание с Защитой , чтобы «увидеть» его. Обнаружить Защиту от наблюдения может Определить заклинание.Длительность: 10 часов.Стоимость: 3 на сотворение, 1 на поддержание.Время сотворения: 5 секунд.Требование: Магичность(Magery) 1.ПредметМожно навсегда зачаровать любой предмет, заставив его сопротивляться любой попытке магического обнаружения. Энергостоимость создания: 500; для предметов с МР(SM) больше 0, множитель 1 МР(SM)   .</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>10 hrs</duration>
+		<reference>M121</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 636px; left: 70px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Shape Water</name><name-loc>Формировать воду</name-loc><spell version="2">
+		<name>Shape Water</name>
+		<name-loc>Формировать воду</name-loc>
+		<description-loc>ОбычноеПридаёт воде (включая лёд или пар) любую форму, и даже двигает её. После того, как форма придана, вода удерживает её без дальнейшего сосредоточения, пока заклинание не закончится. Вода, которую двигают этим заклинанием, передвигается с Движением 3.Полезная форма – стена воды, как преграда огненным атакам – 20 галлонов создают стену в 2 ярда высотой и 1 ярд шириной. Она остановит Огненный шар и обычный огонь.Длительность: 1 минута.Стоимость: 1 за 20 сформированных галлонов. Столько же на поддержку.Время сотворения: 2 секунды.Требование: Создать воду.ПредметПосох, жезл или украшение. Энергостоимость создания: 400.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1#</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M185</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 720px; left: 130px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Destroy Water</name><name-loc>Уничтожить воду</name-loc><spell version="2">
+		<name>Destroy Water</name>
+		<name-loc>Уничтожить воду</name-loc>
+		<description-loc>ОбластноеЗаставляет воду (в любой форме) исчезнуть, оставив вместо себя вакуум – или, возможно, пятна сухих примесей. Если кругом есть ещё вода, она поспешит заполнить дыру. Полезна для сушки вещей, спасения утопающих, и т.д. Нельзя использовать в качестве «обезвоживающей» атаки на противника.Длительность: Навсегда.Базовая стоимость: 3. В глубокой воде, область имеет всего 2 ярда в высоту (или глубину). Столько же поддержка.Требование: Создать водуПредметПосох, жезл или украшение. Энергостоимость создания: 300.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M185</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 792px; left: 466px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Teleport</name><name-loc>Телепортация</name-loc><spell version="2" very_hard="yes">
+		<name>Teleport</name>
+		<name-loc>Телепортация</name-loc>
+		<description-loc>ОсобоеМгновенно перемещает заклинателя на другое место. Однако, чем дальше находится это место, тем больше энергии требуется потратить, и тем больше штраф к умению, как указано далее:Обычно можно телепортироваться только на место, на которое вы смотрите, или на место, с которым вы знакомы. Штрафы: -2 за место, которое вы «видели» только через разум или память кого-то еще, или по телевизору; -2 за место, где вы не были больше месяца (кроме, возможно, вашего дома!); и от -1 до -3 за место, которое видели мельком.Это заклинание еще и опасно. Если вы провалите свой бросок на 1, то получите 1d вреда и попадете в точку назначения физически оглушенным (бросок ЗД(HT), чтобы восстановится). Если вы провалите бросок заклинания больше, чем на 1, вы не получаете вреда — но оказываетесь где-то не там. Где именно — решает Мастер! Критический провал этого заклинания может послать заклинателя куда угодно Мастеру — пусть это будет интересно! — и наносит физический вред, пока заклинатель не умрет.Даже успешная телепортация может сбить с толку. Волшебник должен сделать бросок умения Чувства тела (B181), чтобы действовать дальше в ход телепортации. Проваленный бросок означает дезориентацию — никакие действия кроме защиты невозможны на этом ходу. Критический провал означает, что он падает и физически оглушен. Телепортирующийся прибывает в той же самой позе, в которой он был. Он может быть повернутым в другую сторону, но это делает более вероятным то, что он будет дезориентирован по прибытии: -2 чтобы быть направленным в другую сторону, -5 чтобы из вертикального положения принять горизонтальное, или наоборот!Расстояние	Стоимость	УмениеНе более 10 ярдов	3	011-20 ярдов	4	-120-100 ярдов	5	-2101-500 ярдов	6	-3От 501 ярда до 1.99 мили	7	-4От 2 до 9.99 мили	8	-5От 10 до 99.99 мили	9	-6От 100 до 999.99 мили	10	-7Расстояние x10	1	-1Все, что было у вас с собой, вплоть до «тяжелой» нагрузки, перемещается с вами. Вы также можете взять с собой одного человека, держась с ним за руки, если добавленный вес не превышает предел вашей «тяжелой» нагрузки. На проваленном броске, он будет страдать от тех же побочных эффектов, что и вы.Это также заклинание Врат.Требования: или ИН(IQ) не ниже 13 и хотя бы одно заклинание из 10 разных школ, или Полет сокола.ПредметПосох или палочка; используется только магами. Энергостоимость создания: 3.000. Предмет, берущий носителя в одно заранее определенное место, имеет энергостоимость создания 2.000; заклинатель должен знать это место очень хорошо.</description-loc>
+		<college>Gate/Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M147</reference>
+		<categories>
+			<category>Gate</category>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">hawk flight</name>
+			</spell_prereq>
+			<prereq_list all="yes">
+				<attribute_prereq has="yes" which="iq" compare="at least">13</attribute_prereq>
+				<spell_prereq has="yes">
+					<college_count compare="at least">10</college_count>
+				</spell_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 252px; left: 682px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Atmosphere Dome</name><name-loc>Атмосферный купол</name-loc><spell version="2">
+		<name>Atmosphere Dome</name>
+		<name-loc>Атмосферный купол</name-loc>
+		<description-loc>ОбластноеСоздаёт мерцающий купол, избирательно проницаемый для различных газов. Он может как выводить определённые газы, так и втягивать. После создания купола, заклинатель определяет желаемое состояние атмосферы; когда желаемое состояние каждого газа достигнуто, купол прекращает влияние на эти газы, пока обстановка внутри него не изменится. Этим заклинанием можно задавать не только состав атмосферы под куполом, но её давление; так что можно менять состав атмосферы, давление атмосферы, или и то и другое. Если какого-то газа на планете нет, то купол не сможет его выработать, он только собирает газы из окружающей атмосферы. Это также заклинание школы Воздуха.Длительность: 6 часов.Базовая стоимость: 4 сотворение. Половина поддержка.Требования: Очистить воздух и Погодный купол.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>6 hrs</duration>
+		<reference>M169</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">purify air</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">weather dome</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 312px; left: 622px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Resist Pressure</name><name-loc>Сопротивление давлению</name-loc><spell version="2">
+		<name>Resist Pressure</name>
+		<name-loc>Сопротивление давлению</name-loc>
+		<description-loc>ОбычноеЗащищает объект от воздействия давления выше или ниже его родного, действует подобно Устойчивости к давлению (B77) или Устойчивость к вакууму (B96). Заклинатель должен выбрать получаемое преимущество и его уровень на время действия заклинания. Это заклинание больше всего подходит для научно-направленных сеттингов; если же пространство между планетами заполнено обычным воздухом, а дно океана не сильно отличается от дна реки, толку от этого заклинания немного. Сопротивление давлению не даёт возможность дышать в ставшем теперь не смертельном окружении; для таких целей пригодятся заклинания Дышать водой и Задержать дыхание.Длительность: 1 минута.Стоимость: Зависит от выбранного преимущества.ПреимуществоЭнергостоимостьУстойчивость к давлению 12 сотворение; 1 поддержкаУстойчивость к давлению 23 сотворение; 2 поддержкаУстойчивость к давлению 35 сотворение; 3 поддержкаУстойчивость к вакууму3 сотворение; 2 поддержкаТребования: Погодный купол.ПредметПалочка, посох или украшение. Энергостоимость создания: 900.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M169</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">weather dome</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 636px; left: 466px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Sense Danger</name><name-loc>Почуять опасность</name-loc><spell version="2">
+		<name>Sense Danger</name>
+		<name-loc>Почуять опасность</name-loc>
+		<description-loc>ИнформационноеСообщает заклинателю, есть ли поблизости непосредственная опасность; также может сообщить об отдалённой опасности, если она приближается. Если времени до беды осталось около минуты, ощущается природа опасности; если не больше пяти минут, то появляется только дурное предчувствие (более точное предчувствие возможно только при критическом успехе).Длительность: мгновенная.Стоимость: 3.Требования: Почуять врагов или Чувство опасности.ПредметПалочка, посох или украшение. Энергостоимость создания:400.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M166</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">sense foes</name>
+			</spell_prereq>
+			<advantage_prereq has="yes">
+				<name compare="is">danger sense</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 720px; left: 406px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Detect Poison</name><name-loc>Обнаружить яд</name-loc><spell version="2">
+		<name>Detect Poison</name>
+		<name-loc>Обнаружить яд</name-loc>
+		<description-loc>Областное; ИнформационноеОпределяет наличие ядов и даёт бонус  2 к последующему броску Ядов для определения конкретного вещества. Заклинатель может по желанию исключить некоторые яды из поиска перед сотворением заклинания (например, чтобы искать именно нервнопаралитические яды, или исключить «лёгкие» яды вроде алкоголя). Это также заклинание школы Лечения.Базовая стоимость: 2.Время сотворения: 2 секунды.Требования: Почуять опасность или Проверить пищу.ПредметПосох, палочка или украшение. Энергостоимость создания: 250.</description-loc>
+		<college>Healing/Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area/Info</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>-</duration>
+		<reference>M166</reference>
+		<categories>
+			<category>Healing</category>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">sense danger</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">test food</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 720px; left: 526px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Watchdog</name><name-loc>Сторожевой пёс</name-loc><spell version="2">
+		<name>Watchdog</name>
+		<name-loc>Сторожевой пёс</name-loc>
+		<description-loc>ОбластноеПри наложении на область, это заклинание предупреждает заклинателя о любом проходящем через эту область с враждебными намерениями. Если заклинатель спал, то он просыпается без ошеломления. После срабатывания заклинание не рассеивается, и продолжает функционировать до окончания времени действия.Длительность: 10 часов.Базовая стоимость: 1 сотворение. 1 поддержание.Время сотворения: 10 секунд.Требования: Почуять опасность.ПредметМожет быть наложено на область пола или земли, или на ковёр. Энергостоимость создания: 200 за каждый ярд радиуса.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>10 hrs</duration>
+		<reference>M167</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sense danger</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 720px; left: 646px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Sense Observation</name><name-loc>Почуять наблюдение</name-loc><spell version="2">
+		<name>Sense Observation</name>
+		<name-loc>Почуять наблюдение</name-loc>
+		<description-loc>ОбластноеСообщает заклинателю о том, что за областью ведётся магическое или обычное наблюдение. Проводится быстрое состязание: ИН(IQ) шпиона или эффективное умение сотворившего Информационное заклинание (Слежка, Искатель, Хрустальный шар или заклинания с названием, начинающимся на «Чуять»…) против эффективного умения заклинателя, творящего Почуять наблюдение; если заклинатель выигрывает, ему становится известно, что за областью следят. Критический успех (в состязании) может дать намёк кто или что наблюдает за областью. Если заклинатель попытается найти наблюдателя, значение успеха при состязании может быть добавлено как бонус к броску Искателя, максимальный бонус -  5 (что нейтрализует штраф -5 за отсутствие чего-либо связанного с искомым человеком). Другой возможный вариант развития событий – сотворить Контрзаклинание на шпионящее заклинание; модификаторы больших расстояний не применяются, но налагается штраф -5 за отсутствие субъекта. Почуять наблюдение также можно наложить на живое существо; в этом случае заклинатель может сделать так, чтобы в случае подслушивания оповещался объект, а не он.Длительность: 1 час.Базовая стоимость: 1, при сотворении на живое существо – 3. Половина поддержка.Время сотворения: 5 секунд.Требования: Почуять опасность или Защита от наблюдения.Предмет(а) Палочка, посох или украшение. Энергостоимость создания:300. (б) Украшение или одежда. Действуют всегда. Предупреждает лишь надевшего. Энергостоимость создания:1.500.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1 or 3</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M167</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">sense danger</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">scryguard</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 780px; left: 586px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Nightingale</name><name-loc>Соловей</name-loc><spell version="2">
+		<name>Nightingale</name>
+		<name-loc>Соловей</name-loc>
+		<description-loc>ОбластноеДелает «шумными» дверь или область пола. Дверь громко скрипнет при открывании, клочок земли покроется слоем трескучих веточек, когда по нему кто-нибудь пойдёт, половицы заскрипят ит.д. Эти звуки автоматически сообщат о тревоге заклинателю, если он в зоне слышимости, и возможно, других находящихся вблизи (сделайте бросок ИН(IQ) если недалеко есть другие источники шума).Длительность: 10 часов.Базовая стоимость: 2 сотворение. 2 поддержание.Требования: Почуять опасность.ПредметМожет быть наложено на область пола или земли, или на ковёр. Энергостоимость создания: 100 за каждый ярд радиуса.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>10 hrs</duration>
+		<reference>M167</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sense danger</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 252px; left: 10px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Deflect Missile</name><name-loc>Отклонить снаряд</name-loc><spell version="2">
+		<name>Deflect Missile</name>
+		<name-loc>Отклонить снаряд</name-loc>
+		<description-loc>БлокирующееОтклоняет один снаряд, который вот-вот попадет в объект — включая все Метательные заклинания. Игротехнически считается парированием. Если объектом заклинания является не маг, применяются модификаторы дистанций как для Стандартного заклинания. Отраженные атаки не теряют поражающей силы и могут ранить кого-то рядом. Это также заклинание Защиты и Предупреждения.Стоимость: 1.Требования: Перемещение.</description-loc>
+		<college>Movement/Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M143</reference>
+		<categories>
+			<category>Movement</category>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 324px; left: 10px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Catch Missile</name><name-loc>Поймать снаряд</name-loc><spell version="2">
+		<name>Catch Missile</name>
+		<name-loc>Поймать снаряд</name-loc>
+		<description-loc>БлокирующееЗаклинатель ловит один летящий в него снаряд. Умение бросается с модификатором, зависящим от типа снаряда. Сотворение заклинания считается манёвром Парирование. После поимки снаряд считается неготовым. Чтобы поймать метательные заклинания используйте Поймать заклинание.Тип снарядаШтрафБольшое метательное оружие (топоры, дротики ит.д.)  4Метательные ножи  2Стрелы 0Иглы духовой трубки, арбалетные болты -5Пули, сверхзвуковые снаряды НевозможноСтоимость: 2.Требования: Отклонить снаряд.ПредметПерчатки. Энергостоимость создания: 300.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M168</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">deflect missile</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 396px; left: 10px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Return Missile</name><name-loc>Обратить снаряд</name-loc><spell version="2">
+		<name>Return Missile</name>
+		<name-loc>Обратить снаряд</name-loc>
+		<description-loc>БлокирующееЗаставляет один снаряд (в том числе метательное заклинание), летевший в объект, развернуться и лететь в атакующего. Если бросок атакующего «для попадания» удачен, он попадает сам в себя; если нет – он видит, как снаряд летит обратно в него, но не попадает. Считается, что заклинатель выполняет манёвр Парирование. Если объектом заклинания является не заклинатель, применяются обычные модификаторы расстояний.Стоимость: 2.Требования: Поймать снаряд.ПредметУкрашение, оружие или щит. Энергостоимость создания: 400.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M168</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">catch missile</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 252px; left: 502px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Force Dome</name><name-loc>Силовой купол</name-loc><spell version="2">
+		<name>Force Dome</name>
+		<name-loc>Силовой купол</name-loc>
+		<description-loc>ОбластноеПохоже на Погодный купол, но Силовой купол отталкивает любую физическую силу или метательное заклинание. Ничто не может войти, кроме небольшого количества света чтобы видеть (внутри постоянные сумерки).Также ничто не может покинуть купол кроме света, а если заклинатель захочет, то и свет не сможет выйти. Однако, магия и магические существа и предметы могут проходить сквозь купол как будто бы его и нет. После сотворения Силовой купол ещё формируется в течении секунды, так что у всех, находящихся внутри области заклинания есть один ход чтобы её покинуть.Длительность: 10 минут.Базовая стоимость: 3 сотворение. 2 поддержание.Требования: Магичность(Magery) 1, Погодный купол и Перемещение.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>10 min</duration>
+		<reference>M170</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (protection)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">weather dome</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 336px; left: 502px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Force Wall</name><name-loc>Силовая стена</name-loc><spell version="2">
+		<name>Force Wall</name>
+		<name-loc>Силовая стена</name-loc>
+		<description-loc>ОбычноеСоздаёт мерцающий барьер, который не могут пересечь физические силы и метательные заклинания. Проникнуть могут только свет и неметательные заклинания. Высота Силовой стены – 4 ярда. Повышение стены возможно пропорциональным повышением стоимости (удвойте стоимость для удвоения высоты и т.д.).Длительность: 10 минут.Стоимость: 2 очка за каждый ярд длины на сотворение. Столько же поддержка.Требования: Силовой купол.Предмет(а) Посох. Используется только магами. Энергостоимость создания: 300. (б) За 100-кратную стоимость Силовая стена может быть установлена навсегда.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/yd</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>10 min</duration>
+		<reference>M170</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">force dome</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 408px; left: 418px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Reverse Missiles</name><name-loc>Обратить снаряды</name-loc><spell version="2">
+		<name>Reverse Missiles</name>
+		<name-loc>Обратить снаряды</name-loc>
+		<description-loc>ОбычноеОбращает любую дистанционную атаку (в том числе метательные заклинания) в атакующего. Если бросок атакующего «для попадания» удачен, он попадает сам в себя; если нет – он видит, как снаряд летит обратно в него, но не попадает. Эффект в игре – снаряд отскакивает от объекта заклинания и летит прямо в атакующего.Длительность: 1 минута.Стоимость: 7 сотворение. 3 поддержание.Требования: Щит от снарядов или Силовой купол.ПредметПалочка, посох, оружие или броня. Энергостоимость создания:600.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>7</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M168</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">missile shield</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">force dome</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 324px; left: 382px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Missile Shield</name><name-loc>Щит от снарядов</name-loc><spell version="2">
+		<name>Missile Shield</name>
+		<name-loc>Щит от снарядов</name-loc>
+		<description-loc>ОбычноеНемного отклоняет снаряды, ровно настолько, чтобы они пролетели мимо, игровой смысл в том, что летящие по прямой снаряды промахиваются мимо объекта. Это заклинание действует на все виды снарядов – стрелы, пули, падающие камни, шрапнель, метательные заклинания, торты – на все. Мастер должен как можно дольше скрывать заклинание от врагов заклинателя, сообщая, что они просто промахнулись!Длительность: 1 минута.Стоимость: 5 сотворение. 2 поддержание.Требования: Щит или Перемещение.ПредметПалочка, посох, оружие или броня. Энергостоимость создания: 400.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M168</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shield</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 324px; left: 274px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Armor</name><name-loc>Броня</name-loc><spell version="2">
+		<name>Armor</name>
+		<name-loc>Броня</name-loc>
+		<description-loc>ОбычноеУвеличивает Сопротивление повреждениям живых существ. СП(DR), данное этим заклинанием, считается СП(DR), данным бронёй, и складывается с СП(DR), данным бронёй.Длительность: 1 минута.Стоимость: 2 за каждое очко СП(DR), вплоть до  5 СП(DR) (10 очков). Половина поддержка.Требования: Щит.Предмет:Это заклинание не накладывается на предметы, но СП(DR) вашей брони может повысить  на 1-5 очков чары Укрепить (M66).</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2 per DR</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M167</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">shield</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 240px; left: 274px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Shield</name><name-loc>Щит</name-loc><spell version="2">
+		<name>Shield</name>
+		<name-loc>Щит</name-loc>
+		<description-loc>ОбычноеСоздаёт перед объектом магический щит, который движется вместе с объектом и защищает его от атак спереди. ПЗ(DB), данная этим заклинанием, складывается с ПЗ(DB), даваемым щитом, но не даёт возможность блокировать, если щита нет. ПЗ(DB) данные Щитом и Блоком (M166) не складываются.Длительность: 1 минута.Стоимость: 2 за каждое очко ПЗ(DB), вплоть до  4 ПЗ(DB) (8 очков). Половина поддержка.Требования: Магичность(Magery) 2.Предмет:Это заклинание не накладывается на предметы, но вашу ПЗ(DB) может повысить на 1-5 очков броня с чарой Отражение (M67).</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2 per DB</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M167</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="no">
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="contains">one college (protection)
+				<level compare="at least">2</level>
+			</notes></advantage_prereq>
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="is anything"></notes>
+				<level compare="at least">2</level>
+			</advantage_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 324px; left: 154px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Shade</name><name-loc>Тень</name-loc><spell version="2">
+		<name>Shade</name>
+		<name-loc>Тень</name-loc>
+		<description-loc>ОбычноеНаводит тень на объект. Тень предотвращает солнечные ожоги и даёт некоторую защиту от жары (снижает температуру на 10°F, если солнце – серьёзный источник жары). Эффект – как от невидимого зонтика. Это заклинание также относится к школе заклинаний Света и тьмы.Длительность: 1 час.Стоимость: 1 сотворение. Половина поддержка.Время сотворения: 10 секунд.Требования: Постоянный свет или  Щит.ПредметПосох или украшение. Действует лишь на носящего. Энергостоимость создания:  100.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M169</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">continual light</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shield</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 480px; left: 118px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Turn Blade</name><name-loc>Повернуть клинок</name-loc><spell version="2">
+		<name>Turn Blade</name>
+		<name-loc>Повернуть клинок</name-loc>
+		<description-loc>БлокирующееПоворачивает летящий к цели клинок в руке атакующего, меня тип повреждения с режущего на дробящий. Кроме того оружие становится неготовым. Хорошо только против клинкового оружия, бесполезно против копья, булавы или зубов и когтей животного. Это заклинание не считается активной защитой и может быть дополнено обычными Парированием, Блоком или Уклонением. Если заклинание налагается не на заклинателя, то применяются модификаторы больших расстояний, исходя из расстояния между заклинателем и атакующим.Стоимость: 1.Требования: Перемещение или Спазм.ПредметБраслет или что-то ещё надеваемое на руку. Энергостоимость создания: 300.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M167</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">spasm</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 563px; left: 118px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Bladeturning</name><name-loc>Отворот клинков</name-loc><spell version="2">
+		<name>Bladeturning</name>
+		<name-loc>Отворот клинков</name-loc>
+		<description-loc>ОбычноеДлительная версия Повернуть клинок – все клинки, атакующие объект поворачиваются, наносят повреждения дробящего типа и становятся неготовыми. При каждой атаке клинком, для того чтобы узнать подействовало ли заклинание, проводите быстрое состязание между ЛВ(DX) атакующего и эффективным умением заклинателя. Как и Повернуть клинок, это заклинание полезно только против клинков. Заметьте, что это заклинание, в отличие от Повернуть клинок, творится на атакуемого, а не на атакующего.Длительность: 1 минута.Стоимость: 2. Столько же на поддержание.Требования: Щит или Повернуть клинок.ПредметПалочка, посох, украшение, оружие или броня. Энергостоимость создания: 300.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M168</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">shield</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">turn blade</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 720px; left: 10px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Umbrella</name><name-loc>Зонтик</name-loc><spell version="2">
+		<name>Umbrella</name>
+		<name-loc>Зонтик</name-loc>
+		<description-loc>ОбычноеПозволяет ходить, при любых лёгких осадках, не намокая. Видно, как невидимый «щит» отклоняет капли. Зонтик не работает против сильного (или магического) града, дождей из камней или лягушек, и т.д.Также относится к школе Защиты и предупреждения.Длительность: 10 минут.Стоимость: 1.Время сотворения: 2 секунды.Требование: Формировать воду или Щит.ПредметУкрашение. Действует всегда. Действует только на носителя. Энергостоимость создания: 100.</description-loc>
+		<college>Protection/Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>10 min</duration>
+		<reference>M185</reference>
+		<categories>
+			<category>Protection</category>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">shield</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shape water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 804px; left: 46px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Resist Water</name><name-loc>Сопротивление воде</name-loc><spell version="2">
+		<name>Resist Water</name>
+		<name-loc>Сопротивление воде</name-loc>
+		<description-loc>ОбычноеОбъект (личность, существо или предмет) и всё, что он несет, становится неуязвимым к воздействию сырости, оставаясь сухим, даже если будучи полностью погружённым в воду. Это заклинание защищает от сырости пара или льда, но не от обжигания или замерзания! Оно также защищает от подобных воде веществ; например, разлитый напиток не оставляет пятен. Его защита от кислоты ограничена – объект получает 2 СП(DR) от кислоты или погружения в неё.Также относится к школе Защиты и предупреждения.Длительность: 1 минута.Стоимость: 2 сотворение. 1 поддержка.Требования: или Формировать воду и Уничтожить воду, или Зонтик.Предмет(а) Посох, жезл или украшение. Действует постоянно. Действует только на носителя. Стоимость создания: 200 энергии и изумруд на 200$. (б) Посох, жезл или украшение. стоимость создания 400 энергии и изумруд на 200$.</description-loc>
+		<college>Protection/Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M186</reference>
+		<categories>
+			<category>Protection</category>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">shape water</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">umbrella</name>
+				</spell_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">destroy water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 480px; left: 562px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Utter Dome</name><name-loc>Сплошной купол</name-loc><spell version="2">
+		<name>Utter Dome</name>
+		<name-loc>Сплошной купол</name-loc>
+		<description-loc>ОбластноеЗащищает от физических и магических атак; имеет эффект как при совмещении Силового купола и Пентаграммы. Однако, внутри купола не могут быть призваны никакие существа, и нет возможности досрочного развеивания. Заклинание может быть развеяно Контрзаклинанием или Рассеять магию. Сопротивляется любой попытке взглянуть сквозь него магией. Как и Силовой купол, Сплошной купол после сотворения формируется ещё секунду.Длительность: 1 минута.Базовая стоимость: 6 сотворение. 4 поддержание.Требования: Магичность(Magery) 2, Силовой купол и Щит от заклинаний.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>6</casting_cost>
+		<maintenance_cost>4</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M170</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">force dome</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">spell shield</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (protection)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 564px; left: 610px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Utter Wall</name><name-loc>Сплошная стена</name-loc><spell version="2">
+		<name>Utter Wall</name>
+		<name-loc>Сплошная стена</name-loc>
+		<description-loc>Обычное; Сопротивление по пробивающимся заклинаниямПодобна силовой стене, но защищает от физических и магических атак; эффект как при совмещении Силовой стены и Защита от заклинаний, стена.Длительность: 1 минута.Стоимость: 4 за каждый ярд длины на сотворение. Столько же поддержка.Требования: Сплошной купол и Защита от заклинаний, стена.Предмет(а) Посох. Используется только магами. Энергостоимость создания: 1.000. (б) За 100-кратную стоимость Сплошная стена может быть установлена навсегда.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4/yd</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M170</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">utter dome</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">spell wall</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 804px; left: 298px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Protect Animal</name><name-loc>Защитить животных</name-loc><spell version="2">
+		<name>Protect Animal</name>
+		<name-loc>Защитить животных</name-loc>
+		<description-loc>ОбластноеСотворённое на область, это заклинание защищает всех животных определенного типа пока они находятся в ней. Попытки повредить им наткнутся на сопротивление невидимых защитников. Защищённые животные получают ПЗ(DB)  3 и СП(DR) 5. Это также заклинание школы Предупреждения и защиты.Длительность: 1 минута.Базовая стоимость: 1. Столько же на поддержание.Время на сотворение: 1 минута.Требования: Броня, Сторожевой пёс и три заклинания школы Животных.</description-loc>
+		<college>Animal</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 min</duration>
+		<reference>M32</reference>
+		<categories>
+			<category>Animal</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="is">animal</college>
+				<quantity compare="at least">3</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">watchdog</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">armor</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 876px; left: 550px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Teleport Shield</name><name-loc>Щит телепортации</name-loc><spell version="2">
+		<name>Teleport Shield</name>
+		<name-loc>Щит телепортации</name-loc>
+		<description-loc>ОбластноеЛюбая попытка сотворения Телепортация (или Мерцание) для попадания или покидания зоны действия заклинания получает штраф -5.Проваленная попытка телепортации внутрь зоны имеет обычный эффект. Проваленная попытка телепортации наружу зоны удерживает пытающегося на месте, физически оглушённым и потратившим всю энергию на попытку! Удвоение энергетической стоимости повысит штраф до -10, а утроение – до -15! Это заклинание действует на заклинания Телепортация, Хронопортация, Планарное смещение, Хроносдвиг и на все их вариации.Это также заклинание школы Врат.Длительность: 1 час.Базовая стоимость: 1/3 на сотворение (минимальный радиус 3 ярда). Столько же поддержка.Время сотворения: 10 секунд.Требования: Сторожевой пёс и или Щит от заклинаний или Телепортация.ПредметМожет быть наложено на область пола или земли, или на ковёр или на что-то подобное. Энергостоимость создания: 50 за каждый ярд радиуса.</description-loc>
+		<college>Gate/Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1#</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M170</reference>
+		<categories>
+			<category>Gate</category>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">watchdog</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">spell shield</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">teleport</name>
+				</spell_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 888px; left: 370px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Mystic Mist</name><name-loc>Таинственный туман</name-loc><spell version="2">
+		<name>Mystic Mist</name>
+		<name-loc>Таинственный туман</name-loc>
+		<description-loc>ОбластноеСоздаёт густой молочный туман, сбивающий с толку всех в него входящих; считается, что нельзя различить ничего дальше 2 ярдов, кроме как при помощи Волшебного зрения. Те, кто находился в области до сотворения заклинания, невосприимчивы к его эффектам; они могут видеть его как тусклое мерцание, но он не сбивает их с толку и не влияет на видимость. Другие же. если у них нет проводника, должны бросать против (ИН(IQ) Устойчивость к магии) каждую секунду, или использовать Волшебное зрение, чтобы не потерять чувство направления и не пойти в случайную выбранную сторону. Чувство направления позволяет избежать этих проблем. Бросок страха совершается при входе в туман и каждые 5 минут в тумане. Любой, проваливший первый бросок страха, войдёт очень неохотно! Опасные животные просто избегают тумана, но, если им придётся войти, они подвергнутся всем эффектам тумана. Находившиеся в тумане до его сотворения получают  1 к броскам защиты, против атаки вошедших в туман; «вошедшие» же получают штраф -1 к броскам защиты, против атаки «находившихся». Это заклинание – отличная защита для лагеря группы. Заклинатель должен сотворить Таинственный туман с собой в центре области. Чем большую область он сможет покрыть тем лучше!Длительность: 10 часов.Базовая стоимость: 1. Столько же поддержка.Время на сотворение: 5 минут.Требования: Магичность(Magery) 1 и Сторожевой пёс или Щит.Предмет(а) Амулет, защищающий надевшего от эффектов Таинственного тумана. Энергостоимость создания: 400. (б) Ходят слухи, что существуют предметы, создающие постоянный Таинственный туман, некоторым образом контролируемый, но больше пока ничего не известно.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>5 min</casting_time>
+		<duration>10 hrs</duration>
+		<reference>M168</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">watchdog</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">shield</name>
+				</spell_prereq>
+			</prereq_list>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (protection)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block>
+<div style="position:absolute; left:800px; top:0px;">
+<block style="top: 167px; left: 118px;" class=""><name>Freedom</name><name-loc>Свобода</name-loc><spell version="2">
+		<name>Freedom</name>
+		<name-loc>Свобода</name-loc>
+		<description-loc>ОбычноеДает премию к броскам умений и атрибутов объекта, направленным на поддержание или восстановление его свободы передвижения. Типичные примеры: Состязания ЛВ(DX) или СЛ(ST), чтобы избежать захвата, освободиться от него, или для проскальзывания; использования Побега или Взлома; перепрыгивание и перелезание через удерживающие стены; разгибание прутьев или выламывание дверей; сопротивление заклинаниям Клей, Левитация или Паралич и т.д.Это заклинание не помогает Маскировке, Изменению внешности или Скрытности; заклинаниям Контроля разума; уклонению от снарядов; использованию Взлома, Лазания и Прыжков, чтобы попасть в какое-нибудь место, и так далее. Решение за Мастером.Это также заклинание Защиты и Предупреждения.Длительность: 1 минута.Стоимость: 2 за единицу премии (максимум  5). Столько же поддержание.Требования: не менее трех заклинаний каждой из школ Контроля тела, Движения и Защиты и предупреждения.ПредметУкрашение или одежда. Включен постоянно. Владельца становится очень трудно удержать, держать в цепях или за решеткой... Редкий предмет! Энергостоимость создания: 500 за единицу премии.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2 per 1 pt of bonus</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M148</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="is">protection &amp; warning</college>
+				<quantity compare="at least">3</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">movement</college>
+				<quantity compare="at least">3</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">body control</college>
+				<quantity compare="at least">3</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 179px; left: 574px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Resist Sound</name><name-loc>Сопротивление звуку</name-loc><spell version="2">
+		<name>Resist Sound</name>
+		<name-loc>Сопротивление звуку</name-loc>
+		<description-loc>ОбычноеОбъект (личность, существо и предмет) и всё, что он несёт, становится иммунным к звуковым эффектам: Гром их не оглушит, звуковое оружие не причинит вреда, Струя звука не оглушит ит.д. Однако, шум всё ещё может отвлекать. Заклинание популярно на высоких ТУ. Это заклинание также относится к школе Заклинаний защиты и предупреждения.Длительность: 1 минута.Стоимость: 2 на сотворение. 1 на поддержание.Требования: Не меньше 4 заклинаний звука.Предмет(а) Любой. Действует лишь на надевшего. Энергостоимость создания: 800. (б) Палочка, посох или украшение. Энергосоимость создания: 1,200.</description-loc>
+		<college>Protection/Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M173</reference>
+		<categories>
+			<category>Protection</category>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">sound</college>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 347px; left: 406px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Iron Arm</name><name-loc>Железная рука</name-loc><spell version="2">
+		<name>Iron Arm</name>
+		<name-loc>Железная рука</name-loc>
+		<description-loc>БлокирующееОстанавливает рукой удар. Если заклинание успешно, рука моментально становится крепче стали и автоматически парирует атакующее оружие без вреда заклинателю. Если заклинание проваливается, заклинатель парирует удар голой рукой! Это заклинание может парировать лишь те атаки, которые можно парировать мечом, и в бою считается манёвром Парирование.Стоимость: 1.Требования: Сопротивление боли и ЛВ(DX) не ниже 11.ПредметБраслет или что-то другое, надеваемое на руку. Энергостоимость создания: 600.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M169</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">resist pain</name>
+			</spell_prereq>
+			<attribute_prereq has="yes" which="dx" compare="at least">11</attribute_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 263px; left: 346px;" class="other-college"><name>Resist Pain</name><name-loc>Сопротивление боли</name-loc><spell version="2">
+		<name>Resist Pain</name>
+		<name-loc>Сопротивление боли</name-loc>
+		<description-loc>Обычное Субъект становится временно невосприимчив к боли. Он может игнорировать действие заклинания Спазм и других заклинаний, вызывающих боль. Он не может быть оглушен в бою, не получает штрафа за болевой шок при ранении и не теряет скорость при снижении ЕЖ(HP) ниже 1/3. Не дает защиты собственно от ран – только от боли.Длительность: 1 минута.Стоимость: 4 создание. 2 поддержание.Требования: Магичность(Magery) 2 и Боль.ПредметЛюбой предмет; действует только на владельца. Энергостоимость создания: 800.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M38</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (body control)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">pain</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 347px; left: 10px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Remove Contagion</name><name-loc>Дезинфицировать</name-loc><spell version="2">
+		<name>Remove Contagion</name>
+		<name-loc>Дезинфицировать</name-loc>
+		<description-loc>ОбластноеОчищает целевую область от заразных болезнетворных агентов  - микробов, духов болезни, зараженного воздуха, и т.д. – делая ее стерильной и дезинфицированной. Может использоваться для чистки и стерилизации чего угодно, от храма болезнепоклонников  до операционной. Не лечит и не облегчает болезни живых существ; служит только для дезинфекции и очистки объектов и поверхностей. Области или объекты очищенные заклинанием, не могут быть источниками инфекции (см. Инфекция, B443) пока не заразятся повторно.Продолжительность: Пока болезнетворные агенты не вернутся в зачищенную область. Базовая стоимость: 3.Время сотворения: 2 секунды.Требование: Разложение, Очистка или Вылечить болезнь.ПредметПалочка или посох, с образом змеи. Предмет должен коснуться объекта . Энергостоимость создания: 400.Прекратить спазмОбычноеОписано в заклинаниях Контроля тела, M35.</description-loc>
+		<college>Healing</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M90</reference>
+		<categories>
+			<category>Healing</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">decay</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">clean</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">cure disease</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 407px; left: 100px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Vigor</name><name-loc>Здравие</name-loc><spell version="2">
+		<name>Vigor</name>
+		<name-loc>Здравие</name-loc>
+		<description-loc>ОбычноеУвеличивает ЗД(HT) объекта. Влияет на Базовую Скорость, ЕУ(FP), способность противостоять заклинаниям и болезням. Заклинатель может увеличить свой показатель ЗД(HT). После окончания действия заклинания объект теряет столько же ЕУ(FP), сколько было добавлено заклинанием. Если ЕУ(FP) субъекта после окончания действия заклинания окажутся отрицательными, то следует отнять по одной ЕЖ(HP) за каждую отрицательную ЕУ(FP). Стоимость заклинания не уменьшается за высокий уровень умения.Длительность: 1 минута.Стоимость: 2 за каждое увеличиваемое очко ЗД(HT) (максимум 5). Столько же поддержание.Требования: Передать жизнь или Хрупкость.Предмет(а) Любой предмет. Всегда включён; увеличивает ЗД(HT) владельца только когда используется. Энергостоимость создания: 1.500 за каждое увеличиваемое очко (максимум 5). (б) Посох или палочка; используется только магами. Предмет должен касаться объекта. Энергостоимость создания: 1.000.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/ HT</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M37</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">lend vitality</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">frailty</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 395px; left: 586px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Create Acid</name><name-loc>Создать кислоту</name-loc><spell version="2">
+		<name>Create Acid</name>
+		<name-loc>Создать кислоту</name-loc>
+		<description-loc>ОбычноеСоздаёт сильный раствор кислоты из ничего. Он может появиться в нескольких формах. Он может появиться в ёмкости (которая должна быть из стекла или какого-то особого камня или металла, чтобы кислота его не разъела), как сфера в воздухе (которая немедленно упадёт), или как плотный туман капель (который наносит вред, как разбрызгивание).Длительность: навсегда, но может быть нейтрализована по мере реакций с предметами и существами. Стоимость: 4 за галлон.Время сотворения: 2 секунды.Требования: Создать воду и Создать землю.ПредметПосох, жезл или украшение. Используется только магами. Энергостоимость создания: 300.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4/gal</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M190</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create earth</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 659px; left: 622px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Mirror</name><name-loc>Зеркало</name-loc><spell version="2">
+		<name>Mirror</name>
+		<name-loc>Зеркало</name-loc>
+		<description-loc>ОбычноеСоздает отражающую поверхность на объекте или саму по себе (в этом случае двухстороннюю). Зеркальная поверхность не обязана быть плоской, например, можно создать «кривое» зеркало. Во вселенной с развитой наукой заклинатели со знанием физики могут создавать параболические отражатели. Несложной кривой хватит для готовки мяса; большую и качественную можно использовать, чтобы плавить свинец, при наличии достаточного освещения солнечным светом под нужным углом. Мастер может предположить, что против живых целей такое зеркало наносит 1 пункт обжигающих повреждений за ярд радиуса зеркала каждые 10 секунд. При зажигании вещей, используйте правила Воспламенения (M72), заменяя указанную энергостоимость размером Зеркала. Толстое дерево загорится от 8-ярдового Зеркала примерно через 10 секунд. Другие варианты использования – на усмотрение Мастера.Длительность: 1 минута.Стоимость: 2. Столько же на поддержание.Требование: Цвета.ПредметПалочка, посох или украшение. Энергостоимость создания: 350; предмет должен содержать крошечное зеркало.</description-loc>
+		<college>Light</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M112</reference>
+		<categories>
+			<category>Light</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">colors</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 659px; left: 490px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Cold</name><name-loc>Охладить</name-loc><spell version="2">
+		<name>Cold</name>
+		<name-loc>Охладить</name-loc>
+		<description-loc>СтандартноеЭто заклинание уменьшает температуру объекта. Многие материалы будут разрушаться при ударе, если будут достаточно охлаждены. Максимальное охлаждение – до абсолютного нуля. За пропорциональное увеличение затрат можно охлаждать быстрее.Длительность, Стоимость и Время сотворения: идентично Нагреть, за исключением того, что каждая минута поддержания заклинания охлаждает предмет на 20°C.Требования: Нагреть.ПредметПосох, палочка или украшение. Энергостоимость создания: 400; предмет должен содержать рубин на $300 и сапфир на $300.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 min</duration>
+		<reference>M74</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">heat</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 659px; left: 358px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Heat</name><name-loc>Нагреть</name-loc><spell version="2">
+		<name>Heat</name>
+		<name-loc>Нагреть</name-loc>
+		<description-loc>СтандартноеЭто заклинание увеличивает температуру объекта. Не создает огня само по себе, однако многие материалы будут загораться при достаточном нагреве. Магу, планирующему частое использование этого заклинания, будет полезно иметь под рукой табличку с температурами плавления и воспламенения. Заклинание может иметь некоторые побочные эффекты. Оно может быть полезным, если вы заперты за решеткой – вы можете ее попытаться расплавить, но жар от кипящего металла может поджарить и вас! (Эти рекомендации используйте лишь для ориентировки – не превращайте игру в физические опыты!)Длительность: 1 минута. За каждую минуту температура поднимается на 20°С. Максимально возможная температура – 2.800°С.Стоимость: 1 за предмет размером с кулак, 2 – куб.ярд, и еще по 2 за каждый кубический ярд объема. Скорость нагревания может быть увеличена: нагрев будет на 40°C в минуту за удвоенную цену, на 60°C – за утроенную, и так далее. Более медленный нагрев при желании возможен, но затрат не снижает. Столько же на поддержание.Время сотворения: 1 минута.Требования: Создать огонь, Формировать огонь.ПредметПосох, палочка или украшение. Энергостоимость создания: 400; предмет должен содержать рубин на $300.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 min</duration>
+		<reference>M74</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create fire</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">shape fire</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 491px; left: 34px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Resist Disease</name><name-loc>Сопротивление болезни</name-loc><spell version="2">
+		<name>Resist Disease</name>
+		<name-loc>Сопротивление болезни</name-loc>
+		<description-loc>ОбычноеНа время действия объект получает иммунитет к болезням, как преимущество Иммунитет к болезням (B80). Также заклинание Защиты и предупреждения.Длительность: 1 часСтоимость: 4 на сотворение; 3 на поддержание.Время сотворения: 10 секунд.Требования: Дезинфицировать или Здравие.Предмета)  Украшение. Всегда включен, носитель имуннен к болезням. Редкий и ценный предмет! Энергостоимость создания: 1.000 за иммунитет от одной заданной болезни; 2.500 за иммунитет ко всем болезням.б) Украшение. Всегда включен; предотвращает распространение любой болезни носителя. «Кандалы  прокаженных», например. Энергостоимость создания:250.</description-loc>
+		<college>Healing/Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M90</reference>
+		<categories>
+			<category>Healing</category>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">remove contagion</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">vigor</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 491px; left: 142px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Resist Poison</name><name-loc>Сопротивление яду</name-loc><spell version="2">
+		<name>Resist Poison</name>
+		<name-loc>Сопротивление яду</name-loc>
+		<description-loc>ОбычноеНа время действия заклинания объект становится неуязвимым к ядам. Для очень стойких ядов это - только задержка неизбежного, так как следы яда могут все еще быть в организме, к концу действия заклинания! Также заклинание Защиты и предупреждения.Длительность: 1 часСтоимость: 4 на сотворение; 3 на поддержание.Время сотворения: 10 секунд.Требования: Здравие.ПредметДрагоценность,  должна иметь картину единорога. Всегда включен; владелец имунен к ядам. Редкий и дорогой предмет! Энергостоимость создания: 500 за иммунитет к конкретному яду, 4.000 за сопротивление всем ядам.</description-loc>
+		<college>Healing/Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 Hour</duration>
+		<reference>M91</reference>
+		<categories>
+			<category>Healing</category>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">vigor</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 731px; left: 82px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Block</name><name-loc>Блок</name-loc><spell version="2">
+		<name>Block</name>
+		<name-loc>Блок</name-loc>
+		<description-loc>БлокирующееМгновенная версия заклинания Щит – увеличивает ПЗ(DB) объекта для одного броска защиты. Эффекты этого заклинания и заклинания Щит не складываются – используйте большее значение.Стоимость: 1 за очко ПЗ(DB) (максимум 5).Требования: Магичность(Magery) 1.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>1 per DB</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M166</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="no">
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="contains">one college (protection)
+				<level compare="at least">1</level>
+			</notes></advantage_prereq>
+			<advantage_prereq has="yes">
+				<name compare="is">magery</name>
+				<notes compare="is anything"></notes>
+				<level compare="at least">1</level>
+			</advantage_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 803px; left: 82px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Hardiness</name><name-loc>Твёрдость</name-loc><spell version="2">
+		<name>Hardiness</name>
+		<name-loc>Твёрдость</name-loc>
+		<description-loc>БлокирующееМгновенная версия заклинания Броня – увеличивает СП(DR) объекта для одной пропущенной атаки. Эффекты этого заклинания и заклинания Броня не складываются – используйте большее значение. Помните, что за ход можно сотворить лишь Блокирующее заклинание. Например, маг не может сразу же после провала заклинания Железная рука сотворить Твёрдость.Стоимость: 1 за очко СП(DR) (максимум 5).Требования: Блок.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>1 per DR</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M167</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">block</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 467px; left: 586px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Resist Acid</name><name-loc>Сопротивление кислоте</name-loc><spell version="2">
+		<name>Resist Acid</name>
+		<name-loc>Сопротивление кислоте</name-loc>
+		<description-loc>ОбычноеОбъект (человек, существо или предмет) и всё, что он несёт, становится неподверженным воздействию кислоты.Также относится к школе Защиты и предупреждения.Длительность: 1 минута.Стоимость:  2 сотворение; 6, если объект должен сопротивляться Истинной кислоте. Половина за поддержку.Требование: Создать кислоту.Предмет(а) Посох, жезл или украшение; действует только на носителя. Энергостоимость создания: 800. (б) Посох, жезл или украшение. Энергостоимость создания: 1.200.Призыв Элементаля воды, Контроль Элементаля воды, Создание Элементаля воды.Summon Water Elemental, Control Water Elemental, Create Water Elementalсм. M27-27</description-loc>
+		<college>Protection/Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2 or 6</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M190</reference>
+		<categories>
+			<category>Protection</category>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create acid</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 515px; left: 418px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Resist Lightning</name><name-loc>Сопротивление молнии</name-loc><spell version="2">
+		<name>Resist Lightning</name>
+		<name-loc>Сопротивление молнии</name-loc>
+		<description-loc>ОбычноеОбъект и все что на нем, защищено от воздействия молнии и электричества. В низко технологичных мирах, это заклинание наиболее часто используется для защиты от враждебной магии; в высоко технологичных мирах - становится ценным профессиональным инструментом.Это также заклинание Защиты и предупреждения и заклинание Воздуха.Длительность: 1 минута.Стоимость: 2 сотворение. 1 поддержка.Требование: Любые шесть заклинаний воздуха.Предмета) Любой. Влияет только на пользователя. Энергостоимость создания: 1000 единиц энергии и $1000 платины. б) Посох, жезл или украшение. Энергостоимость создания: 1500 единиц энергии и $1000 платины.</description-loc>
+		<college>Air/Protection/Weather</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M196</reference>
+		<categories>
+			<category>Air</category>
+			<category>Protection</category>
+			<category>Weather</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">air</college>
+				<quantity compare="at least">6</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 731px; left: 359px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Warmth</name><name-loc>Теплота</name-loc><spell version="2">
+		<name>Warmth</name>
+		<name-loc>Теплота</name-loc>
+		<description-loc>СтандартноеСубъект сохраняет тепло на холоде, избегая обморожения и гипотермии. Это заклинание поднимает «местную температуру» на 30°F к «комфортной зоне» температур (B93). Это заклинание не защищает от атак магическим холодом, например заклинания Обморожение. Это заклинание так же относится к школе заклинаний Защиты и Предупреждения.Длительность: 1 час.Стоимость: 2 на сотворение, 1 на поддержание.Время сотворения: 10 секунд.Требования: Нагреть.ПредметОдежда, посох, украшение или попона (одеяло [blanket]); действует только на надевшего (в случае посоха - держащего). Энергостоимость создания: 200 энергии.</description-loc>
+		<college>Fire/Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M74</reference>
+		<categories>
+			<category>Fire</category>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">heat</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 731px; left: 490px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Coolness</name><name-loc>Прохлада</name-loc><spell version="2">
+		<name>Coolness</name>
+		<name-loc>Прохлада</name-loc>
+		<description-loc>ОбычноеОбъекту комфортно прохладно в тёплую погоду, что исключает риск обезвоживания и теплового удара – но не солнечных ожогов! Объект получает Устойчивость к температуре 3 (B93) против жары на время действия заклинания. Заклинание не даёт защиты от настоящего пламени или огненных атак.Также относится к школе Защиты и предупреждения.Длительность: 1 час.Стоимость: 2 сотворение. 1 поддержка.Время сотворения: 10 секунд.Требование: Охладить.ПредметОдежда, посох или украшение. Действует только на носителя. Энергостоимость создания: 200.</description-loc>
+		<college>Protection/Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hour</duration>
+		<reference>M187</reference>
+		<categories>
+			<category>Protection</category>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">cold</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 731px; left: 622px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard"><name>Reflect Gaze</name><name-loc>Отразить взгляд</name-loc><spell version="2" very_hard="yes">
+		<name>Reflect Gaze</name>
+		<name-loc>Отразить взгляд</name-loc>
+		<description-loc>Блокирующее; сопротивление по атаке взглядомОтбивает одну атаку взглядом (в том числе Молниевый взгляд, Заворожить и любую силу требующую контакта глаза в глаза) направленную на объект. Если заклинание успешно, атака взглядом отведена; если успех 10 и более - критический успех и атака перенаправляется на атакующего. Если заклинание провалилось, атака взглядом действует как обычно. Считается, что заклинатель совершает манёвр Парирование. Если объектом заклинания является не заклинатель, применяются обычные модификаторы расстояний.Стоимость: 2.Требования: Зеркало.ПредметУкрашение. Энергостоимость создания: 600, должен включать в себя маленькое зеркальце.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M168</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">mirror</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 923px; left: 562px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Resist Radiation</name><name-loc>Сопротивление радиации</name-loc><spell version="2">
+		<name>Resist Radiation</name>
+		<name-loc>Сопротивление радиации</name-loc>
+		<description-loc>ОбычноеОбъект (человек, создание или предмет) и все, что он держит, получают сопротивляемость радиации. Это выражается Степенью защиты (см. B436). Это заклинание также относится к школе Защиты и предупреждения.Длительность: 1 минута.Стоимость: 1 за СЗ 10, 2 за СЗ 100, 3 за СЗ 1000.  Половина для поддержания (округлять вверх).Требования: не меньше трёх заклинаний Радиации.Предмет:(а) Любой, действует лишь на носящего. Энергостоимость создания: 1.000.(б) Палочка, посох или украшение. Энергостоимость создания: 1.000.</description-loc>
+		<college>Protection/Technological/Radiation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M182</reference>
+		<categories>
+			<category>Protection</category>
+			<category>Radiation</category>
+			<category>Technological</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">radiation</college>
+				<quantity compare="at least">3</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 875px; left: 274px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Magelock</name><name-loc>Волшебный замок</name-loc><spell version="2">
+		<name>Magelock</name>
+		<name-loc>Волшебный замок</name-loc>
+		<description-loc>Обычное; сопротивление заклинанию Повелитель замковЗапирает дверь магией. Дверь не откроется, пока не развеется заклинание (Контрзаклинание или Повелитель замков) или дверь не будет сломана.Длительность: 6 часов.Стоимость: 3 сотворение. 2 поддержание.Время сотворения: 4 секунды.Требования: Магичность(Magery) 1.ПредметЗолотой ключ, которым надо коснуться двери. Энергостоимость создания:200.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>4 sec</casting_time>
+		<duration>6 hrs</duration>
+		<reference>M166</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<advantage_prereq has="yes">
+				<name compare="contains">magery</name>
+				<notes compare="is anything"></notes>
+				<level compare="at least">1</level>
+			</advantage_prereq>
+		</prereq_list>
+	</spell></block>
+</div>

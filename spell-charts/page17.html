@@ -1,0 +1,688 @@
+<block style="top: 163px; left: 534px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Simple Illusion</name><name-loc>Простая иллюзия</name-loc><spell version="2">
+		<name>Simple Illusion</name>
+		<name-loc>Простая иллюзия</name-loc>
+		<description-loc>ОбластноеСоздаёт исключительно визуальный образ, видимый всем, кто может видеть место назначения заклинания. Это может быть как единичный предмет, так и целое зрелище. Если заклинатель сконцентрируется, образ может двигаться в другую область или изменять форму или размеры, вплоть до занятия всей области действия. Любое разумное существо может развеять заклинание «неверием» в образ — выполнить манёвр Концентрация и сделать успешный бросок Воли(Will). Иллюзия развеется автоматически от первой же атаки, любого заклинания, кроме Контроля иллюзии, или прикосновения любого разумного существа.Длительность: 1 минута.Базовая стоимость: 1 на сотворение. Половина на поддержание.Требования: Заклинатель должен быть зрячим и иметь ИН(IQ) не менее 11.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M95</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<advantage_prereq has="no">
+				<name compare="starts with">blind</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<attribute_prereq has="yes" which="iq" compare="at least">11</attribute_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 163px; left: 66px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Sound</name><name-loc>Звук</name-loc><spell version="2">
+		<name>Sound</name>
+		<name-loc>Звук</name-loc>
+		<description-loc>ОбычноеПроизводит какой-либо бессмысленно звук по желанию заклинателя – гул насекомых, далекий лепет голосов, звук  падения, или что-то подобное. Заклинание не может произвести громкий шум. После сотворения заклинания Концентрация не требуется.Длительность и стоимость: 1 для создания 5-секундного звука; 2 для создания звука, длящегося минуту; 1 за поддержание ещё минуту.ПредметЛюбой. Шумит постоянно (хотя для его включения и выключения часто используют Связь) Энергостоимость создания: 50.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>1/ min</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Varies</duration>
+		<reference>M171</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+	</spell></block><block style="top: 163px; left: 678px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Shape Fire</name><name-loc>Формировать огонь</name-loc><spell version="2">
+		<name>Shape Fire</name>
+		<name-loc>Формировать огонь</name-loc>
+		<description-loc>ОбластноеПозволяет заклинателю контролировать форму любого пламени и перемещать его. Однажды сформированное, пламя сохраняет форму, пока не кончится действие заклинания, не требуя концентрации. Естественное пламя не сможет перемещаться туда, где нет топлива, но пламя, созданное с помощью заклинания Создать огонь, в топливе не нуждается, и может перемещаться куда угодно. Можно перемещать при постоянной концентрации со скоростью 5. Изменение формы требует секунды концентрации. Огонь должен сохранять свой объем, иначе будет изменяться наносимое повреждение. Огонь «растянутый» вдвое наносит лишь половину урона, а распространённый на площадь втрое больше естественного размера – 1/3 урона и т.д.Длительность: 1 минута.Базовая стоимость: 2, половина на поддержание.Требования: Воспламенение.ПредметПосох, палочка или украшение. Энергостоимость создания: 400; предмет должен содержать рубин на $300.</description-loc>
+		<college>Fire</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M72</reference>
+		<categories>
+			<category>Fire</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">ignite fire</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 415px; left: 606px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Wisdom</name><name-loc>Мудрость</name-loc><spell version="2">
+		<name>Wisdom</name>
+		<name-loc>Мудрость</name-loc>
+		<description-loc>ОбычноеВременно повышает ИН(IQ) объекта. Вместе с ИН(IQ) увеличиваются умения, но заклинания остаются на прежнем уровне. ИН(IQ) объекта не может стать выше ИН(IQ) заклинателя.Длительность: 1 минута.Стоимость: 4 за каждое очко ИН(IQ) (максимально 5). Столько же на поддержание.Требования: как минимум шесть других заклинаний школы контроля разума.ПредметЛюбой предмет. Всегда включён; пока предмет надет, ИН(IQ) носящего увеличен! Это очень редкие и ценные вещи. Энергостоимость создания: 2,000 за каждое очко ИН(IQ) (максимум 5).Посох или палочка. Используется только магами; надо коснуться объекта. Энергостоимость создания: 2,000.</description-loc>
+		<college>Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4/pt of IQ</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M135</reference>
+		<categories>
+			<category>Mind Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">mind control</college>
+				<quantity compare="at least">6</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 559px; left: 6px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Hinder</name><name-loc>Помеха</name-loc><spell version="2">
+		<name>Hinder</name>
+		<name-loc>Помеха</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Уменьшает базовое движение(BM) и Уклонение (dodge) объекта на 1 за каждое вложенное очко энергии. Также относится к заклинаниям школы Движения.Длительность: 1 минута.Стоимость: 1-4. Столько же поддержание.Требования: Неуклюжесть или Ускорение (M142).Предмет(а) Посох или палочка. Используется только магами; необходимо указать на объект (касание не обязательно). Энергостоимость создания: 600. (б) Любой предмет. Всегда включён; уменьшает базовое движение(BM) владельца. Энергостоимость создания: 200 за каждый ярд, на который уменьшается базовое движение(BM) владельца.</description-loc>
+		<college>Body Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1-4</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M36</reference>
+		<categories>
+			<category>Body Control</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">clumsiness</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">haste</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 559px; left: 126px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Apportation</name><name-loc>Перемещение</name-loc><spell version="2">
+		<name>Apportation</name>
+		<name-loc>Перемещение</name-loc>
+		<description-loc>Обычное; сопротивление по Воле(Will)Позволяет двигать материальные объекты, не прикасаясь к ним. Это заклинание левитирует объект с Движением 1 — недостаточно быстро, чтобы нанести вред. Живые объекты могут сопротивляться Воле(Will)й.Длительность: 1 минута.Энергостоимость: зависит от веса объекта. Столько же поддержание.Вес	Энергостоимостьменее 1 фунта	1до 10 фунтов	2до 50 фунтов	3до 200 фунтов	4каждые дополнительные 100 фунтов	 4Требования: Магичность(Magery) 1.ПредметПосох или палочка. Используется только магами; предмет должен прикасаться или быть направленным на объект. Энергостоимость создания: 900.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M142</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 619px; left: 246px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Create Water</name><name-loc>Создать воду</name-loc><spell version="2">
+		<name>Create Water</name>
+		<name-loc>Создать воду</name-loc>
+		<description-loc>ОбычноеСоздаёт чистую воду из ничего. Эта вода может появиться в любой из нескольких форм. Она может появиться в ёмкости или как сфера в воздухе (она сразу падает). Или она может появиться как густой туман из капель; в этой форме, один галлон воды потушит все огни в радиусе одного ярда. Воду нельзя создать внутри врага, чтобы его утопить!Длительность: Вода создаётся навсегда.Стоимость: 2 за созданный галлон.Требование: Очистить воду.ПредметПосох, жезл или украшение. Энергостоимость создания: 200.</description-loc>
+		<college>Water</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/gal</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M184</reference>
+		<categories>
+			<category>Water</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">purify water</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 319px; left: 246px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Create Earth</name><name-loc>Создать землю</name-loc><spell version="2">
+		<name>Create Earth</name>
+		<name-loc>Создать землю</name-loc>
+		<description-loc>ОбычноеПозволяет создать хорошую, твёрдую землю там, где её раньше не было. Земля должна быть создана в контакте с поверхностью, а не висящей в воздухе или плавающей в море!Длительность: навсегда.Стоимость: 2 за кубический ярд, чтобы создать землю из ничего (минимум 2); 1 за кубический ярд, чтобы сделать из грязи хорошую, твёрдую землю (минимум 1).Требуется: Землю в камень.ПредметПосох или жезл. Энергостоимость создания: 500.</description-loc>
+		<college>Earth</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/25 cu ft</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M51</reference>
+		<categories>
+			<category>Earth</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">earth to stone</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 319px; left: 366px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Copy</name><name-loc>Копия текста</name-loc><spell version="2">
+		<name>Copy</name>
+		<name-loc>Копия текста</name-loc>
+		<description-loc>ОбычноеДелает одну или более копий одной страницы текста. Для копий необходимы бумага или пергамент. Копии магических свитков, рунных пергаментов, и т.п. не имеют магической силы.На более высоких ТУ, это заклинание может быть использовано на цифровом носителе; одно сотворение этого заклинания скопируют примерно один килобайт информации.Длительность: навсегда.Стоимость: 2   1 за каждую копию. Копируемый документ может быть в 10 раз длиннее, если заклинатель удвоит стоимость;  так, 4 энергии произведут 1 копию 10-страничного документа, в то время как 8 энергии скопирует 100-страничную книгу.Время сотворения: 5 секунд.Требования: Окраска и владение письменностью на некотором языке по крайней мере на уровне Акцент.</description-loc>
+		<college>Making &amp; Breaking</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M116</reference>
+		<categories>
+			<category>Making &amp; Breaking</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="starts with">Language:</name>
+					<notes compare="contains">Written (native)
+				</notes></advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="starts with">Language:</name>
+					<notes compare="contains">Written (accented)
+				</notes></advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">dye</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 247px; left: 66px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Complex Illusion</name><name-loc>Сложная иллюзия</name-loc><spell version="2">
+		<name>Complex Illusion</name>
+		<name-loc>Сложная иллюзия</name-loc>
+		<description-loc>ОбластноеПодобно Простой иллюзии, но воздействует и на зрение, и на слух. Иллюзия не развеивается автоматически от заклинания или прикосновения; однако, её развеет любое полученное повреждение.Длительность: 1 минута.Базовая стоимость: 2 на сотворение. Половина на поддержание.Требования: Звук и Простая иллюзия.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M96</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sound</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">simple illusion</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 319px; left: 66px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Perfect Illusion</name><name-loc>Совершенная иллюзия</name-loc><spell version="2">
+		<name>Perfect Illusion</name>
+		<name-loc>Совершенная иллюзия</name-loc>
+		<description-loc>ОбластноеПодобно Сложной иллюзии, но воздействует на все органы чувств, кроме осязания; рука просто пройдёт насквозь. Развеять иллюзию можно только заклинаниями Рассеять иллюзия и Рассеять магию. Любое повреждение будет только временной искажать её, выдавая иллюзию, но не развеивая её.  Длительность: 1 минута.Базовая стоимость: 3 на сотворение. Половина на поддержание. За удвоенную стоимость можно обмануть даже осязание, хотя от иллюзорного огня не согреешься «по-настоящему».Требования: Магичность(Magery) 1 и Сложная иллюзия.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M96</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">complex illusion</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (illusion &amp; creation)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 403px; left: 6px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Control Illusion</name><name-loc>Контроль иллюзии</name-loc><spell version="2">
+		<name>Control Illusion</name>
+		<name-loc>Контроль иллюзии</name-loc>
+		<description-loc>Обычное; Сопротивление по заклинаниям на объектеЗахватывает контроль над иллюзией, созданной кем-то другим. Если заклинание удалось, энергию для поддержания иллюзии платите вы. Если заклинание провалилось, иллюзию по-прежнему контролирует её создатель. Это заклинание не действует на Иллюзорную маскировку. Если заклинание творится на что-то, что не является иллюзией, энергия тратится, но эффекта нет.Длительность: Однажды захваченный контроль будет ваш, пока его не перехватит кто-то другой.Стоимость: 1.Время сотворения: 2 секунды.Требования: Совершенная иллюзия.ПредметПосох или палочка. Энергостоимость создания: 300. Для контроля иллюзии надо коснуться её предметом.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>Permanent</duration>
+		<reference>M97</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">perfect illusion</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 475px; left: 6px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Dispel Illusion</name><name-loc>Рассеять иллюзию</name-loc><spell version="2">
+		<name>Dispel Illusion</name>
+		<name-loc>Рассеять иллюзию</name-loc>
+		<description-loc>Обычное; Сопротивление по заклинаниям на объектеРассеивает любую иллюзию или иллюзорную маскировку. Не влияет на созданий.Стоимость: 1.Требования: Контроль иллюзии.ПредметПосох или палочка; предметом надо коснуться иллюзии. Энергостоимость создания: 400.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M97</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">control illusion</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 247px; left: 366px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Know Illusion</name><name-loc>Распознать иллюзию</name-loc><spell version="2">
+		<name>Know Illusion</name>
+		<name-loc>Распознать иллюзию</name-loc>
+		<description-loc>ИнформационноеСообщает заклинателю является объект иллюзией, или настоящим, или созданием. Заклинатель должен видеть объект.Стоимость: 2.Требования: Простая иллюзия.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M97</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">simple illusion</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 247px; left: 486px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Illusion Shell</name><name-loc>Иллюзорная оболочка</name-loc><spell version="2">
+		<name>Illusion Shell</name>
+		<name-loc>Иллюзорная оболочка</name-loc>
+		<description-loc>ОбычноеЭта иллюзия делает так, что выбранный объект выглядит, звучит и осязается по-другому. Базовый объект должен иметь подходящие размеры и форму.  В иллюзию можно не поверить, иначе она стабильна. Однако иллюзия не двигается, если не двигается базовый объект. Повреждения, наносимые базовым объектом, не меняются. Например, Иллюзорная оболочка лошади может быть сотворена на деревянную лошадь. Она будет ржать, бить копытом и пахнуть как настоящая лошадь, но скакать на ней нельзя! Для поддержания иллюзии концентрация не требуется.Длительность: 1 минута.Стоимость: 1 для объектов, которые достаточно малы, чтобы их мог унести человек, или 2 для более крупных объектов. Половина на поддержание.Требования: Простая иллюзия.ПредметЗа в 200 раз большую, чем базовая, стоимостью, заклинание можно наложить навсегда; в такую иллюзию нельзя не поверить!</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1 or 2</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M96</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">simple illusion</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 247px; left: 606px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Phantom Flame</name><name-loc>Призрачное пламя</name-loc><spell version="2">
+		<name>Phantom Flame</name>
+		<name-loc>Призрачное пламя</name-loc>
+		<description-loc>ОбластноеСоздаёт область фантомного пламени. Стоящие вблизи чувствуют жар (и даже боль, если дотронутся до него); предметы внутри выглядят горящими. Однако пламя не распространяется и не наносит реального повреждения. Даже вызванная им боль утихает после первоначального шока. Формировать огонь и Погасить огонь влияют на это фантомное пламя; а вот вода – нет.Это заклинание также относится к школе Иллюзии и Создания.Длительность: 1 минута.Базовая стоимость: 1. Столько же за поддержание.Требования: Формировать огонь или Простая иллюзия.ПредметПалочка, посох или украшение. Энергостоимость создания: 200; должен содержать рубин на $100.</description-loc>
+		<college>Fire/Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M73</reference>
+		<categories>
+			<category>Fire</category>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">shape fire</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">simple illusion</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 331px; left: 486px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Illusion Disguise</name><name-loc>Иллюзорная маскировка</name-loc><spell version="2">
+		<name>Illusion Disguise</name>
+		<name-loc>Иллюзорная маскировка</name-loc>
+		<description-loc>ОбычноеЭта иллюзия маскирует живое существо. Сначала заклинатель должен создать иллюзию (при помощи одного из базовых заклинаний иллюзии). Затем, при помощи Иллюзорной маскировки, иллюзия накладывается на объект, так, что она покрывает его и двигается вместе с ним. Чем лучше заклинание Иллюзия, тем надёжнее и долговечнее маскировка; Совершенная иллюзорная маскировка обманет даже осязание. Для поддержания заклинания концентрация на требуется. Иллюзорная маскировка считается одним «включённым» заклинанием.Длительность: Пока не развеется иллюзия.Стоимость: 3. Невозможно поддержать.Требования: Простая иллюзия.ПредметУкрашение или одежда; предмет творит заклинание Иллюзорная маскировка (качество иллюзии определяется при создании) на носящего. Энергостоимость создания: 150 — Простая иллюзия, 300 — Сложная, 500 — Совершенная. Носящий энергии не отдаёт!</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Until illusion ends</duration>
+		<reference>M96</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">simple illusion</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 415px; left: 486px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Independence</name><name-loc>Независимость</name-loc><spell version="2">
+		<name>Independence</name>
+		<name-loc>Независимость</name-loc>
+		<description-loc>ОбластноеЭто заклинание может быть наложено на любую подконтрольную иллюзию или создание. Оно позволяет заклинателю «программировать» создание или иллюзию на движение, разговор (если оно может издавать звуки), и даже реакцию заранее установленным образом. Всё это будет выполняться без дальнейшей концентрации заклинателя; это заклинание не считается отдельно «включенным». При столкновении с чем-то, на что оно не «запрограммировано», оно будет ничего не делать или (если это иллюзия) просто исчезнет, по усмотрению Мастера.Длительность: Пока существует создание или иллюзия.Базовая стоимость: 2. Поддержание не требуется.Время сотворения: Минимум 5 секунд. Столько, сколько потребуется игроку для описания инструкций Мастеру, или сколько потребуется времени для прочтения вслух записанных инструкций (запись инструкций поможет избежать споров!). Сложное программирование требует много времени.Требования: Простая иллюзия.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>Varies</casting_time>
+		<duration>Varies</duration>
+		<reference>M96</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">simple illusion</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 499px; left: 546px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Initiative</name><name-loc>Инициатива</name-loc><spell version="2">
+		<name>Initiative</name>
+		<name-loc>Инициатива</name-loc>
+		<description-loc>ОбластноеЗаклинание может быть наложено на любую иллюзию или создание, подконтрольное заклинателю, давая им подобие интеллекта, например для того, чтобы они действовали по собственной инициативе. Объект абсолютно лоялен заклинателю и подчиняется ему (или любому, кому приказывает повиноваться заклинатель) так, как может.Базовая стоимость зависит от того, какие знания заклинатель даёт созданию или иллюзии. Создания начинают с теми ИН(IQ) и ЛВ(DX), которые даны в описании заклинания создания. Иллюзии начинают с ИН(IQ) 0 и ЛВ(DX) 8. ЛВ(DX) и ИН(IQ) объектов могут быть повышены до соответствующих значений заклинателя. Также заклинатель может передавать объектам умения – каждое переданное умение известно объекту на том же относительном уровне, что и заклинателю. Иллюзии и создания под воздействием Инициативы также могут использовать умения по умолчанию.После сотворения заклинания объект действует сам по себе, пока действие заклинания не закончится. Если объект сбит с толку. Он возвращается обратно к заклинателю за прояснением. Как и Независимость, это заклинание не считается отдельным «включённым» заклинанием, и не требует отдельного поддержания.Пример:Леди Анна Голдинг создала магического слугу для развлечения своих знатных декадантствующих гостей. Она хочет, чтобы слуга ходил среди гостей, подавал еду, танцевал со знатными дамами и выказывал соответствующее уважение – не нуждаясь в постоянном надзоре, чтобы она сама могла развлечься. Слуга появляется со всеми атрибутами равными 9 и без умений (Леди Анна могла создать и умелого слугу, но она знает заклинание Создать слугу-15 и может поддерживать существование неумелого слуги бесконечно). Леди Анна добавляет 2 очка ЛВ(DX) (повышая её до собственного уровня 11), и 2 очка ИН(IQ) (несколько ниже её собственного ИН(IQ) 14), чтобы сделать слугу остроумнее. Всего добавлено 4 очка атрибутов, что стоит 2 очка.Далее Леди Анна наделяет слугу умениями Танцы и Хорошие манеры. Её умение Танцы-14 (ЛВ(DX) 3), и так как ЛВ(DX) слуги такая же, его умение будет на том же уровне. Знание леди Хороших манер впечатляет(уровень 15 или ИН(IQ) 1), но слуга не так умён, как она, и его умение Хорошие манеры будет на уровне его ИН(IQ) 1, то есть Хорошие манеры-13. Эти два умения повышают стоимость заклинания ещё на 2 очка, доводя её до 4.Так как слуга радиусом меньше 1 ярда, подойдёт базовая стоимость.Длительность: Пока существует объект.Базовая стоимость: 1/3 за каждое дополнительное очко ЛВ(DX) или ИН(IQ) (округлять вверх), плюс 1 очко за каждое умение; минимальная стоимость – 3.Время сотворения: 10 секунд.Требования: Независимость и Мудрость.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Varies</duration>
+		<reference>M97</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">independence</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">wisdom</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 403px; left: 366px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Inscribe</name><name-loc>Надпись</name-loc><spell version="2">
+		<name>Inscribe</name>
+		<name-loc>Надпись</name-loc>
+		<description-loc>Областное; Сопротивление по Воле(Will)Создает надпись или изображение на любой поверхности. Для оценки эстетичности результата используется соответствующая специализация Изобразительного искусства (Каллиграфия, Иллюстрирование и т.д.). Вид послания может быть каким пожелает заклинатель: буквы из серебристого пламени, обычные печатные буквы, буквы из бликов на поверхности воды и так далее. Надпись является неотъемлемой  частью поверхности, она угасает только когда заклинание рассеяно или истекло время его действия. Любое живое существо, на котором попытаются написать может сопротивляться.Это также заклинание Починки и поломки.Длительность: 1 минута.Базовая стоимость: 1 на сотворение. Столько же на поддержание. Минимум 2.Требования: Простая Иллюзия и Копия текста.Предмет(а) Любую надпись или рисунок можно нанести навсегда за стоимость в 20 раз больше базовой. (б) Стилус, кисть и т.д. которые могут оставлять надписи или рисунки на чём угодно, не нуждаясь в чернилах или красках. Энергостоимость создания: 30.</description-loc>
+		<college>Illusion &amp; Creation/Making &amp; Breaking</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1/min 2</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M97</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+			<category>Making &amp; Breaking</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">simple illusion</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">copy</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 403px; left: 246px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Create Object</name><name-loc>Создать объект</name-loc><spell version="2" very_hard="yes">
+		<name>Create Object</name>
+		<name-loc>Создать объект</name-loc>
+		<description-loc>ОбычноеСоздаёт любой простой предмет, знакомый заклинателю – например, мантию, меч или чашку. Заклинание не создаёт магических предметов или живых существ.Ограничения: Еда, созданная таким образом, будет только выглядеть питательной. Нельзя создать информацию; заклинатель может создать книгу, только если знает её всю наизусть. Произведение искусства будет настолько хорошо, насколько заклинатель может сам его сделать. Нельзя создать механическое устройство, если только заклинатель не может сделать его сам. (Мастера, цель этого правила – сделать для магов почти невозможным создание машин, транзисторного радио и т.д. Будьте строги.)Длительность: Созданный объект существует, пока касается живого мыслящего существа, теоретически - бесконечно долго. Так, заклинатель может создать меч и сражаться им или передать другу, но если он создаст монету, чтобы обмануть торговца, мошенничество может вскрыться, когда монета исчезнет, если торговец уронит её на прилавок или подбросит в воздух! Созданным предметам не обязательно касаться плоти, но они должны быть очень близко к кому-нибудь. Их можно держать рукой в перчатке, носить в кармане и т.д., но положить в рюкзак уже нельзя.Стоимость: 2 за каждые 5 фунтов массы созданного объекта.Время сотворения: Длительность в секундах равна стоимости заклинания.Требования: Магичность(Magery) 2, Создать землю, Совершенная иллюзия.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/5 lbs</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec/cost</casting_time>
+		<duration>While touching someone</duration>
+		<reference>M98</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create earth</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">perfect illusion</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (illusion &amp; creation)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 487px; left: 306px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Duplicate</name><name-loc>Дубликат</name-loc><spell version="2" very_hard="yes">
+		<name>Duplicate</name>
+		<name-loc>Дубликат</name-loc>
+		<description-loc>ОбычноеПохоже на Создать объект, но вместо создания воображаемого заклинателем предмета, дублирует настоящий предмет, который заклинатель должен держать в руках, или касаться, во время сотворения заклинания. Это заклинание позволяет магу создать пистолет, не зная умения Оружейник, если у него есть ещё один под рукой для копирования. Оно также позволяет создавать совершенные подделки произведений искусства, денег, документов и так далее. Магические дубликаты подчиняются правилам для предметов созданных заклинанием Создать объект, например он должен постоянно контактировать с живым существом или исчезнет.Также маг может попытаться  изменить создание. Например, он может создать копию меча, но с рунами, или копию паспорта, но с другим именем или фотографией и т.д. В этом случае применяются обычные правила для способностей заклинателя; может потребоваться бросок умения Подделка. Маг без знания оружия может покрыть копию пистолета золотом, но не сможет изменить ударно-спусковой механизм или ёмкость магазина.Длительность: Как в Создать предмет (выше).Стоимость: 3 за каждые 5 фунтов массы создаваемого объекта.Время сотворения: Длительность в секундах равна стоимости заклинания.Требования: Создать предмет и Копия текста.Предмет(а) Посох, палочка или украшение. Используется только магами. Энергостоимость создания: 650. (б) Дубликат можно сделать навсегда за в 100 раз большую стоимость.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3/5 lbs</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec/cost</casting_time>
+		<duration>While touching someone</duration>
+		<reference>M98</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">copy</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create earth</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 643px; left: 66px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Phantom</name><name-loc>Фантом</name-loc><spell version="2" very_hard="yes">
+		<name>Phantom</name>
+		<name-loc>Фантом</name-loc>
+		<description-loc>ОбластноеПохоже на Совершенную иллюзию, но фантом может препятствовать движению и наносить реальные повреждения. При первом физическом контакте живого существа с фантомом проведите быстрое состязание между эффективным умением заклинателя и ИН(IQ) существа. Если заклинатель проигрывает, то фантом по отношению к этому живому существу во всех смыслах считается Совершенной иллюзией.Если заклинатель выигрывает, фантом материален, и может наносить удары, хватать, толкать и так далее, как если бы он был настоящим. В том, что касается состязания, нанесённого повреждения и так далее. фантом может иметь любую СЛ(ST) и ЛВ(DX), вплоть до уровня знания магом заклинания Фантом.При первом сотворении этого заклинания Мастер должен записать величину успеха. Если за одну атаку фантому было причинено столько (или больше) базового повреждения, фантом немедленно рассеивается. На фантом действуют все заклинания, действующие на иллюзии (Рассеять иллюзию, Контроль иллюзии, Независимость и т.д.).Длительность: 1 минута.Базовая стоимость: 5. Половина на поддержание. За базовую стоимость 9, фантом может иметь в два раза больше СЛ(ST) (ЛВ(DX) не изменяется).Требования: Магичность(Magery) 2, Совершенная иллюзия, Помеха и Перемещение.ПредметПосох, палочка или украшение. Энергостоимость создания: 300; половинная стоимость за предмет, который будет создавать только один вид фантома, определённый при создании предмета.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M97</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (illusion &amp; creation)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">perfect illusion</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">hinder</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 703px; left: 246px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Create Animal</name><name-loc>Создать животное</name-loc><spell version="2">
+		<name>Create Animal</name>
+		<name-loc>Создать животное</name-loc>
+		<description-loc>ОбычноеСоздаёт животное (ИН(IQ) не больше 5), выполняющее, пока существует, ментальные команды заклинателя. Созданное животное существует, пока заклинатель не прекратит поддерживать заклинание или пока животное не убьют, после чего оно растворяется. Животное должно быть идентично «реальному» живому существу, известному заклинателю. Вы не можете создать воображаемое существо, или даже реальное, если только слышали о нём. Также вы не сможете создать медведя с отравленными клыками… впрочем, некоторые волшебники изредка разрабатывают тайные вариации этого заклинания для создания необычных существ.Также Создать животное подходит для создания роя маленьких существ (B461). Стоимость создания «роя» - 2 единицы энергии.Длительность: 1 минута.Стоимость: 2,умножте на 1 МР(SM) для животныхю, у которых МР(SM) больше 0. Половина на поддержание.Время сотворения: Длительность в секундах равна стоимости заклинания.Требования: Создать объект, Создать воду и ИН(IQ) не меньше 12.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec/cost</casting_time>
+		<duration>1 min</duration>
+		<reference>M98</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<attribute_prereq has="yes" which="iq" compare="at least">12</attribute_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create water</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create object</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 787px; left: 306px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Control Creation</name><name-loc>Контроль создания</name-loc><spell version="2">
+		<name>Control Creation</name>
+		<name-loc>Контроль создания</name-loc>
+		<description-loc>Обычное; Сопротивление по заклинаниям на объектеЗахватывает контроль над живым Созданием, созданным кем-то другим. Если заклинание удалось, энергию для поддержания Создания платите вы. Если заклинание провалилось, Создание по-прежнему контролирует его создатель. Это заклинание не действует на ИллюзииСтоимость: 1.Время сотворения: 2 секунды.Требования: Создать животное или Создать слугу.ПредметПосох или палочка; надо коснуться объекта. Энергостоимость создания: 400.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M99</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create animal</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create servant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 703px; left: 366px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery3"><name>Create Servant</name><name-loc>Создать слугу</name-loc><spell version="2">
+		<name>Create Servant</name>
+		<name-loc>Создать слугу</name-loc>
+		<description-loc>ОбычноеСоздаёт тупого (все атрибуты 9), но преданного слугу для исполнения приказов заклинателя. Внешность слуги описывает заклинатель. Также это заклинание может создать Зверя – слугу с СЛ(ST) 16 и всеми остальными атрибутами 9. Или же заклинание может создать слугу со всеми атрибутами 9  и одним не боевым, не основанном на ИН(IQ) умении на уровне 16. Все созданные слуги выполняют простые устные команды, передают речевые сообщения и т.д. Слугу контролирует Мастер. Слуга не может драться и ориентироваться в запутанных ситуациях; у него нет умений. Встретив опасность, он хнычет, бежит или просто растворяется. Если его спросить, он будет знать только своего хозяина и что тот ему приказал.Длительность: 1 минута.Стоимость: 3 на сотворение, 1 на поддержание. Для умелого слуги 4 на сотворение, 4 на поддержание. Для Зверя 6 на сотворение, 2 на поддержание.Время сотворения: 3 секунды.Требования: Магичность(Magery) 3, ИН(IQ) не ниже 12 и Создать объект.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M98</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create object</name>
+			</spell_prereq>
+			<attribute_prereq has="yes" which="iq" compare="at least">12</attribute_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (illusion &amp; creation)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 787px; left: 198px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery3"><name>Create Mount</name><name-loc>Создать скакуна</name-loc><spell version="2">
+		<name>Create Mount</name>
+		<name-loc>Создать скакуна</name-loc>
+		<description-loc>ОбычноеСоздаёт глупого, но преданного скакуна, на котором можно ездить, пока он существует. Также его можно использовать как тягловое животное.Большинство скакунов имеют те же черты, что и пони (B460), но заклинатель определяет внешний вид скакуна при создании; это могут быть лошади, верблюды, дельфины, карликовые слоны, огромные страусы и всё, на что согласится Мастер (используйте Руководство по созданию животных). Скакун может понимать только очень простые устные команды, вроде стой, иди, налево, направо, кругом и т.д. Скакуна контролирует Мастер. Скакун не может драться и ориентироваться в запутанных ситуациях; у него нет умений. Перед лицом опасности он заскулит, сбежит или просто растворится.Также заклинатель может создать Зверского скакуна с СЛ(ST) 35, Крылатого скакуна с БД (BM) 7/14, Гоночного скакуна с БД  (BM) 18, или Боевого скакуна который остаётся спокойным в опасной ситуации и понимающий команды давить или атаковать.Длительность: 1 час.Стоимость: 8 на сотворение, 3 на поддержание. Удвойте стоимость для Зверского скакуна, Крылатого скакуна, Боевого скакуна или Гоночного скакуна. Утройте для Крылатого Гоночного скакуна и т.д.Время сотворения: 3 секунды.Требования: Магичность(Magery) 3 и Создать животное.Предмет(а) Маг может создать скакуна навсегда за в 100 раз большую стоимость. (б) Свисток или рожок. Используется только магами. Звук свистка или рожка заставляет скакуна появиться, как будто его призвали. Энргостоимость создания: 200-кратная стоимость создания соответствующего скакуна.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>8</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M99</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create animal</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (illusion &amp; creation)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 787px; left: 414px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery3"><name>Create Warrior</name><name-loc>Создать воина</name-loc><spell version="2">
+		<name>Create Warrior</name>
+		<name-loc>Создать воина</name-loc>
+		<description-loc>ОбычноеСоздаёт воина для сражения по приказам заклинателя. У него ИН(IQ) 10; СЛ(ST), ЛВ(DX) и ЗД(HT) 12; уровень 16 в одном оружейном (или безоружного боя) умении по желанию заклинателя. При создании он не имеет ни оружия, ни доспехов, он использует то, что ему дали.Длительность: 1 минута.Стоимость: 4 на сотворение. 4 на поддержание. Для создания Воина Зверя (с СЛ(ST) 16) – 6 на сотворение, 6 на поддержание.Время сотворения: 4 секунды.Требования: Создать слугу.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>4 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M98</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">create servant</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 859px; left: 306px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Dispel Creation</name><name-loc>Отменить создание</name-loc><spell version="2">
+		<name>Dispel Creation</name>
+		<name-loc>Отменить создание</name-loc>
+		<description-loc>Обычное; Сопротивление по заклинаниям на объектеРазрушает все виды Созданий. Не действует на Иллюзии.Стоимость: 1 для отмены неживого объекта, 3 для отмены живого объекта.Требования: Контроль создания.Предмет</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1 or 3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M99</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">control creation</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block>

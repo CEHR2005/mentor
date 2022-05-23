@@ -1,0 +1,1018 @@
+<block style="top: 79px; left: 121px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Seek Magic</name><name-loc>Искать магию</name-loc><spell version="2">
+		<name>Seek Magic</name>
+		<name-loc>Искать магию</name-loc>
+		<description-loc>ИнформационноеОпределяет направление и приблизительную дистанцию до ближайшего значительного магического предмета, активного заклинания, или магического существа (магические существа – это демоны, элеменали, духи, и т.д., но не расы или отдельные существа с Магичность(Magery)ю). Действуют стандартные штрафы за расстояние. Любые известные экземпляры магии могут быть исключены, если заклинатель отдельно упомянет их перед сотворением.Это также Мета-заклинание.Стоимость: 6.Время сотворения: 10 секунд.Требование: Обнаружить магию.Предмет.Посох, жезл или украшение. Энергостоимость создания: 1.200.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>6</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M102</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">detect magic</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 163px; left: 229px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1"><name>Planar Summons (@Plane@)</name><name-loc>Планарный вызов</name-loc><spell version="2">
+		<name>Planar Summons (@Plane@)</name>
+		<name-loc>Планарный вызов</name-loc>
+		<description-loc>ОсобоеВызывает существо, вроде демона или Нечто о Чем Человечество Не Догадывается, из другого плана существования. Склонности и способности существа определяет Мастер. Каждый план требует своего заклинания Планарного вызова. Для некоторых исключительно мощных сущностей могут понадобиться собственные заклинания! Если версия используемого Планарного вызова не определяет отдельную сущность, заклинатель не может контролировать вызванного заклинанием.Планарный вызов не может использоваться в плане, для которого предназначен. Когда существо появляется, заклинатель должен немедленно попытаться управлять им. Считайте это Быстрым соревнование между умением Планарного вызова и Воле(Will)й сущности. Заклинатель в  4, если он знает «истинное имя существа».Победив, заклинатель может дать сущности единственную команду, которую оно должно выполнить. При завершении этой задачи или, в любом случае, через час сущность, обычно, изгоняется. Однако, некоторые сильные сущности могут оставаться столько, сколько пожелают...При ничьей или проигрыше заклинателя, существо будет реагировать ужасно. «Злое» совершит насилие или вандализм, а «хорошее», вероятно, отбудет в гневе и пожалуется богам заклинателя. Дикие или хаотические существа склонны заниматься воровством и вредительством. Крайне чуждые сущности могут отреагировать странными и непредсказуемыми способами.Длительность: Обычно пока задача не решена или один час, что меньше.Стоимость: 1 за 10 очков персонажа использованных для создания призванной сущности. Минимальная энергостоимость 20 (хотя не всегда вызовет 200-очковое существо). Мастер тайно определяет способности всех вызванных существ. Не может быть поддержано.Время сотворения: 5 минут.Требования: Магичность(Magery) 1 и, по крайней мере, по одному заклинанию из 10 различных школ.</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>20#</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>5 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M82</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (gate)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<college_count compare="at least">10</college_count>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 163px; left: 121px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Seek Gate</name><name-loc>Искать врата</name-loc><spell version="2">
+		<name>Seek Gate</name>
+		<name-loc>Искать врата</name-loc>
+		<description-loc>ИнформационноеСообщает заклинателю направление и приблизительное расстояние до ближайших врат. Любые известные врата можно исключить, если заклинатель упомянет их перед началом.Модификаторы: модификаторы расстояние (M14), -2, если врата в настоящее время закрыты,-5 при поиске места назначения врат, -10 при поиске врата, ведущих в определенное место. Учтите, сами врата могут быть под заклинанием Защита от наблюдения или Скрыть магию.Стоимость: 3.Время сотворения: 10 секунд.Требования: Магичность(Magery) 2, Искать магию и по одному заклинанию каждой из 10 школ.ПредметРаздвоенная палочка. Энергостоимость создания: 100.</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M85</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (gate)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">seek magic</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college_count compare="at least">10</college_count>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 247px; left: 121px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Scry Gate</name><name-loc>Наблюдение через врата</name-loc><spell version="2">
+		<name>Scry Gate</name>
+		<name-loc>Наблюдение через врата</name-loc>
+		<description-loc>ОбычноеСотворенное на открытые врата, позволит изображениям, звукам и запахам проникать через них с другой стороны, так же, как если бы каждый всматривался в открытое окно. На другом конце врат никаких соответствующих «окон» не открывается.Если врата ведут в область, защищенную Стеной защиты от наблюдения, она сопротивляется Наблюдению. Почуять наблюдение может перехватить Наблюдение через врата. Однако Обман наблюдения не сможет его обмануть.Длительность: 1 минута.Стоимость: 4 на сотворение. 4 на поддержание.Время сотворения: 10 секунд.Требование: Искать врата.Предмет(a) Посох, палочка или украшение. Энергостоимость создания: 200. (b) Врата можно заставить показывать их место назначение постоянно; это определяется при их создании и добавляет 100 энергии к стоимости создания. Создатель врат должен знать Наблюдение через врата на уровне равном или большем, чем Создать врата.</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M85</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">seek gate</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 247px; left: 13px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery3"><name>Control Gate</name><name-loc>Контроль врат</name-loc><spell version="2">
+		<name>Control Gate</name>
+		<name-loc>Контроль врат</name-loc>
+		<description-loc>Обычное; Сопротивление от вратВынуждает открытые врата закрыться, закрытые - открыться или наклоняет и перемещает целевые врата, как желает заклинатель. Закрытие постоянных врат не разрушает их, в отличие от временных (для разрушения постоянных врат используют Снять чары).Заклинание перемещает врата на 3 ярда в секунду. Контроль врат можно также использовать для «выбора» особого места назначение для врат со многими выходами (см. Создать врата).Как только контроль снят, Врата возвращаются в свое «запрограммированное» состояние, двигаясь к начальному месту на большой скорости и кратчайшим путем.Если несколько заклинаний Контроль врат действуют сразу на одни Врата, последние сопротивляются единым броском, контроль получит заклинание с наибольшей величиной успеха.Длительность: 1 минута.Стоимость: 6 на сотворение, 3 на поддержание.Время сотворения: 10 секунд.Требования: Магичность(Magery) 3 и Искать врата.ПредметПосох, палочка или украшение. Используется только магами. Энергостоимость создания: 300.</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>6</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M85</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (gate)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">seek gate</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 391px; left: 13px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery3 hard"><name>Create Gate</name><name-loc>Создать врата</name-loc><spell version="2" very_hard="yes">
+		<name>Create Gate</name>
+		<name-loc>Создать врата</name-loc>
+		<description-loc>ОбычноеСоздает временный портал, ведущий в другое место, время или измерение – фактически, дыру во времени и пространстве, сквозь которую телепортируются, хронопортируются и/или смещают план к предопределенному месту. Чем больше «расстояния» между вратами и их местом назначения, тем больше энергостоимость и штраф к умению.Штраф рассчитывается, объединением штрафов соответствующих заклинаний: Телепортация, Хронопортация, Смещение плана. Для расчета энергостоимости, объедините энергетические затраты того же заклинания(й) и умножьте на 10. Это позволит создать врата с проемом до 3x6 ярдов (или равной по площади поверхностью). Создать большие врата не сложнее, но стоит пропорционально больше энергии.Если заклинание используется для создания постоянных врат, становятся важными еще несколько соображений. Заклинатель(и) должен определить, будут ли они всегда открыты, всегда закрыты или открываться и закрываться в определенных условиях (открываются только на час в полнолуние, открываются только, когда кто-то произносит пароль и т.д.).Несколько порталов могут вести в одно место. В любой момент может быть открыт только один из них, так что обычен временной цикл открытий, давая в результате эффект единственных врат, ведущих в выбранное место. Они должны быть созданы по отдельности, но все же вести себя как единственные врата. Постоянные врата могут быть «закреплены» на физических воротах; тогда они сопротивляются смещению или разрушению с премией от СП(DR) ворот.Когда у врат есть компонент Хонопортации, создатель должен определить, перемещают ли они просто на заданное количество времени (1 год в прошлое, например) или же посылают в определенное, неизменное время (скажем, 25 декабря 1066). В последнем случае, так как объекты, прошедшие врата в разных исходных временах, не могут все прибыть в одно и то же время, врата или медленно «дрейфуют» во времени, чтобы создать интервал прибытия, по крайней мере, в секунду или различные объекты попадают в разное «прошлое» (решение Мастера).Длительность: 1 минута.Стоимость: 10-ти кратная полной стоимости используемых заклинаний: Телепортация, Хронопортация и Смещение плана (больше для больших врат). Столько же на поддержание. Создание постоянных врат стоит в 100 раз больше.Время сотворения: 1 секунда за единицу энергии.Требования: Контроль врат. Заклинатель также должен знать Телепортацию, чтобы создать врата, ведущие в другое место, Хронопортацию, чтобы создать врата, ведущие в другое время или Смещение плана, чтобы создать врата, ведущие в другой план существования.Предмет(a) Посох или палочка. Используется только магами. Энергостоимость создания: 1.000. (b) Перо или кисть. Используется только магом, который должен нарисовать схему дверного проема на твердой поверхности. Энергостоимость создания: 900.</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>Varies</casting_time>
+		<duration>1 min</duration>
+		<reference>M85</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">teleport</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">timeport</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="starts with">plane shift</name>
+				</spell_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">control gate</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 523px; left: 73px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery3"><name>Divert Teleport</name><name-loc>Отклонить Телепортацию</name-loc><spell version="2" very_hard="yes">
+		<name>Divert Teleport</name>
+		<name-loc>Отклонить Телепортацию</name-loc>
+		<description-loc>Блокирующее; Сопротивление заклинаниям объектаСотворенное в ход чьей-либо телепортации, хронопортации или смещении плана, позволит заклинателю навязать место или время назначения объекту.Заклинатель должен знать отклоняемое заклинание; используется меньшее из умений: Отклонить телепортацию и заклинание объекта. Если заклинатель, например, хочет отклонить телепортацию в смещение плана, он должен знать оба заклинания и использовать меньшее из этих трех умений.Сопротивление обсчитывается, сравнением величин успеха обоих заклинаний - если телепортирующийся маг преуспевает на 5, то пытающийся отклонить его, должен преуспеть на 6 или выше, чтобы выиграть. Используются обычные штрафы за расстояние между заклинателями Отклонить телепортации и Телепортации (Хронопортации и т.д.) и обычный штраф к умению за место назначения, куда заклинатель направляет телепортера.Стоимость сотворения равна разнице стоимости для намеченного и нового места. Если мага телепортирующегося на 40 миль (9 энергии) вынуждают переместиться только на 10 ярдов (3 энергии), отклоняющий маг должен заплатить 6 энергии. Та же стоимость была бы, если места назначения полностью обратить. Минимальная стоимость сотворения 3 (высокое умение уменьшает ее обычным образом). Заклинатель платит полную энергостоимость независимо от успеха заклинание.Пример: Предположим, Северин знает Телепортация-16 и пытается телепортироваться на 100 ярдов к ждущему его вагону (штраф к умению -2, стоимость 4). На расстоянии двух ярдов стоит Элсдон, знающий Отклонить Телепортацию-18 и Телепортация-20, который предпочел бы, чтоб Северин оказался за милю отсюда, как раз над озером (штраф -4, стоимость 7).Северин предпринимает попытку, тратя 4 энергии и бросая 10. Так как ему нужно 14 или меньше, это успех на 4.Элсдон используя основное умение 18 (самое низкое из соответствующих заклинаний), получает -2 за расстоянии в два ярда до Северина, и еще -4 за намеченное место. Его эффективное умение 12. Он должен бросить 7 (успех на 5), чтобы выиграть соревнование и отклонить Северина. Получится ли это или нет, расчетная стоимость - 3, таким образом, Элсдон должен заплатить минимум.Это также заклинание Движения.Стоимость: Как описано выше; минимум 3.Требования: Магичность(Magery) 3 и Отследить телепорт.ПредметЛюбой. Используется только магами. Энергостоимость создания: 700.</description-loc>
+		<college>Gate/Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M84</reference>
+		<categories>
+			<category>Gate</category>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">trace teleport</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 451px; left: 73px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Trace Teleport</name><name-loc>Отследить телепорт</name-loc><spell version="2">
+		<name>Trace Teleport</name>
+		<name-loc>Отследить телепорт</name-loc>
+		<description-loc>Информационное; Сопротивление заклинаниям объектаСотворенное вскоре после как кто-то или что-то телепортируется, хронопортируется или смещается в/из плана, дает заклинателю видение точки назначения отправленного объекта. Заклинатель также получит хорошее представления о величине штрафа к умению, примененного при сотворении заклинание. При критическом успехе будет известно текущее местоположение, но для преследования в течение минуты после сотворения Отследить телепорт достаточно любого успеха.Это также заклинание Движения.Модификаторы: накапливающийся штраф: -1 за каждую минуту, прошедшую между телепортацией и сотворением. Если заклинатель не видел телепортации, еще штраф -5Стоимость: 3.Требование: Телепортация, Хронопортация или Смещение плана.ПредметЛюбой. Энергостоимость создания: 100.</description-loc>
+		<college>Gate/Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M84</reference>
+		<categories>
+			<category>Gate</category>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">teleport</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">timeport</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">plane shift</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 607px; left: 97px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Beacon</name><name-loc>Маяк</name-loc><spell version="2">
+		<name>Beacon</name>
+		<name-loc>Маяк</name-loc>
+		<description-loc>Область«Смягчает» местное пространство-время, делая область эффекта легкой для теле- и хронопортации или смещения плана. При отправке к маяку энергостоимость и штрафы делятся на два (округлять в меньшую сторону). Маяк также можно использовать для помощи в телепортации объекта из его зоны к заклинателю.Маяк не будет личным; любой заклинатель, волшебно перемещающий себя (или кого-то еще) в область, получит выгоду от заклинания (хотя у навсегда зачарованных областей могут быть Доступ или Имя, см. M68).Заклинатель, при сотворении, должен определить, каким заклинаниям путешествия его маяк помогает. Многоцелевой маяк не требует добавочной стоимости создания.Это - также заклинание Движения.Длительность: 24 часа.Базовая стоимость: 10 на сотворение. Половина на поддержание.Время сотворения: 30 секунд.Требование: Телепортация, Хронопортация или Смещение плана. Маг должен знать Телепортацию, чтобы создать маяк телепортации, Хронопортацию, чтобы создать маяк хронопортации, Смещение плана, чтобы создать маяк смещения плана.Предмет(a) Любую область можно навсегда зачаровать как маяк телепортации за 100-кратную обычную энергостоимость. (b) Любой объект можно зачаровать как портативный маяк; любая попытка магического путешествия в район объекта получит премию. Энергостоимость создания: 1.500.</description-loc>
+		<college>Gate/Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>10</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>30 sec</casting_time>
+		<duration>24 hrs</duration>
+		<reference>M83</reference>
+		<categories>
+			<category>Gate</category>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">timeport</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">teleport</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">plane shift</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 391px; left: 229px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery3 hard"><name>Plane Shift Other (@Plane@)</name><name-loc>Планарное смещение другого</name-loc><spell version="2" very_hard="yes">
+		<name>Plane Shift Other (@Plane@)</name>
+		<name-loc>Планарное смещение другого</name-loc>
+		<description-loc>Обычное; Сопротивление по Воле(Will) 1Как Планарное смещение, но используется на любом существе или объекте. Объект, не ожидавший перемещения, должен пробросить умение Чувства тела или будет дезориентирован на секунду.Длительность: Постоянное.Стоимость: 20. Некоторые планы могут стоить больше и/или налагать штраф к умению.Время сотворения: 5 секунд.Требование: Планарное смещение.ПредметПалочка, посох или украшение. Используется только магами, посылает объект в единственный план. Энергостоимость создания: 100-кратная стоимости сотворения для плана.</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>20</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M83</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (gate)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">plane shift (@plane@)</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 307px; left: 229px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery1"><name>Plane Shift (@Plane@)</name><name-loc>Планарное смещение</name-loc><spell version="2" very_hard="yes">
+		<name>Plane Shift (@Plane@)</name>
+		<name-loc>Планарное смещение</name-loc>
+		<description-loc>ОсобоеФизически перемещает заклинателя вместе с вещами (до Тяжелой нагрузки) - в конкретный план. Каждый план требует своего собственного Планарного смещения. Это – путь в один конец. Чтобы вернуться, заклинатель должен знать Планарное смещение для своего домашнего плана или добраться до мага другого плана, который его Изгонит (M156).Заклинание не дает специальной невосприимчивости к среде плана. Чтобы благополучно посетить план, где естественные условия - вакуум, пламя, и т.д., надо изучить защитные заклинания.Длительность: Постоянное.Стоимость: 20. Некоторые планы могут стоить больше, налагать штраф к умению или то и другое сразу.Время сотворения: 5 секунд.Требование: Планарный вызов для того же плана.ПредметЛюбой предмет, отправляет в единственный план. Энергостоимость создания: 100-кратная стоимости сотворения для плана.</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>20</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M83</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">planar summons (@plane@)</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 247px; left: 289px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery2"><name>Planar Visit (@Plane@)</name><name-loc>Планарный визит</name-loc><spell version="2" very_hard="yes">
+		<name>Planar Visit (@Plane@)</name>
+		<name-loc>Планарный визит</name-loc>
+		<description-loc>ОсобоеЗаклинатель оставляет тело и свободно блуждает как дух в другом плане существования. Он полностью иллюзорен и не может ни на что влиять или любым образом взаимодействовать с окружением (с другой стороны, это дарует полную физическую невосприимчивость к любой окружающей среде). Нельзя даже сотворять заклинания, хотя можно поддержать существующие. Заклинатель так же неуязвим к магии, не влияющей на разум или духов (коим он является, пока не вернется в тело). Он незаметен обычным чувствам, только магия (Астральное зрение, Почуять духов, Почуять наблюдение и подобные заклинания) обнаружит его присутствие.Для путешествия в каждый план или измерение есть свое заклинание. Какие заклинания существуют, и точные детали измерений, куда они ведут – к Мастеру. Чувства объекта меняются, чтобы соответствовать среднему обитателю плана. В плане бесконечного мрака у него было бы Зрение в темноте, в астральном – Астральное зрение, в измерении, где все формы жизни чувствуют только звук – Сканирование (Сонар). Посещение очень странных меняющихся планов может быть опасным для психического здоровья не подготовленного путешественника...Наиболее распространенный план, посещаемый в большинстве миров – астрал, сосуществующий с обычным миром и позволяющий посетителям наблюдать невидимые места реального мира (по крайней мере, невидимый не уроженцами астральной сферы, если такие есть). Во время астрального путешествия заклинателя движется с удвоенной Скоростью без нагрузки и может проходить сквозь стены, горы, существа... Он может также спуститься в недра земли или подняться высоко в атмосферу. Блокирование астрала (M159), Пентаграмма (M124) и «Сплошные» заклинания (M170) остановят его, а Отталкивание духов (M158) воспрепятствует его вторжению. Если заклинание заканчивается прежде, чем дух воссоединяется с телом или если телу вредят, когда дух находится далеко, нужен бросок ЗД(HT), со штрафами за расстояние (M14), чтобы остаться в живых! Само собой разумеется, его тело полностью беззащитно на время заклинания, а обычная медицинская экспертиза покажет, что оно (едва) живо.Длительность: 1 минута.Стоимость: 4 на сотворение, 2 на поддержание. Некоторые планы могут стоить больше, налагать штраф к умению или то и другое сразу.Время сотворения: 30 секунд.Требования: Магичность(Magery) 2 и или Проекция, или Планарный вызов.Предмет(a) Посох, палочка или украшение. Используется только магами, действует только на владельца. Энергостоимость создания: 1.000. Хотя предмет остается с телом пока дух прогуливается, он может использоваться для поддержания заклинания. (b) Оружие. Используется только магами. Призрачный аналог этого предмета сопровождает дух владельца! Энергостоимость создания: 2.000 за фунт (минимум 1).</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>30 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M82</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">projection</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">planar summons (@plane@)</name>
+				</spell_prereq>
+			</prereq_list>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (gate)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 163px; left: 337px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Projection</name><name-loc>Проекция</name-loc><spell version="2">
+		<name>Projection</name>
+		<name-loc>Проекция</name-loc>
+		<description-loc>СтандартноеЗаклинатель на короткое время выпускает свой разум из своего тела, в любую точку в прямой видимости (используйте модификаторы больших расстояний), чтобы рассмотреть свое окружение из другой точки обзора. Его проецированная сущность полностью бесплотна и может только видеть, слышать, осязать, нюхать и пробовать на вкус. Её присутствие можно обнаружить Астральным зрением, Чувством духов, Чувством наблюдения, и тому подобными; иначе она незаметна.Проекция не может пересечь Астральный блок, Пентаграмму или Сплошные заклинания. Отталкивание духов будет сопротивляться её вторжению. Проекция не может двигаться; она может только поворачиваться, чтобы посмотреть в разные стороны. Тело неподвижно на время действия этого заклинания; оно не может действовать. Если кто-то атакует тело, заклинание автоматически прерывается.Длительность: 1 минута.Стоимость: 4 сотворение. 2 поддержка.Время сотворения: 3 секунды.Требования: Чувство духов и не меньше четырёх заклинаний школы Знаний.ПредметПосох, жезл или украшение. Используется только магами; действует только на носителя. Энергостоимость создания: 500.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M105</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sense spirit</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college compare="contains">knowledge</college>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 211px; left: 445px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Hawk Flight</name><name-loc>Полет сокола</name-loc><spell version="2" very_hard="yes">
+		<name>Hawk Flight</name>
+		<name-loc>Полет сокола</name-loc>
+		<description-loc>ОбычноеОчень быстрое заклинание Полета. Объект получает Движение 40 (80 миль в час) без нагрузки; нагрузка уменьшает Движение обычным образом. Объект может передвигаться и сражаться как обычно, и имеет преимущество в бою, если находится над врагами (B402).Длительность: 1 минута.Стоимость: 8 сотворение. 4 поддержка.Время сотворения: 3 секунды.Требования: Полет.ПредметПосох, палочка или украшение. Используется только магами; действует только на носителя. Энергостоимость создания: 3.000.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>8</casting_cost>
+		<maintenance_cost>4</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M146</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">flight</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 307px; left: 385px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Ethereal Body</name><name-loc>Эфирное тело</name-loc><spell version="2" very_hard="yes">
+		<name>Ethereal Body</name>
+		<name-loc>Эфирное тело</name-loc>
+		<description-loc>ОбычноеОбъект становится эфирным и может двигаться сквозь твердые объекты и существ, как если бы их там не было. Его одежда тоже становится эфирной, но не его снаряжение. Он не может владеть оружием или передвигать предметы, и ему не надо дышать, есть или пить, пока он эфирный. Он становится, почти по всем критериям, призраком. Его можно увидеть, хотя он выглядит прозрачным, и его можно услышать, если он говорит.Физические атаки и большая часть магии не могут воздействовать на эфирного персонажа. Однако любые заклинания школ Общения и понимания или Контроля разума действуют на него, как обычно, а броски сопротивления им имеют штраф -2! Аналогично, заклинания Некромантии, воздействующие на разум или душу, действуют, как обычно, а броски сопротивления им имеют штраф -2.Эфирные персонажи могут применять магию, но с -5 к умению; эфирный план, похоже, является зоной низкой маны. Эфирные тела могут проникать друг в друга, и не могут причинять друг другу вред, кроме как заклинаниями, как описано выше.Длительность: 10 секундСтоимость: 8 сотворение. 4 поддержание.Время сотворения: 30 секунд.Требования: Магичность(Magery) 3 и или Тело из воздуха, или 6 заклинания Движения.Предмет(а). Посох, палочка, украшение или накидка; действует только на носителя. Существенный недостаток состоит в том, что, за исключением накидки, предмет проваливается сквозь заклинателя как только заклинание сотворено! Энергостоимость создания: 3.000 (8.000 за накидку). (б) Драгоценный камень, который светится и вибрирует, когда в пределах 50 ярдов от него находится какое-нибудь эфирное существо. Стоимость создания: драгоценный камень за $500, и 100 энергии.</description-loc>
+		<college>Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>8</casting_cost>
+		<maintenance_cost>4</maintenance_cost>
+		<casting_time>30 sec</casting_time>
+		<duration>10 sec</duration>
+		<reference>M146</reference>
+		<categories>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="no">
+			<prereq_list all="yes">
+				<prereq_list all="no">
+					<advantage_prereq has="yes">
+						<name compare="is">magery</name>
+						<notes compare="contains">one college (movement)
+						<level compare="at least">3</level>
+					</notes></advantage_prereq>
+					<advantage_prereq has="yes">
+						<name compare="is">magery</name>
+						<notes compare="is anything"></notes>
+						<level compare="at least">3</level>
+					</advantage_prereq>
+				</prereq_list>
+				<spell_prereq has="yes">
+					<name compare="is">body of air</name>
+				</spell_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<college compare="contains">movement</college>
+				<quantity compare="at least">6</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 463px; left: 217px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Hideaway</name><name-loc>Скрытое пространство</name-loc><spell version="2">
+		<name>Hideaway</name>
+		<name-loc>Скрытое пространство</name-loc>
+		<description-loc>Наложение чарПри сотворении на объект, делает его больше внутри чем снаружи. Может быть использовано на карман, мешочек, ящик стола, кувшин — на все, что обычно может использоваться для хранения других вещей. Заклинатель может добавить любое количество фунтов дополнительного пространства, увеличивая так же внутренний объем на два кубических фута за фунт; дополнительное пространство может быть скрыто за фальшивым дном и т. д. В зависимости от энергии вложенной в заклинание, объекты в скрытом пространстве могут не считаться за нагрузку. Содержимое будет потеряно навсегда, если заклинание будет разрушено. Время, нужно для того, чтобы найти что-нибудь в скрытом пространстве зависит от того, насколько оно глубоко!Большое скрытое пространство может содержать персону. Проблем с воздухом не будет, если только скрытое пространство не запечатано.Энергостоимость: 50 за фунт дополнительного объема если объекты входят в нагрузку, 100 если не входят.Требования: Наложение чар, Создать Объект и Облегчение</description-loc>
+		<college>Enchantment</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Enchantment</spell_class>
+		<casting_cost>50#</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>-</casting_time>
+		<duration>Permanent</duration>
+		<reference>M61</reference>
+		<categories>
+			<category>Enchantment</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">enchant</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">create object</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">lighten</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 691px; left: 685px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Spell Shield</name><name-loc>Щит от заклинаний</name-loc><spell version="2">
+		<name>Spell Shield</name>
+		<name-loc>Щит от заклинаний</name-loc>
+		<description-loc>Областное; Сопротивление всем заклинаниям, сотворенным через него.Сопротивляется любому заклинанию, сотворенному через него на уровне своей Стойкости   (M10). Действует подобно Стене защиты от наблюдения. Исключение: полностью не влияет на метаемые заклинания, включая брошенные Метнуть заклинание . Если атакующее заклинание выигрывает состязание, оно проходит Щит, уменьшая его Стойкость на 1.  Когда Стойкость опустится до 0, щит рассеивается и не может быть поддержан.Длительность: 1 минута.Базовая стоимость: 3 на сотворение, 2 на поддержание.Требования: Магичность(Magery) 2, Защита от наблюдения, Устойчивость к магии.Предмет(а) Любой контейнер. Он и содержимое защищено Щитом. Энергостоимость создания : 250 за кубический фут (минимум 500). (б) коврик или область пола, защищает людей и предметы стоящие на нем. Энергостоимость создания: 400 за ярд радиуса.</description-loc>
+		<college>Meta</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M124</reference>
+		<categories>
+			<category>Meta</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">scryguard</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">magic resistance</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (meta)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 751px; left: 625px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Watchdog</name><name-loc>Сторожевой пёс</name-loc><spell version="2">
+		<name>Watchdog</name>
+		<name-loc>Сторожевой пёс</name-loc>
+		<description-loc>ОбластноеПри наложении на область, это заклинание предупреждает заклинателя о любом проходящем через эту область с враждебными намерениями. Если заклинатель спал, то он просыпается без ошеломления. После срабатывания заклинание не рассеивается, и продолжает функционировать до окончания времени действия.Длительность: 10 часов.Базовая стоимость: 1 сотворение. 1 поддержание.Время сотворения: 10 секунд.Требования: Почуять опасность.ПредметМожет быть наложено на область пола или земли, или на ковёр. Энергостоимость создания: 200 за каждый ярд радиуса.</description-loc>
+		<college>Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>10 hrs</duration>
+		<reference>M167</reference>
+		<categories>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sense danger</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 391px; left: 361px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery3"><name>Phase</name><name-loc>Фазировать</name-loc><spell version="2">
+		<name>Phase</name>
+		<name-loc>Фазировать</name-loc>
+		<description-loc>БлокирующееИзбегите нападения, на мгновение выключаясь из плана. Заклинатель фактически становится эфирным на время достаточное для прохождения атаки сквозь него. Он не исчезает и не теряет возможность отслеживать окружение; бросок Чувства тела не нужен.Стоимость: 3.Требования: Магичность(Magery) 3 и или Планарное смещение, или Эфирное Тело.ПредметОдежда или украшение. Энергостоимость создания: 1.000.</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M83</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (gate)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="starts with">plane shift</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">ethereal body</name>
+				</spell_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 463px; left: 361px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery3 hard"><name>Phase Other</name><name-loc>Фазировать другого</name-loc><spell version="2" very_hard="yes">
+		<name>Phase Other</name>
+		<name-loc>Фазировать другого</name-loc>
+		<description-loc>БлокирующееКак Фазироваться, но используется других.Стоимость: 3.Требование: Фазироваться.ПредметПалочка, посох или украшение. Используется только магами. Энергостоимость создания: 2.000.</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M83</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">phase</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 391px; left: 481px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard"><name>Teleport</name><name-loc>Телепортация</name-loc><spell version="2" very_hard="yes">
+		<name>Teleport</name>
+		<name-loc>Телепортация</name-loc>
+		<description-loc>ОсобоеМгновенно перемещает заклинателя на другое место. Однако, чем дальше находится это место, тем больше энергии требуется потратить, и тем больше штраф к умению, как указано далее:Обычно можно телепортироваться только на место, на которое вы смотрите, или на место, с которым вы знакомы. Штрафы: -2 за место, которое вы «видели» только через разум или память кого-то еще, или по телевизору; -2 за место, где вы не были больше месяца (кроме, возможно, вашего дома!); и от -1 до -3 за место, которое видели мельком.Это заклинание еще и опасно. Если вы провалите свой бросок на 1, то получите 1d вреда и попадете в точку назначения физически оглушенным (бросок ЗД(HT), чтобы восстановится). Если вы провалите бросок заклинания больше, чем на 1, вы не получаете вреда — но оказываетесь где-то не там. Где именно — решает Мастер! Критический провал этого заклинания может послать заклинателя куда угодно Мастеру — пусть это будет интересно! — и наносит физический вред, пока заклинатель не умрет.Даже успешная телепортация может сбить с толку. Волшебник должен сделать бросок умения Чувства тела (B181), чтобы действовать дальше в ход телепортации. Проваленный бросок означает дезориентацию — никакие действия кроме защиты невозможны на этом ходу. Критический провал означает, что он падает и физически оглушен. Телепортирующийся прибывает в той же самой позе, в которой он был. Он может быть повернутым в другую сторону, но это делает более вероятным то, что он будет дезориентирован по прибытии: -2 чтобы быть направленным в другую сторону, -5 чтобы из вертикального положения принять горизонтальное, или наоборот!Расстояние	Стоимость	УмениеНе более 10 ярдов	3	011-20 ярдов	4	-120-100 ярдов	5	-2101-500 ярдов	6	-3От 501 ярда до 1.99 мили	7	-4От 2 до 9.99 мили	8	-5От 10 до 99.99 мили	9	-6От 100 до 999.99 мили	10	-7Расстояние x10	1	-1Все, что было у вас с собой, вплоть до «тяжелой» нагрузки, перемещается с вами. Вы также можете взять с собой одного человека, держась с ним за руки, если добавленный вес не превышает предел вашей «тяжелой» нагрузки. На проваленном броске, он будет страдать от тех же побочных эффектов, что и вы.Это также заклинание Врат.Требования: или ИН(IQ) не ниже 13 и хотя бы одно заклинание из 10 разных школ, или Полет сокола.ПредметПосох или палочка; используется только магами. Энергостоимость создания: 3.000. Предмет, берущий носителя в одно заранее определенное место, имеет энергостоимость создания 2.000; заклинатель должен знать это место очень хорошо.</description-loc>
+		<college>Gate/Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M147</reference>
+		<categories>
+			<category>Gate</category>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">hawk flight</name>
+			</spell_prereq>
+			<prereq_list all="yes">
+				<attribute_prereq has="yes" which="iq" compare="at least">13</attribute_prereq>
+				<spell_prereq has="yes">
+					<college_count compare="at least">10</college_count>
+				</spell_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 307px; left: 625px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery2"><name>Slow Time</name><name-loc>Замедлить время</name-loc><spell version="2" very_hard="yes">
+		<name>Slow Time</name>
+		<name-loc>Замедлить время</name-loc>
+		<description-loc>Областное; Специальное сопротивлениеВремя в области замедляется. Чтобы заклинание сработало, все существа в области сотворения нежелающие этого должны провалить сопротивление по большему из ИН(IQ) и СЛ(ST). Предметы и заклинания свободно пересекают границу области. Существам же нужен бросок ИН(IQ) от ментального оглушения.Длительность: 1 минута (внешнего времени).Базовая стоимость: половина нормальной «скорости» времени стоит 2, треть – 3, четверть – 4 и так далее (предела нет, но см. ниже заклинание Остановить время). Столько же на поддержание.Время сотворения: 2 секунды.Требования: Магичность(Magery) 2, ИН(IQ) 13   и, по крайней мере, по два заклинания от каждой из 10 разных школ.ПредметПосох или часы. Используется только магами. Энергостоимость создания: 1.000.</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M86</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college_count compare="at least">10</college_count>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college_count compare="at least">10</college_count>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (gate)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<attribute_prereq has="yes" which="iq" compare="at least">13</attribute_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 379px; left: 625px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Suspend Time</name><name-loc>Остановить время</name-loc><spell version="2" very_hard="yes">
+		<name>Suspend Time</name>
+		<name-loc>Остановить время</name-loc>
+		<description-loc>Областное; Сопротивление по ИН(IQ)Время в области останавливается. Относительно внешнего мира находящиеся в области остановленного времени не будут двигаться, дышать, стареть и даже думать. По ощущениям пострадавших, во время действия заклинания время не течет. Только что они пили чай на приятном весеннем лугу, а в следующий момент уже сидят в круге травы, за которым наступила зима...Любые возражающие существа в области сотворения сопротивляются с ИН(IQ). Они все должны провалиться, чтобы заклинания подействовало.С внешней стороны область кажется окруженной абсолютно отражающей поверхностью, которую ничто (включая магию и магических существ) не может пересечь. Объекты от нее отскакивают. Любые заклинания требующие концентрацию вне области немедленно завершатся, если их заклинатель пойман внутри. Так же, закончится любое внешнее заклинание, подержание которого ожидается в течение остановленного времени(но см., Поддержать заклинание, M128).Длительность: 1 день (внешнего времени).Основная стоимость: 5 на сотворение. 5 на поддержание.Время сотворения: 5 минут.Требования: Магичность(Magery) 3 и Замедлить время.ПредметПосох или часы. Используется только магами. Энергостоимость создания: 2.500.</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>5 min</casting_time>
+		<duration>1 day</duration>
+		<reference>M86</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">slow time</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (gate)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 535px; left: 625px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Time Out</name><name-loc>Выход из времени</name-loc><spell version="2" very_hard="yes">
+		<name>Time Out</name>
+		<name-loc>Выход из времени</name-loc>
+		<description-loc>ОбластноеОбласть и все в ее пределах временно выходят из потока времени; эффект похож на бесконечное ускорение времени в области. Заклинание сотворяется только изнутри области, с центром на заклинателе (закончится, как только он коснется края), в отличие от Остановить время. Если заклинатель умрет внутри в одиночестве, заклинание никогда не закончится! Он и любые объекты, попавшие в область, кажутся просто исчезнувшими из потока времени.По ощущениям внешних наблюдателей, область «стареет» мгновенно (может быть заметно, а может и нет). Только что пять Огров атаковали партию, пока их волшебник творил заклинание, а в следующий миг они мертвы, партия исцелена и все уже наотмечались ромом.Изнутри область ограничена стеной (и покрыта потолком) абсолютной черноты. Кто- или что-либо касающееся края будет немедленно выброшено из области, назад в нормальное время. Что автоматически вызовет ментальное оглушение у любого кроме заклинателя. Снаряды всех видов можно запустить вслепую из области (см. Стрельба в слепую, B389), но не внутрь. Учтите, так как все снаряды вылетевшие из области, появятся в одно и то же внешнее время, стрелок сможет создать внушительный град снарядов, просто небрежно постреливая в течение нескольких субъективных часов...Заклинания, действующие наружу, просто проваливаются. Требующие концентрации, расположенные внутри области немедленно завершатся, если их заклинатель остался снаружи. Так же закончится любое внутреннее заклинание, поддержание которого ожидается в течение Выхода из времени, если его заклинатель не внутри.«Поток» маны в области эффекта – ноль. Камни силы не перезаряжаются, чары невозможны и т.д. Маги все еще восстанавливают энергию (физические последствия управления маной проходят независимо от потока маны в местности), но Мастер может решить, что заклинания стоят намного больше или невозможны в области (так как энергия должна быть целиком взята из жизненной силы заклинателя). Полностью зависит от роли маны в сеттинге Мастера.Длительность: момент (вне времени). В области у заклинателя и всех остальных есть столько времени, сколько нужно.Базовая стоимость: 5.Время сотворения: 5 минут.Требования: Магичность(Magery) 3 и Ускорить время.ПредметПосох или часы. Используется только магами. Энергостоимость создания: 2.500.</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>5 min</casting_time>
+		<duration>Instant</duration>
+		<reference>M87</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (gate)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">accelerate time</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 463px; left: 625px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery2"><name>Accelerate Time</name><name-loc>Ускорить время</name-loc><spell version="2" very_hard="yes">
+		<name>Accelerate Time</name>
+		<name-loc>Ускорить время</name-loc>
+		<description-loc>Областное; Специальное сопротивлениеОбратное к Замедлить время. Время в зоне поражения ускоряется. Все правила пересечения границы области, сопротивления и так далее, как в Замедлить время.Камни силы перезаряжаются по внешним нормам, и заклинание не ускорит их перезарядку. Конечно, относительное время отдыха может быть увеличено, позволяя магам восстанавливать ЕУ(FP) быстрее.Длительность: 1 минута (внешнего времени).Базовая стоимость: 2 для удвоения, 3 для утроения, 4 для учетверения и так далее (предела нет, но см. ниже заклинание Выход из времени). Столько же на поддержание.Время сотворения: 2 секунды.Требования: Магичность(Magery) 2, ИН(IQ) 13   и, по крайней мере, по два заклинания от каждой из 10 разных школ.ПредметПосох или часы. Используется только магами. Энергостоимость создания: 1.000.</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M86</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college_count compare="at least">10</college_count>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<college_count compare="at least">10</college_count>
+			</spell_prereq>
+			<attribute_prereq has="yes" which="iq" compare="at least">13</attribute_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (gate)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 547px; left: 217px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Hide Object</name><name-loc>Скрыть объект</name-loc><spell version="2">
+		<name>Hide Object</name>
+		<name-loc>Скрыть объект</name-loc>
+		<description-loc>ОбычноеОбъект (должен быть неживым) исчезает в пространстве другого измерения, откуда может быть вызван по желанию. Отказ поддержания заклинание приведет к появлению объекта в воздушном пространстве рядом с заклинателем. Если объект удерживается существом, держатель может сопротивляться заклинанию с ИН(IQ).Искатель не найдет объекты скрытые этим методом; Слежка потеряет связь на время действия заклинания и вернет ее при появлении объекта вновь в этом мире. Щит телепортации будет мешать заклинанию (например,  начальная величина успеха заклинания Скрыть объект должна быть 5 или выше, чтобы объекта вновь появился в области обычного эффекта Щита телепортации,). Объект появляется в руке заклинателя или в непосредственной близости (по выбору заклинателя).Длительность: 1 час.Стоимость: 1 за фунт веса объекта на сотворение. Столько же на поддержание.Время сотворения: 10 секунд.Требования: Скрытое пространство и Телепортация.Предмет(a) Посох, палочка или украшение. Используется только магами. Энергостоимость создания: 500. (b) Любой объект можно зачаровать на «исчезание» и «появление» по команде владельца. Энергостоимость зачарования: 100 за фунт веса предмета. Популярные чары для незаконных объектов...</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/lb</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M86</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">teleport</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">hideaway</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 631px; left: 217px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2 hard"><name>Sanctuary</name><name-loc>Святилище</name-loc><spell version="2" very_hard="yes">
+		<name>Sanctuary</name>
+		<name-loc>Святилище</name-loc>
+		<description-loc>ОсобоеОткрывает портал размером с дверь в карманное измерение. Портал немедленно закроется после того, как заклинатель пройдет через него (конечно, перед ним могут пройти другие). Портал ведет в небольшую, слабо освещенную комнату с голыми стенами без видимых выходов. Когда заклинатель хочет уйти, он просто концентрируется, и портал появится на одной из стен, возвращая к начальной точке отправления. Размер пространства может быть как у куба со стороной в ярдах равной умению заклинателя.Реальный мир полностью теряет связь с жителями карманного измерения; Искатель не найдет их, Слежка потеряет на время пребывания там (но снова найдет, как только они вернутся) и так далее. Конечно, обратное также верно.Длительные посещения карманного измерения потребуют создания воздуха, еды и воды (и приличного освещения для комфорта), так же как избавления от загрязнений. Что немного осложнено фактом низкой маны в карманном измерении, все сотворения с -5, и не работает заклинание Восстановление энергии.Если заклинание истекает или заклинатель теряет сознание, все содержимое комнаты возвращается, как будто телепортированное, каждый обитатель получает 1d повреждений и физическое оглушение, если провалит Чувство тела. То же произойдет с любым глупцом, не вышедшим перед заклинателем!Если нужно вернуться в реальный мир, но не в точку отправления, заклинатель может сотворить нужное  транспортное заклинание из карманного измерения, как будто от точки входа (если он готов рисковать творить в низкой мане).Отметьте: описание «стандартной» карманной вселенной, созданной этим заклинанием, ни в коем случае не должно быть взято в качестве евангелия. Менее аскетичная версия может включать богатую (но магическую и временную) обстановку и детали, иллюзорные окна и так далее. В некоторых мирах она определяется представлениями Мастера о дополнительных измерениях. В других – обстановка святилища может быть осознанным или неосознанным отражением личности мага.Длительность: 1 час.Стоимость: 5 на сотворение. 5 на поддержание.Время сотворения: 10 секунд.Требования: Скрытое пространство и Телепортация.ПредметПосох, палочка, украшение или дверь. Используется только магами. Энергостоимость создания: 2.000.</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M86</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">hideaway</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">teleport</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 631px; left: 337px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Rapid Journey</name><name-loc>Быстрое путешествие</name-loc><spell version="2" very_hard="yes">
+		<name>Rapid Journey</name>
+		<name-loc>Быстрое путешествие</name-loc>
+		<description-loc>ОсобоеПодобно Теле- и Хронопортации, но предусматривает немедленную обратную поездку. Работает только для заклинателя. Не работает с Планарным смещением. Все, что несет заклинатель, вплоть до Тяжелой нагрузки, отправляется с ним.Если бросок умения провален, заклинатель остается на месте, и получает обычные штрафы за проваленную Теле- или Хронопортацию (возможны повреждения, дезориентация, оглушение). Щит телепортации, сопротивляется дважды, при отправке и возвращении. Сразу по прибытию к месту назначения, заклинатель должен тратить ЕУ(FP), чтобы оставаться там. Как только поддержка присутствия прекращена (включая провал броска на отвлечение), он вернется в начальное место или время.Обратная поездка обычно не может провалиться. Но если сотворение заклинания удалось слегка (3 или меньше), то чтобы вернуться к отправной точке, надо делать броски ИН(IQ) (со штрафами за расстояние/время), во время поддержки заклинания. Можно делать только один бросок в минуту. Если заклинатель затем прекратит поддержку, то останется застрявшим там, куда или когда он отправился. Он также может застрять, если оглушен или попал в зону без маны.Это также заклинание Движения.Длительность: 1 минута.Стоимость: Как Теле- или Хронопортация, плюс четверть стоимость поездки в минуту на поддержание.Время сотворения: 5 секунд.Требования: Магичность(Magery) 3 и Телепортация (для Быстрого путешествия в пространстве) или Хронопортации (для Быстрого путешествия во времени, или во времени и пространстве).ПредметПосох или палочка. Используется только магами. Энергостоимость создания: 5.000.</description-loc>
+		<college>Gate/Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Varies</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M82</reference>
+		<categories>
+			<category>Gate</category>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">teleport</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">timeport</name>
+				</spell_prereq>
+			</prereq_list>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (gate)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 631px; left: 457px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Timeport Other</name><name-loc>Хронопортация другого</name-loc><spell version="2" very_hard="yes">
+		<name>Timeport Other</name>
+		<name-loc>Хронопортация другого</name-loc>
+		<description-loc>Особое; Сопротивление по Воле(Will) 1Аналогично Телепортация другого (M147), за исключением того, что объект – Хронопортируется от или к заклинателю. Применяются: штраф за расстояния между заклинателем и объектом (как у Обычных заклинаний), штраф Хронопортации за отрезок времени, на который заклинатель хочет смеить объект. Важное различие между Хронопортацией и Хронопортацией другого, если заклинатель провалит бросок или Сопротивление заклинанию успешно, объект не перемещается!Стоимость: как у Хронопортации, с учетом множителя веса из Телепортации другого.Требование: Хронопортация.ПредметПосох или палочка. Используется только магами. Энергостоимость создания: 4.000.</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M81</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">timeport</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 715px; left: 337px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery3"><name>Timeslip</name><name-loc>Хроносдвиг</name-loc><spell version="2">
+		<name>Timeslip</name>
+		<name-loc>Хроносдвиг</name-loc>
+		<description-loc>БлокирующееИзбегите атаки хронопортируясь с ее линии. Заклинатель сдвигается на несколько секунд в будущее, появляясь в том же месте - если оно не загромождено или занято! Место не свободно, если там кто-то стоит. Любая меньшая преграда заклинанием игнорируется.Заклинателю нужен бросок Чувства тела, чтобы действовать в ход своего появления. Если его начальное местоположение остается загроможденным или занятым, заклинатель остается в лимбо, вновь появляясь, как только место очистится... даже если потребуются годы! Критические ошибки, как известно, приводят к подобным катастрофическим последствиям.Если при сотворении Хроносдвига у заклинателя были какие-либо заклинания, требующие концентрации,  они автоматически истекают (кроме тех, где объект – заклинатель). Так же, заканчивается любое заклинание, подержание которого ожидается во время хроносдвига (но см., Поддержать заклинание, M128).Стоимость: 1 за секунду намеченного смещения. Штраф -1 к броску заклинания за каждую секунду смещения кроме первой.Требование: Хронопортация.ПредметОдежда, украшение или часы. Энергостоимость создания: 500.</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>1/sec #</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M81</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">timeport</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 715px; left: 457px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery3"><name>Timeslip Other</name><name-loc>Хроносдвиг другого</name-loc><spell version="2">
+		<name>Timeslip Other</name>
+		<name-loc>Хроносдвиг другого</name-loc>
+		<description-loc>БлокирующееХроносдвиг применяемый на других.Стоимость: 1 за секунду намеченного смещения. Штраф -1 к броску заклинания за каждую секунду смещения кроме первой.Требование: Хронопортация.ПредметПалочка, посох или украшение. Используется только магами. Энергостоимость создания: 1.000.</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>1/sec #</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M81</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">timeport</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 799px; left: 457px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Teleport Other</name><name-loc>Телепортация другого</name-loc><spell version="2" very_hard="yes">
+		<name>Teleport Other</name>
+		<name-loc>Телепортация другого</name-loc>
+		<description-loc>Обычное; сопротивление по Воле(Will) 1Как Телепортация, но заклинатель остается на месте, а объектом может быть что или кто угодно. Нельзя телепортировать только часть объекта; также твердое тело нельзя телепортировать в другое твердое тело. Разделение двух соединенных предметов дает штраф, определяемый Мастером; вынуть пробку из банки может быть на -1, а телепортирование запертой двери из косяка — на -5. Носимые украшения или одежда, или предмет, который крепко держит другой человек, могут быть телепортированы на -5, и этот человек может сопротивляться заклинанию.Это также заклинание Врат.Стоимость: Стоимость и штрафы к умению как у Телепортации, но с множителями: Вес	МножительМеньше 10 фунтов	x1/210-49 фунтов	x150-99 фунтов	x2100-200 фунтов	x3Одно дополнительное кратное за каждые дополнительные 100 фунтов	Последствия проваленного броска аналогичны, но неодушевленные объекты имеют меньший шанс получить повреждения. Если разумный объект успешно сопротивляется заклинанию, заклинатель не страдает от негативных эффектов, кроме затрат энергии.Требования: Магичность(Magery) 3 и Телепортация.ПредметПосох или палочка; используется только магами. Использующий должен направить предмет сначала на объект, а потом на желаемый пункт назначения; это требует секунду и не может быть сделано быстрее. Энергостоимость создания: 3.000.</description-loc>
+		<college>Gate/Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>_</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M147</reference>
+		<categories>
+			<category>Gate</category>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (movement)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">teleport</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 547px; left: 397px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery3"><name>Timeport</name><name-loc>Хронопортация</name-loc><spell version="2" very_hard="yes">
+		<name>Timeport</name>
+		<name-loc>Хронопортация</name-loc>
+		<description-loc>ОсобоеПохоже на Телепортацию, только, перемещает во времени вместо пространства. Субъективное «движение» мгновенно. Чем более «удалено» время назначения, тем больше энергостоимость и штраф к умению (см. таблицу Модификаторы времени). В отличие от Телепортации, нет штрафа за прыжок в «незнакомое» время. Хотя Мастер может установить дополнительный штраф (возможно -2) на любой прыжок в будущее.Перемещаясь в будущее, заклинатель попадет в его самый вероятный вариант из всех возможных. Вернувшись и действуя на основании полученных данных, он не обязательно создаст посещенное будущее.Аналогично заклинатель, вернувшийся в прошлое и изменивший что-либо, обратно может вернуться в альтернативную линию времени. Число изменений между «домашней» линией времени и новой будет зависеть от взгляда Мастера на «сопротивляемость искажению» временного потока в его мире(ах).Заклинание опасно - штрафы за неудачный бросок такие же, как у Телепортации с заменой пространства временем. Также как в Телепортации, можно нести вес не более Тяжелой нагрузки (вещи и существа). По прибытию нужен бросок Чувства тела, с модификацией за столкновения, изменения скорости, ориентации.Если заклинатель хочет путешествовать одновременно во времени и пространстве, используется меньшее из умений Телепортация или Хронопортация с объединением штрафов и затрат за расстояние и время.Стоимость: см. таблицу.Требования: Магичность(Magery) 3 и Телепортация.ПредметПосох, палочка, или часы. Используется только магами. Энергостоимость создания: 4.000. Предмет, переносящий владельца в одно предопределенное время, стоит 2.000; создатель предмета должен быть хорошо знаком с тем временем.Модификаторы времени</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Special</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M81</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">teleport</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (gate)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 691px; left: 577px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Create Door</name><name-loc>Создать проход</name-loc><spell version="2">
+		<name>Create Door</name>
+		<name-loc>Создать проход</name-loc>
+		<description-loc>ОбычноеСотворенное на ближайшей стороне однородной преграды (стена, изгородь, утес и т.д.), создаст краткосрочные врата малой дальности, ведущие на другую сторону. Внутреннее расстояние фактически не проходится пользователями двери - они одновременно телепортируются от ближней стороны к дальней.Заклинание имеет преимущество перед Телепортацией, разрешая доступ к местам, неизвестным заклинателю и перемещения более чем с Тяжелой нагрузкой.Модификаторы: штраф -1 за ярд толщины преграды, нет штрафа, если толщина преграды пол ярда или меньше. Мастер не должен говорить игроку размер штрафа, надо просто сказать потерпело ли заклинание неудачу или нет.Длительность: 10 секунд.Стоимость: 2 за 10 квадратных футов проема. 2 на поддержание. Как эталон: современная дверь обычно около семи футов высотой и трех шириной. Проход, созданный за 2 энергии, будет значительно меньше.Время сотворения: 5 секунд.Требования: Телепортация и любое заклинание «Проходить сквозь».Предмет(a) Посох, палочка, украшение или писчие принадлежности (используются для «рисования» двери на препятствии). Энергостоимость создания: 500. (b) Портативная дверь. Активируется (если Сила выше 15 после вычитания штрафа за толщину преграды) прислонением к преграде. Энергостоимость создания: 500 за 10 квадратных футов размера.</description-loc>
+		<college>Gate</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2/10 sq ft#</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>10 sec</duration>
+		<reference>M84</reference>
+		<categories>
+			<category>Gate</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="contains">walk through</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">teleport</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 859px; left: 517px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Blink</name><name-loc>Мерцание</name-loc><spell version="2">
+		<name>Blink</name>
+		<name-loc>Мерцание</name-loc>
+		<description-loc>БлокирующееУход от атаки путем мгновенной телепортации с ее пути на свободное место неподалеку. Место не считается свободным, если на нем кто-то стоит; менее серьезные препятствия не имеют значения для этого заклинания.Заклинатель может Мерцать на любое незанятое место в пределах 3 ярдов, в любом направлении. Направление взглляда заклинателя не меняется. Заклинатель должен сделать бросок Чувства тела, чтобы действовать на своем следующем ходу (В181). Если в пределах 3 ярдов нет свободных мест, заклинание провалится. Для боя, «мерцание» считается уклонением, которое автоматически успешно, если бросок заклинания успешен.Критический провал с этим заклинанием аналогичен критическому провалу Телепортации, но заклинатель редко перемещается больше, чем на милю.Это также заклинание Врат.Стоимость: 2Требования: Телепортация.ПредметОдежда или украшение. Энергостоимость создания: 800.</description-loc>
+		<college>Gate/Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M148</reference>
+		<categories>
+			<category>Gate</category>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">teleport</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 835px; left: 625px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Teleport Shield</name><name-loc>Щит телепортации</name-loc><spell version="2">
+		<name>Teleport Shield</name>
+		<name-loc>Щит телепортации</name-loc>
+		<description-loc>ОбластноеЛюбая попытка сотворения Телепортация (или Мерцание) для попадания или покидания зоны действия заклинания получает штраф -5.Проваленная попытка телепортации внутрь зоны имеет обычный эффект. Проваленная попытка телепортации наружу зоны удерживает пытающегося на месте, физически оглушённым и потратившим всю энергию на попытку! Удвоение энергетической стоимости повысит штраф до -10, а утроение – до -15! Это заклинание действует на заклинания Телепортация, Хронопортация, Планарное смещение, Хроносдвиг и на все их вариации.Это также заклинание школы Врат.Длительность: 1 час.Базовая стоимость: 1/3 на сотворение (минимальный радиус 3 ярда). Столько же поддержка.Время сотворения: 10 секунд.Требования: Сторожевой пёс и или Щит от заклинаний или Телепортация.ПредметМожет быть наложено на область пола или земли, или на ковёр или на что-то подобное. Энергостоимость создания: 50 за каждый ярд радиуса.</description-loc>
+		<college>Gate/Protection</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1#</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M170</reference>
+		<categories>
+			<category>Gate</category>
+			<category>Protection</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">watchdog</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">spell shield</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">teleport</name>
+				</spell_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 932px; left: 517px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard"><name>Blink Other</name><name-loc>Мерцание другого</name-loc><spell version="2">
+		<name>Blink Other</name>
+		<name-loc>Мерцание другого</name-loc>
+		<description-loc>БлокирующееКак Мерцание, но может использоваться на других.Это также заклинание Врат.Стоимость: 2Требования: Мерцание.ПредметПалочка, посох или украшение. Используется только магами. Энергостоимость создания: 1.600.</description-loc>
+		<college>Gate/Movement</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Blocking</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M148</reference>
+		<categories>
+			<category>Gate</category>
+			<category>Movement</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">blink</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block>

@@ -1,0 +1,1151 @@
+<block style="top: 78px; left: 72px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Beast Speech</name><name-loc>Звериная речь</name-loc><spell version="2">
+		<name>Beast Speech</name>
+		<name-loc>Звериная речь</name-loc>
+		<description-loc>ОбычноеДает заклинателю возможность разговаривать с животными на их родном «языке». Полученная таким образом информация зависит от интеллекта зверя; существа вроде птиц вряд ли смогут рассказать много интересного. Муравей мог проползать мимо золота, но он может сказать только то, что материал был твердый и несъедобный. Каждая минута заклинания позволяет задать один вопрос и получить один ответ.Длительность: 1 минута.Стоимость: 4 сотворение, 2 поддержание.Требования: Призыв животного.ПредметПосох, палочка или украшение. Энергостоимость создания: 1000 за предмет, позволяющий разговаривать с конкретным типом животных или 4000 за рассчитанный на любых созданий.</description-loc>
+		<college>Animal</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M31</reference>
+		<categories>
+			<category>Animal</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">beast summoning</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 78px; left: 348px;" class=""><name>Sense Life</name><name-loc>Почуять жизнь</name-loc><spell version="2">
+		<name>Sense Life</name>
+		<name-loc>Почуять жизнь</name-loc>
+		<description-loc>Информационное; ОбластноеСообщает заклинателю, есть ли жизнь в данном месте, и (при хорошем броске) общее представление о типе этой жизни. Заклинатель также может точно указать, какого рода жизнь он ищет: растения, эльфов, рыжих девок или конкретную личность, с которой он знаком.Базовая стоимость: 1/2 (минимум 1).ПредметПосох, палочка или украшение. Энергостоимость создания: 80.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info/Area</spell_class>
+		<casting_cost>1/2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M45</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+	</spell></block><block style="top: 78px; left: 540px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Far-Hearing</name><name-loc>Удаленный слух</name-loc><spell version="2">
+		<name>Far-Hearing</name>
+		<name-loc>Удаленный слух</name-loc>
+		<description-loc>ИнформационноеЗаклинатель может слышать любой разговор, который он может видеть, не зависимо от расстояния; он может слышать через препятствия толщиной до 6 футов. Он автоматически выполняет проверку слуха. Это также заклинание школы Знаний.Длительность: 1 минута.Стоимость: 4 на сотворение. 2 на поддержание.Время сотворения: 3 секунды.Требования: Магичность(Magery) 1 и четыре других заклинаний Звука. Нельзя при недостатках Глухота или Тугоухость.ПредметОдежда или украшение. Действует лишь на надевшего. Энергостоимость: 400.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M173</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">sound</college>
+				<quantity compare="at least">4</quantity>
+			</spell_prereq>
+			<advantage_prereq has="no">
+				<name compare="is">hard of hearing</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<advantage_prereq has="no">
+				<name compare="is">deafness</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (sound)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 78px; left: 660px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Voices</name><name-loc>Голоса</name-loc><spell version="2">
+		<name>Voices</name>
+		<name-loc>Голоса</name-loc>
+		<description-loc>ОбычноеСоздаёт осмысленный звук нормальной громкости – голоса, музыку ит.д. от заклинателя требуется постоянная концентрация.Длительность: 1 минута.Стоимость: 3 на сотворение. 2 на поддержание.Требования: Звук.ПредметЛюбой. Предмет повторяет одно высказывание снова и снова (если только не подвержен заклинанию Связь). Энергостоимость создания: 20 за слово.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M172</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sound</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 150px; left: 540px;" class="other-college"><name>Wizard Eye</name><name-loc>Волшебный глаз</name-loc><spell version="2">
+		<name>Wizard Eye</name>
+		<name-loc>Волшебный глаз</name-loc>
+		<description-loc>СтандартноеСоздаёт физический глаз – двухдюймовый шарик – через который заклинатель может видеть. Глаз может летать в воздухе, вертикально или горизонтально, с Движением 10; он движется в ход заклинателя. Концентрация требуется, чтобы двигать глаз, но не чтобы видеть через него. Глаз маленький, его МР(SM) равен -7, поэтому в него трудно попасть – но если в него попадут физической атакой, или любым заклинанием, которое могло бы вывести его из строя, он будет уничтожен.Длительность: 1 минута.Стоимость: 4 сотворение. 2 поддержка.Время сотворения: 2 секунды.Требования: Перемещение и Обострённое зрение.ПредметГлазное яблоко, вырезанное из слоновой кости с врезанными драгоценными камнями. Используется только магами. По команде держателя, оно превратится в Волшебный глаз; по возвращению в его руку оно вновь примет форму драгоценности. Стоимость создания: 1.100 энергии, $1000 за умелую резьбу по слоновой кости и $600 за изумруды.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M104</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">apportation</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">keen vision</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 150px; left: 660px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Simple Illusion</name><name-loc>Простая иллюзия</name-loc><spell version="2">
+		<name>Simple Illusion</name>
+		<name-loc>Простая иллюзия</name-loc>
+		<description-loc>ОбластноеСоздаёт исключительно визуальный образ, видимый всем, кто может видеть место назначения заклинания. Это может быть как единичный предмет, так и целое зрелище. Если заклинатель сконцентрируется, образ может двигаться в другую область или изменять форму или размеры, вплоть до занятия всей области действия. Любое разумное существо может развеять заклинание «неверием» в образ — выполнить манёвр Концентрация и сделать успешный бросок Воли(Will). Иллюзия развеется автоматически от первой же атаки, любого заклинания, кроме Контроля иллюзии, или прикосновения любого разумного существа.Длительность: 1 минута.Базовая стоимость: 1 на сотворение. Половина на поддержание.Требования: Заклинатель должен быть зрячим и иметь ИН(IQ) не менее 11.</description-loc>
+		<college>Illusion &amp; Creation</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M95</reference>
+		<categories>
+			<category>Illusion &amp; Creation</category>
+		</categories>
+		<prereq_list all="yes">
+			<advantage_prereq has="no">
+				<name compare="starts with">blind</name>
+				<notes compare="is anything"></notes>
+			</advantage_prereq>
+			<attribute_prereq has="yes" which="iq" compare="at least">11</attribute_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 162px; left: 132px;" class=""><name>Lend Language</name><name-loc>Передать язык</name-loc><spell version="2">
+		<name>Lend Language</name>
+		<name-loc>Передать язык</name-loc>
+		<description-loc>ОбычноеОбъект получает знание языка (только разумные существа) на уровне владения им заклинателя или Акцент — что ниже. Заклинатель должен знать передаваемый язык.Длительность: 1 минутаСтоимость: 3 сотворение. 1 поддержание.Время сотворения: 3 секунды.Требования: либо Звериная речь, либо три заклинания школы Общения и понимания.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M46</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<college compare="contains">communication</college>
+				<quantity compare="at least">3</quantity>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">beast speech</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 162px; left: 372px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Sense Foes</name><name-loc>Почуять врагов</name-loc><spell version="2">
+		<name>Sense Foes</name>
+		<name-loc>Почуять врагов</name-loc>
+		<description-loc>Информационное; ОбластноеПозволяет заклинателю узнать о враждебных намерениях и о степени этой враждебности. Может быть сотворено на персону или область. При сотворении на область будет сообщать лишь присутствие враждебности, но не ее источник.Базовая стоимость: 1 (минимум 2).ПредметПосох, палочка или украшение. Энергостоимость создания: 200.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info/Area</spell_class>
+		<casting_cost>1/area, min 2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M44</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+	</spell></block><block style="top: 234px; left: 600px; width: 100px; right: auto; height: 50px; bottom: auto;" class="hard magery1"><name>Communication</name><name-loc>Общение</name-loc><spell version="2" very_hard="yes">
+		<name>Communication</name>
+		<name-loc>Общение</name-loc>
+		<description-loc>ОбычноеЭто заклинание позволяет заклинателю установить двусторонний канал для общения с объектом. Каждый участник видит изображение собеседника, что позволяет общаться в реальном времени. Используйте модификаторы Дальних дистанций (M14), но если заклинатель знаком с объектом и тот ожидает «звонок», модификаторы дистанций не используются!Примените дополнительные -4 к умению, если заклинатель не знает объект. Общение только аудио-визуальное, однако, если заклинатель так же знает Удаленный вкус и запах, он может добавить в общение запах за дополнительное очко энергии (и на сотворение, и на поддержание).Другие могут включится в «конференцию» в любое время - новое сотворение необходимо для каждой подключаемой персоны. Таким образом такое общение не безопасно.Длительность: 1 минута.Стоимость: 4 сотворение. 4 поддержание. Столько же на подключение каждого дополнительного участника.Время сотворения: 4 секунды.Требования: Волшебный глаз, Удаленный слух, Голоса и Простая иллюзия.ПредметГоловной убор, блюдце или хрустальный шар. Используется только магами. Энергостоимость создания: 800.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>4</maintenance_cost>
+		<casting_time>4 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M48</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">wizard eye</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">far-hearing</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">voices</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">simple illusion</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 234px; left: 372px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Sense Emotion</name><name-loc>Почуять эмоции</name-loc><spell version="2">
+		<name>Sense Emotion</name>
+		<name-loc>Почуять эмоции</name-loc>
+		<description-loc>ОбычноеДает заклинателю знать о том, какие эмоции испытывает объект в данный момент. Сработает на любое живое существо, но естественно оно в основном полезно для разумных существ. Сообщает также, насколько лоялен объект к заклинателю (см. Лоялность наемников, B518).Стоимость: 2.Требования: Почуять врагов.ПредметПосох, палочка или украшение. Энергостоимость создания: 300.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M45</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sense foes</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 234px; left: 132px;" class=""><name>Borrow Language</name><name-loc>Заимствовать язык</name-loc><spell version="2">
+		<name>Borrow Language</name>
+		<name-loc>Заимствовать язык</name-loc>
+		<description-loc>ОбычноеЗаклинатель приобретает знание языка на уровне владения объекта или Акцент (что ниже). Объект должен знать данный язык.Длительность: 1 минутаСтоимость: 3 сотворение. 1 поддержание.Время сотворения: 3 секунды.Требование: Передать язык.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M46</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lend language</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 318px; left: 72px;" class="hard"><name>Gift of Letters</name><name-loc>Дар письма</name-loc><spell version="2" very_hard="yes">
+		<name>Gift of Letters</name>
+		<name-loc>Дар письма</name-loc>
+		<description-loc>ОбычноеДает грамотность в любом языке (только разумным существам)Длительность: 1 минутаСтоимость: 2 для уровня Ломаный, 4 для Акцента, 6 для Родного. Половина на поддержание.Требования: Заимствование ззыка и три языка с письменным уровнем Акцент или лучше.Предмет:Головной убор или украшение. Работает только на надевшего и только для некоторых языков. Энергостоимость создания: 300 за каждый язык (который должен быть известен создающему).</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M46</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="starts with">Language</name>
+					<notes compare="contains">Written (Native)
+				</notes></advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="starts with">Language</name>
+					<notes compare="contains">Written (Accented)
+				</notes></advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">borrow language</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 318px; left: 192px;" class="hard"><name>Gift of Tongues</name><name-loc>Дар языков</name-loc><spell version="2" very_hard="yes">
+		<name>Gift of Tongues</name>
+		<name-loc>Дар языков</name-loc>
+		<description-loc>ОбычноеДает возможность говорить и понимать любой язык (только разумным существам). Не дает возможности говорить или слышать тем, кто лишен этих способностей.Длительность: 1 минута.Стоимость: 2 для уровня Ломаный, 4 для Акцента, 6 для Родного. Половина на поддержание.Требования: Заимствование языка и три языка на уровне Акцента или выше.ПредметГоловной убор или украшение. Работает только на надевшего и только для некоторых языков. Энергостоимость создания: 300 за каждый язык (который должен быть известен создающему).</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Half</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M46</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="starts with">Language</name>
+					<notes compare="contains">Spoken (Native)
+				</notes></advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="starts with">Language</name>
+					<notes compare="contains">Spoken (Accented)
+				</notes></advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">borrow language</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 318px; left: 372px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Truthsayer</name><name-loc>Правдолюб</name-loc><spell version="2">
+		<name>Truthsayer</name>
+		<name-loc>Правдолюб</name-loc>
+		<description-loc>Информационное; Сопротивление по Воле(Will)Сообщает, врет субъект или нет. Может быть сотворено в двух вариантах:1. Где объект говорил любую лож за последние пять минут.2. Когда объект последний раз солгал.Также может сообщить величину лжи объекта. Если маг не касается объекта, то штрафы считаются как для Обычных заклинаний.Стоимость: 2.Требование: Почуять эмоции.ПредметКорона, шлем или другой головной убор. Энергостоимость создания: 500.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M45</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sense emotion</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 318px; left: 516px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Hide Emotion</name><name-loc>Скрыть эмоции</name-loc><spell version="2">
+		<name>Hide Emotion</name>
+		<name-loc>Скрыть эмоции</name-loc>
+		<description-loc>Обычное; Сопротивляется чтению эмоцийПридает объекту абсолютно невозмутимый внешний вид. Сопротивляется Чтению ауры и Обнаружить эмоции (и Обнаружить врагов, на усмотрение Мастера) так же как и любой попытке узнать эмоции другим путем (Эмпатия, псионика, Язык тела и т.д.). Это заклинание в большом почете у дипломатов, придворных и игроков в покер. Оно также дает премию до  4 (на усмотрение Мастера) к любому умению, где полезно скрытие эмоций.Длительность: 1 часСтоимость: 2 сотворение, 2 поддержание.Требования: Почуять эмоции.ПредметШляпа, корона или другой головной убор. Энергостоимость создания: 200.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M45</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sense emotion</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 318px; left: 624px;" class=""><name>Vexation</name><name-loc>Недовольство</name-loc><spell version="2">
+		<name>Vexation</name>
+		<name-loc>Недовольство</name-loc>
+		<description-loc>Обычное; Сопротивление по Воле(Will)Используется для изменения броска реакции. Заклинание делает объект (разумное существо, расовый ИН(IQ) 6 и выше) недружелюбным. Часто используется шпионами для срыва переговоров.Длительность: 1 минутаСтоимость: удвоенный штраф к реакции. Столько же на поддержку (максимум 5).Требование: Почуять эмоции.ПредметШапка, корона, шлем или другой головной убор. Должен быть украшен пурпурным камнем (гранатом или аметистом) на сумму минимум $200. Используется только магами. Энергостоимость создания: 1.000.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M45</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sense emotion</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 378px; left: 684px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Persuasion</name><name-loc>Убеждение</name-loc><spell version="2">
+		<name>Persuasion</name>
+		<name-loc>Убеждение</name-loc>
+		<description-loc>Обычное; Сопротивление по ИН(IQ)Используется для изменения броска реакции. Заклинание делает объект (разумное существо, расовый ИН(IQ) 6 и выше) более снисходительным.Длительность: 1 минута.Стоимость: удвоенная премия к реакции. Столько же на поддержку (максимум 5).Требование: Почуять эмоции.ПредметШапка, корона, шлем или другой головной убор. Должен быть украшен пурпурным камнем (гранатом или аметистом) на сумму минимум $200. Используется только магами. Энергостоимость создания: 1.000.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>Varies</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M45</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">sense emotion</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 402px; left: 492px;" class=""><name>Hide Thoughts</name><name-loc>Скрыть мысли</name-loc><spell version="2">
+		<name>Hide Thoughts</name>
+		<name-loc>Скрыть мысли</name-loc>
+		<description-loc>ОбычноеЗащищает цель от любых заклинаний Чтения мыслей или Контроля разума. Враждебный маг должен победить в состязании умений «атакующего» заклинания против данного заклинания. Если он пробил защиту, жертва получает еще и обычный бросок сопротивления. Не действует на уже установленный ментальный контакт.Стоимость: 3. 1 поддержание.Длительность: 10 минут.Требования: Правдолюб или Скрыть эмоции.ПредметКорона, шлем или другой головной убор. Энергостоимость создания: 1.000.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>10 min</duration>
+		<reference>M46</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">truthsayer</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">hide emotion</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 390px; left: 348px;" class="other-college"><name>Sleep</name><name-loc>Сон</name-loc><spell version="2">
+		<name>Sleep</name>
+		<name-loc>Сон</name-loc>
+		<description-loc>Обычное; Сопротивление по ЗД(HT)Объект засыпает. Если он стоит, он падает, но это его не будит. Он может быть разбужен взрывом, громким звуком ит.д. но после пробуждения он будет ментально оглушён (смотри Эффекты Оглушения B420). Заклинание Пробудить (M90) разбудит его немедленно. Если объект не будить, он проспит восемь часов и проснётся.Стоимость: 4.Время сотворения: 3 секунды.Требования: Оцепенение.ПредметЛюбой предмет. Всегда включён; усыпляет надевшего до тех пор, пока предмет не снимут. При создании предмета зачарователь может указать будет ли усыпление мгновенным или постепенным. Энергостоимость создания: 600.Посох или палочка. Используется только магами; надо коснуться объекта. Энергостоимотсь создания: 1.200.</description-loc>
+		<college>Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>Until awakened</duration>
+		<reference>M135</reference>
+		<categories>
+			<category>Mind Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">daze</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 402px; left: 156px;" class=""><name>Mind-Reading</name><name-loc>Чтение мыслей</name-loc><spell version="2">
+		<name>Mind-Reading</name>
+		<name-loc>Чтение мыслей</name-loc>
+		<description-loc>Обычное; Сопротивление по Воле(Will)Позволяет заклинателю читать поверхностные мысли объекта – о чем он думает в настоящий момент. Объект не знает, что его мысли читают. Работает на любом живом создании, но хорошие результаты будут конечно при чтении мыслей разумных существ.Модификаторы: -2, если не знаешь родного языка объекта, -2 за чужую расу, -4 за полностью чужеродный объект.Длительность: 1 минута.Стоимость: 4 сотворение. 2 поддержка.Время сотворения: 10 секунд.Требования: Правдолюб или Заимствование языкаПредметКорона, шлем или другой головной убор. Используется только магами. Энергостоимость создания: 1.000.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M46</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">truthsayer</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">borrow language</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 438px; left: 612px;" class="other-college"><name>Avoid</name><name-loc>Избегание</name-loc><spell version="2">
+		<name>Avoid</name>
+		<name-loc>Избегание</name-loc>
+		<description-loc>ОбластноеДелает область, на которую наложено заклинание, непривлекательной для всех существ, кроме заклинателя. На области будет эффект отвода глаз, а приближающиеся персонажи будут испытывать сильное беспокойство и желание оказаться где-нибудь подальше. Заклинание противодействует попыткам взглянуть на область или приблизиться к ней (бросайте умение заклинателя против Воли(Will) искателя). Жертвы не будут знать об отталкивании, если оно сможет действовать не напрямую (например, вы только что почувствовали, что сидите спереди, а не в середине…). Это коварное заклинание и Мастер должен делать броски тайно. Если заклинание работает, не надо говорить жертве «Ты не можешь заглянуть в этот чулан», правильнее сказать «Ты ничего не видишь». Заклинание заставило их думать, что они уже проверили чулан, или кто-то другой из партии его проверил, или ещё что-то подобное. Если заклинатель творит Избегание и Скрыть, Мастер не должен проверять успешность заклинания Скрыть, если только ищущий не преодолел заклинание Избегание и не смотрит в сторону заклинателя.Длительность: 1 час.Стоимость: 3 на сотворение. 3 на поддержание.Время сотворения: 1 минута.Требования: Скрыть, Страх и Забывчивость.ПредметМожно сделать область «избегаемой» навсегда за в 100 раз большую стоимость.</description-loc>
+		<college>Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M140</reference>
+		<categories>
+			<category>Mind Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">hide</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">fear</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">forgetfulness</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 522px; left: 612px;" class=""><name>Insignificance</name><name-loc>Незначительность</name-loc><spell version="2">
+		<name>Insignificance</name>
+		<name-loc>Незначительность</name-loc>
+		<description-loc>ОбычноеСпециальное сопротивлениеЗаставляет всех вступающих в социальный контакт с объектом игнорировать или не замечать его. Только имеющие причины заметить данную конкретную персону, сопротивляются по Восп — объекту самому по себе сопротивляться не нужно. Наблюдатели получают премию к сопротивлению равную общему модификатору внешности объекта, положительного или отрицательного. Таким образом, наблюдатели за Привлекательным объектом сопротивляются с Восп  1, но наблюдатели за Непривлекательным объектом так же сопротивляются с Восп  1.Эффект заклинания ограничен по важности; объект может проскользнуть незамеченным сквозь толпу, но будет остановлен стражником при попытке пройти туда, куда ему нельзя. Он может привлечь чьё-либо внимание, схватив его, но, скорее всего, получит при этом негативную реакцию. Если он что-то крадет или совершает другое нежелательное действие (например, раздевается догола), все свидетели получают новый бросок сопротивления. Если он атакует кого-либо, то жертва автоматически сбрасывает с себя эффект заклинания — более того, её крики о помощи не будут игнорироваться!Незначительность и Присутствие сопротивляются друг другу.Длительность: 1 час.Стоимость: 4 сотворение, 4 поддержание.Время сотворения: 10 секунд.Требования: Убеждение и Избегание.Предмета) Плащ, украшение или головной убор. Всегда включён. Одевший игнорируется! Энергостоимость создания: 700. б) Палочка или посох. Используется только магами. Энергостоимость создания: 450.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>4</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M48</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">persuasion</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">avoid</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 582px; left: 624px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Lure</name><name-loc>Искушение</name-loc><spell version="2">
+		<name>Lure</name>
+		<name-loc>Искушение</name-loc>
+		<description-loc>Областное; Сопротивление по Воле(Will)Каждый, ступивший в заколдованную область, чувствует потребность подойти к центру заколдованной области. Мастер должен тайно делать броски на сопротивление, а потом сообщать неудачливым жертвам, что они «заинтересовались сундуком» или другой коварный намёк. Когда жертва дойдёт до центра области, она невосприимчива к заклинанию, пока не покинет заколдованную область (если он вернётся, Он снова будет «атакован» заклинанием).Искушение и Избегание - противоположенные заклинания, и поэтому сопротивляются друг другу.Длительность: 1 час.Базовая стоимость: 1 на сотворение. Столько же на поддержание.Время сотворения: 10 секунд.Требования: Контроль Эмоций.ПредметЗаклинание может быть наложено на область навсегда, за в 100 раз большую стоимость.</description-loc>
+		<college>Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>1</casting_cost>
+		<maintenance_cost>Same</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M137</reference>
+		<categories>
+			<category>Mind Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">emotion control</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 666px; left: 684px;" class=""><name>Presence</name><name-loc>Присутствие</name-loc><spell version="2">
+		<name>Presence</name>
+		<name-loc>Присутствие</name-loc>
+		<description-loc>Обычное, Специальное сопротивлениеВсе существа, вступившие в социальный контакт с объектом обращают на него внимание. Каждый пытающейся игнорировать его сопротивляется по Воле(Will) — но сам объект сопротивляться не должен! Заклинание не гарантирует хорошую реакцию — оно удваивает положительные и отрицательные модификаторы! Если у объекта нет таких модификаторов, оно дает  1. Большинство людей будут думать что к выделяющейся без особых причин персоне стоит получше присмотреться в надежде на некое ценное зрелище.Затронутого этим заклинанием легко преследовать в толпе. Ищущему достаточно спросить очевидцев «куда прошел такой-то и такой-то?» и он быстро найдет преследуемого.  Присутствие и Незначительность сопротивляются друг другу.Длительность: 1 час.Стоимость: 4 сотворение. 4 поддержание.Время сотворения: 10 секунд.Требования: Убеждение и Искушение.Предмета) Плащ, украшение или головной убор. Всегда включено. Одевший привлекает внимание. Энергостоимость создания: 700. б) Палочка или посох. Используется только магами. Энергостоимость создания: 450.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>4</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M48</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">persuasion</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">lure</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 558px; left: 480px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Compel Truth</name><name-loc>Сыворотка правды</name-loc><spell version="2">
+		<name>Compel Truth</name>
+		<name-loc>Сыворотка правды</name-loc>
+		<description-loc>Информационное; Сопротивление по Воле(Will)Объект не может лгать, однако он может хранить молчание или говорить только часть правды (это должно быть отыграно). Заклинание не заставляет его сдавать информацию, он просто не может вымолвить ни слова, если верит что это неправда.Длительность: 5 минут.Стоимость: 4 сотворение. 2 поддержание.Требования: Магичность(Magery) 2 и Правдолюб.ПредметГалстук или тяжелый ошейник, носитель не может лгать. Энергостоимость: 600.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>5 min</duration>
+		<reference>M47</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (communication)</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">2</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">truthsayer</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 486px; left: 407px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Dream Viewing</name><name-loc>Просмотр снов</name-loc><spell version="2">
+		<name>Dream Viewing</name>
+		<name-loc>Просмотр снов</name-loc>
+		<description-loc>Обычное; Сопротивление по Воле(Will)Просматривает сны объекта; они проявляются на любой гладкой поверхности по вашему выбору (чаша воды, зеркало, грань драгоценного камня и т.д.). Используйте модификаторы  Дальних дистанций и Чтения мыслей (M14 и M46, соответственно). Если заклинатель и объект не знакомы друг с другом, это даёт дополнительный штраф -2.Длительность: 1 час.Стоимость: 2 сотворение, 1 поддержание.Время сотворения: 10 секунд.Требования: Правдолюб или Сон.ПредметЗеркало. Энергостоимость создания: 300.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M45</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">truthsayer</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">sleep</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 486px; left: 240px;" class=""><name>Soul Rider</name><name-loc>Ментальный пассажир</name-loc><spell version="2">
+		<name>Soul Rider</name>
+		<name-loc>Ментальный пассажир</name-loc>
+		<description-loc>Обычное; Сопротивляется по Воле(Will)Заклинатель может видеть глазами объекта, слышать его ушами и т.д, пока концентрируется. (Заклинатель не теряет контроль над своим собственным телом и может действовать нормально). Заклинатель не получает контроля над объектом и не знает его мысли. Объект должен быть разумным (ИН(IQ) 6 или выше). Умение получает -2 если объект принадлежит другой расе; если объект полностью чужд, то -4 или более!Длительность: 1 минута.Стоимость: 5 сотворение, 2 поддержание.Время сотворения: 3 секунды.Требование: Чтение мыслей.ПредметДва идентичных украшения, одно из золота, второе из серебра. Золотое должно быть одето заклинателем, серебряное - объектом. Заклинание может быть сотворено в любое время, независимо от дистанции. Используется только магами. Если необходимо встроить Энергокамень, то в золотое украшение. Если один из предметов сломан, второй теряет силу. Энергостоимость создания: 1.000 (за пару), необходимо включить опал стоимостью $100 в каждый предмет.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M49</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">mind-reading</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 486px; left: 132px;" class=""><name>Mind-Sending</name><name-loc>Отправка мыслей</name-loc><spell version="2">
+		<name>Mind-Sending</name>
+		<name-loc>Отправка мыслей</name-loc>
+		<description-loc>ОбычноеОдностороннее средство коммуникации, позволяет заклинателю посылать свои мысли объекту. Передача происходит со скоростью сравнимой со скоростью обычной речи, однако также можно передать простые изображения (время на передачу похоже на время рисования этой картинки на бумаге или пергаменте).При подсчете модификатора за расстояние используйте модификаторы Дальних дистанций (M14). Незнакомство с объектом даёт штраф -4.Длительность: 1 минута.Стоимость: 4 сотворение. 4 поддержание.Время сотворения: 4 секунды.Требование: Чтение мыслей.ПредметШапка, корона, шлем или другой головной убор. Используется только магами. Энегостоимость создания: 1.500.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>4</maintenance_cost>
+		<casting_time>4 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M47</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">mind-reading</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 486px; left: 12px;" class="hard"><name>Mind-Search</name><name-loc>Поиск в памяти</name-loc><spell version="2" very_hard="yes">
+		<name>Mind-Search</name>
+		<name-loc>Поиск в памяти</name-loc>
+		<description-loc>Обычное; Сопротивление по Воле(Will)Позволяет искать в сознании объекта глубинные мысли и знания даже о том, о чем объект в данный момент не думает. Фактически же, заклинатель может задать один вопрос (ответ будет не более чем в 10 слов) в минуту, и получить максимально правдивый ответ, который может дать объект. Объект не знает о проникновении, если заклинатель не выбросил критический промах.Язык - не барьер для этого заклинания, а объект может даже спать. Сложнее работать с объектом чужой расы (решение Мастера).Модификаторы: как у Чтения мыслей. Если объект магическим образом заставили забыть что-либо, это заклинание не восстановит потерянную память.Длительность: 1 минута.Стоимость: 6 сотворение. 3 поддержание.Время сотворения: 1 минута.Требование: Чтение мыслей.ПредметШапка, корона, шлем или другой головной убор. Используется только магами.Энергостоимость создания: 1.500.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>6</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 min</duration>
+		<reference>M46</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">mind-reading</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 571px; left: 132px;" class="hard"><name>Retrogression</name><name-loc>Регресс</name-loc><spell version="2">
+		<name>Retrogression</name>
+		<name-loc>Регресс</name-loc>
+		<description-loc>Обычное; Сопротивление по Воле(Will)Заставляет объект пережить событие из его прошлой жизни (или жизней!). Оно может быть как мучительным так и приятным.Разные типы памяти дают разный эффект. Ужасное воспоминание требует бросок страха с -3 или более; память о насильственной смерти объекта (в кампании, где возможно Воскрешение), требует бросок страха с -5. Память о ране или болезни требует бросок ЗД(HT)-3 — провал приносит одно очко вреда. Память о рабстве или унижении дает -1 к Воле(Will), если провален бросок Воля(Will)-3. Память о личном триумфе и могуществе дает  1 к Воле(Will), если успешен бросок ИН(IQ). Мастер судит о эффектах других типов памяти.Заклинатель указывает только тип события для вызова; он не может «досматривать» память объекта с помощью данного заклинания.Если не оглушен, объект должен бросить Чувство тела для того, чтобы действовать нормально в ход после заклинания.Длительность: для вызова памяти необходима одна секунда (хотя объекту может показаться, что прошло гораздо больше времени).Стоимость: 5. Не может быть поддержано. Одна попытка в день.Время сотворения: 10 секунд.Требования: Поиск в памяти и Отправка мыслей.Предмета) Головной убор. Каждый раз при одевании носящий испытывает свое лучшее или худшее переживание (решение создателя, но Мастер решает что именно подходит под это определение). Энергостоимость создания: 350. б) Посох, палочка или украшение. Используется только магами. Энергостоимость создания: 400.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 sec</duration>
+		<reference>M47</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">mind-reading</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">mind-sending</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 558px; left: 252px;" class="other-college"><name>Beast Possession</name><name-loc>Вселение в зверя</name-loc><spell version="2">
+		<name>Beast Possession</name>
+		<name-loc>Вселение в зверя</name-loc>
+		<description-loc>Обычное, Сопротивление по Воле(Will)Подобно заклинанию Внутренний наездник, за исключением того, что заклинатель получает полный контроль над объектом заклинания «изнутри» и имеет полный доступ к памяти и способностям животного. Находясь «внутри» тела объекта заклинатель может использовать все умения и способности, как будто они его собственные. Он может использовать свои ментальные способности но не физические (что означает что он не может творить заклинания пока не выучит их до той степени, чтобы не нуждаться в жестах либо словах). Собственное тело заклинателя лежит без сознания и должно охраняться.Длительность: 1 минута.Стоимость: 6 сотворение, 2 поддержание.Время сотворения: 5 секунд.Требования: Внутренний наездник или ВселениеПредметТак же как и для Внутреннего наездника, но дороже. Энергостоимость создания: 1500 (за пару). Каждый амулет должен содержать опал стоимостью не менее $200.</description-loc>
+		<college>Animal</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>6</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>5 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M32</reference>
+		<categories>
+			<category>Animal</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">possession</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">rider within</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 642px; left: 168px;" class=""><name>Control Person</name><name-loc>Контроль персоны</name-loc><spell version="2">
+		<name>Control Person</name>
+		<name-loc>Контроль персоны</name-loc>
+		<description-loc>Обычное; Сопротивляется по Воле(Will)Использует все чувства жертвы и контролирует все ее физические действия (заклинатель не получает доступ к памяти жертвы, её умениям, заклинаниям и т.п.). Объект сохраняет свою память и разум, и осознает что с ним происходит - его личность не заменяется личностью заклинателя. Заклинатель может «двигать» только одно тело в каждый момент времени и должен концентрироваться для этого. Во время концентрации его собственное тело становиться безвольным; как только он прекращает концентрироваться, объект возвращает себе контроль над своим телом. Заклинатель может свободно перемещаться между телами пока заклинание не закончится.Длительность: 1 минута.Стоимость: 6 сотворение. 4 поддержание.Время сотворения: 10 секунд.Требование: Ментальный пассажир или Телепатия.ПредметКорона, шлем или другой головной убор. Используется только магами. Энергостоимость создания: 1.500.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>6</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M49</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">soul rider</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">telepathy</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 570px; left: 12px;" class=""><name>Retrogression</name><name-loc>Регресс</name-loc><spell version="2">
+		<name>Retrogression</name>
+		<name-loc>Регресс</name-loc>
+		<description-loc>Обычное; Сопротивление по Воле(Will)Заставляет объект пережить событие из его прошлой жизни (или жизней!). Оно может быть как мучительным так и приятным.Разные типы памяти дают разный эффект. Ужасное воспоминание требует бросок страха с -3 или более; память о насильственной смерти объекта (в кампании, где возможно Воскрешение), требует бросок страха с -5. Память о ране или болезни требует бросок ЗД(HT)-3 — провал приносит одно очко вреда. Память о рабстве или унижении дает -1 к Воле(Will), если провален бросок Воля(Will)-3. Память о личном триумфе и могуществе дает  1 к Воле(Will), если успешен бросок ИН(IQ). Мастер судит о эффектах других типов памяти.Заклинатель указывает только тип события для вызова; он не может «досматривать» память объекта с помощью данного заклинания.Если не оглушен, объект должен бросить Чувство тела для того, чтобы действовать нормально в ход после заклинания.Длительность: для вызова памяти необходима одна секунда (хотя объекту может показаться, что прошло гораздо больше времени).Стоимость: 5. Не может быть поддержано. Одна попытка в день.Время сотворения: 10 секунд.Требования: Поиск в памяти и Отправка мыслей.Предмета) Головной убор. Каждый раз при одевании носящий испытывает свое лучшее или худшее переживание (решение создателя, но Мастер решает что именно подходит под это определение). Энергостоимость создания: 350. б) Посох, палочка или украшение. Используется только магами. Энергостоимость создания: 400.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>1 sec</duration>
+		<reference>M47</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">mind-reading</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">mind-sending</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 714px; left: 72px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Lend Skill</name><name-loc>Передать умение</name-loc><spell version="2">
+		<name>Lend Skill</name>
+		<name-loc>Передать умение</name-loc>
+		<description-loc>ОбычноеОбъект получает умение на (базовый атрибут)   4 или увеличивает свое существующее умение на 4 уровня, что больше. Умение объекта не может превосходить умение заклинателя. Заклинатель должен знать передаваемое умение (либо как обычно, либо с помощью Заимствования умения, ниже). Не работает на языки и заклинания.Длительность: 1 минута.Стоимость: 3 сотворение, 2 поддержание.Время сотворения: 3 секунды.Требования: Отправка мыслей и ИН(IQ) 11 </description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M47</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<attribute_prereq has="yes" which="iq" combined_with="iq" compare="at least">11</attribute_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">mind-sending</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 786px; left: 72px;" class=""><name>Borrow Skill</name><name-loc>Заимствовать умение</name-loc><spell version="2">
+		<name>Borrow Skill</name>
+		<name-loc>Заимствовать умение</name-loc>
+		<description-loc>ОбычноеЗаклинатель получает умение на уровне (базовый аттрибут)   4 или увеличивает свое существующее умение на 4 уровня, что больше. Умение заклинателя не может превосходить умение объекта. Объект должен быть согласен и знать передаваемое умение. Не работает на языки и заклинания.Длительность: 1 минута.Стоимость: 4 сотворение. 4 поддержание.Время сотворения: 3 секунды.Требования: Передать умение.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>3 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M47</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">lend skill</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 846px; left: 72px;" class="other-college"><name>Soul Jar</name><name-loc>Сосуд души (ОС)</name-loc><spell version="2" very_hard="yes">
+		<name>Soul Jar</name>
+		<name-loc>Сосуд души (ОС)</name-loc>
+		<description-loc>ОбычноеЗаключает душу объекта в некотором объекте (который должен присутствовать). Если объектом не является маг, объект должен присутствовать при сотворении, и быть желающим или бессознательным.Когда ваша душа находится в «сосуде», заклинание не действует, пока тело не умрет, или не будет уничтожен сосуд. Смерть тела не убивает вас. Сознание перемещается в «сосуд», откуда вы можете видеть, слышать и даже колдовать любые заклинания, известные вам на уровне 20  (то есть не требующие ни речи, ни жестов). Вы можете общаться на расстоянии при помощи подходящих заклинаний, если вам такие известны – или прямым ментальным контактом с любым, кто держит сосуд. Ваши ЕУ(FP) сохраняются. Вы не можете тратить ЕЖ(HP), но можете использовать любой энергокамень, касающийся вашего сосуда.Когда новое тело оказывается поблизости от сосуда, вы можете захватить его при помощи Переселения, Постоянного переселения или Обмена телами, если вам они знакомы. В этом случае душа данного тела занимает ваше место в сосуде. Пока ваша душа находится в сосуде, его уничтожение убьет вас навсегда – без надежды на воскрешение – даже если тело невредимо.Это заклинание можно сотворить еще раз, чтобы переместить душу в новый сосуд.Длительность: постоянноСтоимость: 8.Время сотворения: 1 минутаТребования: Магичность(Magery) 1 и шесть заклинаний некромагии, включая Украсть здоровье.</description-loc>
+		<college>Necromancy</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>8</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>Permanent</duration>
+		<reference>M154</reference>
+		<categories>
+			<category>Necromancy</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<college compare="contains">necromancy</college>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">steal vitality</name>
+			</spell_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (necromancy)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 726px; left: 228px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery1 hard"><name>Possession</name><name-loc>Вселение</name-loc><spell version="2" very_hard="yes">
+		<name>Possession</name>
+		<name-loc>Вселение</name-loc>
+		<description-loc>Обычное; Сопротивляется по Воле(Will)Как Контроль персоны, но жертва находиться без сознания во время «вселения» и заклинатель имеет полный доступ к памяти умениям и заклинаниям объекта. Во время пребывания в теле, заклинатель сохраняет все свои умения и заклинания а так же может использовать все умения заклинания и воспоминания объекта, как будто они его собственные (физические умения объекта используются с -1). Собственное тело заклинателя лежит без сознания во время заклинания и должно охраняться.Длительность: 1 минута.Стоимость: 10 сотворение. 4 поддержание.Время сотворения: 1 минута.Требования: Магичность(Magery) 1 и либо Контроль персоны либо Вселение в зверя.ПредметШляпа, корона, шлем или другой головной убор. Используется только магами. Энергостоимость создания: 2.500.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>10</casting_cost>
+		<maintenance_cost>4</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 min</duration>
+		<reference>M49</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (communication)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<prereq_list all="no">
+				<spell_prereq has="yes">
+					<name compare="is">control person</name>
+				</spell_prereq>
+				<spell_prereq has="yes">
+					<name compare="is">beast possession</name>
+				</spell_prereq>
+			</prereq_list>
+		</prereq_list>
+	</spell></block><block style="top: 810px; left: 180px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery3 hard"><name>Permanent Possession</name><name-loc>Постоянное вселение</name-loc><spell version="2" very_hard="yes">
+		<name>Permanent Possession</name>
+		<name-loc>Постоянное вселение</name-loc>
+		<description-loc>Обычное; Сопротивляется по Воле(Will)Как Вселение, но заклинатель остается в теле объекта пока не захочет его покинуть или будет изгнан заклинанием Отменить вселение или Снять проклятие. На собственное тело заклинателя накладывается эффект Приостановленной жизни (M94) до тех пор, пока заклинание не закончится. Если тело заклинателя умрет, заклинание рассеивается. Когда тело объекта получает вред, заклинатель должен сделать бросок против своего ЗД(HT) или получить такой же вред. Если тело объекта умирает, заклинатель должен сделать бросок своего ЗД(HT) или тоже умереть!Длительность: Не ограничено (может быть постоянно).Стоимость: 30.Время сотворения: 5 минут.Требования: Магичность(Magery) 3 и Вселение.ПредметШляпа, корона, шлем или другой головной убор. Используется только магами. Энергостоимость создания: 3.000.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>30</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>5 min</casting_time>
+		<duration>Indefinite</duration>
+		<reference>M49</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (communication)</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">3</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="is">possession</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 930px; left: 180px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery3 hard"><name>Exchange Bodies</name><name-loc>Обмен телами</name-loc><spell version="2" very_hard="yes">
+		<name>Exchange Bodies</name>
+		<name-loc>Обмен телами</name-loc>
+		<description-loc>Обычное; Сопротивляется по Воле(Will)Заклинатель навсегда меняется телами с объектом. Объектом может быть любое живое существо. Есть только один способ отменить эффект этого заклинания - сотворить его снова;  Отменить вселение и остальная анти-магия работать не будет. Значения СЛ(ST), ЛВ(DX) и ЗД(HT), как и все физические преимущества и недостатки, остаются с телом. ИН(IQ), память, личность и все умения и заклинания переносятся с разумом.Заметьте: Обмен телам может привести к тому, что заклинатель увеличит свою очковую стоимость. Мастер может потребовать от старого мага оплатить эту разницу. Более детально см. Перемещение сознания (B296). Для контроля меняющих тела магов Мастер может требовать редких ингредиентов для этого заклинания (M8).Длительность: Постоянно.Стоимость: 120.Время сотворения: 1 час.Требования: Постоянное вселение и Сосуд души.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>120</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 hr</casting_time>
+		<duration>Permanent</duration>
+		<reference>M49</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">permanent possession</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">soul jar</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 858px; left: 312px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Dispel Possession</name><name-loc>Отменить вселение</name-loc><spell version="2">
+		<name>Dispel Possession</name>
+		<name-loc>Отменить вселение</name-loc>
+		<description-loc>Обычное; Сопротивляется заклинаниемЗаканчивает любое из действующих на объект заклинаний Ментальный пассажир,  Контроль или Вселение (или их эквиваленты для животных).Стоимость: 10.Время сотворения: 10 секунд.Требования: Ментальный пассажир, Вселение или (по желанию Мастера) религиозный статус «святого».ПредметПосох или палочка. Используется только магами. Предмет должен коснуться одержимого. Энергостоимость создания: 300.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>10</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>10 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M49</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">soul rider</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">possession</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 630px; left: 384px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Dream Sending</name><name-loc>Отправка снов</name-loc><spell version="2">
+		<name>Dream Sending</name>
+		<name-loc>Отправка снов</name-loc>
+		<description-loc>Обычное; Сопротивление по Воле(Will)Заклинатель использует это заклинание для передачи видения объекту, который должен в это время спать. Сообщение воспринимается в виде символов сна, и объект должен бросить ИН(IQ)-5 или умение вроде Предсказание судьбы (интерпретация снов) (B196) для того чтобы понять их правильно. Величина успеха при броске показывает, насколько правильно было понято сообщение. Если объект использует умение Ясный сон, это может исказить или вообще отменить сообщение (решение Мастера).Заклинатель рассказывает Мастеру точный смысл (хорошая идея — ограничить длину сообщения количеством слов равным умению заклинания). Мастер, в свою очередь, рассказывает объекту что он понял (бросайте скрытно, так как критический провал ведет к полному непониманию!). Используйте модификаторы Дальних расстояний и Чтения мыслей (M14 и M46). Если заклинатель и объект незнакомы, это дополнительный штраф -2.Это так же заклинание Контроля разума.Длительность: 1 часСтоимость: 3. Одна попытка за ночь. Не может быть поддержано.Время сотворения: 1 минута.Требования: Просмотр снов или Сон.ПредметПалочка или посох. Энергостоимость создания: 400.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 hr</duration>
+		<reference>M45</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">dream viewing</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">sleep</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 702px; left: 384px; width: 100px; right: auto; height: 50px; bottom: auto;" class=""><name>Dream Projection</name><name-loc>Проекция снов</name-loc><spell version="2">
+		<name>Dream Projection</name>
+		<name-loc>Проекция снов</name-loc>
+		<description-loc>ОбычноеИспользуя его, заклинатель проецирует свое сознание в сны объекта для общения с ним. Бросайте Быстрое состязание между умением заклинания и Воле(Will)й объекта каждую минуту; как только объект выигрывает, заклинание прекращается и контакт более невозможен этой ночью.Используйте модификаторы Дальних дистанций и Чтения разума (M14 и M46). Если заклинатель и объект незнакомы, это дает дополнительный штраф -2. Объект может использовать умение Ясный сон для помощи процессу — бросайте каждую минуту для пропуска состязания.Это так же заклинание Контроля разума.Длительность: 1 минута. Каждая минута позволяет обменяться двумя предложениями (одно от заклинателя, второе от объекта)Стоимость: 3 сотворение, 3 поддержание. Одна попытка за ночь.Время сотворения: 1 минута.Требование: Передача снов.ПредметГоловной убор. Используется только магами. Энергостоимость создания: 800.</description-loc>
+		<college>Communication</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>1 min</casting_time>
+		<duration>1 min</duration>
+		<reference>M46</reference>
+		<categories>
+			<category>Communication</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">dream sending</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 690px; left: 516px;" class="other-college"><name>Emotion Control</name><name-loc>Контроль эмоций</name-loc><spell version="2">
+		<name>Emotion Control</name>
+		<name-loc>Контроль эмоций</name-loc>
+		<description-loc>Областное; Сопротивление по Воле(Will)Внушает объекту(-ам) одну эмоцию по выбору заклинателя. Пока Мастер не посчитает нужным, это не влечёт никакого изменения характеристик, но должно быть отыграно! Некоторые простые эмоции: любовь, ненависть, злость, жадность, похоть, ревность, голод, страх, печаль, радость, умиротворение, беспокойство, депрессия, патриотизм, скука.Длительность: 1 час.Базовая стоимость: 2. Не может быть поддержано; надо творить заклинание заново.Требования: Верность или Ментальное оглушение.ПредметЛюбой предмет. Всегда включён; надевший чувствует эмоцию, заключённую в предмете при создании. Энергостоимость создания: 300.Посох или палочка. Используется только магами; надо коснуться объекта. Энергостоимость создания: 1,000 за предмет, внушающий одну эмоцию, 2,200 за предмет, внушающий любую эмоцию на выбор.</description-loc>
+		<college>Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Area</spell_class>
+		<casting_cost>2</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 hr</duration>
+		<reference>M137</reference>
+		<categories>
+			<category>Mind Control</category>
+		</categories>
+		<prereq_list all="no">
+			<spell_prereq has="yes">
+				<name compare="is">mental stun</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">loyalty</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 762px; left: 516px;" class=""><name>Compel Lie</name><name-loc>Лжец</name-loc><spell version="2">
+		<name>Compel Lie</name>
+		<name-loc>Лжец</name-loc>
+		<description-loc>Обычное; Сопротивление по Воле(Will)Объект не может говорить правду: он не может сделать ни одного заявления, которое он бы считал правдивым и чувствует потребность лгать, хотя (если он понимает, что он под воздействием заклинания) он может хранить молчание.Лжец и Сыворотка правды сопротивляются друг другу. Для того, чтобы определить какое заклинание победило, может потребоваться заклинание Аура!Это также заклинание школы Общения и понимания.Длительность: 5 минут.Стоимость: 4 на сотворение. 2 на поддержание.Требование: Контроль эмоций.ПредметТяжёлое ожерелье или ошейник [torc]; надевший не может сказать правду. Энергостоимость создания: 600.</description-loc>
+		<college>Mind Control</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>5 min</duration>
+		<reference>M137</reference>
+		<categories>
+			<category>Mind Control</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">emotion control</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 846px; left: 444px;" class="other-college"><name>Machine Summoning</name><name-loc>Призыв механизма/ТУ</name-loc><spell version="2">
+		<name>Machine Summoning</name>
+		<name-loc>Призыв механизма/ТУ</name-loc>
+		<description-loc>ОбычноеПризывает один механизм указанного типа (ИН(IQ) меньше 6). Расстояние не влияет на это заклинание. Если заклинание сотворено успешно, то заклинатель знает расположение ближайшего механизма нужного типа,  расстояние до механизма и сколько понадобится времени, чтобы механизм пришёл к нему. Механизм движется к заклинателю на всей возможной скорости, пока не кончится действие заклинания или пока механизм не окажется в непосредственной близи от заклинателя.Конечно, механизм может быть не приспособлен для прокладывания маршрута, у него может кончиться топливо, энергия и т.д. Например, холодильник на ТУ7 вообще не сможет двигаться. Автомобиль на ТУ7 будет ехать по прямой, невзирая на такие препятствия как пешеходы, ямы и фонарные столбы… Когда механизм достигнет заклинателя он остановится не атакуя его. Если заклинатель или один из его компаньонов атакует механизм, заклинание провалено.Длительность: 1 минута.Стоимость: 4 сотворение. 2 поддержка.Время сотворения: 4 секунды.Требования: Контроль механизма.ПредметПосох, палочка или украшение. Энергостоимость создания: 500 для создания предмета, призывающего определённый тип механизмов; 1.000 для создания предмета, призывающего любые механизмы.</description-loc>
+		<tech_level></tech_level>
+		<college>Technological/Machine</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>4</casting_cost>
+		<maintenance_cost>2</maintenance_cost>
+		<casting_time>4 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M176</reference>
+		<categories>
+			<category>Machine</category>
+			<category>Technological</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="starts with">machine control</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 918px; left: 444px; width: 100px; right: auto; height: 50px; bottom: auto;" class="magery2"><name>Machine Speech</name><name-loc>Разговор с механизмом/ТУ</name-loc><spell version="2">
+		<name>Machine Speech</name>
+		<name-loc>Разговор с механизмом/ТУ</name-loc>
+		<description-loc>ОбычноеПозволяет общаться с любым механизмом (независимо от ИН(IQ)) на родном «языке» механизма. Если язык не звуковой, заклинатель должен поддерживать физический контакт с  портом интерфейса или антенной. Количество полученной информации зависит от ИН(IQ) механизма; механизм с ИН(IQ) меньше 3 вряд ли будет знать что-нибудь интересное. Каждая минута разговора позволяет задать один вопрос и получить ответ на него. Это заклинание также относится к школе заклинаний Общения и Понимания.Длительность: 1 минута.Стоимость: 5 сотворение. 3 на поддержка.Требования: Призыв механизма.ПредметПосох, палочка или украшение. Энергостоимость создания: 1.200 для создания предмета, позволяющего общаться с определённым типом механизмов; 5.000 для создания предмета, позволяющего общаться с любым типом механизмов.</description-loc>
+		<tech_level></tech_level>
+		<college>Communication/Technological</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>5</casting_cost>
+		<maintenance_cost>3</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M176</reference>
+		<categories>
+			<category>Communication</category>
+			<category>Technological</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">machine summoning</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 834px; left: 564px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Seeker</name><name-loc>Искатель</name-loc><spell version="2">
+		<name>Seeker</name>
+		<name-loc>Искатель</name-loc>
+		<description-loc>ИнформационноеНастраивает заклинателя на индивида или искусственный предмет, которого он ищет. Успех даёт заклинателю видение местонахождения предмета – или ведёт его к нему, если тот в пределах мили. Чтобы искать личность, заклинатель должен либо знать его имя или знать его достаточно хорошо, чтобы вообразить его.Например, нельзя использовать это заклинание, чтобы раскрыть убийство, ища «убийцу» если вы не знаете кто это – но если знаете, то Искатель его найдёт.Модификаторы: Модификаторы больших расстояний (M14). Что-то связанное с искомым (например, часть одежды личности) должно быть доступно во время сотворения; если нет, бросок делается с -5. Премия  1 если заклинатель держал или ещё как-то знаком с исходным предметом.Стоимость: 3. Одна попытка в неделю.Требования: Магичность(Magery) 1, ИН(IQ) 12 или выше, и по крайней мере два заклинания «Искать ...». ПредметРаздвоенная палка (дерево, кость или слоновая кость) или игла компаса (вырезная из слоновой кости), которая будет указывать на один конкретный объект, выбранный при создании предмета. Что-то, относящееся к объекту должно быть использовано при создании предметам, и включено в него. Энергостоимость создания: 500.</description-loc>
+		<college>Knowledge</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Info</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>1 sec</casting_time>
+		<duration>Instant</duration>
+		<reference>M105</reference>
+		<categories>
+			<category>Knowledge</category>
+		</categories>
+		<prereq_list all="yes">
+			<attribute_prereq has="yes" which="iq" compare="at least">12</attribute_prereq>
+			<prereq_list all="no">
+				<advantage_prereq has="yes">
+					<name compare="is">magery one college (knowledge)</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+				<advantage_prereq has="yes">
+					<name compare="is">magery</name>
+					<name compare="does not contain">one college</name>
+					<level compare="at least">1</level>
+				</advantage_prereq>
+			</prereq_list>
+			<spell_prereq has="yes">
+				<name compare="contains">seek</name>
+				<quantity compare="at least">2</quantity>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 834px; left: 684px; width: 100px; right: auto; height: 50px; bottom: auto;" class="other-college"><name>Great Voice</name><name-loc>Великий голос</name-loc><spell version="2">
+		<name>Great Voice</name>
+		<name-loc>Великий голос</name-loc>
+		<description-loc>ОбычноеОбъекта могут слышать чётко и ясно все, кого он видит, даже на большом расстоянии. Объект может выбрать тех, кто может его слышать перед тем, как начать говорить (конечно, те, кто находятся в пределах зоны обычной слышимости, будут слышать его в любом случае). Заметьте, что спрятавшись за камень, слышимость не испортить. Это заклинание широко применяется капитанами кораблей, военными командирами и ораторами. Если голос изначально громки, под действием заклинания он может стать раздражающим. Но не оглушит  и не причинит вреда.Длительность:1 минута.Стоимость: 3 на сотворение. 1 на поддержание.Время сотворения: 2 секунды.Требования: Голоса и ГромПредметПосох, палочка, шлем или украшение; действует лишь на надевшего. Энергостоимость создания: 200.</description-loc>
+		<college>Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>3</casting_cost>
+		<maintenance_cost>1</maintenance_cost>
+		<casting_time>2 sec</casting_time>
+		<duration>1 min</duration>
+		<reference>M173</reference>
+		<categories>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">thunderclap</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">voices</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block><block style="top: 918px; left: 624px;" class=""><name>Message</name><name-loc>Сообщение</name-loc><spell version="2">
+		<name>Message</name>
+		<name-loc>Сообщение</name-loc>
+		<description-loc>Обычное; Сопротивление по заклинаниям, блокирующим звукОтсылает объекту звуковое послание. Используйте модификаторы Больших расстояний (M14). Если заклинатель не знает объект, он получает штраф -2. Если заклинатель не знает местоположение объекта, он получает штраф -5 (исправляется успешным применением заклинания Искатель). Эти штрафы складываются. Успешный применение заклинания Слежка даёт бонус  5. Объект слышит сообщение чётко и ясно не зависимо от звуков, его окружающих, но сообщение слышит только он. Тишина, Стена тишины и Шум будут сопротивляться входящему сообщению. Это так же заклинание школы Общения и понимания.Длительность: Сообщение идёт со скоростью 50миль/час. Если удвоить стоимость удвоится и скорость.Стоимость: 1 за 15 секунд сообщения.Время сотворения: Столько же, сколько заклинатель говорит сообщение.Требования: Великий голос и Искатель.ПредметРаковина, в которую надо говорить, концентрируясь на виде объекта и его окружения. Энергостоимость создания: 1,000.</description-loc>
+		<college>Communication/Sound</college>
+		<power_source>Arcane</power_source>
+		<spell_class>Regular</spell_class>
+		<casting_cost>1/15 sec</casting_cost>
+		<maintenance_cost>-</maintenance_cost>
+		<casting_time>Varies</casting_time>
+		<duration>Varies</duration>
+		<reference>M174</reference>
+		<categories>
+			<category>Communication</category>
+			<category>Sound</category>
+		</categories>
+		<prereq_list all="yes">
+			<spell_prereq has="yes">
+				<name compare="is">seeker</name>
+			</spell_prereq>
+			<spell_prereq has="yes">
+				<name compare="is">great voice</name>
+			</spell_prereq>
+		</prereq_list>
+	</spell></block>
